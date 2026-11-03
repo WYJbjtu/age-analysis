@@ -1,0 +1,19 @@
+name: Chart or analysis
+description: Track an EDA deliverable or poster visual
+labels: []
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Research question and intended figure
+    validations:
+      required: true
+  - type: textarea
+    id: success
+    attributes:
+      label: Acceptance criteria
+      value: |
+        - [ ] CSV follows docs/data_contract.md
+        - [ ] Source coverage and missingness reported
+        - [ ] Validation passes
+        - [ ] Findings and limitations documented

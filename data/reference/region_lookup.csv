@@ -1,0 +1,99 @@
+country,region_id,region_name,region_type
+USA,US-AL,Alabama,state
+USA,US-AK,Alaska,state
+USA,US-AZ,Arizona,state
+USA,US-AR,Arkansas,state
+USA,US-CA,California,state
+USA,US-CO,Colorado,state
+USA,US-CT,Connecticut,state
+USA,US-DE,Delaware,state
+USA,US-DC,District of Columbia,federal_district
+USA,US-FL,Florida,state
+USA,US-GA,Georgia,state
+USA,US-HI,Hawaii,state
+USA,US-ID,Idaho,state
+USA,US-IL,Illinois,state
+USA,US-IN,Indiana,state
+USA,US-IA,Iowa,state
+USA,US-KS,Kansas,state
+USA,US-KY,Kentucky,state
+USA,US-LA,Louisiana,state
+USA,US-ME,Maine,state
+USA,US-MD,Maryland,state
+USA,US-MA,Massachusetts,state
+USA,US-MI,Michigan,state
+USA,US-MN,Minnesota,state
+USA,US-MS,Mississippi,state
+USA,US-MO,Missouri,state
+USA,US-MT,Montana,state
+USA,US-NE,Nebraska,state
+USA,US-NV,Nevada,state
+USA,US-NH,New Hampshire,state
+USA,US-NJ,New Jersey,state
+USA,US-NM,New Mexico,state
+USA,US-NY,New York,state
+USA,US-NC,North Carolina,state
+USA,US-ND,North Dakota,state
+USA,US-OH,Ohio,state
+USA,US-OK,Oklahoma,state
+USA,US-OR,Oregon,state
+USA,US-PA,Pennsylvania,state
+USA,US-RI,Rhode Island,state
+USA,US-SC,South Carolina,state
+USA,US-SD,South Dakota,state
+USA,US-TN,Tennessee,state
+USA,US-TX,Texas,state
+USA,US-UT,Utah,state
+USA,US-VT,Vermont,state
+USA,US-VA,Virginia,state
+USA,US-WA,Washington,state
+USA,US-WV,West Virginia,state
+USA,US-WI,Wisconsin,state
+USA,US-WY,Wyoming,state
+JPN,JP-01,Hokkaido,prefecture
+JPN,JP-02,Aomori,prefecture
+JPN,JP-03,Iwate,prefecture
+JPN,JP-04,Miyagi,prefecture
+JPN,JP-05,Akita,prefecture
+JPN,JP-06,Yamagata,prefecture
+JPN,JP-07,Fukushima,prefecture
+JPN,JP-08,Ibaraki,prefecture
+JPN,JP-09,Tochigi,prefecture
+JPN,JP-10,Gunma,prefecture
+JPN,JP-11,Saitama,prefecture
+JPN,JP-12,Chiba,prefecture
+JPN,JP-13,Tokyo,prefecture
+JPN,JP-14,Kanagawa,prefecture
+JPN,JP-15,Niigata,prefecture
+JPN,JP-16,Toyama,prefecture
+JPN,JP-17,Ishikawa,prefecture
+JPN,JP-18,Fukui,prefecture
+JPN,JP-19,Yamanashi,prefecture
+JPN,JP-20,Nagano,prefecture
+JPN,JP-21,Gifu,prefecture
+JPN,JP-22,Shizuoka,prefecture
+JPN,JP-23,Aichi,prefecture
+JPN,JP-24,Mie,prefecture
+JPN,JP-25,Shiga,prefecture
+JPN,JP-26,Kyoto,prefecture
+JPN,JP-27,Osaka,prefecture
+JPN,JP-28,Hyogo,prefecture
+JPN,JP-29,Nara,prefecture
+JPN,JP-30,Wakayama,prefecture
+JPN,JP-31,Tottori,prefecture
+JPN,JP-32,Shimane,prefecture
+JPN,JP-33,Okayama,prefecture
+JPN,JP-34,Hiroshima,prefecture
+JPN,JP-35,Yamaguchi,prefecture
+JPN,JP-36,Tokushima,prefecture
+JPN,JP-37,Kagawa,prefecture
+JPN,JP-38,Ehime,prefecture
+JPN,JP-39,Kochi,prefecture
+JPN,JP-40,Fukuoka,prefecture
+JPN,JP-41,Saga,prefecture
+JPN,JP-42,Nagasaki,prefecture
+JPN,JP-43,Kumamoto,prefecture
+JPN,JP-44,Oita,prefecture
+JPN,JP-45,Miyazaki,prefecture
+JPN,JP-46,Kagoshima,prefecture
+JPN,JP-47,Okinawa,prefecture
