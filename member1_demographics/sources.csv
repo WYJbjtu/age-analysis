@@ -1,1 +1,2 @@
 owner,dataset,source_organization,source_title,source_url,original_table,coverage,reference_period,download_date,notes
+member1_demographics,demographics,U.S. Census Bureau,SC-EST2022-ALLDATA6,https://www2.census.gov/programs-surveys/popest/datasets/2020-2022/state/asrh/sc-est2022-alldata6.csv,SC-EST2022-ALLDATA6,51 USA regions; 2022,2022-07-01,2026-10-30,Vintage 2022; June 2023 release; ages 65+; working age 15-64; dependency ratio 100*65+/15-64

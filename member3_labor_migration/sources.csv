@@ -1,1 +1,2 @@
 owner,dataset,source_organization,source_title,source_url,original_table,coverage,reference_period,download_date,notes
+member3_labor_migration,labor_migration,U.S. Census Bureau,NST-EST2022-ALLDATA,https://www2.census.gov/programs-surveys/popest/datasets/2020-2022/state/totals/NST-EST2022-ALLDATA.csv,NST-EST2022-ALLDATA; NETMIG2022,51 USA regions; 2022,2021-07-01 to 2022-07-01,2026-10-30,Vintage 2022; net migration persons; employment/unemployment not collected; no imputation
