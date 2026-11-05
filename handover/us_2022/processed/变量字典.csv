@@ -1,0 +1,25 @@
+﻿field,中文名称,单位与定义
+country,国家,United States
+region_code,州FIPS代码,文本型两位代码；保留前导零，DC=11
+region_name,地区名称,50州及华盛顿特区
+year,研究参考年,2022
+population_reference_date,人口参考日,2022-07-01
+economic_period,经济统计期,CY2022；日历年
+population_total,总人口,人；SEX=0、ORIGIN=0，RACE=1–6、AGE=0–85合计
+population_65plus,65岁及以上人口,人；同上，但AGE=65–85；85表示85岁及以上
+aging_rate_pct,老龄化率,population_65plus / population_total × 100；例如17.3表示17.3%
+gdp_nominal_usd_million,名义地区GDP,百万当年美元；BEA SAGDP2 LineCode=1
+manufacturing_va_nominal_usd_million,名义制造业增加值,百万当年美元；SAGDP2 LineCode=12，NAICS 31–33
+manufacturing_share_pct,制造业占地区GDP比重,manufacturing_va_nominal_usd_million / gdp_nominal_usd_million × 100；不是就业占比
+population_2021,2021年总人口,人；2021-07-01
+population_change_2021_2022,一年人口变化,人；2022-07-01减2021-07-01
+natural_change_2021_2022,自然增长,出生减死亡；2021-07-01至2022-06-30
+net_migration_2021_2022,净迁移,人；国内净迁移加国际净迁移；人口变化不等于净迁移
+net_domestic_migration_2021_2022,国内净迁移,人；同期国内迁入减迁出
+net_international_migration_2021_2022,国际净迁移,人；同期国际迁入减迁出
+population_change_residual,人口变化残差,人口变化中不能归入自然增长与净迁移的剩余项
+net_migration_rate_per_1000,净迁移率,每千人；净迁移除以2021和2022年中人口平均值，再乘1000
+population_change_pct,人口变化百分比,population_change_2021_2022 / population_2021 × 100
+population_vintage,人口版本,Vintage 2022；年龄数据2023年6月发布
+gdp_vintage,GDP版本,2026-09-30发布的修订值
+population_change_period,人口变化统计期,2021-07-01 to 2022-07-01

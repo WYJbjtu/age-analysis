@@ -1,1 +1,2 @@
 owner,dataset,source_organization,source_title,source_url,original_table,coverage,reference_period,download_date,notes
+member2_industry,industry,U.S. Bureau of Economic Analysis,GDP by state SAGDP2,https://apps.bea.gov/regional/zip/SAGDP.zip,"SAGDP2__ALL_AREAS_1997_2025.csv; lines 1,12,92",51 USA regions; 2022,CY2022,2026-10-30,2026-09-30 revision; NAICS 2017; USD millions; services=BEA private services-providing incl utilities excluding government; Japan comparability pending

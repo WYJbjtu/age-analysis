@@ -1,0 +1,74 @@
+[
+  {
+    "file": "BEA_SAGDP.zip",
+    "url": "https://apps.bea.gov/regional/zip/SAGDP.zip",
+    "container": null,
+    "bytes": 10381511,
+    "sha256": "3d3c5bc7bd243138cd4ec07d6f5e862bdb533683a538c3a6db61aa2fbc7085ef",
+    "saved_at_utc": "2026-10-30T12:14:52.276694+00:00",
+    "recorded_on": "2026-10-30"
+  },
+  {
+    "file": "census_nst_est2022_all.csv",
+    "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2022/state/totals/NST-EST2022-ALLDATA.csv",
+    "container": null,
+    "bytes": 23556,
+    "sha256": "09d258607dd842d48ae05680cfeada6cd4ee1dbc71d0c328621f4105362d2f54",
+    "saved_at_utc": "2026-10-30T12:15:31.613261+00:00",
+    "recorded_on": "2026-10-30"
+  },
+  {
+    "file": "census_nst_est2022_layout.pdf",
+    "url": null,
+    "container": null,
+    "bytes": 40590,
+    "sha256": "2c01e56d9f88ecf31dc3d60e904124cc01c9beff00fcadad2c6db2366521ff8f",
+    "saved_at_utc": "2026-10-30T12:21:53.770039+00:00",
+    "recorded_on": "2026-10-30"
+  },
+  {
+    "file": "census_sc_est2022_alldata6.csv",
+    "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2022/state/asrh/sc-est2022-alldata6.csv",
+    "container": null,
+    "bytes": 11050100,
+    "sha256": "efc1ab9807e94f4f96a75b9ea82a29e7be4c6182459f1e2467a7239aaa914534",
+    "saved_at_utc": "2026-10-30T12:14:52.514432+00:00",
+    "recorded_on": "2026-10-30"
+  },
+  {
+    "file": "census_sc_est2022_layout.pdf",
+    "url": "https://www2.census.gov/programs-surveys/popest/technical-documentation/file-layouts/2020-2022/sc-est2022-alldata6.pdf",
+    "container": null,
+    "bytes": 94654,
+    "sha256": "510b624fd297e43828a244da4310f94644dcc279d0de33808924d0a9915ef2e1",
+    "saved_at_utc": "2026-10-30T12:15:29.259726+00:00",
+    "recorded_on": "2026-10-30"
+  },
+  {
+    "file": "census_states_2022.zip",
+    "url": "https://www2.census.gov/geo/tiger/GENZ2022/shp/cb_2022_us_state_20m.zip",
+    "container": null,
+    "bytes": 186267,
+    "sha256": "fb2c327c32869dc27bee7a6e0e6130f9d936c4f85638b8414af799f1251e3816",
+    "saved_at_utc": "2026-10-30T12:14:49.243977+00:00",
+    "recorded_on": "2026-10-30"
+  },
+  {
+    "file": "SAGDP2__ALL_AREAS_1997_2025.csv",
+    "url": null,
+    "container": "BEA_SAGDP.zip",
+    "bytes": 1740421,
+    "sha256": "cf28590ee0af3d1f5f10b5c7682cbf74c42fb3ea97cdd712374fa109cb3f9a0c",
+    "saved_at_utc": "2026-10-30T12:15:31.629356+00:00",
+    "recorded_on": "2026-10-30"
+  },
+  {
+    "file": "SAGDP2__Footnotes.html",
+    "url": null,
+    "container": "BEA_SAGDP.zip",
+    "bytes": 1977,
+    "sha256": "561a19d77e47a0b4d831394d0f758317f0b5284bf4d8c5da3ede168d80b6d76a",
+    "saved_at_utc": "2026-10-30T12:16:04.747370+00:00",
+    "recorded_on": "2026-10-30"
+  }
+]

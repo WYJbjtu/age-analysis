@@ -1,0 +1,24 @@
+{
+  "n_regions": 51,
+  "population_total": 333287557,
+  "population_65plus": 57794852,
+  "national_aging_rate_pct": 17.340836999804345,
+  "aging_mean_pct": 17.804227241916305,
+  "aging_median_pct": 17.807637614068913,
+  "aging_min": {
+    "region_name": "Utah",
+    "aging_rate_pct": 11.985328916232845
+  },
+  "aging_max": {
+    "region_name": "Maine",
+    "aging_rate_pct": 22.537716372875973
+  },
+  "manufacturing_min": {
+    "region_name": "District of Columbia",
+    "manufacturing_share_pct": 0.23099802096251382
+  },
+  "manufacturing_max": {
+    "region_name": "Indiana",
+    "manufacturing_share_pct": 25.08534695060429
+  }
+}
