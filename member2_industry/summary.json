@@ -1,0 +1,60 @@
+{
+  "JPN": {
+    "regions": 47,
+    "manufacturing_share_pct": {
+      "median": 25.196029909,
+      "min": {
+        "region": "Okinawa",
+        "id": "JP-47",
+        "value": 4.0356335159
+      },
+      "max": {
+        "region": "Shiga",
+        "id": "JP-25",
+        "value": 41.7509330632
+      }
+    },
+    "services_share_pct": {
+      "median": 67.2806527058,
+      "min": {
+        "region": "Shiga",
+        "id": "JP-25",
+        "value": 52.0914633206
+      },
+      "max": {
+        "region": "Tokyo",
+        "id": "JP-13",
+        "value": 89.0065564753
+      }
+    }
+  },
+  "USA": {
+    "regions": 51,
+    "manufacturing_share_pct": {
+      "median": 9.65255985,
+      "min": {
+        "region": "District of Columbia",
+        "id": "US-DC",
+        "value": 0.23099802
+      },
+      "max": {
+        "region": "Indiana",
+        "id": "US-IN",
+        "value": 25.08534695
+      }
+    },
+    "services_share_pct": {
+      "median": 68.98850629383399,
+      "min": {
+        "region": "North Dakota",
+        "id": "US-ND",
+        "value": 49.8549568923256
+      },
+      "max": {
+        "region": "New York",
+        "id": "US-NY",
+        "value": 83.09325637645097
+      }
+    }
+  }
+}

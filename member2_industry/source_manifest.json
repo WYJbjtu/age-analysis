@@ -1,0 +1,23 @@
+[
+  {
+    "file": "SAGDP.zip",
+    "url": "https://apps.bea.gov/regional/zip/SAGDP.zip",
+    "sha256": "3d3c5bc7bd243138cd4ec07d6f5e862bdb533683a538c3a6db61aa2fbc7085ef",
+    "bytes": 10381511,
+    "retrieved_date": "2026-11-05"
+  },
+  {
+    "file": "syuyo1.xlsx",
+    "url": "https://www.esri.cao.go.jp/jp/sna/data/data_list/kenmin/files/contents/tables/2022/syuyo1.xlsx",
+    "sha256": "dcc84be027ae1f5e27d4ca5def8ae30a2ecb38d14b60f32a68ea007a51adefe5",
+    "bytes": 486593,
+    "retrieved_date": "2026-11-05"
+  },
+  {
+    "file": "soukatu1.xlsx",
+    "url": "https://www.esri.cao.go.jp/jp/sna/data/data_list/kenmin/files/contents/tables/2022/soukatu1.xlsx",
+    "sha256": "68b31d80a951355571ca7cf69de321666709d4e5dc207c722b9c41626f38cc22",
+    "bytes": 35132,
+    "retrieved_date": "2026-11-05"
+  }
+]
