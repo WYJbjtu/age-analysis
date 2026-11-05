@@ -1,0 +1,7 @@
+﻿source,url,definition_and_version
+Census age and population,https://www2.census.gov/programs-surveys/popest/datasets/2020-2022/state/asrh/sc-est2022-alldata6.csv,"Vintage 2022; age release June 2023; July 1, 2022 resident population"
+Census age file layout,https://www2.census.gov/programs-surveys/popest/technical-documentation/file-layouts/2020-2022/sc-est2022-alldata6.pdf,SEX=0; ORIGIN=0; RACE 1–6; AGE 85 denotes 85+
+Census population change,https://www2.census.gov/programs-surveys/popest/datasets/2020-2022/state/totals/NST-EST2022-ALLDATA.csv,"Vintage 2022; December 2022 release; change from July 1, 2021 to July 1, 2022"
+Census change file layout,https://www2.census.gov/programs-surveys/popest/technical-documentation/file-layouts/2020-2022/NST-EST2022-ALLDATA.pdf,"Net migration and natural change are distinct; rates use average beginning/end population per 1,000"
+BEA state annual GDP,https://apps.bea.gov/regional/zip/SAGDP.zip,"SAGDP2; updated September 30, 2026; revised 2019–2025; NAICS 2017; current USD millions"
+Census map boundaries,https://www2.census.gov/geo/tiger/GENZ2022/shp/cb_2022_us_state_20m.zip,2022 cartographic boundaries at 1:20m scale

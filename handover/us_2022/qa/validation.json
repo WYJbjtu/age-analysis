@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "checks": {
+    "51_unique_regions": true,
+    "age_race_cells_complete": true,
+    "population_matches_separate_Census_state_totals_all_51": true,
+    "population_change_identity_all_51": true,
+    "net_migration_identity_all_51": true,
+    "BEA_102_core_cells_numeric": true,
+    "manufacturing_NAICS_31_33": true,
+    "one_to_one_joins": true,
+    "no_missing_core_or_supplementary_fields": true,
+    "rates_in_0_100": true
+  },
+  "excluded_geographies": "US total, multistate aggregates and territories; DC retained",
+  "population_age_filter": "SUMLEV=040, SEX=0, ORIGIN=0, sum RACE 1..6; AGE 0..85 total, AGE 65..85 older; 85 means 85+",
+  "bea_core_lines": {
+    "1": "All industry total",
+    "12": "Manufacturing"
+  },
+  "non_numeric_sector_cells": 4,
+  "sector_warning": "Industry rows are hierarchical and overlapping; do not sum all rows. Non-numeric markers retained, not set to zero."
+}
