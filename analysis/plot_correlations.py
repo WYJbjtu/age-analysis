@@ -56,8 +56,8 @@ def main(year, response):
     axes[0].set_ylabel('Manufacturing GDP share (%)' if y=='manufacturing_share_pct' else 'Service GDP share (%)')
     handles,labels=axes[0].get_legend_handles_labels()
     if handles:
-        fig.legend(handles,labels,loc='outside upper center',ncol=2)
-    fig.suptitle(f'Regional aging and industrial composition, {year}\nUnweighted regional associations; synthetic data prohibited',y=1.10)
+        axes[0].legend(handles,labels,loc='upper right')
+    fig.suptitle(f'Regional aging and industrial composition, {year}\nUnweighted regional associations',fontsize=13)
     filename=f'correlation_{y}_{year}'
     fig.savefig(OUT/f'{filename}.svg',bbox_inches='tight')
     fig.savefig(OUT/f'{filename}.png',dpi=200,bbox_inches='tight')
