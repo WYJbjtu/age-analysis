@@ -1,0 +1,197 @@
+country,region_id,region_name,indicator,aging_rate_pct,value,fitted,residual,z
+USA,US-NV,Nevada,unemployment_rate_pct,16.9,5.4,3.44,1.96,2.57
+USA,US-ND,North Dakota,unemployment_rate_pct,16.67,2.1,3.45,-1.35,-1.77
+USA,US-SD,South Dakota,unemployment_rate_pct,18.01,2.1,3.42,-1.32,-1.74
+USA,US-UT,Utah,unemployment_rate_pct,11.99,2.3,3.54,-1.24,-1.63
+USA,US-DC,District of Columbia,unemployment_rate_pct,12.99,4.7,3.52,1.18,1.55
+USA,US-IL,Illinois,unemployment_rate_pct,17.19,4.6,3.44,1.16,1.53
+USA,US-NE,Nebraska,unemployment_rate_pct,16.92,2.3,3.44,-1.14,-1.5
+USA,US-DE,Delaware,unemployment_rate_pct,20.8,4.5,3.37,1.13,1.49
+USA,US-PA,Pennsylvania,unemployment_rate_pct,19.6,4.4,3.39,1.01,1.33
+USA,US-MO,Missouri,unemployment_rate_pct,18.04,2.5,3.42,-0.92,-1.21
+USA,US-NH,New Hampshire,unemployment_rate_pct,20.18,2.5,3.38,-0.88,-1.16
+USA,US-NY,New York,unemployment_rate_pct,18.11,4.3,3.42,0.88,1.16
+USA,US-AL,Alabama,unemployment_rate_pct,18.03,2.6,3.42,-0.82,-1.08
+USA,US-OR,Oregon,unemployment_rate_pct,19.24,4.2,3.4,0.8,1.06
+USA,US-MI,Michigan,unemployment_rate_pct,18.74,4.2,3.41,0.79,1.04
+USA,US-CT,Connecticut,unemployment_rate_pct,18.29,4.2,3.42,0.78,1.03
+USA,US-MT,Montana,unemployment_rate_pct,20.05,2.6,3.38,-0.78,-1.03
+USA,US-VT,Vermont,unemployment_rate_pct,21.55,2.6,3.35,-0.75,-0.99
+USA,US-WA,Washington,unemployment_rate_pct,16.81,4.2,3.44,0.76,0.99
+USA,US-CA,California,unemployment_rate_pct,15.77,4.2,3.47,0.73,0.97
+USA,US-ID,Idaho,unemployment_rate_pct,17.04,2.7,3.44,-0.74,-0.97
+USA,US-KS,Kansas,unemployment_rate_pct,17.16,2.7,3.44,-0.74,-0.97
+USA,US-MN,Minnesota,unemployment_rate_pct,17.45,2.7,3.43,-0.73,-0.96
+USA,US-IA,Iowa,unemployment_rate_pct,18.31,2.7,3.42,-0.72,-0.94
+USA,US-NM,New Mexico,unemployment_rate_pct,19.09,4.0,3.4,0.6,0.79
+USA,US-OH,Ohio,unemployment_rate_pct,18.39,4.0,3.41,0.59,0.77
+USA,US-VA,Virginia,unemployment_rate_pct,16.87,2.9,3.44,-0.54,-0.71
+USA,US-WV,West Virginia,unemployment_rate_pct,21.19,3.9,3.36,0.54,0.71
+USA,US-WI,Wisconsin,unemployment_rate_pct,18.7,2.9,3.41,-0.51,-0.67
+USA,US-AK,Alaska,unemployment_rate_pct,13.85,4.0,3.5,0.5,0.65
+USA,US-GA,Georgia,unemployment_rate_pct,15.07,3.0,3.48,-0.48,-0.63
+USA,US-KY,Kentucky,unemployment_rate_pct,17.57,3.9,3.43,0.47,0.62
+USA,US-CO,Colorado,unemployment_rate_pct,15.65,3.0,3.47,-0.47,-0.61
+USA,US-MS,Mississippi,unemployment_rate_pct,17.26,3.9,3.44,0.46,0.61
+USA,US-FL,Florida,unemployment_rate_pct,21.55,2.9,3.35,-0.45,-0.59
+USA,US-OK,Oklahoma,unemployment_rate_pct,16.44,3.0,3.45,-0.45,-0.59
+USA,US-IN,Indiana,unemployment_rate_pct,16.91,3.0,3.44,-0.44,-0.58
+USA,US-AZ,Arizona,unemployment_rate_pct,18.78,3.8,3.41,0.39,0.52
+USA,US-TX,Texas,unemployment_rate_pct,13.41,3.9,3.51,0.39,0.51
+USA,US-MA,Massachusetts,unemployment_rate_pct,18.05,3.8,3.42,0.38,0.5
+USA,US-ME,Maine,unemployment_rate_pct,22.54,3.0,3.33,-0.33,-0.44
+USA,US-NC,North Carolina,unemployment_rate_pct,17.4,3.7,3.43,0.27,0.35
+USA,US-NJ,New Jersey,unemployment_rate_pct,17.4,3.7,3.43,0.27,0.35
+USA,US-LA,Louisiana,unemployment_rate_pct,16.99,3.7,3.44,0.26,0.34
+USA,US-MD,Maryland,unemployment_rate_pct,16.94,3.2,3.44,-0.24,-0.32
+USA,US-RI,Rhode Island,unemployment_rate_pct,18.87,3.2,3.4,-0.2,-0.27
+USA,US-SC,South Carolina,unemployment_rate_pct,19.08,3.2,3.4,-0.2,-0.26
+USA,US-WY,Wyoming,unemployment_rate_pct,18.59,3.6,3.41,0.19,0.25
+USA,US-HI,Hawaii,unemployment_rate_pct,20.44,3.5,3.37,0.13,0.17
+USA,US-AR,Arkansas,unemployment_rate_pct,17.81,3.3,3.43,-0.13,-0.16
+USA,US-TN,Tennessee,unemployment_rate_pct,17.32,3.4,3.44,-0.04,-0.05
+JPN,JP-01,Hokkaido,unemployment_rate_pct,32.8,3.2,2.15,1.05,2.75
+JPN,JP-18,Fukui,unemployment_rate_pct,31.2,1.4,2.25,-0.85,-2.21
+JPN,JP-32,Shimane,unemployment_rate_pct,34.7,1.3,2.03,-0.73,-1.92
+JPN,JP-27,Osaka,unemployment_rate_pct,27.7,3.1,2.46,0.64,1.68
+JPN,JP-41,Saga,unemployment_rate_pct,31.4,1.6,2.23,-0.63,-1.66
+JPN,JP-23,Aichi,unemployment_rate_pct,25.6,2.0,2.58,-0.58,-1.53
+JPN,JP-02,Aomori,unemployment_rate_pct,34.8,2.6,2.03,0.57,1.5
+JPN,JP-21,Gifu,unemployment_rate_pct,31.0,1.7,2.26,-0.56,-1.46
+JPN,JP-04,Miyagi,unemployment_rate_pct,28.9,2.9,2.38,0.52,1.35
+JPN,JP-05,Akita,unemployment_rate_pct,38.6,2.3,1.8,0.5,1.32
+JPN,JP-47,Okinawa,unemployment_rate_pct,23.5,3.2,2.71,0.49,1.28
+JPN,JP-40,Fukuoka,unemployment_rate_pct,28.3,2.9,2.42,0.48,1.25
+JPN,JP-19,Yamanashi,unemployment_rate_pct,31.5,1.8,2.23,-0.43,-1.12
+JPN,JP-17,Ishikawa,unemployment_rate_pct,30.3,1.9,2.3,-0.4,-1.05
+JPN,JP-10,Gunma,unemployment_rate_pct,30.8,1.9,2.27,-0.37,-0.97
+JPN,JP-16,Toyama,unemployment_rate_pct,33.0,1.8,2.14,-0.34,-0.88
+JPN,JP-25,Shiga,unemployment_rate_pct,26.8,2.2,2.51,-0.31,-0.82
+JPN,JP-24,Mie,unemployment_rate_pct,30.5,2.0,2.29,-0.29,-0.75
+JPN,JP-45,Miyazaki,unemployment_rate_pct,33.4,2.4,2.11,0.29,0.75
+JPN,JP-44,Oita,unemployment_rate_pct,33.9,1.8,2.08,-0.28,-0.74
+JPN,JP-28,Hyogo,unemployment_rate_pct,29.8,2.6,2.33,0.27,0.71
+JPN,JP-14,Kanagawa,unemployment_rate_pct,25.8,2.8,2.57,0.23,0.6
+JPN,JP-11,Saitama,unemployment_rate_pct,27.4,2.7,2.48,0.22,0.59
+JPN,JP-30,Wakayama,unemployment_rate_pct,34.0,2.3,2.08,0.22,0.59
+JPN,JP-43,Kumamoto,unemployment_rate_pct,32.1,2.4,2.19,0.21,0.55
+JPN,JP-35,Yamaguchi,unemployment_rate_pct,35.2,1.8,2.0,-0.2,-0.53
+JPN,JP-46,Kagoshima,unemployment_rate_pct,33.5,2.3,2.11,0.19,0.51
+JPN,JP-36,Tokushima,unemployment_rate_pct,35.0,2.2,2.02,0.18,0.48
+JPN,JP-42,Nagasaki,unemployment_rate_pct,33.9,1.9,2.08,-0.18,-0.48
+JPN,JP-20,Nagano,unemployment_rate_pct,32.5,2.0,2.17,-0.17,-0.44
+JPN,JP-03,Iwate,unemployment_rate_pct,34.6,2.2,2.04,0.16,0.42
+JPN,JP-26,Kyoto,unemployment_rate_pct,29.6,2.5,2.34,0.16,0.41
+JPN,JP-13,Tokyo,unemployment_rate_pct,22.8,2.6,2.75,-0.15,-0.4
+JPN,JP-07,Fukushima,unemployment_rate_pct,32.7,2.3,2.15,0.15,0.38
+JPN,JP-31,Tottori,unemployment_rate_pct,33.1,2.0,2.13,-0.13,-0.34
+JPN,JP-06,Yamagata,unemployment_rate_pct,34.8,1.9,2.03,-0.13,-0.33
+JPN,JP-34,Hiroshima,unemployment_rate_pct,29.9,2.2,2.32,-0.12,-0.32
+JPN,JP-08,Ibaraki,unemployment_rate_pct,30.4,2.4,2.29,0.11,0.28
+JPN,JP-15,Niigata,unemployment_rate_pct,33.5,2.2,2.11,0.09,0.25
+JPN,JP-38,Ehime,unemployment_rate_pct,33.9,2.0,2.08,-0.08,-0.21
+JPN,JP-09,Tochigi,unemployment_rate_pct,29.9,2.4,2.32,0.08,0.2
+JPN,JP-22,Shizuoka,unemployment_rate_pct,30.7,2.2,2.28,-0.08,-0.2
+JPN,JP-12,Chiba,unemployment_rate_pct,28.0,2.5,2.44,0.06,0.16
+JPN,JP-39,Kochi,unemployment_rate_pct,36.1,2.0,1.95,0.05,0.13
+JPN,JP-33,Okayama,unemployment_rate_pct,30.8,2.3,2.27,0.03,0.08
+JPN,JP-29,Nara,unemployment_rate_pct,32.4,2.2,2.17,0.03,0.07
+JPN,JP-37,Kagawa,unemployment_rate_pct,32.4,2.2,2.17,0.03,0.07
+USA,US-IN,Indiana,manufacturing_share_pct,16.91,25.09,10.27,14.82,3.05
+USA,US-LA,Louisiana,manufacturing_share_pct,16.99,20.62,10.27,10.35,2.13
+USA,US-DC,District of Columbia,manufacturing_share_pct,12.99,0.23,10.24,-10.01,-2.06
+USA,US-HI,Hawaii,manufacturing_share_pct,20.44,1.72,10.29,-8.57,-1.76
+USA,US-AK,Alaska,manufacturing_share_pct,13.85,2.33,10.24,-7.91,-1.63
+USA,US-IA,Iowa,manufacturing_share_pct,18.31,17.05,10.28,6.77,1.39
+USA,US-NM,New Mexico,manufacturing_share_pct,19.09,3.66,10.28,-6.62,-1.36
+USA,US-WI,Wisconsin,manufacturing_share_pct,18.7,16.85,10.28,6.57,1.35
+USA,US-MI,Michigan,manufacturing_share_pct,18.74,16.65,10.28,6.37,1.31
+USA,US-NY,New York,manufacturing_share_pct,18.11,3.89,10.28,-6.38,-1.31
+USA,US-KY,Kentucky,manufacturing_share_pct,17.57,16.43,10.27,6.15,1.27
+USA,US-NV,Nevada,manufacturing_share_pct,16.9,4.41,10.27,-5.86,-1.21
+USA,US-AL,Alabama,manufacturing_share_pct,18.03,15.75,10.27,5.47,1.13
+USA,US-KS,Kansas,manufacturing_share_pct,17.16,15.73,10.27,5.46,1.12
+USA,US-FL,Florida,manufacturing_share_pct,21.55,4.91,10.3,-5.39,-1.11
+USA,US-MS,Mississippi,manufacturing_share_pct,17.26,15.6,10.27,5.33,1.1
+USA,US-MD,Maryland,manufacturing_share_pct,16.94,5.37,10.27,-4.9,-1.01
+USA,US-OH,Ohio,manufacturing_share_pct,18.39,14.85,10.28,4.57,0.94
+USA,US-CO,Colorado,manufacturing_share_pct,15.65,5.73,10.26,-4.53,-0.93
+USA,US-MT,Montana,manufacturing_share_pct,20.05,6.36,10.29,-3.93,-0.81
+USA,US-AR,Arkansas,manufacturing_share_pct,17.81,14.09,10.27,3.81,0.79
+USA,US-DE,Delaware,manufacturing_share_pct,20.8,6.72,10.3,-3.58,-0.74
+USA,US-SC,South Carolina,manufacturing_share_pct,19.08,13.82,10.28,3.54,0.73
+USA,US-SD,South Dakota,manufacturing_share_pct,18.01,7.06,10.27,-3.22,-0.66
+USA,US-VA,Virginia,manufacturing_share_pct,16.87,7.17,10.27,-3.1,-0.64
+USA,US-NC,North Carolina,manufacturing_share_pct,17.4,13.13,10.27,2.86,0.59
+USA,US-WA,Washington,manufacturing_share_pct,16.81,7.53,10.27,-2.73,-0.56
+USA,US-RI,Rhode Island,manufacturing_share_pct,18.87,7.59,10.28,-2.69,-0.55
+USA,US-ND,North Dakota,manufacturing_share_pct,16.67,7.93,10.26,-2.33,-0.48
+USA,US-TX,Texas,manufacturing_share_pct,13.41,12.45,10.24,2.21,0.45
+USA,US-VT,Vermont,manufacturing_share_pct,21.55,8.13,10.3,-2.17,-0.45
+USA,US-TN,Tennessee,manufacturing_share_pct,17.32,12.35,10.27,2.08,0.43
+USA,US-IL,Illinois,manufacturing_share_pct,17.19,12.19,10.27,1.92,0.39
+USA,US-OR,Oregon,manufacturing_share_pct,19.24,12.16,10.28,1.88,0.39
+USA,US-OK,Oklahoma,manufacturing_share_pct,16.44,8.39,10.26,-1.87,-0.38
+USA,US-CT,Connecticut,manufacturing_share_pct,18.29,12.02,10.28,1.74,0.36
+USA,US-MA,Massachusetts,manufacturing_share_pct,18.05,8.55,10.28,-1.73,-0.36
+USA,US-MN,Minnesota,manufacturing_share_pct,17.45,11.91,10.27,1.64,0.34
+USA,US-AZ,Arizona,manufacturing_share_pct,18.78,8.66,10.28,-1.62,-0.33
+USA,US-NJ,New Jersey,manufacturing_share_pct,17.4,8.94,10.27,-1.33,-0.27
+USA,US-WV,West Virginia,manufacturing_share_pct,21.19,8.99,10.3,-1.31,-0.27
+USA,US-ID,Idaho,manufacturing_share_pct,17.04,9.29,10.27,-0.97,-0.2
+USA,US-NE,Nebraska,manufacturing_share_pct,16.92,11.15,10.27,0.88,0.18
+USA,US-ME,Maine,manufacturing_share_pct,22.54,9.47,10.31,-0.84,-0.17
+USA,US-MO,Missouri,manufacturing_share_pct,18.04,11.05,10.28,0.78,0.16
+USA,US-WY,Wyoming,manufacturing_share_pct,18.59,9.49,10.28,-0.79,-0.16
+USA,US-GA,Georgia,manufacturing_share_pct,15.07,9.65,10.25,-0.6,-0.12
+USA,US-NH,New Hampshire,manufacturing_share_pct,20.18,9.8,10.29,-0.5,-0.1
+USA,US-PA,Pennsylvania,manufacturing_share_pct,19.6,10.7,10.29,0.42,0.09
+USA,US-CA,California,manufacturing_share_pct,15.77,9.98,10.26,-0.28,-0.06
+USA,US-UT,Utah,manufacturing_share_pct,11.99,10.37,10.23,0.14,0.03
+JPN,JP-47,Okinawa,manufacturing_share_pct,23.5,4.04,23.16,-19.13,-2.1
+JPN,JP-25,Shiga,manufacturing_share_pct,26.8,41.75,23.43,18.33,2.02
+JPN,JP-09,Tochigi,manufacturing_share_pct,29.9,39.98,23.67,16.3,1.79
+JPN,JP-13,Tokyo,manufacturing_share_pct,22.8,7.33,23.11,-15.78,-1.74
+JPN,JP-01,Hokkaido,manufacturing_share_pct,32.8,8.68,23.9,-15.23,-1.67
+JPN,JP-24,Mie,manufacturing_share_pct,30.5,38.67,23.72,14.95,1.64
+JPN,JP-39,Kochi,manufacturing_share_pct,36.1,9.8,24.17,-14.37,-1.58
+JPN,JP-10,Gunma,manufacturing_share_pct,30.8,38.06,23.74,14.31,1.57
+JPN,JP-22,Shizuoka,manufacturing_share_pct,30.7,37.84,23.74,14.1,1.55
+JPN,JP-23,Aichi,manufacturing_share_pct,25.6,36.15,23.33,12.82,1.41
+JPN,JP-31,Tottori,manufacturing_share_pct,33.1,13.38,23.93,-10.55,-1.16
+JPN,JP-35,Yamaguchi,manufacturing_share_pct,35.2,34.63,24.1,10.53,1.16
+JPN,JP-02,Aomori,manufacturing_share_pct,34.8,13.72,24.06,-10.34,-1.14
+JPN,JP-08,Ibaraki,manufacturing_share_pct,30.4,33.87,23.71,10.15,1.12
+JPN,JP-46,Kagoshima,manufacturing_share_pct,33.5,14.02,23.96,-9.94,-1.09
+JPN,JP-40,Fukuoka,manufacturing_share_pct,28.3,14.22,23.55,-9.33,-1.03
+JPN,JP-04,Miyagi,manufacturing_share_pct,28.9,15.34,23.59,-8.25,-0.91
+JPN,JP-19,Yamanashi,manufacturing_share_pct,31.5,31.61,23.8,7.81,0.86
+JPN,JP-16,Toyama,manufacturing_share_pct,33.0,31.49,23.92,7.57,0.83
+JPN,JP-42,Nagasaki,manufacturing_share_pct,33.9,16.71,23.99,-7.28,-0.8
+JPN,JP-20,Nagano,manufacturing_share_pct,32.5,30.32,23.88,6.44,0.71
+JPN,JP-45,Miyazaki,manufacturing_share_pct,33.4,17.51,23.95,-6.44,-0.71
+JPN,JP-27,Osaka,manufacturing_share_pct,27.7,17.17,23.5,-6.33,-0.7
+JPN,JP-29,Nara,manufacturing_share_pct,32.4,17.73,23.87,-6.14,-0.68
+JPN,JP-32,Shimane,manufacturing_share_pct,34.7,17.87,24.06,-6.19,-0.68
+JPN,JP-03,Iwate,manufacturing_share_pct,34.6,18.1,24.05,-5.95,-0.65
+JPN,JP-21,Gifu,manufacturing_share_pct,31.0,29.13,23.76,5.37,0.59
+JPN,JP-36,Tokushima,manufacturing_share_pct,35.0,29.47,24.08,5.39,0.59
+JPN,JP-44,Oita,manufacturing_share_pct,33.9,29.33,23.99,5.34,0.59
+JPN,JP-14,Kanagawa,manufacturing_share_pct,25.8,18.19,23.35,-5.16,-0.57
+JPN,JP-12,Chiba,manufacturing_share_pct,28.0,18.41,23.52,-5.11,-0.56
+JPN,JP-05,Akita,manufacturing_share_pct,38.6,19.57,24.37,-4.8,-0.53
+JPN,JP-28,Hyogo,manufacturing_share_pct,29.8,28.36,23.67,4.7,0.52
+JPN,JP-26,Kyoto,manufacturing_share_pct,29.6,27.65,23.65,4.0,0.44
+JPN,JP-37,Kagawa,manufacturing_share_pct,32.4,20.62,23.87,-3.25,-0.36
+JPN,JP-30,Wakayama,manufacturing_share_pct,34.0,26.88,24.0,2.88,0.32
+JPN,JP-34,Hiroshima,manufacturing_share_pct,29.9,26.49,23.67,2.81,0.31
+JPN,JP-07,Fukushima,manufacturing_share_pct,32.7,26.56,23.9,2.66,0.29
+JPN,JP-06,Yamagata,manufacturing_share_pct,34.8,26.31,24.06,2.24,0.25
+JPN,JP-11,Saitama,manufacturing_share_pct,27.4,21.18,23.47,-2.29,-0.25
+JPN,JP-43,Kumamoto,manufacturing_share_pct,32.1,21.58,23.85,-2.27,-0.25
+JPN,JP-18,Fukui,manufacturing_share_pct,31.2,25.94,23.78,2.16,0.24
+JPN,JP-41,Saga,manufacturing_share_pct,31.4,25.83,23.79,2.03,0.22
+JPN,JP-33,Okayama,manufacturing_share_pct,30.8,25.51,23.74,1.76,0.19
+JPN,JP-15,Niigata,manufacturing_share_pct,33.5,22.47,23.96,-1.49,-0.16
+JPN,JP-38,Ehime,manufacturing_share_pct,33.9,25.2,23.99,1.2,0.13
+JPN,JP-17,Ishikawa,manufacturing_share_pct,30.3,23.46,23.71,-0.24,-0.03
