@@ -1,0 +1,7 @@
+{
+  "file": "wpp2024_selected_estimates.csv",
+  "sha256": "4b77f44e217cd34a988852a0676b7a8306f5b2b36fb443fa001bd2e728793040",
+  "rows": 46,
+  "parent": "wpp_ages.xlsx; Estimates sheet; ISO3 USA/JPN, years2000\u20132022; fields65+,15\u201364,0\u201314",
+  "original_manifest": "population_source_manifest.json"
+}

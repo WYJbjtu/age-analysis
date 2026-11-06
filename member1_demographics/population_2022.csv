@@ -1,0 +1,99 @@
+country,region_id,region_name,year,population_total,population_0_14,population_15_64,population_65plus,age65_share_pct,working_age_share_pct,old_age_dependency_ratio,population_reference_date,source_version,count_precision_persons,rate_method
+JPN,JP-01,Hokkaido,2022,5140000,530000,2924000,1686000,32.80000000,56.90000000,57.70000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-02,Aomori,2022,1204000,123000,663000,419000,34.80000000,55.00000000,63.10000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-03,Iwate,2022,1181000,125000,648000,408000,34.60000000,54.90000000,63.00000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-04,Miyagi,2022,2280000,258000,1363000,659000,28.90000000,59.80000000,48.40000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-05,Akita,2022,930000,86000,484000,359000,38.60000000,52.10000000,74.10000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-06,Yamagata,2022,1041000,113000,566000,362000,34.80000000,54.30000000,64.00000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-07,Fukushima,2022,1790000,197000,1007000,586000,32.70000000,56.30000000,58.20000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-08,Ibaraki,2022,2840000,321000,1655000,864000,30.40000000,58.30000000,52.20000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-09,Tochigi,2022,1909000,217000,1121000,572000,29.90000000,58.70000000,51.00000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-10,Gunma,2022,1913000,216000,1108000,589000,30.80000000,57.90000000,53.20000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-11,Saitama,2022,7337000,847000,4483000,2007000,27.40000000,61.10000000,44.80000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-12,Chiba,2022,6266000,717000,3796000,1753000,28.00000000,60.60000000,46.20000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-13,Tokyo,2022,14038000,1535000,9301000,3202000,22.80000000,66.30000000,34.40000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-14,Kanagawa,2022,9232000,1053000,5797000,2383000,25.80000000,62.80000000,41.10000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-15,Niigata,2022,2153000,235000,1195000,722000,33.50000000,55.50000000,60.40000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-16,Toyama,2022,1017000,111000,570000,335000,33.00000000,56.10000000,58.80000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-17,Ishikawa,2022,1118000,132000,648000,338000,30.30000000,57.90000000,52.30000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-18,Fukui,2022,753000,92000,426000,235000,31.20000000,56.60000000,55.20000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-19,Yamanashi,2022,802000,89000,460000,252000,31.50000000,57.40000000,54.90000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-20,Nagano,2022,2020000,235000,1129000,657000,32.50000000,55.90000000,58.20000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-21,Gifu,2022,1946000,231000,1111000,604000,31.00000000,57.10000000,54.40000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-22,Shizuoka,2022,3582000,417000,2064000,1101000,30.70000000,57.60000000,53.30000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-23,Aichi,2022,7495000,948000,4628000,1920000,25.60000000,61.70000000,41.50000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-24,Mie,2022,1742000,204000,1008000,531000,30.50000000,57.90000000,52.60000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-25,Shiga,2022,1409000,186000,845000,378000,26.80000000,60.00000000,44.70000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-26,Kyoto,2022,2550000,282000,1512000,755000,29.60000000,59.30000000,49.90000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-27,Osaka,2022,8782000,1002000,5349000,2432000,27.70000000,60.90000000,45.50000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-28,Hyogo,2022,5402000,644000,3151000,1608000,29.80000000,58.30000000,51.00000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-29,Nara,2022,1306000,148000,735000,423000,32.40000000,56.30000000,57.50000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-30,Wakayama,2022,903000,101000,495000,307000,34.00000000,54.80000000,62.00000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-31,Tottori,2022,544000,66000,298000,180000,33.10000000,54.80000000,60.40000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-32,Shimane,2022,658000,79000,350000,229000,34.70000000,53.30000000,65.20000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-33,Okayama,2022,1862000,225000,1063000,574000,30.80000000,57.10000000,54.10000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-34,Hiroshima,2022,2760000,340000,1594000,826000,29.90000000,57.70000000,51.90000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-35,Yamaguchi,2022,1313000,147000,704000,462000,35.20000000,53.60000000,65.60000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-36,Tokushima,2022,704000,75000,382000,246000,35.00000000,54.30000000,64.50000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-37,Kagawa,2022,934000,110000,522000,302000,32.40000000,55.80000000,58.00000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-38,Ehime,2022,1306000,147000,716000,443000,33.90000000,54.80000000,61.90000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-39,Kochi,2022,676000,72000,360000,244000,36.10000000,53.30000000,67.70000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-40,Fukuoka,2022,5116000,654000,3013000,1449000,28.30000000,58.90000000,48.10000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-41,Saga,2022,801000,105000,444000,251000,31.40000000,55.40000000,56.60000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-42,Nagasaki,2022,1283000,158000,690000,435000,33.90000000,53.80000000,63.00000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-43,Kumamoto,2022,1718000,223000,943000,552000,32.10000000,54.90000000,58.50000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-44,Oita,2022,1107000,131000,600000,376000,33.90000000,54.20000000,62.60000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-45,Miyazaki,2022,1052000,136000,565000,352000,33.40000000,53.70000000,62.30000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-46,Kagoshima,2022,1563000,201000,838000,523000,33.50000000,53.60000000,62.50000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+JPN,JP-47,Okinawa,2022,1468000,240000,884000,344000,23.50000000,60.20000000,39.00000000,2022-10-01,Japan annual population estimates 2022; released2023-04,1000,official published one-decimal share and dependency index
+USA,US-AK,Alaska,2022,733583,147596,484376,101611,13.85132971,66.02879292,20.97771153,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-AL,Alabama,2022,5074296,914019,3245544,914733,18.02679623,63.96047846,28.18427358,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-AR,Arkansas,2022,3045637,572356,1930925,542356,17.80763761,63.39970916,28.08788534,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-AZ,Arizona,2022,7359197,1296514,4680297,1382386,18.78446792,63.59793059,29.53628797,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-CA,California,2022,39029342,6962057,25911538,6155747,15.77210039,66.38989199,23.75677970,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-CO,Colorado,2022,5839926,994133,3931755,914038,15.65153394,67.32542501,23.24758282,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-CT,Connecticut,2022,3626205,591405,2371482,663318,18.29234696,65.39845376,27.97061078,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-DC,District of Columbia,2022,671803,107969,476574,87260,12.98892681,70.93954627,18.30985324,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-DE,Delaware,2022,1018396,171075,635477,211844,20.80173135,62.39979340,33.33621831,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-FL,Florida,2022,22244823,3524628,13925999,4794196,21.55196290,62.60332573,34.42622680,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-GA,Georgia,2022,10912876,2048305,7219544,1645027,15.07418393,66.15619934,22.78574658,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-HI,Hawaii,2022,1440196,249957,895874,294365,20.43923188,62.20500543,32.85785724,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-IA,Iowa,2022,3200517,594272,2020215,586030,18.31047921,63.12152068,29.00829862,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-ID,Idaho,2022,1939033,378018,1230563,330452,17.04210295,63.46271569,26.85372468,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-IL,Illinois,2022,12582032,2218061,8200674,2163297,17.19354235,65.17765970,26.37950247,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-IN,Indiana,2022,6833037,1288802,4388557,1155678,16.91309443,64.22557056,26.33389517,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-KS,Kansas,2022,2937150,567493,1865640,504017,17.16007014,63.51871712,27.01576939,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-KY,Kentucky,2022,4512310,826463,2892840,793007,17.57430230,64.10995698,27.41275010,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-LA,Louisiana,2022,4590241,876269,2933911,780061,16.99390076,63.91627368,26.58775266,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-MA,Massachusetts,2022,6981974,1090796,4630640,1260538,18.05417780,66.32279066,27.22167994,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-MD,Maryland,2022,6164660,1108484,4011967,1044209,16.93863084,65.08010174,26.02735765,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-ME,Maine,2022,1385340,201217,871899,312224,22.53771637,62.93754602,35.80965226,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-MI,Michigan,2022,10034113,1724898,6428880,1880335,18.73942420,64.07023720,29.24825164,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-MN,Minnesota,2022,5717184,1063570,3656082,997532,17.44796039,63.94900007,27.28418017,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-MO,Missouri,2022,6177957,1120822,3942780,1114355,18.03759722,63.82012694,28.26317979,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-MS,Mississippi,2022,2940057,552484,1880033,507540,17.26293062,63.94546092,26.99633464,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-MT,Montana,2022,1122867,191728,706013,225126,20.04921331,62.87592386,31.88694826,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-NC,North Carolina,2022,10698973,1880589,6956505,1861879,17.40240862,65.02030615,26.76457503,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-ND,North Dakota,2022,779261,153083,496250,129928,16.67323272,63.68212961,26.18196474,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-NE,Nebraska,2022,1967923,393338,1241529,333056,16.92423941,63.08829156,26.82627631,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-NH,New Hampshire,2022,1395231,204779,908946,281506,20.17630056,65.14663163,30.97059671,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-NJ,New Jersey,2022,9261699,1635152,6014780,1611767,17.40249818,64.94251217,26.79677395,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-NM,New Mexico,2022,2113344,373339,1336602,403403,19.08837369,63.24583220,30.18123570,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-NV,Nevada,2022,3177772,566299,2074469,537004,16.89875800,65.28061170,25.88633525,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-NY,New York,2022,19677151,3293299,12820276,3563576,18.11022338,65.15311083,27.79640626,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-OH,Ohio,2022,11756058,2102932,7490928,2162198,18.39220256,63.71972646,28.86422083,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-OK,Oklahoma,2022,4019800,785904,2573001,660895,16.44099209,64.00818449,25.68576538,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-OR,Oregon,2022,4240137,684623,2739836,815678,19.23706710,64.61668573,29.77105199,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-PA,Pennsylvania,2022,12972008,2150200,8279882,2541926,19.59547049,63.82883822,30.70002688,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-RI,Rhode Island,2022,1093734,166370,720954,206410,18.87204750,65.91675855,28.63012065,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-SC,South Carolina,2022,5282634,916475,3358150,1008009,19.08156045,63.56961319,30.01679496,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-SD,South Dakota,2022,909824,181781,564226,163817,18.00535049,62.01485122,29.03393321,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-TN,Tennessee,2022,7051339,1264773,4565577,1220989,17.31570415,64.74765998,26.74336672,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-TX,Texas,2022,30029572,6138803,19863716,4027053,13.41029103,66.14718318,20.27341208,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-UT,Utah,2022,3380800,762202,2213398,405200,11.98532892,65.46965215,18.30669405,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-VA,Virginia,2022,8683619,1536433,5682198,1464988,16.87070794,65.43582808,25.78206532,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-VT,Vermont,2022,647064,92975,414638,139451,21.55134577,64.07990554,33.63198742,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-WA,Washington,2022,7785786,1361375,5115851,1308560,16.80703785,65.70757275,25.57854011,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-WI,Wisconsin,2022,5892539,1015827,3774593,1102119,18.70363522,64.05715770,29.19835331,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-WV,West Virginia,2022,1775156,287496,1111561,376099,21.18681400,62.61765163,33.83521012,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
+USA,US-WY,Wyoming,2022,581381,105949,367373,108059,18.58660672,63.18971552,29.41397435,2022-07-01,Census Vintage2022; blended2020 base,1,calculated from resident counts
