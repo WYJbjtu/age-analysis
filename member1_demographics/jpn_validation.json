@@ -1,0 +1,13 @@
+{
+  "regions": 47,
+  "national_crosscheck": {
+    "total_population": 124947000,
+    "population_65plus": 36236000,
+    "age65_share_pct": 29.0
+  },
+  "unique_keys": true,
+  "missing_required": 0,
+  "published_rates_verified_against_rounded_counts": true,
+  "usa_rows_preserved": 51,
+  "migration_not_supplied": true
+}
