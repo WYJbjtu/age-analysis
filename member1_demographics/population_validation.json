@@ -1,0 +1,32 @@
+{
+  "panel_rows": 1176,
+  "countries": {
+    "USA": 612,
+    "JPN": 564
+  },
+  "regions_per_year": 98,
+  "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "national_trend_rows": 46,
+  "missing_cells": 0,
+  "duplicate_keys": 0,
+  "2022_existing_rates_unchanged": true,
+  "max_age_sum_residual_persons": 1000,
+  "max_rounded_rate_gap_pp": 0.10243161094224718,
+  "national_rows_excluded_from_regional_panel": true,
+  "source_vintage_break_USA": 2020,
+  "rates_calculated_JPN_history_but_published_JPN_2021_2022": true,
+  "independent_japan_2016_2019_table11_count_crosschecks": 188
+}

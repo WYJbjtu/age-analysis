@@ -2,10 +2,12 @@
 
 ## Member 1 — Population
 **Own:** `data/processed/demographics.csv` and `member1_demographics/`.
-- [ ] 验证美日2022年地区 65+ 占比的官方表格与统计参考日。
-- [ ] 填充 51 US + 47 JP 行；列出缺失及对应原因。
-- [ ] 全国长期趋势及两国地区分布图（图中注明源年份）。
-- [ ] 写 `findings.md`（两个带数值的可复核发现）。
+- [x] 验证美日2022年地区 65+ 占比的官方表格与统计参考日。
+- [x] 填充 51 US + 47 JP 行；列出缺失及对应原因。
+- [x] 全国长期趋势及两国地区分布图（图中注明源年份）。
+- [x] 写 `findings.md`（两个带数值的可复核发现）。
+
+Member1 update2026-11-06: 2019 contrast and2011–2022 population panel also delivered; see member1_demographics/README.md. Other modules retain independent ownership.
 
 ## Member 2 — Industry
 **Own:** `data/processed/industry.csv` and `member2_industry/`.
