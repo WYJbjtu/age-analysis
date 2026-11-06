@@ -33,7 +33,7 @@ The source values are revised estimates, not an untouched 2022 publication vinta
 
 The US definition and official footnotes are in [BEA's SAGDP download](https://apps.bea.gov/regional/zip/SAGDP.zip). Japan's published tertiary aggregate is in [the Cabinet Office nominal industry workbook](https://www.esri.cao.go.jp/jp/sna/data/data_list/kenmin/files/contents/tables/2022/syuyo1.xlsx); its component list is also documented by [Osaka Prefecture](https://www.pref.osaka.lg.jp/o040090/toukei/gdp/area.html).
 
-Japanese demographic records are not yet in the shared population table at this handoff. Member 4 can merge the industry data after Member 1 supplies them. No Japanese aging–industry relationship, causal effect, or Simpson's paradox has been estimated here.
+Update 2026-11-06: Japanese demographics now covers all 47 prefectures in the shared population table; see docs/japan_2022_handover.md. No Japanese aging–industry relationship, causal effect, or Simpson's paradox has been estimated here.
 
 ## Suggested presentation narration
 

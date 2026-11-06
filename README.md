@@ -76,7 +76,7 @@ aging-across-economies/
 git init -b main
 git add .
 git commit -m "chore: bootstrap aging economies research project"
-git remote add origin https://github.com/CityuHK-wyj/aging-across-economies.git
+git remote add origin https://github.com/WYJbjtu/age-analysis.git
 git push -u origin main
 ```
 

@@ -42,7 +42,7 @@ def main(year, response):
         text,fit = correlation_summary(frame,x,y,title)
         print(text)
         for c,sub in frame.groupby('country'):
-            ax.scatter(sub[x],sub[y],alpha=.75,label=LABELS.get(c,c),s=30)
+            ax.scatter(sub[x],sub[y],alpha=.75,label=LABELS.get(c,c),s=30,color={'USA':'#e88c32','JPN':'#378ec0'}.get(c))
         if fit is not None:
             valid,r=fit
             fit_x=np.linspace(valid[x].min(),valid[x].max(),100)
@@ -58,6 +58,7 @@ def main(year, response):
     if handles:
         axes[0].legend(handles,labels,loc='upper right')
     fig.suptitle(f'Regional aging and industrial composition, {year}\nUnweighted regional associations',fontsize=13)
+    fig.supxlabel('Sources: Census July 1, 2022; Statistics Bureau October 1, 2022; BEA CY2022; Cabinet Office FY2022.', fontsize=8)
     filename=f'correlation_{y}_{year}'
     fig.savefig(OUT/f'{filename}.svg',bbox_inches='tight')
     fig.savefig(OUT/f'{filename}.png',dpi=200,bbox_inches='tight')
