@@ -1,0 +1,82 @@
+[
+  {
+    "file": "us_2010_2020.csv",
+    "url": "https://www2.census.gov/programs-surveys/popest/datasets/2010-2020/state/asrh/SC-EST2020-ALLDATA6.csv",
+    "bytes": 20312277,
+    "sha256": "78731407b72e3221696ac6a346871c5a32c725255943d77dc75db143442a9f5a",
+    "retrieved_on": "2026-11-06",
+    "note": "Source release versions are documented in README; no silent revision mixing."
+  },
+  {
+    "file": "us_2020_2022.csv",
+    "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2022/state/asrh/sc-est2022-alldata6.csv",
+    "bytes": 11050100,
+    "sha256": "efc1ab9807e94f4f96a75b9ea82a29e7be4c6182459f1e2467a7239aaa914534",
+    "retrieved_on": "2026-10-30",
+    "note": "Source release versions are documented in README; no silent revision mixing."
+  },
+  {
+    "file": "jp_long.xlsx",
+    "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000013168610&fileKind=4",
+    "bytes": 139352,
+    "sha256": "171f76414f39348c6617891b49be2958f02bd91d4929cec9b6665090cc94ece8",
+    "retrieved_on": "2026-11-06",
+    "note": "Source release versions are documented in README; no silent revision mixing."
+  },
+  {
+    "file": "jp2021_table11.xlsx",
+    "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000032191052&fileKind=0",
+    "bytes": 28656,
+    "sha256": "93e817c1aaed980abbba2ca1d5aa33f6f1a2b862ab010201e3e3f028e1c823d6",
+    "retrieved_on": "2026-11-06",
+    "note": "Source release versions are documented in README; no silent revision mixing."
+  },
+  {
+    "file": "jp2021_table12.xlsx",
+    "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000032191053&fileKind=0",
+    "bytes": 28272,
+    "sha256": "2679926fde91d0ff1ca2df7cc8195bd19df8bdc98cb45b679ccd58251cf96b1e",
+    "retrieved_on": "2026-11-06",
+    "note": "Source release versions are documented in README; no silent revision mixing."
+  },
+  {
+    "file": "jp2021_table13.xlsx",
+    "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000032191054&fileKind=0",
+    "bytes": 19520,
+    "sha256": "30180a0184a95957f9b7e7d83d8826e64941dcfbbac1499d467f0b503794ae29",
+    "retrieved_on": "2026-11-06",
+    "note": "Source release versions are documented in README; no silent revision mixing."
+  },
+  {
+    "file": "jp2022_table11.xlsx",
+    "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040045497&fileKind=0",
+    "bytes": 27588,
+    "sha256": "60b5c1a87ac11c572dc493343fa73548a57e7b917695648d90f143426f1ad1d5",
+    "retrieved_on": "2026-11-06",
+    "note": "Source release versions are documented in README; no silent revision mixing."
+  },
+  {
+    "file": "jp2022_table12.xlsx",
+    "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040045498&fileKind=0",
+    "bytes": 27059,
+    "sha256": "ea82cfba1621a424ed9a428a05d12ffee89ac2a1cb5ea37e6450a8e7f3877755",
+    "retrieved_on": "2026-11-06",
+    "note": "Source release versions are documented in README; no silent revision mixing."
+  },
+  {
+    "file": "jp2022_table13.xlsx",
+    "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040045499&fileKind=0",
+    "bytes": 18436,
+    "sha256": "da7de5f7600801001bca3bfad01332981fea2c9c2d7fd44e29cede9cbd77836f",
+    "retrieved_on": "2026-11-06",
+    "note": "Source release versions are documented in README; no silent revision mixing."
+  },
+  {
+    "file": "wpp_ages.xlsx",
+    "url": "https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/EXCEL_FILES/2_Population/WPP2024_POP_F06_1_POPULATION_PERCENTAGE_SELECT_AGE_GROUPS_BOTH_SEXES.xlsx",
+    "bytes": 240345985,
+    "sha256": "82a72215a68a0c6a2060dd33adf38b9e6f3997c2653dc3eda0150f8d68d861b7",
+    "retrieved_on": "2026-11-06",
+    "note": "Source release versions are documented in README; no silent revision mixing."
+  }
+]
