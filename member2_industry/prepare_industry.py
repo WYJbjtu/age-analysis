@@ -1,6 +1,6 @@
-"""Reproduce Member 2's CY/FY2022 industry table from pinned official sources.
+"""Reproduce Member 2's 2011–2022 industry panel from pinned official sources.
 
-Uses only the Python standard library. US rows are verified and preserved;
+Uses only the Python standard library; all years come from the same source vintage.
 Japan services are the published tertiary aggregate, NOT harmonized US services.
 """
 from __future__ import annotations
@@ -27,7 +27,11 @@ from aging_economies.contracts import read_lookup, validate_table
 
 NS = {'s': 'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
 REL = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships'
-JP_SHEET = '2022（令和4）年度'
+YEARS = tuple(range(2011, 2023))
+BEA_TABLE = 'SAGDP2__ALL_AREAS_1997_2025.csv'
+FIELDS = ('country', 'region_id', 'year', 'manufacturing_share_pct',
+          'services_share_pct', 'nominal_gdp_local', 'manufacturing_va_local',
+          'services_va_local', 'gdp_reference_period')
 SERVICES = ('AD', 'AH', 'AP', 'AQ', 'AR', 'AU', 'AV', 'AY', 'AZ', 'BA', 'BB', 'BC')
 
 
@@ -69,15 +73,18 @@ def number(value):
     return result
 
 
-def japan_rows(cells, summary):
+def japan_rows(cells, summary, year):
     for cell, expected in {'I5': '製造業', 'BL5': '県内総生産', 'BO7': '第３次産業'}.items():
         if cells.get(cell) != expected:
             raise ValueError(f'Unexpected Japanese source layout: {cell}')
-    if '2022' not in cells.get('B3', '') or '100万円' not in cells.get('R3', ''):
+    if f'【{year}（' not in cells.get('B3', '') or '100万円' not in cells.get('R3', ''):
         raise ValueError('Japanese source year or monetary unit changed')
-    if str(summary.get('O5')) != '2022':
-        raise ValueError('GDP cross-check table is not FY2022')
-    gdp_checks = {str(summary[f'A{r}']).zfill(2): number(summary[f'O{r}'])
+    year_columns = [address[:-1] for address, value in summary.items()
+                    if re.fullmatch(r'[A-Z]+5', address) and str(value) == str(year)]
+    if len(year_columns) != 1:
+        raise ValueError(f'GDP cross-check table must have exactly one FY{year} column')
+    column = year_columns[0]
+    gdp_checks = {str(summary[f'A{r}']).zfill(2): number(summary[f'{column}{r}'])
                   for r in range(7, 54)}
     result, audit, seen = [], [], set()
     for address, code in cells.items():
@@ -94,21 +101,21 @@ def japan_rows(cells, summary):
         if gdp <= 0 or min(manufacturing, services) < 0 or manufacturing + services > gdp:
             raise ValueError(f'Invalid GDP components for JP-{code}')
         if gdp != gdp_checks[code]:
-            raise ValueError(f'GDP cross-check failed for JP-{code}')
+            raise ValueError(f'GDP cross-check failed for JP-{code}/{year}')
         service_gap = services - sum(get(col) for col in SERVICES)
         accounting_gap = gdp - (get('BI') + get('BJ') - get('BK'))
         # Published components rounded to JPY millions; allow accumulated rounding.
         if abs(service_gap) > 6 or abs(accounting_gap) > 2:
-            raise ValueError(f'Component reconciliation failed for JP-{code}')
+            raise ValueError(f'Component reconciliation failed for JP-{code}/{year}')
         result.append({
-            'country': 'JPN', 'region_id': f'JP-{code}', 'year': '2022',
+            'country': 'JPN', 'region_id': f'JP-{code}', 'year': str(year),
             'manufacturing_share_pct': f'{100 * manufacturing / gdp:.10f}',
             'services_share_pct': f'{100 * services / gdp:.10f}',
             'nominal_gdp_local': f'{gdp:.0f}',
             'manufacturing_va_local': f'{manufacturing:.0f}',
-            'services_va_local': f'{services:.0f}', 'gdp_reference_period': 'FY2022',
+            'services_va_local': f'{services:.0f}', 'gdp_reference_period': f'FY{year}',
         })
-        audit.append({'region_id': f'JP-{code}', 'source_row': int(row),
+        audit.append({'region_id': f'JP-{code}', 'year': year, 'source_row': int(row),
                       'region_name_ja': cells[f'B{row}'],
                       'gdp_matches_summary': True,
                       'services_rounding_gap_jpy_million': service_gap,
@@ -118,28 +125,43 @@ def japan_rows(cells, summary):
     return sorted(result, key=lambda r: r['region_id']), audit
 
 
-def verify_us(rows, lookup):
-    with ZipFile(RAW / 'SAGDP.zip') as archive:
-        filename = 'SAGDP2__ALL_AREAS_1997_2025.csv'
-        records = list(csv.DictReader(io.StringIO(archive.read(filename).decode('utf-8-sig'))))
-    values = {(r['GeoName'], r['LineCode']): r['2022'] for r in records
-              if r.get('LineCode') in ('1', '12', '92')}
+def usa_rows(records, lookup, years=YEARS):
+    """Build every year directly from one pinned BEA vintage, without a seed CSV."""
     names = {r['region_id']: r['region_name'] for r in lookup if r['country'] == 'USA'}
-    current = [r for r in rows if r['country'] == 'USA' and r['year'] == '2022']
-    if len(current) != 51 or {r['region_id'] for r in current} != set(names):
-        raise ValueError('Expected existing 51 USA rows for CY2022')
-    for row in current:
-        name = names[row['region_id']]
-        amounts = [number(values[name, line]) for line in ('1', '12', '92')]
-        for column, expected in zip(('nominal_gdp_local', 'manufacturing_va_local', 'services_va_local'), amounts):
-            if not math.isclose(number(row[column]), expected, abs_tol=0.00001, rel_tol=0):
-                raise ValueError(f'US source mismatch: {name}/{column}')
-        for column, amount in zip(('manufacturing_share_pct', 'services_share_pct'), amounts[1:]):
-            if not math.isclose(number(row[column]), 100 * amount / amounts[0], abs_tol=1e-7, rel_tol=0):
-                raise ValueError(f'US share mismatch: {name}/{column}')
-        if row['gdp_reference_period'] != 'CY2022':
-            raise ValueError(f'US reference period mismatch: {name}')
-    return len(current)
+    descriptions = {'1': 'All industry total', '12': 'Manufacturing',
+                    '92': 'Private services-providing industries 3/'}
+    source_rows = {}
+    for row in records:
+        name, line = row.get('GeoName'), row.get('LineCode')
+        if name not in names.values() or line not in descriptions:
+            continue
+        key = (name, line)
+        if key in source_rows:
+            raise ValueError(f'Duplicate BEA source row: {key}')
+        if (row['Description'].strip() != descriptions[line]
+                or row['Unit'] != 'Millions of current dollars'):
+            raise ValueError(f'Unexpected BEA definition or unit: {key}')
+        source_rows[key] = row
+    expected = {(name, line) for name in names.values() for line in descriptions}
+    if set(source_rows) != expected:
+        raise ValueError('Missing BEA region or industry source rows')
+    result = []
+    for rid, name in sorted(names.items()):
+        for year in years:
+            amounts = [number(source_rows[name, line].get(str(year), ''))
+                       for line in descriptions]
+            gdp, manufacturing, services = amounts
+            if gdp <= 0 or min(manufacturing, services) < 0 or manufacturing + services > gdp:
+                raise ValueError(f'Invalid GDP components for {rid}/{year}')
+            result.append({
+                'country': 'USA', 'region_id': rid, 'year': str(year),
+                'manufacturing_share_pct': f'{100 * manufacturing / gdp:.10f}',
+                'services_share_pct': f'{100 * services / gdp:.10f}',
+                'nominal_gdp_local': f'{gdp:.1f}',
+                'manufacturing_va_local': f'{manufacturing:.1f}',
+                'services_va_local': f'{services:.1f}', 'gdp_reference_period': f'CY{year}',
+            })
+    return result
 
 
 def ensure_sources(download):
@@ -166,14 +188,31 @@ def ensure_sources(download):
 def main(download=False):
     ensure_sources(download)
     path = ROOT / 'data/processed/industry.csv'
-    headers, current = read_csv(path)
+    headers, current = read_csv(path) if path.exists() else (list(FIELDS), [])
     _, lookup = read_csv(ROOT / 'data/reference/region_lookup.csv')
-    count = verify_us(current, lookup)
-    japanese, audit = japan_rows(xlsx_cells(RAW / 'syuyo1.xlsx', JP_SHEET),
-                                xlsx_cells(RAW / 'soukatu1.xlsx', '実数'))
-    # Re-running replaces only our Japanese 2022 rows, retaining all other values.
-    retained = [r for r in current if not (r['country'] == 'JPN' and r['year'] == '2022')]
-    output = sorted(retained + japanese, key=lambda r: (r['country'], r['region_id'], r['year']))
+    with ZipFile(RAW / 'SAGDP.zip') as archive:
+        records = csv.DictReader(io.StringIO(archive.read(BEA_TABLE).decode('utf-8-sig')))
+        american = usa_rows(records, lookup)
+    with ZipFile(RAW / 'syuyo1.xlsx') as archive:
+        sheets = ET.fromstring(archive.read('xl/workbook.xml')).find('s:sheets', NS)
+        sheet_names = [sheet.get('name') for sheet in sheets]
+    summary = xlsx_cells(RAW / 'soukatu1.xlsx', '実数')
+    japanese, audit = [], []
+    for year in YEARS:
+        matches = [name for name in sheet_names if name.startswith(f'{year}（')]
+        if len(matches) != 1:
+            raise ValueError(f'Expected exactly one Japanese source sheet for FY{year}')
+        rows, checks = japan_rows(xlsx_cells(RAW / 'syuyo1.xlsx', matches[0]), summary, year)
+        japanese.extend(rows)
+        audit.extend(checks)
+    expected_keys = {(r['country'], r['region_id'], str(year)) for r in lookup for year in YEARS}
+    generated = american + japanese
+    actual_keys = {(r['country'], r['region_id'], r['year']) for r in generated}
+    if len(generated) != len(expected_keys) or actual_keys != expected_keys:
+        raise ValueError('Expected the complete 98-region, 12-year industry panel')
+    # Preserve records outside the requested panel, if any, without using them as inputs.
+    retained = [r for r in current if (r['country'], r['region_id'], r['year']) not in expected_keys]
+    output = sorted(retained + generated, key=lambda r: (r['country'], r['region_id'], int(r['year'])))
     temporary = path.with_suffix('.csv.tmp')
     with temporary.open('w', encoding='utf-8', newline='') as stream:
         writer = csv.DictWriter(stream, fieldnames=headers, lineterminator='\n')
@@ -182,12 +221,14 @@ def main(download=False):
     validate_table(temporary, 'industry', read_lookup(ROOT / 'data/reference/region_lookup.csv'))
     temporary.replace(path)
     (MODULE / 'validation.json').write_text(json.dumps({
-        'usa_rows_reverified': count, 'jpn_rows_added_or_refreshed': len(japanese),
+        'years': list(YEARS), 'panel_rows': len(generated),
+        'usa_rows_generated': len(american), 'jpn_rows_generated': len(japanese),
+        'coverage_by_year': {str(year): {'USA': 51, 'JPN': 47} for year in YEARS},
         'jpn_gdp_crosschecks_passed': len(audit), 'jpn_checks': audit,
         'services_cross_country_comparable': False,
         'source_manifest': 'source_manifest.json',
     }, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    print(f'USA: {count} official-source checks passed; JPN: {len(japanese)} prefectures validated.')
+    print(f'2011–2022: {len(american)} USA + {len(japanese)} JPN = {len(generated)} validated rows.')
     print('Service definitions differ: use separate country panels; no pooled service comparison.')
 
 

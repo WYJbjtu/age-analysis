@@ -1,10 +1,76 @@
 {
-  "usa_rows_reverified": 51,
-  "jpn_rows_added_or_refreshed": 47,
-  "jpn_gdp_crosschecks_passed": 47,
+  "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "panel_rows": 1176,
+  "usa_rows_generated": 612,
+  "jpn_rows_generated": 564,
+  "coverage_by_year": {
+    "2011": {
+      "USA": 51,
+      "JPN": 47
+    },
+    "2012": {
+      "USA": 51,
+      "JPN": 47
+    },
+    "2013": {
+      "USA": 51,
+      "JPN": 47
+    },
+    "2014": {
+      "USA": 51,
+      "JPN": 47
+    },
+    "2015": {
+      "USA": 51,
+      "JPN": 47
+    },
+    "2016": {
+      "USA": 51,
+      "JPN": 47
+    },
+    "2017": {
+      "USA": 51,
+      "JPN": 47
+    },
+    "2018": {
+      "USA": 51,
+      "JPN": 47
+    },
+    "2019": {
+      "USA": 51,
+      "JPN": 47
+    },
+    "2020": {
+      "USA": 51,
+      "JPN": 47
+    },
+    "2021": {
+      "USA": 51,
+      "JPN": 47
+    },
+    "2022": {
+      "USA": 51,
+      "JPN": 47
+    }
+  },
+  "jpn_gdp_crosschecks_passed": 564,
   "jpn_checks": [
     {
       "region_id": "JP-01",
+      "year": 2011,
       "source_row": 9,
       "region_name_ja": "北海道",
       "gdp_matches_summary": true,
@@ -13,22 +79,25 @@
     },
     {
       "region_id": "JP-02",
+      "year": 2011,
       "source_row": 10,
       "region_name_ja": "青森県",
       "gdp_matches_summary": true,
-      "services_rounding_gap_jpy_million": 2.0,
+      "services_rounding_gap_jpy_million": -1.0,
       "gdp_rounding_gap_jpy_million": 0.0
     },
     {
       "region_id": "JP-03",
+      "year": 2011,
       "source_row": 11,
       "region_name_ja": "岩手県",
       "gdp_matches_summary": true,
-      "services_rounding_gap_jpy_million": 1.0,
+      "services_rounding_gap_jpy_million": 0.0,
       "gdp_rounding_gap_jpy_million": 0.0
     },
     {
       "region_id": "JP-04",
+      "year": 2011,
       "source_row": 12,
       "region_name_ja": "宮城県",
       "gdp_matches_summary": true,
@@ -37,6 +106,7 @@
     },
     {
       "region_id": "JP-05",
+      "year": 2011,
       "source_row": 13,
       "region_name_ja": "秋田県",
       "gdp_matches_summary": true,
@@ -45,6 +115,7 @@
     },
     {
       "region_id": "JP-06",
+      "year": 2011,
       "source_row": 14,
       "region_name_ja": "山形県",
       "gdp_matches_summary": true,
@@ -53,14 +124,16 @@
     },
     {
       "region_id": "JP-07",
+      "year": 2011,
       "source_row": 15,
       "region_name_ja": "福島県",
       "gdp_matches_summary": true,
-      "services_rounding_gap_jpy_million": 2.0,
-      "gdp_rounding_gap_jpy_million": 1.0
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
     },
     {
       "region_id": "JP-08",
+      "year": 2011,
       "source_row": 16,
       "region_name_ja": "茨城県",
       "gdp_matches_summary": true,
@@ -69,30 +142,34 @@
     },
     {
       "region_id": "JP-09",
+      "year": 2011,
       "source_row": 17,
       "region_name_ja": "栃木県",
       "gdp_matches_summary": true,
-      "services_rounding_gap_jpy_million": 0.0,
+      "services_rounding_gap_jpy_million": 1.0,
       "gdp_rounding_gap_jpy_million": 0.0
     },
     {
       "region_id": "JP-10",
+      "year": 2011,
       "source_row": 18,
       "region_name_ja": "群馬県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-11",
+      "year": 2011,
+      "source_row": 19,
+      "region_name_ja": "埼玉県",
       "gdp_matches_summary": true,
       "services_rounding_gap_jpy_million": -1.0,
       "gdp_rounding_gap_jpy_million": -1.0
     },
     {
-      "region_id": "JP-11",
-      "source_row": 19,
-      "region_name_ja": "埼玉県",
-      "gdp_matches_summary": true,
-      "services_rounding_gap_jpy_million": 0.0,
-      "gdp_rounding_gap_jpy_million": 0.0
-    },
-    {
       "region_id": "JP-12",
+      "year": 2011,
       "source_row": 20,
       "region_name_ja": "千葉県",
       "gdp_matches_summary": true,
@@ -101,14 +178,16 @@
     },
     {
       "region_id": "JP-13",
+      "year": 2011,
       "source_row": 21,
       "region_name_ja": "東京都",
       "gdp_matches_summary": true,
-      "services_rounding_gap_jpy_million": -1.0,
+      "services_rounding_gap_jpy_million": 0.0,
       "gdp_rounding_gap_jpy_million": 0.0
     },
     {
       "region_id": "JP-14",
+      "year": 2011,
       "source_row": 22,
       "region_name_ja": "神奈川県",
       "gdp_matches_summary": true,
@@ -117,6 +196,7 @@
     },
     {
       "region_id": "JP-15",
+      "year": 2011,
       "source_row": 23,
       "region_name_ja": "新潟県",
       "gdp_matches_summary": true,
@@ -125,30 +205,34 @@
     },
     {
       "region_id": "JP-16",
+      "year": 2011,
       "source_row": 24,
       "region_name_ja": "富山県",
       "gdp_matches_summary": true,
-      "services_rounding_gap_jpy_million": 0.0,
+      "services_rounding_gap_jpy_million": -2.0,
       "gdp_rounding_gap_jpy_million": 0.0
     },
     {
       "region_id": "JP-17",
+      "year": 2011,
       "source_row": 25,
       "region_name_ja": "石川県",
       "gdp_matches_summary": true,
       "services_rounding_gap_jpy_million": 1.0,
-      "gdp_rounding_gap_jpy_million": 0.0
+      "gdp_rounding_gap_jpy_million": 1.0
     },
     {
       "region_id": "JP-18",
+      "year": 2011,
       "source_row": 26,
       "region_name_ja": "福井県",
       "gdp_matches_summary": true,
-      "services_rounding_gap_jpy_million": -1.0,
+      "services_rounding_gap_jpy_million": 0.0,
       "gdp_rounding_gap_jpy_million": 1.0
     },
     {
       "region_id": "JP-19",
+      "year": 2011,
       "source_row": 27,
       "region_name_ja": "山梨県",
       "gdp_matches_summary": true,
@@ -157,6 +241,7 @@
     },
     {
       "region_id": "JP-20",
+      "year": 2011,
       "source_row": 28,
       "region_name_ja": "長野県",
       "gdp_matches_summary": true,
@@ -165,6 +250,7 @@
     },
     {
       "region_id": "JP-21",
+      "year": 2011,
       "source_row": 29,
       "region_name_ja": "岐阜県",
       "gdp_matches_summary": true,
@@ -173,22 +259,25 @@
     },
     {
       "region_id": "JP-22",
+      "year": 2011,
       "source_row": 30,
       "region_name_ja": "静岡県",
-      "gdp_matches_summary": true,
-      "services_rounding_gap_jpy_million": 0.0,
-      "gdp_rounding_gap_jpy_million": 1.0
-    },
-    {
-      "region_id": "JP-23",
-      "source_row": 31,
-      "region_name_ja": "愛知県",
       "gdp_matches_summary": true,
       "services_rounding_gap_jpy_million": 0.0,
       "gdp_rounding_gap_jpy_million": 0.0
     },
     {
+      "region_id": "JP-23",
+      "year": 2011,
+      "source_row": 31,
+      "region_name_ja": "愛知県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
       "region_id": "JP-24",
+      "year": 2011,
       "source_row": 32,
       "region_name_ja": "三重県",
       "gdp_matches_summary": true,
@@ -197,22 +286,25 @@
     },
     {
       "region_id": "JP-25",
+      "year": 2011,
       "source_row": 33,
       "region_name_ja": "滋賀県",
-      "gdp_matches_summary": true,
-      "services_rounding_gap_jpy_million": -2.0,
-      "gdp_rounding_gap_jpy_million": -1.0
-    },
-    {
-      "region_id": "JP-26",
-      "source_row": 34,
-      "region_name_ja": "京都府",
       "gdp_matches_summary": true,
       "services_rounding_gap_jpy_million": 0.0,
       "gdp_rounding_gap_jpy_million": -1.0
     },
     {
+      "region_id": "JP-26",
+      "year": 2011,
+      "source_row": 34,
+      "region_name_ja": "京都府",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
       "region_id": "JP-27",
+      "year": 2011,
       "source_row": 35,
       "region_name_ja": "大阪府",
       "gdp_matches_summary": true,
@@ -221,6 +313,7 @@
     },
     {
       "region_id": "JP-28",
+      "year": 2011,
       "source_row": 36,
       "region_name_ja": "兵庫県",
       "gdp_matches_summary": true,
@@ -229,6 +322,7 @@
     },
     {
       "region_id": "JP-29",
+      "year": 2011,
       "source_row": 37,
       "region_name_ja": "奈良県",
       "gdp_matches_summary": true,
@@ -237,46 +331,52 @@
     },
     {
       "region_id": "JP-30",
+      "year": 2011,
       "source_row": 38,
       "region_name_ja": "和歌山県",
       "gdp_matches_summary": true,
-      "services_rounding_gap_jpy_million": 0.0,
-      "gdp_rounding_gap_jpy_million": 0.0
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 1.0
     },
     {
       "region_id": "JP-31",
+      "year": 2011,
       "source_row": 39,
       "region_name_ja": "鳥取県",
       "gdp_matches_summary": true,
-      "services_rounding_gap_jpy_million": -2.0,
+      "services_rounding_gap_jpy_million": -1.0,
       "gdp_rounding_gap_jpy_million": 0.0
     },
     {
       "region_id": "JP-32",
+      "year": 2011,
       "source_row": 40,
       "region_name_ja": "島根県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-33",
+      "year": 2011,
+      "source_row": 41,
+      "region_name_ja": "岡山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -2.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-34",
+      "year": 2011,
+      "source_row": 42,
+      "region_name_ja": "広島県",
       "gdp_matches_summary": true,
       "services_rounding_gap_jpy_million": 0.0,
       "gdp_rounding_gap_jpy_million": 0.0
     },
     {
-      "region_id": "JP-33",
-      "source_row": 41,
-      "region_name_ja": "岡山県",
-      "gdp_matches_summary": true,
-      "services_rounding_gap_jpy_million": -1.0,
-      "gdp_rounding_gap_jpy_million": 1.0
-    },
-    {
-      "region_id": "JP-34",
-      "source_row": 42,
-      "region_name_ja": "広島県",
-      "gdp_matches_summary": true,
-      "services_rounding_gap_jpy_million": -1.0,
-      "gdp_rounding_gap_jpy_million": 1.0
-    },
-    {
       "region_id": "JP-35",
+      "year": 2011,
       "source_row": 43,
       "region_name_ja": "山口県",
       "gdp_matches_summary": true,
@@ -285,6 +385,7 @@
     },
     {
       "region_id": "JP-36",
+      "year": 2011,
       "source_row": 44,
       "region_name_ja": "徳島県",
       "gdp_matches_summary": true,
@@ -293,14 +394,16 @@
     },
     {
       "region_id": "JP-37",
+      "year": 2011,
       "source_row": 45,
       "region_name_ja": "香川県",
       "gdp_matches_summary": true,
-      "services_rounding_gap_jpy_million": 0.0,
-      "gdp_rounding_gap_jpy_million": 0.0
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
     },
     {
       "region_id": "JP-38",
+      "year": 2011,
       "source_row": 46,
       "region_name_ja": "愛媛県",
       "gdp_matches_summary": true,
@@ -309,6 +412,7 @@
     },
     {
       "region_id": "JP-39",
+      "year": 2011,
       "source_row": 47,
       "region_name_ja": "高知県",
       "gdp_matches_summary": true,
@@ -317,38 +421,43 @@
     },
     {
       "region_id": "JP-40",
+      "year": 2011,
       "source_row": 48,
       "region_name_ja": "福岡県",
-      "gdp_matches_summary": true,
-      "services_rounding_gap_jpy_million": -1.0,
-      "gdp_rounding_gap_jpy_million": 0.0
-    },
-    {
-      "region_id": "JP-41",
-      "source_row": 49,
-      "region_name_ja": "佐賀県",
-      "gdp_matches_summary": true,
-      "services_rounding_gap_jpy_million": 0.0,
-      "gdp_rounding_gap_jpy_million": 1.0
-    },
-    {
-      "region_id": "JP-42",
-      "source_row": 50,
-      "region_name_ja": "長崎県",
       "gdp_matches_summary": true,
       "services_rounding_gap_jpy_million": 1.0,
       "gdp_rounding_gap_jpy_million": 0.0
     },
     {
+      "region_id": "JP-41",
+      "year": 2011,
+      "source_row": 49,
+      "region_name_ja": "佐賀県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-42",
+      "year": 2011,
+      "source_row": 50,
+      "region_name_ja": "長崎県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
       "region_id": "JP-43",
+      "year": 2011,
       "source_row": 51,
       "region_name_ja": "熊本県",
       "gdp_matches_summary": true,
-      "services_rounding_gap_jpy_million": -1.0,
-      "gdp_rounding_gap_jpy_million": -1.0
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
     },
     {
       "region_id": "JP-44",
+      "year": 2011,
       "source_row": 52,
       "region_name_ja": "大分県",
       "gdp_matches_summary": true,
@@ -357,6 +466,7 @@
     },
     {
       "region_id": "JP-45",
+      "year": 2011,
       "source_row": 53,
       "region_name_ja": "宮崎県",
       "gdp_matches_summary": true,
@@ -365,6 +475,7 @@
     },
     {
       "region_id": "JP-46",
+      "year": 2011,
       "source_row": 54,
       "region_name_ja": "鹿児島県",
       "gdp_matches_summary": true,
@@ -373,6 +484,4660 @@
     },
     {
       "region_id": "JP-47",
+      "year": 2011,
+      "source_row": 55,
+      "region_name_ja": "沖縄県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-01",
+      "year": 2012,
+      "source_row": 9,
+      "region_name_ja": "北海道",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-02",
+      "year": 2012,
+      "source_row": 10,
+      "region_name_ja": "青森県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-03",
+      "year": 2012,
+      "source_row": 11,
+      "region_name_ja": "岩手県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-04",
+      "year": 2012,
+      "source_row": 12,
+      "region_name_ja": "宮城県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-05",
+      "year": 2012,
+      "source_row": 13,
+      "region_name_ja": "秋田県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-06",
+      "year": 2012,
+      "source_row": 14,
+      "region_name_ja": "山形県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-07",
+      "year": 2012,
+      "source_row": 15,
+      "region_name_ja": "福島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-08",
+      "year": 2012,
+      "source_row": 16,
+      "region_name_ja": "茨城県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-09",
+      "year": 2012,
+      "source_row": 17,
+      "region_name_ja": "栃木県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-10",
+      "year": 2012,
+      "source_row": 18,
+      "region_name_ja": "群馬県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-11",
+      "year": 2012,
+      "source_row": 19,
+      "region_name_ja": "埼玉県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-12",
+      "year": 2012,
+      "source_row": 20,
+      "region_name_ja": "千葉県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-13",
+      "year": 2012,
+      "source_row": 21,
+      "region_name_ja": "東京都",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-14",
+      "year": 2012,
+      "source_row": 22,
+      "region_name_ja": "神奈川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-15",
+      "year": 2012,
+      "source_row": 23,
+      "region_name_ja": "新潟県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-16",
+      "year": 2012,
+      "source_row": 24,
+      "region_name_ja": "富山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-17",
+      "year": 2012,
+      "source_row": 25,
+      "region_name_ja": "石川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-18",
+      "year": 2012,
+      "source_row": 26,
+      "region_name_ja": "福井県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 3.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-19",
+      "year": 2012,
+      "source_row": 27,
+      "region_name_ja": "山梨県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-20",
+      "year": 2012,
+      "source_row": 28,
+      "region_name_ja": "長野県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-21",
+      "year": 2012,
+      "source_row": 29,
+      "region_name_ja": "岐阜県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-22",
+      "year": 2012,
+      "source_row": 30,
+      "region_name_ja": "静岡県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-23",
+      "year": 2012,
+      "source_row": 31,
+      "region_name_ja": "愛知県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-24",
+      "year": 2012,
+      "source_row": 32,
+      "region_name_ja": "三重県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-25",
+      "year": 2012,
+      "source_row": 33,
+      "region_name_ja": "滋賀県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-26",
+      "year": 2012,
+      "source_row": 34,
+      "region_name_ja": "京都府",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-27",
+      "year": 2012,
+      "source_row": 35,
+      "region_name_ja": "大阪府",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-28",
+      "year": 2012,
+      "source_row": 36,
+      "region_name_ja": "兵庫県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-29",
+      "year": 2012,
+      "source_row": 37,
+      "region_name_ja": "奈良県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-30",
+      "year": 2012,
+      "source_row": 38,
+      "region_name_ja": "和歌山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-31",
+      "year": 2012,
+      "source_row": 39,
+      "region_name_ja": "鳥取県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-32",
+      "year": 2012,
+      "source_row": 40,
+      "region_name_ja": "島根県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-33",
+      "year": 2012,
+      "source_row": 41,
+      "region_name_ja": "岡山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-34",
+      "year": 2012,
+      "source_row": 42,
+      "region_name_ja": "広島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-35",
+      "year": 2012,
+      "source_row": 43,
+      "region_name_ja": "山口県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-36",
+      "year": 2012,
+      "source_row": 44,
+      "region_name_ja": "徳島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-37",
+      "year": 2012,
+      "source_row": 45,
+      "region_name_ja": "香川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-38",
+      "year": 2012,
+      "source_row": 46,
+      "region_name_ja": "愛媛県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-39",
+      "year": 2012,
+      "source_row": 47,
+      "region_name_ja": "高知県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-40",
+      "year": 2012,
+      "source_row": 48,
+      "region_name_ja": "福岡県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-41",
+      "year": 2012,
+      "source_row": 49,
+      "region_name_ja": "佐賀県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-42",
+      "year": 2012,
+      "source_row": 50,
+      "region_name_ja": "長崎県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-43",
+      "year": 2012,
+      "source_row": 51,
+      "region_name_ja": "熊本県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-44",
+      "year": 2012,
+      "source_row": 52,
+      "region_name_ja": "大分県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-45",
+      "year": 2012,
+      "source_row": 53,
+      "region_name_ja": "宮崎県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-46",
+      "year": 2012,
+      "source_row": 54,
+      "region_name_ja": "鹿児島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-47",
+      "year": 2012,
+      "source_row": 55,
+      "region_name_ja": "沖縄県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-01",
+      "year": 2013,
+      "source_row": 9,
+      "region_name_ja": "北海道",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-02",
+      "year": 2013,
+      "source_row": 10,
+      "region_name_ja": "青森県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-03",
+      "year": 2013,
+      "source_row": 11,
+      "region_name_ja": "岩手県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-04",
+      "year": 2013,
+      "source_row": 12,
+      "region_name_ja": "宮城県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-05",
+      "year": 2013,
+      "source_row": 13,
+      "region_name_ja": "秋田県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-06",
+      "year": 2013,
+      "source_row": 14,
+      "region_name_ja": "山形県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-07",
+      "year": 2013,
+      "source_row": 15,
+      "region_name_ja": "福島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-08",
+      "year": 2013,
+      "source_row": 16,
+      "region_name_ja": "茨城県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-09",
+      "year": 2013,
+      "source_row": 17,
+      "region_name_ja": "栃木県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -2.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-10",
+      "year": 2013,
+      "source_row": 18,
+      "region_name_ja": "群馬県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-11",
+      "year": 2013,
+      "source_row": 19,
+      "region_name_ja": "埼玉県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-12",
+      "year": 2013,
+      "source_row": 20,
+      "region_name_ja": "千葉県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-13",
+      "year": 2013,
+      "source_row": 21,
+      "region_name_ja": "東京都",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-14",
+      "year": 2013,
+      "source_row": 22,
+      "region_name_ja": "神奈川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-15",
+      "year": 2013,
+      "source_row": 23,
+      "region_name_ja": "新潟県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-16",
+      "year": 2013,
+      "source_row": 24,
+      "region_name_ja": "富山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-17",
+      "year": 2013,
+      "source_row": 25,
+      "region_name_ja": "石川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-18",
+      "year": 2013,
+      "source_row": 26,
+      "region_name_ja": "福井県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-19",
+      "year": 2013,
+      "source_row": 27,
+      "region_name_ja": "山梨県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-20",
+      "year": 2013,
+      "source_row": 28,
+      "region_name_ja": "長野県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-21",
+      "year": 2013,
+      "source_row": 29,
+      "region_name_ja": "岐阜県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-22",
+      "year": 2013,
+      "source_row": 30,
+      "region_name_ja": "静岡県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-23",
+      "year": 2013,
+      "source_row": 31,
+      "region_name_ja": "愛知県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 2.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-24",
+      "year": 2013,
+      "source_row": 32,
+      "region_name_ja": "三重県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-25",
+      "year": 2013,
+      "source_row": 33,
+      "region_name_ja": "滋賀県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-26",
+      "year": 2013,
+      "source_row": 34,
+      "region_name_ja": "京都府",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-27",
+      "year": 2013,
+      "source_row": 35,
+      "region_name_ja": "大阪府",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-28",
+      "year": 2013,
+      "source_row": 36,
+      "region_name_ja": "兵庫県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-29",
+      "year": 2013,
+      "source_row": 37,
+      "region_name_ja": "奈良県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-30",
+      "year": 2013,
+      "source_row": 38,
+      "region_name_ja": "和歌山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-31",
+      "year": 2013,
+      "source_row": 39,
+      "region_name_ja": "鳥取県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-32",
+      "year": 2013,
+      "source_row": 40,
+      "region_name_ja": "島根県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-33",
+      "year": 2013,
+      "source_row": 41,
+      "region_name_ja": "岡山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-34",
+      "year": 2013,
+      "source_row": 42,
+      "region_name_ja": "広島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-35",
+      "year": 2013,
+      "source_row": 43,
+      "region_name_ja": "山口県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-36",
+      "year": 2013,
+      "source_row": 44,
+      "region_name_ja": "徳島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-37",
+      "year": 2013,
+      "source_row": 45,
+      "region_name_ja": "香川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-38",
+      "year": 2013,
+      "source_row": 46,
+      "region_name_ja": "愛媛県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-39",
+      "year": 2013,
+      "source_row": 47,
+      "region_name_ja": "高知県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-40",
+      "year": 2013,
+      "source_row": 48,
+      "region_name_ja": "福岡県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-41",
+      "year": 2013,
+      "source_row": 49,
+      "region_name_ja": "佐賀県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-42",
+      "year": 2013,
+      "source_row": 50,
+      "region_name_ja": "長崎県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-43",
+      "year": 2013,
+      "source_row": 51,
+      "region_name_ja": "熊本県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-44",
+      "year": 2013,
+      "source_row": 52,
+      "region_name_ja": "大分県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-45",
+      "year": 2013,
+      "source_row": 53,
+      "region_name_ja": "宮崎県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-46",
+      "year": 2013,
+      "source_row": 54,
+      "region_name_ja": "鹿児島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-47",
+      "year": 2013,
+      "source_row": 55,
+      "region_name_ja": "沖縄県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-01",
+      "year": 2014,
+      "source_row": 9,
+      "region_name_ja": "北海道",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-02",
+      "year": 2014,
+      "source_row": 10,
+      "region_name_ja": "青森県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-03",
+      "year": 2014,
+      "source_row": 11,
+      "region_name_ja": "岩手県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-04",
+      "year": 2014,
+      "source_row": 12,
+      "region_name_ja": "宮城県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-05",
+      "year": 2014,
+      "source_row": 13,
+      "region_name_ja": "秋田県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-06",
+      "year": 2014,
+      "source_row": 14,
+      "region_name_ja": "山形県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-07",
+      "year": 2014,
+      "source_row": 15,
+      "region_name_ja": "福島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-08",
+      "year": 2014,
+      "source_row": 16,
+      "region_name_ja": "茨城県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-09",
+      "year": 2014,
+      "source_row": 17,
+      "region_name_ja": "栃木県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-10",
+      "year": 2014,
+      "source_row": 18,
+      "region_name_ja": "群馬県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-11",
+      "year": 2014,
+      "source_row": 19,
+      "region_name_ja": "埼玉県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 2.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-12",
+      "year": 2014,
+      "source_row": 20,
+      "region_name_ja": "千葉県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-13",
+      "year": 2014,
+      "source_row": 21,
+      "region_name_ja": "東京都",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-14",
+      "year": 2014,
+      "source_row": 22,
+      "region_name_ja": "神奈川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-15",
+      "year": 2014,
+      "source_row": 23,
+      "region_name_ja": "新潟県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-16",
+      "year": 2014,
+      "source_row": 24,
+      "region_name_ja": "富山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-17",
+      "year": 2014,
+      "source_row": 25,
+      "region_name_ja": "石川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-18",
+      "year": 2014,
+      "source_row": 26,
+      "region_name_ja": "福井県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-19",
+      "year": 2014,
+      "source_row": 27,
+      "region_name_ja": "山梨県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-20",
+      "year": 2014,
+      "source_row": 28,
+      "region_name_ja": "長野県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-21",
+      "year": 2014,
+      "source_row": 29,
+      "region_name_ja": "岐阜県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-22",
+      "year": 2014,
+      "source_row": 30,
+      "region_name_ja": "静岡県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-23",
+      "year": 2014,
+      "source_row": 31,
+      "region_name_ja": "愛知県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-24",
+      "year": 2014,
+      "source_row": 32,
+      "region_name_ja": "三重県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-25",
+      "year": 2014,
+      "source_row": 33,
+      "region_name_ja": "滋賀県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-26",
+      "year": 2014,
+      "source_row": 34,
+      "region_name_ja": "京都府",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -2.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-27",
+      "year": 2014,
+      "source_row": 35,
+      "region_name_ja": "大阪府",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-28",
+      "year": 2014,
+      "source_row": 36,
+      "region_name_ja": "兵庫県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-29",
+      "year": 2014,
+      "source_row": 37,
+      "region_name_ja": "奈良県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-30",
+      "year": 2014,
+      "source_row": 38,
+      "region_name_ja": "和歌山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-31",
+      "year": 2014,
+      "source_row": 39,
+      "region_name_ja": "鳥取県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-32",
+      "year": 2014,
+      "source_row": 40,
+      "region_name_ja": "島根県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-33",
+      "year": 2014,
+      "source_row": 41,
+      "region_name_ja": "岡山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-34",
+      "year": 2014,
+      "source_row": 42,
+      "region_name_ja": "広島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-35",
+      "year": 2014,
+      "source_row": 43,
+      "region_name_ja": "山口県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-36",
+      "year": 2014,
+      "source_row": 44,
+      "region_name_ja": "徳島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-37",
+      "year": 2014,
+      "source_row": 45,
+      "region_name_ja": "香川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-38",
+      "year": 2014,
+      "source_row": 46,
+      "region_name_ja": "愛媛県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-39",
+      "year": 2014,
+      "source_row": 47,
+      "region_name_ja": "高知県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-40",
+      "year": 2014,
+      "source_row": 48,
+      "region_name_ja": "福岡県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-41",
+      "year": 2014,
+      "source_row": 49,
+      "region_name_ja": "佐賀県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-42",
+      "year": 2014,
+      "source_row": 50,
+      "region_name_ja": "長崎県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-43",
+      "year": 2014,
+      "source_row": 51,
+      "region_name_ja": "熊本県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-44",
+      "year": 2014,
+      "source_row": 52,
+      "region_name_ja": "大分県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-45",
+      "year": 2014,
+      "source_row": 53,
+      "region_name_ja": "宮崎県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-46",
+      "year": 2014,
+      "source_row": 54,
+      "region_name_ja": "鹿児島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-47",
+      "year": 2014,
+      "source_row": 55,
+      "region_name_ja": "沖縄県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-01",
+      "year": 2015,
+      "source_row": 9,
+      "region_name_ja": "北海道",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-02",
+      "year": 2015,
+      "source_row": 10,
+      "region_name_ja": "青森県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 3.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-03",
+      "year": 2015,
+      "source_row": 11,
+      "region_name_ja": "岩手県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-04",
+      "year": 2015,
+      "source_row": 12,
+      "region_name_ja": "宮城県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-05",
+      "year": 2015,
+      "source_row": 13,
+      "region_name_ja": "秋田県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-06",
+      "year": 2015,
+      "source_row": 14,
+      "region_name_ja": "山形県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-07",
+      "year": 2015,
+      "source_row": 15,
+      "region_name_ja": "福島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-08",
+      "year": 2015,
+      "source_row": 16,
+      "region_name_ja": "茨城県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-09",
+      "year": 2015,
+      "source_row": 17,
+      "region_name_ja": "栃木県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-10",
+      "year": 2015,
+      "source_row": 18,
+      "region_name_ja": "群馬県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-11",
+      "year": 2015,
+      "source_row": 19,
+      "region_name_ja": "埼玉県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-12",
+      "year": 2015,
+      "source_row": 20,
+      "region_name_ja": "千葉県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-13",
+      "year": 2015,
+      "source_row": 21,
+      "region_name_ja": "東京都",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-14",
+      "year": 2015,
+      "source_row": 22,
+      "region_name_ja": "神奈川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-15",
+      "year": 2015,
+      "source_row": 23,
+      "region_name_ja": "新潟県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-16",
+      "year": 2015,
+      "source_row": 24,
+      "region_name_ja": "富山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-17",
+      "year": 2015,
+      "source_row": 25,
+      "region_name_ja": "石川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-18",
+      "year": 2015,
+      "source_row": 26,
+      "region_name_ja": "福井県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-19",
+      "year": 2015,
+      "source_row": 27,
+      "region_name_ja": "山梨県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-20",
+      "year": 2015,
+      "source_row": 28,
+      "region_name_ja": "長野県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-21",
+      "year": 2015,
+      "source_row": 29,
+      "region_name_ja": "岐阜県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-22",
+      "year": 2015,
+      "source_row": 30,
+      "region_name_ja": "静岡県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-23",
+      "year": 2015,
+      "source_row": 31,
+      "region_name_ja": "愛知県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-24",
+      "year": 2015,
+      "source_row": 32,
+      "region_name_ja": "三重県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-25",
+      "year": 2015,
+      "source_row": 33,
+      "region_name_ja": "滋賀県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-26",
+      "year": 2015,
+      "source_row": 34,
+      "region_name_ja": "京都府",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-27",
+      "year": 2015,
+      "source_row": 35,
+      "region_name_ja": "大阪府",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-28",
+      "year": 2015,
+      "source_row": 36,
+      "region_name_ja": "兵庫県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-29",
+      "year": 2015,
+      "source_row": 37,
+      "region_name_ja": "奈良県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-30",
+      "year": 2015,
+      "source_row": 38,
+      "region_name_ja": "和歌山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-31",
+      "year": 2015,
+      "source_row": 39,
+      "region_name_ja": "鳥取県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-32",
+      "year": 2015,
+      "source_row": 40,
+      "region_name_ja": "島根県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-33",
+      "year": 2015,
+      "source_row": 41,
+      "region_name_ja": "岡山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-34",
+      "year": 2015,
+      "source_row": 42,
+      "region_name_ja": "広島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-35",
+      "year": 2015,
+      "source_row": 43,
+      "region_name_ja": "山口県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-36",
+      "year": 2015,
+      "source_row": 44,
+      "region_name_ja": "徳島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-37",
+      "year": 2015,
+      "source_row": 45,
+      "region_name_ja": "香川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-38",
+      "year": 2015,
+      "source_row": 46,
+      "region_name_ja": "愛媛県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-39",
+      "year": 2015,
+      "source_row": 47,
+      "region_name_ja": "高知県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-40",
+      "year": 2015,
+      "source_row": 48,
+      "region_name_ja": "福岡県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-41",
+      "year": 2015,
+      "source_row": 49,
+      "region_name_ja": "佐賀県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-42",
+      "year": 2015,
+      "source_row": 50,
+      "region_name_ja": "長崎県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 3.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-43",
+      "year": 2015,
+      "source_row": 51,
+      "region_name_ja": "熊本県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-44",
+      "year": 2015,
+      "source_row": 52,
+      "region_name_ja": "大分県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-45",
+      "year": 2015,
+      "source_row": 53,
+      "region_name_ja": "宮崎県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-46",
+      "year": 2015,
+      "source_row": 54,
+      "region_name_ja": "鹿児島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-47",
+      "year": 2015,
+      "source_row": 55,
+      "region_name_ja": "沖縄県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-01",
+      "year": 2016,
+      "source_row": 9,
+      "region_name_ja": "北海道",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-02",
+      "year": 2016,
+      "source_row": 10,
+      "region_name_ja": "青森県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-03",
+      "year": 2016,
+      "source_row": 11,
+      "region_name_ja": "岩手県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-04",
+      "year": 2016,
+      "source_row": 12,
+      "region_name_ja": "宮城県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-05",
+      "year": 2016,
+      "source_row": 13,
+      "region_name_ja": "秋田県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-06",
+      "year": 2016,
+      "source_row": 14,
+      "region_name_ja": "山形県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-07",
+      "year": 2016,
+      "source_row": 15,
+      "region_name_ja": "福島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-08",
+      "year": 2016,
+      "source_row": 16,
+      "region_name_ja": "茨城県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-09",
+      "year": 2016,
+      "source_row": 17,
+      "region_name_ja": "栃木県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-10",
+      "year": 2016,
+      "source_row": 18,
+      "region_name_ja": "群馬県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-11",
+      "year": 2016,
+      "source_row": 19,
+      "region_name_ja": "埼玉県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-12",
+      "year": 2016,
+      "source_row": 20,
+      "region_name_ja": "千葉県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-13",
+      "year": 2016,
+      "source_row": 21,
+      "region_name_ja": "東京都",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-14",
+      "year": 2016,
+      "source_row": 22,
+      "region_name_ja": "神奈川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-15",
+      "year": 2016,
+      "source_row": 23,
+      "region_name_ja": "新潟県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-16",
+      "year": 2016,
+      "source_row": 24,
+      "region_name_ja": "富山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-17",
+      "year": 2016,
+      "source_row": 25,
+      "region_name_ja": "石川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-18",
+      "year": 2016,
+      "source_row": 26,
+      "region_name_ja": "福井県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-19",
+      "year": 2016,
+      "source_row": 27,
+      "region_name_ja": "山梨県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-20",
+      "year": 2016,
+      "source_row": 28,
+      "region_name_ja": "長野県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-21",
+      "year": 2016,
+      "source_row": 29,
+      "region_name_ja": "岐阜県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-22",
+      "year": 2016,
+      "source_row": 30,
+      "region_name_ja": "静岡県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-23",
+      "year": 2016,
+      "source_row": 31,
+      "region_name_ja": "愛知県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-24",
+      "year": 2016,
+      "source_row": 32,
+      "region_name_ja": "三重県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-25",
+      "year": 2016,
+      "source_row": 33,
+      "region_name_ja": "滋賀県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-26",
+      "year": 2016,
+      "source_row": 34,
+      "region_name_ja": "京都府",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-27",
+      "year": 2016,
+      "source_row": 35,
+      "region_name_ja": "大阪府",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-28",
+      "year": 2016,
+      "source_row": 36,
+      "region_name_ja": "兵庫県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-29",
+      "year": 2016,
+      "source_row": 37,
+      "region_name_ja": "奈良県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-30",
+      "year": 2016,
+      "source_row": 38,
+      "region_name_ja": "和歌山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-31",
+      "year": 2016,
+      "source_row": 39,
+      "region_name_ja": "鳥取県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-32",
+      "year": 2016,
+      "source_row": 40,
+      "region_name_ja": "島根県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-33",
+      "year": 2016,
+      "source_row": 41,
+      "region_name_ja": "岡山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-34",
+      "year": 2016,
+      "source_row": 42,
+      "region_name_ja": "広島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-35",
+      "year": 2016,
+      "source_row": 43,
+      "region_name_ja": "山口県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-36",
+      "year": 2016,
+      "source_row": 44,
+      "region_name_ja": "徳島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-37",
+      "year": 2016,
+      "source_row": 45,
+      "region_name_ja": "香川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-38",
+      "year": 2016,
+      "source_row": 46,
+      "region_name_ja": "愛媛県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-39",
+      "year": 2016,
+      "source_row": 47,
+      "region_name_ja": "高知県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-40",
+      "year": 2016,
+      "source_row": 48,
+      "region_name_ja": "福岡県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-41",
+      "year": 2016,
+      "source_row": 49,
+      "region_name_ja": "佐賀県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-42",
+      "year": 2016,
+      "source_row": 50,
+      "region_name_ja": "長崎県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-43",
+      "year": 2016,
+      "source_row": 51,
+      "region_name_ja": "熊本県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-44",
+      "year": 2016,
+      "source_row": 52,
+      "region_name_ja": "大分県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-45",
+      "year": 2016,
+      "source_row": 53,
+      "region_name_ja": "宮崎県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-46",
+      "year": 2016,
+      "source_row": 54,
+      "region_name_ja": "鹿児島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-47",
+      "year": 2016,
+      "source_row": 55,
+      "region_name_ja": "沖縄県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-01",
+      "year": 2017,
+      "source_row": 9,
+      "region_name_ja": "北海道",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-02",
+      "year": 2017,
+      "source_row": 10,
+      "region_name_ja": "青森県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-03",
+      "year": 2017,
+      "source_row": 11,
+      "region_name_ja": "岩手県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-04",
+      "year": 2017,
+      "source_row": 12,
+      "region_name_ja": "宮城県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-05",
+      "year": 2017,
+      "source_row": 13,
+      "region_name_ja": "秋田県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-06",
+      "year": 2017,
+      "source_row": 14,
+      "region_name_ja": "山形県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-07",
+      "year": 2017,
+      "source_row": 15,
+      "region_name_ja": "福島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-08",
+      "year": 2017,
+      "source_row": 16,
+      "region_name_ja": "茨城県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-09",
+      "year": 2017,
+      "source_row": 17,
+      "region_name_ja": "栃木県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-10",
+      "year": 2017,
+      "source_row": 18,
+      "region_name_ja": "群馬県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-11",
+      "year": 2017,
+      "source_row": 19,
+      "region_name_ja": "埼玉県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-12",
+      "year": 2017,
+      "source_row": 20,
+      "region_name_ja": "千葉県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-13",
+      "year": 2017,
+      "source_row": 21,
+      "region_name_ja": "東京都",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-14",
+      "year": 2017,
+      "source_row": 22,
+      "region_name_ja": "神奈川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-15",
+      "year": 2017,
+      "source_row": 23,
+      "region_name_ja": "新潟県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-16",
+      "year": 2017,
+      "source_row": 24,
+      "region_name_ja": "富山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-17",
+      "year": 2017,
+      "source_row": 25,
+      "region_name_ja": "石川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-18",
+      "year": 2017,
+      "source_row": 26,
+      "region_name_ja": "福井県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-19",
+      "year": 2017,
+      "source_row": 27,
+      "region_name_ja": "山梨県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-20",
+      "year": 2017,
+      "source_row": 28,
+      "region_name_ja": "長野県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-21",
+      "year": 2017,
+      "source_row": 29,
+      "region_name_ja": "岐阜県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-22",
+      "year": 2017,
+      "source_row": 30,
+      "region_name_ja": "静岡県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-23",
+      "year": 2017,
+      "source_row": 31,
+      "region_name_ja": "愛知県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 3.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-24",
+      "year": 2017,
+      "source_row": 32,
+      "region_name_ja": "三重県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-25",
+      "year": 2017,
+      "source_row": 33,
+      "region_name_ja": "滋賀県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -2.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-26",
+      "year": 2017,
+      "source_row": 34,
+      "region_name_ja": "京都府",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-27",
+      "year": 2017,
+      "source_row": 35,
+      "region_name_ja": "大阪府",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-28",
+      "year": 2017,
+      "source_row": 36,
+      "region_name_ja": "兵庫県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-29",
+      "year": 2017,
+      "source_row": 37,
+      "region_name_ja": "奈良県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-30",
+      "year": 2017,
+      "source_row": 38,
+      "region_name_ja": "和歌山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-31",
+      "year": 2017,
+      "source_row": 39,
+      "region_name_ja": "鳥取県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-32",
+      "year": 2017,
+      "source_row": 40,
+      "region_name_ja": "島根県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-33",
+      "year": 2017,
+      "source_row": 41,
+      "region_name_ja": "岡山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-34",
+      "year": 2017,
+      "source_row": 42,
+      "region_name_ja": "広島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-35",
+      "year": 2017,
+      "source_row": 43,
+      "region_name_ja": "山口県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-36",
+      "year": 2017,
+      "source_row": 44,
+      "region_name_ja": "徳島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-37",
+      "year": 2017,
+      "source_row": 45,
+      "region_name_ja": "香川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-38",
+      "year": 2017,
+      "source_row": 46,
+      "region_name_ja": "愛媛県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-39",
+      "year": 2017,
+      "source_row": 47,
+      "region_name_ja": "高知県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-40",
+      "year": 2017,
+      "source_row": 48,
+      "region_name_ja": "福岡県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-41",
+      "year": 2017,
+      "source_row": 49,
+      "region_name_ja": "佐賀県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-42",
+      "year": 2017,
+      "source_row": 50,
+      "region_name_ja": "長崎県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-43",
+      "year": 2017,
+      "source_row": 51,
+      "region_name_ja": "熊本県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-44",
+      "year": 2017,
+      "source_row": 52,
+      "region_name_ja": "大分県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-45",
+      "year": 2017,
+      "source_row": 53,
+      "region_name_ja": "宮崎県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-46",
+      "year": 2017,
+      "source_row": 54,
+      "region_name_ja": "鹿児島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-47",
+      "year": 2017,
+      "source_row": 55,
+      "region_name_ja": "沖縄県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-01",
+      "year": 2018,
+      "source_row": 9,
+      "region_name_ja": "北海道",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-02",
+      "year": 2018,
+      "source_row": 10,
+      "region_name_ja": "青森県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 3.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-03",
+      "year": 2018,
+      "source_row": 11,
+      "region_name_ja": "岩手県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 3.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-04",
+      "year": 2018,
+      "source_row": 12,
+      "region_name_ja": "宮城県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-05",
+      "year": 2018,
+      "source_row": 13,
+      "region_name_ja": "秋田県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-06",
+      "year": 2018,
+      "source_row": 14,
+      "region_name_ja": "山形県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-07",
+      "year": 2018,
+      "source_row": 15,
+      "region_name_ja": "福島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-08",
+      "year": 2018,
+      "source_row": 16,
+      "region_name_ja": "茨城県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-09",
+      "year": 2018,
+      "source_row": 17,
+      "region_name_ja": "栃木県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-10",
+      "year": 2018,
+      "source_row": 18,
+      "region_name_ja": "群馬県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-11",
+      "year": 2018,
+      "source_row": 19,
+      "region_name_ja": "埼玉県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-12",
+      "year": 2018,
+      "source_row": 20,
+      "region_name_ja": "千葉県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-13",
+      "year": 2018,
+      "source_row": 21,
+      "region_name_ja": "東京都",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-14",
+      "year": 2018,
+      "source_row": 22,
+      "region_name_ja": "神奈川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-15",
+      "year": 2018,
+      "source_row": 23,
+      "region_name_ja": "新潟県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-16",
+      "year": 2018,
+      "source_row": 24,
+      "region_name_ja": "富山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-17",
+      "year": 2018,
+      "source_row": 25,
+      "region_name_ja": "石川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-18",
+      "year": 2018,
+      "source_row": 26,
+      "region_name_ja": "福井県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-19",
+      "year": 2018,
+      "source_row": 27,
+      "region_name_ja": "山梨県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-20",
+      "year": 2018,
+      "source_row": 28,
+      "region_name_ja": "長野県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-21",
+      "year": 2018,
+      "source_row": 29,
+      "region_name_ja": "岐阜県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-22",
+      "year": 2018,
+      "source_row": 30,
+      "region_name_ja": "静岡県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-23",
+      "year": 2018,
+      "source_row": 31,
+      "region_name_ja": "愛知県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-24",
+      "year": 2018,
+      "source_row": 32,
+      "region_name_ja": "三重県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-25",
+      "year": 2018,
+      "source_row": 33,
+      "region_name_ja": "滋賀県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-26",
+      "year": 2018,
+      "source_row": 34,
+      "region_name_ja": "京都府",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-27",
+      "year": 2018,
+      "source_row": 35,
+      "region_name_ja": "大阪府",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-28",
+      "year": 2018,
+      "source_row": 36,
+      "region_name_ja": "兵庫県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-29",
+      "year": 2018,
+      "source_row": 37,
+      "region_name_ja": "奈良県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-30",
+      "year": 2018,
+      "source_row": 38,
+      "region_name_ja": "和歌山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-31",
+      "year": 2018,
+      "source_row": 39,
+      "region_name_ja": "鳥取県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-32",
+      "year": 2018,
+      "source_row": 40,
+      "region_name_ja": "島根県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-33",
+      "year": 2018,
+      "source_row": 41,
+      "region_name_ja": "岡山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-34",
+      "year": 2018,
+      "source_row": 42,
+      "region_name_ja": "広島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-35",
+      "year": 2018,
+      "source_row": 43,
+      "region_name_ja": "山口県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-36",
+      "year": 2018,
+      "source_row": 44,
+      "region_name_ja": "徳島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-37",
+      "year": 2018,
+      "source_row": 45,
+      "region_name_ja": "香川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 3.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-38",
+      "year": 2018,
+      "source_row": 46,
+      "region_name_ja": "愛媛県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-39",
+      "year": 2018,
+      "source_row": 47,
+      "region_name_ja": "高知県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-40",
+      "year": 2018,
+      "source_row": 48,
+      "region_name_ja": "福岡県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-41",
+      "year": 2018,
+      "source_row": 49,
+      "region_name_ja": "佐賀県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-42",
+      "year": 2018,
+      "source_row": 50,
+      "region_name_ja": "長崎県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-43",
+      "year": 2018,
+      "source_row": 51,
+      "region_name_ja": "熊本県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-44",
+      "year": 2018,
+      "source_row": 52,
+      "region_name_ja": "大分県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-45",
+      "year": 2018,
+      "source_row": 53,
+      "region_name_ja": "宮崎県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-46",
+      "year": 2018,
+      "source_row": 54,
+      "region_name_ja": "鹿児島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-47",
+      "year": 2018,
+      "source_row": 55,
+      "region_name_ja": "沖縄県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-01",
+      "year": 2019,
+      "source_row": 9,
+      "region_name_ja": "北海道",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-02",
+      "year": 2019,
+      "source_row": 10,
+      "region_name_ja": "青森県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-03",
+      "year": 2019,
+      "source_row": 11,
+      "region_name_ja": "岩手県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-04",
+      "year": 2019,
+      "source_row": 12,
+      "region_name_ja": "宮城県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-05",
+      "year": 2019,
+      "source_row": 13,
+      "region_name_ja": "秋田県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-06",
+      "year": 2019,
+      "source_row": 14,
+      "region_name_ja": "山形県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-07",
+      "year": 2019,
+      "source_row": 15,
+      "region_name_ja": "福島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-08",
+      "year": 2019,
+      "source_row": 16,
+      "region_name_ja": "茨城県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-09",
+      "year": 2019,
+      "source_row": 17,
+      "region_name_ja": "栃木県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-10",
+      "year": 2019,
+      "source_row": 18,
+      "region_name_ja": "群馬県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-11",
+      "year": 2019,
+      "source_row": 19,
+      "region_name_ja": "埼玉県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-12",
+      "year": 2019,
+      "source_row": 20,
+      "region_name_ja": "千葉県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-13",
+      "year": 2019,
+      "source_row": 21,
+      "region_name_ja": "東京都",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-14",
+      "year": 2019,
+      "source_row": 22,
+      "region_name_ja": "神奈川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-15",
+      "year": 2019,
+      "source_row": 23,
+      "region_name_ja": "新潟県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-16",
+      "year": 2019,
+      "source_row": 24,
+      "region_name_ja": "富山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-17",
+      "year": 2019,
+      "source_row": 25,
+      "region_name_ja": "石川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-18",
+      "year": 2019,
+      "source_row": 26,
+      "region_name_ja": "福井県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-19",
+      "year": 2019,
+      "source_row": 27,
+      "region_name_ja": "山梨県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-20",
+      "year": 2019,
+      "source_row": 28,
+      "region_name_ja": "長野県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-21",
+      "year": 2019,
+      "source_row": 29,
+      "region_name_ja": "岐阜県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-22",
+      "year": 2019,
+      "source_row": 30,
+      "region_name_ja": "静岡県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-23",
+      "year": 2019,
+      "source_row": 31,
+      "region_name_ja": "愛知県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-24",
+      "year": 2019,
+      "source_row": 32,
+      "region_name_ja": "三重県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-25",
+      "year": 2019,
+      "source_row": 33,
+      "region_name_ja": "滋賀県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-26",
+      "year": 2019,
+      "source_row": 34,
+      "region_name_ja": "京都府",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-27",
+      "year": 2019,
+      "source_row": 35,
+      "region_name_ja": "大阪府",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-28",
+      "year": 2019,
+      "source_row": 36,
+      "region_name_ja": "兵庫県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-29",
+      "year": 2019,
+      "source_row": 37,
+      "region_name_ja": "奈良県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-30",
+      "year": 2019,
+      "source_row": 38,
+      "region_name_ja": "和歌山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-31",
+      "year": 2019,
+      "source_row": 39,
+      "region_name_ja": "鳥取県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-32",
+      "year": 2019,
+      "source_row": 40,
+      "region_name_ja": "島根県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-33",
+      "year": 2019,
+      "source_row": 41,
+      "region_name_ja": "岡山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-34",
+      "year": 2019,
+      "source_row": 42,
+      "region_name_ja": "広島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-35",
+      "year": 2019,
+      "source_row": 43,
+      "region_name_ja": "山口県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-36",
+      "year": 2019,
+      "source_row": 44,
+      "region_name_ja": "徳島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-37",
+      "year": 2019,
+      "source_row": 45,
+      "region_name_ja": "香川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-38",
+      "year": 2019,
+      "source_row": 46,
+      "region_name_ja": "愛媛県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-39",
+      "year": 2019,
+      "source_row": 47,
+      "region_name_ja": "高知県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-40",
+      "year": 2019,
+      "source_row": 48,
+      "region_name_ja": "福岡県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-41",
+      "year": 2019,
+      "source_row": 49,
+      "region_name_ja": "佐賀県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-42",
+      "year": 2019,
+      "source_row": 50,
+      "region_name_ja": "長崎県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-43",
+      "year": 2019,
+      "source_row": 51,
+      "region_name_ja": "熊本県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-44",
+      "year": 2019,
+      "source_row": 52,
+      "region_name_ja": "大分県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-45",
+      "year": 2019,
+      "source_row": 53,
+      "region_name_ja": "宮崎県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-46",
+      "year": 2019,
+      "source_row": 54,
+      "region_name_ja": "鹿児島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-47",
+      "year": 2019,
+      "source_row": 55,
+      "region_name_ja": "沖縄県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-01",
+      "year": 2020,
+      "source_row": 9,
+      "region_name_ja": "北海道",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-02",
+      "year": 2020,
+      "source_row": 10,
+      "region_name_ja": "青森県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-03",
+      "year": 2020,
+      "source_row": 11,
+      "region_name_ja": "岩手県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-04",
+      "year": 2020,
+      "source_row": 12,
+      "region_name_ja": "宮城県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-05",
+      "year": 2020,
+      "source_row": 13,
+      "region_name_ja": "秋田県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-06",
+      "year": 2020,
+      "source_row": 14,
+      "region_name_ja": "山形県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-07",
+      "year": 2020,
+      "source_row": 15,
+      "region_name_ja": "福島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-08",
+      "year": 2020,
+      "source_row": 16,
+      "region_name_ja": "茨城県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-09",
+      "year": 2020,
+      "source_row": 17,
+      "region_name_ja": "栃木県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-10",
+      "year": 2020,
+      "source_row": 18,
+      "region_name_ja": "群馬県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-11",
+      "year": 2020,
+      "source_row": 19,
+      "region_name_ja": "埼玉県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-12",
+      "year": 2020,
+      "source_row": 20,
+      "region_name_ja": "千葉県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-13",
+      "year": 2020,
+      "source_row": 21,
+      "region_name_ja": "東京都",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-14",
+      "year": 2020,
+      "source_row": 22,
+      "region_name_ja": "神奈川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-15",
+      "year": 2020,
+      "source_row": 23,
+      "region_name_ja": "新潟県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-16",
+      "year": 2020,
+      "source_row": 24,
+      "region_name_ja": "富山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-17",
+      "year": 2020,
+      "source_row": 25,
+      "region_name_ja": "石川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-18",
+      "year": 2020,
+      "source_row": 26,
+      "region_name_ja": "福井県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-19",
+      "year": 2020,
+      "source_row": 27,
+      "region_name_ja": "山梨県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-20",
+      "year": 2020,
+      "source_row": 28,
+      "region_name_ja": "長野県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-21",
+      "year": 2020,
+      "source_row": 29,
+      "region_name_ja": "岐阜県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-22",
+      "year": 2020,
+      "source_row": 30,
+      "region_name_ja": "静岡県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-23",
+      "year": 2020,
+      "source_row": 31,
+      "region_name_ja": "愛知県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-24",
+      "year": 2020,
+      "source_row": 32,
+      "region_name_ja": "三重県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-25",
+      "year": 2020,
+      "source_row": 33,
+      "region_name_ja": "滋賀県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-26",
+      "year": 2020,
+      "source_row": 34,
+      "region_name_ja": "京都府",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-27",
+      "year": 2020,
+      "source_row": 35,
+      "region_name_ja": "大阪府",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-28",
+      "year": 2020,
+      "source_row": 36,
+      "region_name_ja": "兵庫県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-29",
+      "year": 2020,
+      "source_row": 37,
+      "region_name_ja": "奈良県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-30",
+      "year": 2020,
+      "source_row": 38,
+      "region_name_ja": "和歌山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-31",
+      "year": 2020,
+      "source_row": 39,
+      "region_name_ja": "鳥取県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-32",
+      "year": 2020,
+      "source_row": 40,
+      "region_name_ja": "島根県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-33",
+      "year": 2020,
+      "source_row": 41,
+      "region_name_ja": "岡山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-34",
+      "year": 2020,
+      "source_row": 42,
+      "region_name_ja": "広島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-35",
+      "year": 2020,
+      "source_row": 43,
+      "region_name_ja": "山口県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-36",
+      "year": 2020,
+      "source_row": 44,
+      "region_name_ja": "徳島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-37",
+      "year": 2020,
+      "source_row": 45,
+      "region_name_ja": "香川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-38",
+      "year": 2020,
+      "source_row": 46,
+      "region_name_ja": "愛媛県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-39",
+      "year": 2020,
+      "source_row": 47,
+      "region_name_ja": "高知県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-40",
+      "year": 2020,
+      "source_row": 48,
+      "region_name_ja": "福岡県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-41",
+      "year": 2020,
+      "source_row": 49,
+      "region_name_ja": "佐賀県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-42",
+      "year": 2020,
+      "source_row": 50,
+      "region_name_ja": "長崎県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-43",
+      "year": 2020,
+      "source_row": 51,
+      "region_name_ja": "熊本県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-44",
+      "year": 2020,
+      "source_row": 52,
+      "region_name_ja": "大分県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-45",
+      "year": 2020,
+      "source_row": 53,
+      "region_name_ja": "宮崎県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-46",
+      "year": 2020,
+      "source_row": 54,
+      "region_name_ja": "鹿児島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-47",
+      "year": 2020,
+      "source_row": 55,
+      "region_name_ja": "沖縄県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-01",
+      "year": 2021,
+      "source_row": 9,
+      "region_name_ja": "北海道",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-02",
+      "year": 2021,
+      "source_row": 10,
+      "region_name_ja": "青森県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-03",
+      "year": 2021,
+      "source_row": 11,
+      "region_name_ja": "岩手県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-04",
+      "year": 2021,
+      "source_row": 12,
+      "region_name_ja": "宮城県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-05",
+      "year": 2021,
+      "source_row": 13,
+      "region_name_ja": "秋田県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-06",
+      "year": 2021,
+      "source_row": 14,
+      "region_name_ja": "山形県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-07",
+      "year": 2021,
+      "source_row": 15,
+      "region_name_ja": "福島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-08",
+      "year": 2021,
+      "source_row": 16,
+      "region_name_ja": "茨城県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-09",
+      "year": 2021,
+      "source_row": 17,
+      "region_name_ja": "栃木県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-10",
+      "year": 2021,
+      "source_row": 18,
+      "region_name_ja": "群馬県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-11",
+      "year": 2021,
+      "source_row": 19,
+      "region_name_ja": "埼玉県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-12",
+      "year": 2021,
+      "source_row": 20,
+      "region_name_ja": "千葉県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-13",
+      "year": 2021,
+      "source_row": 21,
+      "region_name_ja": "東京都",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-14",
+      "year": 2021,
+      "source_row": 22,
+      "region_name_ja": "神奈川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-15",
+      "year": 2021,
+      "source_row": 23,
+      "region_name_ja": "新潟県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-16",
+      "year": 2021,
+      "source_row": 24,
+      "region_name_ja": "富山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 2.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-17",
+      "year": 2021,
+      "source_row": 25,
+      "region_name_ja": "石川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -3.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-18",
+      "year": 2021,
+      "source_row": 26,
+      "region_name_ja": "福井県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-19",
+      "year": 2021,
+      "source_row": 27,
+      "region_name_ja": "山梨県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-20",
+      "year": 2021,
+      "source_row": 28,
+      "region_name_ja": "長野県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-21",
+      "year": 2021,
+      "source_row": 29,
+      "region_name_ja": "岐阜県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-22",
+      "year": 2021,
+      "source_row": 30,
+      "region_name_ja": "静岡県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-23",
+      "year": 2021,
+      "source_row": 31,
+      "region_name_ja": "愛知県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-24",
+      "year": 2021,
+      "source_row": 32,
+      "region_name_ja": "三重県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-25",
+      "year": 2021,
+      "source_row": 33,
+      "region_name_ja": "滋賀県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-26",
+      "year": 2021,
+      "source_row": 34,
+      "region_name_ja": "京都府",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-27",
+      "year": 2021,
+      "source_row": 35,
+      "region_name_ja": "大阪府",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-28",
+      "year": 2021,
+      "source_row": 36,
+      "region_name_ja": "兵庫県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-29",
+      "year": 2021,
+      "source_row": 37,
+      "region_name_ja": "奈良県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-30",
+      "year": 2021,
+      "source_row": 38,
+      "region_name_ja": "和歌山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-31",
+      "year": 2021,
+      "source_row": 39,
+      "region_name_ja": "鳥取県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-32",
+      "year": 2021,
+      "source_row": 40,
+      "region_name_ja": "島根県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-33",
+      "year": 2021,
+      "source_row": 41,
+      "region_name_ja": "岡山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-34",
+      "year": 2021,
+      "source_row": 42,
+      "region_name_ja": "広島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-35",
+      "year": 2021,
+      "source_row": 43,
+      "region_name_ja": "山口県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-36",
+      "year": 2021,
+      "source_row": 44,
+      "region_name_ja": "徳島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-37",
+      "year": 2021,
+      "source_row": 45,
+      "region_name_ja": "香川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-38",
+      "year": 2021,
+      "source_row": 46,
+      "region_name_ja": "愛媛県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-39",
+      "year": 2021,
+      "source_row": 47,
+      "region_name_ja": "高知県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-40",
+      "year": 2021,
+      "source_row": 48,
+      "region_name_ja": "福岡県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-41",
+      "year": 2021,
+      "source_row": 49,
+      "region_name_ja": "佐賀県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-42",
+      "year": 2021,
+      "source_row": 50,
+      "region_name_ja": "長崎県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-43",
+      "year": 2021,
+      "source_row": 51,
+      "region_name_ja": "熊本県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-44",
+      "year": 2021,
+      "source_row": 52,
+      "region_name_ja": "大分県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-45",
+      "year": 2021,
+      "source_row": 53,
+      "region_name_ja": "宮崎県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 3.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-46",
+      "year": 2021,
+      "source_row": 54,
+      "region_name_ja": "鹿児島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-47",
+      "year": 2021,
+      "source_row": 55,
+      "region_name_ja": "沖縄県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-01",
+      "year": 2022,
+      "source_row": 9,
+      "region_name_ja": "北海道",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-02",
+      "year": 2022,
+      "source_row": 10,
+      "region_name_ja": "青森県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-03",
+      "year": 2022,
+      "source_row": 11,
+      "region_name_ja": "岩手県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-04",
+      "year": 2022,
+      "source_row": 12,
+      "region_name_ja": "宮城県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-05",
+      "year": 2022,
+      "source_row": 13,
+      "region_name_ja": "秋田県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-06",
+      "year": 2022,
+      "source_row": 14,
+      "region_name_ja": "山形県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-07",
+      "year": 2022,
+      "source_row": 15,
+      "region_name_ja": "福島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 2.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-08",
+      "year": 2022,
+      "source_row": 16,
+      "region_name_ja": "茨城県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-09",
+      "year": 2022,
+      "source_row": 17,
+      "region_name_ja": "栃木県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-10",
+      "year": 2022,
+      "source_row": 18,
+      "region_name_ja": "群馬県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-11",
+      "year": 2022,
+      "source_row": 19,
+      "region_name_ja": "埼玉県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-12",
+      "year": 2022,
+      "source_row": 20,
+      "region_name_ja": "千葉県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-13",
+      "year": 2022,
+      "source_row": 21,
+      "region_name_ja": "東京都",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-14",
+      "year": 2022,
+      "source_row": 22,
+      "region_name_ja": "神奈川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-15",
+      "year": 2022,
+      "source_row": 23,
+      "region_name_ja": "新潟県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-16",
+      "year": 2022,
+      "source_row": 24,
+      "region_name_ja": "富山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-17",
+      "year": 2022,
+      "source_row": 25,
+      "region_name_ja": "石川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-18",
+      "year": 2022,
+      "source_row": 26,
+      "region_name_ja": "福井県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-19",
+      "year": 2022,
+      "source_row": 27,
+      "region_name_ja": "山梨県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-20",
+      "year": 2022,
+      "source_row": 28,
+      "region_name_ja": "長野県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-21",
+      "year": 2022,
+      "source_row": 29,
+      "region_name_ja": "岐阜県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-22",
+      "year": 2022,
+      "source_row": 30,
+      "region_name_ja": "静岡県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-23",
+      "year": 2022,
+      "source_row": 31,
+      "region_name_ja": "愛知県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-24",
+      "year": 2022,
+      "source_row": 32,
+      "region_name_ja": "三重県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-25",
+      "year": 2022,
+      "source_row": 33,
+      "region_name_ja": "滋賀県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -2.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-26",
+      "year": 2022,
+      "source_row": 34,
+      "region_name_ja": "京都府",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-27",
+      "year": 2022,
+      "source_row": 35,
+      "region_name_ja": "大阪府",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-28",
+      "year": 2022,
+      "source_row": 36,
+      "region_name_ja": "兵庫県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-29",
+      "year": 2022,
+      "source_row": 37,
+      "region_name_ja": "奈良県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-30",
+      "year": 2022,
+      "source_row": 38,
+      "region_name_ja": "和歌山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-31",
+      "year": 2022,
+      "source_row": 39,
+      "region_name_ja": "鳥取県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -2.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-32",
+      "year": 2022,
+      "source_row": 40,
+      "region_name_ja": "島根県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-33",
+      "year": 2022,
+      "source_row": 41,
+      "region_name_ja": "岡山県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-34",
+      "year": 2022,
+      "source_row": 42,
+      "region_name_ja": "広島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-35",
+      "year": 2022,
+      "source_row": 43,
+      "region_name_ja": "山口県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-36",
+      "year": 2022,
+      "source_row": 44,
+      "region_name_ja": "徳島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-37",
+      "year": 2022,
+      "source_row": 45,
+      "region_name_ja": "香川県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-38",
+      "year": 2022,
+      "source_row": 46,
+      "region_name_ja": "愛媛県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-39",
+      "year": 2022,
+      "source_row": 47,
+      "region_name_ja": "高知県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-40",
+      "year": 2022,
+      "source_row": 48,
+      "region_name_ja": "福岡県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-41",
+      "year": 2022,
+      "source_row": 49,
+      "region_name_ja": "佐賀県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 1.0
+    },
+    {
+      "region_id": "JP-42",
+      "year": 2022,
+      "source_row": 50,
+      "region_name_ja": "長崎県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 1.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-43",
+      "year": 2022,
+      "source_row": 51,
+      "region_name_ja": "熊本県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": -1.0,
+      "gdp_rounding_gap_jpy_million": -1.0
+    },
+    {
+      "region_id": "JP-44",
+      "year": 2022,
+      "source_row": 52,
+      "region_name_ja": "大分県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-45",
+      "year": 2022,
+      "source_row": 53,
+      "region_name_ja": "宮崎県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-46",
+      "year": 2022,
+      "source_row": 54,
+      "region_name_ja": "鹿児島県",
+      "gdp_matches_summary": true,
+      "services_rounding_gap_jpy_million": 0.0,
+      "gdp_rounding_gap_jpy_million": 0.0
+    },
+    {
+      "region_id": "JP-47",
+      "year": 2022,
       "source_row": 55,
       "region_name_ja": "沖縄県",
       "gdp_matches_summary": true,

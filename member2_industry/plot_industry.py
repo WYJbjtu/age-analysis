@@ -13,16 +13,18 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'member2_industry/figures'
 TEAL, GOLD, GREY = '#247C78', '#D99A37', '#DEE3E8'
 INK = '#223447'
+YEARS = tuple(range(2011, 2023))
 
 
 def load_data():
     df = pd.read_csv(ROOT / 'data/processed/industry.csv')
-    df = df.loc[df.year == 2022].copy()
+    df = df.loc[df.year.isin(YEARS)].copy()
     lookup = pd.read_csv(ROOT / 'data/reference/region_lookup.csv')
     df = df.merge(lookup[['country', 'region_id', 'region_name']],
-                  on=['country', 'region_id'], validate='one_to_one')
-    if df.groupby('country').size().to_dict() != {'JPN': 47, 'USA': 51}:
-        raise ValueError('Charts require the complete 98-region 2022 cross-section')
+                  on=['country', 'region_id'], validate='many_to_one')
+    expected = {(r.country, r.region_id, year) for r in lookup.itertuples() for year in YEARS}
+    if len(df) != len(expected) or set(df[['country', 'region_id', 'year']].itertuples(index=False, name=None)) != expected:
+        raise ValueError('Charts require the complete 98-region, 12-year panel')
     if df[['manufacturing_share_pct', 'services_share_pct']].isna().any().any():
         raise ValueError('Missing shares: do not silently drop regions')
     df['other_share_pct'] = 100 - df.manufacturing_share_pct - df.services_share_pct
@@ -34,7 +36,7 @@ def load_data():
 def save(fig, name):
     fig.savefig(OUT / f'{name}.png', dpi=180, facecolor='white')
     svg = OUT / f'{name}.svg'
-    fig.savefig(svg, facecolor='white')
+    fig.savefig(svg, facecolor='white', metadata={'Date': None})
     # Matplotlib adds trailing spaces to SVG paths; keep generated files Git-clean.
     svg.write_text('\n'.join(line.rstrip() for line in svg.read_text(encoding='utf-8').splitlines())
                    + '\n', encoding='utf-8')
@@ -142,17 +144,96 @@ def summarize(df):
     return result
 
 
+def summarize_trends(df):
+    rows = []
+    for (country, year), sub in df.groupby(['country', 'year']):
+        row = {'country': country, 'year': int(year), 'regions': len(sub)}
+        for sector in ('manufacturing', 'services'):
+            values = sub[f'{sector}_share_pct']
+            for label, quantile in [('q1', 0.25), ('median', 0.5), ('q3', 0.75)]:
+                row[f'{sector}_{label}_pct'] = float(values.quantile(quantile))
+        rows.append(row)
+    summary = pd.DataFrame(rows)
+    summary.to_csv(OUT.parent / 'trend_summary.csv', index=False, float_format='%.10f')
+    return summary
+
+
+def trend(summary, sector, country=None):
+    """Plot annual regional medians and IQRs, never pooled service aggregates."""
+    if sector == 'services' and country not in ('USA', 'JPN'):
+        raise ValueError('Service trends must be shown within one country')
+    countries = [country] if country else ['USA', 'JPN']
+    names = {'USA': 'United States', 'JPN': 'Japan'}
+    colors = {'USA': '#5983B0', 'JPN': TEAL}
+    periods = {'USA': 'calendar years', 'JPN': 'fiscal years'}
+    service_label = 'Private services (BEA)' if country == 'USA' else 'Tertiary industries (Cabinet Office)'
+    title = ('Regional manufacturing shares, 2011–2022' if sector == 'manufacturing'
+             else f'{names[country]}: service shares, 2011–2022')
+    fig, ax = plt.subplots(figsize=(11.5, 6.3))
+    fig.subplots_adjust(left=0.09, right=0.91, top=0.72, bottom=0.24)
+    fig.text(0.07, 0.93, title, fontsize=20, weight='bold', color=INK)
+    subtitle = ('Annual regional medians; shaded bands show the middle 50% of regions'
+                if sector == 'manufacturing' else
+                f'{service_label} | regional median and middle 50% | {periods[country]}')
+    fig.text(0.07, 0.86, subtitle, fontsize=11, color=INK)
+    for code in countries:
+        sub = summary.loc[summary.country == code].sort_values('year')
+        median = sub[f'{sector}_median_pct']
+        ax.fill_between(sub.year, sub[f'{sector}_q1_pct'], sub[f'{sector}_q3_pct'],
+                        color=colors[code], alpha=0.15)
+        ax.plot(sub.year, median, color=colors[code], marker='o', lw=2.3,
+                markersize=4.5, label=f'{names[code]} ({int(sub.regions.iloc[0])} regions, {periods[code]})')
+        for index, offset, align in [(0, (0, 10), 'left'), (-1, (8, 10), 'left')]:
+            ax.annotate(f'{median.iloc[index]:.2f}%', (sub.year.iloc[index], median.iloc[index]),
+                        xytext=offset, textcoords='offset points', ha=align,
+                        fontsize=10, color=colors[code], weight='bold')
+    ax.set_xticks(YEARS)
+    ax.set_xlim(2010.3, 2022.7)
+    ax.set_ylim((0, 100) if sector == 'services' else (0, 40))
+    ax.set_ylabel('Share of nominal regional GDP (%)')
+    ax.yaxis.set_major_formatter(PercentFormatter(100, decimals=0))
+    ax.grid(axis='y', color='#E4E9EC', linewidth=0.7)
+    ax.set_axisbelow(True)
+    ax.tick_params(length=0, pad=7)
+    for spine in ax.spines.values():
+        spine.set_visible(False)
+    ax.legend(loc='lower left', bbox_to_anchor=(0, 1.01), frameon=False, fontsize=10,
+              ncol=2 if len(countries) == 2 else 1)
+    fig.text(0.07, 0.125, 'Each region has equal weight. Bands describe regional variation, not uncertainty or national shares.',
+             fontsize=9, color=INK)
+    note = ('US calendar years and Japanese fiscal years differ; industry classifications and region sizes also differ.'
+            if sector == 'manufacturing' else
+            ('US private services include utilities and exclude government and government enterprises.'
+             if country == 'USA' else
+             'Japanese tertiary industries include utilities, public administration, education and health/social services.'))
+    fig.text(0.07, 0.085, note, fontsize=9, color=INK)
+    source = ('Sources: BEA SAGDP2 and Cabinet Office prefectural accounts, one pinned vintage per country.'
+              if sector == 'manufacturing' else
+              'Source: ' + ('BEA SAGDP2.' if country == 'USA' else 'Cabinet Office prefectural accounts.')
+              + ' Service definitions differ between countries; interpret this trend within country only.')
+    fig.text(0.07, 0.045, source, fontsize=9, color=INK)
+    filename = ('manufacturing_trend_2011_2022' if sector == 'manufacturing'
+                else f'{country.lower()}_services_trend_2011_2022')
+    save(fig, filename)
+
+
 def main():
     plt.rcParams.update({'font.family': 'DejaVu Sans', 'font.size': 11,
                          'text.color': INK, 'axes.labelcolor': INK,
-                         'xtick.color': INK, 'ytick.color': INK, 'svg.fonttype': 'none'})
+                         'xtick.color': INK, 'ytick.color': INK, 'svg.fonttype': 'none',
+                         'svg.hashsalt': 'member2-industry'})
     df = load_data()
     OUT.mkdir(parents=True, exist_ok=True)
-    manufacturing_distribution(df)
-    composition(df, 'USA')
-    composition(df, 'JPN')
-    print(json.dumps(summarize(df), indent=2))
-    print('Three figures saved as PNG + SVG:', OUT)
+    cross_section = df.loc[df.year == 2022]
+    manufacturing_distribution(cross_section)
+    composition(cross_section, 'USA')
+    composition(cross_section, 'JPN')
+    summary = summarize_trends(df)
+    trend(summary, 'manufacturing')
+    trend(summary, 'services', 'USA')
+    trend(summary, 'services', 'JPN')
+    print(json.dumps(summarize(cross_section), indent=2))
+    print('Six figures saved as PNG + SVG:', OUT)
 
 
 if __name__ == '__main__':
