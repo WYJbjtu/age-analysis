@@ -51,7 +51,16 @@ python -m pytest -q tests member2_industry
 
 Member 4 接手时需注意：现有 `analysis/plot_correlations.py --metric services_share_pct` 仍允许合并样本绘图，本次没有修改其所有者的代码；不能把该输出当作可比的美日服务业关系。制造业也保留财政年度、分类和地区尺度差异的限制。
 
-`merged_analysis.csv` 和 `docs/source_registry.csv` 由 Member 4 负责重新生成；本次没有改动。日本人口表还待 Member 1 提交，所以现阶段不能声称已完成 98 地区的老龄化关联分析。主仓库任务勾选与旧交接文档也由相应所有者更新。
+`merged_analysis.csv` 和 `docs/source_registry.csv` 由 Member 4 维护；本次没有改动。截至 2026-11-08，新仓库的 2022 年人口表已经覆盖美国 51 个地区及日本 47 个都道府县，现有合并表的 98 条记录均标为人口与产业匹配成功（`population_industry_match=both`），不再需要等待日本人口数据。相关背景见 [日本数据交接说明](../docs/japan_2022_handover.md)。本模块交付产业结构描述，老龄化关联分析及合稿仍由相应成员负责。
+
+## 新仓库交付核验（2026-11-08）
+
+项目已迁移至 [WYJbjtu/age-analysis](https://github.com/WYJbjtu/age-analysis)。检查新仓库 main 的 `00a73f0` 版本时，原 Member 2 交付的全部 16 个文件已经包含在内，无需重复覆盖数据、代码或图表。其中 15 个文件与原交付提交 `dd43a25` 逐字节一致；`findings.md` 已由迁移后的仓库补充“日本人口数据已齐全”的状态，本次保留该更新。
+
+- 已使用原下载且通过校验码检查的官方文件，在临时目录重新运行新仓库的数据处理与绘图代码。
+- 重新生成的 98 行产业 CSV、三张 PNG 均与新仓库现有文件逐字节一致，统计摘要也一致。原始下载日期和数据版本未改变。
+- `python3 scripts/validate_data.py` 通过；`PYTHONPATH=src python3 -m pytest -q tests member2_industry` 共 17 项测试通过。
+- 本次交接更新仅涉及这份 Member 2 README，修正过时的人口数据状态并记录核验结果；没有修改其他成员文件或共享分析成果。
 
 ## 本次验证（2026-11-05）
 
