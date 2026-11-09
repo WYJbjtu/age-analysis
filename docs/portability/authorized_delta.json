@@ -1,0 +1,78 @@
+{
+  "scope": "User-authorized local portability and integrity fix; no analytical byte changes",
+  "base_lock": "docs/remediation/input_manifest_v4.json",
+  "changes": [
+    {
+      "path": ".github/workflows/validate.yml",
+      "before_sha256": "c686f9e1dea73e4592ffde06eca74b91475a9c28663dc643d4d52465feebcf10",
+      "after_sha256": "fa8abb2740397d08632594b8e60113dc6b2082bef855955a4f572e629f515b15",
+      "reason": "Keep Linux, add Windows, use shared default offline suite and read-only integrity/regression steps."
+    },
+    {
+      "path": "README.md",
+      "before_sha256": "0c6192f79bf916af2f92baac931f74c94b945642ea989529d3b0b78dd2136c04",
+      "after_sha256": "2712ca5ad28671cf43b155937d22215b80481029b7f4eb3a3e516232bbcf9345",
+      "reason": "Point current integrity entry to v5 and portable evidence documentation; scientific narrative unchanged."
+    },
+    {
+      "path": "analysis/member4/freeze_inputs.py",
+      "before_sha256": "e635bd8fa8c692f86355b6fa17d080d6899e284f3d1f6c3c5358f0a40f71913e",
+      "after_sha256": "a97942ff6cbc5514de1f543ed6ef50ed1da50135e10cdcce9bc8a13bd60f9894",
+      "reason": "Make compatibility entry point strictly read-only; delegate to portable verification."
+    },
+    {
+      "path": "pyproject.toml",
+      "before_sha256": "80f824b6ad9332007706e700874678c2e393c24657348fb8ee06371908849325",
+      "after_sha256": "de1a63d0bcb3150a4451f71a2cac237e197ced602847ab31ea04e6e1d52b187a",
+      "reason": "Include25 existing Member2 offline cases in default collection."
+    },
+    {
+      "path": "scripts/remediation_state.py",
+      "before_sha256": "40507a36202aa6ac853e6fde3e6472ba7b0c87be2582531fa189709b32c24708",
+      "after_sha256": "370d38880dce4f9a9f15bb530bb65df15a399e1c53592d557ddfbf23cfc167e1",
+      "reason": "Replace mandatory local backup I/O with strict portable archive/current/immutable verification and optional explicit local mode."
+    },
+    {
+      "path": "scripts/verify_remediation.py",
+      "before_sha256": "0991c2cfca17f51857fe4b575456ba0b450648eea8d39f263ef5240dbe6a728b",
+      "after_sha256": "a3c24b75c6bd40a72a13bef2b96780f637dba3daea7fd409fa3822fe2161c65f",
+      "reason": "Add read-only regression flag; use same default pytest scope as CI."
+    },
+    {
+      "path": ".gitattributes",
+      "before_sha256": null,
+      "after_sha256": "5acbe0d3cfffecc0ce096b0a95018387cc87a1af0c6d97e5bbacea9d9577beb3",
+      "reason": "Declare explicit LF current text policy and byte-preserved binary evidence."
+    },
+    {
+      "path": "scripts/build_portable_integrity.py",
+      "before_sha256": null,
+      "after_sha256": "3ce9d7a1a55e750f13a9c7050491b72174dd85a7b6c4f99dd4c35cf9abc234cd",
+      "reason": "Explicit authoring only; original-byte package and exact authorized-delta lock creation."
+    },
+    {
+      "path": "tests/test_portable_integrity.py",
+      "before_sha256": null,
+      "after_sha256": "bdea51caa2e70a64e3eb410959a00d35b5b43669abd286bca80aae0c2ca33f0a",
+      "reason": "Isolated success, corruption, path/link/duplicate, local-backup and read-only regression cases."
+    },
+    {
+      "path": "docs/portability/README.md",
+      "before_sha256": null,
+      "after_sha256": "f64e8d7ccfe54fc5d8f5a502bd85fbd6c2c8ac6ca7244179338141143933edc5",
+      "reason": "Document verification layers, line-ending mapping, default suite and authoring restrictions."
+    },
+    {
+      "path": "docs/remediation/historical_evidence.json",
+      "before_sha256": null,
+      "after_sha256": "86cab74c85d4f9584a513ca877c3f3fd455b1c5adff20a47ca7c7852d77555bf",
+      "reason": "Original inventory, hashes, provenance and archive integrity metadata."
+    },
+    {
+      "path": "docs/remediation/historical_evidence.zip",
+      "before_sha256": null,
+      "after_sha256": "460f7a2f560ee4b900047c69e5998d6d45222309155b49972f07327bf2e63cf5",
+      "reason": "Exact original229 files plus4 unchanged original manifest/lock records."
+    }
+  ]
+}

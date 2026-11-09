@@ -17,4 +17,4 @@ sources = ["openpyxl>=3.1,<4", "xlrd>=2,<3", "pyshp>=2.3,<4", "pyproj>=3.6,<4"]
 where = ["src"]
 
 [tool.pytest.ini_options]
-testpaths = ["tests"]
+testpaths = ["tests", "member2_industry"]

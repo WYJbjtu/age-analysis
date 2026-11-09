@@ -1,0 +1,12 @@
+# Current repository text has a portable LF representation, independent of core.autocrlf.
+# Integrity verification permits CRLF checkout bytes only for explicitly listed UTF-8 text.
+* text=auto eol=lf
+*.zip -text
+*.png -text
+*.pdf -text
+*.docx -text
+*.xlsx -text
+*.xls -text
+
+# Original bytes inside this evidence archive must never be normalized.
+docs/remediation/historical_evidence.zip -text

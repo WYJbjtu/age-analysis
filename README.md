@@ -51,7 +51,7 @@ $testTemp = 'data/cache/pytest-' + [guid]::NewGuid().ToString('N')
 
 修复版成员4入口识别最新的已核验版本锁，将重算输出写到 `data/cache/remediation/current_member4/`；原 `analysis/member4/audit/`、数据、数值结果和图仍为冻结的历史审计证据。`build_reports.py` 生成当前修复验证摘要，`verify_delivery.py` 从官方缓存独立重建成员1/2/3并比较当前结果。回归表以修复前未舍入计算值为基准，不将旧摘要数值作为强制目标。
 
-v1锁保留于 `analysis/member4/audit/input_manifest.json`，修复过程的v2/v3也保留。当前 [v4锁](docs/remediation/input_manifest_v4.json) 保存先前锁的哈希及明确变更理由：v3修复两个旧绘图脚本随机SVG对象ID；v4记录成员2六组图在当前Matplotlib3.11.2环境的重生成（原图为3.10.8，数值及绘图程序不变）和当前版本说明统一。未放宽逐字节复现要求；精确运行环境见 [environment.json](docs/remediation/environment.json)。校验同时保护外部备份中的全部229个初始文件与当前受保护文件。旧“163个原文件未改动”只描述上轮审计，本轮有意修改成员交付，详见新变更清单。不要刷新哈希以绕过失败。
+当前完整性入口使用 [v5锁](docs/remediation/input_manifest_v5.json) 和仓库内历史证据包；新checkout无需开发者用户目录。v1及修复过程的v2/v3/v4均原样保留，229份原始文件仍按原始SHA-256核验。当前UTF-8文本采用明确的LF表示，历史ZIP成员保留精确原始字节。可移植性修复、行尾映射、显式本地备份检查和统一离线测试范围见 [完整性说明](docs/portability/README.md) 与 [实际验证报告](docs/portability/report_zh.md)。此前图件重建的环境记录仍见 [environment.json](docs/remediation/environment.json)。旧“163个原文件未改动”只描述上轮审计；不要刷新哈希以绕过失败。
 
 通用散点入口仍可用：`python analysis/plot_correlations.py --year 2022 --metric manufacturing_share_pct`。服务业必须显式选择 `--country USA` 或 `--country JPN`。正式主图优先用成员4的已核验三图，避免复制旧图文。
 

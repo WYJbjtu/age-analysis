@@ -1,0 +1,48 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_______ test_reviewed_current_inputs_and_historical_inputs_are_protected _______
+
+    def test_reviewed_current_inputs_and_historical_inputs_are_protected():
+        # Intentional owner repairs have a separately validated lock. The old hashes
+        # still protect the complete pre-change backup and immutable audit evidence.
+        from freeze_inputs import main as protect
+>       protect()
+
+tests/test_member4.py:93: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+analysis/member4/freeze_inputs.py:16: in main
+    result=verify()
+           ^^^^^^^^
+scripts/remediation_state.py:50: in verify
+    count=verify_history()
+          ^^^^^^^^^^^^^^^^
+scripts/remediation_state.py:33: in verify_history
+    if digest(backup/row['path'])!=row['sha256']:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+scripts/remediation_state.py:22: in digest
+    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+                          ^^^^^^^^^^^^^^^^^^^^^^^
+../linux/python/cpython-3.11.18-linux-x86_64-gnu/lib/python3.11/pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('C:\\Users\\15811\\.codex\\visualizations\\2026\\11\\09\\01a1bf45-e2b6-7522-9919-1fffbb145101\\aging-remediation-backup-20261109-170431/files/.editorconfig')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\15811\\.codex\\visualizations\\2026\\11\\09\\01a1bf45-e2b6-7522-9919-1fffbb145101\\aging-remediation-backup-20261109-170431/files/.editorconfig'
+
+../linux/python/cpython-3.11.18-linux-x86_64-gnu/lib/python3.11/pathlib.py:1044: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_member4.py::test_reviewed_current_inputs_and_historical_inputs_are_protected
+1 failed in 20.78s

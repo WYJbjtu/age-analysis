@@ -1,114 +1,237 @@
-"""Versioned local input protection after the explicitly authorized remediation.
+"""Read-only integrity verification from repository-deliverable evidence.
 
-The original Member 4 lock is never rewritten. Its files must still match the
-external pre-change backup; the current tree must match a separately reviewed
-lock. Creating a lock is explicit and refuses to overwrite any existing version.
+Four layers stay distinct: current reviewed files, immutable repository audit
+artifacts, original historical bytes in the evidence ZIP, and an optional local
+backup. Only CRLF -> LF is canonicalized for explicitly declared UTF-8 text.
+Historical archive member bytes are always hashed without normalization.
 """
-from pathlib import Path
-import argparse,hashlib,json,subprocess,sys
-import pandas as pd
-ROOT=Path(__file__).resolve().parents[1]
-DOCS=ROOT/'docs/remediation'
-LOCK=DOCS/'input_manifest_v2.json'
-CURRENT=ROOT/'data/cache/remediation/current_member4'
+from pathlib import Path, PurePosixPath
+import argparse
+import hashlib
+import json
+import re
+import stat
+import zipfile
+
+ROOT = Path(__file__).resolve().parents[1]
+DOCS = ROOT / 'docs/remediation'
+CURRENT = ROOT / 'data/cache/remediation/current_member4'
+PRECHANGE = 'docs/remediation/prechange_manifest.json'
+EVIDENCE = 'docs/remediation/historical_evidence.json'
+V1 = 'analysis/member4/audit/input_manifest.json'
+TEXT_SUFFIXES = {'.py', '.md', '.csv', '.json', '.svg', '.xml', '.html', '.toml',
+                 '.yml', '.yaml', '.txt', '.sha256'}
+TEXT_NAMES = {'.editorconfig', '.gitattributes', '.gitignore', '.gitkeep'}
+MAX_MEMBER_BYTES = 16 * 1024 * 1024
+MAX_ARCHIVE_BYTES = 64 * 1024 * 1024
 
 
-def active_lock():
-    candidates=list(DOCS.glob('input_manifest_v*.json'))
-    return max(candidates,key=lambda p:int(p.stem.rsplit('v',1)[1])) if candidates else LOCK
+class IntegrityError(ValueError):
+    """A required verification layer failed; never a reason to skip validation."""
+
+
+def sha256(data):
+    return hashlib.sha256(data).hexdigest()
 
 
 def digest(path):
-    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+    return sha256(Path(path).read_bytes())
 
 
-def historical_backup():
-    initial=json.loads((DOCS/'prechange_manifest.json').read_text(encoding='utf-8'))
-    return initial,Path(initial['backup'])/'files'
+def relative_path(name, layer):
+    if (not isinstance(name, str) or not name or '\\' in name or ':' in name
+            or any(ord(c) < 32 for c in name)
+            or PurePosixPath(name).is_absolute()
+            or any(p in ('', '.', '..') for p in name.split('/'))
+            or any(p.lower() in {'.git', '.venv', '.codex', '.aws', '.env'}
+                   for p in name.split('/'))):
+        raise IntegrityError(f'{layer}: unsafe repository-relative path {name!r}')
+    return name
 
 
-def verify_history():
-    initial,backup=historical_backup()
+def file_bytes(root, name, layer):
+    name = relative_path(name, layer)
+    root = Path(root).resolve()
+    path = root / name
+    if not path.resolve().is_relative_to(root):
+        raise IntegrityError(f'{layer}: path escapes repository: {name}')
+    if any(p.is_symlink() for p in [path, *path.parents] if p != root and p.is_relative_to(root)):
+        raise IntegrityError(f'{layer}: symlink is not protected regular content: {name}')
+    try:
+        return path.read_bytes()
+    except OSError as exc:
+        raise IntegrityError(f'{layer}: missing or unreadable file {name}: {exc}') from exc
+
+
+def representation(name):
+    path = PurePosixPath(name)
+    return 'utf8-lf' if path.suffix in TEXT_SUFFIXES or path.name in TEXT_NAMES else 'bytes'
+
+
+def canonical(data, mode, name):
+    if mode == 'bytes':
+        return data
+    if mode != 'utf8-lf' or representation(name) != 'utf8-lf':
+        raise IntegrityError(f'representation: invalid text policy for {name}: {mode}')
+    try:
+        data.decode('utf-8')
+    except UnicodeDecodeError as exc:
+        raise IntegrityError(f'representation: invalid UTF-8 in {name}') from exc
+    result = data.replace(b'\r\n', b'\n')
+    if b'\r' in result:
+        raise IntegrityError(f'representation: lone CR in {name}')
+    return result  # Do not strip spaces, change encoding, or add a final newline.
+
+
+def json_file(root, name, layer):
+    try:
+        return json.loads(file_bytes(root, name, layer))
+    except (UnicodeDecodeError, json.JSONDecodeError) as exc:
+        raise IntegrityError(f'{layer}: invalid JSON {name}') from exc
+
+
+def active_lock(root=ROOT):
+    candidates = [(int(m[1]), p) for p in (Path(root) / 'docs/remediation').glob('input_manifest_v*.json')
+                  if (m := re.fullmatch(r'input_manifest_v(\d+)\.json', p.name))]
+    if not candidates:
+        raise IntegrityError('current reviewed: missing reviewed input lock')
+    return max(candidates)[1]
+
+
+def historical_backup(root=ROOT):
+    """Compatibility metadata for historical reports; does not access that path."""
+    initial = json_file(root, PRECHANGE, 'historical metadata')
+    return initial, Path(initial['backup']) / 'files'
+
+
+def immutable(name):
+    return name.startswith(('analysis/member4/audit/', 'analysis/member4/results/',
+                            'analysis/member4/data/', 'analysis/member4/figures/')) or name == 'analysis/member4/audit_report.md'
+
+
+def rows_by_path(rows, layer):
+    result = {}
+    for row in rows:
+        name = relative_path(row['path'], layer)
+        if name in result:
+            raise IntegrityError(f'{layer}: duplicate inventory path {name}')
+        result[name] = row
+    return result
+
+
+def historical_content(root=ROOT):
+    """Validate the ZIP itself, every member, inventory, and original manifests.
+
+    No member is extracted, imported or executed (including the archived unsafe
+    BLS checker). Expected hashes come from the original, preserved manifests.
+    """
+    index = json_file(root, EVIDENCE, 'portable evidence')
+    archive_name = relative_path(index['archive'], 'portable evidence')
+    archive_data = file_bytes(root, archive_name, 'portable evidence')
+    if sha256(archive_data) != index['archive_sha256']:
+        raise IntegrityError(f'portable evidence: archive checksum mismatch: {archive_name}')
+    expected = rows_by_path(index['files'], 'portable evidence inventory')
+    contents = {}
+    import io
+    try:
+        with zipfile.ZipFile(io.BytesIO(archive_data)) as archive:
+            total = 0
+            for info in archive.infolist():
+                name = relative_path(info.filename, 'portable evidence member')
+                if name in contents:
+                    raise IntegrityError(f'portable evidence member: duplicate name {name}')
+                mode = info.external_attr >> 16
+                if info.is_dir() or stat.S_IFMT(mode) not in (0, stat.S_IFREG) or info.flag_bits & 1:
+                    raise IntegrityError(f'portable evidence member: unsafe link/type/encryption: {name}')
+                total += info.file_size
+                if info.file_size > MAX_MEMBER_BYTES or total > MAX_ARCHIVE_BYTES:
+                    raise IntegrityError(f'portable evidence member: size limit exceeded: {name}')
+                if name not in expected:
+                    raise IntegrityError(f'portable evidence member: unexpected file {name}')
+                data = archive.read(info)
+                if len(data) != expected[name]['bytes'] or sha256(data) != expected[name]['sha256']:
+                    raise IntegrityError(f'portable evidence member: original checksum mismatch: {name}')
+                contents[name] = data
+    except (zipfile.BadZipFile, RuntimeError, OSError) as exc:
+        raise IntegrityError(f'portable evidence: unreadable ZIP {archive_name}: {exc}') from exc
+    if set(contents) != set(expected):
+        raise IntegrityError(f'portable evidence: missing members: {sorted(set(expected) - set(contents))}')
+    try:
+        initial = json.loads(contents[PRECHANGE])
+        old = json.loads(contents[V1])
+    except (KeyError, ValueError) as exc:
+        raise IntegrityError('portable evidence: original prechange/v1 manifest missing or invalid') from exc
+    original = rows_by_path(initial['files'], 'original prechange manifest')
+    for layer, rows in [('original prechange', original), ('historical v1', rows_by_path(old['files'], 'historical v1'))]:
+        for name, row in rows.items():
+            if name not in contents or sha256(contents[name]) != row['sha256']:
+                raise IntegrityError(f'{layer}: original checksum mismatch or missing member: {name}')
+    allowed = set(original) | {PRECHANGE} | set(index['reviewed_locks'])
+    if set(contents) != allowed:
+        raise IntegrityError('portable evidence: inventory differs from original manifests and declared reviewed locks')
+    # Old absolute locations remain historical text only. Their contents and the
+    # prior lock chain must match the corresponding repository representation.
+    for name in [PRECHANGE, *index['reviewed_locks']]:
+        if canonical(file_bytes(root, name, 'historical manifest'), 'utf8-lf', name) != canonical(contents[name], 'utf8-lf', name):
+            raise IntegrityError(f'historical manifest: repository representation changed: {name}')
+        if name != PRECHANGE:
+            for previous in json.loads(contents[name]).get('previous_locks', []):
+                p = previous['path']
+                if p not in contents or sha256(contents[p]) != previous['sha256']:
+                    raise IntegrityError(f'historical lock chain: original checksum mismatch: {p}')
+    return initial, old, index, contents
+
+
+def verify_history(root=ROOT, local_backup=None):
+    initial, old, index, contents = historical_content(root)
+    count = 0
     for row in initial['files']:
-        if digest(backup/row['path'])!=row['sha256']:
-            raise ValueError('Pre-change backup differs: '+row['path'])
-    old=json.loads((ROOT/'analysis/member4/audit/input_manifest.json').read_text())
-    for row in old['files']:
-        if digest(backup/row['path'])!=row['sha256']:
-            raise ValueError('Historical Member 4 baseline differs: '+row['path'])
-    # Audit records/results are immutable historical evidence, even though selected
-    # pipeline entry points and their README/test are deliberately made compatible.
-    for row in initial['files']:
-        if row['path'].startswith(('analysis/member4/audit/','analysis/member4/results/',
-                                   'analysis/member4/data/','analysis/member4/figures/')) or row['path']=='analysis/member4/audit_report.md':
-            if digest(ROOT/row['path'])!=row['sha256']:
-                raise ValueError('Historical audit artifact was overwritten: '+row['path'])
-    return len(initial['files'])
+        name = row['path']
+        if immutable(name):
+            current = file_bytes(root, name, 'immutable repository artifact')
+            mode = representation(name)
+            if canonical(current, mode, name) != canonical(contents[name], mode, name):
+                raise IntegrityError(f'immutable repository artifact: original content changed: {name}')
+            count += 1
+    if local_backup is not None:
+        # Explicit mode never falls back to the ZIP when a supplied backup fails.
+        for row in initial['files']:
+            data = file_bytes(Path(local_backup) / 'files', row['path'], 'explicit local backup')
+            if sha256(data) != row['sha256']:
+                raise IntegrityError(f'explicit local backup: original checksum mismatch: {row["path"]}')
+    return {'historical_evidence_files': len(initial['files']), 'historical_v1_files': len(old['files']),
+            'immutable_repository_files': count, 'archived_reviewed_locks': len(index['reviewed_locks']),
+            'local_backup': 'verified' if local_backup is not None else 'not requested'}
 
 
-def verify():
-    count=verify_history()
-    lock=active_lock()
-    if not lock.exists():raise ValueError('Current reviewed input lock not yet created; run the documented freeze once after validation')
-    current=json.loads(lock.read_text(encoding='utf-8'))
-    for previous in current.get('previous_locks',[]):
-        if digest(ROOT/previous['path'])!=previous['sha256']:raise ValueError('Previous lock changed')
-    for row in current['files']:
-        if digest(ROOT/row['path'])!=row['sha256']:
-            raise ValueError('Current reviewed input changed after validation: '+row['path'])
-    return {'historical_backup_files':count,'current_protected_files':len(current['files']),'current_input_lock':lock.relative_to(ROOT).as_posix()}
+def verify(root=ROOT, local_backup=None):
+    root = Path(root).resolve()
+    lock = active_lock(root)
+    name = lock.relative_to(root).as_posix()
+    current = json_file(root, name, 'current reviewed')
+    if current.get('representation_policy') != 'explicit-utf8-lf-v1':
+        raise IntegrityError(f'current reviewed: portable reviewed lock required: {name}')
+    rows = rows_by_path(current['files'], 'current reviewed')
+    if not {EVIDENCE, PRECHANGE, V1}.issubset(rows):
+        raise IntegrityError('current reviewed: required evidence/manifest omitted from lock')
+    for path, row in rows.items():
+        layer = 'immutable repository artifact' if immutable(path) else ('portable evidence' if path.startswith('docs/remediation/historical_evidence.') else 'current reviewed')
+        data = file_bytes(root, path, layer)
+        checked = canonical(data, row['representation'], path)
+        if sha256(checked) != row['sha256'] or len(checked) != row['bytes']:
+            raise IntegrityError(f'{layer}: checksum mismatch: {path}')
+    for previous in current['previous_locks']:
+        path = previous['path']
+        data = file_bytes(root, path, 'previous reviewed lock')
+        if sha256(canonical(data, 'utf8-lf', path)) != previous['repository_sha256']:
+            raise IntegrityError(f'previous reviewed lock: repository checksum mismatch: {path}')
+    result = verify_history(root, local_backup)
+    result.update(current_protected_files=len(rows), current_input_lock=name)
+    return result
 
 
-def freeze(version=2,reason='Authorized cross-member remediation'):
-    target=DOCS/f'input_manifest_v{version}.json'
-    if version<2 or target.exists():raise FileExistsError('Preserve existing locks; do not refresh hashes to silence failures')
-    if version>2 and not reason:raise ValueError('A new reviewed version requires the specific correction reason')
-    verify_history();initial,backup=historical_backup()
-    sys.path.insert(0,str(ROOT/'src'))
-    from aging_economies.contracts import read_lookup,validate_table
-    lookup=read_lookup(ROOT/'data/reference/region_lookup.csv')
-    for name in ['demographics','industry','labor_migration']:
-        validate_table(ROOT/f'data/processed/{name}.csv',name,lookup)
-    # No core numerical correction was indicated by the independently checked sources.
-    for name in ['demographics','industry']:
-        path=f'data/processed/{name}.csv'
-        pd.testing.assert_frame_equal(pd.read_csv(ROOT/path),pd.read_csv(backup/path),check_exact=True)
-    sys.path.insert(0,str(ROOT/'member3_labor_migration'))
-    from prepare_labor import build
-    rebuilt=build(output_root=ROOT/'data/cache/remediation/prelock_member3')
-    pd.testing.assert_frame_equal(rebuilt,pd.read_csv(ROOT/'data/processed/labor_migration.csv'),check_dtype=False,check_exact=False,atol=1e-9,rtol=0)
-    original=pd.read_csv(backup/'data/processed/labor_migration.csv')
-    keys=['country','region_id','year']
-    pd.testing.assert_frame_equal(rebuilt[original.columns].sort_values(keys).reset_index(drop=True),
-                                  original.sort_values(keys).reset_index(drop=True),check_dtype=False,check_exact=True)
-    national=pd.read_csv(ROOT/'member1_demographics/national_source_checks.csv')
-    if len(national)!=276 or not national.passed.all():raise ValueError('UN source gate incomplete')
-    maps=pd.read_csv(ROOT/'member1_demographics/boundary_join_checks.csv')
-    if len(maps)!=51 or not maps.original_value_checks.all() or not maps.projection_parts_valid.all():
-        raise ValueError('Map source/value gate incomplete')
-    paths=subprocess.check_output(['git','ls-files','--cached','--others','--exclude-standard','-z'],cwd=ROOT).decode('utf-8').split('\0')
-    excluded=('docs/remediation/','poster/presentation_manifest.csv')
-    selected=sorted({p for p in paths if p and (ROOT/p).is_file() and not p.startswith(excluded)})
-    if any(p.startswith(('.git/','.env','.venv/','data/raw/','data/cache/')) and p!='data/raw/.gitkeep' for p in selected):
-        raise ValueError('Unexpected private/cache path in input lock')
-    rows=[dict(path=p,sha256=digest(ROOT/p),bytes=(ROOT/p).stat().st_size) for p in selected]
-    previous=sorted(DOCS.glob('input_manifest_v*.json'))
-    if previous and version<=max(int(p.stem.rsplit('v',1)[1]) for p in previous):raise ValueError('Version must increase')
-    prior={r['path']:r['sha256'] for r in json.loads(active_lock().read_text())['files']} if previous else {}
-    record=dict(version=version,reason=reason,
-        historical_lock='analysis/member4/audit/input_manifest.json',backup=str(backup.parent),
-        previous_locks=[dict(path=p.relative_to(ROOT).as_posix(),sha256=digest(p)) for p in previous],
-        reviewed_delta=[r['path'] for r in rows if prior and prior.get(r['path'])!=r['sha256']],
-        source_validation='UN276; map51/102; Member3 full raw rebuild and196 independent domestic comparisons; unchanged core numerical tables',
-        validation_evidence=['member1_demographics/independent_verification.json','member3_labor_migration/summary.json','member3_labor_migration/domestic_migration_comparison.csv'],
-        files=rows)
-    target.write_text(json.dumps(record,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
-    print(f'Created reviewed v{version} lock:',len(rows),'files; earlier locks and229-file external backup retained')
-
-
-if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--freeze-reviewed',action='store_true')
-    parser.add_argument('--version',type=int,default=2);parser.add_argument('--reason',default='Authorized cross-member remediation')
-    args=parser.parse_args()
-    if args.freeze_reviewed:freeze(args.version,args.reason)
-    else:print(verify())
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--local-backup', type=Path, help='Explicitly verify this backup root (containing files/), in addition to portable verification')
+    args = parser.parse_args()
+    print(json.dumps(verify(local_backup=args.local_backup), indent=2))

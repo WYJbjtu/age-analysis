@@ -1,0 +1,77 @@
+{
+  "integrity": {
+    "historical_evidence_files": 229,
+    "historical_v1_files": 163,
+    "immutable_repository_files": 46,
+    "archived_reviewed_locks": 3,
+    "local_backup": "not requested",
+    "current_protected_files": 280,
+    "current_input_lock": "docs/remediation/input_manifest_v5.json"
+  },
+  "archive_members": 233,
+  "original_bytes": 16828410,
+  "compressed_bytes": 9092047,
+  "archive_sha256": "460f7a2f560ee4b900047c69e5998d6d45222309155b49972f07327bf2e63cf5",
+  "local_backup_explicit_check": "PASS: all229 original hashes; optional mode only",
+  "current_original_files_unchanged": 282,
+  "modified_existing_files": [
+    ".github/workflows/validate.yml",
+    "README.md",
+    "analysis/member4/freeze_inputs.py",
+    "pyproject.toml",
+    "scripts/remediation_state.py",
+    "scripts/verify_remediation.py"
+  ],
+  "line_ending_differences": 124,
+  "non_line_ending_differences": 0,
+  "environments": {
+    "linux": {
+      "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+      "python": "3.11.18 (main, Oct 26 2026, 14:05:07) [Clang 23.1.3 ]",
+      "packages": {
+        "pandas": "2.3.3",
+        "numpy": "2.4.6",
+        "matplotlib": "3.11.2",
+        "pytest": "9.2.0"
+      },
+      "guard": "Audit hook blocks network and recorded external backup; no source caches included",
+      "unchanged_deliverable_files": 298,
+      "commands": 8,
+      "all_passed": true,
+      "tests": {
+        "tests": 88,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "main_regression_output": "38 high-precision main regression comparisons passed; max difference 0",
+      "source_installation": "Fresh isolated virtualenv, python -m pip --isolated install -e actual-proposed-checkout[dev]; no system site packages"
+    },
+    "windows": {
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]",
+      "packages": {
+        "pandas": "2.3.3",
+        "numpy": "2.5.4",
+        "matplotlib": "3.11.2",
+        "pytest": "9.2.0"
+      },
+      "guard": "Audit hook blocks network and recorded external backup; no source caches included",
+      "unchanged_deliverable_files": 298,
+      "commands": 8,
+      "all_passed": true,
+      "tests": {
+        "tests": 88,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "main_regression_output": "38 high-precision main regression comparisons passed; max difference 0",
+      "source_installation": "Fresh isolated virtualenv, python -m pip --isolated install -e actual-proposed-checkout[dev]; no system site packages"
+    }
+  },
+  "ci_remote_execution": "NOT EXECUTED; no remote write authorized",
+  "local_windows_python311": "NOT EXECUTED; local Windows3.12.4, CI matrix configured3.11",
+  "statistics_changed": false,
+  "git_diff_check": "PASS"
+}

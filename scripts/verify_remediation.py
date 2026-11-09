@@ -24,7 +24,7 @@ def run(args,cwd=ROOT):
     return result
 
 
-def regression():
+def regression(write=True):
     sys.path.insert(0,str(ROOT/'analysis/member4'))
     from descriptive import summarize,decomposition
     baseline=json.loads((DOCS/'regression_baseline.json').read_text())
@@ -51,7 +51,8 @@ def regression():
             if row['country_weight']!={'USA':51/98,'JPN':47/98}[row['country']]:raise ValueError('Country weights changed')
         support=g.groupby('country').age65_share_pct.agg(['min','max'])
         if support['min'].max()<=support['max'].min():raise ValueError('Aging support overlap changed')
-    result=pd.DataFrame(records);result.to_csv(DOCS/'regression_comparison.csv',index=False,float_format='%.17g')
+    result=pd.DataFrame(records)
+    if write:result.to_csv(DOCS/'regression_comparison.csv',index=False,float_format='%.17g')
     if not result.passed.all():raise AssertionError('Actual main result changed; investigate, do not force baseline')
     print(f'{len(result)} high-precision main regression comparisons passed; max difference {result.difference.abs().max():.3g}')
     return result
@@ -140,7 +141,7 @@ def tests():
     verify()
     temporary=ROOT/'data/cache'/('remediation-pytest-'+uuid.uuid4().hex)
     if temporary.exists():raise FileExistsError('Refuse to reuse a pytest cleanup destination')
-    run(['-m','pytest','-q','tests','member2_industry','--basetemp',temporary,'--junitxml',DOCS/'test_results.xml'])
+    run(['-m','pytest','-q','--basetemp',temporary,'--junitxml',DOCS/'test_results.xml'])
     run(['scripts/validate_data.py'])
 
 
@@ -170,4 +171,8 @@ def reports():
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('action',choices=['regression','reproduce','tests','reports'])
-    {'regression':regression,'reproduce':reproduction,'tests':tests,'reports':reports}[parser.parse_args().action]()
+    parser.add_argument('--no-write',action='store_true',help='Read-only regression check; never refresh saved evidence')
+    args=parser.parse_args()
+    if args.no_write and args.action!='regression':parser.error('--no-write applies only to regression')
+    if args.action=='regression':regression(write=not args.no_write)
+    else:{'reproduce':reproduction,'tests':tests,'reports':reports}[args.action]()
