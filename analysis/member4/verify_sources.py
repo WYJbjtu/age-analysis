@@ -26,7 +26,7 @@ def main(output_dir=None):
     if (ROOT/'docs/remediation/prechange_manifest.json').exists() and not Path(output_dir).resolve().is_relative_to(ROOT/'data/cache'):
         raise ValueError('Remediation verification must preserve historical audit files; use data/cache')
     audit=(Path(output_dir) if output_dir is not None else HERE)/'audit';audit.mkdir(parents=True,exist_ok=True)
-    manifest={r['file']:r for r in json.loads((HERE/'audit/download_manifest.json').read_text())}
+    manifest={r['file']:r for r in json.loads((HERE/'audit/download_manifest.json').read_text(encoding='utf-8'))}
     for name,r in manifest.items():
         if r['status']=='retrieved':
             assert hashlib.sha256((RAW/name).read_bytes()).hexdigest()==r['sha256']

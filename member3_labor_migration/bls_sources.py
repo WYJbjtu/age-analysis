@@ -96,7 +96,7 @@ def load_archives(raw,snapshot_dir,lookup):
             path=snapshot_dir/f'bls_{year}_web.txt';kind='official-page text captured by web reader'
             if hashlib.sha256(path.read_bytes()).hexdigest()!=records[year]['sha256']:
                 raise ValueError(f'BLS snapshot changed: {year}')
-        text=path.read_text(encoding='utf-8',errors='replace')
+        text=path.read_text(encoding='utf-8')
         frame=parse_annual_table(text,year,names)
         # Retain the previous detail table's 2022 field without inventing older rates.
         if year==2022:

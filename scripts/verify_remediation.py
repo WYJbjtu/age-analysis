@@ -27,7 +27,7 @@ def run(args,cwd=ROOT):
 def regression(write=True):
     sys.path.insert(0,str(ROOT/'analysis/member4'))
     from descriptive import summarize,decomposition
-    baseline=json.loads((DOCS/'regression_baseline.json').read_text())
+    baseline=json.loads((DOCS/'regression_baseline.json').read_text(encoding='utf-8'))
     d=pd.read_csv(ROOT/'data/processed/demographics.csv');i=pd.read_csv(ROOT/'data/processed/industry.csv')
     frame=d.merge(i,on=['country','region_id','year'],validate='one_to_one')
     if len(frame)!=baseline['panel_rows']:raise ValueError('Core panel changed')
@@ -78,7 +78,7 @@ def reproduction():
         copy(p)
     # Supply the original full WPP source as well as the original regional sources.
     raw=stage/'data/raw/member1';raw.mkdir(parents=True)
-    for row in json.loads((ROOT/'member1_demographics/population_source_manifest.json').read_text()):
+    for row in json.loads((ROOT/'member1_demographics/population_source_manifest.json').read_text(encoding='utf-8')):
         source=ROOT/'data/raw/member4'/row['file']
         if row['file']=='wpp_ages.xlsx':source=ROOT/'data/raw/member1'/row['file']
         if digest(source)!=row['sha256']:raise ValueError('Member1 raw version changed')
@@ -164,7 +164,7 @@ def reports():
     if path.exists():
         f=pd.read_csv(path);summary['reproduction']={'checks':len(f),'failed':int((~f.passed).sum())}
     path=DOCS/'visual_review.json'
-    if path.exists():summary['visual_review']=json.loads(path.read_text())
+    if path.exists():summary['visual_review']=json.loads(path.read_text(encoding='utf-8'))
     (DOCS/'validation.json').write_text(json.dumps(summary,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     print('Current validation written to docs/remediation/validation.json; original audit reports preserved.')
 

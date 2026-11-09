@@ -37,7 +37,7 @@ def main():
     audit=HERE/'audit';results=HERE/'results'
     checks=pd.read_csv(audit/'source_record_checks.csv')
     summaries=pd.read_csv(audit/'source_check_summary.csv')
-    files=json.loads((audit/'download_manifest.json').read_text())
+    files=json.loads((audit/'download_manifest.json').read_text(encoding='utf-8'))
     logs=[]
     for r in files:
         g=checks[checks.source_file==r['file']]

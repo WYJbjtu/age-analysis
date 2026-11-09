@@ -53,7 +53,7 @@ def fetch(r, previous, retry):
 def main():
     p=argparse.ArgumentParser();p.add_argument('--retry-failed',action='store_true');args=p.parse_args()
     RAW.mkdir(parents=True,exist_ok=True);OUT.parent.mkdir(parents=True,exist_ok=True)
-    previous={r['file']:r for r in json.loads(OUT.read_text())} if OUT.exists() else {}
+    previous={r['file']:r for r in json.loads(OUT.read_text(encoding='utf-8'))} if OUT.exists() else {}
     with ThreadPoolExecutor(max_workers=4) as pool:
         results=list(pool.map(lambda r:fetch(r,previous,args.retry_failed),sources()))
     OUT.write_text(json.dumps(results,indent=2)+'\n',encoding='utf-8')

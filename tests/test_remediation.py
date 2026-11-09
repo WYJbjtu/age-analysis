@@ -71,10 +71,26 @@ def test_bls_complete_official_archives_rebuild_all_labor_years(labor):
 
 def test_bls_parser_rejects_truncated_source_table():
     names=pd.read_csv(ROOT/'data/reference/region_lookup.csv').query("country=='USA'").set_index('region_name').region_id.to_dict()
-    text=(ROOT/'member3_labor_migration/source_snapshots/bls_2022_web.txt').read_text()
+    text=(ROOT/'member3_labor_migration/source_snapshots/bls_2022_web.txt').read_text(encoding='utf-8')
     # Synthetic source defect stays in this test fixture; formal sources are untouched.
     partial='\n'.join(line for line in text.splitlines() if not ('L667:' in line))
     with pytest.raises(ValueError,match='expected 51'):parse_annual_table(partial,2022,names)
+
+
+def test_bls_snapshot_read_has_explicit_encoding_in_non_utf8_mode():
+    """Catch an omitted encoding even on machines whose locale is UTF-8."""
+    import os,subprocess
+    code=("import sys; assert sys.flags.utf8_mode == 0; "
+          "assert sys.flags.warn_default_encoding; "
+          f"sys.path.insert(0, {str(ROOT/'tests')!r}); "
+          "from test_remediation import test_bls_parser_rejects_truncated_source_table; "
+          "test_bls_parser_rejects_truncated_source_table()")
+    result=subprocess.run([sys.executable,'-X','utf8=0','-X','warn_default_encoding',
+        '-W','error::EncodingWarning:test_remediation','-c',code],cwd=ROOT,
+        env={**os.environ,'PYTHONIOENCODING':'utf-8'},capture_output=True,text=True,encoding='utf-8')
+    # PYTHONIOENCODING only makes captured console text predictable; file I/O
+    # still runs with UTF-8 mode disabled and project EncodingWarnings as errors.
+    assert result.returncode==0,result.stdout+result.stderr
 
 
 def test_annual_validation_rejects_monthly_substitution():
@@ -100,7 +116,7 @@ def test_source_acquisition_rejects_credentials_escape_and_replaces_no_cache(tmp
     for url in ['http://www.bls.gov/a','https://example.org/a','https://user:secret@www.bls.gov/a','https://api.bls.gov/a?registrationkey=secret']:
         with pytest.raises(ValueError):official_url(url)
     with pytest.raises(ValueError,match='Destination'):acquire('https://www.bls.gov/a',tmp_path.parent/'escaped',tmp_path)
-    cached=tmp_path/'annual.csv';cached.write_text('isolated synthetic cache fixture')
+    cached=tmp_path/'annual.csv';cached.write_text('isolated synthetic cache fixture',encoding='utf-8')
     before=cached.read_bytes()
     with pytest.raises(ValueError,match='Pinned source mismatch'):acquire('https://www.bls.gov/a',cached,tmp_path,'0'*64)
     assert cached.read_bytes()==before
@@ -128,13 +144,13 @@ def test_quoted_source_tables_have_exact_fields_and_complete_us_years():
 
 
 def test_akita_and_all_regions_are_visible_in_repaired_figures():
-    record=json.loads((ROOT/'member3_labor_migration/figures/figure4_labor_2022.json').read_text())
+    record=json.loads((ROOT/'member3_labor_migration/figures/figure4_labor_2022.json').read_text(encoding='utf-8'))
     sample={r['country']:r for r in record['samples']}
     assert len(sample['USA']['ids'])==len(set(sample['USA']['ids']))==51
     assert len(sample['JPN']['ids'])==len(set(sample['JPN']['ids']))==47
     assert 'JP-05' in sample['JPN']['ids'] and sample['JPN']['x_range'][1]>38.6
     assert all(row['all_in_bounds'] and row['color_field']=='domestic_net_migration' for row in sample.values())
-    jp=json.loads((ROOT/'member3_labor_migration/figures/jpn_labor_migration_2019_2022.json').read_text())
+    jp=json.loads((ROOT/'member3_labor_migration/figures/jpn_labor_migration_2019_2022.json').read_text(encoding='utf-8'))
     assert jp['samples'][0]['n']==47 and 'JP-05' in jp['samples'][0]['ids']
     for stem in ['figure4_labor_2022','jpn_labor_migration_2019_2022','outliers_2022']:
         for suffix in ['png','svg']:
@@ -169,7 +185,7 @@ def test_shared_merge_preserves_core_with_optional_missingness(labor):
 
 
 def test_main_results_match_unrounded_pre_repair_baseline_and_covariance_weights():
-    baseline=json.loads((ROOT/'docs/remediation/regression_baseline.json').read_text())
+    baseline=json.loads((ROOT/'docs/remediation/regression_baseline.json').read_text(encoding='utf-8'))
     frame=pd.read_csv(ROOT/'data/processed/merged_analysis.csv')
     for row in baseline['unrounded_recomputed']:
         g=frame[frame.year==row['year']]

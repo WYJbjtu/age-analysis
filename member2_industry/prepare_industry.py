@@ -165,7 +165,7 @@ def usa_rows(records, lookup, years=YEARS):
 
 
 def ensure_sources(download):
-    manifest = json.loads((MODULE / 'source_manifest.json').read_text())
+    manifest = json.loads((MODULE / 'source_manifest.json').read_text(encoding='utf-8'))
     RAW.mkdir(parents=True, exist_ok=True)
     for source in manifest:
         path = RAW / source['file']

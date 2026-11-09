@@ -2,9 +2,11 @@
 
 This is a portability-only continuation of the 2026-11-09 remediation. The scientific data, figures, methodology and presentation narrative are unchanged. The previous remediation records remain historical. See `report_zh.md` for actual validation results and the next-commit inventory.
 
+The 2026-11-10 encoding follow-up uses reviewed **v6**, retaining v5 and the same historical evidence ZIP. UTF-8 repository text is read explicitly; CI and the encoding regression run with `-X utf8=0`. Project-owned `EncodingWarning`s fail diagnostic tests; third-party warnings are not suppressed. See [the encoding repair record](encoding_fix_zh.md) for actual locale and test results. Explicit successor-lock creation now extends the active lock named by the authorized delta, rather than returning to v4.
+
 ## Four verification layers
 
-1. **Current reviewed deliverables:** `docs/remediation/input_manifest_v5.json` protects the original v4 file inventory, the authorized code/configuration/test delta, and required portable evidence. Verification always checks these files; a missing lock/file or checksum mismatch is an error.
+1. **Current reviewed deliverables:** `docs/remediation/input_manifest_v6.json` protects the previous inventory, the authorized encoding code/configuration/test delta, and required portable evidence. Verification always checks these files; a missing lock/file or checksum mismatch is an error.
 2. **Immutable historical audit artifacts in the repository:** Member4's audit, data, result and figure files are independently compared with the original bytes preserved in the ZIP. Only the explicitly declared repository text line-ending representation may differ.
 3. **Original pre-remediation bytes:** `docs/remediation/historical_evidence.zip` contains exactly the 229 files in the original prechange manifest, plus the original prechange manifest and v2/v3/v4 lock files. Every original file is verified against the unchanged original SHA-256; the 163-file v1 manifest is checked separately. The JSON inventory records each member, provenance, size and the archive SHA-256. Archived scripts, including the unsafe historical BLS checker, are evidence only: never import or execute them.
 4. **Additional local backup:** the old absolute Windows location is metadata only. Normal verification never opens it. An explicit `--local-backup PATH` checks `PATH/files/` against all 229 original hashes and fails if missing or corrupted; it never falls back silently.

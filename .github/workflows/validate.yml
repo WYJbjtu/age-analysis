@@ -18,11 +18,13 @@ jobs:
           cache: pip
       - name: Install package
         run: python -m pip install -e '.[dev]'
+      - name: Record locale with UTF-8 mode disabled
+        run: python -X utf8=0 -c "import sys, locale; print(sys.version); print('locale_encoding=', locale.getencoding()); print('utf8_mode=', sys.flags.utf8_mode)"
       - name: Validate tables
-        run: python scripts/validate_data.py
+        run: python -X utf8=0 scripts/validate_data.py
       - name: Verify portable integrity (read-only)
-        run: python scripts/remediation_state.py
+        run: python -X utf8=0 scripts/remediation_state.py
       - name: Unit tests
-        run: python -m pytest -q
+        run: python -X utf8=0 -X warn_default_encoding -m pytest -q
       - name: Main analysis regression (read-only)
-        run: python scripts/verify_remediation.py regression --no-write
+        run: python -X utf8=0 scripts/verify_remediation.py regression --no-write

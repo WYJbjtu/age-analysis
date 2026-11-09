@@ -14,14 +14,14 @@ BLS_RELEASES = {2011:'02292012', 2012:'03012013', 2013:'02282014', 2014:'0304201
 def source_specs(group):
     result = []
     if group in ('all', 'member1'):
-        manifest = json.loads((ROOT/'member1_demographics/population_source_manifest.json').read_text())
+        manifest = json.loads((ROOT/'member1_demographics/population_source_manifest.json').read_text(encoding='utf-8'))
         wpp = next(r for r in manifest if r['file']=='wpp_ages.xlsx')
         result.append(dict(file='wpp_ages.xlsx', url=wpp['url'], sha256=wpp['sha256'], owner='member1'))
         result.append(dict(file='census_states_2022.zip',
             url='https://www2.census.gov/geo/tiger/GENZ2022/shp/cb_2022_us_state_20m.zip',
             sha256='fb2c327c32869dc27bee7a6e0e6130f9d936c4f85638b8414af799f1251e3816', owner='member1'))
     if group in ('all', 'member3'):
-        prior = json.loads((ROOT/'analysis/member4/audit/download_manifest.json').read_text())
+        prior = json.loads((ROOT/'analysis/member4/audit/download_manifest.json').read_text(encoding='utf-8'))
         for r in prior:
             if r['owner']=='member3_labor_migration' and r['status']=='retrieved':
                 result.append(dict(file=r['file'], url=r['url'], sha256=r['sha256'], owner='member3',
@@ -38,7 +38,7 @@ def source_specs(group):
 
 def main(group, retry_failed=False):
     log = ROOT/'docs/remediation/acquisition.json'
-    previous = json.loads(log.read_text()) if log.exists() else []
+    previous = json.loads(log.read_text(encoding='utf-8')) if log.exists() else []
     records = {r['file']:r for r in previous}
     def fetch(spec):
         path = ROOT/'data/raw'/spec['owner']/spec['file']

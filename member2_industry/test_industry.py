@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_industry_coverage_periods_and_recomputed_shares():
-    with (ROOT / 'data/processed/industry.csv').open() as stream:
+    with (ROOT / 'data/processed/industry.csv').open(encoding='utf-8', newline='') as stream:
         rows = list(csv.DictReader(stream))
     assert len(rows) == 1176
     assert len({(r['country'], r['region_id'], r['year']) for r in rows}) == 1176
@@ -32,7 +32,7 @@ def test_industry_coverage_periods_and_recomputed_shares():
 
 
 def test_tokyo_uses_gdp_including_accounting_adjustments():
-    with (ROOT / 'data/processed/industry.csv').open() as stream:
+    with (ROOT / 'data/processed/industry.csv').open(encoding='utf-8', newline='') as stream:
         row = next(r for r in csv.DictReader(stream) if r['region_id'] == 'JP-13' and r['year'] == '2022')
     # Official syuyo1.xlsx FY2022 cells I21 / BL21 / BO21, JPY millions.
     assert float(row['nominal_gdp_local']) == 120219929
@@ -60,7 +60,7 @@ def test_changed_official_table_layout_fails():
 ])
 def test_source_spot_checks_across_years(rid, year, gdp, manufacturing, services):
     # Independently inspected published source cells, including both ends and middle years.
-    with (ROOT / 'data/processed/industry.csv').open() as stream:
+    with (ROOT / 'data/processed/industry.csv').open(encoding='utf-8', newline='') as stream:
         row = next(r for r in csv.DictReader(stream) if r['region_id'] == rid and r['year'] == year)
     assert float(row['nominal_gdp_local']) == gdp
     assert float(row['manufacturing_va_local']) == manufacturing
@@ -70,7 +70,7 @@ def test_source_spot_checks_across_years(rid, year, gdp, manufacturing, services
 def test_panel_keys_match_population_and_labor():
     keys = []
     for name in ('industry', 'demographics', 'labor_migration'):
-        with (ROOT / f'data/processed/{name}.csv').open() as stream:
+        with (ROOT / f'data/processed/{name}.csv').open(encoding='utf-8', newline='') as stream:
             rows = [r for r in csv.DictReader(stream) if int(r['year']) in YEARS]
         key = {(r['country'], r['region_id'], r['year']) for r in rows}
         assert len(rows) == len(key) == 1176

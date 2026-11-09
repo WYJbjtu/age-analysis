@@ -12,7 +12,7 @@ import zipfile
 from remediation_state import (ROOT, PRECHANGE, EVIDENCE, V1, canonical, digest,
                                file_bytes, historical_content, immutable,
                                json_file, representation, rows_by_path, sha256,
-                               verify_history)
+                               verify_history, active_lock)
 
 
 def write_json(path, value):
@@ -75,29 +75,34 @@ def lock(version, delta_path):
         raise FileExistsError('Never overwrite an existing reviewed lock')
     verify_history()
     _, _, evidence, original = historical_content()
-    old = json.loads(original['docs/remediation/input_manifest_v4.json'])
-    before = rows_by_path(old['files'], 'prior v4')
+    base_path = active_lock(ROOT).relative_to(ROOT).as_posix()
+    old = json_file(ROOT, base_path, 'previous reviewed lock')
+    if version <= old['version']:
+        raise ValueError('New reviewed version must follow the active lock')
+    before = rows_by_path(old['files'], 'previous reviewed lock')
     delta_name = delta_path.resolve().relative_to(ROOT).as_posix()
     delta = json_file(ROOT, delta_name, 'authorized delta')
+    if delta['base_lock'] != base_path:
+        raise ValueError('Authorized delta must name the active reviewed lock')
     changes = rows_by_path(delta['changes'], 'authorized delta')
-    # Every v4 raw hash must still match, or be exactly named in the authorized
-    # code/configuration delta. Data, figures and results may not be changed.
+    # Extend the active reviewed version using its existing representation.
+    # Do not return to v4 or rebuild the historical ZIP for later code-only fixes.
     for name, row in before.items():
         current = file_bytes(ROOT, name, 'reviewed delta')
         if name in changes:
             change = changes[name]
             if change['before_sha256'] != row['sha256']:
                 raise ValueError('Authorized delta has wrong original hash: ' + name)
-            if name.startswith(('data/', 'member1_demographics/', 'member2_industry/', 'member3_labor_migration/')) or immutable(name):
+            if name.startswith('data/') or immutable(name) or Path(name).suffix not in {'.py','.md','.toml','.yml','.yaml'}:
                 raise ValueError('Portability fix cannot change analytical evidence: ' + name)
-        elif sha256(current) != row['sha256']:
-            raise ValueError('Unapproved change to v4 bytes: ' + name)
+        elif sha256(canonical(current, row.get('representation', 'bytes'), name)) != row['sha256']:
+            raise ValueError('Unapproved change to reviewed content: ' + name)
     for name, change in changes.items():
         data = file_bytes(ROOT, name, 'reviewed delta')
         if sha256(data) != change['after_sha256'] or not change['reason']:
             raise ValueError('Unreviewed delta bytes or reason: ' + name)
     included = set(before) | set(changes) | {EVIDENCE, evidence['archive'], PRECHANGE,
-                  delta_name, 'docs/remediation/regression_baseline.json'} | set(evidence['reviewed_locks'])
+                  delta_name, base_path, 'docs/remediation/regression_baseline.json'} | set(evidence['reviewed_locks'])
     rows = []
     for name in sorted(included):
         data = file_bytes(ROOT, name, 'new reviewed lock')
@@ -105,12 +110,19 @@ def lock(version, delta_path):
         value = canonical(data, mode, name)
         rows.append(dict(path=name, sha256=sha256(value), bytes=len(value), representation=mode,
                          authoring_bytes_sha256=sha256(data),
-                         previous_v4_sha256=before[name]['sha256'] if name in before else None))
+                         previous_reviewed_sha256=before[name]['sha256'] if name in before else None))
+    previous_locks=[dict(path=p, original_sha256=sha256(original[p]),
+                        repository_sha256=sha256(canonical(original[p], 'utf8-lf', p))) for p in evidence['reviewed_locks']]
+    for previous in [*old.get('previous_locks', []), {'path': base_path}]:
+        p = previous['path']
+        if p not in {record['path'] for record in previous_locks}:
+            data = file_bytes(ROOT, p, 'previous reviewed lock')
+            previous_locks.append(dict(path=p, original_sha256=sha256(data),
+                repository_sha256=sha256(canonical(data, 'utf8-lf', p))))
     record = dict(version=version, representation_policy='explicit-utf8-lf-v1',
-        reason='Authorized portability-only code/config/tests and repository evidence package. All unchanged v4 input bytes verified before mapping text CRLF to repository LF; historical ZIP bytes unchanged.',
+        reason=delta['scope'], base_lock=base_path,
         authorized_delta=delta_name,
-        previous_locks=[dict(path=p, original_sha256=sha256(original[p]),
-                            repository_sha256=sha256(canonical(original[p], 'utf8-lf', p))) for p in evidence['reviewed_locks']],
+        previous_locks=previous_locks,
         historical_lock=V1, historical_evidence=EVIDENCE,
         files=rows)
     write_json(target, record)

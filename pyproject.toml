@@ -18,3 +18,6 @@ where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests", "member2_industry"]
+filterwarnings = [
+    'error::EncodingWarning:^(test_.*|bls_sources|prepare_industry|plot_industry|remediation_state|build_portable_integrity|verify_remediation|finalize_remediation|fetch_remediation_sources|download_sources|freeze_inputs|verify_sources|build_reports|run_analysis|verify_delivery|aging_economies(\..*)?)$',
+]

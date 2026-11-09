@@ -81,7 +81,7 @@ def presentation_manifest():
 
 def main():
     verify();reports()
-    v=json.loads((DOCS/'validation.json').read_text())
+    v=json.loads((DOCS/'validation.json').read_text(encoding='utf-8'))
     for key in ['tests','source_checks','reproduction']:
         if not isinstance(v[key],dict):raise ValueError('Incomplete validation: '+key)
     if v['tests']['failures'] or v['tests']['errors'] or v['source_checks']['failed'] or v['reproduction']['failed']:
@@ -91,12 +91,12 @@ def main():
     # Ensure current output paths exist before recording final status; no staged/index mutations.
     for name in ['repair_report_zh.md','file_change_manifest.csv','file_change_manifest.sha256','final_state.json']:
         if not (DOCS/name).exists():(DOCS/name).write_text('',encoding='utf-8')
-    state={'branch':subprocess.check_output(['git','branch','--show-current'],cwd=ROOT,text=True).strip(),
-           'commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
+    state={'branch':subprocess.check_output(['git','branch','--show-current'],cwd=ROOT,text=True,encoding='utf-8').strip(),
+           'commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True,encoding='utf-8').strip(),
            'status_porcelain':subprocess.check_output(['git','status','--short','--untracked-files=all'],cwd=ROOT).decode('utf-8'),
            'remote_writes':False,'commits_created':False}
     initial,backup=historical_backup()
-    origin=json.loads((DOCS/'initial_state.json').read_text())
+    origin=json.loads((DOCS/'initial_state.json').read_text(encoding='utf-8'))
     if (state['branch'],state['commit'])!=(origin['branch'],origin['commit']):raise ValueError('Working branch/HEAD changed; investigate conflict')
     (DOCS/'final_state.json').write_text(json.dumps(state,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     before={r['path']:r for r in initial['files']}
