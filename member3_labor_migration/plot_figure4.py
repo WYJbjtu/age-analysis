@@ -1,41 +1,120 @@
-"""Figure 4: all 98 regions; domestic migration and explicit annual periods."""
+﻿#!/usr/bin/env python3
+"""Figure 4 — labour market structure and net migration by region, 2022.
+
+(a) 51 US states + DC, (b) 47 Japanese prefectures.
+x = share of population aged 65+, y = annual-average unemployment rate,
+colour = net migration (persons). Absolute axes are shared across countries so
+that the two panels are directly readable; the colour scale is per country
+because net-migration magnitudes differ by an order of magnitude.
+
+Reads only the shared processed tables.
+"""
+from pathlib import Path
+
+import matplotlib
+
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
-import numpy as np
-from plot_helpers import *
+import pandas as pd
 
-def main():
-    setup();panel=load_panel();df=cross_section(panel)
-    base=panel[panel.year==2011].set_index('region_id').unemployment_rate_pct
-    df['d_rate']=(df.unemployment_rate_pct-df.region_id.map(base)).abs()
-    if df[['domestic_net_migration','d_rate']].isna().any().any():raise ValueError('Missing bubble/color inputs')
-    fig,axes=plt.subplots(1,2,figsize=(14,6.7),sharex=True,sharey=True)
-    fig.subplots_adjust(left=.07,right=.94,bottom=.25,top=.78,wspace=.25)
-    samples=[]
-    for ax,country in zip(axes,['USA','JPN']):
-        g=df[df.country==country];limit=float(g.domestic_net_migration.abs().max()/1000)
-        points=ax.scatter(g.age65_share_pct,g.unemployment_rate_pct,c=g.domestic_net_migration/1000,
-            cmap='RdBu',vmin=-limit,vmax=limit,s=25+45*g.d_rate,edgecolor='#333333',linewidth=.5)
-        labels={'USA':['US-NV','US-ND','US-ME','US-IN'],'JPN':['JP-05','JP-13','JP-32','JP-47']}
-        for _,r in g[g.region_id.isin(labels[country])].iterrows():
-            ax.annotate(r.region_name if country=='JPN' else r.region_id[3:],(r.age65_share_pct,r.unemployment_rate_pct),
-                        xytext=(5,5),textcoords='offset points',fontsize=8)
-        ax.set_xlim(np.floor(df.age65_share_pct.min())-1,np.ceil(df.age65_share_pct.max())+1)
-        ax.set_ylim(np.floor(df.unemployment_rate_pct.min())-.1,np.ceil(df.unemployment_rate_pct.max())+.2)
-        ax.set_title('United States | 50 states + DC (n=51)' if country=='USA' else 'Japan | 47 prefectures (n=47)',fontsize=12)
-        ax.set_xlabel('Population aged 65+ (%)');ax.grid(alpha=.18)
-        cb=fig.colorbar(points,ax=ax,pad=.02,fraction=.045);cb.set_label('Domestic net migration (thousand persons)',fontsize=9)
-        check_bounds(ax,g.age65_share_pct,g.unemployment_rate_pct)
-        samples.append(dict(country=country,year=2022,n=len(g),ids=g.region_id.tolist(),all_in_bounds=True,
-                            x_range=list(ax.get_xlim()),y_range=list(ax.get_ylim()),color_field='domestic_net_migration'))
-    axes[0].set_ylabel('Annual-average unemployment rate (%)')
-    handles=[Line2D([],[],marker='o',linestyle='',color='none',markeredgecolor='#333333',markerfacecolor='#cccccc',
-                    markersize=np.sqrt(25+45*v),label=f'{v} pp') for v in [0,2,4]]
-    axes[0].legend(handles=handles,title='|Change in unemployment|, 2011–2022',loc='upper right',fontsize=8,title_fontsize=8)
-    fig.suptitle('Labor markets and domestic migration, 2022',x=.07,ha='left',fontsize=18)
-    fig.text(.07,.86,'Color scales are country-specific; bubble size shows the absolute change in unemployment.',fontsize=10)
-    fig.text(.07,.09,'Sources: BLS archived annual averages; Japan LFS; Census Vintage 2022; Basic Resident Registration.\n'
-        'US: civilian noninstitutional 16+, July-to-July migration. Japan: LFS 15+, calendar-year migration, all nationalities.\n'
-        'Population dates: US July 1 / Japan October 1. All 98 regions are visible, including Akita. Descriptive associations.',fontsize=9,color='#555555')
-    save(fig,'figure4_labor_2022',samples,'Domestic migration; no international component in color; source/vintage limits remain.')
+ROOT = Path(__file__).resolve().parents[1]
+OUT = Path(__file__).resolve().parent / "figures"
+OUT.mkdir(parents=True, exist_ok=True)
 
-if __name__=='__main__':main()
+dem = pd.read_csv(ROOT / "data/processed/demographics.csv", dtype={"region_id": str})
+lab = pd.read_csv(ROOT / "data/processed/labor_migration.csv", dtype={"region_id": str})
+df = dem.merge(lab, on=["country", "region_id", "year"], how="inner")
+df = df[df.year == 2022].copy()
+
+usa = df[(df.country == "USA") & df.employment.notna()].copy()
+jpn = df[(df.country == "JPN") & df.employment.notna()].copy()
+
+# 2011 -> 2022 change in the unemployment rate, used as the point size
+base = lab[(lab.year == 2011)][["region_id", "unemployment_rate_pct"]].rename(
+    columns={"unemployment_rate_pct": "rate_2011"})
+delta = lab[lab.year == 2022][["region_id", "unemployment_rate_pct"]].merge(
+    base, on="region_id")
+delta["d_rate"] = delta.unemployment_rate_pct - delta.rate_2011
+dmap = dict(zip(delta.region_id, delta.d_rate))
+for frame in (usa, jpn):
+    frame["d_rate"] = frame.region_id.map(dmap).abs()
+if len(usa) != 51 or len(jpn) != 47:
+    raise SystemExit(f"expected 51 US and 47 JP rows, got {len(usa)} and {len(jpn)}")
+
+xl = (10.5, 36.5)
+yl = (1.0, 6.0)
+
+LABELS = {
+    "USA": [("US-NV", "Nevada"), ("US-ND", "North Dakota"), ("US-ME", "Maine"),
+            ("US-UT", "Utah"), ("US-WV", "West Virginia"), ("US-IN", "Indiana")],
+    "JPN": [("JP-13", "Tokyo"), ("JP-47", "Okinawa"), ("JP-32", "Shimane"),
+            ("JP-34", "Hiroshima")],
+}
+
+OFFSETS = {"JP-32": (-6, 6, "right"), "JP-34": (5, -11, "left"),
+           "US-ND": (6, -9, "left"), "US-WV": (6, 4, "left")}
+
+fig, axes = plt.subplots(1, 2, figsize=(13.6, 6.0), dpi=200, sharey=True)
+panels = [("USA", usa, "#1f77b4"), ("JPN", jpn, "#d62728")]
+titles = {"USA": "(a) United States — 51 states + DC",
+          "JPN": "(b) Japan — 47 prefectures"}
+
+for ax, (country, frame, base) in zip(axes, panels):
+    limit = float((frame.net_migration / 1000.0).abs().max())
+    sc = ax.scatter(
+        frame.age65_share_pct, frame.unemployment_rate_pct,
+        c=frame.net_migration / 1000.0, cmap="RdBu",
+        vmin=-limit, vmax=limit,
+        s=(25 + 45 * frame.d_rate.fillna(0)).values,
+        edgecolors="#333333", linewidths=0.6, zorder=3,
+    )
+    for rid, text in LABELS[country]:
+        row = frame[frame.region_id == rid]
+        if not len(row):
+            continue
+        row = row.iloc[0]
+        dx, dy, ha = OFFSETS.get(rid, (5, 4, "left"))
+        ax.annotate(text, (row.age65_share_pct, row.unemployment_rate_pct),
+                    xytext=(dx, dy), textcoords="offset points", fontsize=7.5,
+                    ha=ha, zorder=4)
+    ax.set_xlim(*xl)
+    ax.set_ylim(*yl)
+    ax.grid(alpha=0.25, ls="--")
+    ax.set_xlabel("Population aged 65+ (%, 2022)", fontsize=10)
+    ax.set_title(titles[country], fontsize=10.5)
+    for side in ("top", "right"):
+        ax.spines[side].set_visible(False)
+    cbar = fig.colorbar(sc, ax=ax, pad=0.02, fraction=0.05)
+    cbar.set_label("Net migration, 2022 (thousand persons)", fontsize=8.5)
+
+handles = [Line2D([], [], marker="o", linestyle="", color="none",
+                  markeredgecolor="#333333", markerfacecolor="#cccccc",
+                  markersize=(25 + 45 * v) ** 0.5, label=f"{v:.0f} pp") for v in (0, 2, 4, 6)]
+axes[0].legend(handles=handles, title="|Δ unemployment| 2011→2022", loc="lower right",
+               fontsize=7.5, title_fontsize=8, frameon=True, labelspacing=1.0,
+               borderpad=0.8)
+
+axes[0].set_ylabel("Unemployment rate (%, annual average 2022)", fontsize=10)
+
+fig.suptitle("Figure 4 — Labour market structure and net migration by region, 2022\n"
+             "colour = net migration (per-country scale); size = |change in unemployment, 2011→2022|",
+             fontsize=11.5)
+fig.text(0.5, -0.02,
+         "Sources: BLS LAUS 2022 annual averages (US; 16+ civilian noninstitutional population) and Labour Force Survey\n"
+         "prefectural model estimates 2022 (Japan; 15+). Net migration: Census Vintage 2022 (US, domestic + international,\n"
+         "Jul 2021–Jul 2022) and Basic Resident Registration report (Japan, inter-prefectural, calendar 2022).\n"
+         "Labour-force universes and migration definitions differ; no cross-country ranking is implied.",
+         ha="center", va="top", fontsize=6.8, color="#555555")
+
+fig.tight_layout()
+for ext in ("png", "svg"):
+    fig.savefig(OUT / f"figure4_labor_2022.{ext}", bbox_inches="tight", facecolor="white")
+print("wrote", OUT / "figure4_labor_2022.png")
+print("US rate range:", usa.unemployment_rate_pct.min(), usa.unemployment_rate_pct.max())
+print("JP rate range:", jpn.unemployment_rate_pct.min(), jpn.unemployment_rate_pct.max())
+print("corr aging-unemp US:", round(usa.age65_share_pct.corr(usa.unemployment_rate_pct), 3),
+      "JP:", round(jpn.age65_share_pct.corr(jpn.unemployment_rate_pct), 3))
+
+
+

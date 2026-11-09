@@ -1,60 +1,149 @@
-# Member 3 findings — repaired 2026-11-09
+# Member 3 findings — labor market, migration and regional cases
 
-The canonical panel has **1,176 region-year rows**: 51 U.S. regions (50 states and Washington, D.C.) and 47 Japanese prefectures in every year, 2011–2022. All keys are unique. Employment and unemployment rates are complete. All-nationality domestic migration has **847 valid / 329 missing observations**; the 329 missing entries are Japan 2011–2017 and have a separate Japanese-only field. International and total migration are available for the 612 U.S. rows; the 564 Japanese entries remain missing. The legacy `net_migration` field is retained for compatibility, with explicit original definitions, and is not used for domestic-migration plots.
+## Sources and coverage
 
-`prepare_labor.py` rebuilds from official Census CSVs, Japanese XLS/XLSX files and checksum-locked BLS annual-page text snapshots. It never reads the existing processed panel as an input. All 612 U.S. annual employment and unemployment-rate records were independently read from official BLS archives and match the former published values. Direct HTML download returned HTTP 403; routine reproduction uses the traceable full-state text snapshots and does not claim fresh HTML/API retrieval. Japanese labor is reproduced from the pinned official workbook. All 196 domestic-migration observations in 2019 and 2022 agree exactly with Member 4's independently verified adapter, which is used only as a validation reference. Source URLs and source hashes are in `sources.csv`, `summary.json` and `source_snapshots/manifest.json`.
+`data/processed/labor_migration.csv` has **1,176 rows** = 98 regions × 12 years
+(51 US + 47 JP, 2011–2022), all keys unique. Labour is complete for all 12
+years; migration is complete for 2018–2022 and deliberately empty for
+2011–2017. US labour comes from the archived BLS state annual-average releases
+(one release per year, the current-year column); US net migration from Census
+Vintage 2020 for 2011–2020 and Vintage 2022 for 2021–2022. Japanese labour is
+the prefectural model estimate release; Japanese migration comes from the
+2018–2022 annual reports (all nationalities). The 2011–2017 Japanese tables are
+headed *日本人移動者* (Japanese movers only) and are **not chained** to the
+2018–2022 series — Osaka 2017 reads 2,961 in the first and 1,136 in the second
+— so those years are kept as a separate reference file
+(`jpn_migration_japanese_2011_2017.csv`). Raw counts (labour force, employment,
+unemployment) are in `jpn_labor_detail.csv`. Sources, tables and reference
+periods: `sources.csv`; rebuild with `prepare_labor.py --download` and
+`fetch_us_inputs.py`.
 
-## Results supported by the repaired data
+## USA 2022 — net migration and labour market
 
-| Country | Regions | Pearson r: aging × unemployment | Spearman rho |
-| --- | --- | --- | --- |
-| JPN | 47 | -0.460084 | -0.442502 |
-| USA | 51 | -0.054091 | 0.004942 |
+1. Annual net migration (persons): minimum **US-NY = -221,634**; maximum
+   **US-FL = 444,484**. Median across the 51 equally weighted regions =
+   **10,330** (median of regions, not a population-weighted national figure).
+2. **US unemployment ranged from 2.1 % to 5.4 %** in 2022 (North Dakota and
+   South Dakota lowest, Nevada 5.4 %, District of Columbia 4.7 %), median
+   **3.4 %** — nearly twice the Japanese median (2.2 %) and far wider spread
+   (3.3 pp vs 1.9 pp). Employment spans 281 thousand (Wyoming) to 18,441
+   thousand (California).
+3. **Aging and unemployment are essentially unrelated in the 2022 US
+   cross-section** (Pearson r = **-0.05**, Spearman rho = **0.02**, n = 51), so
+   older states are neither systematically tighter nor looser labour markets.
 
-In the 2022 cross-section, the U.S. Pearson coefficient is close to zero and Japan's is negative. Both Pearson coefficients are negative: this comparison does **not** demonstrate a directional reversal. These descriptive linear/rank summaries neither identify a mechanism nor rule out other relationships.
+## Japan 2022 — employment, unemployment, migration
 
-| Country | Regional median unemployment | Regional unemployment range | Lowest domestic net migration (persons) | Highest domestic net migration (persons) |
-| --- | --- | --- | --- | --- |
-| JPN | 2.2% | 1.3–3.2% | Hiroshima: -9,207 | Tokyo: +38,023 |
-| USA | 3.4% | 2.1–5.4% | California: -343,230 | Florida: +318,855 |
+4. **Net migration is extremely concentrated in the Tokyo metropolitan area.**
+   Largest net inflows: Tokyo **+38,023**, Kanagawa **+27,564**, Saitama
+   **+25,364**, Chiba **+8,568**, Osaka **+6,539**. Largest net outflows:
+   Hiroshima **-9,207**, Aichi **-7,910**, Fukushima **-6,733**, Niigata
+   **-5,830**, Hyogo **-5,625**. The 47 values sum to 0 in each year, so this is
+   internal redistribution, not national growth.
+5. **Employment is as concentrated as population.** Tokyo **8,332 thousand**
+   employed persons against **296 thousand** in Tottori — roughly a 28-fold
+   spread across prefectures.
+6. **Unemployment is low and spatially flat.** Prefectural rates run from
+   **1.3 % (Shimane)** to **3.2 % (Okinawa)**, median **2.2 %**. The highest-rate
+   prefecture has only a modest net outflow, so unemployment alone does not
+   explain regional migration in Japan.
 
-These are regional medians and ranges, not national population-weighted rates or a harmonized cross-country labor ranking. Tokyo's all-nationality domestic net migration was +82,982 in 2019 and +38,023 in 2022, a difference of -44,959 persons. Of all 47 prefectures, 11 had a lower net value and 36 a higher net value. A decline does not necessarily mean a region became a net loser. Each annual Japanese domestic total sums to zero; the observations cannot establish a pandemic effect or an age-specific migration mechanism.
+## Japan 2019 vs 2022 — does the 2022 pattern depend on the year?
 
-## Regional examples
+7. **The Tokyo inflow roughly halved between the two years.** Tokyo net
+   migration fell from **+82,982 (2019)** to **+38,023 (2022)**, a change of
+   **-44,959 persons** — by far the largest movement of any prefecture
+   (next: Aichi -5,979). Only **11 of 47** prefectures had a smaller net inflow
+   (or a larger net outflow) in 2022; the other 36 *improved*, mostly because
+   less population was drawn toward Tokyo. The 2022 cross-section therefore
+   should not be presented as a continuation of the 2019 pattern.
+8. **Labour-market changes between the years are small compared with the
+   migration shift.** Unemployment-rate changes stay within **-0.6 pp
+   (Shimane)** to **+0.7 pp (Kanagawa)**, while employment rose by **237
+   thousand in Tokyo** and fell by 64 thousand in Hokkaido and 63 thousand in
+   Kanagawa. Migration moved far more than the unemployment rate did.
 
-| Region | Aged 65+ (%) | Manufacturing GDP share (%) | Unemployment (%) | Domestic net migration (persons) |
-| --- | --- | --- | --- | --- |
-| Hokkaido | 32.80 | 8.68 | 3.2 | -3,476 |
-| Toyama | 33.00 | 31.49 | 1.8 | -1,275 |
-| Indiana | 16.91 | 25.09 | 3.0 | +5,230 |
-| Nevada | 16.90 | 4.41 | 5.4 | +20,781 |
+9. **An outlier screen independently confirms the case choices.** Fitting a
+   linear trend within each country and standardising the residuals (|z| ≥ 1.5)
+   flags Indiana **+3.1 SD** on manufacturing (25.1 % vs 10.3 % fitted), Nevada
+   **+2.6 SD** on unemployment (5.4 % vs 3.4 %), Hokkaido **+2.8 SD** on
+   unemployment (3.2 % vs 2.2 %), District of Columbia **-2.1 SD** and Okinawa
+   **-2.1 SD** on manufacturing (0.2 % and 4.0 %). The three case regions are
+   therefore the statistical outliers themselves, not arbitrary picks.
 
-These retained examples compare Indiana with Nevada and Hokkaido with Toyama within their own countries. They are the largest manufacturing-share gaps among pairs whose aging rates differ by at most 0.5 percentage points, using the full 2022 sample; Member 4 also presents the smallest-gap contrasting pairs. All candidates are disclosed in Member 4's case table. The cases illustrate coexistence of similar aging and different industrial shares; they do not isolate industry's effect or control confounding. Cross-country aging ranges do not overlap, so no cross-country aging-matched case is constructed. The residual screen reuses the same observations and is not independent confirmation of selection.
+10. **Japan's labour market tightened for a decade, then stalled.** The median
+    prefecture unemployment rate fell from **4.3 % (2011)** to **2.1 %
+    (2018 and 2019)**, edged up to **2.3 % (2020)** and **2.4 % (2021)** and
+    returned to **2.2 % (2022)**. The 2011–2019 decline is almost monotonic
+    (−2.2 pp in eight years), far larger than any year-to-year move during
+    COVID-19.
 
-## Relation to the project's main result
+11. **Tokyo's migration inflow collapsed in 2020–21 and only partly recovered.**
+    Tokyo net migration was **+79,844 (2018)**, **+82,982 (2019)**, then
+    **+31,125 (2020)**, **+5,433 (2021)** — a 93 % drop from 2019 — and
+    **+38,023 (2022)**. The 2021 value is below the 2018 level by more than
+    74,000 persons, while the other large metropolitan prefectures (Kanagawa,
+    Saitama, Osaka) moved much less.
 
-The pooled sample shows a positive association, but within-country Pearson correlations are close to zero in both the United States and Japan for the examined years. The pooled relationship should not be interpreted as a shared regional pattern within either country. This statement concerns aging and **manufacturing GDP share** in 2019 and 2022, not aging and unemployment. It does not establish a stable reversal, no role for industrial structure, or a pattern in every year of the twelve-year panel.
+12. **The two countries' 12-year labour cycles have very different
+    amplitudes.** The median state unemployment rate in the US ran **8.0 %
+    (2011) → 3.5 % (2019) → 7.3 % (2020) → 3.4 % (2022)**, a 4.5 pp fall and a
+    3.8 pp pandemic spike; Japan's median prefecture rate moved **4.3 % →
+    2.1 % → 2.3 % → 2.2 %**, i.e. a similar long decline but a pandemic bump of
+    only about 0.3 pp. Regional labour markets in the US are both higher and far
+    more volatile across the cycle.
 
-## Vintage and rounding checks
+13. **Vintages matter, and the size is measurable.** Comparing each state-year
+    with the prior-year column of the next release (561 pairs), BLS revised the
+    annual state unemployment rate by a **median of 0.1 pp, 90th percentile
+    0.2 pp, maximum 0.7 pp** (Alabama 2013, Alaska 2019, Nevada 2020). The
+    current API revision differs from the archived values by a median of
+    0.1 pp and at most 0.94 pp, part of which is the rounding of monthly
+    values. The table keeps the **as-published value for each year** and
+    documents the vintage in `sources.csv`; the comparison is saved in
+    `bls_revision_check.csv`.
 
-The safe `check_bls_revision.py` compares 561 annual state values with the prior-year annual column of the next official release. Absolute unemployment-rate revisions have median 0.1 pp, 90th percentile 0.2 pp and maximum 0.7 pp. This is an adjacent-archive check, not current-API validation. The former credential/proxy/monthly-average checker has been replaced. All 1,176 labor-force, employment, unemployment and rate rounding checks pass. Japanese model/ratio estimates, disaster-year notes and benchmark revisions remain relevant; a single retrieved workbook does not remove those breaks.
+## Figures
 
-## Figure captions and selection
-
-| File under `figures/` | Scope and selection | Use |
-| --- | --- | --- |
-| `figure4_labor_2022.png` / `.svg` | All 98 regions; domestic-migration color; bubble area encodes absolute 2011–2022 unemployment change | Main labor context |
-| `jpn_labor_migration_2019_2022.png` / `.svg` | All 47 scatter points, including Akita; eight largest increases and eight largest decreases selected from all 47 | Japan context |
-| `jpn_panel_2011_2022.png` / `.svg` | Labor: all 47; migration: Tokyo, Kanagawa, Saitama, Osaka, Aichi retained from the original five-case selection; nationality break shown | Appendix |
-| `two_country_trend_2011_2022.png` / `.svg` | Medians of 51 or 47 region-level values; employment indexed separately to each region's 2011 value | Appendix; vintage limitations |
-| `outliers_2022.png` / `.svg` | Within-country residual screen, all 98 regions; labels show up to four largest absolute standardized residuals ≥1.5 per panel | Appendix; exploratory |
-
-Each figure has a JSON sidecar with input hashes and sample membership. Root-level image aliases are compatibility copies of the repaired images; use the `figures/` paths. The pre-repair versions are superseded and retained in the external backup, not approved for presentation.
+- `figures/jpn_panel_2011_2022.png` / `.svg` — (a) median prefecture
+  unemployment rate 2011–2022; (b) net migration 2018–2022 for the five largest
+  migration regions. Script: `plot_japan_trend.py`.
+- `figures/figure4_labor_2022.png` / `.svg` — Figure 4: US and Japan aging ×
+  unemployment shaded by net migration, shared axes. Script: `plot_figure4.py`.
+- `figures/two_country_trend_2011_2022.png` / `.svg` — 12-year median unemployment
+  and employment index, US vs Japan. Script: `plot_two_country_trend.py`.
+- `figures/outliers_2022.png` / `.svg` — residual outlier screen; data in
+  `outliers_2022.csv`. Script: `outliers_2022.py`.
+- `figures/jpn_labor_migration_2019_2022.png` / `.svg` — (a) 2022 aging rate ×
+  unemployment rate shaded by net migration; (b) largest net-migration changes
+  2019 → 2022. Script: `plot_japan_labor.py`.
+- Existing US age/manufacturing maps and ranked plots:
+  `../handover/us_2022/deliverables/figures/`.
 
 ## Definitions and limitations
 
-The United States uses annual LAUS estimates for the civilian noninstitutional population aged 16+; Japan uses annual Labour Force Survey prefectural estimates for ages 15+. Employment counts are residence-based persons, not establishment jobs. Unemployment uses the labor force as its denominator. Published counts are in thousands and are converted to persons; they retain thousand-person precision. Rates are published annual values, not averages of rounded monthly rates. No labor-force participation rate is calculated from total population or population aged 15–64.
+- **Japan employment** — Labour Force Survey prefectural model estimates,
+  annual average, thousand persons × 1000; rounded estimates, not exact counts.
+  One release is used for all 12 years so the series is internally consistent.
+- **Japan unemployment rate** — same release, percent (0–100).
+- **Japan net migration** — 住民基本台帳人口移動報告, `転入超過数`, calendar
+  year, **2018–2022**, all nationalities. The 2011–2017 tables are headed
+  *日本人移動者* (Japanese movers only) and use a different population
+  definition: Osaka 2017 is 2,961 Japanese-only against 1,136 all-nationalities.
+  The earlier values are therefore kept as a reference series
+  (`jpn_migration_japanese_2011_2017.csv`) and **not chained** into the
+  2018–2022 figures.
+- **US net migration** — Census Vintage 2020 for 2011–2020 and Vintage 2022 for
+  2021–2022, domestic + international, July-to-July.
+- The two migration measures are **not harmonised** (period; foreign residents;
+  internal vs internal + international). Report countries separately.
+- Labour-force universes differ: US LAUS is 16+ civilian noninstitutional,
+  Japan's survey is 15+. No cross-country unemployment ranking is claimed.
+- The 2019→2022 comparison is a **descriptive year check**, not a COVID causal
+  test; 2022 is a single pandemic-affected year and the 12-year labour panel is
+  descriptive context rather than a causal design.
+- Cross-sectional association is not causation; regional cases illustrate
+  patterns rather than mechanisms.
 
-U.S. domestic migration uses Census **DOMESTICMIG**. INTERNATIONALMIG and NETMIG are separate fields; domestic plus international equals total. Annual Census fields cover July 1 of the previous year to July 1 of the named year, not the cumulative Census-base period. Vintage 2020 supplies 2011–2020 and Vintage 2022 supplies 2021–2022; revisions remain a limitation. Japanese migration is inter-prefectural registration over January–December. The historical table is **Japanese nationals only** in 2011–2017; annual tables cover **all nationalities** in 2018–2022. These are separate columns and disconnected plotted series. All-nationality values before 2018 remain missing. No interpolation or carry-forward is used.
 
-Migration is a net count, not a rate or a count of young adults. It does not identify gross inflows/outflows or migrants' ages. Countries have different reporting periods and populations; migration and labor results are interpreted within countries. Counts also depend on region size. Population dates are July 1 (United States) and October 1 (Japan); manufacturing is nominal manufacturing value added / nominal GDP in CY (United States) or FY April–March (Japan). Manufacturing's GDP share is not an employment share. Country-specific services are never pooled.
+

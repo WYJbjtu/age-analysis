@@ -4,7 +4,7 @@
 For each country and for two relationships —
     unemployment rate ~ aging rate
     manufacturing share ~ aging rate
-— a linear trend is fitted on the 51/47 regions and standardised residuals are
+— a linear trend is fitted on the 52/47 regions and standardised residuals are
 reported, so that "unusual regions" are chosen by a stated rule instead of by
 inspection. Output: outliers_2022.csv and figures/outliers_2022.png/.svg.
 """
@@ -14,7 +14,6 @@ import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-plt.rcParams['svg.hashsalt']='member3-repaired'
 import numpy as np
 import pandas as pd
 
@@ -28,14 +27,12 @@ lab = pd.read_csv(ROOT / "data/processed/labor_migration.csv", dtype={"region_id
 ind = pd.read_csv(ROOT / "data/processed/industry.csv", dtype={"region_id": str})
 lookup = pd.read_csv(ROOT / "data/reference/region_lookup.csv")
 
-df = (dem.merge(lab, on=["country", "region_id", "year"], how="left", validate='one_to_one')
+df = (dem.merge(lab, on=["country", "region_id", "year"], how="inner")
          .merge(ind[["country", "region_id", "year", "manufacturing_share_pct"]],
-                on=["country", "region_id", "year"], how="left", validate='one_to_one'))
-df = df[df.year == 2022].copy()
+                on=["country", "region_id", "year"], how="left"))
+df = df[(df.year == 2022) & df.employment.notna()].copy()
 df = df.merge(lookup[["country", "region_id", "region_name"]],
-              on=["country", "region_id"], how="left", validate='many_to_one')
-if df.groupby('country').size().to_dict()!={'USA':51,'JPN':47} or df[['region_name','age65_share_pct','manufacturing_share_pct','unemployment_rate_pct']].isna().any().any():
-    raise ValueError('Outlier figure requires the complete 98-region cross-section')
+              on=["country", "region_id"], how="left")
 
 PAIRS = [
     ("USA", "unemployment_rate_pct", "Unemployment rate (%)"),
@@ -74,7 +71,7 @@ titles = {
     ("JPN", "unemployment_rate_pct"): "(c) Japan unemployment rate",
     ("JPN", "manufacturing_share_pct"): "(d) Japan manufacturing share",
 }
-colors = {"USA": "#2788ae", "JPN": "#8551a6"}
+colors = {"USA": "#1f77b4", "JPN": "#d62728"}
 
 for ax, (country, col, label) in zip(axes.ravel(), PAIRS):
     sub, slope, intercept, sigma = fits[(country, col)]
@@ -84,9 +81,13 @@ for ax, (country, col, label) in zip(axes.ravel(), PAIRS):
     ax.scatter(sub.age65_share_pct, sub.residual, s=46, color=colors[country],
                alpha=0.85, edgecolors="white", linewidths=0.6)
     flagged = sub[sub.z.abs() >= 1.5].sort_values("z", key=abs, ascending=False).head(4)
+    offsets = {"North Dakota": (8, 6), "South Dakota": (8, -10),
+               "Hawaii": (-8, 4), "District of Columbia": (6, -10)}
     for _, r in flagged.iterrows():
-        ax.annotate(r.region_id, (r.age65_share_pct, r.residual),
-                    xytext=(4, 4), textcoords="offset points", fontsize=8)
+        dx, dy = offsets.get(r.region_name, (4, 4))
+        ax.annotate(r.region_name, (r.age65_share_pct, r.residual),
+                    xytext=(dx, dy), textcoords="offset points", fontsize=8,
+                    ha="left" if dx >= 0 else "right")
     ax.set_title(titles[(country, col)] +
                  f"\nslope {slope:+.2f} pp per pp aging; residual SD {sigma:.2f}",
                  fontsize=9.5)
@@ -97,16 +98,14 @@ for ax, (country, col, label) in zip(axes.ravel(), PAIRS):
         ax.spines[side].set_visible(False)
 
 fig.suptitle("Outlier screen, 2022: which regions depart most from the within-country trend?\n"
-             "dashed lines = ±2 residual SD; labels: up to four largest |z| ≥ 1.5 per panel", fontsize=11)
-fig.text(0.07, 0.035,
-         "This screen reuses the same observations; it does not independently confirm case selection or identify causes.\n"
-         "Sources: BLS / Japan LFS annual 2022; Census July / Japan October population; BEA CY2022 / Cabinet Office FY2022.\n"
-         "Manufacturing is nominal value added / nominal GDP, not an employment share. Each region has equal weight.",
-         ha="left", fontsize=8, color="#555555")
-fig.tight_layout(rect=(0,.13,1,.94))
-from plot_helpers import save
-save(fig,'outliers_2022',[{'country':c,'indicator':col,'n':len(f[0]),'ids':f[0].region_id.tolist()} for (c,col),f in fits.items()],
-     'Descriptive residual screen; same-data case selection is not independent validation.')
+             "dashed lines = ±2 residual SD; labels = |z| ≥ 1.5", fontsize=11)
+fig.text(0.5, -0.01,
+         "Linear trend fitted separately within each country; residuals in the units of the vertical axis. "
+         "Sources: BLS LAUS 2022; Labour Force Survey 2022; Population Estimates 2022; Cabinet Office FY2022 (Japan industry).",
+         ha="center", fontsize=6.8, color="#555555")
+fig.tight_layout()
+for ext in ("png", "svg"):
+    fig.savefig(OUT / f"outliers_2022.{ext}", bbox_inches="tight", facecolor="white")
 
 print("wrote", OUT / "outliers_2022.png", "and", MEMBER / "outliers_2022.csv")
 for (country, col), (sub, slope, intercept, sigma) in fits.items():

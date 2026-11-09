@@ -14,7 +14,6 @@ import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-plt.rcParams['svg.hashsalt']='member3-repaired'
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -24,8 +23,8 @@ OUT.mkdir(parents=True, exist_ok=True)
 lab = pd.read_csv(ROOT / "data/processed/labor_migration.csv", dtype={"region_id": str})
 lab = lab[lab.year.between(2011, 2022)]
 
-colors = {"USA": "#2788ae", "JPN": "#8551a6"}
-names = {"USA": "United States (50 states + DC)", "JPN": "Japan (47 prefectures)"}
+colors = {"USA": "#1f77b4", "JPN": "#d62728"}
+names = {"USA": "United States (51 states + DC)", "JPN": "Japan (47 prefectures)"}
 
 fig, axes = plt.subplots(1, 2, figsize=(12.8, 5.0), dpi=200)
 
@@ -37,7 +36,7 @@ for country in ("USA", "JPN"):
             label=names[country])
 ax.set_xlabel("Year", fontsize=10)
 ax.set_ylabel("Median regional unemployment rate (%)", fontsize=10)
-ax.set_title("(a) Annual median regional unemployment rates",
+ax.set_title("(a) Unemployment: same long decline, very different cycles",
              fontsize=10.5)
 ax.grid(alpha=0.25, ls="--")
 ax.legend(fontsize=8.5)
@@ -61,13 +60,12 @@ ax.legend(fontsize=8.5)
 ax.set_xticks(range(2011, 2023, 2))
 
 fig.suptitle("Member 3 — two-country labour market trends, 2011–2022", fontsize=12)
-fig.text(0.07, 0.04,
-         "Sources: BLS archived annual tables (each year's published vintage); Japan LFS annual model/ratio estimates.\n"
-         "Medians give each region equal weight. US civilian noninstitutional 16+; Japan 15+. Benchmark revisions remain.\n"
-         "Employment is persons, not jobs. Index each region to its own 2011 value; these are descriptive regional summaries.",
-         ha="left", fontsize=8, color="#555555")
-fig.tight_layout(rect=(0,.16,1,.92))
-from plot_helpers import save
-save(fig,'two_country_trend_2011_2022',[{'country':c,'regions':int(lab[lab.country==c].region_id.nunique()),'years':list(range(2011,2023))} for c in ('USA','JPN')],
-     'As-published BLS annual vintages; LFS benchmark/disaster notes retained; medians are not national rates.')
+fig.text(0.5, -0.02,
+         "Sources: BLS archived state annual averages; Labour Force Survey prefectural model estimates. "
+         "Medians give each region equal weight. Labour-force universes differ (US 16+, Japan 15+), "
+         "so levels are descriptive, not a ranking. Employment index uses each country's own 2011 base.",
+         ha="center", fontsize=6.8, color="#555555")
+fig.tight_layout()
+for ext in ("png", "svg"):
+    fig.savefig(OUT / f"two_country_trend_2011_2022.{ext}", bbox_inches="tight", facecolor="white")
 print("wrote", OUT / "two_country_trend_2011_2022.png")

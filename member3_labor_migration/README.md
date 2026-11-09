@@ -1,57 +1,130 @@
-# Member 3 — repaired labor and migration pipeline
+# Member 3 — labor, migration and regional cases
 
-Current delivery: 2026-11-09. The active findings, report text and all five figure generators have been repaired in this module. [Team presentation entry point](../poster/README.md) · [Chinese repair record](../docs/remediation/repair_report_zh.md).
+Owns `data/processed/labor_migration.csv` and this directory only.
 
-The canonical panel has **1,176 region-year rows**: 51 U.S. regions (50 states and Washington, D.C.) and 47 Japanese prefectures in every year, 2011–2022. All keys are unique. Employment and unemployment rates are complete. All-nationality domestic migration has **847 valid / 329 missing observations**; the 329 missing entries are Japan 2011–2017 and have a separate Japanese-only field. International and total migration are available for the 612 U.S. rows; the 564 Japanese entries remain missing. The legacy `net_migration` field is retained for compatibility, with explicit original definitions, and is not used for domestic-migration plots.
+## Status (2026-11-06)
 
-`prepare_labor.py` rebuilds from official Census CSVs, Japanese XLS/XLSX files and checksum-locked BLS annual-page text snapshots. It never reads the existing processed panel as an input. All 612 U.S. annual employment and unemployment-rate records were independently read from official BLS archives and match the former published values. Direct HTML download returned HTTP 403; routine reproduction uses the traceable full-state text snapshots and does not claim fresh HTML/API retrieval. Japanese labor is reproduced from the pinned official workbook. All 196 domestic-migration observations in 2019 and 2022 agree exactly with Member 4's independently verified adapter, which is used only as a validation reference. Source URLs and source hashes are in `sources.csv`, `summary.json` and `source_snapshots/manifest.json`.
+| Country | Years | employment | unemployment_rate_pct | net_migration |
+| --- | --- | --- | --- | --- |
+| USA (51) | 2011–2022 | ✅ BLS archived annual averages | ✅ BLS archived annual averages | ✅ Vintage 2020 (2011–2020) + Vintage 2022 (2021–2022) |
+| JPN (47) | 2011–2022 | ✅ Labour Force Survey (12 years) | ✅ Labour Force Survey | ✅ 2018–2022 (all nationalities) |
 
-## Reproduce locally
+`data/processed/labor_migration.csv` holds **1,176 rows** (98 regions × 12
+years, 2011–2022), all `(country, region_id, year)` keys unique. Labour is
+complete for every region-year; Japanese migration is complete for 2018–2022
+and empty for 2011–2017 (definition break, see below). US labour is parsed from
+the archived BLS state annual-average releases (one per year; the 2022 column
+matches the team's BLS extract exactly); US net migration combines Census
+Vintage 2020 (2011–2020) with Vintage 2022 (2021–2022), and the 2020 overlap
+exposes the vintage revision. The US labour columns are
+filled from the BLS extract the team supplied
+(`data/raw/member3/bls_us_labor_2022.csv`); without that file the script leaves
+them empty.
 
-Use the repository virtual environment. Acquisition is separate from parsing; cached runs are offline and never require a BLS key, proxy or Excel conversion.
+## Deliverables
 
-```powershell
-$py = '.\.venv\Scripts\python.exe'
-# Optional public-source acquisition; bounded attempts and cache reuse:
-& $py -X utf8 scripts/fetch_remediation_sources.py --group member3
-# Offline rebuild from pinned raw files / traceable BLS page snapshots:
-& $py -X utf8 member3_labor_migration/prepare_labor.py
-& $py -X utf8 member3_labor_migration/check_bls_revision.py
-& $py -X utf8 member3_labor_migration/plot_figure4.py
-& $py -X utf8 member3_labor_migration/plot_japan_labor.py
-& $py -X utf8 member3_labor_migration/plot_japan_trend.py
-& $py -X utf8 member3_labor_migration/plot_two_country_trend.py
-& $py -X utf8 member3_labor_migration/outliers_2022.py
-& $py -X utf8 member3_labor_migration/build_findings.py
+- `../data/processed/labor_migration.csv` — **1,176 rows** (98 regions × 12 years,
+  2011–2022), contract columns only; labour complete, Japanese migration
+  2018–2022 (2011–2017 empty by design, see the definition note below).
+- `fetch_us_inputs.py` — retrieves the archived BLS annual releases and the
+  Census net-migration files into `data/raw/member3/` (default: through a text
+  proxy; add `--direct` where bls.gov and census.gov answer directly).
+- `prepare_labor.py` — rebuilds the Japanese rows for 2011–2022 from the
+  official workbooks and assembles the US panel from the CSVs written by
+  `fetch_us_inputs.py`.
+- `jpn_labor_detail.csv` / `us_labor_detail.csv` — raw Japanese and US counts
+  (labour force, employment, unemployment, rates) for the same rows; kept here
+  because the contract table only allows three labour/migration columns.
+- `plot_two_country_trend.py` — 12-year median unemployment and employment index,
+  US vs Japan (`figures/two_country_trend_2011_2022.png`).
+- `plot_japan_trend.py` — Japan panel: 12-year median unemployment rate and
+  2018–2022 net migration for the five largest migration regions.
+- `figures/jpn_panel_2011_2022.png` / `.svg`.
+- `plot_figure4.py` — Figure 4: US and Japan aging × unemployment shaded by net
+  migration, shared axes.
+- `figures/figure4_labor_2022.png` / `.svg` — Figure 4.
+- `outliers_2022.py` — outlier screen: linear trend within each country,
+  standardised residuals, |z| ≥ 1.5 flagged.
+- `outliers_2022.csv` + `figures/outliers_2022.png` / `.svg` — the screen's table
+  and figure; the flagged regions are the same ones used as cases.
+- `plot_japan_labor.py` — Japan-only panel: (a) 2022 aging × unemployment
+  shaded by net migration, (b) net-migration change 2019 → 2022.
+- `figures/jpn_labor_migration_2019_2022.png` / `.svg`.
+- `report_section.md` — the Member 3 report section (data, definitions,
+  methods, results, limitations, sources), ready to paste into the team report.
+- `findings.md` — short, numbered findings with numbers and limits.
+- `bls_revision_check.csv` + `check_bls_revision.py` — archived annual values vs the
+  current BLS API revision (needs `.bls_key` in `data/raw/member3/`).
+- `sources.csv` — one row per dataset and year; `summary.json` — coverage and URLs.
+
+## Reproduce
+
+From the repository root:
+
+```bash
+python member3_labor_migration/prepare_labor.py --download   # fetch missing raw files
+python scripts/validate_data.py
+python member3_labor_migration/plot_figure4.py                # Figure 4
+python member3_labor_migration/plot_japan_labor.py            # Japan 2019/2022
+python member3_labor_migration/plot_japan_trend.py            # Japan 2011-2022 panel
+python -m pytest -q
 ```
 
-Dependencies: the project stack plus `openpyxl` and `xlrd` for official XLSX/XLS files. Downloaded files live under ignored `data/raw/member3/`; BLS text representations and their provenance are versioned under `source_snapshots/`. A changed official source fails hash validation rather than silently switching vintages. `--output-root data/cache/NAME` rebuilds into an isolated project directory. Shared data validation and tests are listed in the root README.
+Raw workbooks go to the git-ignored `data/raw/member3/`; existing files are
+reused, so the run is offline-reproducible once they are in place. Requires
+`openpyxl`; the figure needs `pandas` + `matplotlib`.
 
-## Outputs and field meanings
+### 2019 migration workbooks are `.xls`
 
-- `../data/processed/labor_migration.csv`: 1,176 unique region-year rows. Original six columns are retained; explicit migration components, populations, dates, vintages and labor provenance are added.
-- `jpn_labor_detail.csv`: 564 annual prefectural rows; `us_labor_detail.csv`: 612 annual state/DC rows. The former U.S. 2022 employment-population-ratio column is retained from official Table 2; earlier years remain missing and are not used in this study. Its denominator is civilian noninstitutional population aged 16+, not total population.
-- `coverage.csv`, `rounding_validation.csv`, `domestic_migration_comparison.csv`: indicator-specific missingness, quantity/rate checks and 196 independent comparisons.
-- `bls_revision_check.csv`: 561 neighboring annual-release comparisons, replacing the invalid monthly-API comparison.
-- `sources.csv`: quoted, UTF-8, ten-field source registry; `summary.json` records the exact raw sources and reproduction status.
-- `build_findings.py`: computes the numerical claims in [findings.md](findings.md) and [report_section.md](report_section.md) from current canonical inputs.
+The Statistics Bureau publishes the 2022 report as `.xlsx` but the 2019 report
+only as `.xls`, which `openpyxl` cannot read. Convert it once (Excel: *Save As
+→ .xlsx*; LibreOffice: `soffice --headless --convert-to xlsx`) and keep the
+converted `rb_population_movement_2019_hyo1.xlsx` next to the `.xls`. The script
+prefers the converted file and only calls LibreOffice if it has to.
 
-| File under `figures/` | Scope and selection | Use |
-| --- | --- | --- |
-| `figure4_labor_2022.png` / `.svg` | All 98 regions; domestic-migration color; bubble area encodes absolute 2011–2022 unemployment change | Main labor context |
-| `jpn_labor_migration_2019_2022.png` / `.svg` | All 47 scatter points, including Akita; eight largest increases and eight largest decreases selected from all 47 | Japan context |
-| `jpn_panel_2011_2022.png` / `.svg` | Labor: all 47; migration: Tokyo, Kanagawa, Saitama, Osaka, Aichi retained from the original five-case selection; nationality break shown | Appendix |
-| `two_country_trend_2011_2022.png` / `.svg` | Medians of 51 or 47 region-level values; employment indexed separately to each region's 2011 value | Appendix; vintage limitations |
-| `outliers_2022.png` / `.svg` | Within-country residual screen, all 98 regions; labels show up to four largest absolute standardized residuals ≥1.5 per panel | Appendix; exploratory |
+## Definitions and comparability
 
-Each figure has a JSON sidecar with input hashes and sample membership. Root-level image aliases are compatibility copies of the repaired images; use the `figures/` paths. The pre-repair versions are superseded and retained in the external backup, not approved for presentation.
+- **Japan raw counts** — jpn_labor_detail.csv keeps labour force (第２表), employment (第３表) and unemployed (第４表) in persons plus the rate (第６表); the 47 values satisfy labour force ≈ employment + unemployment with a rounding gap of at most 1,000 persons (published to the nearest thousand).
+- **Japan employment** — Labour Force Survey, prefectural *model estimates*
+  (モデル推計値), annual average, published in thousand persons and multiplied
+  by 1000 here; a rounded estimate, not an exact head count. One release is
+  used for both years, so the two years are internally consistent.
+- **Japan unemployment rate** — same release, percent, 0–100.
+- **Japan net migration** — 住民基本台帳人口移動報告, `転入超過数`
+  (in-migrants minus out-migrants), calendar year, **2018–2022**, all
+  nationalities; the 47 values sum to zero in each year. The 2011–2017 tables
+  are headed *日本人移動者* (Japanese movers only), a different population
+  definition (Osaka 2017: 2,961 Japanese-only vs 1,136 all-nationalities), so
+  those years are kept in `jpn_migration_japanese_2011_2017.csv` as a reference
+  series and never chained into the 2018–2022 figures.
+- **US net migration** — Census Vintage 2020 (2011–2020) and Vintage 2022
+  (2021–2022), domestic + international, July-to-July.
+- Japanese and US migration definitions are **not harmonised** (period,
+  foreign residents, internal vs internal+international): report countries
+  separately, never merge into one cross-country migration measure.
+- Labour-force universes differ too: US LAUS uses the civilian noninstitutional
+  population aged 16+, Japan's Labour Force Survey uses the population aged 15+.
+  Do not build a cross-country unemployment ranking before reconciling
+  denominators.
+- Population growth is **not** maintained here: it is derived from Member 1's
+  `demographics.csv` as the brief requires, so the same population series is
+  used everywhere.
 
-## Comparability
+## Status
 
-The United States uses annual LAUS estimates for the civilian noninstitutional population aged 16+; Japan uses annual Labour Force Survey prefectural estimates for ages 15+. Employment counts are residence-based persons, not establishment jobs. Unemployment uses the labor force as its denominator. Published counts are in thousands and are converted to persons; they retain thousand-person precision. Rates are published annual values, not averages of rounded monthly rates. No labor-force participation rate is calculated from total population or population aged 15–64.
+Everything the brief asks Member 3 for is in place:
 
-U.S. domestic migration uses Census **DOMESTICMIG**. INTERNATIONALMIG and NETMIG are separate fields; domestic plus international equals total. Annual Census fields cover July 1 of the previous year to July 1 of the named year, not the cumulative Census-base period. Vintage 2020 supplies 2011–2020 and Vintage 2022 supplies 2021–2022; revisions remain a limitation. Japanese migration is inter-prefectural registration over January–December. The historical table is **Japanese nationals only** in 2011–2017; annual tables cover **all nationalities** in 2018–2022. These are separate columns and disconnected plotted series. All-nationality values before 2018 remain missing. No interpolation or carry-forward is used.
+1. US `employment` and `unemployment_rate_pct` for 2011–2022, parsed from the 12
+   archived BLS annual releases (`fetch_us_inputs.py`); the 2022 column matches
+   the team-supplied extract exactly.
+2. Japanese labour for all 12 years (564 rows); Japanese migration for
+   2018–2022 under one definition (all nationalities). The 2011–2017 values are
+   Japanese-movers only and are kept as a reference series rather than chained.
+3. Combined Figure 4, the two-country trend figure and the case selection, all
+   built on the full 1,176-row table.
 
-Migration is a net count, not a rate or a count of young adults. It does not identify gross inflows/outflows or migrants' ages. Countries have different reporting periods and populations; migration and labor results are interpreted within countries. Counts also depend on region size. Population dates are July 1 (United States) and October 1 (Japan); manufacturing is nominal manufacturing value added / nominal GDP in CY (United States) or FY April–March (Japan). Manufacturing's GDP share is not an employment share. Country-specific services are never pooled.
+Open items that belong to other members: the 2011 aging rate (needed if Figure 4
+should encode the change in aging instead of the change in unemployment) and
+industry employment composition for the second phase.
 
-The all-nationality Japanese migration history before 2018 remains **BLOCKED** for continuous comparison. Presentation-safe alternatives are the labeled split series or the verified all-nationality 2019/2022 comparison. Direct BLS HTML retrieval is **not reverified**; the official text snapshots support a complete, traceable offline rebuild. No unresolved source gap is filled with fabricated observations.
+
