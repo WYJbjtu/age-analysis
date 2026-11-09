@@ -1,0 +1,212 @@
+State Unemployment (Annual) News Release - 2022 A01 Results (https://www.bls.gov/news.release/archives/srgune_03012023.htm)
+citeturn8view0 [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({"ref_id":"https://www.bls.gov/news.release/archives/srgune_03012023.htm","lineno":597}); Total lines: 786
+L542:     The labor force is the sum of employed and unemployed persons. The unemployment rate is the number
+L543:     of unemployed persons expressed as a percent of the labor force. The employment-population ratio is
+L544:     the proportion of the civilian noninstitutional population 16 years of age and older that is employed.
+L545: 
+L546:     Method of estimation. Estimates for 48 of the 50 states, the District of Columbia, the Los Angeles-Long
+L547:     Beach-Glendale metropolitan division, New York City, and the balances of California and New York State
+L548:     are produced using estimating equations based on regression techniques. This method uses data from
+L549:     several sources, including the CPS, the Current Employment Statistics (CES) survey of nonfarm payroll
+L550:     employment, and state unemployment insurance (UI) programs. Estimates for the state of California are
+L551:     derived by summing the estimates for the Los Angeles-Long Beach-Glendale metropolitan division and
+L552:     the balance of California. Similarly, estimates for New York State are derived by summing the estimates
+L553:     for New York City and the balance of New York State. Estimates for all nine census divisions are
+L554:     based on a similar regression approach that does not incorporate CES or UI data. Estimates for census
+L555:     regions are obtained by summing the model-based estimates for the component divisions and then
+L556:     calculating the unemployment rate. Each month, census division estimates are controlled to national
+L557:     totals; state estimates are then controlled to their respective division totals. Estimates for Puerto
+L558:     Rico are derived from a monthly household survey similar to the CPS. A detailed description of the
+L559:     estimation procedures is available from BLS upon request.
+L560:     Annual revisions. Labor force and unemployment data for prior years reflect adjustments made at the
+L561:     beginning of each year. The adjusted estimates incorporate updated population controls from the U.S.
+L562:     Census Bureau, any revisions in the other data sources, and model re-estimation. The population
+L563:     controls reflect a "blended base," with elements from three independent data sources for April 1, 2020.
+L564:     In most years, historical data for the most recent 5 years (both seasonally adjusted and not seasonally
+L565:     adjusted) are revised near the beginning of each calendar year, prior to the release of January
+L566:     estimates. Though the labor force estimates typically are updated for 5 years, the population controls
+L567:     are revised back to the most recent decennial estimates base (April 2020).
+L568: 
+L569:     Reliability of the estimates
+L570:     The estimates presented in this release are based on sample surveys, administrative data, and modeling
+L571:     and, thus, are subject to sampling and other types of errors. Sampling error is a measure of sampling
+L572:     variability�that is, variation that occurs by chance because a sample rather than the entire population
+L573:     is surveyed. Survey data also are subject to nonsampling errors, such as those which can be introduced
+L574:     into the data collection and processing operations. Estimates not directly derived from sample surveys
+L575:     are subject to additional errors resulting from the specific estimation processes used. In table 1,
+L576:     level estimates for states may not sum to level estimates for regions and divisions because of rounding.
+L577:     Unemployment rates and employment-population ratios are computed from unrounded levels and, thus,
+L578:     may differ slightly from rates and ratios computed using the rounded level estimates displayed in table
+L579:     1.
+L580: 
+L581:     Use of error measures. Changes in unemployment rates and employment-population ratios are cited in the
+L582:     analysis of this release only if they have been determined to be statistically significant. Furthermore,
+L583:     unemployment rates and employment-population ratios for the latest year generally are cited only if
+L584:     they have been determined to be significantly different from the corresponding U.S. measure. The
+L585:     underlying model-based error measures are available online at www.bls.gov/lau/lastderr.htm. BLS uses
+L586:     90-percent confidence levels in determining whether changes in LAUS unemployment rates and employment-
+L587:     population ratios are statistically significant. The average magnitude of the over-the-year change in
+L588:     an annual state unemployment rate that is required in order to be statistically significant at the 90-
+L589:     percent confidence level is about 0.5 percentage point. The average magnitude of the over-the-year
+L590:     change in an annual state employment-population ratio that is required in order to be statistically
+L591:     significant at the 90-percent confidence level is about 0.8 percentage point. Measures of nonsampling
+L592:     error are not available.
+L593: 
+L594:     Additional information
+L595:     Information in this release will be made available to sensory impaired individuals upon request.
+L596:     Voice phone: (202) 691-5200; Federal Relay Service: (800) 877-8339.
+L597: Table 1. Employment status of the civilian noninstitutional population 16 years of age and over by region, division, and state, 2021-22 annual averages [Numbers in thousands]
+L598: Region, division, and state  | Population  | Civilian labor force  | Employed  | Unemployed  | Unemployment rate  | Error range of
+L599: rate, 2022(【149†1】)
+L600: --- | --- | --- | --- | --- | --- | ---
+L601: 2021  | 2022  | 2021  | 2022  | 2021  | 2022  | 2021  | 2022  | 2021  | 2022
+L602: --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+L603: United States  | 261,445  | 263,973  | 161,204  | 164,287  | 152,581  | 158,291  | 8,623  | 5,996  | 5.3  | 3.6  | 3.6 – 3.7
+L604: Northeast  | 46,399  | 46,331  | 28,617  | 28,865  | 26,825  | 27,708  | 1,792  | 1,157  | 6.3  | 4.0  | 3.8 – 4.2
+L605: New England  | 12,413  | 12,452  | 7,948  | 8,030  | 7,523  | 7,742  | 425  | 288  | 5.3  | 3.6  | 3.3 – 3.9
+L606: Connecticut  | 2,937  | 2,947  | 1,855  | 1,932  | 1,739  | 1,852  | 116  | 80  | 6.3  | 4.2  | 3.5 – 4.8
+L607: Maine  | 1,142  | 1,153  | 685  | 675  | 653  | 655  | 32  | 20  | 4.6  | 3.0  | 2.3 – 3.6
+L608: Massachusetts  | 5,745  | 5,751  | 3,743  | 3,744  | 3,536  | 3,603  | 207  | 141  | 5.5  | 3.8  | 3.4 – 4.2
+L609: New Hampshire  | 1,150  | 1,159  | 757  | 767  | 731  | 747  | 26  | 19  | 3.4  | 2.5  | 2.1 – 3.0
+L610: Rhode Island  | 900  | 900  | 572  | 569  | 540  | 551  | 32  | 18  | 5.5  | 3.2  | 2.6 – 3.8
+L611: Vermont  | 540  | 542  | 336  | 342  | 323  | 333  | 12  | 9  | 3.7  | 2.6  | 2.2 – 3.0
+L612: Middle Atlantic  | 33,985  | 33,880  | 20,669  | 20,836  | 19,302  | 19,966  | 1,367  | 870  | 6.6  | 4.2  | 3.9 – 4.4
+L613: New Jersey  | 7,411  | 7,421  | 4,666  | 4,740  | 4,357  | 4,564  | 309  | 176  | 6.6  | 3.7  | 3.2 – 4.2
+L614: New York  | 16,078  | 15,968  | 9,558  | 9,617  | 8,886  | 9,206  | 672  | 411  | 7.0  | 4.3  | 3.9 – 4.6
+L615: Pennsylvania  | 10,496  | 10,491  | 6,445  | 6,479  | 6,059  | 6,196  | 386  | 283  | 6.0  | 4.4  | 4.0 – 4.7
+L616: Midwest  | 54,459  | 54,554  | 34,539  | 34,845  | 32,925  | 33,633  | 1,614  | 1,212  | 4.7  | 3.5  | 3.3 – 3.6
+L617: East North Central  | 37,529  | 37,552  | 23,330  | 23,536  | 22,123  | 22,614  | 1,207  | 922  | 5.2  | 3.9  | 3.7 – 4.1
+L618: Illinois  | 10,083  | 10,036  | 6,366  | 6,473  | 5,980  | 6,177  | 386  | 296  | 6.1  | 4.6  | 4.1 – 5.0
+L619: Indiana  | 5,331  | 5,358  | 3,356  | 3,404  | 3,225  | 3,303  | 131  | 102  | 3.9  | 3.0  | 2.5 – 3.4
+L620: Michigan  | 8,066  | 8,079  | 4,780  | 4,836  | 4,502  | 4,633  | 278  | 203  | 5.8  | 4.2  | 3.7 – 4.7
+L621: Ohio  | 9,332  | 9,339  | 5,729  | 5,741  | 5,435  | 5,510  | 294  | 231  | 5.1  | 4.0  | 3.6 – 4.5
+L622: Wisconsin  | 4,717  | 4,740  | 3,100  | 3,082  | 2,981  | 2,992  | 119  | 90  | 3.8  | 2.9  | 2.5 – 3.4
+L623: West North Central  | 16,930  | 17,002  | 11,208  | 11,309  | 10,802  | 11,019  | 407  | 290  | 3.6  | 2.6  | 2.4 – 2.8
+L624: Iowa  | 2,511  | 2,519  | 1,690  | 1,717  | 1,626  | 1,670  | 64  | 47  | 3.8  | 2.7  | 2.3 – 3.2
+L625: Kansas  | 2,261  | 2,268  | 1,501  | 1,505  | 1,451  | 1,465  | 49  | 40  | 3.3  | 2.7  | 2.2 – 3.1
+L626: Minnesota  | 4,504  | 4,519  | 3,039  | 3,078  | 2,924  | 2,995  | 115  | 83  | 3.8  | 2.7  | 2.3 – 3.1
+L627: Missouri  | 4,863  | 4,882  | 3,050  | 3,061  | 2,925  | 2,984  | 125  | 77  | 4.1  | 2.5  | 2.1 – 2.9
+L628: Nebraska  | 1,512  | 1,519  | 1,050  | 1,059  | 1,021  | 1,034  | 28  | 25  | 2.7  | 2.3  | 1.9 – 2.7
+L629: North Dakota  | 596  | 599  | 409  | 414  | 396  | 406  | 13  | 9  | 3.1  | 2.1  | 1.8 – 2.4
+L630: South Dakota  | 684  | 696  | 470  | 475  | 457  | 465  | 12  | 10  | 2.6  | 2.1  | 1.7 – 2.5
+L631: South  | 99,993  | 101,280  | 60,447  | 61,753  | 57,565  | 59,663  | 2,882  | 2,089  | 4.8  | 3.4  | 3.3 – 3.5
+L632: South Atlantic  | 53,123  | 53,854  | 31,997  | 32,808  | 30,550  | 31,770  | 1,447  | 1,039  | 4.5  | 3.2  | 3.0 – 3.3
+L633: Delaware  | 808  | 821  | 494  | 497  | 467  | 474  | 27  | 22  | 5.5  | 4.5  | 3.9 – 5.2
+L634: District of Columbia  | 547  | 550  | 378  | 388  | 352  | 370  | 26  | 18  | 6.8  | 4.7  | 4.1 – 5.3
+L635: Florida  | 17,776  | 18,134  | 10,353  | 10,762  | 9,873  | 10,449  | 481  | 313  | 4.6  | 2.9  | 2.6 – 3.2
+L636: Georgia  | 8,398  | 8,514  | 5,179  | 5,234  | 4,978  | 5,075  | 202  | 159  | 3.9  | 3.0  | 2.6 – 3.4
+L637: Maryland  | 4,884  | 4,887  | 3,173  | 3,172  | 3,005  | 3,069  | 168  | 103  | 5.3  | 3.2  | 2.7 – 3.8
+L638: North Carolina  | 8,339  | 8,468  | 4,955  | 5,159  | 4,713  | 4,971  | 242  | 188  | 4.9  | 3.7  | 3.2 – 4.1
+L639: South Carolina  | 4,124  | 4,204  | 2,354  | 2,375  | 2,261  | 2,298  | 93  | 77  | 3.9  | 3.2  | 2.8 – 3.7
+L640: Virginia  | 6,804  | 6,840  | 4,331  | 4,436  | 4,163  | 4,309  | 169  | 127  | 3.9  | 2.9  | 2.5 – 3.2
+L641: West Virginia  | 1,442  | 1,436  | 779  | 785  | 739  | 754  | 40  | 31  | 5.1  | 3.9  | 3.4 – 4.4
+L642: East South Central  | 15,328  | 15,430  | 8,866  | 8,937  | 8,482  | 8,635  | 384  | 302  | 4.3  | 3.4  | 3.1 – 3.6
+L643: Alabama  | 3,990  | 4,014  | 2,259  | 2,286  | 2,183  | 2,227  | 76  | 59  | 3.4  | 2.6  | 2.2 – 3.0
+L644: Kentucky  | 3,534  | 3,541  | 2,027  | 2,048  | 1,938  | 1,968  | 90  | 80  | 4.4  | 3.9  | 3.3 – 4.5
+L645: Mississippi  | 2,281  | 2,280  | 1,256  | 1,251  | 1,187  | 1,202  | 69  | 49  | 5.5  | 3.9  | 3.4 – 4.5
+L646: Tennessee  | 5,523  | 5,595  | 3,324  | 3,352  | 3,174  | 3,239  | 149  | 113  | 4.5  | 3.4  | 2.9 – 3.9
+L647: West South Central  | 31,542  | 31,997  | 19,585  | 20,007  | 18,533  | 19,259  | 1,052  | 748  | 5.4  | 3.7  | 3.5 – 4.0
+L648: Arkansas  | 2,362  | 2,380  | 1,340  | 1,369  | 1,285  | 1,324  | 54  | 45  | 4.1  | 3.3  | 2.8 – 3.8
+L649: Louisiana  | 3,580  | 3,560  | 2,074  | 2,088  | 1,958  | 2,012  | 115  | 76  | 5.6  | 3.7  | 3.2 – 4.1
+L650: Oklahoma  | 3,065  | 3,094  | 1,860  | 1,887  | 1,786  | 1,830  | 75  | 57  | 4.0  | 3.0  | 2.5 – 3.5
+L651: Texas  | 22,535  | 22,963  | 14,311  | 14,663  | 13,504  | 14,093  | 807  | 570  | 5.6  | 3.9  | 3.6 – 4.2
+L652: West  | 62,243  | 62,605  | 38,627  | 39,318  | 36,231  | 37,762  | 2,397  | 1,556  | 6.2  | 4.0  | 3.8 – 4.1
+L653: Mountain  | 19,854  | 20,151  | 12,584  | 12,866  | 11,953  | 12,418  | 631  | 448  | 5.0  | 3.5  | 3.3 – 3.7
+L654: Arizona  | 5,756  | 5,860  | 3,531  | 3,615  | 3,352  | 3,477  | 178  | 138  | 5.1  | 3.8  | 3.3 – 4.3
+L655: Colorado  | 4,635  | 4,681  | 3,158  | 3,201  | 2,986  | 3,104  | 172  | 97  | 5.4  | 3.0  | 2.5 – 3.5
+L656: Idaho  | 1,471  | 1,507  | 925  | 951  | 893  | 925  | 32  | 25  | 3.5  | 2.7  | 2.3 – 3.0
+L657: Montana  | 884  | 900  | 551  | 568  | 532  | 553  | 19  | 15  | 3.4  | 2.6  | 2.2 – 3.0
+L658: Nevada  | 2,497  | 2,533  | 1,499  | 1,550  | 1,396  | 1,466  | 104  | 84  | 6.9  | 5.4  | 4.7 – 6.1
+L659: New Mexico  | 1,671  | 1,676  | 943  | 947  | 877  | 909  | 67  | 38  | 7.1  | 4.0  | 3.4 – 4.6
+L660: Utah  | 2,486  | 2,537  | 1,688  | 1,743  | 1,641  | 1,703  | 46  | 40  | 2.7  | 2.3  | 2.0 – 2.7
+L661: Wyoming  | 454  | 458  | 289  | 292  | 276  | 281  | 13  | 10  | 4.6  | 3.6  | 3.0 – 4.1
+L662: Pacific  | 42,390  | 42,454  | 26,043  | 26,452  | 24,278  | 25,344  | 1,765  | 1,108  | 6.8  | 4.2  | 4.0 – 4.4
+L663: Alaska  | 546  | 547  | 353  | 357  | 331  | 342  | 23  | 14  | 6.4  | 4.0  | 3.3 – 4.8
+L664: California  | 31,090  | 31,094  | 18,973  | 19,252  | 17,586  | 18,441  | 1,387  | 811  | 7.3  | 4.2  | 4.0 – 4.5
+L665: Hawaii  | 1,125  | 1,124  | 670  | 676  | 630  | 653  | 40  | 24  | 6.0  | 3.5  | 2.9 – 4.0
+L666: Oregon  | 3,464  | 3,466  | 2,148  | 2,177  | 2,035  | 2,086  | 112  | 91  | 5.2  | 4.2  | 3.6 – 4.7
+L667: Washington  | 6,165  | 6,223  | 3,899  | 3,990  | 3,696  | 3,822  | 203  | 168  | 5.2  | 4.2  | 3.7 – 4.7
+L668: Puerto Rico  | 2,754  | 2,742  | 1,172  | 1,189  | 1,079  | 1,118  | 93  | 72  | 7.9  | 6.0  | (【150†2】)-
+L669: Footnotes
+L670: (1) Error ranges are shown at the 90-percent confidence level and are based on unrounded data.
+L671: (2) Data not available.
+L672: NOTE: Data refer to place of residence. Unemployment rates are in percent and are based on unrounded levels. Data for subnational areas reflect revised population controls and model re-estimation. As a result, they will not add to U.S. totals. Data for Puerto Rico are derived from a monthly household survey similar to the Current Population Survey.
+L673: Table 2. Employment-population ratios of persons 16 years of age and over by region, division, and state, 2021-22 annual averages [Percent]
+L674: Region, division, and state  | Employment-population ratio(【151†1】)  | Over-the-year
+L675: change  | Error range of
+L676: ratio, 2022(【152†2】)
+L677: --- | --- | --- | ---
+L678: 2021  | 2022
+L679: --- | ---
+L680: United States  | 58.4  | 60.0  | 1.6  | 59.8 – 60.1
+L681: Northeast  | 57.8  | 59.8  | 2.0  | 59.4 – 60.3
+L682: New England  | 60.6  | 62.2  | 1.6  | 61.5 – 62.8
+L683: Connecticut  | 59.2  | 62.8  | 3.6  | 61.4 – 64.3
+L684: Maine  | 57.2  | 56.8  | -0.4  | 55.2 – 58.5
+L685: Massachusetts  | 61.5  | 62.7  | 1.2  | 61.6 – 63.7
+L686: New Hampshire  | 63.6  | 64.5  | 0.9  | 63.2 – 65.7
+L687: Rhode Island  | 60.1  | 61.3  | 1.2  | 59.7 – 62.8
+L688: Vermont  | 59.9  | 61.5  | 1.6  | 60.2 – 62.8
+L689: Middle Atlantic  | 56.8  | 58.9  | 2.1  | 58.4 – 59.5
+L690: New Jersey  | 58.8  | 61.5  | 2.7  | 60.4 – 62.6
+L691: New York  | 55.3  | 57.7  | 2.4  | 56.9 – 58.4
+L692: Pennsylvania  | 57.7  | 59.1  | 1.4  | 58.2 – 60.0
+L693: Midwest  | 60.5  | 61.7  | 1.2  | 61.2 – 62.1
+L694: East North Central  | 58.9  | 60.2  | 1.3  | 59.7 – 60.8
+L695: Illinois  | 59.3  | 61.5  | 2.2  | 60.6 – 62.5
+L696: Indiana  | 60.5  | 61.6  | 1.1  | 60.4 – 62.9
+L697: Michigan  | 55.8  | 57.3  | 1.5  | 56.3 – 58.4
+L698: Ohio  | 58.2  | 59.0  | 0.8  | 58.0 – 60.0
+L699: Wisconsin  | 63.2  | 63.1  | -0.1  | 61.8 – 64.5
+L700: West North Central  | 63.8  | 64.8  | 1.0  | 64.1 – 65.5
+L701: Iowa  | 64.8  | 66.3  | 1.5  | 64.9 – 67.7
+L702: Kansas  | 64.2  | 64.6  | 0.4  | 63.3 – 65.9
+L703: Minnesota  | 64.9  | 66.3  | 1.4  | 64.9 – 67.6
+L704: Missouri  | 60.2  | 61.1  | 0.9  | 59.8 – 62.4
+L705: Nebraska  | 67.6  | 68.1  | 0.5  | 66.8 – 69.3
+L706: North Dakota  | 66.5  | 67.8  | 1.3  | 66.0 – 69.5
+L707: South Dakota  | 66.8  | 66.8  | 0.0  | 65.2 – 68.5
+L708: South  | 57.6  | 58.9  | 1.3  | 58.6 – 59.2
+L709: South Atlantic  | 57.5  | 59.0  | 1.5  | 58.5 – 59.4
+L710: Delaware  | 57.7  | 57.7  | 0.0  | 56.3 – 59.1
+L711: District of Columbia  | 64.4  | 67.4  | 3.0  | 66.0 – 68.7
+L712: Florida  | 55.5  | 57.6  | 2.1  | 56.9 – 58.3
+L713: Georgia  | 59.3  | 59.6  | 0.3  | 58.6 – 60.7
+L714: Maryland  | 61.5  | 62.8  | 1.3  | 61.4 – 64.2
+L715: North Carolina  | 56.5  | 58.7  | 2.2  | 57.7 – 59.7
+L716: South Carolina  | 54.8  | 54.7  | -0.1  | 53.5 – 55.8
+L717: Virginia  | 61.2  | 63.0  | 1.8  | 61.8 – 64.2
+L718: West Virginia  | 51.2  | 52.5  | 1.3  | 51.0 – 54.1
+L719: East South Central  | 55.3  | 56.0  | 0.7  | 55.2 – 56.7
+L720: Alabama  | 54.7  | 55.5  | 0.8  | 54.1 – 56.8
+L721: Kentucky  | 54.8  | 55.6  | 0.8  | 54.1 – 57.0
+L722: Mississippi  | 52.1  | 52.7  | 0.6  | 51.4 – 54.1
+L723: Tennessee  | 57.5  | 57.9  | 0.4  | 56.6 – 59.2
+L724: West South Central  | 58.8  | 60.2  | 1.4  | 59.7 – 60.7
+L725: Arkansas  | 54.4  | 55.6  | 1.2  | 54.4 – 56.9
+L726: Louisiana  | 54.7  | 56.5  | 1.8  | 55.3 – 57.7
+L727: Oklahoma  | 58.3  | 59.1  | 0.8  | 57.8 – 60.5
+L728: Texas  | 59.9  | 61.4  | 1.5  | 60.7 – 62.0
+L729: West  | 58.2  | 60.3  | 2.1  | 59.9 – 60.7
+L730: Mountain  | 60.2  | 61.6  | 1.4  | 61.0 – 62.2
+L731: Arizona  | 58.2  | 59.3  | 1.1  | 58.0 – 60.7
+L732: Colorado  | 64.4  | 66.3  | 1.9  | 65.0 – 67.6
+L733: Idaho  | 60.7  | 61.4  | 0.7  | 60.1 – 62.7
+L734: Montana  | 60.2  | 61.4  | 1.2  | 60.2 – 62.6
+L735: Nevada  | 55.9  | 57.9  | 2.0  | 56.4 – 59.3
+L736: New Mexico  | 52.5  | 54.2  | 1.7  | 53.1 – 55.4
+L737: Utah  | 66.0  | 67.1  | 1.1  | 65.8 – 68.5
+L738: Wyoming  | 60.7  | 61.4  | 0.7  | 59.9 – 63.0
+L739: Pacific  | 57.3  | 59.7  | 2.4  | 59.2 – 60.2
+L740: Alaska  | 60.6  | 62.6  | 2.0  | 61.1 – 64.2
+L741: California  | 56.6  | 59.3  | 2.7  | 58.8 – 59.9
+L742: Hawaii  | 56.0  | 58.1  | 2.1  | 56.8 – 59.4
+L743: Oregon  | 58.8  | 60.2  | 1.4  | 58.8 – 61.6
+L744: Washington  | 59.9  | 61.4  | 1.5  | 60.2 – 62.7
+L745: Puerto Rico  | 39.2  | 40.8  | 1.6  | (3)-
+L746: Footnotes
+L747: (1) Employment as a percent of the civilian noninstitutional population 16 years of age and over.
+L748: (2) Error ranges are shown at the 90-percent confidence level and are based on unrounded data.
+L749: (3) Data not available.
+L750: NOTE: Data refer to place of residence. Employment-population ratios are based on unrounded levels. Data for subnational areas reflect revised population controls and model re-estimation. Data for Puerto Rico are derived from a monthly household survey similar to the Current Population Survey.
+

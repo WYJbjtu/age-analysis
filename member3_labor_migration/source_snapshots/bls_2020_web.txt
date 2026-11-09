@@ -1,0 +1,213 @@
+State Unemployment (Annual) News Release (https://www.bls.gov/news.release/archives/srgune_03032021.htm)
+citeturn24view0 [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({"ref_id":"https://www.bls.gov/news.release/archives/srgune_03032021.htm","lineno":695}); Total lines: 878
+L619:     unemployed persons. The unemployment rate is the number of unemployed
+L620:     expressed as a percent of the labor force. The employment-population ratio
+L621:     is the proportion of the civilian noninstitutional population 16 years of
+L622:     age and older that is employed.
+L623: 
+L624:     Method of estimation. Estimates for 48 of the 50 states, the District of
+L627:     using estimating equations based on regression techniques. This method
+L628:     utilizes data from several sources, including the CPS, the Current
+L629:     Employment Statistics (CES) survey of nonfarm payroll employment, and
+L630:     state unemployment insurance (UI) programs. Estimates for the State of
+L631:     California are derived by summing the estimates for the Los Angeles-Long
+L632:     Beach-Glendale metropolitan division and the balance of California.
+L633:     Similarly, estimates for New York State are derived by summing the
+L634:     estimates for New York City and the balance of New York State. Estimates
+L635:     for all nine census divisions are based on a similar regression approach
+L636:     that does not incorporate CES or UI data. Estimates for census regions
+L637:     are obtained by summing the model-based estimates for the component
+L638:     divisions and then calculating the unemployment rate. Each month, census
+L639:     division estimates are controlled to national totals; state estimates
+L640:     are then controlled to their respective division totals. A detailed
+L641:     description of the estimation procedures is available from BLS upon request.
+L642: 
+L643:     Annual revisions. Labor force and unemployment data for prior years
+L644:     reflect adjustments made at the beginning of each year. The adjusted
+L645:     estimates incorporate updated population controls from the U.S. Census
+L646:     Bureau, any revisions in the other data sources, and model re-estimation.
+L647:     The population controls reflect extrapolation from the 2010 Census. In
+L648:     most years, historical data for the most recent 5 years (both seasonally
+L649:     adjusted and not seasonally adjusted) are revised near the beginning of
+L650:     each calendar year, prior to the release of January estimates. Though
+L651:     the labor force estimates typically are updated for 5 years, the
+L652:     population estimates are revised back to the decennial estimates base
+L653:     (April 2010). With the introduction of a new generation of times-series
+L654:     models in 2021, historical data were re-estimated back to January 1976
+L655:     for regions, divisions, states, the District of Columbia, the Los
+L656:     Angeles-Long Beach-Glendale metropolitan division, New York City, and
+L657:     the balances of California and New York states.
+L658: 
+L659:     Reliability of the estimates
+L660:     The estimates presented in this release are based on sample surveys,
+L661:     administrative data, and modeling and, thus, are subject to sampling and
+L662:     other types of errors. Sampling error is a measure of sampling variability--
+L663:     that is, variation that occurs by chance because a sample rather than
+L664:     the entire population is surveyed. Survey data also are subject to
+L665:     nonsampling errors, such as those which can be introduced into the data
+L666:     collection and processing operations. Estimates not directly derived
+L667:     from sample surveys are subject to additional errors resulting from the
+L668:     specific estimation processes used. In table 1, level estimates for
+L669:     states may not sum to level estimates for regions and divisions because
+L670:     of rounding. Unemployment rates and employment-population ratios are
+L671:     computed from unrounded levels and, thus, may differ slightly from rates
+L672:     and ratios computed using the rounded level estimates displayed in table 1.
+L673: 
+L674:     Use of error measures. Changes in unemployment rates and employment-population
+L675:     ratios are cited in the analysis of this release only if they have been determined
+L676:     to be statistically significant. Furthermore, unemployment rates and
+L677:     employment-population ratios for the latest year generally are cited only
+L678:     if they have been determined to be significantly different from the corresponding
+L679:     U.S. measure. The underlying model-based error measures are available online at
+L680:     www.bls.gov/lau/lastderr.htm. BLS uses 90-percent confidence levels in determining
+L681:     whether changes in LAUS unemployment rates and employment-population ratios are
+L682:     statistically significant. The average magnitude of the over-the-year change in
+L683:     an annual state unemployment rate that is required in order to be statistically
+L684:     significant at the 90-percent confidence level is about 1.0 percentage point. The
+L685:     average magnitude of the over-the-year change in an annual state employment-
+L686:     population ratio that is required in order to be statistically significant
+L687:     at the 90-percent confidence level is about 0.9 percentage point. Measures
+L688:     of nonsampling error are not available.
+L689: 
+L690:     Additional information
+L691: 
+L692:     Information in this release will be made available to sensory impaired
+L693:     individuals upon request. Voice phone: (202) 691-5200; Federal Relay
+L694:     Service: (800) 877-8339.
+L695: Table 1. Employment status of the civilian noninstitutional population 16 years of age and over by region, division, and state, 2019-20 annual averages [Numbers in thousands]
+L696: Region, division, and state  | Population  | Civilian labor force  | Employed  | Unemployed  | Unemployment rate  | Error range of
+L697: rate, 2020(【149†1】)
+L698: --- | --- | --- | --- | --- | --- | ---
+L699: 2019  | 2020  | 2019  | 2020  | 2019  | 2020  | 2019  | 2020  | 2019  | 2020
+L700: --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+L701: United States  | 259,175  | 260,329  | 163,539  | 160,742  | 157,538  | 147,795  | 6,001  | 12,947  | 3.7  | 8.1  | 8.0 – 8.2
+L702: Northeast  | 45,145  | 45,097  | 28,598  | 28,013  | 27,539  | 25,436  | 1,059  | 2,577  | 3.7  | 9.2  | 8.9 – 9.5
+L703: New England  | 12,136  | 12,162  | 8,072  | 7,841  | 7,822  | 7,212  | 250  | 629  | 3.1  | 8.0  | 7.7 – 8.4
+L704: Connecticut  | 2,885  | 2,883  | 1,917  | 1,873  | 1,848  | 1,725  | 69  | 148  | 3.6  | 7.9  | 6.5 – 9.3
+L705: Maine  | 1,112  | 1,118  | 696  | 677  | 677  | 640  | 19  | 37  | 2.7  | 5.4  | 4.0 – 6.9
+L706: Massachusetts  | 5,636  | 5,648  | 3,782  | 3,658  | 3,668  | 3,334  | 114  | 324  | 3.0  | 8.9  | 7.9 – 9.8
+L707: New Hampshire  | 1,122  | 1,130  | 773  | 762  | 753  | 711  | 20  | 51  | 2.6  | 6.7  | 5.2 – 8.2
+L708: Rhode Island  | 863  | 864  | 559  | 542  | 539  | 491  | 20  | 51  | 3.6  | 9.4  | 7.8 – 11.0
+L709: Vermont  | 518  | 519  | 344  | 330  | 336  | 312  | 8  | 18  | 2.3  | 5.6  | 4.7 – 6.5
+L710: Middle Atlantic  | 33,009  | 32,936  | 20,526  | 20,172  | 19,717  | 18,224  | 809  | 1,948  | 3.9  | 9.7  | 9.3 – 10.0
+L711: New Jersey  | 7,074  | 7,077  | 4,522  | 4,495  | 4,367  | 4,055  | 155  | 440  | 3.4  | 9.8  | 8.5 – 11.0
+L712: New York  | 15,659  | 15,581  | 9,507  | 9,289  | 9,143  | 8,361  | 364  | 928  | 3.8  | 10.0  | 9.1 – 10.9
+L713: Pennsylvania  | 10,275  | 10,278  | 6,497  | 6,388  | 6,207  | 5,808  | 290  | 580  | 4.5  | 9.1  | 8.1 – 10.1
+L714: Midwest  | 53,783  | 53,890  | 35,027  | 34,445  | 33,766  | 31,839  | 1,261  | 2,606  | 3.6  | 7.6  | 7.4 – 7.8
+L715: East North Central  | 37,108  | 37,140  | 23,715  | 23,229  | 22,802  | 21,261  | 913  | 1,967  | 3.8  | 8.5  | 8.2 – 8.8
+L716: Illinois  | 9,997  | 9,960  | 6,446  | 6,249  | 6,189  | 5,658  | 257  | 592  | 4.0  | 9.5  | 8.4 – 10.6
+L717: Indiana  | 5,244  | 5,273  | 3,382  | 3,319  | 3,273  | 3,083  | 109  | 236  | 3.2  | 7.1  | 6.2 – 8.0
+L718: Michigan  | 7,991  | 7,995  | 4,949  | 4,841  | 4,748  | 4,363  | 201  | 478  | 4.1  | 9.9  | 8.6 – 11.2
+L719: Ohio  | 9,243  | 9,258  | 5,842  | 5,754  | 5,599  | 5,285  | 243  | 469  | 4.2  | 8.1  | 6.9 – 9.4
+L720: Wisconsin  | 4,634  | 4,655  | 3,094  | 3,065  | 2,993  | 2,873  | 101  | 193  | 3.3  | 6.3  | 5.4 – 7.2
+L721: West North Central  | 16,675  | 16,749  | 11,313  | 11,216  | 10,964  | 10,578  | 348  | 638  | 3.1  | 5.7  | 5.4 – 6.0
+L722: Iowa  | 2,471  | 2,479  | 1,734  | 1,666  | 1,686  | 1,579  | 48  | 88  | 2.8  | 5.3  | 4.4 – 6.1
+L723: Kansas  | 2,228  | 2,234  | 1,494  | 1,497  | 1,446  | 1,409  | 47  | 88  | 3.2  | 5.9  | 4.7 – 7.1
+L724: Minnesota  | 4,424  | 4,449  | 3,093  | 3,095  | 2,995  | 2,904  | 98  | 191  | 3.2  | 6.2  | 4.7 – 7.6
+L725: Missouri  | 4,815  | 4,835  | 3,079  | 3,053  | 2,978  | 2,867  | 101  | 186  | 3.3  | 6.1  | 5.2 – 7.0
+L726: Nebraska  | 1,479  | 1,487  | 1,041  | 1,035  | 1,009  | 991  | 31  | 44  | 3.0  | 4.2  | 3.5 – 5.0
+L727: North Dakota  | 584  | 585  | 409  | 407  | 400  | 386  | 10  | 21  | 2.3  | 5.1  | 4.3 – 6.0
+L728: South Dakota  | 674  | 680  | 463  | 463  | 449  | 442  | 14  | 22  | 3.0  | 4.6  | 3.7 – 5.6
+L729: South  | 98,135  | 99,146  | 60,608  | 59,789  | 58,481  | 55,496  | 2,127  | 4,293  | 3.5  | 7.2  | 7.0 – 7.3
+L730: South Atlantic  | 52,211  | 52,751  | 32,322  | 31,728  | 31,232  | 29,482  | 1,090  | 2,246  | 3.4  | 7.1  | 6.9 – 7.3
+L731: Delaware  | 781  | 791  | 488  | 484  | 470  | 446  | 18  | 38  | 3.7  | 7.8  | 6.4 – 9.2
+L732: District of Columbia  | 581  | 584  | 415  | 410  | 393  | 377  | 22  | 33  | 5.4  | 8.0  | 7.0 – 9.0
+L733: Florida  | 17,421  | 17,647  | 10,330  | 10,114  | 9,991  | 9,333  | 339  | 781  | 3.3  | 7.7  | 6.6 – 8.9
+L734: Georgia  | 8,204  | 8,298  | 5,148  | 5,072  | 4,966  | 4,741  | 182  | 331  | 3.5  | 6.5  | 5.7 – 7.3
+L735: Maryland  | 4,766  | 4,773  | 3,270  | 3,173  | 3,156  | 2,958  | 114  | 215  | 3.5  | 6.8  | 5.8 – 7.7
+L736: North Carolina  | 8,255  | 8,360  | 5,077  | 4,951  | 4,886  | 4,587  | 192  | 363  | 3.8  | 7.3  | 6.4 – 8.3
+L737: South Carolina  | 4,069  | 4,131  | 2,368  | 2,385  | 2,303  | 2,237  | 65  | 147  | 2.8  | 6.2  | 5.0 – 7.3
+L738: Virginia  | 6,685  | 6,724  | 4,427  | 4,347  | 4,309  | 4,075  | 119  | 271  | 2.7  | 6.2  | 5.3 – 7.2
+L739: West Virginia  | 1,450  | 1,444  | 798  | 792  | 759  | 726  | 39  | 66  | 4.9  | 8.3  | 7.3 – 9.4
+L740: East South Central  | 15,031  | 15,114  | 8,917  | 8,799  | 8,580  | 8,186  | 337  | 613  | 3.8  | 7.0  | 6.6 – 7.3
+L741: Alabama  | 3,866  | 3,882  | 2,237  | 2,230  | 2,169  | 2,099  | 68  | 131  | 3.0  | 5.9  | 4.9 – 6.9
+L742: Kentucky  | 3,497  | 3,508  | 2,070  | 2,020  | 1,985  | 1,886  | 86  | 134  | 4.1  | 6.6  | 5.2 – 8.1
+L743: Mississippi  | 2,287  | 2,287  | 1,280  | 1,259  | 1,209  | 1,158  | 71  | 102  | 5.5  | 8.1  | 7.0 – 9.2
+L744: Tennessee  | 5,381  | 5,438  | 3,329  | 3,289  | 3,217  | 3,044  | 112  | 246  | 3.4  | 7.5  | 6.4 – 8.5
+L745: West South Central  | 30,892  | 31,281  | 19,368  | 19,263  | 18,669  | 17,828  | 700  | 1,435  | 3.6  | 7.4  | 7.2 – 7.7
+L746: Arkansas  | 2,346  | 2,358  | 1,365  | 1,354  | 1,317  | 1,272  | 48  | 82  | 3.5  | 6.1  | 5.2 – 6.9
+L747: Louisiana  | 3,584  | 3,581  | 2,120  | 2,077  | 2,021  | 1,905  | 99  | 171  | 4.7  | 8.3  | 7.2 – 9.3
+L748: Oklahoma  | 3,031  | 3,053  | 1,846  | 1,848  | 1,788  | 1,735  | 57  | 114  | 3.1  | 6.1  | 5.2 – 7.1
+L749: Texas  | 21,931  | 22,289  | 14,038  | 13,983  | 13,542  | 12,915  | 496  | 1,068  | 3.5  | 7.6  | 7.0 – 8.3
+L750: West  | 61,482  | 61,982  | 38,907  | 38,364  | 37,368  | 34,907  | 1,539  | 3,457  | 4.0  | 9.0  | 8.8 – 9.2
+L751: Mountain  | 19,372  | 19,727  | 12,514  | 12,528  | 12,054  | 11,570  | 460  | 958  | 3.7  | 7.6  | 7.3 – 8.0
+L752: Arizona  | 5,728  | 5,860  | 3,539  | 3,570  | 3,367  | 3,288  | 172  | 282  | 4.9  | 7.9  | 6.7 – 9.1
+L753: Colorado  | 4,547  | 4,610  | 3,126  | 3,122  | 3,043  | 2,895  | 83  | 227  | 2.7  | 7.3  | 6.1 – 8.5
+L754: Idaho  | 1,370  | 1,406  | 879  | 892  | 855  | 844  | 24  | 48  | 2.8  | 5.4  | 4.5 – 6.2
+L755: Montana  | 852  | 862  | 537  | 540  | 518  | 508  | 19  | 32  | 3.6  | 5.9  | 5.1 – 6.7
+L756: Nevada  | 2,433  | 2,481  | 1,566  | 1,531  | 1,505  | 1,334  | 61  | 196  | 3.9  | 12.8  | 11.1 – 14.6
+L757: New Mexico  | 1,642  | 1,653  | 960  | 943  | 912  | 864  | 48  | 79  | 5.0  | 8.4  | 7.5 – 9.3
+L758: Utah  | 2,350  | 2,400  | 1,609  | 1,632  | 1,569  | 1,556  | 41  | 76  | 2.5  | 4.7  | 4.0 – 5.4
+L759: Wyoming  | 451  | 454  | 296  | 297  | 285  | 279  | 11  | 17  | 3.7  | 5.8  | 5.0 – 6.7
+L760: Pacific  | 42,110  | 42,255  | 26,393  | 25,836  | 25,314  | 23,337  | 1,079  | 2,499  | 4.1  | 9.7  | 9.4 – 10.0
+L761: Alaska  | 546  | 546  | 354  | 347  | 335  | 320  | 19  | 27  | 5.4  | 7.8  | 6.6 – 9.1
+L762: California  | 31,043  | 31,084  | 19,354  | 18,821  | 18,551  | 16,913  | 803  | 1,908  | 4.2  | 10.1  | 9.6 – 10.7
+L763: Hawaii  | 1,091  | 1,086  | 669  | 648  | 653  | 573  | 16  | 75  | 2.5  | 11.6  | 10.1 – 13.1
+L764: Oregon  | 3,409  | 3,441  | 2,107  | 2,105  | 2,029  | 1,945  | 78  | 159  | 3.7  | 7.6  | 6.5 – 8.6
+L765: Washington  | 6,021  | 6,099  | 3,909  | 3,915  | 3,747  | 3,586  | 162  | 329  | 4.1  | 8.4  | 7.4 – 9.4
+L766: Footnotes
+L767: (1) Error ranges are shown at the 90-percent confidence level and are based on unrounded data.
+L768: NOTE: Data refer to place of residence. Unemployment rates are in percent and are based on unrounded levels. Data for subnational areas reflect revised population controls and model re-estimation. As a result, they will not add to U.S. totals.
+L769: Table 2. Employment-population ratios of persons 16 years of age and over by region, division, and state, 2019-20 annual averages [Percent]
+L770: Region, division, and state  | Employment-population ratio(【150†1】)  | Over-the-year
+L771: change  | Error range of
+L772: ratio, 2020(【151†2】)
+L773: --- | --- | --- | ---
+L774: 2019  | 2020
+L775: --- | ---
+L776: United States  | 60.8  | 56.8  | -4.0  | 56.6 – 56.9
+L777: Northeast  | 61.0  | 56.4  | -4.6  | 56.0 – 56.8
+L778: New England  | 64.5  | 59.3  | -5.2  | 58.6 – 60.0
+L779: Connecticut  | 64.1  | 59.8  | -4.3  | 58.2 – 61.4
+L780: Maine  | 60.9  | 57.2  | -3.7  | 55.3 – 59.2
+L781: Massachusetts  | 65.1  | 59.0  | -6.1  | 57.9 – 60.2
+L782: New Hampshire  | 67.1  | 62.9  | -4.2  | 61.6 – 64.2
+L783: Rhode Island  | 62.4  | 56.8  | -5.6  | 55.0 – 58.6
+L784: Vermont  | 64.9  | 60.1  | -4.8  | 58.7 – 61.5
+L785: Middle Atlantic  | 59.7  | 55.3  | -4.4  | 54.8 – 55.9
+L786: New Jersey  | 61.7  | 57.3  | -4.4  | 56.0 – 58.6
+L787: New York  | 58.4  | 53.7  | -4.7  | 52.8 – 54.5
+L788: Pennsylvania  | 60.4  | 56.5  | -3.9  | 55.4 – 57.6
+L789: Midwest  | 62.8  | 59.1  | -3.7  | 58.7 – 59.5
+L790: East North Central  | 61.4  | 57.2  | -4.2  | 56.7 – 57.8
+L791: Illinois  | 61.9  | 56.8  | -5.1  | 55.4 – 58.2
+L792: Indiana  | 62.4  | 58.5  | -3.9  | 57.1 – 59.8
+L793: Michigan  | 59.4  | 54.6  | -4.8  | 53.1 – 56.0
+L794: Ohio  | 60.6  | 57.1  | -3.5  | 55.9 – 58.3
+L795: Wisconsin  | 64.6  | 61.7  | -2.9  | 60.3 – 63.2
+L796: West North Central  | 65.8  | 63.2  | -2.6  | 62.5 – 63.8
+L797: Iowa  | 68.2  | 63.7  | -4.5  | 62.2 – 65.2
+L798: Kansas  | 64.9  | 63.1  | -1.8  | 61.6 – 64.5
+L799: Minnesota  | 67.7  | 65.3  | -2.4  | 63.7 – 66.8
+L800: Missouri  | 61.9  | 59.3  | -2.6  | 57.7 – 60.9
+L801: Nebraska  | 68.2  | 66.7  | -1.5  | 65.3 – 68.0
+L802: North Dakota  | 68.5  | 66.0  | -2.5  | 64.2 – 67.8
+L803: South Dakota  | 66.7  | 65.0  | -1.7  | 63.0 – 66.9
+L804: South  | 59.6  | 56.0  | -3.6  | 55.7 – 56.3
+L805: South Atlantic  | 59.8  | 55.9  | -3.9  | 55.4 – 56.3
+L806: Delaware  | 60.2  | 56.5  | -3.7  | 54.6 – 58.3
+L807: District of Columbia  | 67.6  | 64.6  | -3.0  | 63.1 – 66.0
+L808: Florida  | 57.4  | 52.9  | -4.5  | 51.9 – 53.9
+L809: Georgia  | 60.5  | 57.1  | -3.4  | 55.9 – 58.4
+L810: Maryland  | 66.2  | 62.0  | -4.2  | 60.5 – 63.5
+L811: North Carolina  | 59.2  | 54.9  | -4.3  | 53.7 – 56.1
+L812: South Carolina  | 56.6  | 54.2  | -2.4  | 52.9 – 55.5
+L813: Virginia  | 64.5  | 60.6  | -3.9  | 59.3 – 61.9
+L814: West Virginia  | 52.4  | 50.3  | -2.1  | 48.6 – 52.0
+L815: East South Central  | 57.1  | 54.2  | -2.9  | 53.4 – 54.9
+L816: Alabama  | 56.1  | 54.1  | -2.0  | 52.5 – 55.7
+L817: Kentucky  | 56.7  | 53.8  | -2.9  | 52.0 – 55.5
+L818: Mississippi  | 52.9  | 50.6  | -2.3  | 49.2 – 52.0
+L819: Tennessee  | 59.8  | 56.0  | -3.8  | 54.4 – 57.5
+L820: West South Central  | 60.4  | 57.0  | -3.4  | 56.5 – 57.5
+L821: Arkansas  | 56.2  | 53.9  | -2.3  | 52.5 – 55.4
+L822: Louisiana  | 56.4  | 53.2  | -3.2  | 51.8 – 54.6
+L823: Oklahoma  | 59.0  | 56.8  | -2.2  | 55.4 – 58.3
+L824: Texas  | 61.7  | 57.9  | -3.8  | 57.1 – 58.8
+L825: West  | 60.8  | 56.3  | -4.5  | 55.9 – 56.7
+L826: Mountain  | 62.2  | 58.6  | -3.6  | 58.0 – 59.3
+L827: Arizona  | 58.8  | 56.1  | -2.7  | 54.7 – 57.6
+L828: Colorado  | 66.9  | 62.8  | -4.1  | 61.2 – 64.4
+L829: Idaho  | 62.4  | 60.0  | -2.4  | 58.6 – 61.4
+L830: Montana  | 60.8  | 59.0  | -1.8  | 57.6 – 60.4
+

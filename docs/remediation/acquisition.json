@@ -1,0 +1,427 @@
+[
+  {
+    "file": "wpp_ages.xlsx",
+    "url": "https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/EXCEL_FILES/2_Population/WPP2024_POP_F06_1_POPULATION_PERCENTAGE_SELECT_AGE_GROUPS_BOTH_SEXES.xlsx",
+    "sha256": "82a72215a68a0c6a2060dd33adf38b9e6f3997c2653dc3eda0150f8d68d861b7",
+    "owner": "member1",
+    "previous_attempts": [
+      {
+        "file": "wpp_ages.xlsx",
+        "url": "https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/EXCEL_FILES/2_Population/WPP2024_POP_F06_1_POPULATION_PERCENTAGE_SELECT_AGE_GROUPS_BOTH_SEXES.xlsx",
+        "sha256": "82a72215a68a0c6a2060dd33adf38b9e6f3997c2653dc3eda0150f8d68d861b7",
+        "owner": "member1",
+        "status": "unavailable",
+        "error": "URLError: <urlopen error [WinError 10013] \u4ee5\u4e00\u79cd\u8bbf\u95ee\u6743\u9650\u4e0d\u5141\u8bb8\u7684\u65b9\u5f0f\u505a\u4e86\u4e00\u4e2a\u8bbf\u95ee\u5957\u63a5\u5b57\u7684\u5c1d\u8bd5\u3002>",
+        "online_reverified": false
+      }
+    ],
+    "path": "data/raw/member1/wpp_ages.xlsx",
+    "bytes": 240345985,
+    "status": "retrieved",
+    "online_reverified": true,
+    "retrieved_utc": "2026-11-09T09:14:51.604026+00:00"
+  },
+  {
+    "file": "census_states_2022.zip",
+    "url": "https://www2.census.gov/geo/tiger/GENZ2022/shp/cb_2022_us_state_20m.zip",
+    "sha256": "fb2c327c32869dc27bee7a6e0e6130f9d936c4f85638b8414af799f1251e3816",
+    "owner": "member1",
+    "previous_attempts": [
+      {
+        "file": "census_states_2022.zip",
+        "url": "https://www2.census.gov/geo/tiger/GENZ2022/shp/cb_2022_us_state_20m.zip",
+        "sha256": "fb2c327c32869dc27bee7a6e0e6130f9d936c4f85638b8414af799f1251e3816",
+        "owner": "member1",
+        "status": "unavailable",
+        "error": "URLError: <urlopen error [WinError 10013] \u4ee5\u4e00\u79cd\u8bbf\u95ee\u6743\u9650\u4e0d\u5141\u8bb8\u7684\u65b9\u5f0f\u505a\u4e86\u4e00\u4e2a\u8bbf\u95ee\u5957\u63a5\u5b57\u7684\u5c1d\u8bd5\u3002>",
+        "online_reverified": false
+      }
+    ],
+    "path": "data/raw/member1/census_states_2022.zip",
+    "bytes": 186267,
+    "status": "retrieved",
+    "online_reverified": true,
+    "retrieved_utc": "2026-11-09T09:14:38.196499+00:00"
+  },
+  {
+    "file": "jpn_lfs.xlsx",
+    "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000031952605&fileKind=0",
+    "sha256": "ad94669f030e22338d43e5772858ae7bf62ef644fc8f8c21d59ef27edba91bf4",
+    "owner": "member3",
+    "original_cache": "data/raw/member4/jpn_lfs.xlsx",
+    "cache_origin": "data/raw/member4/jpn_lfs.xlsx",
+    "original_acquisition_manifest": "analysis/member4/audit/download_manifest.json",
+    "path": "data/raw/member3/jpn_lfs.xlsx",
+    "bytes": 95119,
+    "status": "cached",
+    "online_reverified": false
+  },
+  {
+    "file": "jpn_migration_2022.xlsx",
+    "url": "https://www.stat.go.jp/data/idou/2022np/jissu/zuhyou/hyo1.xlsx",
+    "sha256": "ed12e58b54e1b35db72dfc49dd6b63b6e5bfd2fa461efba1284c913bcdc59ba0",
+    "owner": "member3",
+    "original_cache": "data/raw/member4/jpn_migration_2022.xlsx",
+    "cache_origin": "data/raw/member4/jpn_migration_2022.xlsx",
+    "original_acquisition_manifest": "analysis/member4/audit/download_manifest.json",
+    "path": "data/raw/member3/jpn_migration_2022.xlsx",
+    "bytes": 57767,
+    "status": "cached",
+    "online_reverified": false
+  },
+  {
+    "file": "jpn_migration_2019.xls",
+    "url": "https://www.stat.go.jp/data/idou/2019np/kihon/zuhyou/hyo1.xls",
+    "sha256": "c672ad08db7d348758973dfa182a048472f013e26087909d1b2de8db21a1cc98",
+    "owner": "member3",
+    "original_cache": "data/raw/member4/jpn_migration_2019.xls",
+    "cache_origin": "data/raw/member4/jpn_migration_2019.xls",
+    "original_acquisition_manifest": "analysis/member4/audit/download_manifest.json",
+    "path": "data/raw/member3/jpn_migration_2019.xls",
+    "bytes": 68608,
+    "status": "cached",
+    "online_reverified": false
+  },
+  {
+    "file": "jpn_migration_trend.xls",
+    "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000031688387&fileKind=0",
+    "sha256": "9f4abcfcbe38f111d01340c18248562d590539657090900f454ad27af76097e3",
+    "owner": "member3",
+    "original_cache": "data/raw/member4/jpn_migration_trend.xls",
+    "cache_origin": "data/raw/member4/jpn_migration_trend.xls",
+    "original_acquisition_manifest": "analysis/member4/audit/download_manifest.json",
+    "path": "data/raw/member3/jpn_migration_trend.xls",
+    "bytes": 100864,
+    "status": "cached",
+    "online_reverified": false
+  },
+  {
+    "file": "us_migration_2022.csv",
+    "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2022/state/totals/NST-EST2022-ALLDATA.csv",
+    "sha256": "09d258607dd842d48ae05680cfeada6cd4ee1dbc71d0c328621f4105362d2f54",
+    "owner": "member3",
+    "original_cache": "data/raw/member4/us_migration_2022.csv",
+    "cache_origin": "data/raw/member4/us_migration_2022.csv",
+    "original_acquisition_manifest": "analysis/member4/audit/download_manifest.json",
+    "path": "data/raw/member3/us_migration_2022.csv",
+    "bytes": 23556,
+    "status": "cached",
+    "online_reverified": false
+  },
+  {
+    "file": "us_migration_2020.csv",
+    "url": "https://www2.census.gov/programs-surveys/popest/datasets/2010-2020/state/totals/nst-est2020-alldata.csv",
+    "sha256": "6e1289c0041f42b4238dd4e4fe7975b25816a7a40de9a5b70581821e6659c75c",
+    "owner": "member3",
+    "original_cache": "data/raw/member4/us_migration_2020.csv",
+    "cache_origin": "data/raw/member4/us_migration_2020.csv",
+    "original_acquisition_manifest": "analysis/member4/audit/download_manifest.json",
+    "path": "data/raw/member3/us_migration_2020.csv",
+    "bytes": 81740,
+    "status": "cached",
+    "online_reverified": false
+  },
+  {
+    "file": "jpn_migration_2018.xls",
+    "owner": "member3",
+    "url": "https://www.stat.go.jp/data/idou/2018np/kihon/zuhyou/hyo1.xls",
+    "previous_attempts": [
+      {
+        "file": "jpn_migration_2018.xls",
+        "owner": "member3",
+        "url": "https://www.stat.go.jp/data/idou/2018np/kihon/zuhyou/hyo1.xls",
+        "status": "unavailable",
+        "error": "URLError: <urlopen error [WinError 10013] \u4ee5\u4e00\u79cd\u8bbf\u95ee\u6743\u9650\u4e0d\u5141\u8bb8\u7684\u65b9\u5f0f\u505a\u4e86\u4e00\u4e2a\u8bbf\u95ee\u5957\u63a5\u5b57\u7684\u5c1d\u8bd5\u3002>",
+        "online_reverified": false
+      }
+    ],
+    "path": "data/raw/member3/jpn_migration_2018.xls",
+    "sha256": "bc70ac6659694d6a36a456114883197bc09b31a1e0cd16a3783e5dfa09985207",
+    "bytes": 69120,
+    "status": "retrieved",
+    "online_reverified": true,
+    "retrieved_utc": "2026-11-09T09:14:40.610594+00:00"
+  },
+  {
+    "file": "jpn_migration_2020.xls",
+    "owner": "member3",
+    "url": "https://www.stat.go.jp/data/idou/2020np/jissu/zuhyou/hyo1.xls",
+    "previous_attempts": [
+      {
+        "file": "jpn_migration_2020.xls",
+        "owner": "member3",
+        "url": "https://www.stat.go.jp/data/idou/2020np/jissu/zuhyou/hyo1.xls",
+        "status": "unavailable",
+        "error": "URLError: <urlopen error [WinError 10013] \u4ee5\u4e00\u79cd\u8bbf\u95ee\u6743\u9650\u4e0d\u5141\u8bb8\u7684\u65b9\u5f0f\u505a\u4e86\u4e00\u4e2a\u8bbf\u95ee\u5957\u63a5\u5b57\u7684\u5c1d\u8bd5\u3002>",
+        "online_reverified": false
+      }
+    ],
+    "path": "data/raw/member3/jpn_migration_2020.xls",
+    "sha256": "02b9ce261acec145b7c1e44ccdc0ac5800ba85b22091bff13571f423fdb8a8ff",
+    "bytes": 93184,
+    "status": "retrieved",
+    "online_reverified": true,
+    "retrieved_utc": "2026-11-09T09:14:38.270988+00:00"
+  },
+  {
+    "file": "jpn_migration_2021.xls",
+    "owner": "member3",
+    "url": "https://www.stat.go.jp/data/idou/2021np/jissu/zuhyou/hyo1.xls",
+    "previous_attempts": [
+      {
+        "file": "jpn_migration_2021.xls",
+        "owner": "member3",
+        "url": "https://www.stat.go.jp/data/idou/2021np/jissu/zuhyou/hyo1.xls",
+        "status": "unavailable",
+        "error": "URLError: <urlopen error [WinError 10013] \u4ee5\u4e00\u79cd\u8bbf\u95ee\u6743\u9650\u4e0d\u5141\u8bb8\u7684\u65b9\u5f0f\u505a\u4e86\u4e00\u4e2a\u8bbf\u95ee\u5957\u63a5\u5b57\u7684\u5c1d\u8bd5\u3002>",
+        "online_reverified": false
+      }
+    ],
+    "path": "data/raw/member3/jpn_migration_2021.xls",
+    "sha256": "6efca3be9112f4cf0635623a045f39eae0f9711b5de44fe7d969662395884c3c",
+    "bytes": 87552,
+    "status": "retrieved",
+    "online_reverified": true,
+    "retrieved_utc": "2026-11-09T09:14:39.259573+00:00"
+  },
+  {
+    "file": "bls_2011.html",
+    "owner": "member3",
+    "url": "https://www.bls.gov/news.release/archives/srgune_02292012.htm",
+    "year": 2011,
+    "previous_attempts": [
+      {
+        "file": "bls_2011.html",
+        "owner": "member3",
+        "url": "https://www.bls.gov/news.release/archives/srgune_02292012.htm",
+        "year": 2011,
+        "status": "unavailable",
+        "error": "URLError: <urlopen error [WinError 10013] \u4ee5\u4e00\u79cd\u8bbf\u95ee\u6743\u9650\u4e0d\u5141\u8bb8\u7684\u65b9\u5f0f\u505a\u4e86\u4e00\u4e2a\u8bbf\u95ee\u5957\u63a5\u5b57\u7684\u5c1d\u8bd5\u3002>",
+        "online_reverified": false
+      }
+    ],
+    "status": "unavailable",
+    "error": "HTTPError: HTTP Error 403: Forbidden",
+    "online_reverified": false
+  },
+  {
+    "file": "bls_2012.html",
+    "owner": "member3",
+    "url": "https://www.bls.gov/news.release/archives/srgune_03012013.htm",
+    "year": 2012,
+    "previous_attempts": [
+      {
+        "file": "bls_2012.html",
+        "owner": "member3",
+        "url": "https://www.bls.gov/news.release/archives/srgune_03012013.htm",
+        "year": 2012,
+        "status": "unavailable",
+        "error": "URLError: <urlopen error [WinError 10013] \u4ee5\u4e00\u79cd\u8bbf\u95ee\u6743\u9650\u4e0d\u5141\u8bb8\u7684\u65b9\u5f0f\u505a\u4e86\u4e00\u4e2a\u8bbf\u95ee\u5957\u63a5\u5b57\u7684\u5c1d\u8bd5\u3002>",
+        "online_reverified": false
+      }
+    ],
+    "status": "unavailable",
+    "error": "HTTPError: HTTP Error 403: Forbidden",
+    "online_reverified": false
+  },
+  {
+    "file": "bls_2013.html",
+    "owner": "member3",
+    "url": "https://www.bls.gov/news.release/archives/srgune_02282014.htm",
+    "year": 2013,
+    "previous_attempts": [
+      {
+        "file": "bls_2013.html",
+        "owner": "member3",
+        "url": "https://www.bls.gov/news.release/archives/srgune_02282014.htm",
+        "year": 2013,
+        "status": "unavailable",
+        "error": "URLError: <urlopen error [WinError 10013] \u4ee5\u4e00\u79cd\u8bbf\u95ee\u6743\u9650\u4e0d\u5141\u8bb8\u7684\u65b9\u5f0f\u505a\u4e86\u4e00\u4e2a\u8bbf\u95ee\u5957\u63a5\u5b57\u7684\u5c1d\u8bd5\u3002>",
+        "online_reverified": false
+      }
+    ],
+    "status": "unavailable",
+    "error": "HTTPError: HTTP Error 403: Forbidden",
+    "online_reverified": false
+  },
+  {
+    "file": "bls_2014.html",
+    "owner": "member3",
+    "url": "https://www.bls.gov/news.release/archives/srgune_03042015.htm",
+    "year": 2014,
+    "previous_attempts": [
+      {
+        "file": "bls_2014.html",
+        "owner": "member3",
+        "url": "https://www.bls.gov/news.release/archives/srgune_03042015.htm",
+        "year": 2014,
+        "status": "unavailable",
+        "error": "URLError: <urlopen error [WinError 10013] \u4ee5\u4e00\u79cd\u8bbf\u95ee\u6743\u9650\u4e0d\u5141\u8bb8\u7684\u65b9\u5f0f\u505a\u4e86\u4e00\u4e2a\u8bbf\u95ee\u5957\u63a5\u5b57\u7684\u5c1d\u8bd5\u3002>",
+        "online_reverified": false
+      }
+    ],
+    "status": "unavailable",
+    "error": "HTTPError: HTTP Error 403: Forbidden",
+    "online_reverified": false
+  },
+  {
+    "file": "bls_2015.html",
+    "owner": "member3",
+    "url": "https://www.bls.gov/news.release/archives/srgune_02262016.htm",
+    "year": 2015,
+    "previous_attempts": [
+      {
+        "file": "bls_2015.html",
+        "owner": "member3",
+        "url": "https://www.bls.gov/news.release/archives/srgune_02262016.htm",
+        "year": 2015,
+        "status": "unavailable",
+        "error": "URLError: <urlopen error [WinError 10013] \u4ee5\u4e00\u79cd\u8bbf\u95ee\u6743\u9650\u4e0d\u5141\u8bb8\u7684\u65b9\u5f0f\u505a\u4e86\u4e00\u4e2a\u8bbf\u95ee\u5957\u63a5\u5b57\u7684\u5c1d\u8bd5\u3002>",
+        "online_reverified": false
+      }
+    ],
+    "status": "unavailable",
+    "error": "HTTPError: HTTP Error 403: Forbidden",
+    "online_reverified": false
+  },
+  {
+    "file": "bls_2016.html",
+    "owner": "member3",
+    "url": "https://www.bls.gov/news.release/archives/srgune_02282017.htm",
+    "year": 2016,
+    "previous_attempts": [
+      {
+        "file": "bls_2016.html",
+        "owner": "member3",
+        "url": "https://www.bls.gov/news.release/archives/srgune_02282017.htm",
+        "year": 2016,
+        "status": "unavailable",
+        "error": "URLError: <urlopen error [WinError 10013] \u4ee5\u4e00\u79cd\u8bbf\u95ee\u6743\u9650\u4e0d\u5141\u8bb8\u7684\u65b9\u5f0f\u505a\u4e86\u4e00\u4e2a\u8bbf\u95ee\u5957\u63a5\u5b57\u7684\u5c1d\u8bd5\u3002>",
+        "online_reverified": false
+      }
+    ],
+    "status": "unavailable",
+    "error": "HTTPError: HTTP Error 403: Forbidden",
+    "online_reverified": false
+  },
+  {
+    "file": "bls_2017.html",
+    "owner": "member3",
+    "url": "https://www.bls.gov/news.release/archives/srgune_02272018.htm",
+    "year": 2017,
+    "previous_attempts": [
+      {
+        "file": "bls_2017.html",
+        "owner": "member3",
+        "url": "https://www.bls.gov/news.release/archives/srgune_02272018.htm",
+        "year": 2017,
+        "status": "unavailable",
+        "error": "URLError: <urlopen error [WinError 10013] \u4ee5\u4e00\u79cd\u8bbf\u95ee\u6743\u9650\u4e0d\u5141\u8bb8\u7684\u65b9\u5f0f\u505a\u4e86\u4e00\u4e2a\u8bbf\u95ee\u5957\u63a5\u5b57\u7684\u5c1d\u8bd5\u3002>",
+        "online_reverified": false
+      }
+    ],
+    "status": "unavailable",
+    "error": "HTTPError: HTTP Error 403: Forbidden",
+    "online_reverified": false
+  },
+  {
+    "file": "bls_2018.html",
+    "owner": "member3",
+    "url": "https://www.bls.gov/news.release/archives/srgune_03012019.htm",
+    "year": 2018,
+    "previous_attempts": [
+      {
+        "file": "bls_2018.html",
+        "owner": "member3",
+        "url": "https://www.bls.gov/news.release/archives/srgune_03012019.htm",
+        "year": 2018,
+        "status": "unavailable",
+        "error": "URLError: <urlopen error [WinError 10013] \u4ee5\u4e00\u79cd\u8bbf\u95ee\u6743\u9650\u4e0d\u5141\u8bb8\u7684\u65b9\u5f0f\u505a\u4e86\u4e00\u4e2a\u8bbf\u95ee\u5957\u63a5\u5b57\u7684\u5c1d\u8bd5\u3002>",
+        "online_reverified": false
+      }
+    ],
+    "status": "unavailable",
+    "error": "HTTPError: HTTP Error 403: Forbidden",
+    "online_reverified": false
+  },
+  {
+    "file": "bls_2019.html",
+    "owner": "member3",
+    "url": "https://www.bls.gov/news.release/archives/srgune_03042020.htm",
+    "year": 2019,
+    "previous_attempts": [
+      {
+        "file": "bls_2019.html",
+        "owner": "member3",
+        "url": "https://www.bls.gov/news.release/archives/srgune_03042020.htm",
+        "year": 2019,
+        "status": "unavailable",
+        "error": "URLError: <urlopen error [WinError 10013] \u4ee5\u4e00\u79cd\u8bbf\u95ee\u6743\u9650\u4e0d\u5141\u8bb8\u7684\u65b9\u5f0f\u505a\u4e86\u4e00\u4e2a\u8bbf\u95ee\u5957\u63a5\u5b57\u7684\u5c1d\u8bd5\u3002>",
+        "online_reverified": false
+      }
+    ],
+    "status": "unavailable",
+    "error": "HTTPError: HTTP Error 403: Forbidden",
+    "online_reverified": false
+  },
+  {
+    "file": "bls_2020.html",
+    "owner": "member3",
+    "url": "https://www.bls.gov/news.release/archives/srgune_03032021.htm",
+    "year": 2020,
+    "previous_attempts": [
+      {
+        "file": "bls_2020.html",
+        "owner": "member3",
+        "url": "https://www.bls.gov/news.release/archives/srgune_03032021.htm",
+        "year": 2020,
+        "status": "unavailable",
+        "error": "URLError: <urlopen error [WinError 10013] \u4ee5\u4e00\u79cd\u8bbf\u95ee\u6743\u9650\u4e0d\u5141\u8bb8\u7684\u65b9\u5f0f\u505a\u4e86\u4e00\u4e2a\u8bbf\u95ee\u5957\u63a5\u5b57\u7684\u5c1d\u8bd5\u3002>",
+        "online_reverified": false
+      }
+    ],
+    "status": "unavailable",
+    "error": "HTTPError: HTTP Error 403: Forbidden",
+    "online_reverified": false
+  },
+  {
+    "file": "bls_2021.html",
+    "owner": "member3",
+    "url": "https://www.bls.gov/news.release/archives/srgune_03022022.htm",
+    "year": 2021,
+    "previous_attempts": [
+      {
+        "file": "bls_2021.html",
+        "owner": "member3",
+        "url": "https://www.bls.gov/news.release/archives/srgune_03022022.htm",
+        "year": 2021,
+        "status": "unavailable",
+        "error": "URLError: <urlopen error [WinError 10013] \u4ee5\u4e00\u79cd\u8bbf\u95ee\u6743\u9650\u4e0d\u5141\u8bb8\u7684\u65b9\u5f0f\u505a\u4e86\u4e00\u4e2a\u8bbf\u95ee\u5957\u63a5\u5b57\u7684\u5c1d\u8bd5\u3002>",
+        "online_reverified": false
+      }
+    ],
+    "status": "unavailable",
+    "error": "HTTPError: HTTP Error 403: Forbidden",
+    "online_reverified": false
+  },
+  {
+    "file": "bls_2022.html",
+    "owner": "member3",
+    "url": "https://www.bls.gov/news.release/archives/srgune_03012023.htm",
+    "year": 2022,
+    "previous_attempts": [
+      {
+        "file": "bls_2022.html",
+        "owner": "member3",
+        "url": "https://www.bls.gov/news.release/archives/srgune_03012023.htm",
+        "year": 2022,
+        "status": "unavailable",
+        "error": "URLError: <urlopen error [WinError 10013] \u4ee5\u4e00\u79cd\u8bbf\u95ee\u6743\u9650\u4e0d\u5141\u8bb8\u7684\u65b9\u5f0f\u505a\u4e86\u4e00\u4e2a\u8bbf\u95ee\u5957\u63a5\u5b57\u7684\u5c1d\u8bd5\u3002>",
+        "online_reverified": false
+      }
+    ],
+    "status": "unavailable",
+    "error": "HTTPError: HTTP Error 403: Forbidden",
+    "online_reverified": false
+  }
+]

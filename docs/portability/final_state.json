@@ -1,0 +1,7 @@
+{
+  "branch": "codex/member4-audit-integration",
+  "commit": "d6f90cc46507d915151cb67a61714bab19362462",
+  "status": " M .github/workflows/validate.yml\n M README.md\n M analysis/member4/freeze_inputs.py\n M pyproject.toml\n M scripts/remediation_state.py\n M scripts/verify_remediation.py\n?? .gitattributes\n?? docs/portability/README.md\n?? docs/portability/authorized_delta.json\n?? docs/portability/clean_snapshot_inventory.json\n?? docs/portability/failure_before.txt\n?? docs/portability/file_change_manifest.csv\n?? docs/portability/file_change_manifest.sha256\n?? docs/portability/final_state.json\n?? docs/portability/initial_state.json\n?? docs/portability/line_endings_before.json\n?? docs/portability/linux_commands.json\n?? docs/portability/linux_temp_failure.json\n?? docs/portability/linux_test_results.xml\n?? docs/portability/local_test_results.xml\n?? docs/portability/next_commit_files.txt\n?? docs/portability/report_zh.md\n?? docs/portability/validation.json\n?? docs/portability/windows_commands.json\n?? docs/portability/windows_test_results.xml\n?? docs/remediation/historical_evidence.json\n?? docs/remediation/historical_evidence.zip\n?? docs/remediation/input_manifest_v5.json\n?? scripts/build_portable_integrity.py\n?? tests/test_portable_integrity.py\n",
+  "staged_files": [],
+  "remote_writes": false
+}

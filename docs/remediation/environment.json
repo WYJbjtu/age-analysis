@@ -1,0 +1,16 @@
+{
+  "python": "3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "pandas": "2.3.3",
+    "numpy": "2.4.3",
+    "matplotlib": "3.11.2",
+    "Pillow": "12.1.1",
+    "openpyxl": "3.1.5",
+    "xlrd": "2.0.2",
+    "pyshp": "3.1.7",
+    "pyproj": "3.8.0",
+    "pytest": "9.2.0"
+  },
+  "rendering_change": "Member2 prior PNG metadata Matplotlib3.10.8; current3.11.2. Regenerate with unchanged plot program and validated identical numerical inputs; preserve prior files in external backup."
+}

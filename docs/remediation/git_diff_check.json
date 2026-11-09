@@ -1,0 +1,26 @@
+{
+  "command": "git diff --check",
+  "exit_code": 2,
+  "trailing_whitespace_by_file": {
+    "analysis/figures/correlation_manufacturing_share_pct_2022.svg": 478,
+    "data/processed/labor_migration.csv": 1177,
+    "member3_labor_migration/README.md": 53,
+    "member3_labor_migration/bls_revision_check.csv": 562,
+    "member3_labor_migration/figure4_labor_2022.svg": 1448,
+    "member3_labor_migration/figures/figure4_labor_2022.svg": 1448,
+    "member3_labor_migration/figures/jpn_labor_migration_2019_2022.svg": 544,
+    "member3_labor_migration/figures/jpn_panel_2011_2022.svg": 493,
+    "member3_labor_migration/figures/outliers_2022.svg": 1225,
+    "member3_labor_migration/figures/two_country_trend_2011_2022.svg": 828,
+    "member3_labor_migration/findings.md": 55,
+    "member3_labor_migration/jpn_labor_detail.csv": 564,
+    "member3_labor_migration/jpn_labor_migration_2019_2022.svg": 544,
+    "member3_labor_migration/outliers_2022.svg": 1557,
+    "member3_labor_migration/prepare_labor.py": 199,
+    "member3_labor_migration/report_section.md": 42,
+    "member3_labor_migration/summary.json": 237,
+    "member3_labor_migration/us_labor_detail.csv": 613
+  },
+  "other_diagnostics": [],
+  "interpretation": "Generated SVG path-line spaces; preserved exporter output. This is not a passing whitespace check and does not change numerical or visual validation."
+}

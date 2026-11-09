@@ -1,0 +1,1495 @@
+{
+  "method": "Actual proposed tracked and explicitly listed new deliverables; current LF text representation; no .git, user profile, backups, data/raw downloads, virtualenv or ignored caches",
+  "files": [
+    {
+      "path": ".editorconfig",
+      "repository_sha256": "32d29d5710437d3e06e13f8bb62e93f39b53ffff416f793754e163ef69cbd016",
+      "bytes": 145
+    },
+    {
+      "path": ".gitattributes",
+      "repository_sha256": "5acbe0d3cfffecc0ce096b0a95018387cc87a1af0c6d97e5bbacea9d9577beb3",
+      "bytes": 395
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/analysis.yml",
+      "repository_sha256": "38c5994bc970831a9d05480f6a575b356807961cb8ac50adbe794ea8cdbc23e8",
+      "bytes": 521
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/data_source.yml",
+      "repository_sha256": "2b18e410afe078e32f238d38c85c082d61b512fc0a57f87964ac4ba64948edc9",
+      "bytes": 747
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "repository_sha256": "292f476e8de1a3ab7913f5770940c91975637158549d1ef8c4e39b8a18eb74af",
+      "bytes": 622
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "repository_sha256": "fa8abb2740397d08632594b8e60113dc6b2082bef855955a4f572e629f515b15",
+      "bytes": 785
+    },
+    {
+      "path": ".gitignore",
+      "repository_sha256": "a79f83ae887f8f5756329458a8da7f6d8082bf7ed73b22b50a4058f168cd691d",
+      "bytes": 279
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "repository_sha256": "237fcd4dff64d3190b62dc4a083b8c83a71f95dbced4f9f67c460efb18101770",
+      "bytes": 1280
+    },
+    {
+      "path": "README.md",
+      "repository_sha256": "2712ca5ad28671cf43b155937d22215b80481029b7f4eb3a3e516232bbcf9345",
+      "bytes": 5994
+    },
+    {
+      "path": "analysis/.gitkeep",
+      "repository_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "analysis/figures/correlation_manufacturing_share_pct_2022.png",
+      "repository_sha256": "216fe5adf2ccbe0a6b6ab4e001b2728d9572f53256393c81960191383414d738",
+      "bytes": 317662
+    },
+    {
+      "path": "analysis/figures/correlation_manufacturing_share_pct_2022.svg",
+      "repository_sha256": "5d67550232c23445ed24de7cfe2d6de2b190f2a7081380a0c1b1338462e87270",
+      "bytes": 66449
+    },
+    {
+      "path": "analysis/manufacturing_correlations_2022.csv",
+      "repository_sha256": "09aa3daa46f376586b17bab6f9ce32c2f754dcd17c5fe4532d9fc4cd48b26d01",
+      "bytes": 174
+    },
+    {
+      "path": "analysis/member4/README.md",
+      "repository_sha256": "f45aa033e29b087c720baa55999b6f421596dd46167c7d8208748202813a1475",
+      "bytes": 7629
+    },
+    {
+      "path": "analysis/member4/analysis_plan.md",
+      "repository_sha256": "d89e6258742ca803e1ec8d59e430b1c9e8ddeb5af02443ff907d69015ea161c8",
+      "bytes": 2916
+    },
+    {
+      "path": "analysis/member4/audit/bls_primary_table_sample.csv",
+      "repository_sha256": "b30a05b097632e64ef5acb1eda727002049bb4ee26639c2ccef61178bb1bf584",
+      "bytes": 434
+    },
+    {
+      "path": "analysis/member4/audit/claim_checks.csv",
+      "repository_sha256": "44b41a90d679e630d29460140d4d59ce462769a4d551940aeba0221e296ed5ba",
+      "bytes": 1914
+    },
+    {
+      "path": "analysis/member4/audit/corrections.csv",
+      "repository_sha256": "7d8096523914009e9a6424ee6b35f461f555ee056776e11f1c3d21f0fff29ae2",
+      "bytes": 485
+    },
+    {
+      "path": "analysis/member4/audit/download_manifest.json",
+      "repository_sha256": "83bafd3362ecb89b1155332d8fecf6d720bdc02fe893e3e895f28827cab6979d",
+      "bytes": 13076
+    },
+    {
+      "path": "analysis/member4/audit/environment.json",
+      "repository_sha256": "2ec40e747c3a752b3e31a57b1fabee82cfae8f9470ee6c63db6af613917fac82",
+      "bytes": 198
+    },
+    {
+      "path": "analysis/member4/audit/exclusions.csv",
+      "repository_sha256": "ed935378f5d62d0a366403a58e997ddf50cce62482127b6689e53fb2ef44f41b",
+      "bytes": 39
+    },
+    {
+      "path": "analysis/member4/audit/input_manifest.json",
+      "repository_sha256": "434a08d0f6170ff75ae3b9e8ae8e6e122734a376aecfd0d91553463ffd7d2794",
+      "bytes": 29576
+    },
+    {
+      "path": "analysis/member4/audit/issues.csv",
+      "repository_sha256": "e42aa2e7626e053c26cb1e34a94c6a6d093e38aed7be75c50e05240db9346291",
+      "bytes": 6964
+    },
+    {
+      "path": "analysis/member4/audit/japan_gdp_reconciliation.csv",
+      "repository_sha256": "9ae8691cc4e50628c22b6af00bf7e2c00d4c5aca30aad710076d03915782224f",
+      "bytes": 21240
+    },
+    {
+      "path": "analysis/member4/audit/join_coverage.csv",
+      "repository_sha256": "a8d688f147723cf5d94c6cfe447587d92a1183975bb42d1fb00c5879f489957f",
+      "bytes": 1461
+    },
+    {
+      "path": "analysis/member4/audit/labor_count_rounding.csv",
+      "repository_sha256": "3cb4d420b9cfba2ec8bc6e5cca6b83d56522b44d7c0fd209a5efd37e9d95b6dc",
+      "bytes": 39262
+    },
+    {
+      "path": "analysis/member4/audit/missingness.csv",
+      "repository_sha256": "41188a31bb8d6774a2068da957f9f4565293ca3c432c27d5838b2340d80a33a5",
+      "bytes": 4705
+    },
+    {
+      "path": "analysis/member4/audit/primary_source_verification_log.csv",
+      "repository_sha256": "ab1ab03c1ef1536673840c2d307a37ad496bcda1305a8720acf18d6583141c7f",
+      "bytes": 11229
+    },
+    {
+      "path": "analysis/member4/audit/readiness.csv",
+      "repository_sha256": "338f8456abc969c895efdc92b8dbfcdff38bd757a756ac0236fe688da84a4758",
+      "bytes": 1784
+    },
+    {
+      "path": "analysis/member4/audit/repository_inventory.csv",
+      "repository_sha256": "c2d0a06e5a8a9a8cefcae5693765cc16280609d06e5ac40e4e15fe33a4a7522c",
+      "bytes": 4488
+    },
+    {
+      "path": "analysis/member4/audit/reproduction_checks.csv",
+      "repository_sha256": "2fba6c28c913ea43a8899f08cbb1b08d502b2212a0dad7bf770eb0db723969c5",
+      "bytes": 7653
+    },
+    {
+      "path": "analysis/member4/audit/sample_flow.csv",
+      "repository_sha256": "285a8e5f8459fe30dd54b40c1152f26c0e6b134320d2a6990384b20b1f5cf5c9",
+      "bytes": 648
+    },
+    {
+      "path": "analysis/member4/audit/source_check_summary.csv",
+      "repository_sha256": "b79783468ea2e3b3269a96909714fd91c826ae828452580d8d80f4122817dea1",
+      "bytes": 920
+    },
+    {
+      "path": "analysis/member4/audit/source_record_checks.csv",
+      "repository_sha256": "6644b0974bdaec56b6a72a93211ee4027af6d178e1ddee39b65c11dad5e647e9",
+      "bytes": 2429641
+    },
+    {
+      "path": "analysis/member4/audit/source_registry.csv",
+      "repository_sha256": "8620b471312df199b0b7e1a435bda6eb5a4cf1fb926d8e34233828ee58a58bd5",
+      "bytes": 9399
+    },
+    {
+      "path": "analysis/member4/audit/test_results.xml",
+      "repository_sha256": "9969dccdc0a40b9bef743444860d43f8eeba3147919e6578bafc08f3418260f7",
+      "bytes": 6573
+    },
+    {
+      "path": "analysis/member4/audit/verified_domestic_migration.csv",
+      "repository_sha256": "7b017c724f45aac0a792f4e58c7335d5f4e6bc951969047d40cf37a505a1e0cd",
+      "bytes": 19313
+    },
+    {
+      "path": "analysis/member4/audit_report.md",
+      "repository_sha256": "e9bf91fe86bb356aea503e417ef35ed5d70adc5f8e8d541347c280267b3bbff0",
+      "bytes": 12779
+    },
+    {
+      "path": "analysis/member4/build_reports.py",
+      "repository_sha256": "1638c729868cdd5aed59e2c643e8b026d779c810423c53dfdfbcf7c48cff30ea",
+      "bytes": 30012
+    },
+    {
+      "path": "analysis/member4/data/analysis_samples.csv",
+      "repository_sha256": "959579d194723df35de0256c71190056dbc745a36a19f5e22fa6e7fcf1ba23e6",
+      "bytes": 158413
+    },
+    {
+      "path": "analysis/member4/data/changes_2019_2022.csv",
+      "repository_sha256": "185a55449998909b5dbdfdec4d0a22c364835169bbd3f1f63984b09794c76db6",
+      "bytes": 9178
+    },
+    {
+      "path": "analysis/member4/data/core_2019.csv",
+      "repository_sha256": "f47e4a2464975e22557ede1171030f9ee5364528e71ecb053a2c7c89071de0b3",
+      "bytes": 78659
+    },
+    {
+      "path": "analysis/member4/data/core_2022.csv",
+      "repository_sha256": "ad282b3dcb4e3c4cf3ba49aa1e7a41967bf2ea5411a1f05143f275886f84afe2",
+      "bytes": 77411
+    },
+    {
+      "path": "analysis/member4/data/integrated_context_panel.csv",
+      "repository_sha256": "3bd14cca85d4857179fbf5522efb45d21c39c7f41aab73ef626ce52bcb53809a",
+      "bytes": 842176
+    },
+    {
+      "path": "analysis/member4/data_dictionary.md",
+      "repository_sha256": "5bfcd043d986021c27dc80a576e4eee82f21d6744110011abf82c2f4bc6c0dd0",
+      "bytes": 3727
+    },
+    {
+      "path": "analysis/member4/descriptive.py",
+      "repository_sha256": "33eaad1a29c2dc44630e675925ce4c43a38fb1aee9abc984d09e126e32533a37",
+      "bytes": 3468
+    },
+    {
+      "path": "analysis/member4/download_sources.py",
+      "repository_sha256": "50dc9f895cb4db25ec987a5839785eb362c6e9bbfa20c2f16314de0daafde900",
+      "bytes": 3768
+    },
+    {
+      "path": "analysis/member4/figures/01_pooled_within_2022.png",
+      "repository_sha256": "906be4359cc374d7e26bafd8154fa02299758746ff63cb2f56de59e92f605a20",
+      "bytes": 419734
+    },
+    {
+      "path": "analysis/member4/figures/01_pooled_within_2022.svg",
+      "repository_sha256": "ff172b9adc353e08aea9d43fda38075c0691370ab799dac9d9c4fd945eaceb9b",
+      "bytes": 66209
+    },
+    {
+      "path": "analysis/member4/figures/02_robustness_and_covariance.png",
+      "repository_sha256": "94fb0a5c57761bbd7f7da4bf975f10db7e4741d29bbd830386361b32d73f0489",
+      "bytes": 270989
+    },
+    {
+      "path": "analysis/member4/figures/02_robustness_and_covariance.svg",
+      "repository_sha256": "b896d64a9bcd00c899cfc77f277a7af448bcd273f31abb809e96d4b40146beb0",
+      "bytes": 25491
+    },
+    {
+      "path": "analysis/member4/figures/03_within_country_cases.png",
+      "repository_sha256": "0c96f02bda5d8023663e9602ba21106ec5466772fa52cb3ae11cbeca8f378343",
+      "bytes": 398618
+    },
+    {
+      "path": "analysis/member4/figures/03_within_country_cases.svg",
+      "repository_sha256": "3b429a6570dd73754b7896e3e872e7d4ba5f3febe5f9bf080cf5c3270ef68605",
+      "bytes": 23436
+    },
+    {
+      "path": "analysis/member4/findings.md",
+      "repository_sha256": "d00a77b78575bc1d9e2515d891e54fc94e163e9c6343c375d801959f5016fa15",
+      "bytes": 10364
+    },
+    {
+      "path": "analysis/member4/freeze_inputs.py",
+      "repository_sha256": "a97942ff6cbc5514de1f543ed6ef50ed1da50135e10cdcce9bc8a13bd60f9894",
+      "bytes": 532
+    },
+    {
+      "path": "analysis/member4/plot_figures.py",
+      "repository_sha256": "8bce5e0b93e2f14c7095bfce4d33bacae076807ec8682631882b94bbe21b0349",
+      "bytes": 7462
+    },
+    {
+      "path": "analysis/member4/requirements-audit.txt",
+      "repository_sha256": "9aa5f63ae47c7e809e5aa64ff0d672ef43146274b4c565f21567c67c0c2b3d73",
+      "bytes": 100
+    },
+    {
+      "path": "analysis/member4/results/analysis_ledger.csv",
+      "repository_sha256": "e78d0fe027176a5832088365bb9acb57a0cfba3f12213f0d13ad66ec98731971",
+      "bytes": 8400
+    },
+    {
+      "path": "analysis/member4/results/associations.csv",
+      "repository_sha256": "028bd63e58d47350846aaf462eb675d725b0cbd51842fb6d5d7308cce2aa91fa",
+      "bytes": 7846
+    },
+    {
+      "path": "analysis/member4/results/case_candidate_pairs.csv",
+      "repository_sha256": "23588d216c9cec2ea591d09eb7fa817669ff5f984b06a2ac41e24f66dd92a899",
+      "bytes": 13231
+    },
+    {
+      "path": "analysis/member4/results/change_associations.csv",
+      "repository_sha256": "5a55588c0d0fbc6547cf9c8e5e1c5bb843aa3b8ac9a7123a634f8ee616931618",
+      "bytes": 446
+    },
+    {
+      "path": "analysis/member4/results/covariance_components.csv",
+      "repository_sha256": "f1fcf379d4384b4bec88bcc73736c04d4fc70d1a6655c4d4f43587450a3ac009",
+      "bytes": 477
+    },
+    {
+      "path": "analysis/member4/results/covariance_summary.csv",
+      "repository_sha256": "c22e96eab5f272116a8d17b3cb2e8241ad5faa501602c37fa2a80499f01a42dd",
+      "bytes": 572
+    },
+    {
+      "path": "analysis/member4/results/finding_evidence.csv",
+      "repository_sha256": "b5b04abe43ea4864e5b94878b0ce599f6a124196b31f34b14c1e1a8637d1d8d2",
+      "bytes": 1435
+    },
+    {
+      "path": "analysis/member4/results/influence_summary.csv",
+      "repository_sha256": "251bd775f21f1725fcf36267347e783c140e04bb3c812f98b022383032602b0f",
+      "bytes": 673
+    },
+    {
+      "path": "analysis/member4/results/leave_one_out.csv",
+      "repository_sha256": "6467a24a1380d992615fa6eaad0792c1221d1bcc95b46b73d10d5223005a94a8",
+      "bytes": 64271
+    },
+    {
+      "path": "analysis/member4/results/overlap.csv",
+      "repository_sha256": "086c7d1c2e26651034e637b0dc068151b587ae8e405aab4e926d320635fd04e1",
+      "bytes": 516
+    },
+    {
+      "path": "analysis/member4/results/primary_summary.csv",
+      "repository_sha256": "ff4aeb98cd89df401cfb8d22a2e312a11bd6ac2a256ccc3e24109dba8407dc0b",
+      "bytes": 1378
+    },
+    {
+      "path": "analysis/member4/results/selected_cases.csv",
+      "repository_sha256": "0cb5c31dd186e86d22630ba6599cf7378f3f22e74e4cf3f8b4896db927265280",
+      "bytes": 7530
+    },
+    {
+      "path": "analysis/member4/run_analysis.py",
+      "repository_sha256": "2fd87c22dd6c777c203718e365b5ece1123f1e6424bcd8189402e8c036175d50",
+      "bytes": 16510
+    },
+    {
+      "path": "analysis/member4/verify_delivery.py",
+      "repository_sha256": "8b1656f83d0010ddc241df6f6ab30afb46529bf18d0ed946d0e39f6dfb5a2714",
+      "bytes": 4419
+    },
+    {
+      "path": "analysis/member4/verify_sources.py",
+      "repository_sha256": "8f7ff835d034458bc9feb73942e558a791459cbb39ecdf28c22caf508934f8c8",
+      "bytes": 13940
+    },
+    {
+      "path": "analysis/plot_correlations.py",
+      "repository_sha256": "071569075c4065e705bd778a6c3ee7ffead737af9cb5de692e6e6cc84238daa4",
+      "bytes": 4378
+    },
+    {
+      "path": "data/processed/demographics.csv",
+      "repository_sha256": "d5991439dd60928fabebebe70d698a0f8c766aac47be23f70926b31f5edb88f2",
+      "bytes": 69399
+    },
+    {
+      "path": "data/processed/industry.csv",
+      "repository_sha256": "f64fc8608cf682df6fe66240013e0682ed6d913b07365ecb0c8f3c70a56850d0",
+      "bytes": 87683
+    },
+    {
+      "path": "data/processed/labor_migration.csv",
+      "repository_sha256": "0893c9460acfb69947bd2f918b00ce217d52c3966e0c595a185c788a1fcce019",
+      "bytes": 626763
+    },
+    {
+      "path": "data/processed/merged_analysis.csv",
+      "repository_sha256": "28cae99d6584b77a2b299513f0d4eb968b1d6e8cefcab1ed8d178b10cb976e47",
+      "bytes": 1039646
+    },
+    {
+      "path": "data/raw/.gitkeep",
+      "repository_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "data/reference/region_lookup.csv",
+      "repository_sha256": "585ede89696d6e23b863229e53e46df9c43cf3a39fde8658933c8566dc9eec9b",
+      "bytes": 2699
+    },
+    {
+      "path": "docs/data_contract.md",
+      "repository_sha256": "5694a874cb0485c04d704dfc8ed16865c15093e52bf3aeb86cb74acc509bcf52",
+      "bytes": 5501
+    },
+    {
+      "path": "docs/japan_2022_handover.md",
+      "repository_sha256": "1e251706f33fc30b0dabaee5d2c184ddd649c5920c3854562afbc8720e748688",
+      "bytes": 2202
+    },
+    {
+      "path": "docs/portability/README.md",
+      "repository_sha256": "f64e8d7ccfe54fc5d8f5a502bd85fbd6c2c8ac6ca7244179338141143933edc5",
+      "bytes": 5387
+    },
+    {
+      "path": "docs/portability/authorized_delta.json",
+      "repository_sha256": "28d35f4fd2f6ae45cc59892eea6cec2c344e5ec7a679a56448d5579884be8126",
+      "bytes": 3942
+    },
+    {
+      "path": "docs/portability/initial_state.json",
+      "repository_sha256": "a9bde18e6f505c1aa6aa1dfb39037414732a20036ad705351d778dc223ee95b0",
+      "bytes": 51546
+    },
+    {
+      "path": "docs/portability/line_endings_before.json",
+      "repository_sha256": "1a33042c0253ba2673fdd139568c1564ff9d8acc7ad460b498ad5741ca5be64a",
+      "bytes": 100987
+    },
+    {
+      "path": "docs/presentation_outline.md",
+      "repository_sha256": "07941aa20411b5f6aaaa13cb6c385630f2b7eccdbf3f6f318124013d0f95ba31",
+      "bytes": 2057
+    },
+    {
+      "path": "docs/remediation/acquisition.json",
+      "repository_sha256": "287aa050d367f6eb075683b426ff4a4a1e30c5ddd7f2d7d67ccf50dbfb9836bf",
+      "bytes": 17699
+    },
+    {
+      "path": "docs/remediation/commands.jsonl",
+      "repository_sha256": "9e027c2a7a8d18ae920cd8b51413497687a968f5b89ccd2026ee897b9c52c44d",
+      "bytes": 55671
+    },
+    {
+      "path": "docs/remediation/environment.json",
+      "repository_sha256": "eefab1e015ebe8d07ace3d41cae16a0c273543144e6929d860d43c772c281a75",
+      "bytes": 580
+    },
+    {
+      "path": "docs/remediation/file_change_manifest.csv",
+      "repository_sha256": "61d218aff24b971bc8c3bcb4b27b3f6b2f791a3fb51cde1143c9b63df6b71932",
+      "bytes": 43078
+    },
+    {
+      "path": "docs/remediation/file_change_manifest.sha256",
+      "repository_sha256": "e5ad37e006b09fd901c0f60184bfb5e8936a8326f1c5c6a4644cadb98b580bb0",
+      "bytes": 91
+    },
+    {
+      "path": "docs/remediation/final_state.json",
+      "repository_sha256": "8cf1eb6983c6d4e5bfeb9a40233147058e3e74a46e53fba2ba3daad6b183797b",
+      "bytes": 9186
+    },
+    {
+      "path": "docs/remediation/git_diff_check.json",
+      "repository_sha256": "e1cd017bc03254532a194f2f1783b94c09dc7442bdf90e42d47d025e0c54fed2",
+      "bytes": 1372
+    },
+    {
+      "path": "docs/remediation/historical_evidence.json",
+      "repository_sha256": "86cab74c85d4f9584a513ca877c3f3fd455b1c5adff20a47ca7c7852d77555bf",
+      "bytes": 62629
+    },
+    {
+      "path": "docs/remediation/historical_evidence.zip",
+      "repository_sha256": "460f7a2f560ee4b900047c69e5998d6d45222309155b49972f07327bf2e63cf5",
+      "bytes": 9092047
+    },
+    {
+      "path": "docs/remediation/initial_state.json",
+      "repository_sha256": "10fa4d16ec849677102e733f98e6cd76694d8953d8e4df99fca7af325846ea17",
+      "bytes": 3281
+    },
+    {
+      "path": "docs/remediation/input_manifest_v2.json",
+      "repository_sha256": "488ba500c5f9115ba785e0c08ce363ad35b9213a9a1dee1fd6afcbe81b3b8519",
+      "bytes": 48502
+    },
+    {
+      "path": "docs/remediation/input_manifest_v3.json",
+      "repository_sha256": "a1da158fec2250560449edc6e3ba3f694d23cf64ab56624aa48461f64c045692",
+      "bytes": 49279
+    },
+    {
+      "path": "docs/remediation/input_manifest_v4.json",
+      "repository_sha256": "39541340e0a28ba631d1120897db046f792b7ec14c45acafa5285ad8b8527ee4",
+      "bytes": 50018
+    },
+    {
+      "path": "docs/remediation/input_manifest_v5.json",
+      "repository_sha256": "a90ca633289a77b00cb2f7aea5e3f94807855b94899b80c3d9bd7fd3a06f6454",
+      "bytes": 115027
+    },
+    {
+      "path": "docs/remediation/prechange_manifest.json",
+      "repository_sha256": "d91b86aad41a8613f206e082d575f7a3d537774e9fe8c16d9efde4dfd069026d",
+      "bytes": 53972
+    },
+    {
+      "path": "docs/remediation/regression_baseline.json",
+      "repository_sha256": "d1f4941082b861c7402cf547a4c29fbff27a3969cf2cdf42f1a4262d8f3d4221",
+      "bytes": 8654
+    },
+    {
+      "path": "docs/remediation/regression_comparison.csv",
+      "repository_sha256": "ebba6c703af1ae93d702988173530305e9f189a637ac84b8a9191ac498c896fb",
+      "bytes": 2715
+    },
+    {
+      "path": "docs/remediation/repair_report_zh.md",
+      "repository_sha256": "cd3cf0f9b368c47fea711aecd10916ee89c1094c50baed2779302cd5f982db67",
+      "bytes": 11754
+    },
+    {
+      "path": "docs/remediation/reproduction_checks.csv",
+      "repository_sha256": "f7fd56b047dd4c2399e455b63c22d570aec01b3dfe9d23ac439eb6738a75b75b",
+      "bytes": 14894
+    },
+    {
+      "path": "docs/remediation/test_results.xml",
+      "repository_sha256": "5666e1c14de9566d53b8af8e78f5af60e805ac5e9466a1d5f5a23a22ba14d546",
+      "bytes": 8381
+    },
+    {
+      "path": "docs/remediation/validation.json",
+      "repository_sha256": "04911308c26482bdaa3dfd2db84fe423a74d50eadedaa4f594675ffb3daf39a5",
+      "bytes": 10451
+    },
+    {
+      "path": "docs/remediation/visual_review.json",
+      "repository_sha256": "cb520f41ca699a9bfad5d982c2c7b7452228d589fc529e29d7cc8da1b53fa9e6",
+      "bytes": 9209
+    },
+    {
+      "path": "docs/source_links.md",
+      "repository_sha256": "2a814be593a83ba1b52efa348040756222284e9f50a3dec6c12046e208e5d347",
+      "bytes": 1134
+    },
+    {
+      "path": "docs/source_registry.csv",
+      "repository_sha256": "11163f394d62ea345aabbf5c9ceea4dc2c8704dea9fb53f55fbbda1bf2aee8e8",
+      "bytes": 16473
+    },
+    {
+      "path": "docs/team_tasks.md",
+      "repository_sha256": "7a763b17bc5eae396db013064eb763eef75730f96251b0fc64a7875fd110576a",
+      "bytes": 3831
+    },
+    {
+      "path": "docs/us_2022_integration.md",
+      "repository_sha256": "be6a1a41050fe18fde337cc1e34760ca0622d165cc078652d7dda9f53e86bcae",
+      "bytes": 1224
+    },
+    {
+      "path": "handover/us_2022/.gitignore",
+      "repository_sha256": "973ae14ced5fb3c71efb3be3b627576f87a84d29c1fe72e6978ec35b449c7595",
+      "bytes": 60
+    },
+    {
+      "path": "handover/us_2022/CHECKSUMS.sha256",
+      "repository_sha256": "4a4bd5f0324969ffd2220ebf1adfaf493a5ec823302d1dec2950532632e7097f",
+      "bytes": 3705
+    },
+    {
+      "path": "handover/us_2022/README.md",
+      "repository_sha256": "bca63109c1dff1e70b1740d8bf2adda47358b4f92b1bc472bb65c0d5b30d37da",
+      "bytes": 1712
+    },
+    {
+      "path": "handover/us_2022/README_先读我.md",
+      "repository_sha256": "6f3928f72aa7f4c367e113e3e8e0735f5f1fe1bbab663ce7ba37e607665f5eab",
+      "bytes": 2935
+    },
+    {
+      "path": "handover/us_2022/deliverables/A_US_2022_数据与地区分布报告.docx",
+      "repository_sha256": "27f6aa5cea5fedfe77e2a97b3353103a1607eefa0e64f3a964bb7c3306ef6084",
+      "bytes": 1014373
+    },
+    {
+      "path": "handover/us_2022/deliverables/US_2022_交接数据.csv",
+      "repository_sha256": "9591526024bbb19c6a71f8fe667f2f092033b3eb2edf457e690e128fb9dd35c0",
+      "bytes": 13653
+    },
+    {
+      "path": "handover/us_2022/deliverables/figures/01_ranked_dotplots.pdf",
+      "repository_sha256": "abb09cdc58896398a411bbb94a8218c83f67acf7f76a6ae178f0448080b09550",
+      "bytes": 29684
+    },
+    {
+      "path": "handover/us_2022/deliverables/figures/01_ranked_dotplots.png",
+      "repository_sha256": "e97263a22d51b5c0782498a994f7b5bed767ea126de51c9255afbcccc0197d7c",
+      "bytes": 461781
+    },
+    {
+      "path": "handover/us_2022/deliverables/figures/01_ranked_dotplots.svg",
+      "repository_sha256": "595c3d46911c2018215da29c1cca5e0ac7aad155bde12b90806aa801ae654542",
+      "bytes": 74386
+    },
+    {
+      "path": "handover/us_2022/deliverables/figures/02_aging_map.pdf",
+      "repository_sha256": "536f4f47a62f8e8e11a499acb9f51b76ec607af1ace0432f3efeb2f862a8ac8f",
+      "bytes": 162498
+    },
+    {
+      "path": "handover/us_2022/deliverables/figures/02_aging_map.png",
+      "repository_sha256": "5ad0d86555be25101c0bdc18640c4b8cdb75c938da76c14348902a5c83c5fb7f",
+      "bytes": 316727
+    },
+    {
+      "path": "handover/us_2022/deliverables/figures/02_aging_map.svg",
+      "repository_sha256": "bebc5475f8979bd63a8d3f00491a42847b07f19e6d6e61d5d966f4f7dc4eec2b",
+      "bytes": 353556
+    },
+    {
+      "path": "handover/us_2022/deliverables/figures/03_manufacturing_map.pdf",
+      "repository_sha256": "10a331913dfb1b11aeb5bc090b2aeeed0ceaa9c140aaad0d59759f075e1c8347",
+      "bytes": 162082
+    },
+    {
+      "path": "handover/us_2022/deliverables/figures/03_manufacturing_map.png",
+      "repository_sha256": "0f21693c5992622dd668d4886e1d401a19a6fcdab8dc96acbd92342be09dc7df",
+      "bytes": 317571
+    },
+    {
+      "path": "handover/us_2022/deliverables/figures/03_manufacturing_map.svg",
+      "repository_sha256": "1058ac2dde17b1762972cefffea31dd74382b125deb0b10121a870885c5928d1",
+      "bytes": 353241
+    },
+    {
+      "path": "handover/us_2022/deliverables/先读我_交接说明.md",
+      "repository_sha256": "8698ce0cea71a8222ef2d00965705dc5496da4bfc3f5802541d289ffd9cc3deb",
+      "bytes": 204
+    },
+    {
+      "path": "handover/us_2022/deliverables/变量字典.csv",
+      "repository_sha256": "e198c19455cf9a43f2edfdd9efcaa978e8d4902dce4c672720d81db73812a9ad",
+      "bytes": 1942
+    },
+    {
+      "path": "handover/us_2022/deliverables/描述统计.csv",
+      "repository_sha256": "b9396669e69740b0a4fb512bf5c524376e5d29dea9fb38e6aa3989a5d02e2cca",
+      "bytes": 274
+    },
+    {
+      "path": "handover/us_2022/deliverables/数据来源.csv",
+      "repository_sha256": "b7a17d54cf9cd7da329edf67dda501a0c982bf7694f36c4f293ca85f1b39e12f",
+      "bytes": 1178
+    },
+    {
+      "path": "handover/us_2022/processed/descriptive_statistics.csv",
+      "repository_sha256": "b9396669e69740b0a4fb512bf5c524376e5d29dea9fb38e6aa3989a5d02e2cca",
+      "bytes": 274
+    },
+    {
+      "path": "handover/us_2022/processed/summary.json",
+      "repository_sha256": "37b289da33319b7e0077ff0b45c1f086bda3df7caf4076ee07016e0e7dabe69f",
+      "bytes": 632
+    },
+    {
+      "path": "handover/us_2022/processed/us_2022_contract_mapping.csv",
+      "repository_sha256": "2c3acd34badc378ee0b8748d5b3ee46b6d8d94b454a49b488eb70ad6720b9b91",
+      "bytes": 14087
+    },
+    {
+      "path": "handover/us_2022/processed/us_age_distribution_2022.csv",
+      "repository_sha256": "e433a15d64511660e614355e72b144681e0d5688374d616f3117d23a2bc41539",
+      "bytes": 94484
+    },
+    {
+      "path": "handover/us_2022/processed/us_industries_2022_long.csv",
+      "repository_sha256": "2d6ee0297e7930c49c6e7320d8fbff8332da5f800064f57e24cc01df6822b9f5",
+      "bytes": 553996
+    },
+    {
+      "path": "handover/us_2022/processed/us_states_2022_core.csv",
+      "repository_sha256": "9591526024bbb19c6a71f8fe667f2f092033b3eb2edf457e690e128fb9dd35c0",
+      "bytes": 13653
+    },
+    {
+      "path": "handover/us_2022/processed/变量字典.csv",
+      "repository_sha256": "e198c19455cf9a43f2edfdd9efcaa978e8d4902dce4c672720d81db73812a9ad",
+      "bytes": 1942
+    },
+    {
+      "path": "handover/us_2022/processed/数据来源.csv",
+      "repository_sha256": "b7a17d54cf9cd7da329edf67dda501a0c982bf7694f36c4f293ca85f1b39e12f",
+      "bytes": 1178
+    },
+    {
+      "path": "handover/us_2022/qa/package_review.json",
+      "repository_sha256": "69b38a5b6071385087974187cb2ce196c1603d31f5f3db3486e94002c1d5cff1",
+      "bytes": 214
+    },
+    {
+      "path": "handover/us_2022/qa/validation.json",
+      "repository_sha256": "c554179574b7c5d3f7e23082e7adf384e9acbdc6e4f380144d7e3a9b7c819006",
+      "bytes": 924
+    },
+    {
+      "path": "handover/us_2022/qa/visual_review.txt",
+      "repository_sha256": "1df9b095a5a86cb2e4326cc3f697266ee7bdf0ec8525bc51d95a9f31ebe8cdb0",
+      "bytes": 388
+    },
+    {
+      "path": "handover/us_2022/raw/SAGDP2__Footnotes.html",
+      "repository_sha256": "dbbe9dc3831d563b4427ddf443c71887d634f704e9db9cb7bbaa58391f9a9066",
+      "bytes": 1964
+    },
+    {
+      "path": "handover/us_2022/raw/source_manifest.json",
+      "repository_sha256": "8956ad18330b6d1e73b49a616bff004df45f4816f8c198ad59b0c76ee5a31127",
+      "bytes": 2699
+    },
+    {
+      "path": "handover/us_2022/requirements-analysis.txt",
+      "repository_sha256": "0e7d0aedf36b5098f9450fd64ac92efffe27d14c1827728cc8a6de600fe12094",
+      "bytes": 90
+    },
+    {
+      "path": "handover/us_2022/scripts/build_report.py",
+      "repository_sha256": "89b29d1e032ac96c29c37600e4200932dd3aa549a399cbb81d8b44451c3ab3e2",
+      "bytes": 16991
+    },
+    {
+      "path": "handover/us_2022/scripts/download_sources.py",
+      "repository_sha256": "b1eae22cdb2e0f220efeba318dd08a29e22ec7c8ab3212084bfaabda8a2c98d0",
+      "bytes": 1497
+    },
+    {
+      "path": "handover/us_2022/scripts/prepare_us.py",
+      "repository_sha256": "119148a561dbb858492adb0e20cfae6a71fc24874e893dfc3f9e1316a8eb8098",
+      "bytes": 11188
+    },
+    {
+      "path": "handover/us_2022/scripts/verify_package.py",
+      "repository_sha256": "6ecb8df8dbcd30608c44af70822ef7bb6b5279653ca4fc788efccf9a876832de",
+      "bytes": 434
+    },
+    {
+      "path": "handover/us_2022/后续成员接手清单.md",
+      "repository_sha256": "944bacbeb6278b9e518edbb10e2448f1e8a3d354777fe3879e6b2a86c1b5b9fd",
+      "bytes": 2785
+    },
+    {
+      "path": "handover/us_2022/复现说明.md",
+      "repository_sha256": "cc556184fa8c65a6f99737dbb46ab497e8cbabfb0dca3047101989be9bf84c7d",
+      "bytes": 1657
+    },
+    {
+      "path": "member1_demographics/.gitkeep",
+      "repository_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "member1_demographics/README.md",
+      "repository_sha256": "93ec1692c0a1bfaaba1f260d42cfd4649cdb3c2043c28c5ab246db1d35861142",
+      "bytes": 5201
+    },
+    {
+      "path": "member1_demographics/boundary_join_checks.csv",
+      "repository_sha256": "f6a312da0dbbc1c0c63f69f6d74514a4164bd3409fb453954af933a071d33fb7",
+      "bytes": 3038
+    },
+    {
+      "path": "member1_demographics/complete_population.py",
+      "repository_sha256": "ad85da5db5f07050b6090bd3b5a5d27b28ead8676d56293e895f833779901948",
+      "bytes": 10377
+    },
+    {
+      "path": "member1_demographics/figures/01_national_aging_trends_2000_2022.pdf",
+      "repository_sha256": "3d98ab15740e1ddac741a2e7a3f83d044aeb256eaa5d0cc6639d47e7a900d21f",
+      "bytes": 21624
+    },
+    {
+      "path": "member1_demographics/figures/01_national_aging_trends_2000_2022.png",
+      "repository_sha256": "0dbf333636abb4b7dcb41f7e104016214a9c1d6a17daa856ed15bbfe95e55524",
+      "bytes": 117687
+    },
+    {
+      "path": "member1_demographics/figures/01_national_aging_trends_2000_2022.svg",
+      "repository_sha256": "2e44ee0221efd3c60356bac49cff880301533bcdfb4f30da2aaf65061baa86c9",
+      "bytes": 14891
+    },
+    {
+      "path": "member1_demographics/figures/02_regional_aging_comparison_2022.pdf",
+      "repository_sha256": "9653b4460587faa747a789a8f20a62b0cb77742d84f080af7543194ba65ab744",
+      "bytes": 32529
+    },
+    {
+      "path": "member1_demographics/figures/02_regional_aging_comparison_2022.png",
+      "repository_sha256": "b0f1242299b71a03b33e3d3b04a043fdf1d9fe577cc3bd5c427f2bd154ae29c0",
+      "bytes": 537815
+    },
+    {
+      "path": "member1_demographics/figures/02_regional_aging_comparison_2022.svg",
+      "repository_sha256": "aedcad15a8403b12dd4c4ffba96f6225f2737a24950063799ae76431fcd901b8",
+      "bytes": 87630
+    },
+    {
+      "path": "member1_demographics/figures/03_regional_aging_change_2011_2022.pdf",
+      "repository_sha256": "ab9b729a4e8608fb7d5d8676677aabd9340e1740d473da62ff540afcf0b52ce7",
+      "bytes": 22344
+    },
+    {
+      "path": "member1_demographics/figures/03_regional_aging_change_2011_2022.png",
+      "repository_sha256": "7c40ca46a1580cd59dc70645af731d25e8ebcf38211e512192bff560ea577148",
+      "bytes": 173157
+    },
+    {
+      "path": "member1_demographics/figures/03_regional_aging_change_2011_2022.svg",
+      "repository_sha256": "504f22907c8f814496083d4e06f5748ac09570b9817f971d2d1292b803794cab",
+      "bytes": 37276
+    },
+    {
+      "path": "member1_demographics/figures/jpn_aging_ranked_2022.png",
+      "repository_sha256": "258b6c5606e170da0468593ea2af0973556676ed863600812d42d66cf4e65658",
+      "bytes": 177939
+    },
+    {
+      "path": "member1_demographics/figures/jpn_aging_ranked_2022.svg",
+      "repository_sha256": "df7a41cf08d8272d6f2c5b1ec4151878f993d87dc8c37b32b0bbc3bc99106738",
+      "bytes": 87620
+    },
+    {
+      "path": "member1_demographics/findings.md",
+      "repository_sha256": "6dd4ebf2da3adacc743ffcdb9d9dbd669d13ecbd9574551811e10b49bf4fac9b",
+      "bytes": 4765
+    },
+    {
+      "path": "member1_demographics/independent_verification.json",
+      "repository_sha256": "723de91842f37c5c6722a87224fca4ea23b15b5aeb7145a9eb24d3bd6c8af34b",
+      "bytes": 2993
+    },
+    {
+      "path": "member1_demographics/jpn_population_detail_2022.csv",
+      "repository_sha256": "fbea1fd9dfcbc1d1ab9927eebc76540e26cc8d6deaf94a93642e2938b2c860e6",
+      "bytes": 4668
+    },
+    {
+      "path": "member1_demographics/jpn_source_manifest.json",
+      "repository_sha256": "f0983eb859b59553e2ee0d7dae4ede8d1817c892d3f532b2d22fd1f2ceb899ad",
+      "bytes": 1064
+    },
+    {
+      "path": "member1_demographics/jpn_validation.json",
+      "repository_sha256": "3909a56d5d9fdad40770f96e493c9c0bda0661fa5bd5acf5b839d0253058b1e4",
+      "bytes": 318
+    },
+    {
+      "path": "member1_demographics/national_source_checks.csv",
+      "repository_sha256": "cb67185bb04db9dabac8e2f94e3f15d5a721a8883be0c1122e7b48716fb1ffe3",
+      "bytes": 34057
+    },
+    {
+      "path": "member1_demographics/national_source_extract.csv",
+      "repository_sha256": "492379462ce1b2971d011e20090cc51f397dc384ccb5f1263012b7b5506a6a15",
+      "bytes": 4423
+    },
+    {
+      "path": "member1_demographics/national_trends_wpp2024_2000_2022.csv",
+      "repository_sha256": "d421b43465315bfce3154f675e81f10f6de964c6f3be933694aba8fe42d8c000",
+      "bytes": 3660
+    },
+    {
+      "path": "member1_demographics/plot_japan_population.py",
+      "repository_sha256": "daf32cf3ceede2839f4d558e1d99246c83220d8973a08226b73deb665078ad1b",
+      "bytes": 922
+    },
+    {
+      "path": "member1_demographics/plot_population.py",
+      "repository_sha256": "5bf44094bb36778f482c048cb32fa7fe9229a6f7d0083153d983c586072262be",
+      "bytes": 4814
+    },
+    {
+      "path": "member1_demographics/population_2019.csv",
+      "repository_sha256": "8c739f56a6f1c1a0a89533e68f53e8b65ca8f9c91549e46175f06fb447691a71",
+      "bytes": 20625
+    },
+    {
+      "path": "member1_demographics/population_2022.csv",
+      "repository_sha256": "c74b6c83619a14a2e7745bb57b9ae0b6383d92793e25fc5698b58f903da70a7d",
+      "bytes": 19324
+    },
+    {
+      "path": "member1_demographics/population_change_2011_2022.csv",
+      "repository_sha256": "736ac7242919011ce1486da315ec475d7bb3b9b53a621784417d6ebedf1eda74",
+      "bytes": 5344
+    },
+    {
+      "path": "member1_demographics/population_detail_2011_2022.csv",
+      "repository_sha256": "d507cd49e3fa047b4006178b029c737dc881cc5f2a24488bdff5f838802484c1",
+      "bytes": 241144
+    },
+    {
+      "path": "member1_demographics/population_source_manifest.json",
+      "repository_sha256": "13abc0810fdb99eb31f661619ca2e016ef1ee34726e6a12906e72ca2ddfb16fd",
+      "bytes": 3818
+    },
+    {
+      "path": "member1_demographics/population_validation.json",
+      "repository_sha256": "b75b8c6db50efb6a5cf080381b5ca998885576014f2b0918d2bdea6059040943",
+      "bytes": 667
+    },
+    {
+      "path": "member1_demographics/prepare_japan.py",
+      "repository_sha256": "28a12e19f7814527e76b1ba7830d618633f2f3bb513af8e774cfc064334a7cfd",
+      "bytes": 3909
+    },
+    {
+      "path": "member1_demographics/snapshot_manifest.json",
+      "repository_sha256": "a942a51b8d15330a11dc85d67e8e5e07b963ae9e0d79f751ac40dc93550d08c3",
+      "bytes": 311
+    },
+    {
+      "path": "member1_demographics/source_snapshots/wpp2024_selected_estimates.csv",
+      "repository_sha256": "d421b43465315bfce3154f675e81f10f6de964c6f3be933694aba8fe42d8c000",
+      "bytes": 3660
+    },
+    {
+      "path": "member1_demographics/sources.csv",
+      "repository_sha256": "d6d68604a797cd6ca842bc5de4de09bcd65f20e4320244cee116b5bb66fa16f5",
+      "bytes": 6088
+    },
+    {
+      "path": "member1_demographics/verify_national_and_maps.py",
+      "repository_sha256": "dc14996ceebe6887a905b945306d8649efcfcd8a21030d77803a1898917892c0",
+      "bytes": 9988
+    },
+    {
+      "path": "member1_demographics/交接说明.md",
+      "repository_sha256": "704ac174ba3cd3f016f08ae898ccf7c93b7668feff587703f8f6a88506b27dc8",
+      "bytes": 2136
+    },
+    {
+      "path": "member2_industry/.gitkeep",
+      "repository_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "member2_industry/README.md",
+      "repository_sha256": "b2ba4221dbf3b873aa6e981b96088c76cc27992b7b0e211898b369d4fc34fe6c",
+      "bytes": 10695
+    },
+    {
+      "path": "member2_industry/comparability.json",
+      "repository_sha256": "96256e419d25b42a33b199a99f60c57e339d8155e2ca6a16e63a8f2e2e97d982",
+      "bytes": 830
+    },
+    {
+      "path": "member2_industry/figures/jpn_industry_composition_2022.png",
+      "repository_sha256": "a49b2a51fa600675a69d15babfd627197cb964d2872e1a7061fe958c38e60de0",
+      "bytes": 273154
+    },
+    {
+      "path": "member2_industry/figures/jpn_industry_composition_2022.svg",
+      "repository_sha256": "ac478dbb54304032e0877944c83a60c5266340aaeb65413742b21665f09855bc",
+      "bytes": 57048
+    },
+    {
+      "path": "member2_industry/figures/jpn_services_trend_2011_2022.png",
+      "repository_sha256": "34a9ceb4c396648b6128e7a467e239ce46832c0ad972ae2e6713c7b149ee1df0",
+      "bytes": 151743
+    },
+    {
+      "path": "member2_industry/figures/jpn_services_trend_2011_2022.svg",
+      "repository_sha256": "7b286e971637b500617709e25daaf150a121f2a9f6acfbafc072ee028328f827",
+      "bytes": 14435
+    },
+    {
+      "path": "member2_industry/figures/manufacturing_distribution_2022.png",
+      "repository_sha256": "174b67342f58552686de211126a837390c2733dded84a36085e06afa3c1f1cfe",
+      "bytes": 124535
+    },
+    {
+      "path": "member2_industry/figures/manufacturing_distribution_2022.svg",
+      "repository_sha256": "dd0d20123763b5ece2e7fbeb0f9e0a57657df5afdfd1c1c45ac92abc1c728964",
+      "bytes": 27474
+    },
+    {
+      "path": "member2_industry/figures/manufacturing_trend_2011_2022.png",
+      "repository_sha256": "10169182838855704d00215cbf233f7e894a5d37c6942f247c047a935e71de73",
+      "bytes": 182690
+    },
+    {
+      "path": "member2_industry/figures/manufacturing_trend_2011_2022.svg",
+      "repository_sha256": "7ee157ffba47891523719af7a32c6579da0eef4aa853678c5c3e9cb858a11a56",
+      "bytes": 19346
+    },
+    {
+      "path": "member2_industry/figures/usa_industry_composition_2022.png",
+      "repository_sha256": "8509e1b2b0c8241e9469e61e5134063e6ff29e4d24f9c7abd2ad292404c063b4",
+      "bytes": 303781
+    },
+    {
+      "path": "member2_industry/figures/usa_industry_composition_2022.svg",
+      "repository_sha256": "b3cb55239808808fc1436f2de3011d126f0e9e21cecf232b62a860e2d346758e",
+      "bytes": 61288
+    },
+    {
+      "path": "member2_industry/figures/usa_services_trend_2011_2022.png",
+      "repository_sha256": "f6894d3ed6debf4d6844eea265c979407254fa65c6db2e8ce2fe9f7cf4278ffe",
+      "bytes": 157099
+    },
+    {
+      "path": "member2_industry/figures/usa_services_trend_2011_2022.svg",
+      "repository_sha256": "7ca34f16bb7a4a3df01d8476625866cf9dcc7a74c500974143da0e33e1cc3485",
+      "bytes": 14400
+    },
+    {
+      "path": "member2_industry/findings.md",
+      "repository_sha256": "1ed3c2f1669638ae9e42b2a4030d19b8aadcd813deebdf38c33969ad9f3b18ea",
+      "bytes": 11059
+    },
+    {
+      "path": "member2_industry/plot_industry.py",
+      "repository_sha256": "d5588c3d8ef94b1d280c964b1728cb930c0398c4a4b1cbc77c9876f9bba449ac",
+      "bytes": 14613
+    },
+    {
+      "path": "member2_industry/prepare_industry.py",
+      "repository_sha256": "b952c27e50fac72aabe8648979069ffec2649cdc03179e37a46bf3049d557571",
+      "bytes": 13099
+    },
+    {
+      "path": "member2_industry/source_manifest.json",
+      "repository_sha256": "6ea4a166f887b36e886317330019fe5a215cc3945ecac0d567ff6b32eca4a738",
+      "bytes": 804
+    },
+    {
+      "path": "member2_industry/sources.csv",
+      "repository_sha256": "d1e3ebfa90698963b997c78dfceda232c90e839cce222f77f9a65888fc25b4e5",
+      "bytes": 1764
+    },
+    {
+      "path": "member2_industry/summary.json",
+      "repository_sha256": "1560a7b83afcff205496e91e0f60d9ad9b89f4cd83bcc59c5ca3b58b206053a9",
+      "bytes": 1205
+    },
+    {
+      "path": "member2_industry/test_industry.py",
+      "repository_sha256": "17805f763955bb5453fa759476903e9f753ed20de87631b4a559989672307d5e",
+      "bytes": 7670
+    },
+    {
+      "path": "member2_industry/trend_summary.csv",
+      "repository_sha256": "97e32988980e3ff8dafc15caa4de1bb9cff2b8c0edd3319d83400103e6f65418",
+      "bytes": 2429
+    },
+    {
+      "path": "member2_industry/validation.json",
+      "repository_sha256": "44843ffdafb81c9e073c6de37feeb8d253f8240b12ad4ea14f9d55b7dc597661",
+      "bytes": 140602
+    },
+    {
+      "path": "member3_labor_migration/.gitkeep",
+      "repository_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "member3_labor_migration/README.md",
+      "repository_sha256": "f8e95eff507ca95e6a754c41601f5420fc04d9e4e6769e2a07d8c6530d458310",
+      "bytes": 7856
+    },
+    {
+      "path": "member3_labor_migration/bls_revision_check.csv",
+      "repository_sha256": "094ed39e5eba5d261b1e8499f5bc9b61c454628aa8fa738f309b4057de40220d",
+      "bytes": 48630
+    },
+    {
+      "path": "member3_labor_migration/bls_sources.py",
+      "repository_sha256": "3f4d79489c675862f850c2565a6f45856d44702f56e5d8e49c1dd401130bfd50",
+      "bytes": 6725
+    },
+    {
+      "path": "member3_labor_migration/build_findings.py",
+      "repository_sha256": "adb1260d90477e474369a3e643771110f1820db6927ee620b94ffb28b27bff1c",
+      "bytes": 14306
+    },
+    {
+      "path": "member3_labor_migration/check_bls_revision.py",
+      "repository_sha256": "4351f5fbb82f08a5472fd9768d1a96ea96fe12e6e2a6d6abe1f2bb0532658911",
+      "bytes": 1767
+    },
+    {
+      "path": "member3_labor_migration/coverage.csv",
+      "repository_sha256": "f9b7fa509c8318d21743b12315c7da5cadbdf9d7c8d8db6e7fba4fecba319c64",
+      "bytes": 6618
+    },
+    {
+      "path": "member3_labor_migration/domestic_migration_comparison.csv",
+      "repository_sha256": "02f3abd75bd255a925f726a5a135b6763e778032da546c347d482081ce1b3476",
+      "bytes": 25236
+    },
+    {
+      "path": "member3_labor_migration/figure4_labor_2022.png",
+      "repository_sha256": "547376970682bae02e80cc343e0c68568141b9a6bc903ff9eacd9ee585daff37",
+      "bytes": 464051
+    },
+    {
+      "path": "member3_labor_migration/figure4_labor_2022.svg",
+      "repository_sha256": "44779943f98e5f397bb1523f845399788ecc4978d10b8e4d00387d997f803ce6",
+      "bytes": 103121
+    },
+    {
+      "path": "member3_labor_migration/figures/figure4_labor_2022.json",
+      "repository_sha256": "cbc38df83eb1e397272561097f9f07a64b6ed07be249c2692658ae97c202240d",
+      "bytes": 2665
+    },
+    {
+      "path": "member3_labor_migration/figures/figure4_labor_2022.png",
+      "repository_sha256": "547376970682bae02e80cc343e0c68568141b9a6bc903ff9eacd9ee585daff37",
+      "bytes": 464051
+    },
+    {
+      "path": "member3_labor_migration/figures/figure4_labor_2022.svg",
+      "repository_sha256": "44779943f98e5f397bb1523f845399788ecc4978d10b8e4d00387d997f803ce6",
+      "bytes": 103121
+    },
+    {
+      "path": "member3_labor_migration/figures/jpn_labor_migration_2019_2022.json",
+      "repository_sha256": "58ffad78191c878967a7424d3e94732fb5488bef9b17608f34c6ca45e5e34de5",
+      "bytes": 1719
+    },
+    {
+      "path": "member3_labor_migration/figures/jpn_labor_migration_2019_2022.png",
+      "repository_sha256": "e0172d63fe7a8ca172b494f819e329bd16e2f331c33a2d3e4bf1ee09ced1ee66",
+      "bytes": 375037
+    },
+    {
+      "path": "member3_labor_migration/figures/jpn_labor_migration_2019_2022.svg",
+      "repository_sha256": "8d18a0710bc04b8f7669434fc1e5603cc695b2ea81006deb2ffa074d0115eba6",
+      "bytes": 46093
+    },
+    {
+      "path": "member3_labor_migration/figures/jpn_panel_2011_2022.json",
+      "repository_sha256": "e78e1113001e5fcf19ddbdc2cf2772c651e4a5e10cb95686f09ab602f18ea8b2",
+      "bytes": 811
+    },
+    {
+      "path": "member3_labor_migration/figures/jpn_panel_2011_2022.png",
+      "repository_sha256": "2c4105e66f3020adb7e14c5b062110b60fa503ee051472987c4e0553f41ba5e7",
+      "bytes": 379289
+    },
+    {
+      "path": "member3_labor_migration/figures/jpn_panel_2011_2022.svg",
+      "repository_sha256": "335b8903c63c0923396926213d3fdcb4e6468f9713d1c3a9da222a81ec8f09a6",
+      "bytes": 36464
+    },
+    {
+      "path": "member3_labor_migration/figures/outliers_2022.json",
+      "repository_sha256": "d9c448f00bb38efe6a8417b8682b100a4c8be433b133035c07b6351163bf3a48",
+      "bytes": 4244
+    },
+    {
+      "path": "member3_labor_migration/figures/outliers_2022.png",
+      "repository_sha256": "236cad2c8d15edd6519b8d55ad82c430240f152f71c00c55a0109f99a0f46117",
+      "bytes": 521821
+    },
+    {
+      "path": "member3_labor_migration/figures/outliers_2022.svg",
+      "repository_sha256": "8964b53797168691743f9dfa7e092ccc5c5b84248d2dae25ff6d7f2d9283d2ed",
+      "bytes": 183088
+    },
+    {
+      "path": "member3_labor_migration/figures/two_country_trend_2011_2022.json",
+      "repository_sha256": "ecfb6d1e8893192e70947bbc91b0d59162c24b359fcfc4a87ee9e1caf1432a5e",
+      "bytes": 970
+    },
+    {
+      "path": "member3_labor_migration/figures/two_country_trend_2011_2022.png",
+      "repository_sha256": "87cf43b460f8edfa0404df59254a85e184b8c8a843651252df7c1470101b0695",
+      "bytes": 356040
+    },
+    {
+      "path": "member3_labor_migration/figures/two_country_trend_2011_2022.svg",
+      "repository_sha256": "aa6a5134ecfa2aba280e2294ee940a1a64fce328f8be5feccc04ba83aa0e96b6",
+      "bytes": 108196
+    },
+    {
+      "path": "member3_labor_migration/findings.md",
+      "repository_sha256": "0f66412a1df257bd53dd09715f61a366128a3e836e5bb5529dbd620776fb7e1c",
+      "bytes": 8307
+    },
+    {
+      "path": "member3_labor_migration/jpn_labor_detail.csv",
+      "repository_sha256": "ecf2879647cd3b8bf718e086c2d4ca902116e426653d780ef7dc6e25fe2adfd5",
+      "bytes": 43978
+    },
+    {
+      "path": "member3_labor_migration/jpn_labor_migration_2019_2022.png",
+      "repository_sha256": "e0172d63fe7a8ca172b494f819e329bd16e2f331c33a2d3e4bf1ee09ced1ee66",
+      "bytes": 375037
+    },
+    {
+      "path": "member3_labor_migration/jpn_labor_migration_2019_2022.svg",
+      "repository_sha256": "8d18a0710bc04b8f7669434fc1e5603cc695b2ea81006deb2ffa074d0115eba6",
+      "bytes": 46093
+    },
+    {
+      "path": "member3_labor_migration/labor_validation.py",
+      "repository_sha256": "f873aa5b4670da8e1c81d7e727bc22a7729053109691208855483cb7bd9fb856",
+      "bytes": 2753
+    },
+    {
+      "path": "member3_labor_migration/outliers_2022.csv",
+      "repository_sha256": "ae4bb0f5d8fc4ae11b65143581d97f490646b8076ebd131d8fb4b822771afe3c",
+      "bytes": 13447
+    },
+    {
+      "path": "member3_labor_migration/outliers_2022.png",
+      "repository_sha256": "236cad2c8d15edd6519b8d55ad82c430240f152f71c00c55a0109f99a0f46117",
+      "bytes": 521821
+    },
+    {
+      "path": "member3_labor_migration/outliers_2022.py",
+      "repository_sha256": "eedf855b808fee0180f4ebf0c5665e6d39cdb6649a8f0fe30f866273f819db71",
+      "bytes": 6076
+    },
+    {
+      "path": "member3_labor_migration/outliers_2022.svg",
+      "repository_sha256": "8964b53797168691743f9dfa7e092ccc5c5b84248d2dae25ff6d7f2d9283d2ed",
+      "bytes": 183088
+    },
+    {
+      "path": "member3_labor_migration/plot_figure4.py",
+      "repository_sha256": "8804505022e8bfcfbf06ee60fe956af683562be6a0090327cf75c67bc924e375",
+      "bytes": 3363
+    },
+    {
+      "path": "member3_labor_migration/plot_helpers.py",
+      "repository_sha256": "da8178a658eff3556516e888df41239c67f8005b0b946c1954aef2f0e67d8074",
+      "bytes": 2877
+    },
+    {
+      "path": "member3_labor_migration/plot_japan_labor.py",
+      "repository_sha256": "fbf386ac13909bddc4314a8ec88b56fa2e55416c9a7cd707e3873243d3301b99",
+      "bytes": 2691
+    },
+    {
+      "path": "member3_labor_migration/plot_japan_trend.py",
+      "repository_sha256": "8f5db86b8f6d9ad3e54a5e688e9e7c15e3d16c3b8d6171b969515839d069abb0",
+      "bytes": 2337
+    },
+    {
+      "path": "member3_labor_migration/plot_two_country_trend.py",
+      "repository_sha256": "3ab146e5d3df563e9e8809285a337cb361ed4aebb1476eb0f1db924563b1dc01",
+      "bytes": 3275
+    },
+    {
+      "path": "member3_labor_migration/prepare_labor.py",
+      "repository_sha256": "90503240c9a39bf219f4a570480ca688caa213256147ee808326f6953c2d4791",
+      "bytes": 14191
+    },
+    {
+      "path": "member3_labor_migration/report_section.md",
+      "repository_sha256": "6c65f0bea45736367f97df8b86f86b2508c5a9240463f93ce928fe9820d544b3",
+      "bytes": 8686
+    },
+    {
+      "path": "member3_labor_migration/rounding_validation.csv",
+      "repository_sha256": "22fa8b1ba0b7b2384959d440c19d9058ccf8ba84b62f42640ff267c36a5b5424",
+      "bytes": 70517
+    },
+    {
+      "path": "member3_labor_migration/source_snapshots/bls_2011_web.txt",
+      "repository_sha256": "01081e48aefd58b170ec00a8b30324e756816f8fde98ffb18a2fc0eb894cbc27",
+      "bytes": 23441
+    },
+    {
+      "path": "member3_labor_migration/source_snapshots/bls_2012_web.txt",
+      "repository_sha256": "597e83c1dd0dc491d75d4e69649600b9dcbe572682f7a19e0c34e7992ac217ea",
+      "bytes": 24498
+    },
+    {
+      "path": "member3_labor_migration/source_snapshots/bls_2013_web.txt",
+      "repository_sha256": "10077daa71be82d49ff6613e9332e39d862eebc523f8590aaedb520e41268ad1",
+      "bytes": 23735
+    },
+    {
+      "path": "member3_labor_migration/source_snapshots/bls_2014_web.txt",
+      "repository_sha256": "96a1366a3a2bc371b6af352d3dee7073b8be9ad1885993313b366d01a0359aec",
+      "bytes": 22741
+    },
+    {
+      "path": "member3_labor_migration/source_snapshots/bls_2015_web.txt",
+      "repository_sha256": "0cc2f7fd8dc6a5c977f373da91b874d70c893d74b862720d46e69a913c0d59f2",
+      "bytes": 24465
+    },
+    {
+      "path": "member3_labor_migration/source_snapshots/bls_2016_web.txt",
+      "repository_sha256": "7d33b693556cb24cd288c60419c4bb50b5e22638efa85142181d3ee9a0050669",
+      "bytes": 23285
+    },
+    {
+      "path": "member3_labor_migration/source_snapshots/bls_2017_web.txt",
+      "repository_sha256": "fe8859eff41695630fbe4013f2fd0e98ab656f6ab5d59c4bf53030ec8925bc44",
+      "bytes": 23726
+    },
+    {
+      "path": "member3_labor_migration/source_snapshots/bls_2018_web.txt",
+      "repository_sha256": "1beb022f90ed4c732349f4ce56ba2c636bd9990ded5e7d26b30fc93b7e58cc8f",
+      "bytes": 24548
+    },
+    {
+      "path": "member3_labor_migration/source_snapshots/bls_2019_web.txt",
+      "repository_sha256": "b40a54f03cac4f7fcd222a62759120cb29381030dd86f6d428d880f879acc94e",
+      "bytes": 15699
+    },
+    {
+      "path": "member3_labor_migration/source_snapshots/bls_2020_web.txt",
+      "repository_sha256": "e76649889d2870290df904737dd7092b088d8d20e610b3e2bac1cee6032285c2",
+      "bytes": 17501
+    },
+    {
+      "path": "member3_labor_migration/source_snapshots/bls_2021_web.txt",
+      "repository_sha256": "d02298bd5c5b100e5c053704e70bba116de119b77007be5015f71f16b41f62ca",
+      "bytes": 19420
+    },
+    {
+      "path": "member3_labor_migration/source_snapshots/bls_2022_web.txt",
+      "repository_sha256": "a13b1ba42c2eed66aab57aa7e7e1c61326016d3a2fdc35d2a467542efe89180d",
+      "bytes": 18692
+    },
+    {
+      "path": "member3_labor_migration/source_snapshots/manifest.json",
+      "repository_sha256": "9ed3e0ba9f4628d1ec80d3abedb7cf434e0e0bdebcecb3d3a23f0849f1afabdc",
+      "bytes": 5539
+    },
+    {
+      "path": "member3_labor_migration/sources.csv",
+      "repository_sha256": "3adeb71ae095e4f96a5120f30b229693d3a33e26c96060545cb77501eed40601",
+      "bytes": 8859
+    },
+    {
+      "path": "member3_labor_migration/summary.json",
+      "repository_sha256": "9b2867d8480fa512a472fed747ce2dd7e48928ac8a3e27202c59b08c57598273",
+      "bytes": 12154
+    },
+    {
+      "path": "member3_labor_migration/us_labor_detail.csv",
+      "repository_sha256": "3972a3ed7a88415ca584a145776b89e5d915608bf587a2a94f1ee34c9829ffec",
+      "bytes": 46704
+    },
+    {
+      "path": "poster/.gitkeep",
+      "repository_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "poster/README.md",
+      "repository_sha256": "c9d85c8f731e8e579a1ca1b072b63d782545ee9414531c9a4614c216da1904ca",
+      "bytes": 6289
+    },
+    {
+      "path": "poster/member4/README.md",
+      "repository_sha256": "4483e5a8d9908b2bedbe36d70b00c472bd368e265dedccbcaf6f590ba99e97e6",
+      "bytes": 1601
+    },
+    {
+      "path": "poster/member4/examiner_qa.md",
+      "repository_sha256": "250ef71c1974e596bf08505972c8e3d9d78a05ac7d166866faa77d4416fa5e2d",
+      "bytes": 3516
+    },
+    {
+      "path": "poster/member4/figure_captions.md",
+      "repository_sha256": "558fa33aea200cc58613c998cc79c70f35f829f595694d26d0da1113ab33832b",
+      "bytes": 4695
+    },
+    {
+      "path": "poster/member4/poster_text.md",
+      "repository_sha256": "5f79e1fd881cb2bdf437cc4aa9dfc79f4dfd3ec4b743a1999acf171a2a485ffa",
+      "bytes": 2087
+    },
+    {
+      "path": "poster/member4/report_section.md",
+      "repository_sha256": "0d5b5ce1a0ce04614332b849af53f057f0165f9705e34a4bd77ad489756b11cd",
+      "bytes": 5295
+    },
+    {
+      "path": "poster/member4/speaking_script.md",
+      "repository_sha256": "e8e7f64bcecabf7bb2878d339e726fa61c132448d541ae6891df52f991ca52da",
+      "bytes": 2927
+    },
+    {
+      "path": "poster/presentation_manifest.csv",
+      "repository_sha256": "1944c2df35321fbfebd02417dd26101b6007cf3d1939e9c83dbc1b3dca5354fa",
+      "bytes": 47808
+    },
+    {
+      "path": "pyproject.toml",
+      "repository_sha256": "de1a63d0bcb3150a4451f71a2cac237e197ced602847ab31ea04e6e1d52b187a",
+      "bytes": 601
+    },
+    {
+      "path": "scripts/aggregate_sources.py",
+      "repository_sha256": "cb9bf32c88a93d78e3e1c2097c50c54ebcf0a37df5000a93b7f9c944d4e540a6",
+      "bytes": 1285
+    },
+    {
+      "path": "scripts/build_portable_integrity.py",
+      "repository_sha256": "3ce9d7a1a55e750f13a9c7050491b72174dd85a7b6c4f99dd4c35cf9abc234cd",
+      "bytes": 7520
+    },
+    {
+      "path": "scripts/fetch_remediation_sources.py",
+      "repository_sha256": "1c2df4c14e8fc4877ad70ded2b4a6e9a409a19504b858bf455a5b79b12552631",
+      "bytes": 4366
+    },
+    {
+      "path": "scripts/finalize_remediation.py",
+      "repository_sha256": "0a85e73f514d0a7cfde686b28b820e2a5f9a9a5f5e13054a6acd30e13534135a",
+      "bytes": 21913
+    },
+    {
+      "path": "scripts/integrate_us_2022.py",
+      "repository_sha256": "04f0d05a3e0263b9b3ba705a2703c9be71a81e28bf277da05be2ff9c0e43e26f",
+      "bytes": 2022
+    },
+    {
+      "path": "scripts/merge_core.py",
+      "repository_sha256": "60389c0a4a060e8ec689cb241ea8834db5bdb28e9b0cba06a6cf0151c50b14da",
+      "bytes": 2176
+    },
+    {
+      "path": "scripts/remediation_state.py",
+      "repository_sha256": "370d38880dce4f9a9f15bb530bb65df15a399e1c53592d557ddfbf23cfc167e1",
+      "bytes": 11653
+    },
+    {
+      "path": "scripts/validate_data.py",
+      "repository_sha256": "f9719da986186f15921a6e9d4e4be11dadc6ec0adddd6d6a42c47672bd02759c",
+      "bytes": 1011
+    },
+    {
+      "path": "scripts/verify_remediation.py",
+      "repository_sha256": "a3c24b75c6bd40a72a13bef2b96780f637dba3daea7fd409fa3822fe2161c65f",
+      "bytes": 12902
+    },
+    {
+      "path": "src/aging_economies/__init__.py",
+      "repository_sha256": "fcfd50b963e054555d7af71de1e4e2370f266658f9106e074a143f60950431cd",
+      "bytes": 79
+    },
+    {
+      "path": "src/aging_economies/comparability.py",
+      "repository_sha256": "cb7252a8d8b092841a119594fce6a25a6b7e1d1c5aac9080039ede3f670f30b7",
+      "bytes": 1321
+    },
+    {
+      "path": "src/aging_economies/contracts.py",
+      "repository_sha256": "c28e503bcec32d9bc93f514c7a3f938b7cca62745b0bc2fc036c4da9f3c843f5",
+      "bytes": 3950
+    },
+    {
+      "path": "src/aging_economies/source_io.py",
+      "repository_sha256": "6da68faed685e6d759b3c778d978ffed90992cb905bd6fdcb556da43dfccbe86",
+      "bytes": 3369
+    },
+    {
+      "path": "tests/test_contracts.py",
+      "repository_sha256": "be66242d5b301571fe3d8ab649fb5e314b05e8c1b43a72adf7f0e91ff320762a",
+      "bytes": 1989
+    },
+    {
+      "path": "tests/test_member1_population.py",
+      "repository_sha256": "bbda30370e7441dee747b4fd5a2567f5239732d0b3550069d06c84890e0610dd",
+      "bytes": 1854
+    },
+    {
+      "path": "tests/test_member4.py",
+      "repository_sha256": "264c620b706c620a360aef715104b8944151a335543ae43cbfe31114f3db2e5e",
+      "bytes": 6160
+    },
+    {
+      "path": "tests/test_portable_integrity.py",
+      "repository_sha256": "bdea51caa2e70a64e3eb410959a00d35b5b43669abd286bca80aae0c2ca33f0a",
+      "bytes": 9511
+    },
+    {
+      "path": "tests/test_remediation.py",
+      "repository_sha256": "3d0cc65d695af6ff0821f8d4a85c68b75317d03d290f3b99142e7601bf1467a4",
+      "bytes": 12535
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "files": [
+    {
+      "year": 2011,
+      "file": "bls_2011_web.txt",
+      "sha256": "01081e48aefd58b170ec00a8b30324e756816f8fde98ffb18a2fc0eb894cbc27",
+      "url": "https://www.bls.gov/news.release/archives/srgune_02292012.htm",
+      "retrieved_date": "2026-11-09",
+      "representation": "official page text captured by web reader; not raw HTML",
+      "scope": "table 1; all 51 states/DC, current and previous annual columns"
+    },
+    {
+      "year": 2012,
+      "file": "bls_2012_web.txt",
+      "sha256": "597e83c1dd0dc491d75d4e69649600b9dcbe572682f7a19e0c34e7992ac217ea",
+      "url": "https://www.bls.gov/news.release/archives/srgune_03012013.htm",
+      "retrieved_date": "2026-11-09",
+      "representation": "official page text captured by web reader; not raw HTML",
+      "scope": "table 1; all 51 states/DC, current and previous annual columns"
+    },
+    {
+      "year": 2013,
+      "file": "bls_2013_web.txt",
+      "sha256": "10077daa71be82d49ff6613e9332e39d862eebc523f8590aaedb520e41268ad1",
+      "url": "https://www.bls.gov/news.release/archives/srgune_02282014.htm",
+      "retrieved_date": "2026-11-09",
+      "representation": "official page text captured by web reader; not raw HTML",
+      "scope": "table 1; all 51 states/DC, current and previous annual columns"
+    },
+    {
+      "year": 2014,
+      "file": "bls_2014_web.txt",
+      "sha256": "96a1366a3a2bc371b6af352d3dee7073b8be9ad1885993313b366d01a0359aec",
+      "url": "https://www.bls.gov/news.release/archives/srgune_03042015.htm",
+      "retrieved_date": "2026-11-09",
+      "representation": "official page text captured by web reader; not raw HTML",
+      "scope": "table 1; all 51 states/DC, current and previous annual columns"
+    },
+    {
+      "year": 2015,
+      "file": "bls_2015_web.txt",
+      "sha256": "0cc2f7fd8dc6a5c977f373da91b874d70c893d74b862720d46e69a913c0d59f2",
+      "url": "https://www.bls.gov/news.release/archives/srgune_02262016.htm",
+      "retrieved_date": "2026-11-09",
+      "representation": "official page text captured by web reader; not raw HTML",
+      "scope": "table 1; all 51 states/DC, current and previous annual columns"
+    },
+    {
+      "year": 2016,
+      "file": "bls_2016_web.txt",
+      "sha256": "7d33b693556cb24cd288c60419c4bb50b5e22638efa85142181d3ee9a0050669",
+      "url": "https://www.bls.gov/news.release/archives/srgune_02282017.htm",
+      "retrieved_date": "2026-11-09",
+      "representation": "official page text captured by web reader; not raw HTML",
+      "scope": "table 1; all 51 states/DC, current and previous annual columns"
+    },
+    {
+      "year": 2017,
+      "file": "bls_2017_web.txt",
+      "sha256": "fe8859eff41695630fbe4013f2fd0e98ab656f6ab5d59c4bf53030ec8925bc44",
+      "url": "https://www.bls.gov/news.release/archives/srgune_02272018.htm",
+      "retrieved_date": "2026-11-09",
+      "representation": "official page text captured by web reader; not raw HTML",
+      "scope": "table 1; all 51 states/DC, current and previous annual columns"
+    },
+    {
+      "year": 2018,
+      "file": "bls_2018_web.txt",
+      "sha256": "1beb022f90ed4c732349f4ce56ba2c636bd9990ded5e7d26b30fc93b7e58cc8f",
+      "url": "https://www.bls.gov/news.release/archives/srgune_02282019.htm",
+      "retrieved_date": "2026-11-09",
+      "representation": "official page text captured by web reader; not raw HTML",
+      "scope": "table 1; all 51 states/DC, current and previous annual columns"
+    },
+    {
+      "year": 2019,
+      "file": "bls_2019_web.txt",
+      "sha256": "b40a54f03cac4f7fcd222a62759120cb29381030dd86f6d428d880f879acc94e",
+      "url": "https://www.bls.gov/news.release/archives/srgune_03042020.htm",
+      "retrieved_date": "2026-11-09",
+      "representation": "official page text captured by web reader; not raw HTML",
+      "scope": "table 1; all 51 states/DC, current and previous annual columns"
+    },
+    {
+      "year": 2020,
+      "file": "bls_2020_web.txt",
+      "sha256": "e76649889d2870290df904737dd7092b088d8d20e610b3e2bac1cee6032285c2",
+      "url": "https://www.bls.gov/news.release/archives/srgune_03032021.htm",
+      "retrieved_date": "2026-11-09",
+      "representation": "official page text captured by web reader; not raw HTML",
+      "scope": "table 1; all 51 states/DC, current and previous annual columns"
+    },
+    {
+      "year": 2021,
+      "file": "bls_2021_web.txt",
+      "sha256": "d02298bd5c5b100e5c053704e70bba116de119b77007be5015f71f16b41f62ca",
+      "url": "https://www.bls.gov/news.release/archives/srgune_03022022.htm",
+      "retrieved_date": "2026-11-09",
+      "representation": "official page text captured by web reader; not raw HTML",
+      "scope": "table 1; all 51 states/DC, current and previous annual columns"
+    },
+    {
+      "year": 2022,
+      "file": "bls_2022_web.txt",
+      "sha256": "a13b1ba42c2eed66aab57aa7e7e1c61326016d3a2fdc35d2a467542efe89180d",
+      "url": "https://www.bls.gov/news.release/archives/srgune_03012023.htm",
+      "retrieved_date": "2026-11-09",
+      "representation": "official page text captured by web reader; not raw HTML",
+      "scope": "Tables 1 and 2 complete for 51 states/DC; current and prior annual columns; Table 2 added from same official release to preserve prior detail field"
+    }
+  ],
+  "note": "Direct raw HTML requests returned HTTP403. Public official pages were read using the web reader, with text preserved before parsing. This is traceable primary-page text, not a copy of canonical output. 2011 archive includes the April 4 2012 Montana correction."
+}

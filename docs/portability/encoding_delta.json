@@ -1,0 +1,111 @@
+{
+  "scope": "Authorized Windows text-decoding fix: explicit UTF-8 I/O, diagnostic CI and required code-only successor lock operation; preserve all original snapshots, evidence ZIP and numerical inputs/results.",
+  "base_lock": "docs/remediation/input_manifest_v5.json",
+  "changes": [
+    {
+      "path": ".github/workflows/validate.yml",
+      "before_sha256": "fa8abb2740397d08632594b8e60113dc6b2082bef855955a4f572e629f515b15",
+      "before_worktree_sha256": "fa8abb2740397d08632594b8e60113dc6b2082bef855955a4f572e629f515b15",
+      "after_sha256": "9684f35bc715e87a17c6d2b64e26735628ae407fc5a8ea89be992d1540c7b312",
+      "reason": "Retain Linux/Windows Python3.11; record locale and run tests with UTF-8 mode explicitly disabled and default-encoding diagnostics."
+    },
+    {
+      "path": "README.md",
+      "before_sha256": "2712ca5ad28671cf43b155937d22215b80481029b7f4eb3a3e516232bbcf9345",
+      "before_worktree_sha256": "2712ca5ad28671cf43b155937d22215b80481029b7f4eb3a3e516232bbcf9345",
+      "after_sha256": "b4153a0a32dbdf2514527fa51cd56b383c6abdfeace4dc55135723ee6676e426",
+      "reason": "Point integrity entry to v6 and concise encoding follow-up record."
+    },
+    {
+      "path": "analysis/member4/build_reports.py",
+      "before_sha256": "1638c729868cdd5aed59e2c643e8b026d779c810423c53dfdfbcf7c48cff30ea",
+      "before_worktree_sha256": "1638c729868cdd5aed59e2c643e8b026d779c810423c53dfdfbcf7c48cff30ea",
+      "after_sha256": "a2ac915e9526b51afb9498d2be6025dc0df46764a5d0471385a2dcebdb4ba63d",
+      "reason": "Make documented UTF-8 text I/O explicit in directly related tests, source manifests or integrity/report callers; no numerical changes."
+    },
+    {
+      "path": "analysis/member4/download_sources.py",
+      "before_sha256": "50dc9f895cb4db25ec987a5839785eb362c6e9bbfa20c2f16314de0daafde900",
+      "before_worktree_sha256": "50dc9f895cb4db25ec987a5839785eb362c6e9bbfa20c2f16314de0daafde900",
+      "after_sha256": "f9db5b008a7ec91acceff3b041ee76129a2d6528b95ee4f73d59f9fc5ec44f0e",
+      "reason": "Make documented UTF-8 text I/O explicit in directly related tests, source manifests or integrity/report callers; no numerical changes."
+    },
+    {
+      "path": "analysis/member4/verify_sources.py",
+      "before_sha256": "8f7ff835d034458bc9feb73942e558a791459cbb39ecdf28c22caf508934f8c8",
+      "before_worktree_sha256": "8f7ff835d034458bc9feb73942e558a791459cbb39ecdf28c22caf508934f8c8",
+      "after_sha256": "548dd505cad878892c0e37d2eeb60084295d320a03b35e69202c92379e1241bc",
+      "reason": "Make documented UTF-8 text I/O explicit in directly related tests, source manifests or integrity/report callers; no numerical changes."
+    },
+    {
+      "path": "docs/portability/README.md",
+      "before_sha256": "f64e8d7ccfe54fc5d8f5a502bd85fbd6c2c8ac6ca7244179338141143933edc5",
+      "before_worktree_sha256": "f64e8d7ccfe54fc5d8f5a502bd85fbd6c2c8ac6ca7244179338141143933edc5",
+      "after_sha256": "590531d0905b5fd0d4d85045af7e207d0ea933a7c101f82fb540487d88bfbacc",
+      "reason": "Document encoding-only follow-up, diagnostic CI and successor version procedure."
+    },
+    {
+      "path": "member2_industry/prepare_industry.py",
+      "before_sha256": "b952c27e50fac72aabe8648979069ffec2649cdc03179e37a46bf3049d557571",
+      "before_worktree_sha256": "41827a5860c759e8d871bb3636f6d085c19c3e8a679f16ec3c6305a9108725f7",
+      "after_sha256": "d7a425ec83cc657d6a9b02c52586fa7a6ee9a1b6bb4d5c716eadfee2f839ec4f",
+      "reason": "Make documented UTF-8 text I/O explicit in directly related tests, source manifests or integrity/report callers; no numerical changes."
+    },
+    {
+      "path": "member2_industry/test_industry.py",
+      "before_sha256": "17805f763955bb5453fa759476903e9f753ed20de87631b4a559989672307d5e",
+      "before_worktree_sha256": "fadc409433d292a2acf7a1d58059be595786a25fdf19239e35a4b38de3e6216b",
+      "after_sha256": "53afae31ecdb7e79de40d431f81d1521c4a5da454b0fe06cbbcf690320168283",
+      "reason": "Make documented UTF-8 text I/O explicit in directly related tests, source manifests or integrity/report callers; no numerical changes."
+    },
+    {
+      "path": "member3_labor_migration/bls_sources.py",
+      "before_sha256": "3f4d79489c675862f850c2565a6f45856d44702f56e5d8e49c1dd401130bfd50",
+      "before_worktree_sha256": "3f4d79489c675862f850c2565a6f45856d44702f56e5d8e49c1dd401130bfd50",
+      "after_sha256": "18dfa8dbc007ad7e3e9b6497fd569e2555f065eb6a2cf52a96add35e732270de",
+      "reason": "Strict UTF-8 snapshot decoding; remove replacement fallback after verifying every snapshot strictly decodes."
+    },
+    {
+      "path": "pyproject.toml",
+      "before_sha256": "de1a63d0bcb3150a4451f71a2cac237e197ced602847ab31ea04e6e1d52b187a",
+      "before_worktree_sha256": "de1a63d0bcb3150a4451f71a2cac237e197ced602847ab31ea04e6e1d52b187a",
+      "after_sha256": "2fb43a203d04c10976714043b86faf20ad6c0bc7113dfdb59fc4fd1f07d1ff7e",
+      "reason": "Promote project-owned EncodingWarnings to errors without suppressing third-party warnings."
+    },
+    {
+      "path": "scripts/build_portable_integrity.py",
+      "before_sha256": "3ce9d7a1a55e750f13a9c7050491b72174dd85a7b6c4f99dd4c35cf9abc234cd",
+      "before_worktree_sha256": "3ce9d7a1a55e750f13a9c7050491b72174dd85a7b6c4f99dd4c35cf9abc234cd",
+      "after_sha256": "f51d6aa496f04547ae20fea7a0d61c46e3ffe6ce58d49fa27557f48c7eadbe82",
+      "reason": "Required successor authoring correction: validate authorized delta against active v5 and preserve previous locks, without repackaging historical evidence."
+    },
+    {
+      "path": "scripts/fetch_remediation_sources.py",
+      "before_sha256": "1c2df4c14e8fc4877ad70ded2b4a6e9a409a19504b858bf455a5b79b12552631",
+      "before_worktree_sha256": "1c2df4c14e8fc4877ad70ded2b4a6e9a409a19504b858bf455a5b79b12552631",
+      "after_sha256": "d7d5b3efa400474e5d2ddf9fd4ce76fa5ef4ba04dbb031e2b1e1609213cfa58d",
+      "reason": "Make documented UTF-8 text I/O explicit in directly related tests, source manifests or integrity/report callers; no numerical changes."
+    },
+    {
+      "path": "scripts/finalize_remediation.py",
+      "before_sha256": "0a85e73f514d0a7cfde686b28b820e2a5f9a9a5f5e13054a6acd30e13534135a",
+      "before_worktree_sha256": "5bc9605384cbf10539a030b672f21c2c290a67b0b4a887bf381d186e7928fa2b",
+      "after_sha256": "267bc1d5d9ae1681473191acfd93df2bda2780ceba2e52cd55f35f97b2d30a06",
+      "reason": "Make documented UTF-8 text I/O explicit in directly related tests, source manifests or integrity/report callers; no numerical changes."
+    },
+    {
+      "path": "scripts/verify_remediation.py",
+      "before_sha256": "a3c24b75c6bd40a72a13bef2b96780f637dba3daea7fd409fa3822fe2161c65f",
+      "before_worktree_sha256": "a3c24b75c6bd40a72a13bef2b96780f637dba3daea7fd409fa3822fe2161c65f",
+      "after_sha256": "f485adeb938b490cad857b48d7049b42e16e4d26ea159da5c09e35d395be9497",
+      "reason": "Make documented UTF-8 text I/O explicit in directly related tests, source manifests or integrity/report callers; no numerical changes."
+    },
+    {
+      "path": "tests/test_remediation.py",
+      "before_sha256": "3d0cc65d695af6ff0821f8d4a85c68b75317d03d290f3b99142e7601bf1467a4",
+      "before_worktree_sha256": "3d0cc65d695af6ff0821f8d4a85c68b75317d03d290f3b99142e7601bf1467a4",
+      "after_sha256": "030321a3e6a2d4ad08d62b2530d181058222a3b0eafbd2ddd98e67ac5d2544cf",
+      "reason": "Explicit UTF-8 fixture/snapshot/JSON reads and writes; subprocess regression catches omitted encoding while preserving truncated-table rejection."
+    }
+  ]
+}

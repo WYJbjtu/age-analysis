@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="921.6pt" height="554.4pt" viewBox="0 0 921.6 554.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 554.4 
+L 921.6 554.4 
+L 921.6 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 73.728 237.032151 
+L 426.340174 237.032151 
+L 426.340174 121.968 
+L 73.728 121.968 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 81.393482 237.032151 
+L 81.393482 121.968 
+" clip-path="url(#pee27b33a6a)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="mefe5ea5b0d" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mefe5ea5b0d" x="81.393482" y="237.032151" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 158.048302 237.032151 
+L 158.048302 121.968 
+" clip-path="url(#pee27b33a6a)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#mefe5ea5b0d" x="158.048302" y="237.032151" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 234.703123 237.032151 
+L 234.703123 121.968 
+" clip-path="url(#pee27b33a6a)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#mefe5ea5b0d" x="234.703123" y="237.032151" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 311.357943 237.032151 
+L 311.357943 121.968 
+" clip-path="url(#pee27b33a6a)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#mefe5ea5b0d" x="311.357943" y="237.032151" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 388.012764 237.032151 
+L 388.012764 121.968 
+" clip-path="url(#pee27b33a6a)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#mefe5ea5b0d" x="388.012764" y="237.032151" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2"/>
+   <g id="line2d_11">
+    <path d="M 115.183154 179.500075 
+L 273.684759 179.500075 
+" clip-path="url(#pee27b33a6a)" style="fill: none; stroke: #2788ae; stroke-opacity: 0.6; stroke-width: 3; stroke-linecap: square"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 73.728 237.032151 
+L 73.728 121.968 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 73.728 237.032151 
+L 426.340174 237.032151 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="m8715fac4fc" d="M 0 3.937004 
+C 1.044106 3.937004 2.045588 3.522176 2.783882 2.783882 
+C 3.522176 2.045588 3.937004 1.044106 3.937004 0 
+C 3.937004 -1.044106 3.522176 -2.045588 2.783882 -2.783882 
+C 2.045588 -3.522176 1.044106 -3.937004 0 -3.937004 
+C -1.044106 -3.937004 -2.045588 -3.522176 -2.783882 -2.783882 
+C -3.522176 -2.045588 -3.937004 -1.044106 -3.937004 0 
+C -3.937004 1.044106 -3.522176 2.045588 -2.783882 2.783882 
+C -2.045588 3.522176 -1.044106 3.937004 0 3.937004 
+z
+" style="stroke: #2788ae"/>
+    </defs>
+    <g clip-path="url(#pee27b33a6a)">
+     <use xlink:href="#m8715fac4fc" x="115.183154" y="179.500075" style="fill: #2788ae; stroke: #2788ae"/>
+     <use xlink:href="#m8715fac4fc" x="273.684759" y="179.500075" style="fill: #2788ae; stroke: #2788ae"/>
+    </g>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #273747" transform="translate(38.596435 151.497341)">Nevada: 4.41% manufacturing</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #273747" transform="translate(69.898779 163.500075)">16.90% aged 65+</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #273747" transform="translate(194.49179 203.497341)">Indiana: 25.09% manufacturing</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #273747" transform="translate(228.400384 215.500075)">16.91% aged 65+</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #273747" x="250.034087" y="112.968" transform="rotate(-0 250.034087 112.968)">United States — largest industry gap</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_5">
+    <path d="M 532.123826 237.032151 
+L 884.736 237.032151 
+L 884.736 121.968 
+L 532.123826 121.968 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_6">
+     <g id="line2d_12">
+      <path d="M 539.789308 237.032151 
+L 539.789308 121.968 
+" clip-path="url(#paf86451474)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#mefe5ea5b0d" x="539.789308" y="237.032151" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_14">
+      <path d="M 616.444129 237.032151 
+L 616.444129 121.968 
+" clip-path="url(#paf86451474)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_15">
+      <g>
+       <use xlink:href="#mefe5ea5b0d" x="616.444129" y="237.032151" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_16">
+      <path d="M 693.098949 237.032151 
+L 693.098949 121.968 
+" clip-path="url(#paf86451474)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_17">
+      <g>
+       <use xlink:href="#mefe5ea5b0d" x="693.098949" y="237.032151" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_18">
+      <path d="M 769.753769 237.032151 
+L 769.753769 121.968 
+" clip-path="url(#paf86451474)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_19">
+      <g>
+       <use xlink:href="#mefe5ea5b0d" x="769.753769" y="237.032151" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_20">
+      <path d="M 846.40859 237.032151 
+L 846.40859 121.968 
+" clip-path="url(#paf86451474)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_21">
+      <g>
+       <use xlink:href="#mefe5ea5b0d" x="846.40859" y="237.032151" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4"/>
+   <g id="line2d_22">
+    <path d="M 606.319678 179.500075 
+L 781.188658 179.500075 
+" clip-path="url(#paf86451474)" style="fill: none; stroke: #8551a6; stroke-opacity: 0.6; stroke-width: 3; stroke-linecap: square"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 532.123826 237.032151 
+L 532.123826 121.968 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 532.123826 237.032151 
+L 884.736 237.032151 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="PathCollection_2">
+    <defs>
+     <path id="mccb070fd6a" d="M 0 3.937004 
+C 1.044106 3.937004 2.045588 3.522176 2.783882 2.783882 
+C 3.522176 2.045588 3.937004 1.044106 3.937004 0 
+C 3.937004 -1.044106 3.522176 -2.045588 2.783882 -2.783882 
+C 2.045588 -3.522176 1.044106 -3.937004 0 -3.937004 
+C -1.044106 -3.937004 -2.045588 -3.522176 -2.783882 -2.783882 
+C -3.522176 -2.045588 -3.937004 -1.044106 -3.937004 0 
+C -3.937004 1.044106 -3.522176 2.045588 -2.783882 2.783882 
+C -2.045588 3.522176 -1.044106 3.937004 0 3.937004 
+z
+" style="stroke: #8551a6"/>
+    </defs>
+    <g clip-path="url(#paf86451474)">
+     <use xlink:href="#mccb070fd6a" x="606.319678" y="179.500075" style="fill: #8551a6; stroke: #8551a6"/>
+     <use xlink:href="#mccb070fd6a" x="781.188658" y="179.500075" style="fill: #8551a6; stroke: #8551a6"/>
+    </g>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #273747" transform="translate(525.60249 151.497341)">Hokkaido: 8.68% manufacturing</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #273747" transform="translate(561.035303 163.500075)">32.80% aged 65+</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #273747" transform="translate(701.277721 203.497341)">Toyama: 31.49% manufacturing</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #273747" transform="translate(735.904283 215.500075)">33.00% aged 65+</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #273747" x="708.429913" y="112.968" transform="rotate(-0 708.429913 112.968)">Japan — largest industry gap</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_8">
+    <path d="M 73.728 426.888 
+L 426.340174 426.888 
+L 426.340174 311.823849 
+L 73.728 311.823849 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_5">
+    <g id="xtick_11">
+     <g id="line2d_23">
+      <path d="M 81.393482 426.888 
+L 81.393482 311.823849 
+" clip-path="url(#pabe8e7334a)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#mefe5ea5b0d" x="81.393482" y="426.888" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="81.393482" y="442.245422" transform="rotate(-0 81.393482 442.245422)">0</text>
+     </g>
+    </g>
+    <g id="xtick_12">
+     <g id="line2d_25">
+      <path d="M 158.048302 426.888 
+L 158.048302 311.823849 
+" clip-path="url(#pabe8e7334a)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_26">
+      <g>
+       <use xlink:href="#mefe5ea5b0d" x="158.048302" y="426.888" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="158.048302" y="442.245422" transform="rotate(-0 158.048302 442.245422)">10</text>
+     </g>
+    </g>
+    <g id="xtick_13">
+     <g id="line2d_27">
+      <path d="M 234.703123 426.888 
+L 234.703123 311.823849 
+" clip-path="url(#pabe8e7334a)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_28">
+      <g>
+       <use xlink:href="#mefe5ea5b0d" x="234.703123" y="426.888" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="234.703123" y="442.245422" transform="rotate(-0 234.703123 442.245422)">20</text>
+     </g>
+    </g>
+    <g id="xtick_14">
+     <g id="line2d_29">
+      <path d="M 311.357943 426.888 
+L 311.357943 311.823849 
+" clip-path="url(#pabe8e7334a)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_30">
+      <g>
+       <use xlink:href="#mefe5ea5b0d" x="311.357943" y="426.888" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="311.357943" y="442.245422" transform="rotate(-0 311.357943 442.245422)">30</text>
+     </g>
+    </g>
+    <g id="xtick_15">
+     <g id="line2d_31">
+      <path d="M 388.012764 426.888 
+L 388.012764 311.823849 
+" clip-path="url(#pabe8e7334a)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_32">
+      <g>
+       <use xlink:href="#mefe5ea5b0d" x="388.012764" y="426.888" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="388.012764" y="442.245422" transform="rotate(-0 388.012764 442.245422)">40</text>
+     </g>
+    </g>
+    <g id="text_12">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #273747" x="250.034087" y="457.246281" transform="rotate(-0 250.034087 457.246281)">Manufacturing share of nominal GDP (%)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_6"/>
+   <g id="line2d_33">
+    <path d="M 200.981211 369.355925 
+L 201.941611 369.355925 
+" clip-path="url(#pabe8e7334a)" style="fill: none; stroke: #2788ae; stroke-opacity: 0.6; stroke-width: 3; stroke-linecap: square"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 73.728 426.888 
+L 73.728 311.823849 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 73.728 426.888 
+L 426.340174 426.888 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="PathCollection_3">
+    <g clip-path="url(#pabe8e7334a)">
+     <use xlink:href="#m8715fac4fc" x="200.981211" y="369.355925" style="fill: #2788ae; stroke: #2788ae"/>
+     <use xlink:href="#m8715fac4fc" x="201.941611" y="369.355925" style="fill: #2788ae; stroke: #2788ae"/>
+    </g>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #273747" transform="translate(113.654649 341.35319)">Mississippi: 15.60% manufacturing</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #273747" transform="translate(155.696836 353.355925)">17.26% aged 65+</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #273747" transform="translate(123.554892 393.35319)">Kansas: 15.73% manufacturing</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #273747" transform="translate(156.657236 405.355925)">17.16% aged 65+</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #273747" x="250.034087" y="302.823849" transform="rotate(-0 250.034087 302.823849)">United States — smallest industry gap</text>
+   </g>
+  </g>
+  <g id="axes_4">
+   <g id="patch_11">
+    <path d="M 532.123826 426.888 
+L 884.736 426.888 
+L 884.736 311.823849 
+L 532.123826 311.823849 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_7">
+    <g id="xtick_16">
+     <g id="line2d_34">
+      <path d="M 539.789308 426.888 
+L 539.789308 311.823849 
+" clip-path="url(#pf46a442ffe)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_35">
+      <g>
+       <use xlink:href="#mefe5ea5b0d" x="539.789308" y="426.888" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="539.789308" y="442.245422" transform="rotate(-0 539.789308 442.245422)">0</text>
+     </g>
+    </g>
+    <g id="xtick_17">
+     <g id="line2d_36">
+      <path d="M 616.444129 426.888 
+L 616.444129 311.823849 
+" clip-path="url(#pf46a442ffe)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_37">
+      <g>
+       <use xlink:href="#mefe5ea5b0d" x="616.444129" y="426.888" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="616.444129" y="442.245422" transform="rotate(-0 616.444129 442.245422)">10</text>
+     </g>
+    </g>
+    <g id="xtick_18">
+     <g id="line2d_38">
+      <path d="M 693.098949 426.888 
+L 693.098949 311.823849 
+" clip-path="url(#pf46a442ffe)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_39">
+      <g>
+       <use xlink:href="#mefe5ea5b0d" x="693.098949" y="426.888" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_18">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="693.098949" y="442.245422" transform="rotate(-0 693.098949 442.245422)">20</text>
+     </g>
+    </g>
+    <g id="xtick_19">
+     <g id="line2d_40">
+      <path d="M 769.753769 426.888 
+L 769.753769 311.823849 
+" clip-path="url(#pf46a442ffe)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_41">
+      <g>
+       <use xlink:href="#mefe5ea5b0d" x="769.753769" y="426.888" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_19">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="769.753769" y="442.245422" transform="rotate(-0 769.753769 442.245422)">30</text>
+     </g>
+    </g>
+    <g id="xtick_20">
+     <g id="line2d_42">
+      <path d="M 846.40859 426.888 
+L 846.40859 311.823849 
+" clip-path="url(#pf46a442ffe)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_43">
+      <g>
+       <use xlink:href="#mefe5ea5b0d" x="846.40859" y="426.888" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_20">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="846.40859" y="442.245422" transform="rotate(-0 846.40859 442.245422)">40</text>
+     </g>
+    </g>
+    <g id="text_21">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #273747" x="708.429913" y="457.246281" transform="rotate(-0 708.429913 457.246281)">Manufacturing share of nominal GDP (%)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_8"/>
+   <g id="line2d_44">
+    <path d="M 737.757305 369.355925 
+L 738.626547 369.355925 
+" clip-path="url(#pf46a442ffe)" style="fill: none; stroke: #8551a6; stroke-opacity: 0.6; stroke-width: 3; stroke-linecap: square"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 532.123826 426.888 
+L 532.123826 311.823849 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 532.123826 426.888 
+L 884.736 426.888 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="PathCollection_4">
+    <g clip-path="url(#pf46a442ffe)">
+     <use xlink:href="#mccb070fd6a" x="737.757305" y="369.355925" style="fill: #8551a6; stroke: #8551a6"/>
+     <use xlink:href="#mccb070fd6a" x="738.626547" y="369.355925" style="fill: #8551a6; stroke: #8551a6"/>
+    </g>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #273747" transform="translate(664.59168 341.35319)">Saga: 25.83% manufacturing</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #273747" transform="translate(692.47293 353.355925)">31.40% aged 65+</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #273747" transform="translate(664.867172 393.35319)">Fukui: 25.94% manufacturing</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #273747" transform="translate(693.342172 405.355925)">31.20% aged 65+</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #273747" x="708.429913" y="302.823849" transform="rotate(-0 708.429913 302.823849)">Japan — smallest industry gap</text>
+   </g>
+  </g>
+  <g id="text_25">
+   <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #273747" x="55.296" y="36.613031" transform="rotate(-0 55.296 36.613031)">Similar aging can accompany contrasting industry shares</text>
+  </g>
+  <g id="text_26">
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #273747" x="55.296" y="77.616" transform="rotate(-0 55.296 77.616)">2022 within-country pairs: largest gap (top) and smallest gap (bottom)</text>
+  </g>
+  <g id="text_27">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #273747" x="55.296" y="493.416" transform="rotate(-0 55.296 493.416)">Selection: enumerate all pairs within 0.5 percentage points in aging, then choose the largest and smallest industry gaps.</text>
+  </g>
+  <g id="text_28">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #56636e" transform="translate(55.296 518.649539)">All eligible pairs are retained in the results table. These examples illustrate heterogeneity; they do not isolate a causal effect.</text>
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #56636e" transform="translate(55.296 529.452)">Population and industry sources and US calendar-year / Japan fiscal-year definitions are the same as Figure 1.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pee27b33a6a">
+   <rect x="73.728" y="121.968" width="352.612174" height="115.064151"/>
+  </clipPath>
+  <clipPath id="paf86451474">
+   <rect x="532.123826" y="121.968" width="352.612174" height="115.064151"/>
+  </clipPath>
+  <clipPath id="pabe8e7334a">
+   <rect x="73.728" y="311.823849" width="352.612174" height="115.064151"/>
+  </clipPath>
+  <clipPath id="pf46a442ffe">
+   <rect x="532.123826" y="311.823849" width="352.612174" height="115.064151"/>
+  </clipPath>
+ </defs>
+</svg>

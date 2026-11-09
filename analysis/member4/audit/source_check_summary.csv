@@ -1,0 +1,20 @@
+source_file,scope,checks,failed,max_absolute_difference
+BLS srgune_03012023 table 1,sampled 6 of 51 regions per year,12,0,0.0
+BLS srgune_03042020 table 1,sampled 6 of 51 regions per year,12,0,0.0
+SAGDP.zip,exhaustive,3060,0,0.0
+jp2021_table11.xlsx,exhaustive,47,0,0.0
+jp2021_table12.xlsx,exhaustive,94,0,0.0
+jp2021_table13.xlsx,exhaustive,47,0,0.0
+jp2022_table11.xlsx,exhaustive,47,0,0.0
+jp2022_table12.xlsx,exhaustive,94,0,0.0
+jp2022_table13.xlsx,exhaustive,47,0,0.0
+jp_long.xlsx,exhaustive,1880,0,5.000000413701855e-09
+jpn_lfs.xlsx,exhaustive,3384,0,0.0
+jpn_migration_2019.xls,exhaustive,47,0,0.0
+jpn_migration_2022.xlsx,exhaustive,47,0,0.0
+jpn_migration_trend.xls,exhaustive,329,0,0.0
+syuyo1.xlsx,exhaustive,2820,0,0.0
+us_2010_2020.csv,exhaustive,1836,0,4.998426561542146e-09
+us_2020_2022.csv,exhaustive,612,0,4.98911489899001e-09
+us_migration_2020.csv,exhaustive,510,0,0.0
+us_migration_2022.csv,exhaustive,102,0,0.0

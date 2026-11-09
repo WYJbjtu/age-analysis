@@ -1,70 +1,30 @@
-#!/usr/bin/env python3
-"""Japan 2011-2022 panel: labour trend and migration collapse/recovery.
+"""Japan labor trend and explicitly separated migration population scopes."""
+from plot_helpers import *
+from labor_validation import require_same_migration_coverage
 
-(a) median prefecture unemployment rate, 2011-2022 (12 years)
-(b) net migration 2018-2022 for the five largest migration regions
-"""
-from pathlib import Path
+def main():
+    setup();jp=load_panel().query("country=='JPN'");med=jp.groupby('year').unemployment_rate_pct.median()
+    fig,axes=plt.subplots(1,2,figsize=(14,6));fig.subplots_adjust(left=.07,right=.97,top=.78,bottom=.25,wspace=.24)
+    axes[0].plot(med.index,med.values,'o-',color=COLORS['JPN'])
+    axes[0].set(title='Regional median unemployment, 2011–2022',ylabel='Unemployment rate (%)',xlabel='Year')
+    axes[0].grid(alpha=.18);axes[0].set_ylim(0,5)
+    regions={'JP-13':'Tokyo','JP-14':'Kanagawa','JP-11':'Saitama','JP-27':'Osaka','JP-23':'Aichi'}
+    colors=['#8551a6','#2788ae','#bc7040','#558354','#af5374']
+    for (rid,name),color in zip(regions.items(),colors):
+        g=jp[jp.region_id==rid].sort_values('year')
+        for field,style,label in [('japanese_only_domestic_net_migration','--',None),('domestic_net_migration','-',name)]:
+            segment=require_same_migration_coverage(g,field)
+            axes[1].plot(segment.year,segment[field]/1000,marker='o',linestyle=style,color=color,label=label)
+    axes[1].axvline(2017.5,color='#777777',ls=':',lw=1)
+    axes[1].axhline(0,color='#777777',lw=.7)
+    axes[1].set(title='Five preselected metropolitan prefectures',xlabel='Year',ylabel='Domestic net migration (thousand persons)')
+    axes[1].legend(fontsize=8,ncol=2);axes[1].grid(alpha=.18)
+    fig.suptitle('Japan: labor history and a migration coverage break',x=.07,ha='left',fontsize=18)
+    fig.text(.07,.86,'Migration lines are not connected across 2017–2018.',fontsize=11)
+    fig.text(.07,.08,'Dashed: Japanese nationals only (2011–2017). Solid: all nationalities (2018–2022). Calendar years.\n'
+        'Labor: all 47 prefectures, regional median; annual LFS model/ratio estimates with benchmark and disaster-year notes.\n'
+        'Sources: Japan LFS and Basic Resident Registration annual tables. Selected migration cases are illustrative.',fontsize=9,color='#555555')
+    save(fig,'jpn_panel_2011_2022',[dict(country='JPN',labor_regions=47,migration_regions=list(regions),years=list(range(2011,2023)))],
+         'Separate nationalities series; no connected segment bridges coverage break.')
 
-import matplotlib
-
-matplotlib.use("Agg")
-import matplotlib.pyplot as plt
-import pandas as pd
-
-ROOT = Path(__file__).resolve().parents[1]
-OUT = Path(__file__).resolve().parent / "figures"
-OUT.mkdir(parents=True, exist_ok=True)
-
-lab = pd.read_csv(ROOT / "data/processed/labor_migration.csv", dtype={"region_id": str})
-jp = lab[lab.country == "JPN"].copy()
-
-med = (jp.groupby("year").unemployment_rate_pct.median().reset_index()
-         .sort_values("year"))
-
-mig = jp.dropna(subset=["net_migration"])
-regions = {"JP-13": "Tokyo", "JP-14": "Kanagawa", "JP-11": "Saitama",
-           "JP-27": "Osaka", "JP-23": "Aichi"}
-
-fig, axes = plt.subplots(1, 2, figsize=(12.8, 5.0), dpi=200)
-
-ax = axes[0]
-ax.plot(med.year, med.unemployment_rate_pct, "o-", color="#1f77b4", lw=2)
-for _, r in med.iterrows():
-    ax.annotate(f"{r.unemployment_rate_pct:.1f}", (r.year, r.unemployment_rate_pct),
-                xytext=(0, 7), textcoords="offset points", ha="center", fontsize=7.5)
-ax.set_xlabel("Year", fontsize=10)
-ax.set_ylabel("Median prefecture unemployment rate (%)", fontsize=10)
-ax.set_title("(a) Japan: labour market tightened 2011–2019", fontsize=10.5)
-ax.set_xticks(med.year)
-ax.grid(alpha=0.25, ls="--")
-for side in ("top", "right"):
-    ax.spines[side].set_visible(False)
-
-ax = axes[1]
-colors = ["#d62728", "#ff7f0e", "#2ca02c", "#1f77b4", "#9467bd"]
-for (rid, name), color in zip(regions.items(), colors):
-    sub = mig[mig.region_id == rid].sort_values("year")
-    if sub.empty:
-        continue
-    ax.plot(sub.year, sub.net_migration / 1000.0, "o-", color=color, lw=1.8, label=name)
-ax.axhline(0, color="#333333", lw=0.9)
-ax.set_xlabel("Year", fontsize=10)
-ax.set_ylabel("Net migration (thousand persons)", fontsize=10)
-ax.set_title("(b) Net migration 2011–2022: the Tokyo inflow collapses in 2020–21", fontsize=10.5)
-ax.set_xticks(sorted(mig.year.unique()))
-ax.grid(alpha=0.25, ls="--")
-ax.legend(fontsize=8, ncol=2)
-for side in ("top", "right"):
-    ax.spines[side].set_visible(False)
-
-fig.suptitle("Japan panel: 12-year labour series and 2011–2022 migration (prefecture level)", fontsize=11.5)
-fig.text(0.5, -0.02,
-         "Sources: Labour Force Survey prefectural model estimates (2011–2022); Basic Resident Registration "
-         "migration reports 2018–2022 and the annual-report trend table for 2011–2017. Net migration is "
-         "inter-prefectural and sums to zero each year.", ha="center", fontsize=6.8, color="#555555")
-fig.tight_layout()
-for ext in ("png", "svg"):
-    fig.savefig(OUT / f"jpn_panel_2011_2022.{ext}", bbox_inches="tight", facecolor="white")
-print("wrote", OUT / "jpn_panel_2011_2022.png")
-print(med.to_string(index=False))
+if __name__=='__main__':main()

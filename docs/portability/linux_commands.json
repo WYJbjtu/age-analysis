@@ -1,0 +1,113 @@
+[
+  {
+    "command": [
+      "/mnt/e/5002_project/aging-across-economies/data/cache/portability/linux/venv/bin/python",
+      "-X",
+      "utf8",
+      "-c",
+      "import sys,socket\nfrom pathlib import Path\nassert sys._portable_guard_loaded\ntry:\n socket.create_connection(('example.com',443))\nexcept PermissionError: pass\nelse: raise AssertionError('Network guard missing')\ntry:\n Path('C:\\\\Users\\\\15811\\\\.codex\\\\visualizations\\\\2026\\\\11\\\\09\\\\01a1bf45-e2b6-7522-9919-1fffbb145101\\\\aging-remediation-backup-20261109-170431').joinpath('files/.editorconfig').read_bytes()\nexcept PermissionError: pass\nelse: raise AssertionError('Backup guard missing')\nprint('Both guards proved: network and external backup denied')\n"
+    ],
+    "cwd": "/mnt/e/5002_project/aging-across-economies/data/cache/portability/after",
+    "exit_code": 0,
+    "stdout": "Both guards proved: network and external backup denied\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/mnt/e/5002_project/aging-across-economies/data/cache/portability/linux/venv/bin/python",
+      "-X",
+      "utf8",
+      "-m",
+      "pytest",
+      "-q",
+      "tests/test_member4.py::test_reviewed_current_inputs_and_historical_inputs_are_protected"
+    ],
+    "cwd": "/mnt/e/5002_project/aging-across-economies/data/cache/portability/after",
+    "exit_code": 0,
+    "stdout": ".                                                                        [100%]\n1 passed in 15.72s\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/mnt/e/5002_project/aging-across-economies/data/cache/portability/linux/venv/bin/python",
+      "-X",
+      "utf8",
+      "-m",
+      "pytest",
+      "--collect-only",
+      "-q"
+    ],
+    "cwd": "/mnt/e/5002_project/aging-across-economies/data/cache/portability/after",
+    "exit_code": 0,
+    "stdout": "tests/test_contracts.py::test_98_regions_and_known_ids\ntests/test_contracts.py::test_empty_templates_are_accepted\ntests/test_contracts.py::test_duplicate_region_year_rejected\ntests/test_contracts.py::test_percent_outside_range_rejected\ntests/test_contracts.py::test_invalid_geography_rejected\ntests/test_member1_population.py::test_panel_coverage_and_keys\ntests/test_member1_population.py::test_age_counts_and_rounding\ntests/test_member1_population.py::test_national_series_separate_and_complete\ntests/test_member1_population.py::test_released_2022_population_rates_preserved\ntests/test_member4.py::test_join_cardinality_optional_missingness_does_not_shrink_core\ntests/test_member4.py::test_duplicate_keys_fail_before_join\ntests/test_member4.py::test_unknown_or_national_region_rejected\ntests/test_member4.py::test_invalid_values[age65_share_pct-101.0-share]\ntests/test_member4.py::test_invalid_values[age65_share_pct-inf-non-finite]\ntests/test_member4.py::test_invalid_values[total_population-0-denominator]\ntests/test_member4.py::test_nominal_units_and_share_check\ntests/test_member4.py::test_grouped_and_pooled_reference_calculation\ntests/test_member4.py::test_constant_and_small_samples_stay_missing\ntests/test_member4.py::test_pairwise_missingness_is_reported\ntests/test_member4.py::test_covariance_with_unequal_groups_reconstructs_and_adjustment_matches\ntests/test_member4.py::test_synthetic_strict_reversal\ntests/test_member4.py::test_synthetic_nonreversal_and_weak_signs_never_strict_headline\ntests/test_member4.py::test_population_weighting_is_separate_and_requires_valid_weights\ntests/test_member4.py::test_reviewed_current_inputs_and_historical_inputs_are_protected\ntests/test_member4.py::test_real_primary_sample_and_source_gate\ntests/test_member4.py::test_primary_numbers_recompute_and_optional_series_cannot_contaminate\ntests/test_portable_integrity.py::test_deliverable_only_verification_without_developer_backup\ntests/test_portable_integrity.py::test_verification_from_unrelated_working_directory\ntests/test_portable_integrity.py::test_protected_current_or_immutable_content_cannot_change[current.py-current reviewed]\ntests/test_portable_integrity.py::test_protected_current_or_immutable_content_cannot_change[analysis/member4/results/synthetic.csv-immutable repository artifact]\ntests/test_portable_integrity.py::test_required_historical_evidence_must_exist_and_match[delete]\ntests/test_portable_integrity.py::test_required_historical_evidence_must_exist_and_match[modify]\ntests/test_portable_integrity.py::test_archive_member_tampering_fails_original_recorded_hash\ntests/test_portable_integrity.py::test_expected_archive_checksum_tampering_fails\ntests/test_portable_integrity.py::test_missing_required_member_fails\ntests/test_portable_integrity.py::test_archive_paths_cannot_escape_namespace[/outside]\ntests/test_portable_integrity.py::test_archive_paths_cannot_escape_namespace[../outside]\ntests/test_portable_integrity.py::test_archive_paths_cannot_escape_namespace[a/../../outside]\ntests/test_portable_integrity.py::test_archive_paths_cannot_escape_namespace[C:/outside]\ntests/test_portable_integrity.py::test_archive_paths_cannot_escape_namespace[a\\\\..\\\\outside]\ntests/test_portable_integrity.py::test_archive_paths_cannot_escape_namespace[./outside]\ntests/test_portable_integrity.py::test_archive_paths_cannot_escape_namespace[a//outside]\ntests/test_portable_integrity.py::test_duplicate_archive_names_fail\ntests/test_portable_integrity.py::test_archive_symlinks_are_never_followed\ntests/test_portable_integrity.py::test_explicit_invalid_local_backup_fails_without_fallback\ntests/test_portable_integrity.py::test_verification_is_read_only\ntests/test_portable_integrity.py::test_text_policy_accepts_only_line_ending_representation_change\ntests/test_portable_integrity.py::test_original_manifests_remain_authoritative_if_member_inventory_is_changed\ntests/test_portable_integrity.py::test_missing_portable_lock_never_generates_a_replacement\ntests/test_remediation.py::test_domestic_source_components_and_independent_reference\ntests/test_remediation.py::test_japanese_nationality_break_is_not_spliced_or_filled\ntests/test_remediation.py::test_bls_complete_official_archives_rebuild_all_labor_years\ntests/test_remediation.py::test_bls_parser_rejects_truncated_source_table\ntests/test_remediation.py::test_annual_validation_rejects_monthly_substitution\ntests/test_remediation.py::test_repaired_bls_checker_has_no_import_network_or_mutation\ntests/test_remediation.py::test_source_acquisition_rejects_credentials_escape_and_replaces_no_cache\ntests/test_remediation.py::test_labor_quantity_rate_rounding_and_wrong_units_fail\ntests/test_remediation.py::test_quoted_source_tables_have_exact_fields_and_complete_us_years\ntests/test_remediation.py::test_akita_and_all_regions_are_visible_in_repaired_figures\ntests/test_remediation.py::test_pooled_services_blocked_before_any_figure_is_written\ntests/test_remediation.py::test_shared_merge_preserves_core_with_optional_missingness\ntests/test_remediation.py::test_main_results_match_unrounded_pre_repair_baseline_and_covariance_weights\ntests/test_remediation.py::test_national_and_boundary_evidence_preserves_real_region_codes\nmember2_industry/test_industry.py::test_industry_coverage_periods_and_recomputed_shares\nmember2_industry/test_industry.py::test_tokyo_uses_gdp_including_accounting_adjustments\nmember2_industry/test_industry.py::test_missing_suppressed_or_nonfinite_values_fail[NaN]\nmember2_industry/test_industry.py::test_missing_suppressed_or_nonfinite_values_fail[inf]\nmember2_industry/test_industry.py::test_missing_suppressed_or_nonfinite_values_fail[-inf]\nmember2_industry/test_industry.py::test_missing_suppressed_or_nonfinite_values_fail[x]\nmember2_industry/test_industry.py::test_missing_suppressed_or_nonfinite_values_fail[]\nmember2_industry/test_industry.py::test_changed_official_table_layout_fails\nmember2_industry/test_industry.py::test_source_spot_checks_across_years[US-CA-2011-2014050.3-221137.7-1417757.7]\nmember2_industry/test_industry.py::test_source_spot_checks_across_years[US-CA-2016-2586485.2-272154.2-1848653.0]\nmember2_industry/test_industry.py::test_source_spot_checks_across_years[US-CA-2022-3623524.5-361595.6-2676612.0]\nmember2_industry/test_industry.py::test_source_spot_checks_across_years[JP-01-2011-18527065-1706214-14831002]\nmember2_industry/test_industry.py::test_source_spot_checks_across_years[JP-01-2016-20064828-1905275-15724662]\nmember2_industry/test_industry.py::test_panel_keys_match_population_and_labor\nmember2_industry/test_industry.py::test_japan_source_and_crosscheck_years_must_match\nmember2_industry/test_industry.py::test_bea_reads_selected_years_without_2022_backfill\nmember2_industry/test_industry.py::test_bea_duplicate_or_missing_industry_fails\nmember2_industry/test_industry.py::test_chart_loader_rejects_incomplete_or_misleading_data[unknown_region-Unknown region]\nmember2_industry/test_industry.py::test_chart_loader_rejects_incomplete_or_misleading_data[missing_year-complete 98-region]\nmember2_industry/test_industry.py::test_chart_loader_rejects_incomplete_or_misleading_data[duplicate_key-complete 98-region]\nmember2_industry/test_industry.py::test_chart_loader_rejects_incomplete_or_misleading_data[nonfinite-non-finite]\nmember2_industry/test_industry.py::test_chart_loader_rejects_incomplete_or_misleading_data[wrong_share-do not match]\nmember2_industry/test_industry.py::test_chart_loader_rejects_incomplete_or_misleading_data[wrong_period-CY/FY]\nmember2_industry/test_industry.py::test_distribution_does_not_clip_a_region_above_old_axis_limit\nmember2_industry/test_industry.py::test_services_chart_requires_a_single_country\n\n88 tests collected in 13.34s\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/mnt/e/5002_project/aging-across-economies/data/cache/portability/linux/venv/bin/python",
+      "-X",
+      "utf8",
+      "-m",
+      "pytest",
+      "-q",
+      "--basetemp",
+      "/tmp/aging-portability-6bn27wa4/pytest-temp",
+      "--junitxml",
+      "/mnt/e/5002_project/aging-across-economies/data/cache/portability/linux/results-native-temp/test_results.xml"
+    ],
+    "cwd": "/mnt/e/5002_project/aging-across-economies/data/cache/portability/after",
+    "exit_code": 0,
+    "stdout": "........................................................................ [ 81%]\n................                                                         [100%]\n88 passed in 22.67s\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/mnt/e/5002_project/aging-across-economies/data/cache/portability/linux/venv/bin/python",
+      "-X",
+      "utf8",
+      "scripts/validate_data.py"
+    ],
+    "cwd": "/mnt/e/5002_project/aging-across-economies/data/cache/portability/after",
+    "exit_code": 0,
+    "stdout": "[OK] demographics: 1176 rows; USA=612, JPN=564\n[OK] industry: 1176 rows; USA=612, JPN=564\n[OK] labor_migration: 1176 rows; USA=612, JPN=564\nContracts validated. This does NOT verify official source accuracy or full country/year coverage.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/mnt/e/5002_project/aging-across-economies/data/cache/portability/linux/venv/bin/python",
+      "-X",
+      "utf8",
+      "/mnt/e/5002_project/aging-across-economies/data/cache/portability/after/scripts/remediation_state.py"
+    ],
+    "cwd": "/mnt/e/5002_project/aging-across-economies/data/cache/portability/linux/results-native-temp",
+    "exit_code": 0,
+    "stdout": "{\n  \"historical_evidence_files\": 229,\n  \"historical_v1_files\": 163,\n  \"immutable_repository_files\": 46,\n  \"archived_reviewed_locks\": 3,\n  \"local_backup\": \"not requested\",\n  \"current_protected_files\": 280,\n  \"current_input_lock\": \"docs/remediation/input_manifest_v5.json\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/mnt/e/5002_project/aging-across-economies/data/cache/portability/linux/venv/bin/python",
+      "-X",
+      "utf8",
+      "/mnt/e/5002_project/aging-across-economies/data/cache/portability/after/analysis/member4/freeze_inputs.py"
+    ],
+    "cwd": "/mnt/e/5002_project/aging-across-economies/data/cache/portability/linux/results-native-temp",
+    "exit_code": 0,
+    "stdout": "Protected current inputs, immutable audit artifacts and portable original bytes: {'historical_evidence_files': 229, 'historical_v1_files': 163, 'immutable_repository_files': 46, 'archived_reviewed_locks': 3, 'local_backup': 'not requested', 'current_protected_files': 280, 'current_input_lock': 'docs/remediation/input_manifest_v5.json'}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/mnt/e/5002_project/aging-across-economies/data/cache/portability/linux/venv/bin/python",
+      "-X",
+      "utf8",
+      "scripts/verify_remediation.py",
+      "regression",
+      "--no-write"
+    ],
+    "cwd": "/mnt/e/5002_project/aging-across-economies/data/cache/portability/after",
+    "exit_code": 0,
+    "stdout": "38 high-precision main regression comparisons passed; max difference 0\n",
+    "stderr": ""
+  }
+]

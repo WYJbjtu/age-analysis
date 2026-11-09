@@ -1,0 +1,47 @@
+{
+  "figure": "two_country_trend_2011_2022",
+  "note": "As-published BLS annual vintages; LFS benchmark/disaster notes retained; medians are not national rates.",
+  "samples": [
+    {
+      "country": "USA",
+      "regions": 51,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ]
+    },
+    {
+      "country": "JPN",
+      "regions": 47,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ]
+    }
+  ],
+  "input_sha256": {
+    "demographics": "7a115d1eb6a8a581f0d20ab6c0c3a89331f063417827ea622a2409caf31c3dee",
+    "industry": "f64fc8608cf682df6fe66240013e0682ed6d913b07365ecb0c8f3c70a56850d0",
+    "labor_migration": "b04838088252fd137294c4845d57bf5e3852ff792c24c80fb8d41a474eef7067"
+  }
+}

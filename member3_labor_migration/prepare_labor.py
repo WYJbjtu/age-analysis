@@ -1,500 +1,217 @@
-#!/usr/bin/env python3
-"""Member 3 — labour market and migration (Japan, 2019 and 2022).
+"""Rebuild Member 3 from pinned official sources and traceable BLS page snapshots.
 
-Fills the Japanese rows of ``data/processed/labor_migration.csv``:
-
-* employment            — Labour Force Survey, prefectural model estimates,
-                          "第３表 都道府県別就業者", annual average (thousand persons -> persons)
-* unemployment_rate_pct — same release, "第６表 都道府県別完全失業率" (percent)
-* net_migration         — 住民基本台帳人口移動報告, table 1, column U
-                          ("転入超過数", net in-migration, persons)
-
-The 2022 report is published as ``.xlsx``; the 2019 report is only published as
-``.xls``, so it is converted once (LibreOffice or Excel) and the converted
-workbook is cached in ``data/raw/member3/``. United States records already in
-the CSV are left untouched.
-
-Usage
------
-    python member3_labor_migration/prepare_labor.py --download
-    python member3_labor_migration/prepare_labor.py
-
-Raw files go to the git-ignored ``data/raw/member3/`` and are only downloaded
-when missing (``--download``); existing files are reused.
+No existing processed CSV is used as an input. Legacy net_migration is retained
+with explicit definitions; domestic, international and total fields are separate.
+Japanese-only 2011-2017 domestic counts never fill the all-nationality series.
 """
-from __future__ import annotations
-
-import argparse
-import csv
-import json
-import re
-import shutil
-import subprocess
-import urllib.request
 from pathlib import Path
-
+import argparse, csv, json, re, sys
+import numpy as np
+import pandas as pd
 from openpyxl import load_workbook
 
-ROOT = Path(__file__).resolve().parents[1]
-RAW = ROOT / "data" / "raw" / "member3"
-PROCESSED = ROOT / "data" / "processed" / "labor_migration.csv"
-MEMBER_DIR = ROOT / "member3_labor_migration"
-
-YEARS = tuple(range(2011, 2023))
-KEY = ["country", "region_id", "year"]
-COLUMNS = KEY + ["employment", "unemployment_rate_pct", "net_migration"]
-
-UA = {"User-Agent": "Mozilla/5.0 (compatible; DSC5002-member3/1.0)"}
-
-LFS_SOURCE = (
-    "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000031952605&fileKind=0",
-    "estat_lfs_pref_model.xlsx",
-)
-
-# member-uploaded BLS extract (optional: US labour columns stay empty without it)
-BLS_US_FILE = RAW / "bls_us_labor_2022.csv"
-BLS_US_TREND = RAW / "bls_us_labor_2011_2022.csv"
-CENSUS_NETMIG = [RAW / "census_netmig_2011_2020.csv", RAW / "census_netmig_2021_2022.csv"]
-LOOKUP = ROOT / "data" / "reference" / "region_lookup.csv"
+ROOT=Path(__file__).resolve().parents[1]
+MEMBER_DIR=ROOT/'member3_labor_migration'
+RAW=ROOT/'data/raw/member3'
+YEARS=tuple(range(2011,2023))
+KEY=['country','region_id','year']
+sys.path.insert(0,str(MEMBER_DIR))
+sys.path.insert(0,str(ROOT/'src'))
+from aging_economies.source_io import digest
+from bls_sources import load_archives
+from labor_validation import validate_labor_counts,validate_panel
 
 
-def _us_regions() -> set[str]:
-    with LOOKUP.open(newline="", encoding="utf-8-sig") as handle:
-        return {r["region_id"] for r in csv.DictReader(handle) if r["country"] == "USA"}
-
-
-US_REGIONS = _us_regions()
-
-# Prefecture-level migration: 2018-2022 are published as Excel workbooks on
-# stat.go.jp; for 2011-2017 the site only carries national time-series tables, so
-# those years stay empty until the e-Stat tables are supplied.
-MIGRATION_DIR = RAW / "migration"
-MIGRATION_URLS = {
-    2018: "https://www.stat.go.jp/data/idou/2018np/kihon/zuhyou/hyo1.xls",
-    2019: "https://www.stat.go.jp/data/idou/2019np/kihon/zuhyou/hyo1.xls",
-    2020: "https://www.stat.go.jp/data/idou/2020np/jissu/zuhyou/hyo1.xls",
-    2021: "https://www.stat.go.jp/data/idou/2021np/jissu/zuhyou/hyo1.xls",
-    2022: "https://www.stat.go.jp/data/idou/2022np/jissu/zuhyou/hyo1.xlsx",
-}
-MIGRATION_YEARS = tuple(sorted(MIGRATION_URLS))
-# annual-report table 3: one workbook covering 2000-2017 by prefecture
-TREND_URL = "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000031688387&fileKind=0"
-TREND_FILE = MIGRATION_DIR / "trend_2000_2017.xlsx"
-
-
-def download(url: str, path: Path, raw_suffix: str | None = None) -> Path:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    target = path.with_suffix(raw_suffix) if raw_suffix else path
-    req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=120) as response:
-        target.write_bytes(response.read())
-    return target
-
-
-def convert_xls_to_xlsx(xls_path: Path) -> Path:
-    """Convert an official .xls workbook once (LibreOffice), cache the result."""
-    out = xls_path.with_suffix(".xlsx")
-    if out.exists() and out.stat().st_size > 0:
-        return out
-    soffice = shutil.which("soffice") or shutil.which("libreoffice")
-    if not soffice:
-        raise SystemExit(
-            f"{xls_path.name} is an official .xls workbook. Open it once in Excel or "
-            f"LibreOffice and save it as {out.name} in the same folder."
-        )
-    subprocess.run(
-        [soffice, "--headless", "--convert-to", "xlsx", "--outdir", str(xls_path.parent),
-         str(xls_path)],
-        check=True, capture_output=True,
-    )
-    return out
-
-
-def fetch_year(year: int, download_missing: bool) -> Path | None:
-    """Return the cached per-year migration workbook, or None when unavailable."""
-    path = MIGRATION_DIR / f"{year}.xlsx"
-    if path.exists() and path.stat().st_size > 0:
-        return path
-    if year not in MIGRATION_URLS or not download_missing:
-        return None
-    url = MIGRATION_URLS[year]
-    if url.endswith(".xls"):
-        xls = download(url, MIGRATION_DIR / f"{year}.xls", raw_suffix=".xls")
-        return convert_xls_to_xlsx(xls)
-    return download(url, MIGRATION_DIR / f"{year}.xlsx")
-
-
-def sheet_by_title(workbook, keyword: str):
-    for name in workbook.sheetnames:
-        if keyword in name:
-            return workbook[name]
-    raise KeyError(f"worksheet containing {keyword!r} not found; got {workbook.sheetnames}")
-
-
-def year_row(rows: list[tuple], year: int) -> tuple:
-    for row in rows:
-        if len(row) > 1 and str(row[1]).strip() in (str(year), f"{year}.0"):
-            return row
-    raise ValueError(f"year {year} not found in worksheet")
-
-
-def read_labour(lfs_path: Path) -> dict[int, dict[str, dict[str, float]]]:
-    """{year: {region_id: {field: value}}} from the time-series sheets.
-
-    Counts are published in thousand persons and converted to persons here, as
-    the brief asks to keep the raw quantities (not only the rates).
-    """
-    wb = load_workbook(lfs_path, data_only=True, read_only=True)
-    out: dict[int, dict[str, dict[str, float]]] = {y: {} for y in YEARS}
-
-    for keyword, field, scale in (
-        ("第２表", "labor_force", 1000.0),          # 労働力人口
-        ("第３表", "employment", 1000.0),           # 就業者
-        ("第４表", "unemployment", 1000.0),         # 完全失業者
-        ("第６表", "unemployment_rate_pct", 1.0),   # 完全失業率
-    ):
-        ws = sheet_by_title(wb, keyword)
-        rows = list(ws.iter_rows(values_only=True))
-        for year in YEARS:
-            # prefectures are laid out in code order in columns C..AU
-            for code, value in zip(range(1, 48), year_row(rows, year)[2:49]):
-                if isinstance(value, (int, float)):
-                    out[year].setdefault(f"JP-{code:02d}", {})[field] = float(value) * scale
-    wb.close()
-    return out
-
-
-def read_net_migration(migration_path: Path) -> dict[str, int]:
-    wb = load_workbook(migration_path, data_only=True, read_only=True)
-    ws = wb[wb.sheetnames[0]]
-    rows = list(ws.iter_rows(values_only=True))
-
-    # the prefecture block starts with 北海道; its code sits in the previous column
-    name_col = None
-    for row in rows:
-        for idx, cell in enumerate(row):
-            if isinstance(cell, str) and "北海道" in cell:
-                name_col = idx
-                break
-        if name_col is not None:
-            break
-    if name_col is None:
-        raise ValueError("could not locate the prefecture name column")
-
-    result: dict[str, int] = {}
-    for row in rows:
-        if len(row) <= max(name_col, 20):
-            continue
-        code = row[name_col - 1]
-        value = row[20]                     # column U: 転入超過数
-        if isinstance(code, str) and re.fullmatch(r"\d{2}", code.strip()) and isinstance(value, (int, float)):
-            result[f"JP-{int(code.strip()):02d}"] = int(value)
-    wb.close()
+def read_labour(path):
+    """Official annual sheets 2/3/4/6, thousand-person counts converted to persons."""
+    book=load_workbook(path,data_only=True,read_only=True)
+    result={year:{} for year in YEARS}
+    try:
+        for keyword,field,scale in [('第２表','labor_force',1000),('第３表','employment',1000),
+                                    ('第４表','unemployment',1000),('第６表','unemployment_rate_pct',1)]:
+            sheet=book[next(n for n in book.sheetnames if keyword in n)]
+            rows=list(sheet.iter_rows(values_only=True))
+            for year in YEARS:
+                matches=[r for r in rows if len(r)>1 and str(r[1]).strip() in (str(year),f'{year}.0')]
+                if len(matches)!=1:raise ValueError(f'LFS annual year row missing/duplicated: {year}')
+                for code,value in enumerate(matches[0][2:49],1):
+                    if not isinstance(value,(int,float)):raise ValueError('Missing LFS prefectural estimate')
+                    result[year].setdefault(f'JP-{code:02d}',{})[field]=float(value)*scale
+    finally:book.close()
     return result
 
 
-
-def read_annual_trend(path: Path, years: tuple[int, ...]) -> dict[int, dict[str, int]]:
-    """Net migration from the annual-report table 3 (a transposed time series).
-
-    The workbook stacks three blocks over the same years: intra-prefectural
-    movers, in-migrants from other prefectures, and net migration
-    (転入超過数). Only the third block is used. It lets the 2011-2017 years be
-    filled from one official file instead of seven separate releases.
-    """
-    wb = load_workbook(path, data_only=True, read_only=True)
-    ws = wb[wb.sheetnames[0]]
-    rows = [list(r) for r in ws.iter_rows(values_only=True)]
-    wb.close()
-
-    best, best_n = None, -1
-    for idx, row in enumerate(rows[:25]):
-        n = sum(1 for c in row if isinstance(c, (int, float)) and 1990 <= c <= 2030)
-        if n > best_n:
-            best, best_n = idx, n
-    header = rows[best]
-
-    blocks, current, prev = [], {}, None
-    for j, cell in enumerate(header):
-        if isinstance(cell, (int, float)) and 1990 <= cell <= 2030:
-            year = int(cell)
-            if prev is not None and year <= prev:
-                blocks.append(current)
-                current = {}
-            current[year] = j
-            prev = year
-    if current:
-        blocks.append(current)
-    if len(blocks) < 3:
-        raise ValueError(f"{path}: expected three year blocks, found {len(blocks)}")
-    net_block = blocks[2]
-
-    out: dict[int, dict[str, int]] = {}
-    for row in rows:
-        code = None
-        for j in (8, 9):
-            if j < len(row) and isinstance(row[j], str) and row[j].strip().isdigit() \
-                    and len(row[j].strip()) == 2:
-                code = row[j].strip()
-                break
-        if not code:
-            continue
-        for year in years:
-            col = net_block.get(year)
-            if col is None or col >= len(row):
-                continue
-            value = row[col]
-            if isinstance(value, (int, float)):
-                out.setdefault(year, {})[f"JP-{int(code):02d}"] = int(round(value))
-    return out
-
-
-def read_us_labour_trend(path: Path) -> dict[tuple[str, int], tuple[int, float]]:
-    out: dict[tuple[str, int], tuple[int, float]] = {}
-    with path.open(newline="", encoding="utf-8-sig") as handle:
-        for row in csv.DictReader(handle):
-            rid = row["region_id"].strip()
-            if rid not in US_REGIONS:
-                continue
-            out[(rid, int(row["year"]))] = (int(round(float(row["employment"]))),
-                                            float(row["unemployment_rate_pct"]))
-    return out
-
-
-def read_us_netmig(paths: list[Path]) -> dict[tuple[str, int], int]:
-    out: dict[tuple[str, int], int] = {}
-    for path in paths:
-        if not path.exists():
-            continue
-        with path.open(newline="", encoding="utf-8-sig") as handle:
-            for row in csv.DictReader(handle):
-                rid = row["region_id"].strip()
-                value = (row.get("net_migration") or "").strip()
-                if rid in US_REGIONS and value:
-                    out[(rid, int(row["year"]))] = int(round(float(value)))
-    return out
-
-
-def read_bls_us(path: Path) -> dict[str, tuple[int, float]]:
-    """{region_id: (employment persons, unemployment rate pct)} for US 2022.
-
-    The BLS package (member-uploaded) holds annual averages for the 51 US
-    regions; employment is already in persons, the rate in 0-100.
-    """
-    out: dict[str, tuple[int, float]] = {}
-    with path.open(newline="", encoding="utf-8-sig") as handle:
-        for row in csv.DictReader(handle):
-            rid = (row.get("region_id") or "").strip()
-            if not rid or rid not in US_REGIONS:
-                continue
-            employment = row.get("employment", "").strip()
-            rate = row.get("unemployment_rate_pct", "").strip()
-            if employment and rate:
-                out[rid] = (int(round(float(employment))), float(rate))
-    return out
-
-
-def read_processed(path: Path) -> list[dict[str, str]]:
-    with path.open(newline="", encoding="utf-8-sig") as handle:
-        reader = csv.DictReader(handle)
-        rows = list(reader)
-        header = reader.fieldnames or []
-    if header != COLUMNS:
-        raise SystemExit(f"unexpected header in {path}: {header}")
+def prefecture_rows(frame):
+    rows=frame.loc[frame[8].map(lambda v:isinstance(v,str) and bool(re.fullmatch(r'\d{2}',v.strip())))]
+    rows=rows.loc[rows[8].astype(int).between(1,47)]
+    if len(rows)!=47 or rows[8].nunique()!=47:raise ValueError('Expected all 47 prefectures')
     return rows
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--download", action="store_true", help="download missing official files")
-    args = parser.parse_args()
+def read_net_migration(path):
+    frame=pd.read_excel(path,header=None)
+    if 'All nationalities' not in str(frame.iloc[:18].values):raise ValueError('Expected all-nationality migration header')
+    rows=prefecture_rows(frame);result={}
+    for _,r in rows.iterrows():
+        net,inward,outward=int(r[20]),int(r[14]),int(r[17])
+        if net!=inward-outward:raise ValueError('Japanese migration inflow/outflow identity failed')
+        result[f'JP-{int(r[8]):02d}']=net
+    if sum(result.values())!=0:raise ValueError('Inter-prefectural net migration must sum to zero')
+    return result
 
-    lfs_path = RAW / LFS_SOURCE[1]
-    if not (lfs_path.exists() and lfs_path.stat().st_size > 0):
-        if not args.download:
-            raise SystemExit(f"missing raw file {lfs_path}; rerun with --download")
-        download(LFS_SOURCE[0], lfs_path)
 
-    labour = read_labour(lfs_path)
-    migrations = {}
+def read_annual_trend(path,years=tuple(range(2011,2018))):
+    frame=pd.read_excel(path,header=None)
+    if 'Japanese' not in str(frame.iloc[6].values):raise ValueError('Expected Japanese-only header')
+    rows=prefecture_rows(frame);result={}
+    for year in years:
+        cols=[i for i,v in frame.iloc[13].items() if v==year]
+        if len(cols)!=3:raise ValueError('Three year blocks required in historical migration source')
+        result[year]={f'JP-{int(r[8]):02d}':int(r[cols[2]]) for _,r in rows.iterrows()}
+        if sum(result[year].values())!=0:raise ValueError('Japanese-only domestic totals must sum to zero')
+    return result
+
+
+def read_census_migration(path,years,lookup):
+    names=lookup.loc[lookup.country=='USA'].set_index('region_name').region_id.to_dict()
+    frame=pd.read_csv(path,encoding='utf-8-sig')
+    frame=frame.loc[(frame.SUMLEV==40)&frame.NAME.isin(names)]
+    if len(frame)!=51 or frame.NAME.nunique()!=51:raise ValueError('Census must include 50 states and DC')
+    rows=[]
+    for _,r in frame.iterrows():
+        for year in years:
+            domestic,international,total=[int(r[f'{field}{year}']) for field in ['DOMESTICMIG','INTERNATIONALMIG','NETMIG']]
+            if domestic+international!=total:raise ValueError('Census migration components do not reconcile')
+            rows.append(dict(country='USA',region_id=names[r.NAME],year=year,
+                net_migration=total,domestic_net_migration=domestic,
+                international_net_migration=international,total_net_migration=total,
+                japanese_only_domestic_net_migration=np.nan,migration_population='all residents',
+                migration_period_type='July-to-July',migration_start_date=f'{year-1}-07-01',
+                migration_end_date=f'{year}-07-01',migration_source_file=path.name,
+                migration_original_definition='total domestic plus international',
+                migration_source_version='Census Vintage 2020' if year<=2020 else 'Census Vintage 2022'))
+    return pd.DataFrame(rows)
+
+
+def verify_raw(raw):
+    records=json.loads((ROOT/'docs/remediation/acquisition.json').read_text(encoding='utf-8'))
+    verified=[]
+    for r in records:
+        if r['owner']!='member3' or r['file'].startswith('bls_'):continue
+        path=raw/r['file']
+        if r['status']=='unavailable' or not path.exists():raise FileNotFoundError(f'Official source unavailable: {r["file"]}')
+        if digest(path)!=r['sha256']:raise ValueError(f'Pinned source changed: {r["file"]}')
+        verified.append(r)
+    if len(verified)!=9:raise ValueError('Nine Japan/Census files required')
+    return verified
+
+
+def build(raw=RAW,output_root=ROOT):
+    destination=Path(output_root).resolve()
+    if destination!=ROOT and not destination.is_relative_to(ROOT/'data/cache'):
+        raise ValueError('Output root must be the project root or an isolated data/cache directory')
+    raw=Path(raw)
+    source_records=verify_raw(raw)
+    lookup=pd.read_csv(ROOT/'data/reference/region_lookup.csv')
+    us_labor,prior,bls_evidence=load_archives(raw,MEMBER_DIR/'source_snapshots',lookup)
+    japanese=read_labour(raw/'jpn_lfs.xlsx')
+    jp_labor=pd.DataFrame([dict(country='JPN',region_id=rid,year=year,**values)
+                          for year,regions in japanese.items() for rid,values in regions.items()])
+    early=read_annual_trend(raw/'jpn_migration_trend.xls')
+    jp_migration=[]
     for year in YEARS:
-        path = fetch_year(year, args.download)
-        if path is not None:
-            migrations[year] = read_net_migration(path)
-
-    # one official file (annual-report table 3) covers the earlier years
-    trend_path = TREND_FILE
-    if not trend_path.exists() and args.download:
-        xls = download(TREND_URL, MIGRATION_DIR / "trend_2000_2017.xls", raw_suffix=".xls")
-        try:
-            convert_xls_to_xlsx(xls)
-        except SystemExit:
-            pass
-    if trend_path.exists():
-        for year, values in read_annual_trend(trend_path, YEARS).items():
-            migrations.setdefault(year, {}).update(values)
-
-    for year in YEARS:
-        if len(labour[year]) != 47:
-            raise SystemExit(f"{year}: expected 47 prefectures, collected {len(labour[year])}")
-        if year in migrations and len(migrations[year]) != 47:
-            raise SystemExit(f"{year}: expected 47 migration rows, collected {len(migrations[year])}")
-
-    rows = read_processed(PROCESSED)
-    kept = [r for r in rows if not (r["country"] == "JPN" and int(r["year"]) in YEARS)]
-
-    new_rows = []
-    for year in YEARS:
-        for code in sorted(labour[year]):
-            employment = labour[year][code].get("employment")
-            rate = labour[year][code].get("unemployment_rate_pct")
-            net = migrations.get(year, {}).get(code)
-            if employment is None or rate is None:
-                continue
-            new_rows.append({
-                "country": "JPN",
-                "region_id": code,
-                "year": str(year),
-                "employment": str(int(round(employment))),
-                "unemployment_rate_pct": f"{rate:.1f}",
-                "net_migration": "" if net is None else str(net),
-            })
-
-    kept.extend(new_rows)
-
-    # ---------- US detail table: keep the raw quantities as well ----------
-    if BLS_US_FILE.exists():
-        bls_detail = []
-        with BLS_US_FILE.open(newline="", encoding="utf-8-sig") as handle:
-            for row in csv.DictReader(handle):
-                rid = (row.get("region_id") or "").strip()
-                if rid not in US_REGIONS:
-                    continue
-                bls_detail.append({
-                    "region_id": rid,
-                    "year": int(row.get("year") or 2022),
-                    "labor_force": int(round(float(row["labor_force"]))),
-                    "employment": int(round(float(row["employment"]))),
-                    "unemployment": int(round(float(row["unemployment"]))),
-                    "unemployment_rate_pct": f"{float(row['unemployment_rate_pct']):.1f}",
-                    "employment_population_ratio_pct":
-                        f"{float(row['employment_population_ratio_pct']):.1f}",
-                })
-        bls_detail.sort(key=lambda r: r["region_id"])
-        with (MEMBER_DIR / "us_labor_detail.csv").open("w", newline="", encoding="utf-8") as handle:
-            writer = csv.DictWriter(handle, fieldnames=list(bls_detail[0].keys()))
-            writer.writeheader()
-            writer.writerows(bls_detail)
-
-    # ---------- United States: rebuild the 2011-2022 panel ----------
-    us_filled = 0
-    if BLS_US_TREND.exists():
-        us_lab = read_us_labour_trend(BLS_US_TREND)
-        us_net = read_us_netmig(CENSUS_NETMIG)
-        kept = [r for r in kept if not (r["country"] == "USA" and int(r["year"]) in YEARS)]
-        for (rid, year), (employment, rate) in sorted(us_lab.items()):
-            if year not in YEARS:
-                continue
-            kept.append({
-                "country": "USA",
-                "region_id": rid,
-                "year": str(year),
-                "employment": str(employment),
-                "unemployment_rate_pct": f"{rate:.1f}",
-                "net_migration": str(us_net.get((rid, year), "")),
-            })
-            us_filled += 1
-    elif BLS_US_FILE.exists():
-        bls = read_bls_us(BLS_US_FILE)
-        for row in kept:
-            if row["country"] != "USA" or int(row["year"]) != 2022:
-                continue
-            if row["region_id"] in bls:
-                employment, rate = bls[row["region_id"]]
-                row["employment"] = str(employment)
-                row["unemployment_rate_pct"] = f"{rate:.1f}"
-                us_filled += 1
-
-    with PROCESSED.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=COLUMNS)
-        writer.writeheader()
-        writer.writerows(kept)
-
-    # detail table: the raw quantities the brief asks us to keep (not only rates);
-    # it stays in the member folder so the shared contract table keeps its 6 columns
-    detail_rows = []
-    gap = 0.0
-    for year in YEARS:
-        for code in sorted(labour[year]):
-            rec = labour[year][code]
-            if "labor_force" not in rec or "employment" not in rec:
-                continue
-            gap = max(gap, abs(rec["labor_force"] - rec["employment"] - rec.get("unemployment", 0.0)))
-            detail_rows.append({
-                "region_id": code,
-                "year": year,
-                "labor_force": int(round(rec["labor_force"])),
-                "employment": int(round(rec["employment"])),
-                "unemployment": int(round(rec.get("unemployment", 0.0))),
-                "unemployment_rate_pct": f"{rec.get('unemployment_rate_pct', float('nan')):.1f}",
-            })
-    MEMBER_DIR.mkdir(parents=True, exist_ok=True)
-    detail_path = MEMBER_DIR / "jpn_labor_detail.csv"
-    with detail_path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=["region_id", "year", "labor_force",
-                                                    "employment", "unemployment",
-                                                    "unemployment_rate_pct"])
-        writer.writeheader()
-        writer.writerows(detail_rows)
-
-    us = sum(1 for r in kept if r["country"] == "USA")
-    jp = [r for r in kept if r["country"] == "JPN"]
-    summary = {
-        "years": list(YEARS),
-        "rows": len(kept),
-        "usa_rows": us,
-        "jpn_rows": len(jp),
-        "jpn_rows_by_year": {str(y): sum(1 for r in jp if int(r["year"]) == y) for y in YEARS},
-        "jpn_detail_rows": len(detail_rows),
-        "jpn_detail_max_rounding_gap_persons": int(round(gap)),
-        "jpn_migration_years": sorted(migrations),
-        "jpn_migration_missing_years": [y for y in YEARS if y not in migrations],
-        "us_rows_filled": us_filled,
-        "us_labour_pending": not BLS_US_FILE.exists(),
-        "bls_file": (Path("data/raw/member3") / BLS_US_FILE.name).as_posix()
-        if BLS_US_FILE.exists() else None,
-        "sources": {
-            "lfs_pref": {
-                "url": LFS_SOURCE[0],
-                "file": (Path("data/raw/member3") / LFS_SOURCE[1]).as_posix(),
-                "note": "one release used for all years (prefectural model estimates)",
-            },
-            **{
-                f"migration_{year}": {
-                    "url": MIGRATION_URLS.get(year, TREND_URL),
-                    "file": (
-                        (Path("data/raw/member3/migration") / f"{year}.xlsx").as_posix()
-                        if year in MIGRATION_URLS
-                        else "data/raw/member3/migration/trend_2000_2017.xlsx"
-                    ),
-                }
-                for year in sorted(migrations)
-            },
-        },
-    }
-    MEMBER_DIR.mkdir(parents=True, exist_ok=True)
-    (MEMBER_DIR / "summary.json").write_text(
-        json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-
-    print(f"wrote {PROCESSED}: {len(kept)} rows (USA={us}, JPN={len(jp)})")
-    print("JPN rows by year:", summary["jpn_rows_by_year"])
-    if us_filled:
-        print(f"US employment/unemployment_rate filled for {us_filled} regions from BLS 2022 annual averages")
-    else:
-        print("US employment/unemployment remain empty (BLS extract not present)")
+        suffix='xlsx' if year==2022 else 'xls'
+        all_residents=year>=2018
+        values=read_net_migration(raw/f'jpn_migration_{year}.{suffix}') if all_residents else early[year]
+        for rid,value in values.items():
+            jp_migration.append(dict(country='JPN',region_id=rid,year=year,net_migration=value,
+                domestic_net_migration=value if all_residents else np.nan,
+                international_net_migration=np.nan,total_net_migration=np.nan,
+                japanese_only_domestic_net_migration=np.nan if all_residents else value,
+                migration_population='all nationalities' if all_residents else 'Japanese nationals only',
+                migration_period_type='calendar year',migration_start_date=f'{year}-01-01',
+                migration_end_date=f'{year}-12-31',migration_source_file=f'jpn_migration_{year}.{suffix}' if all_residents else 'jpn_migration_trend.xls',
+                migration_original_definition='inter-prefectural domestic; '+('all nationalities' if all_residents else 'Japanese nationals only'),
+                migration_source_version=f'Basic Resident Registration annual {year}' if all_residents else 'Basic Resident Registration 2017 trend table 3'))
+    us_migration=pd.concat([read_census_migration(raw/'us_migration_2020.csv',range(2011,2021),lookup),
+                            read_census_migration(raw/'us_migration_2022.csv',[2021,2022],lookup)],ignore_index=True)
+    labor=pd.concat([us_labor,jp_labor],ignore_index=True)
+    migration=pd.concat([us_migration,pd.DataFrame(jp_migration)],ignore_index=True)
+    frame=labor.merge(migration,on=KEY,validate='one_to_one')
+    frame['labor_population']=np.where(frame.country=='USA','civilian noninstitutional ages 16+','LFS ages 15+')
+    frame['labor_period']='calendar-year annual average; annual non-seasonally-adjusted series'
+    frame['labor_source']=np.where(frame.country=='USA',frame.source_release,'Japan LFS tables 2/3/4/6; pinned retrieved workbook')
+    frame['labor_reproduction_status']=np.where(frame.country=='USA','reproduced from traceable official-page text snapshots','reproduced from pinned official workbook')
+    frame['labor_count_precision_persons']=1000
+    frame['labor_estimation_note']=np.where(frame.country=='USA','LAUS residence-based persons; annual releases contain revisions',
+        'LFS prefectural model/ratio estimates; 2011 disaster and 2016 Kumamoto notes; benchmark revisions')
+    frame=frame.drop(columns=['source_release','civilian_population_16plus','employment_population_ratio_pct']).sort_values(KEY).reset_index(drop=True)
+    first=KEY+['employment','unemployment_rate_pct','net_migration']
+    frame=frame[first+[c for c in frame if c not in first]]
+    validate_panel(frame,lookup)
+    rounding=[]
+    for country,d in [('USA',us_labor),('JPN',jp_labor)]:
+        rounding.append(validate_labor_counts(d).assign(country=country))
+    # Check against the independent Member 4 adapter, without using it to create values.
+    reference=pd.read_csv(ROOT/'analysis/member4/audit/verified_domestic_migration.csv')
+    comparison=reference.merge(frame[KEY+['domestic_net_migration']],on=KEY,validate='one_to_one',
+                               suffixes=('_member4','_rebuilt'))
+    comparison['difference']=comparison.domestic_net_migration_rebuilt-comparison.domestic_net_migration_member4
+    if len(comparison)!=196 or not comparison.difference.eq(0).all():raise ValueError('Independent domestic migration comparison failed')
+    out=destination/'member3_labor_migration';out.mkdir(parents=True,exist_ok=True)
+    processed=destination/'data/processed';processed.mkdir(parents=True,exist_ok=True)
+    frame.to_csv(processed/'labor_migration.csv',index=False,float_format='%.10f')
+    detail=['region_id','year','labor_force','employment','unemployment','unemployment_rate_pct']
+    jp_labor[detail].sort_values(['region_id','year']).to_csv(out/'jpn_labor_detail.csv',index=False,float_format='%.10f')
+    us_labor.sort_values(['region_id','year']).to_csv(out/'us_labor_detail.csv',index=False,float_format='%.10f')
+    pd.concat(rounding,ignore_index=True).to_csv(out/'rounding_validation.csv',index=False,float_format='%.10f')
+    comparison.to_csv(out/'domestic_migration_comparison.csv',index=False,float_format='%.10f')
+    coverage=[]
+    for (country,year),group in frame.groupby(['country','year']):
+        for indicator in ['employment','unemployment_rate_pct','net_migration','domestic_net_migration',
+                          'international_net_migration','total_net_migration','japanese_only_domestic_net_migration']:
+            coverage.append(dict(country=country,year=int(year),indicator=indicator,rows=len(group),
+                                 valid=int(group[indicator].notna().sum()),missing=int(group[indicator].isna().sum())))
+    pd.DataFrame(coverage).to_csv(out/'coverage.csv',index=False)
+    header=['owner','dataset','source_organization','source_title','source_url','original_table','coverage','reference_period','download_date','notes']
+    sources=[]
+    for r in source_records:
+        japan=r['file'].startswith('jpn')
+        sources.append(dict(zip(header,['member3_labor_migration','labor_migration',
+            'Statistics Bureau of Japan / e-Stat' if japan else 'U.S. Census Bureau',r['file'],r['url'],
+            'LFS 2/3/4/6' if 'lfs' in r['file'] else ('Table 3: Japanese nationals only' if 'trend' in r['file'] else ('Table 1: all nationalities' if japan else 'DOMESTICMIG, INTERNATIONALMIG, NETMIG annual fields')),
+            '47 prefectures' if japan else '50 states plus DC',
+            'calendar years; see row-level dates' if japan else 'July-to-July; Vintage2020 through 2020 and Vintage2022 for 2021-22',
+            '2026-11-09','SHA-256 '+r['sha256']+'; canonical row metadata records scope and period; raw cache '+r['file']])))
+    for r in bls_evidence:
+        r['path']=Path(r['path']).relative_to(ROOT).as_posix()
+        sources.append(dict(zip(header,['member3_labor_migration','labor_employment_usa','U.S. Bureau of Labor Statistics',
+            'LAUS annual averages '+str(r['year']),r['url'],'Table 1; current-year annual column','50 states plus DC',
+            f'CY{r["year"]} annual average','2026-11-09','Counts in thousands multiplied by 1000; '+r['input_type']+'; SHA-256 '+r['sha256']])))
+    with (out/'sources.csv').open('w',newline='',encoding='utf-8') as stream:
+        writer=csv.DictWriter(stream,fieldnames=header);writer.writeheader();writer.writerows(sources)
+    summary=dict(rows=len(frame),years=list(YEARS),regions={'USA':51,'JPN':47},unique_keys=True,
+        domestic_migration_main_year_comparisons=196,domestic_comparison_max_difference=0,
+        historical_all_nationality_Japan='BLOCKED before 2018; separate Japanese-only field retained',
+        us_labor='All 612 source rows independently read from official archive text; cached parsing reproducible; direct HTML HTTP403',
+        labor_rounding_checks=len(labor),labor_rounding_failures=0,
+        source_files=source_records,bls_evidence=bls_evidence)
+    (out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n',encoding='utf-8')
+    print(f'Rebuilt {len(frame)} rows from official inputs; 196 independent domestic comparisons passed.')
+    print('Japan all-nationality domestic migration: 2018-2022 only; 2011-2017 remains a separate series.')
+    return frame
 
 
-if __name__ == "__main__":
-    main()
+if __name__=='__main__':
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--download',action='store_true')
+    parser.add_argument('--raw-dir',type=Path,default=RAW)
+    parser.add_argument('--output-root',type=Path,default=ROOT)
+    args=parser.parse_args()
+    if args.download:
+        sys.path.insert(0,str(ROOT/'scripts'))
+        from fetch_remediation_sources import main as fetch
+        fetch('member3')
+    build(args.raw_dir,args.output_root)
 
 

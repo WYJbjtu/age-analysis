@@ -11,9 +11,13 @@ dependencies = ["pandas>=2.1,<3", "numpy>=1.24,<3", "matplotlib>=3.8,<4"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8,<10"]
+sources = ["openpyxl>=3.1,<4", "xlrd>=2,<3", "pyshp>=2.3,<4", "pyproj>=3.6,<4"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.pytest.ini_options]
-testpaths = ["tests"]
+testpaths = ["tests", "member2_industry"]
+filterwarnings = [
+    'error::EncodingWarning:^(test_.*|bls_sources|prepare_industry|plot_industry|remediation_state|build_portable_integrity|verify_remediation|finalize_remediation|fetch_remediation_sources|download_sources|freeze_inputs|verify_sources|build_reports|run_analysis|verify_delivery|aging_economies(\..*)?)$',
+]

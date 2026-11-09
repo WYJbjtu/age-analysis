@@ -1,8 +1,12 @@
 """Merge 2022/all-year region panels, report coverage and missingness; never impute."""
 from pathlib import Path
+import sys
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/'src'))
+from aging_economies.comparability import annotate_periods
+from aging_economies.contracts import read_lookup,validate_table
 DATA = ROOT / 'data/processed'
 KEY = ['country','region_id','year']
 
@@ -16,6 +20,9 @@ def read(name):
 
 
 def main():
+    lookup=read_lookup(ROOT/'data/reference/region_lookup.csv')
+    for module in ('demographics','industry','labor_migration'):
+        validate_table(DATA/f'{module}.csv',module,lookup)
     dem, ind, labor = read('demographics'), read('industry'), read('labor_migration')
     if dem is None or ind is None:
         raise SystemExit('Cannot merge yet: Member1 demographics and Member2 industry must both have actual records.')
@@ -26,7 +33,8 @@ def main():
         merged = merged.merge(labor, on=KEY, how='left', validate='one_to_one', indicator='labor_match')
     else:
         print('Labor/migration not yet provided; skipping optional join.')
-    merged.sort_values(KEY).to_csv(DATA / 'merged_analysis.csv', index=False)
+    merged=annotate_periods(merged)
+    merged.sort_values(KEY).to_csv(DATA / 'merged_analysis.csv', index=False,float_format='%.10f')
     both = merged.loc[merged['population_industry_match'] == 'both']
     print('Combined panel:', len(merged), 'rows; rows matched in both required sources:', len(both))
     print('Matched 2022 counts by country:', both.loc[both.year == 2022].groupby('country').size().to_dict())

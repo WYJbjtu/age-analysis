@@ -12,7 +12,8 @@ REQUIRED = {
 }
 PERCENT_COLUMNS = {'age65_share_pct', 'working_age_share_pct', 'manufacturing_share_pct', 'services_share_pct', 'unemployment_rate_pct'}
 NONNEGATIVE_COLUMNS = {'total_population', 'nominal_gdp_local', 'manufacturing_va_local', 'services_va_local', 'employment', 'old_age_dependency_ratio'}
-NUMERIC_COLUMNS = PERCENT_COLUMNS | NONNEGATIVE_COLUMNS | {'net_migration'}
+NUMERIC_COLUMNS = PERCENT_COLUMNS | NONNEGATIVE_COLUMNS | {'net_migration','domestic_net_migration',
+    'international_net_migration','total_net_migration','japanese_only_domestic_net_migration','labor_force','unemployment'}
 
 
 def read_lookup(path: Path) -> dict[str, str]:

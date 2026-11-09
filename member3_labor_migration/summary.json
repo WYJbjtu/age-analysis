@@ -1,4 +1,5 @@
 {
+  "rows": 1176,
   "years": [
     2011,
     2012,
@@ -13,96 +14,256 @@
     2021,
     2022
   ],
-  "rows": 1176,
-  "usa_rows": 612,
-  "jpn_rows": 564,
-  "jpn_rows_by_year": {
-    "2011": 47,
-    "2012": 47,
-    "2013": 47,
-    "2014": 47,
-    "2015": 47,
-    "2016": 47,
-    "2017": 47,
-    "2018": 47,
-    "2019": 47,
-    "2020": 47,
-    "2021": 47,
-    "2022": 47
+  "regions": {
+    "USA": 51,
+    "JPN": 47
   },
-  "jpn_detail_rows": 564,
-  "jpn_detail_max_rounding_gap_persons": 1000,
-  "jpn_migration_years": [
-    2011,
-    2012,
-    2013,
-    2014,
-    2015,
-    2016,
-    2017,
-    2018,
-    2019,
-    2020,
-    2021,
-    2022
-  ],
-  "jpn_migration_missing_years": [],
-  "us_rows_filled": 612,
-  "us_labour_pending": false,
-  "bls_file": "data/raw/member3/bls_us_labor_2022.csv",
-  "sources": {
-    "lfs_pref": {
+  "unique_keys": true,
+  "domestic_migration_main_year_comparisons": 196,
+  "domestic_comparison_max_difference": 0,
+  "historical_all_nationality_Japan": "BLOCKED before 2018; separate Japanese-only field retained",
+  "us_labor": "All 612 source rows independently read from official archive text; cached parsing reproducible; direct HTML HTTP403",
+  "labor_rounding_checks": 1176,
+  "labor_rounding_failures": 0,
+  "source_files": [
+    {
+      "file": "jpn_lfs.xlsx",
       "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000031952605&fileKind=0",
-      "file": "data/raw/member3/estat_lfs_pref_model.xlsx",
-      "note": "one release used for all years (prefectural model estimates)"
+      "sha256": "ad94669f030e22338d43e5772858ae7bf62ef644fc8f8c21d59ef27edba91bf4",
+      "owner": "member3",
+      "original_cache": "data/raw/member4/jpn_lfs.xlsx",
+      "cache_origin": "data/raw/member4/jpn_lfs.xlsx",
+      "original_acquisition_manifest": "analysis/member4/audit/download_manifest.json",
+      "path": "data/raw/member3/jpn_lfs.xlsx",
+      "bytes": 95119,
+      "status": "cached",
+      "online_reverified": false
     },
-    "migration_2011": {
-      "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000031688387&fileKind=0",
-      "file": "data/raw/member3/migration/trend_2000_2017.xlsx"
-    },
-    "migration_2012": {
-      "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000031688387&fileKind=0",
-      "file": "data/raw/member3/migration/trend_2000_2017.xlsx"
-    },
-    "migration_2013": {
-      "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000031688387&fileKind=0",
-      "file": "data/raw/member3/migration/trend_2000_2017.xlsx"
-    },
-    "migration_2014": {
-      "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000031688387&fileKind=0",
-      "file": "data/raw/member3/migration/trend_2000_2017.xlsx"
-    },
-    "migration_2015": {
-      "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000031688387&fileKind=0",
-      "file": "data/raw/member3/migration/trend_2000_2017.xlsx"
-    },
-    "migration_2016": {
-      "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000031688387&fileKind=0",
-      "file": "data/raw/member3/migration/trend_2000_2017.xlsx"
-    },
-    "migration_2017": {
-      "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000031688387&fileKind=0",
-      "file": "data/raw/member3/migration/trend_2000_2017.xlsx"
-    },
-    "migration_2018": {
-      "url": "https://www.stat.go.jp/data/idou/2018np/kihon/zuhyou/hyo1.xls",
-      "file": "data/raw/member3/migration/2018.xlsx"
-    },
-    "migration_2019": {
-      "url": "https://www.stat.go.jp/data/idou/2019np/kihon/zuhyou/hyo1.xls",
-      "file": "data/raw/member3/migration/2019.xlsx"
-    },
-    "migration_2020": {
-      "url": "https://www.stat.go.jp/data/idou/2020np/jissu/zuhyou/hyo1.xls",
-      "file": "data/raw/member3/migration/2020.xlsx"
-    },
-    "migration_2021": {
-      "url": "https://www.stat.go.jp/data/idou/2021np/jissu/zuhyou/hyo1.xls",
-      "file": "data/raw/member3/migration/2021.xlsx"
-    },
-    "migration_2022": {
+    {
+      "file": "jpn_migration_2022.xlsx",
       "url": "https://www.stat.go.jp/data/idou/2022np/jissu/zuhyou/hyo1.xlsx",
-      "file": "data/raw/member3/migration/2022.xlsx"
+      "sha256": "ed12e58b54e1b35db72dfc49dd6b63b6e5bfd2fa461efba1284c913bcdc59ba0",
+      "owner": "member3",
+      "original_cache": "data/raw/member4/jpn_migration_2022.xlsx",
+      "cache_origin": "data/raw/member4/jpn_migration_2022.xlsx",
+      "original_acquisition_manifest": "analysis/member4/audit/download_manifest.json",
+      "path": "data/raw/member3/jpn_migration_2022.xlsx",
+      "bytes": 57767,
+      "status": "cached",
+      "online_reverified": false
+    },
+    {
+      "file": "jpn_migration_2019.xls",
+      "url": "https://www.stat.go.jp/data/idou/2019np/kihon/zuhyou/hyo1.xls",
+      "sha256": "c672ad08db7d348758973dfa182a048472f013e26087909d1b2de8db21a1cc98",
+      "owner": "member3",
+      "original_cache": "data/raw/member4/jpn_migration_2019.xls",
+      "cache_origin": "data/raw/member4/jpn_migration_2019.xls",
+      "original_acquisition_manifest": "analysis/member4/audit/download_manifest.json",
+      "path": "data/raw/member3/jpn_migration_2019.xls",
+      "bytes": 68608,
+      "status": "cached",
+      "online_reverified": false
+    },
+    {
+      "file": "jpn_migration_trend.xls",
+      "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000031688387&fileKind=0",
+      "sha256": "9f4abcfcbe38f111d01340c18248562d590539657090900f454ad27af76097e3",
+      "owner": "member3",
+      "original_cache": "data/raw/member4/jpn_migration_trend.xls",
+      "cache_origin": "data/raw/member4/jpn_migration_trend.xls",
+      "original_acquisition_manifest": "analysis/member4/audit/download_manifest.json",
+      "path": "data/raw/member3/jpn_migration_trend.xls",
+      "bytes": 100864,
+      "status": "cached",
+      "online_reverified": false
+    },
+    {
+      "file": "us_migration_2022.csv",
+      "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2022/state/totals/NST-EST2022-ALLDATA.csv",
+      "sha256": "09d258607dd842d48ae05680cfeada6cd4ee1dbc71d0c328621f4105362d2f54",
+      "owner": "member3",
+      "original_cache": "data/raw/member4/us_migration_2022.csv",
+      "cache_origin": "data/raw/member4/us_migration_2022.csv",
+      "original_acquisition_manifest": "analysis/member4/audit/download_manifest.json",
+      "path": "data/raw/member3/us_migration_2022.csv",
+      "bytes": 23556,
+      "status": "cached",
+      "online_reverified": false
+    },
+    {
+      "file": "us_migration_2020.csv",
+      "url": "https://www2.census.gov/programs-surveys/popest/datasets/2010-2020/state/totals/nst-est2020-alldata.csv",
+      "sha256": "6e1289c0041f42b4238dd4e4fe7975b25816a7a40de9a5b70581821e6659c75c",
+      "owner": "member3",
+      "original_cache": "data/raw/member4/us_migration_2020.csv",
+      "cache_origin": "data/raw/member4/us_migration_2020.csv",
+      "original_acquisition_manifest": "analysis/member4/audit/download_manifest.json",
+      "path": "data/raw/member3/us_migration_2020.csv",
+      "bytes": 81740,
+      "status": "cached",
+      "online_reverified": false
+    },
+    {
+      "file": "jpn_migration_2018.xls",
+      "owner": "member3",
+      "url": "https://www.stat.go.jp/data/idou/2018np/kihon/zuhyou/hyo1.xls",
+      "previous_attempts": [
+        {
+          "file": "jpn_migration_2018.xls",
+          "owner": "member3",
+          "url": "https://www.stat.go.jp/data/idou/2018np/kihon/zuhyou/hyo1.xls",
+          "status": "unavailable",
+          "error": "URLError: <urlopen error [WinError 10013] \u4ee5\u4e00\u79cd\u8bbf\u95ee\u6743\u9650\u4e0d\u5141\u8bb8\u7684\u65b9\u5f0f\u505a\u4e86\u4e00\u4e2a\u8bbf\u95ee\u5957\u63a5\u5b57\u7684\u5c1d\u8bd5\u3002>",
+          "online_reverified": false
+        }
+      ],
+      "path": "data/raw/member3/jpn_migration_2018.xls",
+      "sha256": "bc70ac6659694d6a36a456114883197bc09b31a1e0cd16a3783e5dfa09985207",
+      "bytes": 69120,
+      "status": "retrieved",
+      "online_reverified": true,
+      "retrieved_utc": "2026-11-09T09:14:40.610594+00:00"
+    },
+    {
+      "file": "jpn_migration_2020.xls",
+      "owner": "member3",
+      "url": "https://www.stat.go.jp/data/idou/2020np/jissu/zuhyou/hyo1.xls",
+      "previous_attempts": [
+        {
+          "file": "jpn_migration_2020.xls",
+          "owner": "member3",
+          "url": "https://www.stat.go.jp/data/idou/2020np/jissu/zuhyou/hyo1.xls",
+          "status": "unavailable",
+          "error": "URLError: <urlopen error [WinError 10013] \u4ee5\u4e00\u79cd\u8bbf\u95ee\u6743\u9650\u4e0d\u5141\u8bb8\u7684\u65b9\u5f0f\u505a\u4e86\u4e00\u4e2a\u8bbf\u95ee\u5957\u63a5\u5b57\u7684\u5c1d\u8bd5\u3002>",
+          "online_reverified": false
+        }
+      ],
+      "path": "data/raw/member3/jpn_migration_2020.xls",
+      "sha256": "02b9ce261acec145b7c1e44ccdc0ac5800ba85b22091bff13571f423fdb8a8ff",
+      "bytes": 93184,
+      "status": "retrieved",
+      "online_reverified": true,
+      "retrieved_utc": "2026-11-09T09:14:38.270988+00:00"
+    },
+    {
+      "file": "jpn_migration_2021.xls",
+      "owner": "member3",
+      "url": "https://www.stat.go.jp/data/idou/2021np/jissu/zuhyou/hyo1.xls",
+      "previous_attempts": [
+        {
+          "file": "jpn_migration_2021.xls",
+          "owner": "member3",
+          "url": "https://www.stat.go.jp/data/idou/2021np/jissu/zuhyou/hyo1.xls",
+          "status": "unavailable",
+          "error": "URLError: <urlopen error [WinError 10013] \u4ee5\u4e00\u79cd\u8bbf\u95ee\u6743\u9650\u4e0d\u5141\u8bb8\u7684\u65b9\u5f0f\u505a\u4e86\u4e00\u4e2a\u8bbf\u95ee\u5957\u63a5\u5b57\u7684\u5c1d\u8bd5\u3002>",
+          "online_reverified": false
+        }
+      ],
+      "path": "data/raw/member3/jpn_migration_2021.xls",
+      "sha256": "6efca3be9112f4cf0635623a045f39eae0f9711b5de44fe7d969662395884c3c",
+      "bytes": 87552,
+      "status": "retrieved",
+      "online_reverified": true,
+      "retrieved_utc": "2026-11-09T09:14:39.259573+00:00"
     }
-  }
+  ],
+  "bls_evidence": [
+    {
+      "year": 2011,
+      "path": "member3_labor_migration/source_snapshots/bls_2011_web.txt",
+      "sha256": "01081e48aefd58b170ec00a8b30324e756816f8fde98ffb18a2fc0eb894cbc27",
+      "url": "https://www.bls.gov/news.release/archives/srgune_02292012.htm",
+      "input_type": "official-page text captured by web reader",
+      "scope": "all 51 states/DC; published current and prior annual columns"
+    },
+    {
+      "year": 2012,
+      "path": "member3_labor_migration/source_snapshots/bls_2012_web.txt",
+      "sha256": "597e83c1dd0dc491d75d4e69649600b9dcbe572682f7a19e0c34e7992ac217ea",
+      "url": "https://www.bls.gov/news.release/archives/srgune_03012013.htm",
+      "input_type": "official-page text captured by web reader",
+      "scope": "all 51 states/DC; published current and prior annual columns"
+    },
+    {
+      "year": 2013,
+      "path": "member3_labor_migration/source_snapshots/bls_2013_web.txt",
+      "sha256": "10077daa71be82d49ff6613e9332e39d862eebc523f8590aaedb520e41268ad1",
+      "url": "https://www.bls.gov/news.release/archives/srgune_02282014.htm",
+      "input_type": "official-page text captured by web reader",
+      "scope": "all 51 states/DC; published current and prior annual columns"
+    },
+    {
+      "year": 2014,
+      "path": "member3_labor_migration/source_snapshots/bls_2014_web.txt",
+      "sha256": "96a1366a3a2bc371b6af352d3dee7073b8be9ad1885993313b366d01a0359aec",
+      "url": "https://www.bls.gov/news.release/archives/srgune_03042015.htm",
+      "input_type": "official-page text captured by web reader",
+      "scope": "all 51 states/DC; published current and prior annual columns"
+    },
+    {
+      "year": 2015,
+      "path": "member3_labor_migration/source_snapshots/bls_2015_web.txt",
+      "sha256": "0cc2f7fd8dc6a5c977f373da91b874d70c893d74b862720d46e69a913c0d59f2",
+      "url": "https://www.bls.gov/news.release/archives/srgune_02262016.htm",
+      "input_type": "official-page text captured by web reader",
+      "scope": "all 51 states/DC; published current and prior annual columns"
+    },
+    {
+      "year": 2016,
+      "path": "member3_labor_migration/source_snapshots/bls_2016_web.txt",
+      "sha256": "7d33b693556cb24cd288c60419c4bb50b5e22638efa85142181d3ee9a0050669",
+      "url": "https://www.bls.gov/news.release/archives/srgune_02282017.htm",
+      "input_type": "official-page text captured by web reader",
+      "scope": "all 51 states/DC; published current and prior annual columns"
+    },
+    {
+      "year": 2017,
+      "path": "member3_labor_migration/source_snapshots/bls_2017_web.txt",
+      "sha256": "fe8859eff41695630fbe4013f2fd0e98ab656f6ab5d59c4bf53030ec8925bc44",
+      "url": "https://www.bls.gov/news.release/archives/srgune_02272018.htm",
+      "input_type": "official-page text captured by web reader",
+      "scope": "all 51 states/DC; published current and prior annual columns"
+    },
+    {
+      "year": 2018,
+      "path": "member3_labor_migration/source_snapshots/bls_2018_web.txt",
+      "sha256": "1beb022f90ed4c732349f4ce56ba2c636bd9990ded5e7d26b30fc93b7e58cc8f",
+      "url": "https://www.bls.gov/news.release/archives/srgune_02282019.htm",
+      "input_type": "official-page text captured by web reader",
+      "scope": "all 51 states/DC; published current and prior annual columns"
+    },
+    {
+      "year": 2019,
+      "path": "member3_labor_migration/source_snapshots/bls_2019_web.txt",
+      "sha256": "b40a54f03cac4f7fcd222a62759120cb29381030dd86f6d428d880f879acc94e",
+      "url": "https://www.bls.gov/news.release/archives/srgune_03042020.htm",
+      "input_type": "official-page text captured by web reader",
+      "scope": "all 51 states/DC; published current and prior annual columns"
+    },
+    {
+      "year": 2020,
+      "path": "member3_labor_migration/source_snapshots/bls_2020_web.txt",
+      "sha256": "e76649889d2870290df904737dd7092b088d8d20e610b3e2bac1cee6032285c2",
+      "url": "https://www.bls.gov/news.release/archives/srgune_03032021.htm",
+      "input_type": "official-page text captured by web reader",
+      "scope": "all 51 states/DC; published current and prior annual columns"
+    },
+    {
+      "year": 2021,
+      "path": "member3_labor_migration/source_snapshots/bls_2021_web.txt",
+      "sha256": "d02298bd5c5b100e5c053704e70bba116de119b77007be5015f71f16b41f62ca",
+      "url": "https://www.bls.gov/news.release/archives/srgune_03022022.htm",
+      "input_type": "official-page text captured by web reader",
+      "scope": "all 51 states/DC; published current and prior annual columns"
+    },
+    {
+      "year": 2022,
+      "path": "member3_labor_migration/source_snapshots/bls_2022_web.txt",
+      "sha256": "a13b1ba42c2eed66aab57aa7e7e1c61326016d3a2fdc35d2a467542efe89180d",
+      "url": "https://www.bls.gov/news.release/archives/srgune_03012023.htm",
+      "input_type": "official-page text captured by web reader",
+      "scope": "all 51 states/DC; published current and prior annual columns"
+    }
+  ]
 }

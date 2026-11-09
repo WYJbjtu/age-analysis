@@ -17,7 +17,9 @@ def main():
                 header=reader.fieldnames
             elif header != reader.fieldnames:
                 raise ValueError(f'{member}: source metadata headers differ')
-            for row in reader:
+            for line,row in enumerate(reader,start=2):
+                if None in row or any(value is None for value in row.values()):
+                    raise ValueError(f'{member}/sources.csv:{line}: malformed field count')
                 if any((v or '').strip() for v in row.values()):
                     all_rows.append(row)
     with OUTPUT.open('w',encoding='utf-8',newline='') as f:

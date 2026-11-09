@@ -1,0 +1,825 @@
+{
+  "original_checkout": "10c5a4792a22abedd40347d019e879d848b61dd5",
+  "baseline_commit": "2bede5baa1c8dcc308ed29985cbccc20527d6d11",
+  "branch": "codex/member4-audit-integration",
+  "recorded_date": "2026-11-09",
+  "local_uncommitted_inputs_at_start": false,
+  "remote_writes": false,
+  "files": [
+    {
+      "path": ".editorconfig",
+      "bytes": 145,
+      "sha256": "32d29d5710437d3e06e13f8bb62e93f39b53ffff416f793754e163ef69cbd016"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/analysis.yml",
+      "bytes": 521,
+      "sha256": "38c5994bc970831a9d05480f6a575b356807961cb8ac50adbe794ea8cdbc23e8"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/data_source.yml",
+      "bytes": 747,
+      "sha256": "2b18e410afe078e32f238d38c85c082d61b512fc0a57f87964ac4ba64948edc9"
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "bytes": 622,
+      "sha256": "292f476e8de1a3ab7913f5770940c91975637158549d1ef8c4e39b8a18eb74af"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "bytes": 486,
+      "sha256": "c686f9e1dea73e4592ffde06eca74b91475a9c28663dc643d4d52465feebcf10"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 279,
+      "sha256": "a79f83ae887f8f5756329458a8da7f6d8082bf7ed73b22b50a4058f168cd691d"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 869,
+      "sha256": "86c20f1b2124a431575e0eefdf2e2242752dc0245c4d6f7c37dd7dc9dfa5d563"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4443,
+      "sha256": "5746fd9ca6df6aabbc1c10d8ec0aec50b85fa973b424f86434bb279c3543a3ca"
+    },
+    {
+      "path": "analysis/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "analysis/figures/correlation_manufacturing_share_pct_2022.png",
+      "bytes": 203940,
+      "sha256": "eaf06a60a4459a841342e798a267e6c1f81d526f35f8662e20c9b03819f05761"
+    },
+    {
+      "path": "analysis/figures/correlation_manufacturing_share_pct_2022.svg",
+      "bytes": 115958,
+      "sha256": "9df3f7093eff784be353bcc50c841beae4bce346fc8186a548702186148893fc"
+    },
+    {
+      "path": "analysis/manufacturing_correlations_2022.csv",
+      "bytes": 178,
+      "sha256": "edfc8f8c140e20f1a4c1256f26308ee042c08ffe3b6121bbc621adf71befb3b6"
+    },
+    {
+      "path": "analysis/plot_correlations.py",
+      "bytes": 3586,
+      "sha256": "2596ac36e0045c682785a84e237cd388871d6d56922079fc2bc1b08e486ffe97"
+    },
+    {
+      "path": "data/processed/demographics.csv",
+      "bytes": 70576,
+      "sha256": "7a115d1eb6a8a581f0d20ab6c0c3a89331f063417827ea622a2409caf31c3dee"
+    },
+    {
+      "path": "data/processed/industry.csv",
+      "bytes": 88860,
+      "sha256": "57761502e8838827646e5d14344b8ae5af8912aa2f16ddcda6cab915e40067da"
+    },
+    {
+      "path": "data/processed/labor_migration.csv",
+      "bytes": 39322,
+      "sha256": "4d1e018f1aef0ce408b5ba34c16359801e5a9e936f87d225c63eae341095e537"
+    },
+    {
+      "path": "data/processed/merged_analysis.csv",
+      "bytes": 13255,
+      "sha256": "114b804fe85789463900e2342e1d097a06561f029da955d8b5192804b88245a5"
+    },
+    {
+      "path": "data/raw/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/reference/region_lookup.csv",
+      "bytes": 2798,
+      "sha256": "4d71fb94d506f0ed6e9b78c895e0badf287f9e71d80ec40ad6ffe6c943ab06cb"
+    },
+    {
+      "path": "docs/data_contract.md",
+      "bytes": 3295,
+      "sha256": "b33cf24639291891527f56978ff05fa42e93e051a7cedcde7c76091fea6daf89"
+    },
+    {
+      "path": "docs/japan_2022_handover.md",
+      "bytes": 2215,
+      "sha256": "df77e207e91788b29988b1a7774d7c0feba460cab315408d47a0ab96a1a36859"
+    },
+    {
+      "path": "docs/presentation_outline.md",
+      "bytes": 918,
+      "sha256": "fbde39673e642dbca8be2b3589e3b753ea04e251e32b6a96d85d2ebb9279ad1d"
+    },
+    {
+      "path": "docs/source_links.md",
+      "bytes": 1134,
+      "sha256": "2a814be593a83ba1b52efa348040756222284e9f50a3dec6c12046e208e5d347"
+    },
+    {
+      "path": "docs/source_registry.csv",
+      "bytes": 3493,
+      "sha256": "d5e77aeaabd4427d5d69bd44b54824ae21f0226980b4bc653bbbd56757ae5e15"
+    },
+    {
+      "path": "docs/team_tasks.md",
+      "bytes": 2767,
+      "sha256": "528a30996d8ca8809852d33a6df9412e31f3f75ed79960fe64b9721288be4436"
+    },
+    {
+      "path": "docs/us_2022_integration.md",
+      "bytes": 1231,
+      "sha256": "a0f390d054e373e10e1345f35d13bc7c0a0749a5ff1348338dd8c067f0c00e78"
+    },
+    {
+      "path": "handover/us_2022/.gitignore",
+      "bytes": 63,
+      "sha256": "9431b10288f4f807dfd376867a01109fd2da0efd5512e2e905fa0f6f1f9b25dc"
+    },
+    {
+      "path": "handover/us_2022/CHECKSUMS.sha256",
+      "bytes": 3743,
+      "sha256": "547882b6c97d8ac17f526cba55e433a99efd3f56c8e36c03fe0194d0760ae2e4"
+    },
+    {
+      "path": "handover/us_2022/README.md",
+      "bytes": 1733,
+      "sha256": "612cb1fe5c5878b865c71a4cc7d8af9ab8ec4d6f203a29345c8e6bbf60b76dd1"
+    },
+    {
+      "path": "handover/us_2022/README_\u5148\u8bfb\u6211.md",
+      "bytes": 2980,
+      "sha256": "26bcc3cc39538fe7895be6a9585b3bca87790b93f1fb3d04f2a63c1413a84f44"
+    },
+    {
+      "path": "handover/us_2022/deliverables/A_US_2022_\u6570\u636e\u4e0e\u5730\u533a\u5206\u5e03\u62a5\u544a.docx",
+      "bytes": 1014373,
+      "sha256": "27f6aa5cea5fedfe77e2a97b3353103a1607eefa0e64f3a964bb7c3306ef6084"
+    },
+    {
+      "path": "handover/us_2022/deliverables/US_2022_\u4ea4\u63a5\u6570\u636e.csv",
+      "bytes": 13705,
+      "sha256": "f0d3177e309c2f14d48e626b65b28fcea47b8a04b0a23a25ad613c484598a542"
+    },
+    {
+      "path": "handover/us_2022/deliverables/figures/01_ranked_dotplots.pdf",
+      "bytes": 29684,
+      "sha256": "abb09cdc58896398a411bbb94a8218c83f67acf7f76a6ae178f0448080b09550"
+    },
+    {
+      "path": "handover/us_2022/deliverables/figures/01_ranked_dotplots.png",
+      "bytes": 461781,
+      "sha256": "e97263a22d51b5c0782498a994f7b5bed767ea126de51c9255afbcccc0197d7c"
+    },
+    {
+      "path": "handover/us_2022/deliverables/figures/01_ranked_dotplots.svg",
+      "bytes": 75989,
+      "sha256": "b57641545bd99c64db611d978f742350adc5db51cb836b0b91fda769718c6d59"
+    },
+    {
+      "path": "handover/us_2022/deliverables/figures/02_aging_map.pdf",
+      "bytes": 162498,
+      "sha256": "536f4f47a62f8e8e11a499acb9f51b76ec607af1ace0432f3efeb2f862a8ac8f"
+    },
+    {
+      "path": "handover/us_2022/deliverables/figures/02_aging_map.png",
+      "bytes": 316727,
+      "sha256": "5ad0d86555be25101c0bdc18640c4b8cdb75c938da76c14348902a5c83c5fb7f"
+    },
+    {
+      "path": "handover/us_2022/deliverables/figures/02_aging_map.svg",
+      "bytes": 367434,
+      "sha256": "41a38a78e5c175685489ea24dc4a58387371d6d1cea24f72bc50b65f379b9ae9"
+    },
+    {
+      "path": "handover/us_2022/deliverables/figures/03_manufacturing_map.pdf",
+      "bytes": 162082,
+      "sha256": "10a331913dfb1b11aeb5bc090b2aeeed0ceaa9c140aaad0d59759f075e1c8347"
+    },
+    {
+      "path": "handover/us_2022/deliverables/figures/03_manufacturing_map.png",
+      "bytes": 317571,
+      "sha256": "0f21693c5992622dd668d4886e1d401a19a6fcdab8dc96acbd92342be09dc7df"
+    },
+    {
+      "path": "handover/us_2022/deliverables/figures/03_manufacturing_map.svg",
+      "bytes": 367109,
+      "sha256": "45026cc243639bb9a5b98119948ce6e961872777261c54aa72297840d3e3828d"
+    },
+    {
+      "path": "handover/us_2022/deliverables/\u5148\u8bfb\u6211_\u4ea4\u63a5\u8bf4\u660e.md",
+      "bytes": 206,
+      "sha256": "03b1ee162ccb415535b0e0d696f790ac3c3b69aa3a28f89f50f86c55ee146a3e"
+    },
+    {
+      "path": "handover/us_2022/deliverables/\u53d8\u91cf\u5b57\u5178.csv",
+      "bytes": 1967,
+      "sha256": "aec4f69f4c83df7a3751f03607ad72138b00f72af292158f141cdfa0a461dacc"
+    },
+    {
+      "path": "handover/us_2022/deliverables/\u63cf\u8ff0\u7edf\u8ba1.csv",
+      "bytes": 283,
+      "sha256": "69ff37f075385916ce8b078f37df608ac8438064da1d3de5eced2376da511890"
+    },
+    {
+      "path": "handover/us_2022/deliverables/\u6570\u636e\u6765\u6e90.csv",
+      "bytes": 1185,
+      "sha256": "105d8c398d5bb3a90e4a436b64a1ffcfb590cf9837488d2552e6a23b9c57b424"
+    },
+    {
+      "path": "handover/us_2022/processed/descriptive_statistics.csv",
+      "bytes": 283,
+      "sha256": "69ff37f075385916ce8b078f37df608ac8438064da1d3de5eced2376da511890"
+    },
+    {
+      "path": "handover/us_2022/processed/summary.json",
+      "bytes": 655,
+      "sha256": "53e992df20ed159d6b2488ce140e97215ff0dc59e4f643fcd5dc1c75eb871391"
+    },
+    {
+      "path": "handover/us_2022/processed/us_2022_contract_mapping.csv",
+      "bytes": 14139,
+      "sha256": "61153f12eb067465f8d6967bb4b14eac13e35141fc35c1bb695e5a0dc3f9b6dd"
+    },
+    {
+      "path": "handover/us_2022/processed/us_age_distribution_2022.csv",
+      "bytes": 98871,
+      "sha256": "dfe8ed79a8dd34fc46c6033ee81aed0114d9ba4097c35a6a0e5783b6b3063397"
+    },
+    {
+      "path": "handover/us_2022/processed/us_industries_2022_long.csv",
+      "bytes": 558689,
+      "sha256": "d8219e8641f1d13ebcd0ac1179e5e958bbdfd9cb6d2149c3bc099fbfd029aebc"
+    },
+    {
+      "path": "handover/us_2022/processed/us_states_2022_core.csv",
+      "bytes": 13705,
+      "sha256": "f0d3177e309c2f14d48e626b65b28fcea47b8a04b0a23a25ad613c484598a542"
+    },
+    {
+      "path": "handover/us_2022/processed/\u53d8\u91cf\u5b57\u5178.csv",
+      "bytes": 1967,
+      "sha256": "aec4f69f4c83df7a3751f03607ad72138b00f72af292158f141cdfa0a461dacc"
+    },
+    {
+      "path": "handover/us_2022/processed/\u6570\u636e\u6765\u6e90.csv",
+      "bytes": 1185,
+      "sha256": "105d8c398d5bb3a90e4a436b64a1ffcfb590cf9837488d2552e6a23b9c57b424"
+    },
+    {
+      "path": "handover/us_2022/qa/package_review.json",
+      "bytes": 220,
+      "sha256": "ce1e562edfec0bbc0897476244c63aff9fc5d7b6083acf09e8254956ee6ab68e"
+    },
+    {
+      "path": "handover/us_2022/qa/validation.json",
+      "bytes": 946,
+      "sha256": "30bec93e4f359e118a689d1b6ada4de7cf952c6589ca5deeb40c1fb766c401d3"
+    },
+    {
+      "path": "handover/us_2022/qa/visual_review.txt",
+      "bytes": 388,
+      "sha256": "1df9b095a5a86cb2e4326cc3f697266ee7bdf0ec8525bc51d95a9f31ebe8cdb0"
+    },
+    {
+      "path": "handover/us_2022/raw/SAGDP2__Footnotes.html",
+      "bytes": 1977,
+      "sha256": "561a19d77e47a0b4d831394d0f758317f0b5284bf4d8c5da3ede168d80b6d76a"
+    },
+    {
+      "path": "handover/us_2022/raw/source_manifest.json",
+      "bytes": 2772,
+      "sha256": "30e466a75c3f4287d3be5d8d3d2fad13e5e95bc7bcc8619d88a05e92401e9ebd"
+    },
+    {
+      "path": "handover/us_2022/requirements-analysis.txt",
+      "bytes": 96,
+      "sha256": "f3208ee5884c45feccf6c80e4f997b59c4d7a3d7601145e72dd95301155028f6"
+    },
+    {
+      "path": "handover/us_2022/scripts/build_report.py",
+      "bytes": 17115,
+      "sha256": "65f589ec08f4e7376d6aa5f2887fff938dd5eee17ff21a7e4ed11eb26d47a8ea"
+    },
+    {
+      "path": "handover/us_2022/scripts/download_sources.py",
+      "bytes": 1520,
+      "sha256": "f2774be976349b3ff1aaddbc2f4dc6e00af8eef9851ba0cd4ff5e52a1e52187d"
+    },
+    {
+      "path": "handover/us_2022/scripts/prepare_us.py",
+      "bytes": 11299,
+      "sha256": "c1355e557f06fc70113f5d571fa6bef713885a50952bc0affc6c618cea0e328b"
+    },
+    {
+      "path": "handover/us_2022/scripts/verify_package.py",
+      "bytes": 444,
+      "sha256": "f3679093bec87fc094b3960d64ce068fbbe575ce1fe918bbad3507d7c05e7444"
+    },
+    {
+      "path": "handover/us_2022/\u540e\u7eed\u6210\u5458\u63a5\u624b\u6e05\u5355.md",
+      "bytes": 2819,
+      "sha256": "560244a854241ffafff892d54123fb06cd51a4978ec7ee050a69f6b8b15857f9"
+    },
+    {
+      "path": "handover/us_2022/\u590d\u73b0\u8bf4\u660e.md",
+      "bytes": 1687,
+      "sha256": "7c61f9207c43fe0505efa0e85774600ed7a5a0bb89c83d9fd3b247c65f72fbe3"
+    },
+    {
+      "path": "member1_demographics/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "member1_demographics/README.md",
+      "bytes": 3418,
+      "sha256": "6791a0e4b6a747ca3ec1cc28bc3428add1c5b70e783be697c74019cb321451a0"
+    },
+    {
+      "path": "member1_demographics/complete_population.py",
+      "bytes": 10487,
+      "sha256": "c22f1c654c6e803e8776564e39cd616a55b33329b7e891426c14cd44ee2eba89"
+    },
+    {
+      "path": "member1_demographics/figures/01_national_aging_trends_2000_2022.pdf",
+      "bytes": 21624,
+      "sha256": "3d98ab15740e1ddac741a2e7a3f83d044aeb256eaa5d0cc6639d47e7a900d21f"
+    },
+    {
+      "path": "member1_demographics/figures/01_national_aging_trends_2000_2022.png",
+      "bytes": 117687,
+      "sha256": "0dbf333636abb4b7dcb41f7e104016214a9c1d6a17daa856ed15bbfe95e55524"
+    },
+    {
+      "path": "member1_demographics/figures/01_national_aging_trends_2000_2022.svg",
+      "bytes": 15267,
+      "sha256": "a3644c57b61b0733422f80e9d70500a4cf1502036ff39e3258b54ba53a2f21e7"
+    },
+    {
+      "path": "member1_demographics/figures/02_regional_aging_comparison_2022.pdf",
+      "bytes": 32529,
+      "sha256": "9653b4460587faa747a789a8f20a62b0cb77742d84f080af7543194ba65ab744"
+    },
+    {
+      "path": "member1_demographics/figures/02_regional_aging_comparison_2022.png",
+      "bytes": 537815,
+      "sha256": "b0f1242299b71a03b33e3d3b04a043fdf1d9fe577cc3bd5c427f2bd154ae29c0"
+    },
+    {
+      "path": "member1_demographics/figures/02_regional_aging_comparison_2022.svg",
+      "bytes": 89466,
+      "sha256": "ba5b2f02c3387e5834ae66234980411d60ace37951646a1a10ccf87d218cb185"
+    },
+    {
+      "path": "member1_demographics/figures/03_regional_aging_change_2011_2022.pdf",
+      "bytes": 22344,
+      "sha256": "ab9b729a4e8608fb7d5d8676677aabd9340e1740d473da62ff540afcf0b52ce7"
+    },
+    {
+      "path": "member1_demographics/figures/03_regional_aging_change_2011_2022.png",
+      "bytes": 173157,
+      "sha256": "7c40ca46a1580cd59dc70645af731d25e8ebcf38211e512192bff560ea577148"
+    },
+    {
+      "path": "member1_demographics/figures/03_regional_aging_change_2011_2022.svg",
+      "bytes": 37959,
+      "sha256": "f29aca856c656475db8c30e0bb41410e7cdd4528f493abebb3866561efe10e67"
+    },
+    {
+      "path": "member1_demographics/figures/jpn_aging_ranked_2022.png",
+      "bytes": 177939,
+      "sha256": "258b6c5606e170da0468593ea2af0973556676ed863600812d42d66cf4e65658"
+    },
+    {
+      "path": "member1_demographics/figures/jpn_aging_ranked_2022.svg",
+      "bytes": 90235,
+      "sha256": "7fed3311c117e729816a7536ea4473018c35474686103ef63f9d31b93b078ffc"
+    },
+    {
+      "path": "member1_demographics/findings.md",
+      "bytes": 3599,
+      "sha256": "92709a6e8ba83391b1789e0abb962261d010efc5eb17aa975380a70deb1a3035"
+    },
+    {
+      "path": "member1_demographics/jpn_population_detail_2022.csv",
+      "bytes": 4716,
+      "sha256": "c756c34aa3279265f47b971d6fd26f5aff5d5db87f2fa329a381ec2be653ad53"
+    },
+    {
+      "path": "member1_demographics/jpn_source_manifest.json",
+      "bytes": 1092,
+      "sha256": "6dd61d10e2fa9fd609352e8e1bc7b6a38d0fc925c59414765721eac972446312"
+    },
+    {
+      "path": "member1_demographics/jpn_validation.json",
+      "bytes": 330,
+      "sha256": "c5f0d86140659efe43653eebf93ede99d83d18c8f9063cf232a94197cda87ecf"
+    },
+    {
+      "path": "member1_demographics/national_trends_wpp2024_2000_2022.csv",
+      "bytes": 3707,
+      "sha256": "4b77f44e217cd34a988852a0676b7a8306f5b2b36fb443fa001bd2e728793040"
+    },
+    {
+      "path": "member1_demographics/plot_japan_population.py",
+      "bytes": 932,
+      "sha256": "4ffb5656c87a757e3ede962866f233f16b1751fc5e046a10194f8cbfea32cbb0"
+    },
+    {
+      "path": "member1_demographics/plot_population.py",
+      "bytes": 4858,
+      "sha256": "bbad10607f3001df759051c54d017b1335a571e95cef5e5eedf4e24b3577ad1a"
+    },
+    {
+      "path": "member1_demographics/population_2019.csv",
+      "bytes": 20724,
+      "sha256": "f844389859f3fe02eecc74de36e906f552f6c8ed3489d376558ed6d96b5661cd"
+    },
+    {
+      "path": "member1_demographics/population_2022.csv",
+      "bytes": 19423,
+      "sha256": "41d33bdabee4723c60e5563e8d66c61777fab960607fb43c0fa00d7c0a35b0b6"
+    },
+    {
+      "path": "member1_demographics/population_change_2011_2022.csv",
+      "bytes": 5443,
+      "sha256": "f5ef7cc23f4b9bf4b7d148d193bf4bbd3a3791d09940be3cde873fda4e335be1"
+    },
+    {
+      "path": "member1_demographics/population_detail_2011_2022.csv",
+      "bytes": 242321,
+      "sha256": "e98bab88e04f1597b0cf3d2156404b27b910ac59de8b9a8a1c36b039f1ddc723"
+    },
+    {
+      "path": "member1_demographics/population_source_manifest.json",
+      "bytes": 3899,
+      "sha256": "1a0e28bc6774df1b2ef2dda00055e638c47c4d2c7352f936ab4b76e5de3585dd"
+    },
+    {
+      "path": "member1_demographics/population_validation.json",
+      "bytes": 698,
+      "sha256": "8964885b021b2004301f90e8a3eeaebb76563909795733ac49a763e9123345db"
+    },
+    {
+      "path": "member1_demographics/prepare_japan.py",
+      "bytes": 3957,
+      "sha256": "51cd509305ad2bb47c19235764451815c41a37c9bd3e50ca934815f169372db2"
+    },
+    {
+      "path": "member1_demographics/snapshot_manifest.json",
+      "bytes": 317,
+      "sha256": "991396a180f3f8a3879dab0de6dd0d33eaaad46afc5f744a5ede67adbae42a04"
+    },
+    {
+      "path": "member1_demographics/source_snapshots/wpp2024_selected_estimates.csv",
+      "bytes": 3707,
+      "sha256": "4b77f44e217cd34a988852a0676b7a8306f5b2b36fb443fa001bd2e728793040"
+    },
+    {
+      "path": "member1_demographics/sources.csv",
+      "bytes": 5647,
+      "sha256": "603ebc3ed0443234afa94897ceea9f79191be963d65aaafc4636e5427c2a50d6"
+    },
+    {
+      "path": "member1_demographics/\u4ea4\u63a5\u8bf4\u660e.md",
+      "bytes": 2160,
+      "sha256": "7aaf2d0ac885d09ba752f1b321ba7774e70e3a03f76a0fb0a5d21d50f9bf19a7"
+    },
+    {
+      "path": "member2_industry/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "member2_industry/README.md",
+      "bytes": 10792,
+      "sha256": "c543837a0e7402acb19ce582e46bee1c64682690b3877ad14782e48321c97af9"
+    },
+    {
+      "path": "member2_industry/figures/jpn_industry_composition_2022.png",
+      "bytes": 284164,
+      "sha256": "5e990a219d5e692a85b261ecb1b2b67b59269fbff5e170a02b25f6182a585591"
+    },
+    {
+      "path": "member2_industry/figures/jpn_industry_composition_2022.svg",
+      "bytes": 58756,
+      "sha256": "77a42640823abe06059aa55d5f46327ffb081ebbc4b3577c52dd1b9c830d0a13"
+    },
+    {
+      "path": "member2_industry/figures/jpn_services_trend_2011_2022.png",
+      "bytes": 167489,
+      "sha256": "ab02de1d8fc952b72eb707c9e6d8173a1fe9579a3b6355b13837763394b68bea"
+    },
+    {
+      "path": "member2_industry/figures/jpn_services_trend_2011_2022.svg",
+      "bytes": 14762,
+      "sha256": "d84a5eb862267faa8646e5bac54ac3f732e0f202e66a127a3fe9e82f88d238f8"
+    },
+    {
+      "path": "member2_industry/figures/manufacturing_distribution_2022.png",
+      "bytes": 132058,
+      "sha256": "ee9802d7013e7c7818fbe17453e884625da2a459f99be564d94554965cdc1361"
+    },
+    {
+      "path": "member2_industry/figures/manufacturing_distribution_2022.svg",
+      "bytes": 27830,
+      "sha256": "69124db7bffe302b6044c623ad031f7a8d2f71d79f33551a928f6848a04b132f"
+    },
+    {
+      "path": "member2_industry/figures/manufacturing_trend_2011_2022.png",
+      "bytes": 190486,
+      "sha256": "7e604548c64f27bef1fde19b88a8af76a0caf6a968aecbf65464250b0949b3d8"
+    },
+    {
+      "path": "member2_industry/figures/manufacturing_trend_2011_2022.svg",
+      "bytes": 19781,
+      "sha256": "53ba118854bd9756b897f203c29d905010cddec0b6d94cf35a4e7217e9cc44c5"
+    },
+    {
+      "path": "member2_industry/figures/usa_industry_composition_2022.png",
+      "bytes": 307511,
+      "sha256": "aae7fb9f807b56e8542adad89d320603e28d796fe29cc832109bc8cd02097b85"
+    },
+    {
+      "path": "member2_industry/figures/usa_industry_composition_2022.svg",
+      "bytes": 63140,
+      "sha256": "1d00c9a80323f0facb86f35872cf6b5e93b7cb38b1fed6ecbce06917f62a4725"
+    },
+    {
+      "path": "member2_industry/figures/usa_services_trend_2011_2022.png",
+      "bytes": 167013,
+      "sha256": "c3db6951c4e3cbd515256169807f3c8eaf4a5cd77bedd6748f96b0f08d71ed3f"
+    },
+    {
+      "path": "member2_industry/figures/usa_services_trend_2011_2022.svg",
+      "bytes": 14729,
+      "sha256": "ec91a1a3b9864f2d79071b13ca597743b78fa3bc623af6e2c949fc4eb267d955"
+    },
+    {
+      "path": "member2_industry/findings.md",
+      "bytes": 11269,
+      "sha256": "cb2fb4a5ac9176aba849c6345c5396642ac96ecc2d43793856cf4fb36fd44832"
+    },
+    {
+      "path": "member2_industry/plot_industry.py",
+      "bytes": 14882,
+      "sha256": "0dc522ca3b5788372ccd035e81c8b8f6ada2de8b4378261919e6ca34e65da63a"
+    },
+    {
+      "path": "member2_industry/prepare_industry.py",
+      "bytes": 12374,
+      "sha256": "8e05f6135ca574e901948c0de5a8a7b5505a8836406a814c893a85cefe928cf3"
+    },
+    {
+      "path": "member2_industry/source_manifest.json",
+      "bytes": 827,
+      "sha256": "be63a92ba5b280c7e3d37da11617e04b2701c30ef31c8cd9e6cff4a8d5086e9e"
+    },
+    {
+      "path": "member2_industry/sources.csv",
+      "bytes": 1768,
+      "sha256": "5396ca14a727920a862ffbe41f929d06516932b30a9ae450309c9e53115b4b97"
+    },
+    {
+      "path": "member2_industry/summary.json",
+      "bytes": 1265,
+      "sha256": "d04086b2daf716b7d649e0038ee772ec8819fc2de0d9f0e423e1891ed5813a10"
+    },
+    {
+      "path": "member2_industry/test_industry.py",
+      "bytes": 7842,
+      "sha256": "fadc409433d292a2acf7a1d58059be595786a25fdf19239e35a4b38de3e6216b"
+    },
+    {
+      "path": "member2_industry/trend_summary.csv",
+      "bytes": 2454,
+      "sha256": "5b7ed3c33b3c1eecc0e2601c8fbb340b9d0fe727ce4cce684e84b70481bac66e"
+    },
+    {
+      "path": "member2_industry/validation.json",
+      "bytes": 145752,
+      "sha256": "f2a3d16282c0a187d9602cf2d259f19264eb0415d53661531ee0f5944810f2dd"
+    },
+    {
+      "path": "member3_labor_migration/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "member3_labor_migration/README.md",
+      "bytes": 6535,
+      "sha256": "c30d60bf592659c2527ea0e52e864fe6c469a65e2f1985177c9f4d3caeeb42f7"
+    },
+    {
+      "path": "member3_labor_migration/bls_revision_check.csv",
+      "bytes": 17276,
+      "sha256": "797138e4d2f1c473836505bbc2c72625178040d6f9ee59438aede94ff0c076e7"
+    },
+    {
+      "path": "member3_labor_migration/check_bls_revision.py",
+      "bytes": 3380,
+      "sha256": "96da1f1254044ff3697f1f4b5999f6e0924bc304d7e9d30e5c09dc31aa1e52ed"
+    },
+    {
+      "path": "member3_labor_migration/figure4_labor_2022.png",
+      "bytes": 325504,
+      "sha256": "1e0ce8591aea3ab24362afbb263790fca08a364fddc665a290d98f51a8be7351"
+    },
+    {
+      "path": "member3_labor_migration/figure4_labor_2022.svg",
+      "bytes": 200445,
+      "sha256": "016f6e2c7428fa2ed7969755feee6e585b285a58e5274d23c145517a651e24bb"
+    },
+    {
+      "path": "member3_labor_migration/figures/figure4_labor_2022.png",
+      "bytes": 319569,
+      "sha256": "acbd17c3996c78b47755703b5ac21457a9c97138fccd7d1923c3daf34a16163f"
+    },
+    {
+      "path": "member3_labor_migration/figures/figure4_labor_2022.svg",
+      "bytes": 198018,
+      "sha256": "83b553a1c5d449c88fcd05c9d8b8aa3e4035c50b181b3b105bfe795bd2043760"
+    },
+    {
+      "path": "member3_labor_migration/figures/jpn_labor_migration_2019_2022.png",
+      "bytes": 233798,
+      "sha256": "7f744f10b8d31e5269c32d16a236a6f80cac21badd3ca50eac230419457829be"
+    },
+    {
+      "path": "member3_labor_migration/figures/jpn_labor_migration_2019_2022.svg",
+      "bytes": 128654,
+      "sha256": "624bf147e3e923a84c9f7c4861bb5aedba95285e9efea8a783daa0743e99e36b"
+    },
+    {
+      "path": "member3_labor_migration/figures/jpn_panel_2011_2022.png",
+      "bytes": 255113,
+      "sha256": "577cc6c6ed93d826a39613358da00b7ab32095b10ef3ee9b826ebcc9cd8b95c5"
+    },
+    {
+      "path": "member3_labor_migration/figures/jpn_panel_2011_2022.svg",
+      "bytes": 115239,
+      "sha256": "2f683c035d7b490592cec0a3f8c207d1ac09117d387bdcb8659ad85655d574ea"
+    },
+    {
+      "path": "member3_labor_migration/figures/outliers_2022.png",
+      "bytes": 320968,
+      "sha256": "054929ae886c1c6eeb0a7e13cca74bc73b62e99967c52ab0e7d27b997ec22041"
+    },
+    {
+      "path": "member3_labor_migration/figures/outliers_2022.svg",
+      "bytes": 185924,
+      "sha256": "054f97a28dc5ef3b251d28e87babcd4d575f1f65ea5041dd78d4a0c5bb8ed5ce"
+    },
+    {
+      "path": "member3_labor_migration/figures/two_country_trend_2011_2022.png",
+      "bytes": 240662,
+      "sha256": "ef1bd5e1a792cb0edf2e28569ad743ffe5509a07a40957717085c63181b671e2"
+    },
+    {
+      "path": "member3_labor_migration/figures/two_country_trend_2011_2022.svg",
+      "bytes": 107615,
+      "sha256": "f112d98b510110346f9ea498f1f19492574c0a56fd773e44a1ffbf55ca8b0c1b"
+    },
+    {
+      "path": "member3_labor_migration/findings.md",
+      "bytes": 8580,
+      "sha256": "45a72ab2e5f528a15e7e052671639d51a6abde6c28e5b8acb0fd136ae1cfa398"
+    },
+    {
+      "path": "member3_labor_migration/jpn_labor_detail.csv",
+      "bytes": 20855,
+      "sha256": "7dba273d539462d7f6097ccdb13524bd7eb301d31f4bd5170811fe1f80cdf95c"
+    },
+    {
+      "path": "member3_labor_migration/jpn_labor_migration_2019_2022.png",
+      "bytes": 239398,
+      "sha256": "d959edde60b3cd3ab3a73b2e268553eaa26b42977402e7a443bcf48b81b1b70d"
+    },
+    {
+      "path": "member3_labor_migration/jpn_labor_migration_2019_2022.svg",
+      "bytes": 131319,
+      "sha256": "82768aaadc0ca0ed56205cbc50eada4bb8b27f9fea53cee38df3a5eb2aa37f69"
+    },
+    {
+      "path": "member3_labor_migration/outliers_2022.csv",
+      "bytes": 13644,
+      "sha256": "36601da2d647364bfc22646395f309a9ac3920d51b2c251f0c494032deb32226"
+    },
+    {
+      "path": "member3_labor_migration/outliers_2022.png",
+      "bytes": 330058,
+      "sha256": "a93a703bffcb8b94c3bb826933c0a564ee17ccb4e10267d62179f50c034ecf3c"
+    },
+    {
+      "path": "member3_labor_migration/outliers_2022.py",
+      "bytes": 5520,
+      "sha256": "ceea0d71b068fd00ee17dadd519a8012031fb824c754f234be5caff8037a47ba"
+    },
+    {
+      "path": "member3_labor_migration/outliers_2022.svg",
+      "bytes": 189551,
+      "sha256": "7ce4ca44a62d4a82775fff82e20e8201735301116a251d1ebd6bb7e4befabd65"
+    },
+    {
+      "path": "member3_labor_migration/plot_figure4.py",
+      "bytes": 5543,
+      "sha256": "38b2deb8190a762263529949fd184cee23f227991e535b4ee8810cc2cf5c0f1b"
+    },
+    {
+      "path": "member3_labor_migration/plot_japan_labor.py",
+      "bytes": 4102,
+      "sha256": "6b0a306b60f1c897608667b6143a9fcea89b138e44d4675d88a3b53fc7ba9d3c"
+    },
+    {
+      "path": "member3_labor_migration/plot_japan_trend.py",
+      "bytes": 2996,
+      "sha256": "baf3006a46296afb1f88982c349a265b030a264ec7b49665b67a03e9847ffca4"
+    },
+    {
+      "path": "member3_labor_migration/plot_two_country_trend.py",
+      "bytes": 3055,
+      "sha256": "e57fc91cc2028c24fe9269b44deb7b0a3a43c6bd9232e2df5643aa027ee75971"
+    },
+    {
+      "path": "member3_labor_migration/prepare_labor.py",
+      "bytes": 21130,
+      "sha256": "1fd5c1619883dfb47ae14159f42a062e882d2d623833b3716ecd897fe45fc949"
+    },
+    {
+      "path": "member3_labor_migration/report_section.md",
+      "bytes": 14517,
+      "sha256": "b80db452af82695725890d17e97d6faa1ceaf6cc978439bb9abc13e0b0b4c8f8"
+    },
+    {
+      "path": "member3_labor_migration/sources.csv",
+      "bytes": 2596,
+      "sha256": "d1085ece37247f717ad6f7f06d1e467032daacc7b94dfc6b1545356bc083f020"
+    },
+    {
+      "path": "member3_labor_migration/summary.json",
+      "bytes": 3359,
+      "sha256": "f0f13d2100c4437d1e5eda391cd39c78cf9a7c8f7d39daa839bf822cb82b7985"
+    },
+    {
+      "path": "member3_labor_migration/us_labor_detail.csv",
+      "bytes": 2291,
+      "sha256": "a6e228683491af7cee2682916f58cad4288ef1b7a600ed532d63d8db7871d6ba"
+    },
+    {
+      "path": "poster/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 501,
+      "sha256": "a160387aa4057dfddb33b71a286b42085f67052f7df7a9a4d3a78ac42f135ffa"
+    },
+    {
+      "path": "scripts/aggregate_sources.py",
+      "bytes": 1089,
+      "sha256": "a9869fbaf5231117b0496fcc25f7f0e86fb38ea710322fb66515f37809dde665"
+    },
+    {
+      "path": "scripts/integrate_us_2022.py",
+      "bytes": 2051,
+      "sha256": "d4d392fdaf5236a8b4fc253653d10747be78fd0935766f8f226424d50946d0f1"
+    },
+    {
+      "path": "scripts/merge_core.py",
+      "bytes": 1761,
+      "sha256": "fe93f3a0bcc518ab291b13bbcddc57db6aecb6cd0b3cc17ffecc82e78b00628a"
+    },
+    {
+      "path": "scripts/validate_data.py",
+      "bytes": 1011,
+      "sha256": "f9719da986186f15921a6e9d4e4be11dadc6ec0adddd6d6a42c47672bd02759c"
+    },
+    {
+      "path": "src/aging_economies/__init__.py",
+      "bytes": 79,
+      "sha256": "fcfd50b963e054555d7af71de1e4e2370f266658f9106e074a143f60950431cd"
+    },
+    {
+      "path": "src/aging_economies/contracts.py",
+      "bytes": 3800,
+      "sha256": "be7ba371ca273a4a3427e5eb832dde002df5ef8014ad7cf8d47a1f035dc214bd"
+    },
+    {
+      "path": "tests/test_contracts.py",
+      "bytes": 1989,
+      "sha256": "be66242d5b301571fe3d8ab649fb5e314b05e8c1b43a72adf7f0e91ff320762a"
+    },
+    {
+      "path": "tests/test_member1_population.py",
+      "bytes": 1886,
+      "sha256": "e5114befc1b1a477c42a242ae21239a3f1b0462d72a0a44cb6877e80178f3379"
+    }
+  ]
+}

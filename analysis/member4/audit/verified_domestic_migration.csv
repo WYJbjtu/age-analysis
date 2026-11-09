@@ -1,0 +1,197 @@
+country,region_id,year,domestic_net_migration,migration_reference_period,migration_population,migration_source
+JPN,JP-01,2019,-5568,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-01,2022,-3476,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-02,2019,-6044,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-02,2022,-4575,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-03,2019,-4526,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-03,2022,-4373,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-04,2019,-1983,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-04,2022,637,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-05,2019,-3898,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-05,2022,-2754,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-06,2019,-4151,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-06,2022,-3516,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-07,2019,-6785,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-07,2022,-6733,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-08,2019,-7495,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-08,2022,460,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-09,2019,-5775,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-09,2022,-296,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-10,2019,-2208,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-10,2022,-386,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-11,2019,26654,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-11,2022,25364,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-12,2019,9538,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-12,2022,8568,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-13,2019,82982,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-13,2022,38023,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-14,2019,29609,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-14,2022,27564,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-15,2019,-7225,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-15,2022,-5830,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-16,2019,-2326,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-16,2022,-1275,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-17,2019,-2602,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-17,2022,-2360,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-18,2019,-3336,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-18,2022,-3652,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-19,2019,-2933,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-19,2022,704,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-20,2019,-4306,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-20,2022,595,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-21,2019,-6765,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-21,2022,-3803,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-22,2019,-6129,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-22,2022,-4658,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-23,2019,-1931,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-23,2022,-7910,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-24,2019,-6321,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-24,2022,-4505,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-25,2019,1079,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-25,2022,1555,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-26,2019,-2688,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-26,2022,-2034,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-27,2019,8064,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-27,2022,6539,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-28,2019,-6038,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-28,2022,-5625,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-29,2019,-3435,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-29,2022,-1227,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-30,2019,-3376,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-30,2022,-2020,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-31,2019,-1516,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-31,2022,-1323,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-32,2019,-1971,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-32,2022,-1802,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-33,2019,-4014,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-33,2022,-5527,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-34,2019,-8018,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-34,2022,-9207,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-35,2019,-3659,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-35,2022,-2807,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-36,2019,-3357,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-36,2022,-2273,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-37,2019,-1677,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-37,2022,-2642,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-38,2019,-4305,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-38,2022,-3932,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-39,2019,-2458,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-39,2022,-1398,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-40,2019,2925,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-40,2022,4869,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-41,2019,-1754,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-41,2022,-901,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-42,2019,-7309,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-42,2022,-5219,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-43,2019,-3900,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-43,2022,-377,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-44,2019,-3024,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-44,2022,-1601,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-45,2019,-2635,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-45,2022,-1238,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-46,2019,-4105,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-46,2022,-2272,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+JPN,JP-47,2019,695,CY2019,registered residents; all nationalities,jpn_migration_2019.xls
+JPN,JP-47,2022,-1351,CY2022,registered residents; all nationalities,jpn_migration_2022.xlsx
+USA,US-AK,2019,-9355,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-AK,2022,-6126,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-AL,2019,10828,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-AL,2022,28609,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-AR,2019,2028,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-AR,2022,18209,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-AZ,2019,95805,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-AZ,2022,70984,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-CA,2019,-208407,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-CA,2022,-343230,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-CO,2019,33815,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-CO,2022,5376,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-CT,2019,-22042,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-CT,2022,-13547,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-DC,2019,-2417,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-DC,2022,-3647,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-DE,2019,7226,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-DE,2022,11826,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-FL,2019,139330,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-FL,2022,318855,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-GA,2019,52508,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-GA,2022,81406,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-HI,2019,-14463,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-HI,2022,-15212,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-IA,2019,-5566,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-IA,2022,-7292,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-ID,2019,28466,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-ID,2022,28639,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-IL,2019,-104056,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-IL,2022,-141656,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-IN,2019,4163,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-IN,2022,5230,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-KS,2019,-13226,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-KS,2022,-7409,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-KY,2019,-750,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-KY,2022,10420,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-LA,2019,-24591,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-LA,2022,-46672,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-MA,2019,-30338,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-MA,2022,-57292,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-MD,2019,-23055,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-MD,2022,-45101,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-ME,2019,5899,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-ME,2022,11600,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-MI,2019,-23878,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-MI,2022,-8482,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-MN,2019,-921,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-MN,2022,-19400,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-MO,2019,-3916,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-MO,2022,5024,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-MS,2019,-10437,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-MS,2022,-5716,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-MT,2019,5660,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-MT,2022,16003,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-NC,2019,69731,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-NC,2022,99796,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-ND,2019,-1282,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-ND,2022,-2710,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-NE,2019,-4643,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-NE,2022,-4270,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-NH,2019,3398,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-NH,2022,6303,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-NJ,2019,-48119,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-NJ,2022,-64231,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-NM,2019,-1671,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-NM,2022,-4504,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-NV,2019,43872,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-NV,2022,20781,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-NY,2019,-183857,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-NY,2022,-299557,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-OH,2019,-13711,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-OH,2022,-9165,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-OK,2019,4926,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-OK,2022,26791,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-OR,2019,24649,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-OR,2022,-17331,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-PA,2019,-25745,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-PA,2022,-39957,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-RI,2019,-2950,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-RI,2022,-5196,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-SC,2019,53390,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-SC,2022,84030,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-SD,2019,1160,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-SD,2022,8424,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-TN,2019,37685,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-TN,2022,81646,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-TX,2019,121411,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-TX,2022,230961,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-UT,2019,16004,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-UT,2022,12898,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-VA,2019,-8892,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-VA,2022,-23952,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-VT,2019,-996,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-VT,2022,1141,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-WA,2019,35962,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-WA,2022,-3580,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-WI,2019,-1182,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-WI,2022,7657,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-WV,2019,-6929,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-WV,2022,474,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
+USA,US-WY,2019,-521,2018-07-01 to 2019-07-01,resident population; domestic moves,us_migration_2020.csv
+USA,US-WY,2022,2152,2021-07-01 to 2022-07-01,resident population; domestic moves,us_migration_2022.csv
