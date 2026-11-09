@@ -6,6 +6,8 @@ from pathlib import Path
 import pytest
 
 from prepare_industry import YEARS, japan_rows, number, usa_rows
+import plot_industry as plots
+import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -114,3 +116,57 @@ def test_bea_duplicate_or_missing_industry_fails(bea_example):
         usa_rows(bea_example + [bea_example[0]], lookup, (2011,))
     with pytest.raises(ValueError, match='Missing BEA'):
         usa_rows(bea_example[:-1], lookup, (2011,))
+
+
+@pytest.mark.parametrize('problem,message', [
+    ('unknown_region', 'Unknown region'),
+    ('missing_year', 'complete 98-region'),
+    ('duplicate_key', 'complete 98-region'),
+    ('nonfinite', 'non-finite'),
+    ('wrong_share', 'do not match'),
+    ('wrong_period', 'CY/FY'),
+])
+def test_chart_loader_rejects_incomplete_or_misleading_data(tmp_path, monkeypatch, problem, message):
+    frame = pd.read_csv(ROOT / 'data/processed/industry.csv')
+    if problem == 'unknown_region':
+        extra = frame.iloc[[0]].copy()
+        extra['region_id'] = 'JP-99'
+        frame = pd.concat([frame, extra], ignore_index=True)
+    elif problem == 'missing_year':
+        frame = frame.loc[frame.year != 2011]
+    elif problem == 'duplicate_key':
+        frame = pd.concat([frame, frame.iloc[[0]]], ignore_index=True)
+    elif problem == 'nonfinite':
+        frame.loc[0, 'manufacturing_share_pct'] = float('inf')
+    elif problem == 'wrong_share':
+        frame.loc[0, 'manufacturing_share_pct'] += 1
+    elif problem == 'wrong_period':
+        frame.loc[0, 'gdp_reference_period'] = 'CY2011'
+    for directory in ['data/processed', 'data/reference']:
+        (tmp_path / directory).mkdir(parents=True)
+    frame.to_csv(tmp_path / 'data/processed/industry.csv', index=False)
+    (tmp_path / 'data/reference/region_lookup.csv').write_bytes(
+        (ROOT / 'data/reference/region_lookup.csv').read_bytes())
+    monkeypatch.setattr(plots, 'ROOT', tmp_path)
+    with pytest.raises(ValueError, match=message):
+        plots.load_data()
+
+
+def test_distribution_does_not_clip_a_region_above_old_axis_limit(monkeypatch):
+    frame = plots.load_data().query('year == 2022').copy()
+    frame.loc[frame.region_id == 'JP-25', 'manufacturing_share_pct'] = 52
+    def check_figure(fig, name):
+        try:
+            ax = fig.axes[0]
+            assert ax.get_xlim()[1] >= 52
+            assert sum(len(collection.get_offsets()) for collection in ax.collections
+                       if isinstance(collection, plots.matplotlib.collections.PathCollection)) == 98
+        finally:
+            plots.plt.close(fig)
+    monkeypatch.setattr(plots, 'save', check_figure)
+    plots.manufacturing_distribution(frame)
+
+
+def test_services_chart_requires_a_single_country():
+    with pytest.raises(ValueError, match='within one country'):
+        plots.trend(pd.DataFrame(), 'services')

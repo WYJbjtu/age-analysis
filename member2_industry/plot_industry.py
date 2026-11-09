@@ -14,6 +14,9 @@ OUT = ROOT / 'member2_industry/figures'
 TEAL, GOLD, GREY = '#247C78', '#D99A37', '#DEE3E8'
 INK = '#223447'
 YEARS = tuple(range(2011, 2023))
+# Match Member 1's country colors; sector colors retain a separate meaning.
+COUNTRY_COLORS = {'USA': '#2788ae', 'JPN': '#8551a6'}
+COUNTRY_NAMES = {'USA': 'United States', 'JPN': 'Japan'}
 
 
 def load_data():
@@ -21,12 +24,26 @@ def load_data():
     df = df.loc[df.year.isin(YEARS)].copy()
     lookup = pd.read_csv(ROOT / 'data/reference/region_lookup.csv')
     df = df.merge(lookup[['country', 'region_id', 'region_name']],
-                  on=['country', 'region_id'], validate='many_to_one')
+                  on=['country', 'region_id'], how='left', validate='many_to_one', indicator=True)
+    if not df['_merge'].eq('both').all():
+        raise ValueError('Unknown region: do not silently drop observations before plotting')
+    df = df.drop(columns='_merge')
     expected = {(r.country, r.region_id, year) for r in lookup.itertuples() for year in YEARS}
     if len(df) != len(expected) or set(df[['country', 'region_id', 'year']].itertuples(index=False, name=None)) != expected:
         raise ValueError('Charts require the complete 98-region, 12-year panel')
-    if df[['manufacturing_share_pct', 'services_share_pct']].isna().any().any():
-        raise ValueError('Missing shares: do not silently drop regions')
+    amounts = ['nominal_gdp_local', 'manufacturing_va_local', 'services_va_local']
+    shares = ['manufacturing_share_pct', 'services_share_pct']
+    if not np.isfinite(df[amounts + shares].to_numpy(dtype=float)).all():
+        raise ValueError('Missing or non-finite industry values')
+    if (df.nominal_gdp_local <= 0).any() or (df[amounts + shares] < 0).any().any():
+        raise ValueError('Industry amounts and shares must be nonnegative, with positive GDP')
+    for sector in ('manufacturing', 'services'):
+        expected_share = 100 * df[f'{sector}_va_local'] / df.nominal_gdp_local
+        if not np.allclose(df[f'{sector}_share_pct'], expected_share, atol=1e-7, rtol=0):
+            raise ValueError(f'{sector} shares do not match the source amounts')
+    expected_period = df.country.map({'USA': 'CY', 'JPN': 'FY'}) + df.year.astype(str)
+    if not df.gdp_reference_period.eq(expected_period).all():
+        raise ValueError('Incorrect CY/FY reference period')
     df['other_share_pct'] = 100 - df.manufacturing_share_pct - df.services_share_pct
     if (df.other_share_pct < 0).any():
         raise ValueError('Components exceed GDP')
@@ -61,8 +78,9 @@ def manufacturing_distribution(df):
              fontsize=11, color=INK)
     rng = np.random.default_rng(2022)
     labels = []
-    for y, (country, label, period, color) in enumerate([
-            ('USA', 'United States', 'CY2022', '#5983B0'), ('JPN', 'Japan', 'FY2022', TEAL)]):
+    for y, (country, label, period) in enumerate([
+            ('USA', 'United States', 'CY2022'), ('JPN', 'Japan', 'FY2022')]):
+        color = COUNTRY_COLORS[country]
         sub = df.loc[df.country == country].sort_values('region_id')
         values = sub.manufacturing_share_pct
         q1, median, q3 = values.quantile([0.25, 0.5, 0.75])
@@ -76,7 +94,7 @@ def manufacturing_distribution(df):
         labels.append(f'{label}\n{period} · n={len(sub)}')
     ax.set_yticks([0, 1], labels)
     ax.set_ylim(1.6, -0.5)
-    ax.set_xlim(0, 45)
+    ax.set_xlim(0, max(45, 5 * np.ceil(df.manufacturing_share_pct.max() / 5)))
     ax.set_xlabel('Manufacturing value added / nominal regional GDP', labelpad=12)
     style(ax)
     fig.text(0.07, 0.10, 'Band: middle 50% of regions. Medians weight each region equally, not by GDP or population.',
@@ -163,33 +181,41 @@ def trend(summary, sector, country=None):
     if sector == 'services' and country not in ('USA', 'JPN'):
         raise ValueError('Service trends must be shown within one country')
     countries = [country] if country else ['USA', 'JPN']
-    names = {'USA': 'United States', 'JPN': 'Japan'}
-    colors = {'USA': '#5983B0', 'JPN': TEAL}
     periods = {'USA': 'calendar years', 'JPN': 'fiscal years'}
     service_label = 'Private services (BEA)' if country == 'USA' else 'Tertiary industries (Cabinet Office)'
     title = ('Regional manufacturing shares, 2011–2022' if sector == 'manufacturing'
-             else f'{names[country]}: service shares, 2011–2022')
-    fig, ax = plt.subplots(figsize=(11.5, 6.3))
-    fig.subplots_adjust(left=0.09, right=0.91, top=0.72, bottom=0.24)
+             else f'{COUNTRY_NAMES[country]}: service shares, 2011–2022')
+    fig, ax = plt.subplots(figsize=(12, 6.5))
+    fig.subplots_adjust(left=0.09, right=0.85, top=0.74, bottom=0.24)
     fig.text(0.07, 0.93, title, fontsize=20, weight='bold', color=INK)
-    subtitle = ('Annual regional medians; shaded bands show the middle 50% of regions'
+    subtitle = ('Annual regional medians and middle 50% of regions; change labels compare 2011 with 2022'
                 if sector == 'manufacturing' else
                 f'{service_label} | regional median and middle 50% | {periods[country]}')
     fig.text(0.07, 0.86, subtitle, fontsize=11, color=INK)
     for code in countries:
         sub = summary.loc[summary.country == code].sort_values('year')
         median = sub[f'{sector}_median_pct']
+        change = float(median.iloc[-1] - median.iloc[0])
         ax.fill_between(sub.year, sub[f'{sector}_q1_pct'], sub[f'{sector}_q3_pct'],
-                        color=colors[code], alpha=0.15)
-        ax.plot(sub.year, median, color=colors[code], marker='o', lw=2.3,
-                markersize=4.5, label=f'{names[code]} ({int(sub.regions.iloc[0])} regions, {periods[code]})')
-        for index, offset, align in [(0, (0, 10), 'left'), (-1, (8, 10), 'left')]:
-            ax.annotate(f'{median.iloc[index]:.2f}%', (sub.year.iloc[index], median.iloc[index]),
-                        xytext=offset, textcoords='offset points', ha=align,
-                        fontsize=10, color=colors[code], weight='bold')
+                        color=COUNTRY_COLORS[code], alpha=0.15)
+        ax.plot(sub.year, median, color=COUNTRY_COLORS[code], marker='o', lw=2.5,
+                markersize=4.5, label=f'{COUNTRY_NAMES[code]} ({int(sub.regions.iloc[0])} regions, {periods[code]})')
+        ax.annotate(f'{median.iloc[0]:.2f}%', (sub.year.iloc[0], median.iloc[0]),
+                    xytext=(0, 10), textcoords='offset points', ha='left',
+                    fontsize=10, color=COUNTRY_COLORS[code], weight='bold')
+        end_label = f'{COUNTRY_NAMES[code]}\n{median.iloc[-1]:.2f}%\n{change:+.2f} pp'
+        ax.annotate(end_label, (sub.year.iloc[-1], median.iloc[-1]),
+                    xytext=(12, 0), textcoords='offset points', ha='left', va='center',
+                    fontsize=11, color=COUNTRY_COLORS[code], weight='bold')
     ax.set_xticks(YEARS)
-    ax.set_xlim(2010.3, 2022.7)
-    ax.set_ylim((0, 100) if sector == 'services' else (0, 40))
+    ax.set_xlim(2010.5, 2022.25)
+    if sector == 'services':
+        # Use the same zoomed scale on the two separate country figures.
+        lower = max(0, 5 * np.floor(summary.services_q1_pct.min() / 5) - 5)
+        upper = min(100, 5 * np.ceil(summary.services_q3_pct.max() / 5) + 5)
+    else:
+        lower, upper = 0, max(40, 5 * np.ceil(summary.manufacturing_q3_pct.max() / 5))
+    ax.set_ylim(lower, upper)
     ax.set_ylabel('Share of nominal regional GDP (%)')
     ax.yaxis.set_major_formatter(PercentFormatter(100, decimals=0))
     ax.grid(axis='y', color='#E4E9EC', linewidth=0.7)
@@ -199,7 +225,10 @@ def trend(summary, sector, country=None):
         spine.set_visible(False)
     ax.legend(loc='lower left', bbox_to_anchor=(0, 1.01), frameon=False, fontsize=10,
               ncol=2 if len(countries) == 2 else 1)
-    fig.text(0.07, 0.125, 'Each region has equal weight. Bands describe regional variation, not uncertainty or national shares.',
+    band_note = ('Each region has equal weight. Bands show regional variation, not confidence intervals or national shares.'
+                 if sector == 'manufacturing' else
+                 f'Zoomed vertical axis: {lower:.0f}–{upper:.0f}%. Each region has equal weight; bands show regional variation.')
+    fig.text(0.07, 0.125, band_note,
              fontsize=9, color=INK)
     note = ('US calendar years and Japanese fiscal years differ; industry classifications and region sizes also differ.'
             if sector == 'manufacturing' else
