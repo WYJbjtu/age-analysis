@@ -31,29 +31,29 @@
   "USA": {
     "regions": 51,
     "manufacturing_share_pct": {
-      "median": 9.65255985,
+      "median": 9.6525598472,
       "min": {
         "region": "District of Columbia",
         "id": "US-DC",
-        "value": 0.23099802
+        "value": 0.230998021
       },
       "max": {
         "region": "Indiana",
         "id": "US-IN",
-        "value": 25.08534695
+        "value": 25.0853469506
       }
     },
     "services_share_pct": {
-      "median": 68.98850629383399,
+      "median": 68.9885062938,
       "min": {
         "region": "North Dakota",
         "id": "US-ND",
-        "value": 49.8549568923256
+        "value": 49.8549568923
       },
       "max": {
         "region": "New York",
         "id": "US-NY",
-        "value": 83.09325637645097
+        "value": 83.0932563765
       }
     }
   }
