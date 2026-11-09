@@ -1,4 +1,12 @@
-# Team tasks: first milestone (2022 cross-section)
+# Team responsibilities and current handoff
+
+Current local remediation (2026-11-09): Member1 national values and U.S. boundaries independently verified; Member2 CY/FY and service restrictions enforced in shared code/exports; Member3 acquisition, parsing, migration coverage, BLS validation, five figures and English text repaired. Shared merge now contains1176 region-year rows, with optional context left-joined. See [current presentation entry point](../poster/README.md) and [repair report](remediation/repair_report_zh.md) for actual checks and remaining limits. No remote actions are authorized in this task.
+
+Ownership remains: Member1 population; Member2 industry; Member3 labor/migration; Member4 integration/statistical analysis/poster. The user's local repair authorization allowed the remediation lead to update the affected actual deliverables across these boundaries.
+
+## Historical first-milestone plan (retained, not a current checklist)
+
+The original plan below predates the completed member deliveries. Its unchecked tasks and GitHub setup suggestions describe that earlier plan, not unfinished remediation or permission for remote writes.
 
 ## Member 1 — Population
 **Own:** `data/processed/demographics.csv` and `member1_demographics/`.

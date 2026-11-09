@@ -1,5 +1,7 @@
 # Contributing
 
+Current local remediation (2026-11-09): the user explicitly authorized changes across Members 1–3 and shared interfaces. This task requires no issue, PR, commit or branch change; remote writes are prohibited. The general collaboration procedure below applies to later team development, not permission for remote actions in this repair. Current results: [repair record](docs/remediation/repair_report_zh.md).
+
 1. Read `docs/data_contract.md` and `docs/team_tasks.md`.
 2. Create your own feature branch: `git switch -c feature/member1-demographics` (change number).
 3. Only edit your data-owned CSV and personal module; modifying shared contracts requires a documented issue and coordination.

@@ -27,3 +27,9 @@ Figure: figures/03_regional_aging_change_2011_2022.png (SVG/PDF). Each point com
 
 ## Presentation handoff (Member1, approximately3 minutes)
 Research question → common-source national trend → within-country regional spread → numerical findings → source/benchmark caveat → transition to Member2 industrial structure. Each figure should be introduced by goal, place, content and message. Final spoken script remains to be tailored to the selected poster and timing.
+
+## Source verification update, 2026-11-09
+
+The original full UN WPP2024 F06 workbook has now been independently retrieved and hash-matched to the original release. All 46 national observations and 276 age-percentage checks pass; findings and figures above remain numerically unchanged. Both-sex de facto population aged 65+ is divided by total population at July1; 2000–2022 uses historical Estimates, not projections. The original product publishes percentages; independent reconstruction from population-count products was not performed. See [verification evidence](independent_verification.json).
+
+Existing U.S. map boundaries and 51 code/name joins are verified against the original Census2022 1:20m file, with 14 multipart regions retained and all 102 population/manufacturing values checked. Insets show Alaska, Hawaii and DC at different scales. These generalized boundaries are suitable for display, not precise geographic analysis. No Japanese boundary map was supplied; the full prefectural ranked chart is the presentation-safe comparison. Keep the source and inset notes if using the U.S. maps in an appendix. Current team selection is in [poster/README.md](../poster/README.md).

@@ -1,0 +1,53 @@
+check,path,passed,notes,sha256
+Member1 isolated rebuild; semantic CSV equality,data/processed/demographics.csv,True,"National WPP uses supplied snapshot, not independent source verification",
+Member1 isolated rebuild; semantic CSV equality,member1_demographics/population_detail_2011_2022.csv,True,"National WPP uses supplied snapshot, not independent source verification",
+Member1 isolated rebuild; semantic CSV equality,member1_demographics/population_2019.csv,True,"National WPP uses supplied snapshot, not independent source verification",
+Member1 isolated rebuild; semantic CSV equality,member1_demographics/population_2022.csv,True,"National WPP uses supplied snapshot, not independent source verification",
+Member1 isolated rebuild; semantic CSV equality,member1_demographics/national_trends_wpp2024_2000_2022.csv,True,"National WPP uses supplied snapshot, not independent source verification",
+Member2 isolated rebuild; exact parsed CSV equality,data/processed/industry.csv,True,All 1176 rows; pinned official sources,
+Member4 deterministic bytes,audit/environment.json,True,"PNG, SVG, CSV and environment outputs",1c102f7b48f68e37462ba8312b974f36bd90a5e0ad73b0331f0e97b646ef0335
+Member4 deterministic bytes,audit/exclusions.csv,True,"PNG, SVG, CSV and environment outputs",ed935378f5d62d0a366403a58e997ddf50cce62482127b6689e53fb2ef44f41b
+Member4 deterministic bytes,audit/join_coverage.csv,True,"PNG, SVG, CSV and environment outputs",a8d688f147723cf5d94c6cfe447587d92a1183975bb42d1fb00c5879f489957f
+Member4 deterministic bytes,audit/missingness.csv,True,"PNG, SVG, CSV and environment outputs",41188a31bb8d6774a2068da957f9f4565293ca3c432c27d5838b2340d80a33a5
+Member4 deterministic bytes,audit/sample_flow.csv,True,"PNG, SVG, CSV and environment outputs",285a8e5f8459fe30dd54b40c1152f26c0e6b134320d2a6990384b20b1f5cf5c9
+Member4 deterministic bytes,data/analysis_samples.csv,True,"PNG, SVG, CSV and environment outputs",959579d194723df35de0256c71190056dbc745a36a19f5e22fa6e7fcf1ba23e6
+Member4 deterministic bytes,data/changes_2019_2022.csv,True,"PNG, SVG, CSV and environment outputs",185a55449998909b5dbdfdec4d0a22c364835169bbd3f1f63984b09794c76db6
+Member4 deterministic bytes,data/core_2019.csv,True,"PNG, SVG, CSV and environment outputs",f47e4a2464975e22557ede1171030f9ee5364528e71ecb053a2c7c89071de0b3
+Member4 deterministic bytes,data/core_2022.csv,True,"PNG, SVG, CSV and environment outputs",ad282b3dcb4e3c4cf3ba49aa1e7a41967bf2ea5411a1f05143f275886f84afe2
+Member4 deterministic bytes,data/integrated_context_panel.csv,True,"PNG, SVG, CSV and environment outputs",3bd14cca85d4857179fbf5522efb45d21c39c7f41aab73ef626ce52bcb53809a
+Member4 deterministic bytes,figures/01_pooled_within_2022.png,True,"PNG, SVG, CSV and environment outputs",906be4359cc374d7e26bafd8154fa02299758746ff63cb2f56de59e92f605a20
+Member4 deterministic bytes,figures/01_pooled_within_2022.svg,True,"PNG, SVG, CSV and environment outputs",b66327b42bda4fe2f239df93479bf11537b620ae270cd23cdaa2f1970f9775ff
+Member4 deterministic bytes,figures/02_robustness_and_covariance.png,True,"PNG, SVG, CSV and environment outputs",94fb0a5c57761bbd7f7da4bf975f10db7e4741d29bbd830386361b32d73f0489
+Member4 deterministic bytes,figures/02_robustness_and_covariance.svg,True,"PNG, SVG, CSV and environment outputs",a24e3014b740927f21b705f50b70a3d166bb997b9bf7da640acba11c9d399fb4
+Member4 deterministic bytes,figures/03_within_country_cases.png,True,"PNG, SVG, CSV and environment outputs",0c96f02bda5d8023663e9602ba21106ec5466772fa52cb3ae11cbeca8f378343
+Member4 deterministic bytes,figures/03_within_country_cases.svg,True,"PNG, SVG, CSV and environment outputs",7a9c19995b7828dfe729d05999532bdec92ce2a97fd13843e0880936f8e153c1
+Member4 deterministic bytes,results/analysis_ledger.csv,True,"PNG, SVG, CSV and environment outputs",e78d0fe027176a5832088365bb9acb57a0cfba3f12213f0d13ad66ec98731971
+Member4 deterministic bytes,results/associations.csv,True,"PNG, SVG, CSV and environment outputs",028bd63e58d47350846aaf462eb675d725b0cbd51842fb6d5d7308cce2aa91fa
+Member4 deterministic bytes,results/case_candidate_pairs.csv,True,"PNG, SVG, CSV and environment outputs",23588d216c9cec2ea591d09eb7fa817669ff5f984b06a2ac41e24f66dd92a899
+Member4 deterministic bytes,results/change_associations.csv,True,"PNG, SVG, CSV and environment outputs",5a55588c0d0fbc6547cf9c8e5e1c5bb843aa3b8ac9a7123a634f8ee616931618
+Member4 deterministic bytes,results/covariance_components.csv,True,"PNG, SVG, CSV and environment outputs",f1fcf379d4384b4bec88bcc73736c04d4fc70d1a6655c4d4f43587450a3ac009
+Member4 deterministic bytes,results/covariance_summary.csv,True,"PNG, SVG, CSV and environment outputs",c22e96eab5f272116a8d17b3cb2e8241ad5faa501602c37fa2a80499f01a42dd
+Member4 deterministic bytes,results/influence_summary.csv,True,"PNG, SVG, CSV and environment outputs",251bd775f21f1725fcf36267347e783c140e04bb3c812f98b022383032602b0f
+Member4 deterministic bytes,results/leave_one_out.csv,True,"PNG, SVG, CSV and environment outputs",6467a24a1380d992615fa6eaad0792c1221d1bcc95b46b73d10d5223005a94a8
+Member4 deterministic bytes,results/overlap.csv,True,"PNG, SVG, CSV and environment outputs",086c7d1c2e26651034e637b0dc068151b587ae8e405aab4e926d320635fd04e1
+Member4 deterministic bytes,results/primary_summary.csv,True,"PNG, SVG, CSV and environment outputs",ff4aeb98cd89df401cfb8d22a2e312a11bd6ac2a256ccc3e24109dba8407dc0b
+Member4 deterministic bytes,results/selected_cases.csv,True,"PNG, SVG, CSV and environment outputs",0cb5c31dd186e86d22630ba6599cf7378f3f22e74e4cf3f8b4896db927265280
+Report regeneration deterministic bytes,findings.md,True,Generated audit registers and findings,
+Report regeneration deterministic bytes,audit/bls_primary_table_sample.csv,True,Generated audit registers and findings,
+Report regeneration deterministic bytes,audit/claim_checks.csv,True,Generated audit registers and findings,
+Report regeneration deterministic bytes,audit/corrections.csv,True,Generated audit registers and findings,
+Report regeneration deterministic bytes,audit/exclusions.csv,True,Generated audit registers and findings,
+Report regeneration deterministic bytes,audit/issues.csv,True,Generated audit registers and findings,
+Report regeneration deterministic bytes,audit/japan_gdp_reconciliation.csv,True,Generated audit registers and findings,
+Report regeneration deterministic bytes,audit/join_coverage.csv,True,Generated audit registers and findings,
+Report regeneration deterministic bytes,audit/labor_count_rounding.csv,True,Generated audit registers and findings,
+Report regeneration deterministic bytes,audit/missingness.csv,True,Generated audit registers and findings,
+Report regeneration deterministic bytes,audit/primary_source_verification_log.csv,True,Generated audit registers and findings,
+Report regeneration deterministic bytes,audit/readiness.csv,True,Generated audit registers and findings,
+Report regeneration deterministic bytes,audit/repository_inventory.csv,True,Generated audit registers and findings,
+Report regeneration deterministic bytes,audit/sample_flow.csv,True,Generated audit registers and findings,
+Report regeneration deterministic bytes,audit/source_check_summary.csv,True,Generated audit registers and findings,
+Report regeneration deterministic bytes,audit/source_record_checks.csv,True,Generated audit registers and findings,
+Report regeneration deterministic bytes,audit/source_registry.csv,True,Generated audit registers and findings,
+Report regeneration deterministic bytes,audit/verified_domestic_migration.csv,True,Generated audit registers and findings,
+Report regeneration deterministic bytes,results/finding_evidence.csv,True,Generated audit registers and findings,

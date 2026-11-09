@@ -230,6 +230,16 @@ def main(download=False):
     }, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(f'2011–2022: {len(american)} USA + {len(japanese)} JPN = {len(generated)} validated rows.')
     print('Service definitions differ: use separate country panels; no pooled service comparison.')
+    (MODULE / 'comparability.json').write_text(json.dumps({
+        'manufacturing': 'nominal manufacturing value added / same-region same-period nominal GDP * 100',
+        'USA': {'gdp_period': 'calendar year', 'population_reference': 'July 1',
+                'services': 'private services including utilities; excludes government and government enterprises'},
+        'JPN': {'gdp_period': 'fiscal year April through following March', 'population_reference': 'October 1',
+                'services': 'official tertiary aggregate including public administration and public services'},
+        'services_pooled_status': 'BLOCKED', 'services_not_complement_of_manufacturing': True,
+        'guard': 'src/aging_economies/comparability.py; analysis/plot_correlations.py requires --country for services',
+        'interpretation': 'Output composition, not employment share or real growth; CY/FY alignment is approximate.'
+    }, indent=2) + '\n', encoding='utf-8')
 
 
 if __name__ == '__main__':

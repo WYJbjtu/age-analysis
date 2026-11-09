@@ -1,0 +1,10 @@
+member,scope,A_provenance_numbers,B_coverage_comparability,C_reproducibility_validation,D_figures_claims,evidence
+Member 1,regional demographic data 2011-2022,PASS,PASS WITH LIMITATIONS,PASS WITH LIMITATIONS,PASS WITH LIMITATIONS,All regional canonical fields verified; WPP and map geometry not independently verified; benchmark break retained
+Member 1,WPP national claims,NOT ASSESSED,NOT ASSESSED,PASS WITH LIMITATIONS,NOT ASSESSED,Internal supplied snapshot checks only; no Member4 national claim
+Member 2,manufacturing 2011-2022,PASS,PASS WITH LIMITATIONS,PASS,PASS,All 1176 records and 564 Japan GDP reconciliations verified; CY/FY and nominal-share limits
+Member 2,pooled services,PASS,BLOCKED,PASS,BLOCKED,"Numerically correct, different country aggregates; country-specific use allowed"
+Member 3,labor 2019/2022 within-country,PASS WITH LIMITATIONS,PASS WITH LIMITATIONS,PASS WITH LIMITATIONS,PASS WITH LIMITATIONS,Japan exhaustive; USA six-region sample per year; counts rounding valid; narrative/figure repairs needed
+Member 3,US labor other years,NOT ASSESSED,PASS WITH LIMITATIONS,BLOCKED,NOT ASSESSED,Provenance supplied but raw annual reconstruction unavailable; current-API monthly-mean checker excluded
+Member 3,migration 2019/2022 within-country,PASS,PASS WITH LIMITATIONS,PASS WITH LIMITATIONS,PASS WITH LIMITATIONS,All 98 original records verified per year; domestic adapter; periods still differ
+Member 3,continuous all-resident migration 2011-2022,PASS WITH LIMITATIONS,BLOCKED,PASS WITH LIMITATIONS,BLOCKED,Japanese-only historical values cannot be presented as continuous all-resident history
+Member 3,Figure4 and reversal narrative,PASS WITH LIMITATIONS,PASS WITH LIMITATIONS,PASS WITH LIMITATIONS,BLOCKED,Akita clipped; labor correlations do not reverse sign

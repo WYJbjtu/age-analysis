@@ -1,0 +1,11 @@
+member,file,claim,observed,status,verification
+Member1,member1_demographics/findings.md,USA2022 aging distribution,n=51; median=17.807638; min=11.985329; max=22.537716,PASS,exhaustive canonical recomputation plus primary-source checks
+Member2,member2_industry/findings.md,USA2011-2022 manufacturing medians,11.172328 to 9.652560; difference=-1.519768pp,PASS,full pinned industry source verification; medians not national shares
+Member1,member1_demographics/findings.md,JPN2022 aging distribution,n=47; median=31.500000; min=22.800000; max=38.600000,PASS,exhaustive canonical recomputation plus primary-source checks
+Member2,member2_industry/findings.md,JPN2011-2022 manufacturing medians,21.321345 to 25.196030; difference=3.874685pp,PASS,full pinned industry source verification; medians not national shares
+Member1,member1_demographics/findings.md,WPP national aging endpoints,supplied 46-row snapshot internally consistent; original source not downloaded,NOT ASSESSED,not used by Member4
+Member3,member3_labor_migration/findings.md,Tokyo net inflow roughly halved,82982 to 38023; difference=-44959 persons,PASS,both original all-nationalities annual workbooks checked
+Member3,member3_labor_migration/report_section.md,Aging-unemployment sign reversal between countries,Pearson USA -0.054091; Japan -0.460084; both negative,BLOCKED,same current canonical samples; no sign reversal
+Member3,member3_labor_migration/figures/figure4_labor_2022.png,All47 Japanese observations visible,Akita38.6 outside xlim36.5,BLOCKED,source-code bounds and canonical value
+Member3,member3_labor_migration/findings.md,All-resident migration2011-2022,329 historical Japan values use Japanese-only scope,BLOCKED,original table3 row7
+Member3,member3_labor_migration/report_section.md,Maine at median unemployment; Okinawa youngest,Maine3.0 versus median3.4; Tokyo22.8 younger than Okinawa23.5,BLOCKED,canonical2022 and official inputs

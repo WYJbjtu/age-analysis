@@ -9,7 +9,7 @@
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -45,7 +45,7 @@ L 166.32 125.28
      </g>
      <g id="line2d_2"/>
      <g id="text_1">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #223447" x="166.32" y="328.558281" transform="rotate(-0 166.32 328.558281)">0%</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #223447" x="166.32" y="328.557422" transform="rotate(-0 166.32 328.557422)">0%</text>
      </g>
     </g>
     <g id="xtick_2">
@@ -56,7 +56,7 @@ L 230.56 125.28
      </g>
      <g id="line2d_4"/>
      <g id="text_2">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #223447" x="230.56" y="328.558281" transform="rotate(-0 230.56 328.558281)">5%</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #223447" x="230.56" y="328.557422" transform="rotate(-0 230.56 328.557422)">5%</text>
      </g>
     </g>
     <g id="xtick_3">
@@ -67,7 +67,7 @@ L 294.8 125.28
      </g>
      <g id="line2d_6"/>
      <g id="text_3">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #223447" x="294.8" y="328.558281" transform="rotate(-0 294.8 328.558281)">10%</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #223447" x="294.8" y="328.557422" transform="rotate(-0 294.8 328.557422)">10%</text>
      </g>
     </g>
     <g id="xtick_4">
@@ -78,7 +78,7 @@ L 359.04 125.28
      </g>
      <g id="line2d_8"/>
      <g id="text_4">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #223447" x="359.04" y="328.558281" transform="rotate(-0 359.04 328.558281)">15%</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #223447" x="359.04" y="328.557422" transform="rotate(-0 359.04 328.557422)">15%</text>
      </g>
     </g>
     <g id="xtick_5">
@@ -89,7 +89,7 @@ L 423.28 125.28
      </g>
      <g id="line2d_10"/>
      <g id="text_5">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #223447" x="423.28" y="328.558281" transform="rotate(-0 423.28 328.558281)">20%</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #223447" x="423.28" y="328.557422" transform="rotate(-0 423.28 328.557422)">20%</text>
      </g>
     </g>
     <g id="xtick_6">
@@ -100,7 +100,7 @@ L 487.52 125.28
      </g>
      <g id="line2d_12"/>
      <g id="text_6">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #223447" x="487.52" y="328.558281" transform="rotate(-0 487.52 328.558281)">25%</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #223447" x="487.52" y="328.557422" transform="rotate(-0 487.52 328.557422)">25%</text>
      </g>
     </g>
     <g id="xtick_7">
@@ -111,7 +111,7 @@ L 551.76 125.28
      </g>
      <g id="line2d_14"/>
      <g id="text_7">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #223447" x="551.76" y="328.558281" transform="rotate(-0 551.76 328.558281)">30%</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #223447" x="551.76" y="328.557422" transform="rotate(-0 551.76 328.557422)">30%</text>
      </g>
     </g>
     <g id="xtick_8">
@@ -122,7 +122,7 @@ L 616 125.28
      </g>
      <g id="line2d_16"/>
      <g id="text_8">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #223447" x="616" y="328.558281" transform="rotate(-0 616 328.558281)">35%</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #223447" x="616" y="328.557422" transform="rotate(-0 616 328.557422)">35%</text>
      </g>
     </g>
     <g id="xtick_9">
@@ -133,7 +133,7 @@ L 680.24 125.28
      </g>
      <g id="line2d_18"/>
      <g id="text_9">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #223447" x="680.24" y="328.558281" transform="rotate(-0 680.24 328.558281)">40%</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #223447" x="680.24" y="328.557422" transform="rotate(-0 680.24 328.557422)">40%</text>
      </g>
     </g>
     <g id="xtick_10">
@@ -144,26 +144,26 @@ L 744.48 125.28
      </g>
      <g id="line2d_20"/>
      <g id="text_10">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #223447" x="744.48" y="328.558281" transform="rotate(-0 744.48 328.558281)">45%</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #223447" x="744.48" y="328.557422" transform="rotate(-0 744.48 328.557422)">45%</text>
      </g>
     </g>
     <g id="text_11">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #223447" x="455.4" y="351.204219" transform="rotate(-0 455.4 351.204219)">Manufacturing value added / nominal regional GDP</text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #223447" x="455.4" y="351.558281" transform="rotate(-0 455.4 351.558281)">Manufacturing value added / nominal regional GDP</text>
     </g>
    </g>
    <g id="matplotlib.axis_2">
     <g id="ytick_1">
      <g id="line2d_21"/>
      <g id="text_12">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #223447" transform="translate(84.834531 168.879029)">United States</text>
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #223447" transform="translate(76.443594 181.196623)">CY2022 · n=51</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #223447" transform="translate(84.834531 168.151461)">United States</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #223447" transform="translate(76.443594 181.353609)">CY2022 · n=51</text>
      </g>
     </g>
     <g id="ytick_2">
      <g id="line2d_22"/>
      <g id="text_13">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #223447" transform="translate(128.638594 258.364743)">Japan</text>
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #223447" transform="translate(77.605469 270.682337)">FY2022 · n=47</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #223447" transform="translate(128.638594 257.636745)">Japan</text>
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #223447" transform="translate(77.605469 270.838894)">FY2022 · n=47</text>
      </g>
     </g>
    </g>

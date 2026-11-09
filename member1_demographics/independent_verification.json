@@ -1,0 +1,44 @@
+{
+  "national": {
+    "status": "PASS",
+    "source_url": "https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/EXCEL_FILES/2_Population/WPP2024_POP_F06_1_POPULATION_PERCENTAGE_SELECT_AGE_GROUPS_BOTH_SEXES.xlsx",
+    "sha256": "82a72215a68a0c6a2060dd33adf38b9e6f3997c2653dc3eda0150f8d68d861b7",
+    "source_sheet": "Estimates",
+    "rows": 46,
+    "field_checks": 276,
+    "max_difference": 4.959600730103375e-09,
+    "definition": "Published WPP2024 percentage: both-sex de facto population aged 65+ / total de facto population, July 1, per 100 population.",
+    "numerator_and_denominator": "The source is a percentage product (F06), not a population-count product. Total column is 100; 0-14, 15-64 and 65+ partition it. No regional-mean substitute or invented count is used.",
+    "metadata_url": "https://population.un.org/dataportal/data/indicators/71/locations/180/start/2024/end/2024/metadata",
+    "estimate_status": "2000-2022 are historical Estimates; no projection rows used",
+    "independent_count_reconstruction": "NOT EVALUATED; original product publishes percentages"
+  },
+  "maps": {
+    "status": "PASS WITH LIMITATIONS",
+    "source": "Census 2022 cartographic state boundaries, 1:20,000,000",
+    "url": "https://www2.census.gov/geo/tiger/GENZ2022/shp/cb_2022_us_state_20m.zip",
+    "sha256": "fb2c327c32869dc27bee7a6e0e6130f9d936c4f85638b8414af799f1251e3816",
+    "regions": 51,
+    "main": 48,
+    "insets": [
+      "Alaska",
+      "Hawaii",
+      "DC"
+    ],
+    "unmatched": 0,
+    "duplicate_region_records": 0,
+    "original_map_values_verified": 102,
+    "projected_parts_all_valid": true,
+    "multipart_regions": 14,
+    "multipart_handling": "Multiple polygon parts belong to one state observation.",
+    "copyright": "US Census public-domain data; cite Census. Boundary metadata restrictions retained below.",
+    "restrictions": [
+      "otherRestrictions",
+      "Access_Constraints: None",
+      "Use Constraints: The intended display scale for this file is 1:20,000,000. This file should not be displayed at scales larger than 1:20,000,000.\n\nThese products are free to use in a product or publication, however acknowledgement must be given to the U.S. Census Bureau as the source. The boundary information is for visual display at appropriate small scales only. Cartographic boundary files should not be used for geographic analysis including area or perimeter calculation. Files should not be used for geocoding addresses. Files should not be used for determining precise geographic area relationships."
+    ],
+    "scale": "Single normalization for each metric across main map and all insets; missing values never become zero.",
+    "limitations": "Generalized small-scale boundaries omit some small features; inset scales differ. No Japanese boundary map exists in this repository; use the existing 47-prefecture ranked chart.",
+    "japan_map_status": "NOT APPLICABLE: no existing Japanese boundary asset or map generator"
+  }
+}

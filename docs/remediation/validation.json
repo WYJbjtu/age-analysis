@@ -1,0 +1,195 @@
+{
+  "main_comparisons": 38,
+  "main_max_absolute_difference": 0.0,
+  "historical_protection": {
+    "historical_backup_files": 229,
+    "current_protected_files": 268,
+    "current_input_lock": "docs/remediation/input_manifest_v4.json"
+  },
+  "main_panel_rows": 1176,
+  "main_regions_per_year": {
+    "USA": 51,
+    "JPN": 47
+  },
+  "optional_domestic_reference_rows": 196,
+  "main_exclusions": 0,
+  "live_source_retrieval": "UN WPP, Census boundaries, Japanese2018/2020/2021 migration newly retrieved; pinned prior official raw files reused",
+  "bls_status": "612 official archive rows independently read; traceable text-cache reproduction; direct HTML403; no current API verification",
+  "source_checks": {
+    "total": 15027,
+    "failed": 0
+  },
+  "tests": {
+    "tests": 65,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "reproduction": {
+    "checks": 64,
+    "failed": 0
+  },
+  "visual_review": {
+    "review_date": "2026-11-09",
+    "updated_figure_layouts": 12,
+    "compatibility_alias_pngs_opened": 3,
+    "additional_unchanged_pngs_opened": 7,
+    "scope": "Each updated scientific figure inspected via its actual PNG. SVG is exported by the same Matplotlib figure object and tested for deterministic reproduction; no claim of separately rendering every SVG/PDF.",
+    "records": [
+      {
+        "path": "member2_industry/figures/jpn_industry_composition_2022.png",
+        "sha256": "a49b2a51fa600675a69d15babfd627197cb964d2872e1a7061fe958c38e60de0",
+        "method": "Opened actual PNG using view_image and visually inspected",
+        "status": "PASS",
+        "observation": "47 labeled prefectures including Akita; FY2022 and tertiary definition visible; bars and footnotes intact."
+      },
+      {
+        "path": "member2_industry/figures/usa_industry_composition_2022.png",
+        "sha256": "8509e1b2b0c8241e9469e61e5134063e6ff29e4d24f9c7abd2ad292404c063b4",
+        "method": "Opened actual PNG using view_image and visually inspected",
+        "status": "PASS",
+        "observation": "51 regions including DC; CY2022 and private services definition visible; labels and endpoints intact."
+      },
+      {
+        "path": "member2_industry/figures/manufacturing_distribution_2022.png",
+        "sha256": "174b67342f58552686de211126a837390c2733dded84a36085e06afa3c1f1cfe",
+        "method": "Opened actual PNG using view_image and visually inspected",
+        "status": "PASS",
+        "observation": "51/47 dots, shared percentage axis, CY/FY, equal-region median disclaimer visible."
+      },
+      {
+        "path": "member2_industry/figures/manufacturing_trend_2011_2022.png",
+        "sha256": "10169182838855704d00215cbf233f7e894a5d37c6942f247c047a935e71de73",
+        "method": "Opened actual PNG using view_image and visually inspected",
+        "status": "PASS",
+        "observation": "12 years, country colors, region-weighted medians and variation bands; endpoint labels and CY/FY intact."
+      },
+      {
+        "path": "member2_industry/figures/jpn_services_trend_2011_2022.png",
+        "sha256": "34a9ceb4c396648b6128e7a467e239ce46832c0ad972ae2e6713c7b149ee1df0",
+        "method": "Opened actual PNG using view_image and visually inspected",
+        "status": "PASS",
+        "observation": "Japan only; tertiary definition, FY and zoomed-axis notice visible; no pooled services curve."
+      },
+      {
+        "path": "member2_industry/figures/usa_services_trend_2011_2022.png",
+        "sha256": "f6894d3ed6debf4d6844eea265c979407254fa65c6db2e8ce2fe9f7cf4278ffe",
+        "method": "Opened actual PNG using view_image and visually inspected",
+        "status": "PASS",
+        "observation": "USA only; private services definition, CY and zoomed-axis notice visible; no pooled services curve."
+      },
+      {
+        "path": "member3_labor_migration/figures/figure4_labor_2022.png",
+        "sha256": "547376970682bae02e80cc343e0c68568141b9a6bc903ff9eacd9ee585daff37",
+        "method": "Opened actual PNG using view_image and visually inspected",
+        "status": "PASS",
+        "observation": "All98 sample and Akita38.6 within axes; Nevada no longer obscured by legend; domestic scales separated by country."
+      },
+      {
+        "path": "member3_labor_migration/figures/jpn_labor_migration_2019_2022.png",
+        "sha256": "e0172d63fe7a8ca172b494f819e329bd16e2f331c33a2d3e4bf1ee09ced1ee66",
+        "method": "Opened actual PNG using view_image and visually inspected",
+        "status": "PASS",
+        "observation": "All47 scatter observations including Akita; outlined pale points; right panel explicitly selected largest8 increases/decreases."
+      },
+      {
+        "path": "member3_labor_migration/figures/jpn_panel_2011_2022.png",
+        "sha256": "2c4105e66f3020adb7e14c5b062110b60fa503ee051472987c4e0553f41ba5e7",
+        "method": "Opened actual PNG using view_image and visually inspected",
+        "status": "PASS",
+        "observation": "Labor median plus five named metro cases; Japanese-only2011-17 vs all-nationality2018-22 disconnected and separately labeled."
+      },
+      {
+        "path": "member3_labor_migration/figures/two_country_trend_2011_2022.png",
+        "sha256": "87cf43b460f8edfa0404df59254a85e184b8c8a843651252df7c1470101b0695",
+        "method": "Opened actual PNG using view_image and visually inspected",
+        "status": "PASS",
+        "observation": "51/47 regional medians, employment indices and age/vintage caveats visible; SVG ID fix left PNG pixels unchanged."
+      },
+      {
+        "path": "member3_labor_migration/figures/outliers_2022.png",
+        "sha256": "236cad2c8d15edd6519b8d55ad82c430240f152f71c00c55a0109f99a0f46117",
+        "method": "Opened actual PNG using view_image and visually inspected",
+        "status": "PASS",
+        "observation": "All98 background observations; up-to-four residual threshold labels per panel; same-data descriptive screen stated."
+      },
+      {
+        "path": "analysis/figures/correlation_manufacturing_share_pct_2022.png",
+        "sha256": "216fe5adf2ccbe0a6b6ab4e001b2728d9572f53256393c81960191383414d738",
+        "method": "Opened actual PNG using view_image and visually inspected",
+        "status": "PASS",
+        "observation": "Legend moved to empty upper-left area; full sample points and country CY/FY/population timing notes visible."
+      },
+      {
+        "path": "member3_labor_migration/figure4_labor_2022.png",
+        "sha256": "547376970682bae02e80cc343e0c68568141b9a6bc903ff9eacd9ee585daff37",
+        "method": "Opened actual PNG using view_image and visually inspected",
+        "status": "PASS",
+        "observation": "Opened actual compatibility alias; byte-identical to inspected canonical figure."
+      },
+      {
+        "path": "member3_labor_migration/jpn_labor_migration_2019_2022.png",
+        "sha256": "e0172d63fe7a8ca172b494f819e329bd16e2f331c33a2d3e4bf1ee09ced1ee66",
+        "method": "Opened actual PNG using view_image and visually inspected",
+        "status": "PASS",
+        "observation": "Opened actual compatibility alias; byte-identical to inspected canonical figure."
+      },
+      {
+        "path": "member3_labor_migration/outliers_2022.png",
+        "sha256": "236cad2c8d15edd6519b8d55ad82c430240f152f71c00c55a0109f99a0f46117",
+        "method": "Opened actual PNG using view_image and visually inspected",
+        "status": "PASS",
+        "observation": "Opened actual compatibility alias; byte-identical to inspected canonical figure."
+      },
+      {
+        "path": "member1_demographics/figures/01_national_aging_trends_2000_2022.png",
+        "sha256": "0dbf333636abb4b7dcb41f7e104016214a9c1d6a17daa856ed15bbfe95e55524",
+        "method": "Opened actual PNG using view_image and visually inspected",
+        "status": "PASS",
+        "observation": "Original unchanged national figure opened; percentages and 2000-2022 years agree with independently verified WPP extract."
+      },
+      {
+        "path": "member1_demographics/figures/02_regional_aging_comparison_2022.png",
+        "sha256": "b0f1242299b71a03b33e3d3b04a043fdf1d9fe577cc3bd5c427f2bd154ae29c0",
+        "method": "Opened actual PNG using view_image and visually inspected",
+        "status": "PASS",
+        "observation": "Original unchanged all-region ranked comparison opened; distinct country colors and comparable percentage scales."
+      },
+      {
+        "path": "handover/us_2022/deliverables/figures/02_aging_map.png",
+        "sha256": "5ad0d86555be25101c0bdc18640c4b8cdb75c938da76c14348902a5c83c5fb7f",
+        "method": "Opened actual PNG using view_image and visually inspected",
+        "status": "PASS",
+        "observation": "Original unchanged map opened; Alaska/Hawaii/DC insets, common within-map absolute aging scale and source caption."
+      },
+      {
+        "path": "handover/us_2022/deliverables/figures/03_manufacturing_map.png",
+        "sha256": "0f21693c5992622dd668d4886e1d401a19a6fcdab8dc96acbd92342be09dc7df",
+        "method": "Opened actual PNG using view_image and visually inspected",
+        "status": "PASS",
+        "observation": "Original unchanged map opened; Alaska/Hawaii/DC insets, common within-map manufacturing scale and source caption."
+      },
+      {
+        "path": "analysis/member4/figures/01_pooled_within_2022.png",
+        "sha256": "906be4359cc374d7e26bafd8154fa02299758746ff63cb2f56de59e92f605a20",
+        "method": "Opened actual PNG using view_image and visually inspected",
+        "status": "PASS",
+        "observation": "Original unchanged main figure opened; positive pooled and flat country fits, disjoint support, full region counts."
+      },
+      {
+        "path": "analysis/member4/figures/02_robustness_and_covariance.png",
+        "sha256": "94fb0a5c57761bbd7f7da4bf975f10db7e4741d29bbd830386361b32d73f0489",
+        "method": "Opened actual PNG using view_image and visually inspected",
+        "status": "PASS",
+        "observation": "Original unchanged figure opened; both years and covariance components, not R-squared interpretation."
+      },
+      {
+        "path": "analysis/member4/figures/03_within_country_cases.png",
+        "sha256": "0c96f02bda5d8023663e9602ba21106ec5466772fa52cb3ae11cbeca8f378343",
+        "method": "Opened actual PNG using view_image and visually inspected",
+        "status": "PASS",
+        "observation": "Original unchanged figure opened; only within-country pairs and explicit selection contrasts."
+      }
+    ]
+  }
+}

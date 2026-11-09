@@ -1,0 +1,4 @@
+change_id,field,records,action,source,numeric_values_changed,core_rows_removed
+C01,migration_original_definition,329,Label JPN 2011-2017 Japanese-only,jpn_migration_trend.xls row7,0,0
+C02,domestic_net_migration,196,Add separate verified domestic measure for 2019/2022,Census DOMESTICMIG; Japan table1 column U,0,0
+C03,source_registry,20,Export clean independent registry; do not parse malformed Member3 metadata into false columns,structured manifests and inspected official files,0,0

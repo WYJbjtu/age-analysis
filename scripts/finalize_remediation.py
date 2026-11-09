@@ -1,0 +1,184 @@
+"""Create the local repair/change/presentation records after actual validation."""
+from pathlib import Path
+import csv,json,subprocess
+import pandas as pd
+from remediation_state import ROOT,DOCS,digest,verify,historical_backup,active_lock
+from verify_remediation import reports
+
+
+def issue(path):
+    if path.startswith('member1_demographics/'):return 'M1-01;M1-02;M1-03'
+    if path.startswith('member2_industry/'):return 'M2-01;M2-02'
+    if path.startswith('member3_labor_migration/') or path=='data/processed/labor_migration.csv':
+        if 'bls' in path or 'source_snapshots' in path:return 'M3-04;M3-05'
+        if path.endswith('sources.csv'):return 'M3-03'
+        if 'figure4' in path:return 'M3-02;M3-06'
+        return 'M3-01;M3-02;M3-05;M3-07;M3-08'
+    if 'comparability' in path or path=='analysis/plot_correlations.py':return 'M2-01;M2-02'
+    return 'M4-01;M4-02;shared regression/entry-point consistency'
+
+
+def presentation_manifest():
+    initial,backup=historical_backup();before={r['path']:r for r in initial['files']};rows=[]
+    def add(path,owner,use,inputs,version,status='READY WITH LIMITATIONS',reason='',superseded_by=''):
+        relative=path if isinstance(path,str) else path.relative_to(ROOT).as_posix()
+        target=ROOT/relative
+        if not target.is_file():raise FileNotFoundError(target)
+        rows.append(dict(file_path=relative,owner=owner,intended_use=use,input_dataset=';'.join(inputs),
+            input_version=version,input_sha256=json.dumps({p:digest(ROOT/p) for p in inputs},sort_keys=True),
+            status=status,artifact_sha256=digest(target),supersedes_path=str(backup/relative) if relative in before and before[relative]['sha256']!=digest(target) else '',
+            superseded_by=superseded_by,reason=reason))
+    dem='data/processed/demographics.csv';ind='data/processed/industry.csv';lab='data/processed/labor_migration.csv'
+    for path in sorted((ROOT/'member1_demographics/figures').glob('*')):
+        if path.suffix not in ('.png','.svg','.pdf'):continue
+        national='national' in path.name
+        add(path,'Member1','National background' if national else 'Regional comparison / appendix',
+            ['member1_demographics/national_trends_wpp2024_2000_2022.csv'] if national else [dem],
+            'WPP2024 F06 original SHA verified' if national else 'Census V2020/V2022; Japan pinned history/annual releases',
+            reason='Both-sex July1 Estimates; published percentages' if national else 'Regional equal weights; census/vintage/rounding limits; July1 vs October1')
+    for path in sorted((ROOT/'member2_industry/figures').glob('*')):
+        if path.suffix not in ('.png','.svg'):continue
+        services='services' in path.name or 'composition' in path.name
+        add(path,'Member2','Separate within-country appendix' if services else 'Manufacturing context',[ind,'member2_industry/comparability.json'],
+            'BEA September2026 CY; CAO FY2011-2022 /2015 benchmark; current renderer in docs/remediation/environment.json',reason='Services not cross-country comparable' if services else 'Nominal GDP share; CY/FY and administrative-scale limits')
+    for path in sorted((ROOT/'member3_labor_migration/figures').glob('*')):
+        if path.suffix not in ('.png','.svg'):continue
+        add(path,'Member3','Labor context' if 'figure4' in path.name else 'Within-country/longitudinal context appendix',
+            [dem,ind,lab],'Repaired official raw pipeline; BLS12 archive snapshots; Census V2020/V2022; Japan nationality split',
+            reason='Domestic fields; full required geography; coverage/period/age/vintage limits retained')
+    for path in sorted((ROOT/'analysis/member4/figures').glob('*')):
+        if path.suffix not in ('.png','.svg'):continue
+        add(path,'Member4','Main association / robustness / selected within-country cases',[dem,ind],
+            'Original audited main figures; current high-precision regression and byte reproduction',
+            reason='No stable reversal; covariance share is not R-squared; only2019/2022 association checks')
+    for path in sorted((ROOT/'analysis/figures').glob('*')):
+        if path.suffix in ('.png','.svg'):
+            add(path,'Member4/shared','Alternate descriptive scatter; main poster uses Member4 audited figure',
+                [dem,ind],'Repaired shared guarded plot entry point',reason='Equal-region descriptive association; CY/FY')
+    for stem in ['02_aging_map','03_manufacturing_map']:
+        for extension in ['png','svg','pdf']:
+            add(f'handover/us_2022/deliverables/figures/{stem}.{extension}','Member1 / US handover','Optional U.S.-only map appendix',
+                ['handover/us_2022/processed/us_states_2022_core.csv','member1_demographics/boundary_join_checks.csv'],
+                'Original Census2022 1:20m; original51 joins/102 values verified',reason='Generalized boundaries; AK/HI/DC inset scales differ; no Japanese boundary counterpart')
+    for path,owner in [('member1_demographics/findings.md','Member1'),('member2_industry/findings.md','Member2'),
+                       ('member3_labor_migration/findings.md','Member3'),('member3_labor_migration/report_section.md','Member3')]:
+        add(path,owner,'Current English presentation/report text',[dem,ind,lab],'Current repaired module handoff',reason='Retain definitions and limitations with quoted numbers')
+    for path in sorted((ROOT/'poster/member4').glob('*.md')):
+        add(path,'Member4','Current analysis English copy/captions/script/Q&A',[dem,ind],
+            'Frozen main numerical results revalidated; README points to repaired context',reason='Source readiness updates in current repair report')
+    for stem in ['figure4_labor_2022','jpn_labor_migration_2019_2022','outliers_2022']:
+        for extension in ['png','svg']:
+            add(f'member3_labor_migration/{stem}.{extension}','Member3','Compatibility alias; do not use as a separate presentation version',
+                [lab],'Same repaired bytes as canonical figure','SUPERSEDED','Canonical figures/ path prevents ambiguous duplicates',f'member3_labor_migration/figures/{stem}.{extension}')
+    add(ind,'Member2','Pooled cross-country services or service rankings',[ind],'BEA private vs Japan tertiary definitions','BLOCKED','Definitions remain incompatible; use separate within-country displays')
+    add(lab,'Member3','Continuous Japanese all-nationality domestic migration before2018',[lab],'2011-2017 Japanese nationals only','BLOCKED','All-nationality values missing; use split series or verified2019/2022')
+    for path in ['analysis/member4/audit_report.md','analysis/member4/findings.md','analysis/member4/audit/readiness.csv']:
+        add(path,'Member4','Historical audit; not current remediation readiness',[],'Frozen pre-repair evidence','SUPERSEDED','Original issues are preserved; current statuses are in repair report','docs/remediation/repair_report_zh.md')
+    with (ROOT/'poster/presentation_manifest.csv').open('w',encoding='utf-8',newline='') as stream:
+        writer=csv.DictWriter(stream,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)
+    return rows
+
+
+def main():
+    verify();reports()
+    v=json.loads((DOCS/'validation.json').read_text())
+    for key in ['tests','source_checks','reproduction']:
+        if not isinstance(v[key],dict):raise ValueError('Incomplete validation: '+key)
+    if v['tests']['failures'] or v['tests']['errors'] or v['source_checks']['failed'] or v['reproduction']['failed']:
+        raise ValueError('Unresolved validation failures')
+    if not isinstance(v['visual_review'],dict):raise ValueError('Actual visual review not recorded')
+    assets=presentation_manifest()
+    # Ensure current output paths exist before recording final status; no staged/index mutations.
+    for name in ['repair_report_zh.md','file_change_manifest.csv','file_change_manifest.sha256','final_state.json']:
+        if not (DOCS/name).exists():(DOCS/name).write_text('',encoding='utf-8')
+    state={'branch':subprocess.check_output(['git','branch','--show-current'],cwd=ROOT,text=True).strip(),
+           'commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
+           'status_porcelain':subprocess.check_output(['git','status','--short','--untracked-files=all'],cwd=ROOT).decode('utf-8'),
+           'remote_writes':False,'commits_created':False}
+    initial,backup=historical_backup()
+    origin=json.loads((DOCS/'initial_state.json').read_text())
+    if (state['branch'],state['commit'])!=(origin['branch'],origin['commit']):raise ValueError('Working branch/HEAD changed; investigate conflict')
+    (DOCS/'final_state.json').write_text(json.dumps(state,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+    before={r['path']:r for r in initial['files']}
+    table=pd.read_csv(DOCS/'regression_comparison.csv').query("metric=='pearson'")
+    numbers='\n'.join(f'|{int(r.year)}|{r.group}|{r.before:.12f}|{r.after:.12f}|{r.difference:.1g}|' for r in table.itertuples())
+    report=f'''# 跨成员修复与交付记录（2026-11-09）
+
+## 检查摘要与执行顺序
+
+在现有工作树 `{ROOT}` 核对到分支 `{state['branch']}`、HEAD `{state['commit']}`，与本轮初始状态一致。先保存Git状态、diff和229个文件的SHA-256/完整外部备份，冻结成员4未舍入主结果；再修复成员3来源、迁移与劳动管线，补核成员1 UN/地图，落实成员2口径限制，最后修正文稿、共享入口、图、回归和复现。未重置、切换、清理或自动暂存工作树。
+
+外部备份：`{backup.parent}`。初始163个已跟踪文件与66个未提交成员4文件均在其中。备份不含`.git`、虚拟环境、凭据或`.env`。旧审计/数值结果/图保留；本轮有意修改实际成员交付，不能再用“163原文件未变”描述当前状态。
+
+## 修复清单
+
+|问题ID/责任|原问题与根因|实际修复与证据|结果及剩余限制|
+|---|---|---|---|
+|M3-01 / 成员3|历史趋势表是日本人；被写成2011–2022全体居民|重写`prepare_labor.py`，原XLS/XLSX直接解析；2011–17进入`japanese_only_domestic_net_migration`，全体国籍列留329空值；2018–22年度表核验47地区及净值恒等式。趋势图在2017/18断开。|已修复标记/管线；2018前全体国籍连续趋势仍BLOCKED，安全替代为分段或2019/22。|
+|M3-02 / 成员3|美国NETMIG包含国内及国际，误作国内|原下载→清洗→导出→绘图改用官方DOMESTICMIG；保留INTERNATIONALMIG、NETMIG独立列，612条恒等式核验。与成员4独立196条国内迁移逐条比较差为0。|2019/22可用但美国7月到7月、日本自然年；净值不揭示青年或总流入流出。|
+|M3-03 / 成员3|来源CSV未正确引用含逗号字段，汇总失败|实际`sources.csv`改由csv.DictWriter生成；汇总器在写入前拒绝多/少字段。39条共享来源、成员3的21条来源可可靠解析。|PASS；source URL/表/年/口径/哈希可追溯。|
+|M3-04 / 成员3|旧BLS脚本读取密钥，经第三方代理请求、关闭TLS验证，导入触发工作；用月均冒充年度|静态审查后替换实际`check_bls_revision.py`；未运行/导入旧版本。新脚本无导入I/O，离线比较相邻归档的年度列；下载器只接受官方HTTPS、45秒超时、至多2次常规尝试、缓存及明确目录。测试拒绝M01–M12替代M13。|561个年度对比，最大修订0.7pp；无凭据/代理/API依赖。未据此断言历史发生过泄露。|
+|M3-05 / 成员3|既有美国提取CSV没有生成路径|新增`bls_sources.py`解析12次官方发布、51地区完整表1；保留可追溯网页文本快照和SHA。全部612就业/失业率匹配旧表；完整劳动量率1176条检查通过。原2022就业人口比从表2复现保留。|官方网页数值独立核验及缓存重建通过；直接HTML下载403，未宣称最新API复核。美国16+非机构平民与日本15+ LFS不可当成同一人口范围。|
+|M3-06 / 成员3|Figure4固定横轴36.5裁掉38.6的Akita；美国地区标题多算一个|实际绘图入口改动态范围、98地区/47县和边界断言；国内迁移色彩、图例位置、所有旧根目录图副本同步修复。|PASS；逐图打开检查，Akita可见、Nevada不再被图例遮挡。|
+|M3-07/08 / 成员3|错误反转、因果/隔离效应、同数据独立确认、过时145/615行及美国仅2022等表述|新增`build_findings.py`从现表生成实际README/findings/report；重算劳动Pearson美国−0.054091、日本−0.460084，均负；案例为国内描述，不宣称机制。|英文文字与五图一致；保留实际年份、选择规则和缺失，不为叙事换样本。|
+|M1-01 / 成员1|普查基准、统计日和历史舍入差异|保留已经验证的1176人口记录及原图，当前README/展示注明美国2020基准断点、日本历史千人精度等。|READY WITH LIMITATIONS；不把跨期差值都解释为真实人口变化。|
+|M1-02 / 成员1（补充核验）|原审计未下载UN原始全国产品|取回原WPP2024 F06双方性别百分比文件，SHA与原锁一致；独立openpyxl读取与原XML生成器分离；USA840/JPN392、2000–2022 Estimates、July1、年龄分组验证，276项全部通过，最大差4.96e-9pp。|原值正确，无数值/图重写。该产品本身发布百分比；从另一个人数产品重建分子分母NOT EVALUATED，不假称已做。|
+|M1-03 / 成员1（补充核验）|原审计未核地图来源/边界连接|原Census2022 1:20m ZIP哈希一致；51地区FIPS/缩写/名称一对一，14多部件地区不当作重复；所有投影部件有效，102地图值与当前人口/制造业一致。|READY WITH LIMITATIONS；免费使用须归因Census、小比例尺显示；AK/HI/DC插图比例不同。仓库无日本边界图，使用完整47县排序图。|
+|M2-01 / 成员2|私人服务业与包含公共服务的第三产业定义不一致|保留原数据定义，处理器输出`comparability.json`；共享导出携带服务范围及BLOCKED，`require_comparable_pool`在计算/绘图前拒绝跨国服务占比/金额合并。|跨国服务分析继续BLOCKED；允许分国附录，不用100%减制造业冒充服务业。|
+|M2-02 / 成员2|美国CY、日本FY及人口参考日不一致|处理器原三份官方缓存重跑，1176产业数值精确一致；原六图由Matplotlib3.10.8生成，已以原绘图程序在当前3.11.2重生成并记录渲染差异，旧图完整备份；数据字典、导出、标题、文稿统一CY/FY及July1/October1；分子分母同期间现价。|READY WITH LIMITATIONS；GDP份额不是就业份额或实际产量增长。|
+|M4-01 / 共享|合并仍98行、来源表/职责/展示入口过时|实际`merge_core.py`导出1176行，劳动迁移左连接；来源39条；根README、展示安排、poster入口与图文清单指向修复版本。|主样本98地区/年不受可选缺失影响；旧入口/历史文本标记SUPERSEDED。|
+|M4-02 / 兼容及回归|旧163文件锁本来禁止任何修改，直接重跑会覆盖历史问题记录；新国内列与旧适配器重名|保留v1及全部历史审计，验证后新增v2；独立复现发现两个原绘图脚本SVG对象ID随机，修复固定hashsalt后保留v2并新增有理由/差异记录的v3；v4保留前序锁，记录产业图渲染环境更新及文档版本统一；修改入口识别当前修复、隔离输出；国内列与独立适配器先比较后复用，避免_x/_y冲突。保护测试同时验证旧备份和新输入，不删除验证。|原历史审计不改写；新变更清单明确前后哈希及备份。|
+
+## 主分析回归
+
+采用修复前保存的未舍入计算结果，不是以六位小数摘要强行对齐。共{v['main_comparisons']}个高精度Pearson/Spearman/斜率/截距/协方差及分解比较，最大绝对差 **{v['main_max_absolute_difference']:.1g}**。
+
+|年份|分组|修复前Pearson|修复后Pearson|差|
+|---|---|---:|---:|---:|
+{numbers}
+
+人口–制造业完整面板1176行，2019/2022各98地区（51美国+47日本），无主分析排除。协方差统一分母N，国家权重51/98和47/98；2022合并46.1133222401846pp² = 国内分量0.4164413922161111 + 组间45.69688084796851，组间占99.09691739396475%。这是协方差分解，不是R²、解释率或因果贡献。两国老龄化范围不重叠，案例只在国内选取。
+
+主叙事为合并正关联、国内Pearson接近零。若保留2022 Spearman名义反转，必须同时报告国内系数很弱与美国删点变号。结果不表示工业结构毫无作用，也不表示所有混杂已控制；只考察指定变量、样本、两年及关系形式。
+
+## 执行与验收
+
+- 本轮新增14个针对实际缺陷的离线测试；全套 **{v['tests']['tests']} passed**，失败{v['tests']['failures']}、错误{v['tests']['errors']}、跳过{v['tests']['skipped']}。仅有环境AnyIO插件使用pytest弃用别名的提示；未放宽验证。
+- 原成员4来源核验在当前树独立目录重跑：**{v['source_checks']['total']:,}项字段检查，失败0**；另有成员1新增276项UN检查、51个地图连接/102值、成员3完整612个BLS年度记录及1176量率检查。
+- **{v['reproduction']['checks']}项独立重建比较通过**：成员1从原完整UN与官方人口缓存重建，成员2三份原官方缓存重建，成员3从原始公开文件/可追溯BLS快照重建，五图及实际英文文稿可重复；成员4主结果/稳健性/图与原审计一致。
+- 代码安全审查后执行原四个成员4入口（verify_sources/run_analysis/build_reports/verify_delivery），当前输出在`data/cache/remediation/current_member4`；完整命令、返回码、输出见[commands.jsonl](commands.jsonl)，回归见[regression_comparison.csv](regression_comparison.csv)，重建路径和结果见[reproduction_checks.csv](reproduction_checks.csv)。实际测试临时目录均为新建唯一目录，无清理已有数据。
+- 实际打开并检查所有本轮修改的12种图（成员2六图+成员3五图+共享散点），包括根目录兼容副本；另外检查UN全国图、人口比较、两张美国地图和展示主图。具体路径、哈希及观察见[visual_review.json](visual_review.json)。SVG与PNG由同一次绘图对象输出；现有未修改PDF不声称本轮重新渲染。
+- 现场新取UN、Census边界及日本2018/2020/2021迁移；其余已锁定官方文件复用缓存。BLS官方网页文本已核验并保存，直接HTML访问403；缓存重建不等同于在线重新下载。没有通过第三方代理绕过限制。
+
+## 原文件替换与展示入口
+
+成员3实际`prepare_labor.py`、`check_bls_revision.py`、五个绘图脚本、五组PNG/SVG及三组旧根目录副本、三份主要文字、来源/明细/摘要均在原路径修复。共享合并、散点、来源汇总和数据契约已更新；成员2处理脚本/说明新增可比性约束，六组产业图按当前绘图库重新生成；成员1增加核验程序/证据并更新说明，原人口CSV/原图不变。产业CSV仅可能有行尾规范化，逐数值精确一致。
+
+唯一正式入口为[poster/README.md](../../poster/README.md)，图文清单含{len(assets)}个用途记录，带owner、输入版本/哈希、READY WITH LIMITATIONS / BLOCKED / SUPERSEDED。逐文件前后SHA-256、问题关联及外部备份位置见[file_change_manifest.csv](file_change_manifest.csv)；清单本身的SHA在[file_change_manifest.sha256](file_change_manifest.sha256)，避免自引用哈希。当前锁`{active_lock().name}`不覆盖任何先前版本；旧审计发现仍保留，不伪装成从未有错。
+
+## 剩余限制与人工决定
+
+无须再批准已授权的本地修复。还需团队决定最终海报页面尺寸、哪些附录放入正文及演讲取舍；仓库未提供完整可编辑poster/PPTX，因此本轮交付为实际修复后的生成管线、图和英文素材入口，未声称改过不存在的成品。日本2018年前全体国籍迁移与跨国服务分析仍BLOCKED；BLS直接HTML获取未复核成功；UN另一个人数产品重建未评估；这些均有展示安全替代或明确限制。
+
+当前分支 `{state['branch']}`，HEAD不变，改动与成员4既有未提交文件均保留本地工作树；完整状态见[final_state.json](final_state.json)。没有创建提交、暂存/丢弃原工作或改变防推送配置。
+
+No commits, pushes, PRs/issues, or other remote writes were performed. All modifications remain local.
+'''
+    (DOCS/'repair_report_zh.md').write_text(report,encoding='utf-8')
+    paths=subprocess.check_output(['git','ls-files','--cached','--others','--exclude-standard','-z'],cwd=ROOT).decode('utf-8').split('\0')
+    changes=[]
+    excluded={'docs/remediation/file_change_manifest.csv','docs/remediation/file_change_manifest.sha256'}
+    for p in sorted(set(paths)):
+        if not p or p in excluded or not (ROOT/p).is_file():continue
+        after=digest(ROOT/p);old=before.get(p)
+        if old and after==old['sha256']:continue
+        changes.append(dict(file_path=p,before_sha256=old['sha256'] if old else '',after_sha256=after,
+            status='modified' if old else 'added',related_issue=issue(p),backup_location=str(backup/p) if old else '',
+            reason='Authorized remediation; original bytes preserved' if old else 'New repair code/evidence/presentation entry'))
+    with (DOCS/'file_change_manifest.csv').open('w',encoding='utf-8',newline='') as stream:
+        writer=csv.DictWriter(stream,fieldnames=list(changes[0]));writer.writeheader();writer.writerows(changes)
+    (DOCS/'file_change_manifest.sha256').write_text(digest(DOCS/'file_change_manifest.csv')+'  file_change_manifest.csv\n',encoding='utf-8')
+    verify();print(f'Finalized {len(changes)} changed/added paths and {len(assets)} presentation uses; no remote writes.')
+
+
+if __name__=='__main__':main()
