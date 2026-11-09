@@ -1,0 +1,81 @@
+{
+  "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "rows": 1176,
+  "usa_rows": 612,
+  "jpn_rows": 564,
+  "jpn_rows_by_year": {
+    "2011": 47,
+    "2012": 47,
+    "2013": 47,
+    "2014": 47,
+    "2015": 47,
+    "2016": 47,
+    "2017": 47,
+    "2018": 47,
+    "2019": 47,
+    "2020": 47,
+    "2021": 47,
+    "2022": 47
+  },
+  "jpn_detail_rows": 564,
+  "jpn_detail_max_rounding_gap_persons": 1000,
+  "jpn_migration_years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "jpn_migration_missing_years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017
+  ],
+  "us_rows_filled": 612,
+  "us_labour_pending": false,
+  "bls_file": "data/raw/member3/bls_us_labor_2022.csv",
+  "sources": {
+    "lfs_pref": {
+      "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000031952605&fileKind=0",
+      "file": "data/raw/member3/estat_lfs_pref_model.xlsx",
+      "note": "one release used for all years (prefectural model estimates)"
+    },
+    "migration_2018": {
+      "url": "https://www.stat.go.jp/data/idou/2018np/kihon/zuhyou/hyo1.xls",
+      "file": "data/raw/member3/migration/2018.xlsx"
+    },
+    "migration_2019": {
+      "url": "https://www.stat.go.jp/data/idou/2019np/kihon/zuhyou/hyo1.xls",
+      "file": "data/raw/member3/migration/2019.xlsx"
+    },
+    "migration_2020": {
+      "url": "https://www.stat.go.jp/data/idou/2020np/jissu/zuhyou/hyo1.xls",
+      "file": "data/raw/member3/migration/2020.xlsx"
+    },
+    "migration_2021": {
+      "url": "https://www.stat.go.jp/data/idou/2021np/jissu/zuhyou/hyo1.xls",
+      "file": "data/raw/member3/migration/2021.xlsx"
+    },
+    "migration_2022": {
+      "url": "https://www.stat.go.jp/data/idou/2022np/jissu/zuhyou/hyo1.xlsx",
+      "file": "data/raw/member3/migration/2022.xlsx"
+    }
+  }
+}
