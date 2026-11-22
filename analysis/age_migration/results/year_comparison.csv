@@ -1,0 +1,7 @@
+country,age_group,common_regions,rate_2019_2022_pearson,rate_2019_2022_spearman,note
+JPN,20-24,47,0.963359241355371,0.927613320999075,two annual snapshots; not cumulative migration or a cohort change
+JPN,65+,47,0.904162579615708,0.811401480111008,two annual snapshots; not cumulative migration or a cohort change
+JPN,20-34,47,0.909305196087074,0.824699352451434,two annual snapshots; not cumulative migration or a cohort change
+USA,20-24,51,0.632774457794168,0.356018099547511,two annual snapshots; not cumulative migration or a cohort change
+USA,65+,51,0.705924681316183,0.66289592760181,two annual snapshots; not cumulative migration or a cohort change
+USA,20-34,51,0.285542139194719,0.454932126696833,two annual snapshots; not cumulative migration or a cohort change

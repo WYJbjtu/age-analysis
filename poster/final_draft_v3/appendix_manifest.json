@@ -1,0 +1,14 @@
+[
+  {
+    "path": "appendix/full_regional_ranking.svg",
+    "source_path": "member1_demographics/figures/02_regional_aging_comparison_2022.svg",
+    "source_sha256": "ba5b2f02c3387e5834ae66234980411d60ace37951646a1a10ccf87d218cb185",
+    "policy": "Unchanged full original figure retained as appendix, not cropped."
+  },
+  {
+    "path": "appendix/full_native_cases.svg",
+    "source_path": "analysis/age_migration/figures/figure2_native_cases.svg",
+    "source_sha256": "aee75e6073be11238ccf52792fd60c8786956707b40812784db79b5e676f2f8e",
+    "policy": "Unchanged full original figure retained as appendix, not cropped."
+  }
+]

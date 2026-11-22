@@ -1,0 +1,7 @@
+country,region_id,region_name,year,selection_rule,selection_year,selection_sample,age_group,net_migration,net_moe90,net_per_1000_same_age,net_rate_moe90_approx,uncertainty_status,age65_share_pct
+USA,US-NH,New Hampshire,2019,minimum 2022 ages20-24 same-age net-rate point estimate among all51; tie by region_id; retained in2019,2022,51,20-24,1451,2050.98244751144,17.1383350656714,24.227951013745,interval_includes_zero,18.63000934
+USA,US-NH,New Hampshire,2022,minimum 2022 ages20-24 same-age net-rate point estimate among all51; tie by region_id; retained in2019,2022,51,20-24,-4496,2153.48763637036,-54.0716063933421,25.9393453554799,negative_under_approximation,20.17630056
+USA,US-DC,District of Columbia,2019,maximum 2022 ages20-24 same-age net-rate point estimate among all51; tie by region_id; retained in2019,2022,51,20-24,7352,2229.25660254714,146.422098743303,44.7735341850989,positive_under_approximation,12.44357595
+USA,US-DC,District of Columbia,2022,maximum 2022 ages20-24 same-age net-rate point estimate among all51; tie by region_id; retained in2019,2022,51,20-24,5580,3188.0691648708,116.145952584143,66.4889647360827,positive_under_approximation,12.98892681
+JPN,JP-13,Tokyo,2019,pre-specified Tokyo prefecture JP-13,2022,47,20-24,57197,,65.8951612903226,,registration counts; no sampling MOE,22.71721282
+JPN,JP-13,Tokyo,2022,pre-specified Tokyo prefecture JP-13,2022,47,20-24,57153,,67.080985915493,,registration counts; no sampling MOE,22.8

@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "mode": "repository and draft",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "locale_encoding": "cp936",
+  "utf8_mode": 0,
+  "protected_files_unchanged": 460,
+  "source_snapshots_verified": 12,
+  "numerical_claims_verified": 21,
+  "svg_marker_counts": {
+    "B_distribution": 98,
+    "D_aggregation": 196,
+    "E_young_migration": 98
+  },
+  "us_young_uncertainty": {
+    "country": "USA",
+    "points": 51,
+    "pearson": -0.362190260956796,
+    "spearman": -0.254389140271493,
+    "label_ids": [
+      "US-DC",
+      "US-NH"
+    ],
+    "x_limits": [
+      11.0,
+      24.0
+    ],
+    "y_limits": [
+      -120.0,
+      220.0
+    ],
+    "hollow_points": 35,
+    "error_bars": 51,
+    "interval_min": -94.84711540964099,
+    "interval_max": 182.63491732022572
+  },
+  "tokyo_native_reconciliation": [
+    {
+      "year": 2019,
+      "bars": 20,
+      "sum_native_and_unknown": 82982.0,
+      "published_total": 82982.0,
+      "unknown": -1.0
+    },
+    {
+      "year": 2022,
+      "bars": 20,
+      "sum_native_and_unknown": 38023.0,
+      "published_total": 38023.0,
+      "unknown": 2.0
+    }
+  ],
+  "page": {
+    "pages": 1,
+    "width_mm": 840.9939647222221,
+    "height_mm": 1188.8892627777777
+  },
+  "effective_pdf_type_pt": {
+    "title_first": 105.99749708343744,
+    "title_second": 115.99499816687486,
+    "authors": {
+      "WANG YIJIE": 31.994998666874995,
+      "LI YE": 31.994998666874995,
+      "HE YING": 31.994998666874995,
+      "WANGYUCHENG": 31.994998666874995
+    },
+    "student_ids": {
+      "60074637": 20.999999125,
+      "60999683": 20.999999125,
+      "60189188": 20.999999125,
+      "60786917": 20.999999125
+    },
+    "subtitle": 28.994998791874995,
+    "section_heading": 33.99750008343744,
+    "explanatory_body": 23.999999,
+    "caption": 19.994999166875,
+    "plot_axis_label": 19.994999166875,
+    "plot_source_note": 17.9924992503125
+  },
+  "minimum_effective_type_pt": 17.9924992503125,
+  "pdf_character_bounds": {
+    "left_pt": 76.53515306103515,
+    "right_pt": 2307.3961143381907,
+    "top_pt": 75.00092916912081,
+    "bottom_pt": 3307.24497931812
+  },
+  "non_chart_body_words": 491,
+  "pdf_sha256": "fc28cee71f80ef53f8236fe5468f561fe731c2a778c6d62acb6d5bda53498975",
+  "overflows": 0,
+  "overlaps": 0,
+  "fonts_loaded": true,
+  "network_requests": 0,
+  "print_scaling": "native A0, no fit-to-smaller-page scaling"
+}

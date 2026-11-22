@@ -1,0 +1,5 @@
+inputs/** -text
+appendix/** -text
+assets/fonts/** -text
+*.png -text
+*.pdf -text

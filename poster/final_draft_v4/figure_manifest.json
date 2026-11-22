@@ -1,0 +1,253 @@
+[
+  {
+    "id": "A_national",
+    "svg": "figures/A_national.svg",
+    "png": "figures/A_national.png",
+    "width_mm": 253.0,
+    "height_mm": 275.0,
+    "purpose": "National context, distinct from regional estimates",
+    "inputs": [
+      {
+        "path": "inputs/national.csv",
+        "sha256": "4b77f44e217cd34a988852a0676b7a8306f5b2b36fb443fa001bd2e728793040"
+      }
+    ],
+    "source_figures_and_scripts": [
+      {
+        "source_path": "member1_demographics/plot_population.py",
+        "sha256": "bbad10607f3001df759051c54d017b1335a571e95cef5e5eedf4e24b3577ad1a",
+        "role": "Read-only scientific provenance, not a runtime dependency"
+      },
+      {
+        "source_path": "member1_demographics/figures/01_national_aging_trends_2000_2022.svg",
+        "sha256": "a3644c57b61b0733422f80e9d70500a4cf1502036ff39e3258b54ba53a2f21e7",
+        "role": "Read-only scientific provenance, not a runtime dependency"
+      }
+    ],
+    "font_sizes_pt": [
+      18.0,
+      20.0
+    ],
+    "svg_sha256": "fe93e10c6f5b1946761b25e5881113fed45a57019809771abeb21e3cf9dc6069",
+    "png_sha256": "f1b3549ac5f7f083a2fce2399c90f2de55ad7063ff6ea456d82e9d368bba87c5"
+  },
+  {
+    "id": "B_distribution",
+    "svg": "figures/B_distribution.svg",
+    "png": "figures/B_distribution.png",
+    "width_mm": 253.0,
+    "height_mm": 380.0,
+    "purpose": "All 98 regions, shared vertical percentage scale",
+    "inputs": [
+      {
+        "path": "inputs/population_2022.csv",
+        "sha256": "41d33bdabee4723c60e5563e8d66c61777fab960607fb43c0fa00d7c0a35b0b6"
+      }
+    ],
+    "source_figures_and_scripts": [
+      {
+        "source_path": "member1_demographics/plot_population.py",
+        "sha256": "bbad10607f3001df759051c54d017b1335a571e95cef5e5eedf4e24b3577ad1a",
+        "role": "Read-only scientific provenance, not a runtime dependency"
+      },
+      {
+        "source_path": "member1_demographics/figures/02_regional_aging_comparison_2022.svg",
+        "sha256": "ba5b2f02c3387e5834ae66234980411d60ace37951646a1a10ccf87d218cb185",
+        "role": "Read-only scientific provenance, not a runtime dependency"
+      }
+    ],
+    "font_sizes_pt": [
+      18.0,
+      20.0
+    ],
+    "svg_sha256": "3d2ad0069572d5c635382842bf73857ae53252ba15b825720d615072cb0ceae2",
+    "png_sha256": "d103cfb35245e806a8cf7566c4f656f6de61eb543bc42ac00ca2399e17a97cdc"
+  },
+  {
+    "id": "C_manufacturing",
+    "svg": "figures/C_manufacturing.svg",
+    "png": "figures/C_manufacturing.png",
+    "width_mm": 253.0,
+    "height_mm": 150.0,
+    "purpose": "Saved manufacturing medians and IQRs, all twelve years",
+    "inputs": [
+      {
+        "path": "inputs/industry_trends.csv",
+        "sha256": "5b7ed3c33b3c1eecc0e2601c8fbb340b9d0fe727ce4cce684e84b70481bac66e"
+      }
+    ],
+    "source_figures_and_scripts": [
+      {
+        "source_path": "member2_industry/plot_industry.py",
+        "sha256": "0dc522ca3b5788372ccd035e81c8b8f6ada2de8b4378261919e6ca34e65da63a",
+        "role": "Read-only scientific provenance, not a runtime dependency"
+      },
+      {
+        "source_path": "member2_industry/figures/manufacturing_trend_2011_2022.svg",
+        "sha256": "8762ce9855d12272dd5db367c2dccc17da5e5b736c656f8f58d0ac5fabf220d9",
+        "role": "Read-only scientific provenance, not a runtime dependency"
+      }
+    ],
+    "font_sizes_pt": [
+      18.0,
+      20.0
+    ],
+    "svg_sha256": "39b21df679122e50d86481d2180dc4994515b406804a5ff00ff7d2d87f9d533a",
+    "png_sha256": "9d991f4f143ceee58ac03241e9eede8993d6189411512422a4ba6d8635b9d970"
+  },
+  {
+    "id": "D_services",
+    "svg": "figures/D_services.svg",
+    "png": "figures/D_services.png",
+    "width_mm": 253.0,
+    "height_mm": 240.0,
+    "purpose": "Two separate country-specific service trends, never pooled",
+    "inputs": [
+      {
+        "path": "inputs/industry_trends.csv",
+        "sha256": "5b7ed3c33b3c1eecc0e2601c8fbb340b9d0fe727ce4cce684e84b70481bac66e"
+      },
+      {
+        "path": "inputs/industry_comparability.json",
+        "sha256": "40e4b4cebb7d23cb0f9ad9dc1a66347f2299902bbd3cbcd83e1c7e0cb734cc19"
+      }
+    ],
+    "source_figures_and_scripts": [
+      {
+        "source_path": "member2_industry/plot_industry.py",
+        "sha256": "0dc522ca3b5788372ccd035e81c8b8f6ada2de8b4378261919e6ca34e65da63a",
+        "role": "Read-only scientific provenance, not a runtime dependency"
+      },
+      {
+        "source_path": "member2_industry/figures/usa_services_trend_2011_2022.svg",
+        "sha256": "b9c073d79135cad00406a0274bc658ebf0b197f82156b87c2ea6ab61c3e9fe71",
+        "role": "Read-only scientific provenance, not a runtime dependency"
+      },
+      {
+        "source_path": "member2_industry/figures/jpn_services_trend_2011_2022.svg",
+        "sha256": "8563c9eab09cbbb59130af1ae66f29936988f428027545739a83a55ec7cd5077",
+        "role": "Read-only scientific provenance, not a runtime dependency"
+      }
+    ],
+    "font_sizes_pt": [
+      18.0,
+      20.0
+    ],
+    "svg_sha256": "8bc9303375c9352a3d078731f1de4c783e0ff09af7af6654d157318eeb7755b6",
+    "png_sha256": "63e5a4d14404d518afef01b9b4a6f2c527e12fc210a9a89e43a43fb1bc7d0bbf"
+  },
+  {
+    "id": "E_aggregation",
+    "svg": "figures/E_aggregation.svg",
+    "png": "figures/E_aggregation.png",
+    "width_mm": 253.0,
+    "height_mm": 355.0,
+    "purpose": "Three compact stacked panels with identical numeric axes and physical widths; saved fits",
+    "inputs": [
+      {
+        "path": "inputs/manufacturing_2022.csv",
+        "sha256": "ad282b3dcb4e3c4cf3ba49aa1e7a41967bf2ea5411a1f05143f275886f84afe2"
+      },
+      {
+        "path": "inputs/manufacturing_associations.csv",
+        "sha256": "028bd63e58d47350846aaf462eb675d725b0cbd51842fb6d5d7308cce2aa91fa"
+      }
+    ],
+    "source_figures_and_scripts": [
+      {
+        "source_path": "analysis/member4/plot_figures.py",
+        "sha256": "8bce5e0b93e2f14c7095bfce4d33bacae076807ec8682631882b94bbe21b0349",
+        "role": "Read-only scientific provenance, not a runtime dependency"
+      },
+      {
+        "source_path": "analysis/member4/figures/01_pooled_within_2022.svg",
+        "sha256": "b66327b42bda4fe2f239df93479bf11537b620ae270cd23cdaa2f1970f9775ff",
+        "role": "Read-only scientific provenance, not a runtime dependency"
+      }
+    ],
+    "font_sizes_pt": [
+      18.0,
+      20.0,
+      22.0
+    ],
+    "svg_sha256": "92950f78b2ee6ff5bb67e56af7b6b89c3e9666124e317d9a49a7a677120a8ba8",
+    "png_sha256": "6ee5be0dd3dbe933c6f39231cc9003fcf325b8295364a48f2f0674cde8cb65e2"
+  },
+  {
+    "id": "F_young_migration",
+    "svg": "figures/F_young_migration.svg",
+    "png": "figures/F_young_migration.png",
+    "width_mm": 253.0,
+    "height_mm": 320.0,
+    "purpose": "Complete 2022 young-adult samples and unchanged ACS ratio intervals",
+    "inputs": [
+      {
+        "path": "inputs/migration.csv",
+        "sha256": "6c50f46a807965447fdb34757a6ad5a9db7243c3ee3041efa617a2c9ccc84f92"
+      },
+      {
+        "path": "inputs/migration_associations.csv",
+        "sha256": "140573a87d56a6d67cfa9ec05e62da2badcc09b2107f0518fc0c1c091cf513b5"
+      },
+      {
+        "path": "inputs/uncertainty.csv",
+        "sha256": "f095742ee3985d492bb8adb2b9291a35466618728c9d85bb89457675045419d1"
+      }
+    ],
+    "source_figures_and_scripts": [
+      {
+        "source_path": "analysis/age_migration/plot.py",
+        "sha256": "1f5eb548557b0b0065c608f5a90741c2e8edb66935c348b9b72945934ab108cb",
+        "role": "Read-only scientific provenance, not a runtime dependency"
+      },
+      {
+        "source_path": "analysis/age_migration/figures/figure1_regional_2022.svg",
+        "sha256": "46f7fb0b23c1d902959869b83713908092cadac274c29bcb8e0be506113496c7",
+        "role": "Read-only scientific provenance, not a runtime dependency"
+      }
+    ],
+    "font_sizes_pt": [
+      18.0,
+      20.0,
+      22.0
+    ],
+    "svg_sha256": "e3ba05a2fd4569a7cc6313acc9cb609006c5eba2895eabc8b0933bc59e215b26",
+    "png_sha256": "aafaefce4893b22d0883e21c0bbcd86b17c244422344e48cfb23037d0d121ff9"
+  },
+  {
+    "id": "G_tokyo",
+    "svg": "figures/G_tokyo.svg",
+    "png": "figures/G_tokyo.png",
+    "width_mm": 253.0,
+    "height_mm": 250.0,
+    "purpose": "Full native-age Tokyo profile, including unknown-age residuals",
+    "inputs": [
+      {
+        "path": "inputs/tokyo_native.csv",
+        "sha256": "66a409ef84957f7bbc9b79572614fb99f8987cdd7eba776dd48ffc969f2c3910"
+      },
+      {
+        "path": "inputs/tokyo_decomposition.csv",
+        "sha256": "0bbf3f43b71f9b9e396f84432538b6f50865f15e42252c672112ca71152eab64"
+      }
+    ],
+    "source_figures_and_scripts": [
+      {
+        "source_path": "analysis/age_migration/plot.py",
+        "sha256": "1f5eb548557b0b0065c608f5a90741c2e8edb66935c348b9b72945934ab108cb",
+        "role": "Read-only scientific provenance, not a runtime dependency"
+      },
+      {
+        "source_path": "analysis/age_migration/figures/figure2_native_cases.svg",
+        "sha256": "aee75e6073be11238ccf52792fd60c8786956707b40812784db79b5e676f2f8e",
+        "role": "Read-only scientific provenance, not a runtime dependency"
+      }
+    ],
+    "font_sizes_pt": [
+      18.0,
+      20.0
+    ],
+    "svg_sha256": "290e5341eb5aca66dfb0414c54b8a3e71a998758f315000aa3b2d1e54cca999e",
+    "png_sha256": "d0a704f2164404d992c994a4aee713d46abc5eab8cb61c7df059fa37880c9168"
+  }
+]

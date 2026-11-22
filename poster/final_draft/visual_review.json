@@ -1,0 +1,48 @@
+{
+  "status": "VISUALLY REVIEWED - READY FOR TEAM REVIEW",
+  "reviewed_at_utc": "2026-11-10T09:53:15.643224+00:00",
+  "pdf_sha256": "b09cd06a88161802e419c7443e051b71e5081029c933f9a3cf16b450e78eaec3",
+  "preview_sha256": "06f9edb08a391e1548fd5d050471fd11cb23b502d17b84728ddfbb09c7c6ae0b",
+  "method": "Opened actual Poppler-rendered PDF overview and 120-dpi detail crops; also inspected the local HTML fit-to-width screen render.",
+  "pdf_render_commands": [
+    "pdftoppm -scale-to 2400 -png -singlefile poster/final_draft/poster.pdf poster/final_draft/poster.preview",
+    "pdftoppm -r 120 -png -singlefile poster/final_draft/poster.pdf data/cache/poster-draft-qa/poster-120dpi"
+  ],
+  "reviewed_views": [
+    {
+      "view": "Header",
+      "findings": "Two-line title, subtitle, four author names and student IDs visible; no clipping."
+    },
+    {
+      "view": "A - national trends",
+      "findings": "Both source series, years, axes and endpoint labels visible."
+    },
+    {
+      "view": "B - ranked regions",
+      "findings": "Both complete panels visible, including Akita, Tokyo, DC and Utah; all 51/47 region names and values retained; common 0-45 scale and median labels visible."
+    },
+    {
+      "view": "C - manufacturing trend",
+      "findings": "Legend entries separated after typography adjustment; y-axis title clear of ticks; IQR bands and endpoint labels visible."
+    },
+    {
+      "view": "D - pooled and within-country",
+      "findings": "All three panels display data markers, fits, n, r, rho and numeric axes. Shared y labels repeated without doubling grid strokes."
+    },
+    {
+      "view": "E - young migration",
+      "findings": "Both country panels retain all points; US error bars and hollow markers visible; Tokyo/DC and rule-selected labels readable."
+    },
+    {
+      "view": "F - Tokyo",
+      "findings": "Diverging bars, all 19 known-age bins plus unknown, zero line, 2019/2022 legend, totals and thousands unit visible."
+    },
+    {
+      "view": "Footer",
+      "findings": "Exactly three findings, limitations, sources and review status visible; no overlap with columns or frame."
+    }
+  ],
+  "layout_limitations": "Digital review only; no physical paper proof. Fine regional labels are intended for close viewing at A0. A smaller print requires layout revision.",
+  "cached_detail_views": "data/cache/poster-draft-qa/ (not intended commit files)",
+  "protected_sources_modified": false
+}

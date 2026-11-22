@@ -1,0 +1,7 @@
+country,region_id,region_name,year,age_group,net_migration,net_moe90,uncertainty_status,net_interval_low90_approx,net_interval_high90_approx
+JPN,JP-13,Tokyo,2019,total_all_ages,82982,,no_sampling_interval,,
+JPN,JP-13,Tokyo,2022,total_all_ages,38023,,no_sampling_interval,,
+USA,US-DC,District of Columbia,2019,total_1plus,6795,6974.94007142714,interval_includes_zero,-179.94007142714,13769.9400714271
+USA,US-DC,District of Columbia,2022,total_1plus,-3398,8362.48270551276,interval_includes_zero,-11760.4827055128,4964.48270551276
+USA,US-NH,New Hampshire,2019,total_1plus,8126,6849.62553721004,positive_under_approximation,1276.37446278996,14975.62553721
+USA,US-NH,New Hampshire,2022,total_1plus,2916,7898.17004121841,interval_includes_zero,-4982.17004121841,10814.1700412184

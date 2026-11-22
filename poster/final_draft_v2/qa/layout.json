@@ -1,0 +1,457 @@
+{
+  "poster": {
+    "x": 0,
+    "y": 0,
+    "width": 3178.578125,
+    "height": 4493.84375,
+    "right": 3178.578125,
+    "bottom": 4493.84375
+  },
+  "sections": [
+    {
+      "name": "masthead",
+      "x": 102.046875,
+      "y": 94.484375,
+      "width": 2974.484375,
+      "height": 480,
+      "right": 3076.53125,
+      "bottom": 574.484375,
+      "scrollHeight": 480,
+      "clientHeight": 480
+    },
+    {
+      "name": "study-design",
+      "x": 102.046875,
+      "y": 593.375,
+      "width": 2974.484375,
+      "height": 196.53125,
+      "right": 3076.53125,
+      "bottom": 789.90625,
+      "scrollHeight": 193,
+      "clientHeight": 193
+    },
+    {
+      "name": "population-section science-band",
+      "x": 102.046875,
+      "y": 808.796875,
+      "width": 2974.484375,
+      "height": 676.53125,
+      "right": 3076.53125,
+      "bottom": 1485.328125,
+      "scrollHeight": 677,
+      "clientHeight": 677
+    },
+    {
+      "name": "economic-section science-band",
+      "x": 102.046875,
+      "y": 1504.21875,
+      "width": 2974.484375,
+      "height": 1217,
+      "right": 3076.53125,
+      "bottom": 2721.21875,
+      "scrollHeight": 1216,
+      "clientHeight": 1216
+    },
+    {
+      "name": "migration-section science-band",
+      "x": 102.046875,
+      "y": 2740.109375,
+      "width": 2974.484375,
+      "height": 1262.359375,
+      "right": 3076.53125,
+      "bottom": 4002.46875,
+      "scrollHeight": 1261,
+      "clientHeight": 1261
+    },
+    {
+      "name": "",
+      "x": 102.046875,
+      "y": 4021.359375,
+      "width": 2974.484375,
+      "height": 389.34375,
+      "right": 3076.53125,
+      "bottom": 4410.703125,
+      "scrollHeight": 386,
+      "clientHeight": 386
+    }
+  ],
+  "roles": [
+    {
+      "role": "title-first",
+      "text": "AGING ACROSS",
+      "css_pt": 105.99975,
+      "x": 102.046875,
+      "y": 94.484375,
+      "width": 1303.921875,
+      "height": 130.015625,
+      "right": 1405.96875,
+      "bottom": 224.5
+    },
+    {
+      "role": "title-second",
+      "text": "ECONOMIES",
+      "css_pt": 116.00025,
+      "x": 102.046875,
+      "y": 224.5,
+      "width": 1303.921875,
+      "height": 142.296875,
+      "right": 1405.96875,
+      "bottom": 366.796875
+    },
+    {
+      "role": "affiliation",
+      "text": "Data VisualizationCity University of Hong Kong",
+      "css_pt": 23.000025,
+      "x": 1481.546875,
+      "y": 121.40625,
+      "width": 1594.984375,
+      "height": 74.8125,
+      "right": 3076.53125,
+      "bottom": 196.21875
+    },
+    {
+      "role": "subtitle",
+      "text": "Demographic Change, Regional Structure, and Age-Selective Migrationin Japan and the United States",
+      "css_pt": 29.000025,
+      "x": 102.046875,
+      "y": 374.34375,
+      "width": 2974.484375,
+      "height": 89.71875,
+      "right": 3076.53125,
+      "bottom": 464.0625
+    },
+    {
+      "role": "author",
+      "text": "WANG YIJIE",
+      "css_pt": 32.000025,
+      "x": 102.046875,
+      "y": 487.71875,
+      "width": 709.609375,
+      "height": 46.9375,
+      "right": 811.65625,
+      "bottom": 534.65625
+    },
+    {
+      "role": "student-id",
+      "text": "60074637",
+      "css_pt": 21,
+      "x": 102.046875,
+      "y": 538.421875,
+      "width": 709.609375,
+      "height": 30.796875,
+      "right": 811.65625,
+      "bottom": 569.21875
+    },
+    {
+      "role": "author",
+      "text": "LI YE",
+      "css_pt": 32.000025,
+      "x": 857,
+      "y": 487.71875,
+      "width": 709.609375,
+      "height": 46.9375,
+      "right": 1566.609375,
+      "bottom": 534.65625
+    },
+    {
+      "role": "student-id",
+      "text": "60999683",
+      "css_pt": 21,
+      "x": 857,
+      "y": 538.421875,
+      "width": 709.609375,
+      "height": 30.796875,
+      "right": 1566.609375,
+      "bottom": 569.21875
+    },
+    {
+      "role": "author",
+      "text": "HE YING",
+      "css_pt": 32.000025,
+      "x": 1611.953125,
+      "y": 487.71875,
+      "width": 709.609375,
+      "height": 46.9375,
+      "right": 2321.5625,
+      "bottom": 534.65625
+    },
+    {
+      "role": "student-id",
+      "text": "60189188",
+      "css_pt": 21,
+      "x": 1611.953125,
+      "y": 538.421875,
+      "width": 709.609375,
+      "height": 30.796875,
+      "right": 2321.5625,
+      "bottom": 569.21875
+    },
+    {
+      "role": "author",
+      "text": "WANGYUCHENG",
+      "css_pt": 32.000025,
+      "x": 2366.90625,
+      "y": 487.71875,
+      "width": 709.625,
+      "height": 46.9375,
+      "right": 3076.53125,
+      "bottom": 534.65625
+    },
+    {
+      "role": "student-id",
+      "text": "60786917",
+      "css_pt": 21,
+      "x": 2366.90625,
+      "y": 538.421875,
+      "width": 709.625,
+      "height": 30.796875,
+      "right": 3076.53125,
+      "bottom": 569.21875
+    },
+    {
+      "role": "section-heading",
+      "text": "1 Shared aging,uneven regions",
+      "css_pt": 33.999975,
+      "x": 102.046875,
+      "y": 808.796875,
+      "width": 684.09375,
+      "height": 105.453125,
+      "right": 786.140625,
+      "bottom": 914.25
+    },
+    {
+      "role": "body",
+      "text": "Both countries aged over 2000-2022, with Japan at a higher level. Yet national trajectories conceal broad regional variation. The complete 2022 distribution establishes differences within each country; it does not make a state equivalent to a prefecture or identify the causes of aging.",
+      "css_pt": 24,
+      "x": 102.046875,
+      "y": 936.921875,
+      "width": 684.09375,
+      "height": 332.75,
+      "right": 786.140625,
+      "bottom": 1269.671875
+    },
+    {
+      "role": "caption",
+      "text": "Historical estimates, both sexes. A common national source shows the two trajectories; regional data are kept separate.",
+      "css_pt": 20.000025,
+      "x": 816.375,
+      "y": 1372.515625,
+      "width": 1114.953125,
+      "height": 66.65625,
+      "right": 1931.328125,
+      "bottom": 1439.171875
+    },
+    {
+      "role": "section-heading",
+      "text": "2 Economic structure and aggregation",
+      "css_pt": 33.999975,
+      "x": 102.046875,
+      "y": 1520.328125,
+      "width": 2974.484375,
+      "height": 54.234375,
+      "right": 3076.53125,
+      "bottom": 1574.5625
+    },
+    {
+      "role": "section-heading",
+      "text": "3 Age-selective migration reveals opposing balances",
+      "css_pt": 33.999975,
+      "x": 102.046875,
+      "y": 2756.21875,
+      "width": 2974.484375,
+      "height": 54.234375,
+      "right": 3076.53125,
+      "bottom": 2810.453125
+    }
+  ],
+  "charts": [
+    {
+      "id": "A_national",
+      "x": 816.375,
+      "y": 854.734375,
+      "width": 1114.953125,
+      "height": 510.234375,
+      "right": 1931.328125,
+      "bottom": 1364.96875
+    },
+    {
+      "id": "B_distribution",
+      "x": 1961.5625,
+      "y": 854.734375,
+      "width": 1114.953125,
+      "height": 510.234375,
+      "right": 3076.515625,
+      "bottom": 1364.96875
+    },
+    {
+      "id": "C_manufacturing_trend",
+      "x": 102.046875,
+      "y": 1635.609375,
+      "width": 1114.953125,
+      "height": 517.78125,
+      "right": 1217,
+      "bottom": 2153.390625
+    },
+    {
+      "id": "D_aggregation",
+      "x": 1277.46875,
+      "y": 1635.609375,
+      "width": 1799.046875,
+      "height": 846.609375,
+      "right": 3076.515625,
+      "bottom": 2482.21875
+    },
+    {
+      "id": "E_young_migration",
+      "x": 102.046875,
+      "y": 2871.5,
+      "width": 1961.5625,
+      "height": 578.265625,
+      "right": 2063.609375,
+      "bottom": 3449.765625
+    },
+    {
+      "id": "F_tokyo",
+      "x": 2124.078125,
+      "y": 2871.5,
+      "width": 952.4375,
+      "height": 982.671875,
+      "right": 3076.515625,
+      "bottom": 3854.171875
+    }
+  ],
+  "overlaps": [],
+  "text_overflows": [],
+  "duplicate_ids": [],
+  "unresolved_svg_references": [],
+  "loaded_fonts": [
+    {
+      "family": "DejaVu Serif",
+      "weight": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "DejaVu Serif",
+      "weight": "700",
+      "status": "loaded"
+    },
+    {
+      "family": "DejaVu Sans",
+      "weight": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "DejaVu Sans",
+      "weight": "700",
+      "status": "loaded"
+    }
+  ],
+  "claims": [
+    {
+      "id": "between_covariance_2022",
+      "text": "99.1"
+    },
+    {
+      "id": "mfg_Pooled_2019",
+      "text": "0.619"
+    },
+    {
+      "id": "mfg_Pooled_2022",
+      "text": "0.644"
+    },
+    {
+      "id": "mfg_USA_2019",
+      "text": "0.040"
+    },
+    {
+      "id": "mfg_USA_2022",
+      "text": "0.003"
+    },
+    {
+      "id": "mfg_JPN_2019",
+      "text": "-0.010"
+    },
+    {
+      "id": "mfg_JPN_2022",
+      "text": "0.029"
+    },
+    {
+      "id": "us_young_intervals_cross_zero",
+      "text": "35"
+    },
+    {
+      "id": "young_JPN_2019",
+      "text": "-0.812"
+    },
+    {
+      "id": "young_USA_2019",
+      "text": "-0.337"
+    },
+    {
+      "id": "young_JPN_without_Tokyo",
+      "text": "-0.796"
+    },
+    {
+      "id": "young_USA_without_DC",
+      "text": "-0.212"
+    },
+    {
+      "id": "older_JPN_2019",
+      "text": "-0.332"
+    },
+    {
+      "id": "older_JPN_2022",
+      "text": "-0.048"
+    },
+    {
+      "id": "older_USA_2019",
+      "text": "0.135"
+    },
+    {
+      "id": "older_USA_2022",
+      "text": "0.439"
+    },
+    {
+      "id": "older_JPN_without_Tokyo",
+      "text": "-0.381"
+    },
+    {
+      "id": "tokyo_teen",
+      "text": "+13,795"
+    },
+    {
+      "id": "tokyo_young",
+      "text": "+57,153"
+    },
+    {
+      "id": "tokyo_other",
+      "text": "-32,925"
+    },
+    {
+      "id": "tokyo_older",
+      "text": "-9,284"
+    }
+  ],
+  "non_chart_body_words": 491,
+  "author_names": [
+    "WANG YIJIE",
+    "LI YE",
+    "HE YING",
+    "WANGYUCHENG"
+  ],
+  "author_ids": [
+    "60074637",
+    "60999683",
+    "60189188",
+    "60786917"
+  ],
+  "key_findings": 3,
+  "blocked_requests": [],
+  "javascript_errors": [],
+  "browser_version": "157.0.8103.50",
+  "input_sha256": {
+    "poster.html": "9d783747d8774edf02bbff66371fb27da2ec3d66654e8a5fe6a06fffe04e0b40",
+    "poster.css": "cac6b18fa8319690fb5be0b86fd1a2e8e2c3decb8d2fe141fe33b87ac12d4810"
+  },
+  "pdf_sha256": "fc28cee71f80ef53f8236fe5468f561fe731c2a778c6d62acb6d5bda53498975"
+}

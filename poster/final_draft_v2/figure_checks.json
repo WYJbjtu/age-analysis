@@ -1,0 +1,296 @@
+[
+  {
+    "figure": "A_national",
+    "text_outside_canvas": [],
+    "observations": 46,
+    "years": [
+      2000,
+      2022
+    ]
+  },
+  {
+    "figure": "B_distribution",
+    "text_outside_canvas": [],
+    "countries": {
+      "USA": {
+        "points": 51,
+        "median": 17.80763761,
+        "q1": 16.91866692,
+        "q3": 18.828257710000003,
+        "labels": [
+          "Utah",
+          "Maine"
+        ],
+        "region_ids": [
+          "US-UT",
+          "US-DC",
+          "US-TX",
+          "US-AK",
+          "US-GA",
+          "US-CO",
+          "US-CA",
+          "US-OK",
+          "US-ND",
+          "US-WA",
+          "US-VA",
+          "US-NV",
+          "US-IN",
+          "US-NE",
+          "US-MD",
+          "US-LA",
+          "US-ID",
+          "US-KS",
+          "US-IL",
+          "US-MS",
+          "US-TN",
+          "US-NC",
+          "US-NJ",
+          "US-MN",
+          "US-KY",
+          "US-AR",
+          "US-SD",
+          "US-AL",
+          "US-MO",
+          "US-MA",
+          "US-NY",
+          "US-CT",
+          "US-IA",
+          "US-OH",
+          "US-WY",
+          "US-WI",
+          "US-MI",
+          "US-AZ",
+          "US-RI",
+          "US-SC",
+          "US-NM",
+          "US-OR",
+          "US-PA",
+          "US-MT",
+          "US-NH",
+          "US-HI",
+          "US-DE",
+          "US-WV",
+          "US-VT",
+          "US-FL",
+          "US-ME"
+        ]
+      },
+      "JPN": {
+        "points": 47,
+        "median": 31.5,
+        "q1": 29.85,
+        "q3": 33.7,
+        "labels": [
+          "Tokyo",
+          "Akita"
+        ],
+        "region_ids": [
+          "JP-13",
+          "JP-47",
+          "JP-23",
+          "JP-14",
+          "JP-25",
+          "JP-11",
+          "JP-27",
+          "JP-12",
+          "JP-40",
+          "JP-04",
+          "JP-26",
+          "JP-28",
+          "JP-09",
+          "JP-34",
+          "JP-17",
+          "JP-08",
+          "JP-24",
+          "JP-22",
+          "JP-10",
+          "JP-33",
+          "JP-21",
+          "JP-18",
+          "JP-41",
+          "JP-19",
+          "JP-43",
+          "JP-29",
+          "JP-37",
+          "JP-20",
+          "JP-07",
+          "JP-01",
+          "JP-16",
+          "JP-31",
+          "JP-45",
+          "JP-15",
+          "JP-46",
+          "JP-38",
+          "JP-42",
+          "JP-44",
+          "JP-30",
+          "JP-03",
+          "JP-32",
+          "JP-02",
+          "JP-06",
+          "JP-36",
+          "JP-35",
+          "JP-39",
+          "JP-05"
+        ]
+      }
+    },
+    "display_separation_only": true,
+    "omitted_regions": 0
+  },
+  {
+    "figure": "C_manufacturing_trend",
+    "text_outside_canvas": [],
+    "country_year_summaries": 24,
+    "regions_per_year": {
+      "USA": 51,
+      "JPN": 47
+    }
+  },
+  {
+    "figure": "D_aggregation",
+    "text_outside_canvas": [],
+    "panels": [
+      {
+        "group": "Pooled",
+        "points": 98,
+        "pearson": 0.6444354106,
+        "spearman": 0.6102668569,
+        "slope_from_saved_result": 0.8687825417,
+        "intercept_from_saved_result": -4.3571791421,
+        "line_supports": [
+          {
+            "country": "JPN",
+            "min": 22.8,
+            "max": 38.6
+          },
+          {
+            "country": "USA",
+            "min": 11.98532892,
+            "max": 22.53771637
+          }
+        ]
+      },
+      {
+        "group": "USA",
+        "points": 51,
+        "pearson": 0.0032242157,
+        "spearman": -0.0120361991,
+        "slope_from_saved_result": 0.0074318619,
+        "intercept_from_saved_result": 10.1410093732,
+        "line_supports": [
+          {
+            "country": "USA",
+            "min": 11.98532892,
+            "max": 22.53771637
+          }
+        ]
+      },
+      {
+        "group": "JPN",
+        "points": 47,
+        "pearson": 0.0286467876,
+        "spearman": -0.084723711,
+        "slope_from_saved_result": 0.0797620029,
+        "intercept_from_saved_result": 21.2882250056,
+        "line_supports": [
+          {
+            "country": "JPN",
+            "min": 22.8,
+            "max": 38.6
+          }
+        ]
+      }
+    ],
+    "new_model_fits": 0
+  },
+  {
+    "figure": "E_young_migration",
+    "text_outside_canvas": [],
+    "panels": [
+      {
+        "country": "JPN",
+        "points": 47,
+        "pearson": -0.820294558534078,
+        "spearman": -0.820460947888796,
+        "label_ids": [
+          "JP-02",
+          "JP-13"
+        ],
+        "x_limits": [
+          21.0,
+          41.0
+        ],
+        "y_limits": [
+          -80.0,
+          100.0
+        ]
+      },
+      {
+        "country": "USA",
+        "points": 51,
+        "pearson": -0.362190260956796,
+        "spearman": -0.254389140271493,
+        "label_ids": [
+          "US-DC",
+          "US-NH"
+        ],
+        "x_limits": [
+          11.0,
+          24.0
+        ],
+        "y_limits": [
+          -120.0,
+          220.0
+        ],
+        "hollow_points": 35,
+        "error_bars": 51,
+        "interval_min": -94.84711540964099,
+        "interval_max": 182.63491732022572
+      }
+    ],
+    "pooled_fit": false
+  },
+  {
+    "figure": "F_tokyo",
+    "text_outside_canvas": [],
+    "years": [
+      {
+        "year": 2019,
+        "bars": 20,
+        "sum_native_and_unknown": 82982.0,
+        "published_total": 82982.0,
+        "unknown": -1.0
+      },
+      {
+        "year": 2022,
+        "bars": 20,
+        "sum_native_and_unknown": 38023.0,
+        "published_total": 38023.0,
+        "unknown": 2.0
+      }
+    ],
+    "nonoverlapping_bins": [
+      "0-4",
+      "5-9",
+      "10-14",
+      "15-19",
+      "20-24",
+      "25-29",
+      "30-34",
+      "35-39",
+      "40-44",
+      "45-49",
+      "50-54",
+      "55-59",
+      "60-64",
+      "65-69",
+      "70-74",
+      "75-79",
+      "80-84",
+      "85-89",
+      "90+",
+      "unknown"
+    ]
+  }
+]

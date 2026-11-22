@@ -1,0 +1,736 @@
+{
+  "version": 3,
+  "status": "READY FOR TEAM REVIEW",
+  "layout": "Three independent vertical columns; Key Findings is final in Column 3.",
+  "inputs": [
+    {
+      "path": "inputs/national.csv",
+      "source_path": "member1_demographics/national_trends_wpp2024_2000_2022.csv",
+      "source_sha256": "4b77f44e217cd34a988852a0676b7a8306f5b2b36fb443fa001bd2e728793040",
+      "sha256": "4b77f44e217cd34a988852a0676b7a8306f5b2b36fb443fa001bd2e728793040",
+      "selection": "entire source, exact bytes",
+      "rows": 46,
+      "policy": "Read-only input snapshot; no values modified. Derived row selection retains exact source cell strings."
+    },
+    {
+      "path": "inputs/population_2022.csv",
+      "source_path": "member1_demographics/population_2022.csv",
+      "source_sha256": "41d33bdabee4723c60e5563e8d66c61777fab960607fb43c0fa00d7c0a35b0b6",
+      "sha256": "41d33bdabee4723c60e5563e8d66c61777fab960607fb43c0fa00d7c0a35b0b6",
+      "selection": "entire source, exact bytes",
+      "rows": 98,
+      "policy": "Read-only input snapshot; no values modified. Derived row selection retains exact source cell strings."
+    },
+    {
+      "path": "inputs/industry_trends.csv",
+      "source_path": "member2_industry/trend_summary.csv",
+      "source_sha256": "5b7ed3c33b3c1eecc0e2601c8fbb340b9d0fe727ce4cce684e84b70481bac66e",
+      "sha256": "5b7ed3c33b3c1eecc0e2601c8fbb340b9d0fe727ce4cce684e84b70481bac66e",
+      "selection": "entire source, exact bytes",
+      "rows": 24,
+      "policy": "Read-only input snapshot; no values modified. Derived row selection retains exact source cell strings."
+    },
+    {
+      "path": "inputs/manufacturing_2022.csv",
+      "source_path": "analysis/member4/data/core_2022.csv",
+      "source_sha256": "ad282b3dcb4e3c4cf3ba49aa1e7a41967bf2ea5411a1f05143f275886f84afe2",
+      "sha256": "ad282b3dcb4e3c4cf3ba49aa1e7a41967bf2ea5411a1f05143f275886f84afe2",
+      "selection": "entire source, exact bytes",
+      "rows": 98,
+      "policy": "Read-only input snapshot; no values modified. Derived row selection retains exact source cell strings."
+    },
+    {
+      "path": "inputs/manufacturing_associations.csv",
+      "source_path": "analysis/member4/results/associations.csv",
+      "source_sha256": "028bd63e58d47350846aaf462eb675d725b0cbd51842fb6d5d7308cce2aa91fa",
+      "sha256": "028bd63e58d47350846aaf462eb675d725b0cbd51842fb6d5d7308cce2aa91fa",
+      "selection": "entire source, exact bytes",
+      "rows": 36,
+      "policy": "Read-only input snapshot; no values modified. Derived row selection retains exact source cell strings."
+    },
+    {
+      "path": "inputs/covariance.csv",
+      "source_path": "analysis/member4/results/covariance_summary.csv",
+      "source_sha256": "c22e96eab5f272116a8d17b3cb2e8241ad5faa501602c37fa2a80499f01a42dd",
+      "sha256": "c22e96eab5f272116a8d17b3cb2e8241ad5faa501602c37fa2a80499f01a42dd",
+      "selection": "entire source, exact bytes",
+      "rows": 2,
+      "policy": "Read-only input snapshot; no values modified. Derived row selection retains exact source cell strings."
+    },
+    {
+      "path": "inputs/migration.csv",
+      "source_path": "analysis/age_migration/data/population_structure_join.csv",
+      "source_sha256": "35c4a5eaf27aba74c859eb9f6a94bd7513eb617178a5327148a289d93b9e142f",
+      "sha256": "6c50f46a807965447fdb34757a6ad5a9db7243c3ee3041efa617a2c9ccc84f92",
+      "selection": {
+        "age_group": [
+          "20-24",
+          "65+"
+        ]
+      },
+      "rows": 392,
+      "policy": "Read-only input snapshot; no values modified. Derived row selection retains exact source cell strings."
+    },
+    {
+      "path": "inputs/tokyo_native.csv",
+      "source_path": "analysis/age_migration/data/native_migration.csv",
+      "source_sha256": "1f558f4bbe517870a8207354ea667daf24ddee21d116ee13c4643a2000431259",
+      "sha256": "66a409ef84957f7bbc9b79572614fb99f8987cdd7eba776dd48ffc969f2c3910",
+      "selection": {
+        "region_id": [
+          "JP-13"
+        ]
+      },
+      "rows": 42,
+      "policy": "Read-only input snapshot; no values modified. Derived row selection retains exact source cell strings."
+    },
+    {
+      "path": "inputs/migration_associations.csv",
+      "source_path": "analysis/age_migration/results/associations.csv",
+      "source_sha256": "140573a87d56a6d67cfa9ec05e62da2badcc09b2107f0518fc0c1c091cf513b5",
+      "sha256": "140573a87d56a6d67cfa9ec05e62da2badcc09b2107f0518fc0c1c091cf513b5",
+      "selection": "entire source, exact bytes",
+      "rows": 54,
+      "policy": "Read-only input snapshot; no values modified. Derived row selection retains exact source cell strings."
+    },
+    {
+      "path": "inputs/migration_influence.csv",
+      "source_path": "analysis/age_migration/results/influence_summary.csv",
+      "source_sha256": "9eb2c929c3290c3e752a62b9440a00fd07324a6a6f238ec8d93859d43f5997b2",
+      "sha256": "9eb2c929c3290c3e752a62b9440a00fd07324a6a6f238ec8d93859d43f5997b2",
+      "selection": "entire source, exact bytes",
+      "rows": 12,
+      "policy": "Read-only input snapshot; no values modified. Derived row selection retains exact source cell strings."
+    },
+    {
+      "path": "inputs/uncertainty.csv",
+      "source_path": "analysis/age_migration/results/us_uncertainty_summary.csv",
+      "source_sha256": "f095742ee3985d492bb8adb2b9291a35466618728c9d85bb89457675045419d1",
+      "sha256": "f095742ee3985d492bb8adb2b9291a35466618728c9d85bb89457675045419d1",
+      "selection": "entire source, exact bytes",
+      "rows": 12,
+      "policy": "Read-only input snapshot; no values modified. Derived row selection retains exact source cell strings."
+    },
+    {
+      "path": "inputs/tokyo_decomposition.csv",
+      "source_path": "analysis/age_migration/results/tokyo_decomposition.csv",
+      "source_sha256": "0bbf3f43b71f9b9e396f84432538b6f50865f15e42252c672112ca71152eab64",
+      "sha256": "0bbf3f43b71f9b9e396f84432538b6f50865f15e42252c672112ca71152eab64",
+      "selection": "entire source, exact bytes",
+      "rows": 2,
+      "policy": "Read-only input snapshot; no values modified. Derived row selection retains exact source cell strings."
+    }
+  ],
+  "figures": [
+    {
+      "id": "A_national",
+      "svg": "figures/A_national.svg",
+      "png": "figures/A_national.png",
+      "width_mm": 253.0,
+      "height_mm": 229.99999999999997,
+      "purpose": "National context, distinct from regional estimates",
+      "inputs": [
+        {
+          "path": "inputs/national.csv",
+          "sha256": "4b77f44e217cd34a988852a0676b7a8306f5b2b36fb443fa001bd2e728793040"
+        }
+      ],
+      "source_figures_and_scripts": [
+        {
+          "source_path": "member1_demographics/plot_population.py",
+          "sha256": "bbad10607f3001df759051c54d017b1335a571e95cef5e5eedf4e24b3577ad1a",
+          "role": "Read-only scientific provenance, not a runtime dependency"
+        },
+        {
+          "source_path": "member1_demographics/figures/01_national_aging_trends_2000_2022.svg",
+          "sha256": "a3644c57b61b0733422f80e9d70500a4cf1502036ff39e3258b54ba53a2f21e7",
+          "role": "Read-only scientific provenance, not a runtime dependency"
+        }
+      ],
+      "font_sizes_pt": [
+        18.0,
+        20.0
+      ],
+      "svg_sha256": "11234400a5eadf5ceb853b9a0c15e6bf450f9ef7ee8e968a16d220d8716b99f0",
+      "png_sha256": "b3abfac90b955fa2dc7825c6d32121d6f8aeaa1d67b8770a823ef6c4d17ffa2e"
+    },
+    {
+      "id": "B_distribution",
+      "svg": "figures/B_distribution.svg",
+      "png": "figures/B_distribution.png",
+      "width_mm": 253.0,
+      "height_mm": 325.0,
+      "purpose": "All 98 regions, shared vertical percentage scale",
+      "inputs": [
+        {
+          "path": "inputs/population_2022.csv",
+          "sha256": "41d33bdabee4723c60e5563e8d66c61777fab960607fb43c0fa00d7c0a35b0b6"
+        }
+      ],
+      "source_figures_and_scripts": [
+        {
+          "source_path": "member1_demographics/plot_population.py",
+          "sha256": "bbad10607f3001df759051c54d017b1335a571e95cef5e5eedf4e24b3577ad1a",
+          "role": "Read-only scientific provenance, not a runtime dependency"
+        },
+        {
+          "source_path": "member1_demographics/figures/02_regional_aging_comparison_2022.svg",
+          "sha256": "ba5b2f02c3387e5834ae66234980411d60ace37951646a1a10ccf87d218cb185",
+          "role": "Read-only scientific provenance, not a runtime dependency"
+        }
+      ],
+      "font_sizes_pt": [
+        18.0,
+        20.0
+      ],
+      "svg_sha256": "c2edf74e0c31ecc767182f743181348ff2870ba74a8fe5e6ea7138d8ebc03882",
+      "png_sha256": "e477ed153e27003a0c8a0112f6703d054dc21fd333b2ed9727718f0654fa6670"
+    },
+    {
+      "id": "C_manufacturing",
+      "svg": "figures/C_manufacturing.svg",
+      "png": "figures/C_manufacturing.png",
+      "width_mm": 253.0,
+      "height_mm": 135.0,
+      "purpose": "Saved manufacturing medians and IQRs, all twelve years",
+      "inputs": [
+        {
+          "path": "inputs/industry_trends.csv",
+          "sha256": "5b7ed3c33b3c1eecc0e2601c8fbb340b9d0fe727ce4cce684e84b70481bac66e"
+        }
+      ],
+      "source_figures_and_scripts": [
+        {
+          "source_path": "member2_industry/plot_industry.py",
+          "sha256": "0dc522ca3b5788372ccd035e81c8b8f6ada2de8b4378261919e6ca34e65da63a",
+          "role": "Read-only scientific provenance, not a runtime dependency"
+        },
+        {
+          "source_path": "member2_industry/figures/manufacturing_trend_2011_2022.svg",
+          "sha256": "8762ce9855d12272dd5db367c2dccc17da5e5b736c656f8f58d0ac5fabf220d9",
+          "role": "Read-only scientific provenance, not a runtime dependency"
+        }
+      ],
+      "font_sizes_pt": [
+        18.0,
+        20.0
+      ],
+      "svg_sha256": "0d2e584e488f30d9a76a5d6e2c38c2ba4b56904d0a1f33ee54d2923a55a22289",
+      "png_sha256": "0a8916cd166cc54139e939da481141f958352d9381a7b691ed4f715c86bd56ee"
+    },
+    {
+      "id": "D_services",
+      "svg": "figures/D_services.svg",
+      "png": "figures/D_services.png",
+      "width_mm": 253.0,
+      "height_mm": 225.0,
+      "purpose": "Two separate country-specific service trends, never pooled",
+      "inputs": [
+        {
+          "path": "inputs/industry_trends.csv",
+          "sha256": "5b7ed3c33b3c1eecc0e2601c8fbb340b9d0fe727ce4cce684e84b70481bac66e"
+        },
+        {
+          "path": "inputs/industry_comparability.json",
+          "sha256": "40e4b4cebb7d23cb0f9ad9dc1a66347f2299902bbd3cbcd83e1c7e0cb734cc19"
+        }
+      ],
+      "source_figures_and_scripts": [
+        {
+          "source_path": "member2_industry/plot_industry.py",
+          "sha256": "0dc522ca3b5788372ccd035e81c8b8f6ada2de8b4378261919e6ca34e65da63a",
+          "role": "Read-only scientific provenance, not a runtime dependency"
+        },
+        {
+          "source_path": "member2_industry/figures/usa_services_trend_2011_2022.svg",
+          "sha256": "b9c073d79135cad00406a0274bc658ebf0b197f82156b87c2ea6ab61c3e9fe71",
+          "role": "Read-only scientific provenance, not a runtime dependency"
+        },
+        {
+          "source_path": "member2_industry/figures/jpn_services_trend_2011_2022.svg",
+          "sha256": "8563c9eab09cbbb59130af1ae66f29936988f428027545739a83a55ec7cd5077",
+          "role": "Read-only scientific provenance, not a runtime dependency"
+        }
+      ],
+      "font_sizes_pt": [
+        18.0,
+        20.0
+      ],
+      "svg_sha256": "990ebed7fa546de7bdcc3923a15d359e45a666c49eb833c7db6793bdb58667b3",
+      "png_sha256": "bae1ebadb89fc3ed24c873199a817eeb0b08723ccc5ddd0e067ed4f9cd921478"
+    },
+    {
+      "id": "E_aggregation",
+      "svg": "figures/E_aggregation.svg",
+      "png": "figures/E_aggregation.png",
+      "width_mm": 253.0,
+      "height_mm": 355.0,
+      "purpose": "Three compact stacked panels with identical numeric axes and physical widths; saved fits",
+      "inputs": [
+        {
+          "path": "inputs/manufacturing_2022.csv",
+          "sha256": "ad282b3dcb4e3c4cf3ba49aa1e7a41967bf2ea5411a1f05143f275886f84afe2"
+        },
+        {
+          "path": "inputs/manufacturing_associations.csv",
+          "sha256": "028bd63e58d47350846aaf462eb675d725b0cbd51842fb6d5d7308cce2aa91fa"
+        }
+      ],
+      "source_figures_and_scripts": [
+        {
+          "source_path": "analysis/member4/plot_figures.py",
+          "sha256": "8bce5e0b93e2f14c7095bfce4d33bacae076807ec8682631882b94bbe21b0349",
+          "role": "Read-only scientific provenance, not a runtime dependency"
+        },
+        {
+          "source_path": "analysis/member4/figures/01_pooled_within_2022.svg",
+          "sha256": "b66327b42bda4fe2f239df93479bf11537b620ae270cd23cdaa2f1970f9775ff",
+          "role": "Read-only scientific provenance, not a runtime dependency"
+        }
+      ],
+      "font_sizes_pt": [
+        18.0,
+        20.0,
+        22.0
+      ],
+      "svg_sha256": "92950f78b2ee6ff5bb67e56af7b6b89c3e9666124e317d9a49a7a677120a8ba8",
+      "png_sha256": "a237c23d80976015cda04d7cfcb0c8191dbdb2c0a1772703942f5dcf0fe61c01"
+    },
+    {
+      "id": "F_young_migration",
+      "svg": "figures/F_young_migration.svg",
+      "png": "figures/F_young_migration.png",
+      "width_mm": 253.0,
+      "height_mm": 320.0,
+      "purpose": "Complete 2022 young-adult samples and unchanged ACS ratio intervals",
+      "inputs": [
+        {
+          "path": "inputs/migration.csv",
+          "sha256": "6c50f46a807965447fdb34757a6ad5a9db7243c3ee3041efa617a2c9ccc84f92"
+        },
+        {
+          "path": "inputs/migration_associations.csv",
+          "sha256": "140573a87d56a6d67cfa9ec05e62da2badcc09b2107f0518fc0c1c091cf513b5"
+        },
+        {
+          "path": "inputs/uncertainty.csv",
+          "sha256": "f095742ee3985d492bb8adb2b9291a35466618728c9d85bb89457675045419d1"
+        }
+      ],
+      "source_figures_and_scripts": [
+        {
+          "source_path": "analysis/age_migration/plot.py",
+          "sha256": "1f5eb548557b0b0065c608f5a90741c2e8edb66935c348b9b72945934ab108cb",
+          "role": "Read-only scientific provenance, not a runtime dependency"
+        },
+        {
+          "source_path": "analysis/age_migration/figures/figure1_regional_2022.svg",
+          "sha256": "46f7fb0b23c1d902959869b83713908092cadac274c29bcb8e0be506113496c7",
+          "role": "Read-only scientific provenance, not a runtime dependency"
+        }
+      ],
+      "font_sizes_pt": [
+        18.0,
+        20.0,
+        22.0
+      ],
+      "svg_sha256": "e3ba05a2fd4569a7cc6313acc9cb609006c5eba2895eabc8b0933bc59e215b26",
+      "png_sha256": "f1a1303b62afe49a9f3295eadbd73d2f2ef8a60b6acd7601e8b0a1b7aca297b5"
+    },
+    {
+      "id": "G_tokyo",
+      "svg": "figures/G_tokyo.svg",
+      "png": "figures/G_tokyo.png",
+      "width_mm": 253.0,
+      "height_mm": 280.0,
+      "purpose": "Full native-age Tokyo profile, including unknown-age residuals",
+      "inputs": [
+        {
+          "path": "inputs/tokyo_native.csv",
+          "sha256": "66a409ef84957f7bbc9b79572614fb99f8987cdd7eba776dd48ffc969f2c3910"
+        },
+        {
+          "path": "inputs/tokyo_decomposition.csv",
+          "sha256": "0bbf3f43b71f9b9e396f84432538b6f50865f15e42252c672112ca71152eab64"
+        }
+      ],
+      "source_figures_and_scripts": [
+        {
+          "source_path": "analysis/age_migration/plot.py",
+          "sha256": "1f5eb548557b0b0065c608f5a90741c2e8edb66935c348b9b72945934ab108cb",
+          "role": "Read-only scientific provenance, not a runtime dependency"
+        },
+        {
+          "source_path": "analysis/age_migration/figures/figure2_native_cases.svg",
+          "sha256": "aee75e6073be11238ccf52792fd60c8786956707b40812784db79b5e676f2f8e",
+          "role": "Read-only scientific provenance, not a runtime dependency"
+        }
+      ],
+      "font_sizes_pt": [
+        18.0,
+        20.0
+      ],
+      "svg_sha256": "96d68e14edc1849937c5b08cc52175828264c76d432ea83074a6ff2cd88433d4",
+      "png_sha256": "6cc27126092ac8916346cace88baacc97d904b13c7f2e331aacafec5567c38f0"
+    }
+  ],
+  "numerical_claims": [
+    {
+      "id": "between_covariance_2022",
+      "input": "inputs/covariance.csv",
+      "selection": {
+        "year": 2022
+      },
+      "field": "between_fraction",
+      "raw_value": 0.9909691739,
+      "scale": 100,
+      "format": ".1f",
+      "display": "99.1",
+      "input_sha256": "c22e96eab5f272116a8d17b3cb2e8241ad5faa501602c37fa2a80499f01a42dd"
+    },
+    {
+      "id": "mfg_Pooled_2019",
+      "input": "inputs/manufacturing_associations.csv",
+      "selection": {
+        "year": 2019,
+        "group": "Pooled",
+        "variant": "available",
+        "x": "age65_share_pct",
+        "y": "manufacturing_share_pct"
+      },
+      "field": "pearson",
+      "raw_value": 0.6187104288,
+      "scale": 1,
+      "format": ".3f",
+      "display": "0.619",
+      "input_sha256": "028bd63e58d47350846aaf462eb675d725b0cbd51842fb6d5d7308cce2aa91fa"
+    },
+    {
+      "id": "mfg_USA_2019",
+      "input": "inputs/manufacturing_associations.csv",
+      "selection": {
+        "year": 2019,
+        "group": "USA",
+        "variant": "available",
+        "x": "age65_share_pct",
+        "y": "manufacturing_share_pct"
+      },
+      "field": "pearson",
+      "raw_value": 0.0400973826,
+      "scale": 1,
+      "format": ".3f",
+      "display": "0.040",
+      "input_sha256": "028bd63e58d47350846aaf462eb675d725b0cbd51842fb6d5d7308cce2aa91fa"
+    },
+    {
+      "id": "mfg_JPN_2019",
+      "input": "inputs/manufacturing_associations.csv",
+      "selection": {
+        "year": 2019,
+        "group": "JPN",
+        "variant": "available",
+        "x": "age65_share_pct",
+        "y": "manufacturing_share_pct"
+      },
+      "field": "pearson",
+      "raw_value": -0.0095334253,
+      "scale": 1,
+      "format": ".3f",
+      "display": "-0.010",
+      "input_sha256": "028bd63e58d47350846aaf462eb675d725b0cbd51842fb6d5d7308cce2aa91fa"
+    },
+    {
+      "id": "young_JPN_2019",
+      "input": "inputs/migration_associations.csv",
+      "selection": {
+        "country": "JPN",
+        "year": 2019,
+        "age_group": "20-24",
+        "variant": "primary"
+      },
+      "field": "pearson",
+      "raw_value": -0.812245183561983,
+      "scale": 1,
+      "format": ".3f",
+      "display": "-0.812",
+      "input_sha256": "140573a87d56a6d67cfa9ec05e62da2badcc09b2107f0518fc0c1c091cf513b5"
+    },
+    {
+      "id": "young_USA_2019",
+      "input": "inputs/migration_associations.csv",
+      "selection": {
+        "country": "USA",
+        "year": 2019,
+        "age_group": "20-24",
+        "variant": "primary"
+      },
+      "field": "pearson",
+      "raw_value": -0.336606857601331,
+      "scale": 1,
+      "format": ".3f",
+      "display": "-0.337",
+      "input_sha256": "140573a87d56a6d67cfa9ec05e62da2badcc09b2107f0518fc0c1c091cf513b5"
+    },
+    {
+      "id": "young_without_Tokyo",
+      "input": "inputs/migration_associations.csv",
+      "selection": {
+        "country": "JPN",
+        "year": 2022,
+        "age_group": "20-24",
+        "variant": "without_Tokyo"
+      },
+      "field": "pearson",
+      "raw_value": -0.795747417132571,
+      "scale": 1,
+      "format": ".3f",
+      "display": "-0.796",
+      "input_sha256": "140573a87d56a6d67cfa9ec05e62da2badcc09b2107f0518fc0c1c091cf513b5"
+    },
+    {
+      "id": "young_without_DC",
+      "input": "inputs/migration_associations.csv",
+      "selection": {
+        "country": "USA",
+        "year": 2022,
+        "age_group": "20-24",
+        "variant": "without_DC"
+      },
+      "field": "pearson",
+      "raw_value": -0.212466676462404,
+      "scale": 1,
+      "format": ".3f",
+      "display": "-0.212",
+      "input_sha256": "140573a87d56a6d67cfa9ec05e62da2badcc09b2107f0518fc0c1c091cf513b5"
+    },
+    {
+      "id": "us_intervals_cross_zero",
+      "input": "inputs/uncertainty.csv",
+      "selection": {
+        "country": "USA",
+        "year": 2022,
+        "age_group": "20-24"
+      },
+      "field": "intervals_including_zero",
+      "raw_value": 35.0,
+      "scale": 1,
+      "format": ".0f",
+      "display": "35",
+      "input_sha256": "f095742ee3985d492bb8adb2b9291a35466618728c9d85bb89457675045419d1"
+    },
+    {
+      "id": "tokyo_teen",
+      "input": "inputs/tokyo_decomposition.csv",
+      "selection": {
+        "year": 2022
+      },
+      "field": "age15_19_net",
+      "raw_value": 13795.0,
+      "scale": 1,
+      "format": "+,.0f",
+      "display": "+13,795",
+      "input_sha256": "0bbf3f43b71f9b9e396f84432538b6f50865f15e42252c672112ca71152eab64"
+    },
+    {
+      "id": "tokyo_young",
+      "input": "inputs/tokyo_decomposition.csv",
+      "selection": {
+        "year": 2022
+      },
+      "field": "age20_24_net",
+      "raw_value": 57153.0,
+      "scale": 1,
+      "format": "+,.0f",
+      "display": "+57,153",
+      "input_sha256": "0bbf3f43b71f9b9e396f84432538b6f50865f15e42252c672112ca71152eab64"
+    },
+    {
+      "id": "tokyo_other",
+      "input": "inputs/tokyo_decomposition.csv",
+      "selection": {
+        "year": 2022
+      },
+      "field": "all_other_ages_net",
+      "raw_value": -32925.0,
+      "scale": 1,
+      "format": "+,.0f",
+      "display": "-32,925",
+      "input_sha256": "0bbf3f43b71f9b9e396f84432538b6f50865f15e42252c672112ca71152eab64"
+    },
+    {
+      "id": "tokyo_older",
+      "input": "inputs/tokyo_decomposition.csv",
+      "selection": {
+        "year": 2022
+      },
+      "field": "age65plus_net",
+      "raw_value": -9284.0,
+      "scale": 1,
+      "format": "+,.0f",
+      "display": "-9,284",
+      "input_sha256": "0bbf3f43b71f9b9e396f84432538b6f50865f15e42252c672112ca71152eab64"
+    }
+  ],
+  "source_provenance": [
+    {
+      "source_path": "member1_demographics/plot_population.py",
+      "sha256": "bbad10607f3001df759051c54d017b1335a571e95cef5e5eedf4e24b3577ad1a",
+      "role": "Read-only scientific provenance, not a runtime dependency"
+    },
+    {
+      "source_path": "member1_demographics/figures/01_national_aging_trends_2000_2022.svg",
+      "sha256": "a3644c57b61b0733422f80e9d70500a4cf1502036ff39e3258b54ba53a2f21e7",
+      "role": "Read-only scientific provenance, not a runtime dependency"
+    },
+    {
+      "source_path": "member1_demographics/figures/02_regional_aging_comparison_2022.svg",
+      "sha256": "ba5b2f02c3387e5834ae66234980411d60ace37951646a1a10ccf87d218cb185",
+      "role": "Read-only scientific provenance, not a runtime dependency"
+    },
+    {
+      "source_path": "member2_industry/plot_industry.py",
+      "sha256": "0dc522ca3b5788372ccd035e81c8b8f6ada2de8b4378261919e6ca34e65da63a",
+      "role": "Read-only scientific provenance, not a runtime dependency"
+    },
+    {
+      "source_path": "member2_industry/comparability.json",
+      "sha256": "40e4b4cebb7d23cb0f9ad9dc1a66347f2299902bbd3cbcd83e1c7e0cb734cc19",
+      "role": "Read-only scientific provenance, not a runtime dependency"
+    },
+    {
+      "source_path": "member2_industry/figures/manufacturing_trend_2011_2022.svg",
+      "sha256": "8762ce9855d12272dd5db367c2dccc17da5e5b736c656f8f58d0ac5fabf220d9",
+      "role": "Read-only scientific provenance, not a runtime dependency"
+    },
+    {
+      "source_path": "member2_industry/figures/usa_services_trend_2011_2022.svg",
+      "sha256": "b9c073d79135cad00406a0274bc658ebf0b197f82156b87c2ea6ab61c3e9fe71",
+      "role": "Read-only scientific provenance, not a runtime dependency"
+    },
+    {
+      "source_path": "member2_industry/figures/jpn_services_trend_2011_2022.svg",
+      "sha256": "8563c9eab09cbbb59130af1ae66f29936988f428027545739a83a55ec7cd5077",
+      "role": "Read-only scientific provenance, not a runtime dependency"
+    },
+    {
+      "source_path": "analysis/member4/figures/01_pooled_within_2022.svg",
+      "sha256": "b66327b42bda4fe2f239df93479bf11537b620ae270cd23cdaa2f1970f9775ff",
+      "role": "Read-only scientific provenance, not a runtime dependency"
+    },
+    {
+      "source_path": "analysis/age_migration/plot.py",
+      "sha256": "1f5eb548557b0b0065c608f5a90741c2e8edb66935c348b9b72945934ab108cb",
+      "role": "Read-only scientific provenance, not a runtime dependency"
+    },
+    {
+      "source_path": "analysis/age_migration/figures/figure1_regional_2022.svg",
+      "sha256": "46f7fb0b23c1d902959869b83713908092cadac274c29bcb8e0be506113496c7",
+      "role": "Read-only scientific provenance, not a runtime dependency"
+    },
+    {
+      "source_path": "analysis/age_migration/figures/figure2_native_cases.svg",
+      "sha256": "aee75e6073be11238ccf52792fd60c8786956707b40812784db79b5e676f2f8e",
+      "role": "Read-only scientific provenance, not a runtime dependency"
+    },
+    {
+      "source_path": "analysis/member4/plot_figures.py",
+      "sha256": "8bce5e0b93e2f14c7095bfce4d33bacae076807ec8682631882b94bbe21b0349",
+      "role": "Read-only scientific provenance, not a runtime dependency"
+    }
+  ],
+  "original_appendices": [
+    {
+      "path": "appendix/full_regional_ranking.svg",
+      "source_path": "member1_demographics/figures/02_regional_aging_comparison_2022.svg",
+      "source_sha256": "ba5b2f02c3387e5834ae66234980411d60ace37951646a1a10ccf87d218cb185",
+      "policy": "Unchanged full original figure retained as appendix, not cropped."
+    },
+    {
+      "path": "appendix/full_native_cases.svg",
+      "source_path": "analysis/age_migration/figures/figure2_native_cases.svg",
+      "source_sha256": "aee75e6073be11238ccf52792fd60c8786956707b40812784db79b5e676f2f8e",
+      "policy": "Unchanged full original figure retained as appendix, not cropped."
+    }
+  ],
+  "supplementary_tables": [
+    {
+      "title": "Manufacturing association, both years",
+      "input": "inputs/manufacturing_associations.csv",
+      "rows": 6,
+      "columns": [
+        "year",
+        "group",
+        "n",
+        "pearson",
+        "spearman"
+      ],
+      "format": "Original CSV cell strings, no numerical recalculation"
+    },
+    {
+      "title": "All saved migration comparisons and sensitivities",
+      "input": "inputs/migration_associations.csv",
+      "rows": 54,
+      "columns": [
+        "country",
+        "year",
+        "age_group",
+        "variant",
+        "eligible",
+        "included",
+        "missing",
+        "pearson",
+        "spearman"
+      ],
+      "format": "Original CSV cell strings, no numerical recalculation"
+    },
+    {
+      "title": "Industry medians and regional quartiles",
+      "input": "inputs/industry_trends.csv",
+      "rows": 24,
+      "columns": [
+        "country",
+        "year",
+        "regions",
+        "manufacturing_q1_pct",
+        "manufacturing_median_pct",
+        "manufacturing_q3_pct",
+        "services_q1_pct",
+        "services_median_pct",
+        "services_q3_pct"
+      ],
+      "format": "Original CSV cell strings, no numerical recalculation"
+    }
+  ],
+  "supplementary_path": "appendix/evidence_tables.html",
+  "service_scope": {
+    "manufacturing": "nominal manufacturing value added / same-region same-period nominal GDP * 100",
+    "USA": {
+      "gdp_period": "calendar year",
+      "population_reference": "July 1",
+      "services": "private services including utilities; excludes government and government enterprises"
+    },
+    "JPN": {
+      "gdp_period": "fiscal year April through following March",
+      "population_reference": "October 1",
+      "services": "official tertiary aggregate including public administration and public services"
+    },
+    "services_pooled_status": "BLOCKED",
+    "services_not_complement_of_manufacturing": true,
+    "guard": "src/aging_economies/comparability.py; analysis/plot_correlations.py requires --country for services",
+    "interpretation": "Output composition, not employment share or real growth; CY/FY alignment is approximate."
+  },
+  "analytical_policy": "Existing validated results only; no new models; no pooled services or migration.",
+  "visible_content_exclusions": [
+    "version and workflow status",
+    "header time-window boxes",
+    "header methods strip",
+    "duplicate research question",
+    "full coefficient tables",
+    "optional 65+ table"
+  ],
+  "study_scopes": {
+    "national": "2000-2022: 46 observed country-years",
+    "regional": "2011-2022: 1176 region-years",
+    "main_associations_and_migration": "2019 and 2022: 51 USA + 47 JPN each year"
+  }
+}

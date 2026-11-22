@@ -1,0 +1,94 @@
+{
+  "status": "READY FOR TEAM REVIEW",
+  "paper": {
+    "width_mm": 841,
+    "height_mm": 1189,
+    "name": "A0 portrait"
+  },
+  "authors": [
+    {
+      "name": "WANG YIJIE",
+      "student_id": "60074637"
+    },
+    {
+      "name": "LI YE",
+      "student_id": "60999683"
+    },
+    {
+      "name": "HE YING",
+      "student_id": "60189188"
+    },
+    {
+      "name": "WANGYUCHENG",
+      "student_id": "60786917"
+    }
+  ],
+  "course": "Data Visualization",
+  "affiliation": "City University of Hong Kong",
+  "title": [
+    "AGING ACROSS",
+    "ECONOMIES"
+  ],
+  "subtitle": [
+    "Demographic Change, Regional Structure, and Age-Selective Migration",
+    "in Japan and the United States"
+  ],
+  "takeaway": "Shared population aging does not imply a single regional economic or demographic pattern.",
+  "version": 2,
+  "font_targets_pt": {
+    "title_first": 106,
+    "title_second": 116,
+    "subtitle": 29,
+    "authors": 32,
+    "student_ids": 21,
+    "course_affiliation": 23,
+    "section_headings": 34,
+    "body": 24,
+    "captions": 20,
+    "plot_labels": 20
+  },
+  "reference_figures": [
+    {
+      "id": "A",
+      "owner": "Member 1",
+      "source_path": "member1_demographics/figures/01_national_aging_trends_2000_2022.svg",
+      "presentation_change": "Re-rendered national context at poster-specific type size.",
+      "role": "Provenance reference only; not a runtime dependency."
+    },
+    {
+      "id": "B",
+      "owner": "Member 1",
+      "source_path": "member1_demographics/figures/02_regional_aging_comparison_2022.svg",
+      "presentation_change": "Compact all-region distribution; unchanged full ranking in appendix.",
+      "role": "Provenance reference only; not a runtime dependency."
+    },
+    {
+      "id": "C",
+      "owner": "Member 2",
+      "source_path": "member2_industry/figures/manufacturing_trend_2011_2022.svg",
+      "presentation_change": "Re-rendered saved medians and IQRs.",
+      "role": "Provenance reference only; not a runtime dependency."
+    },
+    {
+      "id": "D",
+      "owner": "Member 4",
+      "source_path": "analysis/member4/figures/01_pooled_within_2022.svg",
+      "presentation_change": "Pooled panel above two country panels; saved fits and matching axes.",
+      "role": "Provenance reference only; not a runtime dependency."
+    },
+    {
+      "id": "E",
+      "owner": "Age-migration extension",
+      "source_path": "analysis/age_migration/figures/figure1_regional_2022.svg",
+      "presentation_change": "Re-rendered young-adult panels with all U.S. intervals; 65+ saved results in a separate HTML table.",
+      "role": "Provenance reference only; not a runtime dependency."
+    },
+    {
+      "id": "F",
+      "owner": "Age-migration extension",
+      "source_path": "analysis/age_migration/figures/figure2_native_cases.svg",
+      "presentation_change": "Full Tokyo native-age profile re-rendered; unchanged full cases in appendix.",
+      "role": "Provenance reference only; not a runtime dependency."
+    }
+  ]
+}

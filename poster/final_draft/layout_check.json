@@ -1,0 +1,248 @@
+{
+  "poster": {
+    "x": 0,
+    "y": 0,
+    "width": 3178.578125,
+    "height": 4493.84375,
+    "bottom": 4493.84375,
+    "right": 3178.578125
+  },
+  "footer": {
+    "x": 102.046875,
+    "y": 4099.421875,
+    "width": 2974.484375,
+    "height": 311.28125,
+    "bottom": 4410.703125,
+    "right": 3076.53125
+  },
+  "columns": [
+    {
+      "class": "column aging",
+      "x": 102.046875,
+      "y": 758.65625,
+      "width": 961.265625,
+      "height": 3318.09375,
+      "bottom": 4076.75,
+      "right": 1063.3125,
+      "scrollHeight": 3318,
+      "clientHeight": 3318,
+      "lastChildBottom": 3976.96875
+    },
+    {
+      "class": "column structure",
+      "x": 1108.65625,
+      "y": 758.65625,
+      "width": 961.265625,
+      "height": 3318.09375,
+      "bottom": 4076.75,
+      "right": 2069.921875,
+      "scrollHeight": 3318,
+      "clientHeight": 3318,
+      "lastChildBottom": 4076.75
+    },
+    {
+      "class": "column migration-column",
+      "x": 2115.265625,
+      "y": 758.65625,
+      "width": 961.265625,
+      "height": 3318.09375,
+      "bottom": 4076.75,
+      "right": 3076.53125,
+      "scrollHeight": 3318,
+      "clientHeight": 3318,
+      "lastChildBottom": 3908.796875
+    }
+  ],
+  "duplicate_svg_ids": [],
+  "chart_boxes": [
+    {
+      "name": "A_national",
+      "x": 102.046875,
+      "y": 1028.8125,
+      "width": 961.265625,
+      "height": 423.296875,
+      "bottom": 1452.109375,
+      "right": 1063.3125
+    },
+    {
+      "name": "B_USA",
+      "x": 102.046875,
+      "y": 1566.65625,
+      "width": 961.265625,
+      "height": 1156.53125,
+      "bottom": 2723.1875,
+      "right": 1063.3125
+    },
+    {
+      "name": "B_Japan",
+      "x": 102.046875,
+      "y": 2734.515625,
+      "width": 961.265625,
+      "height": 1156.53125,
+      "bottom": 3891.046875,
+      "right": 1063.3125
+    },
+    {
+      "name": "C_manufacturing",
+      "x": 1108.65625,
+      "y": 1028.8125,
+      "width": 961.265625,
+      "height": 347.703125,
+      "bottom": 1376.515625,
+      "right": 2069.921875
+    },
+    {
+      "name": "D_pooled",
+      "x": 1173.546875,
+      "y": 1517.1875,
+      "width": 831.484375,
+      "height": 680.3125,
+      "bottom": 2197.5,
+      "right": 2005.03125
+    },
+    {
+      "name": "D_USA",
+      "x": 1173.546875,
+      "y": 2205.046875,
+      "width": 831.484375,
+      "height": 680.3125,
+      "bottom": 2885.359375,
+      "right": 2005.03125
+    },
+    {
+      "name": "D_Japan",
+      "x": 1173.546875,
+      "y": 2892.90625,
+      "width": 831.484375,
+      "height": 680.3125,
+      "bottom": 3573.21875,
+      "right": 2005.03125
+    },
+    {
+      "name": "E_Japan",
+      "x": 2115.265625,
+      "y": 1028.8125,
+      "width": 961.265625,
+      "height": 578.265625,
+      "bottom": 1607.078125,
+      "right": 3076.53125
+    },
+    {
+      "name": "E_USA",
+      "x": 2115.265625,
+      "y": 1618.40625,
+      "width": 961.265625,
+      "height": 578.265625,
+      "bottom": 2196.671875,
+      "right": 3076.53125
+    },
+    {
+      "name": "F_Tokyo",
+      "x": 2149.921875,
+      "y": 2435.25,
+      "width": 891.953125,
+      "height": 1322.828125,
+      "bottom": 3758.078125,
+      "right": 3041.875
+    }
+  ],
+  "sibling_overlaps": [],
+  "unresolved_svg_references": [],
+  "loaded_fonts": [
+    {
+      "family": "DejaVu Serif",
+      "weight": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "DejaVu Serif",
+      "weight": "700",
+      "status": "loaded"
+    },
+    {
+      "family": "DejaVu Serif",
+      "weight": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "DejaVu Sans",
+      "weight": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "DejaVu Sans",
+      "weight": "700",
+      "status": "loaded"
+    }
+  ],
+  "claims": [
+    {
+      "id": "between_covariance",
+      "text": "99.1"
+    },
+    {
+      "id": "japan_young_r",
+      "text": "-0.820"
+    },
+    {
+      "id": "japan_without_tokyo",
+      "text": "-0.796"
+    },
+    {
+      "id": "japan_young_2019",
+      "text": "-0.812"
+    },
+    {
+      "id": "usa_young_r",
+      "text": "-0.362"
+    },
+    {
+      "id": "usa_without_dc",
+      "text": "-0.212"
+    },
+    {
+      "id": "usa_young_2019",
+      "text": "-0.337"
+    },
+    {
+      "id": "us_uncertain",
+      "text": "35"
+    },
+    {
+      "id": "tokyo_total",
+      "text": "+38,023"
+    },
+    {
+      "id": "tokyo_teen",
+      "text": "+13,795"
+    },
+    {
+      "id": "tokyo_young",
+      "text": "+57,153"
+    },
+    {
+      "id": "tokyo_other",
+      "text": "-32,925"
+    },
+    {
+      "id": "tokyo_older",
+      "text": "-9,284"
+    }
+  ],
+  "key_findings": 3,
+  "svg_views": 10,
+  "author_names": [
+    "WANG YIJIE",
+    "LI YE",
+    "HE YING",
+    "WANGYUCHENG"
+  ],
+  "blocked_remote_requests": [],
+  "javascript_errors": [],
+  "browser_version": "157.0.8103.50",
+  "rendered_input_sha256": {
+    "poster.html": "ad403f197020d0dc0931960366f46334b48e7beffa9ef51e3a25ab059aba1518",
+    "poster.css": "b28746f5f90f7891c24dab60cee42b58b207aa947dfafd717e3ab7f312414621"
+  },
+  "pdf_sha256": "b09cd06a88161802e419c7443e051b71e5081029c933f9a3cf16b450e78eaec3"
+}

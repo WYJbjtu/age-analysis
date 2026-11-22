@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "date": "2026-11-11",
+  "pdf_sha256": "b85fa48701ebaa1e868c803ad97898016e0ef348f44dd8d7a03401328224188e",
+  "preview_sha256": "67c31ce5ff81c9fd16cf7a54f96b4a95275742a47caeb3ff240e398385447147",
+  "preview_pixels": [
+    4245,
+    6000
+  ],
+  "method": "Opened final exported PDF rasterized by Poppler, not an HTML screenshot. Inspected full page and listed close-ups.",
+  "views": [
+    {
+      "path": "poster.preview.png",
+      "sha256": "67c31ce5ff81c9fd16cf7a54f96b4a95275742a47caeb3ff240e398385447147",
+      "finding": "Full final PDF: three independent columns and unchanged author/header hierarchy."
+    },
+    {
+      "path": "qa/bottom_third.png",
+      "sha256": "87e179aa5418446943ce5c872a26c678cde8522fda8ec2b1a2e2c6ae58a0ad9b",
+      "finding": "All three column bottoms and footer: closing group stays in Column 3, no overlap or clipping, useful whitespace."
+    },
+    {
+      "path": "qa/closing_group.png",
+      "sha256": "04e42ad723279dbf4fb7b03c42620c86596d7536121f2bdf8271ff880228a6ec",
+      "finding": "Three prominent findings immediately followed by one quieter limitations block, exact supplied text, 24-pt body."
+    },
+    {
+      "path": "qa/tokyo.png",
+      "sha256": "ffd0ea94625cf86cb596a2f31e6eb27e224ed174e8806e43b2e438d67a862356",
+      "finding": "Both years, all native bins and unknown, legend/count scale and accounting preserved; labels remain readable."
+    },
+    {
+      "path": "qa/header.png",
+      "sha256": "f8625a17059a2d020620dbcf31c7b508f5efa1a59540061034ea05e7e1ed0439",
+      "finding": "Author names, IDs, order, subtitle and affiliation unchanged."
+    },
+    {
+      "path": "qa/industry_top.png",
+      "sha256": "5321d257ac966277f3377d84154de0c7ddcbb6c09aa392f16757de4dafc08d1f",
+      "finding": "Manufacturing and country-specific service trends, units and source notes preserved."
+    },
+    {
+      "path": "qa/youth_intervals.png",
+      "sha256": "49ae7e6061650ce92b884d4151f2cff42d897f025a8ffd3f8665837dff3d202d",
+      "finding": "Unchanged plot dimensions and intervals; hollow/filled explanation and denominator qualification readable."
+    },
+    {
+      "path": "qa/population.png",
+      "sha256": "b2acd9bcca110fe5a92e551f6cb98126e09df6b0e290b46a0ed478ec64a83476",
+      "finding": "National trends and all-region distribution: full numeric ranges and labels retained."
+    },
+    {
+      "path": "qa/grayscale.png",
+      "sha256": "bf49093682b35c5a374eec4027f93108c3d956023816837029695df6be416fde",
+      "finding": "Direct country labels, separate panels and open/filled markers remain interpretable without hue."
+    }
+  ],
+  "observed_issues": [],
+  "not_performed": [
+    "Physical A0 print proof",
+    "Color-vision-deficiency simulation"
+  ],
+  "inspection_crops": "Local QA PNGs are reproducible inspection aids excluded from the intended file list."
+}

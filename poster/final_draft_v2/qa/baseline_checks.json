@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "working_directory": "repository root",
+  "environment": {
+    "PYTHONPATH": "src",
+    "python": "project .venv Python 3.12.4",
+    "locale_encoding": "cp936",
+    "utf8_mode": 0
+  },
+  "commands": [
+    {
+      "name": "data_contracts",
+      "command": ".\\.venv\\Scripts\\python.exe -X utf8=0 scripts/validate_data.py",
+      "exit_code": 0,
+      "stdout": "[OK] demographics: 1176 rows; USA=612, JPN=564\r\n[OK] industry: 1176 rows; USA=612, JPN=564\r\n[OK] labor_migration: 1176 rows; USA=612, JPN=564\r\nContracts validated. This does NOT verify official source accuracy or full country/year coverage.\r\n"
+    },
+    {
+      "name": "main_regression",
+      "command": ".\\.venv\\Scripts\\python.exe -X utf8=0 scripts/verify_remediation.py regression --no-write",
+      "exit_code": 0,
+      "stdout": "38 high-precision main regression comparisons passed; max difference 0\r\n"
+    },
+    {
+      "name": "integrity_v6",
+      "command": ".\\.venv\\Scripts\\python.exe -X utf8=0 scripts/remediation_state.py",
+      "exit_code": 0,
+      "stdout": "{\r\n  \"historical_evidence_files\": 229,\r\n  \"historical_v1_files\": 163,\r\n  \"immutable_repository_files\": 46,\r\n  \"archived_reviewed_locks\": 3,\r\n  \"local_backup\": \"not requested\",\r\n  \"current_protected_files\": 282,\r\n  \"current_input_lock\": \"docs/remediation/input_manifest_v6.json\"\r\n}\r\n"
+    },
+    {
+      "name": "age_migration_integrity",
+      "command": ".\\.venv\\Scripts\\python.exe -X utf8=0 analysis/age_migration/verify_extension.py check",
+      "exit_code": 0,
+      "stdout": "Extension verified: 111 files; 43 raw sources; original tracked files unchanged=315.\r\n"
+    }
+  ],
+  "interpretation": "Read-only contract, regression and integrity checks. Contract success is not a new official-source verification; no fresh source retrieval was performed."
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "path": "assets/fonts/DejaVuSans.ttf",
+    "source_path": "poster/final_draft/assets/fonts/DejaVuSans.ttf",
+    "source_sha256": "3fdf69cabf06049ea70a00b5919340e2ce1e6d02b0cc3c4b44fb6801bd1e0d22",
+    "sha256": "09c5b3ec2f8ee68f9a8da17a83191260e3c5b9e8bad51e6911d87630ab8b135f",
+    "bytes": 86116,
+    "purpose": "Subset of existing licensed font for reproducible offline rendering; no new font family"
+  },
+  {
+    "path": "assets/fonts/DejaVuSans-Bold.ttf",
+    "source_path": "poster/final_draft/assets/fonts/DejaVuSans-Bold.ttf",
+    "source_sha256": "b184b89e3c1075f22f6b71575b6fc20d4972b3cfd3b23322ca6fd596dcaef167",
+    "sha256": "0d519cd7d20af7522385295d63e5cf82ca1326878e023000ad881badc5475dd8",
+    "bytes": 78472,
+    "purpose": "Subset of existing licensed font for reproducible offline rendering; no new font family"
+  },
+  {
+    "path": "assets/fonts/DejaVuSerif.ttf",
+    "source_path": "poster/final_draft/assets/fonts/DejaVuSerif.ttf",
+    "source_sha256": "107244956e9962b9e96faccdc551825e0ae0898ae13737133e1b921a2fd35ffa",
+    "sha256": "9eb75cd651571b066e12d6ea05fb771d44c52cab62fe70e98f6ec4e307dacb5b",
+    "bytes": 65392,
+    "purpose": "Subset of existing licensed font for reproducible offline rendering; no new font family"
+  },
+  {
+    "path": "assets/fonts/DejaVuSerif-Bold.ttf",
+    "source_path": "poster/final_draft/assets/fonts/DejaVuSerif-Bold.ttf",
+    "source_sha256": "c3753f2ed6bc673f15846dc45addbeb3b9c872f32fb18fd53a21f1bef1ed7676",
+    "sha256": "ea80ece04e7932466fbf68e536bda912fafdf9c765216f2adee6235cee9c2d0a",
+    "bytes": 59156,
+    "purpose": "Subset of existing licensed font for reproducible offline rendering; no new font family"
+  }
+]

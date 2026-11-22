@@ -1,0 +1,3 @@
+qa/*.png
+qa/isolated-*/
+__pycache__/

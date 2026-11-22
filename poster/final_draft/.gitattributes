@@ -1,0 +1,4 @@
+# Copied scientific SVG exports and bundled fonts retain exact source bytes.
+assets/** -text
+*.pdf -text
+*.png -text
