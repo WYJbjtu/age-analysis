@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "cwd": "repository root",
+  "environment": {
+    "PYTHONPATH": "src",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "commands": [
+    {
+      "name": "data_contracts",
+      "command": ".\\.venv\\Scripts\\python.exe -X utf8=0 scripts/validate_data.py",
+      "exit_code": 0,
+      "stdout": "[OK] demographics: 1176 rows; USA=612, JPN=564\r\n[OK] industry: 1176 rows; USA=612, JPN=564\r\n[OK] labor_migration: 1176 rows; USA=612, JPN=564\r\nContracts validated. This does NOT verify official source accuracy or full country/year coverage.\r\n"
+    },
+    {
+      "name": "main_regression",
+      "command": ".\\.venv\\Scripts\\python.exe -X utf8=0 scripts/verify_remediation.py regression --no-write",
+      "exit_code": 0,
+      "stdout": "38 high-precision main regression comparisons passed; max difference 0\r\n"
+    },
+    {
+      "name": "integrity_v6",
+      "command": ".\\.venv\\Scripts\\python.exe -X utf8=0 scripts/remediation_state.py",
+      "exit_code": 0,
+      "stdout": "{\r\n  \"historical_evidence_files\": 229,\r\n  \"historical_v1_files\": 163,\r\n  \"immutable_repository_files\": 46,\r\n  \"archived_reviewed_locks\": 3,\r\n  \"local_backup\": \"not requested\",\r\n  \"current_protected_files\": 282,\r\n  \"current_input_lock\": \"docs/remediation/input_manifest_v6.json\"\r\n}\r\n"
+    },
+    {
+      "name": "age_migration_integrity",
+      "command": ".\\.venv\\Scripts\\python.exe -X utf8=0 analysis/age_migration/verify_extension.py check",
+      "exit_code": 0,
+      "stdout": "Extension verified: 111 files; 43 raw sources; original tracked files unchanged=315.\r\n"
+    },
+    {
+      "name": "services_guards",
+      "command": "$testTemp = 'poster/final_draft_v3/qa/pytest-' + [guid]::NewGuid().ToString('N')\n.\\.venv\\Scripts\\python.exe -X utf8=0 -X warn_default_encoding -m pytest -q tests/test_remediation.py::test_pooled_services_blocked_before_any_figure_is_written member2_industry/test_industry.py::test_services_chart_requires_a_single_country -p no:cacheprovider --basetemp $testTemp",
+      "exit_code": 0,
+      "stdout": "..                                                                       [100%]\r\n============================== warnings summary ===============================\r\nD:\\Python\\Python312\\Lib\\site-packages\\anyio\\pytest_plugin.py:14\r\n  D:\\Python\\Python312\\Lib\\site-packages\\anyio\\pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.\r\n  The CallSpec2 alias will be removed in pytest 10.\r\n  Update imports to use CallSpec instead.\r\n  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed\r\n    from _pytest.python import CallSpec2\r\n\r\nD:\\Python\\Python312\\Lib\\site-packages\\matplotlib\\font_manager.py:1191\r\n  D:\\Python\\Python312\\Lib\\site-packages\\matplotlib\\font_manager.py:1191: EncodingWarning: 'encoding' argument not specified\r\n    with open(filename) as fh:\r\n\r\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\r\n2 passed, 2 warnings in 1.72s\r\n"
+    }
+  ],
+  "scope": "Existing read-only contract/regression/integrity checks plus two existing services guard tests; not a full pytest run or new official-source verification.",
+  "warnings": "Two third-party warnings retained: anyio pytest API deprecation and Matplotlib font_manager EncodingWarning."
+}

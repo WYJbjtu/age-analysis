@@ -1,0 +1,382 @@
+[
+  {
+    "id": "acs2019_B07001_metadata",
+    "file": "acs2019_B07001_metadata.json",
+    "url": "https://api.census.gov/data/2019/acs/acs1/groups/B07001.json",
+    "format": "json",
+    "year": 2019,
+    "table": "B07001",
+    "selection": "ACS 1-year; all state responses; filter exact 50 states + DC at parsing",
+    "release": "ACS 2019 1-year detailed tables"
+  },
+  {
+    "id": "acs2019_B07401_metadata",
+    "file": "acs2019_B07401_metadata.json",
+    "url": "https://api.census.gov/data/2019/acs/acs1/groups/B07401.json",
+    "format": "json",
+    "year": 2019,
+    "table": "B07401",
+    "selection": "ACS 1-year; all state responses; filter exact 50 states + DC at parsing",
+    "release": "ACS 2019 1-year detailed tables"
+  },
+  {
+    "id": "acs2019_B01001_metadata",
+    "file": "acs2019_B01001_metadata.json",
+    "url": "https://api.census.gov/data/2019/acs/acs1/groups/B01001.json",
+    "format": "json",
+    "year": 2019,
+    "table": "B01001",
+    "selection": "ACS 1-year; all state responses; filter exact 50 states + DC at parsing",
+    "release": "ACS 2019 1-year detailed tables"
+  },
+  {
+    "id": "acs2022_B07001_metadata",
+    "file": "acs2022_B07001_metadata.json",
+    "url": "https://api.census.gov/data/2022/acs/acs1/groups/B07001.json",
+    "format": "json",
+    "year": 2022,
+    "table": "B07001",
+    "selection": "ACS 1-year; all state responses; filter exact 50 states + DC at parsing",
+    "release": "ACS 2022 1-year detailed tables"
+  },
+  {
+    "id": "acs2022_B07401_metadata",
+    "file": "acs2022_B07401_metadata.json",
+    "url": "https://api.census.gov/data/2022/acs/acs1/groups/B07401.json",
+    "format": "json",
+    "year": 2022,
+    "table": "B07401",
+    "selection": "ACS 1-year; all state responses; filter exact 50 states + DC at parsing",
+    "release": "ACS 2022 1-year detailed tables"
+  },
+  {
+    "id": "acs2022_B01001_metadata",
+    "file": "acs2022_B01001_metadata.json",
+    "url": "https://api.census.gov/data/2022/acs/acs1/groups/B01001.json",
+    "format": "json",
+    "year": 2022,
+    "table": "B01001",
+    "selection": "ACS 1-year; all state responses; filter exact 50 states + DC at parsing",
+    "release": "ACS 2022 1-year detailed tables"
+  },
+  {
+    "id": "acs2022_B07001_summary",
+    "file": "acsdt1y2022-b07001.dat",
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/1YRData/acsdt1y2022-b07001.dat",
+    "format": "dat",
+    "year": 2022,
+    "table": "B07001",
+    "selection": "All published geographies; exact state-only subset at parsing",
+    "release": "ACS 2022 1-year table-based summary file"
+  },
+  {
+    "id": "acs2022_B07401_summary",
+    "file": "acsdt1y2022-b07401.dat",
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/1YRData/acsdt1y2022-b07401.dat",
+    "format": "dat",
+    "year": 2022,
+    "table": "B07401",
+    "selection": "All published geographies; exact state-only subset at parsing",
+    "release": "ACS 2022 1-year table-based summary file"
+  },
+  {
+    "id": "acs2022_B01001_summary",
+    "file": "acsdt1y2022-b01001.dat",
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/1YRData/acsdt1y2022-b01001.dat",
+    "format": "dat",
+    "year": 2022,
+    "table": "B01001",
+    "selection": "All published geographies; exact state-only subset at parsing",
+    "release": "ACS 2022 1-year table-based summary file"
+  },
+  {
+    "id": "jpn2022_in",
+    "file": "jpn2022_in.xlsx",
+    "url": "https://www.e-stat.go.jp/en/stat-search/file-download?fileKind=4&statInfId=000040008242",
+    "format": "xlsx",
+    "year": 2022,
+    "table": "3-1",
+    "selection": "Published workbook; all-nationalities both-sex prefectures selected during parsing",
+    "release": "2023-01-30"
+  },
+  {
+    "id": "jpn2022_out",
+    "file": "jpn2022_out.xlsx",
+    "url": "https://www.e-stat.go.jp/en/stat-search/file-download?fileKind=4&statInfId=000040008243",
+    "format": "xlsx",
+    "year": 2022,
+    "table": "3-2",
+    "selection": "Published workbook; all-nationalities both-sex prefectures selected during parsing",
+    "release": "2023-01-30"
+  },
+  {
+    "id": "jpn2022_net",
+    "file": "jpn2022_net.xlsx",
+    "url": "https://www.e-stat.go.jp/en/stat-search/file-download?fileKind=4&statInfId=000040008244",
+    "format": "xlsx",
+    "year": 2022,
+    "table": "3-3",
+    "selection": "Published workbook; all-nationalities both-sex prefectures selected during parsing",
+    "release": "2023-01-30"
+  },
+  {
+    "id": "jpn2019_index",
+    "file": "jpn2019_index.html",
+    "url": "https://www.e-stat.go.jp/en/stat-search/files?layout=datalist&lid=000001243237&page=1",
+    "format": "html",
+    "year": 2019,
+    "selection": "Official download index / documentation"
+  },
+  {
+    "id": "acs2019_prototype_index",
+    "file": "acs2019_prototype_index.html",
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2019/prototype/",
+    "format": "html",
+    "year": 2019,
+    "selection": "Official download index / documentation"
+  },
+  {
+    "id": "jpn2019_in",
+    "file": "jpn2019_in.xls",
+    "url": "https://www.e-stat.go.jp/en/stat-search/file-download?statInfId=000031931402&fileKind=0",
+    "format": "xls",
+    "year": 2019,
+    "table": "Annual detailed table 9-1",
+    "selection": "All-nationalities, both sexes; prefectures only; original annual file linked by Table 3 database",
+    "release": "2020-04-28"
+  },
+  {
+    "id": "jpn2019_out",
+    "file": "jpn2019_out.xls",
+    "url": "https://www.e-stat.go.jp/en/stat-search/file-download?statInfId=000031931403&fileKind=0",
+    "format": "xls",
+    "year": 2019,
+    "table": "Annual detailed table 9-2",
+    "selection": "All-nationalities, both sexes; prefectures only; original annual file linked by Table 3 database",
+    "release": "2020-04-28"
+  },
+  {
+    "id": "jpn2019_net",
+    "file": "jpn2019_net.xls",
+    "url": "https://www.e-stat.go.jp/en/stat-search/file-download?statInfId=000031931404&fileKind=0",
+    "format": "xls",
+    "year": 2019,
+    "table": "Annual detailed table 9-3",
+    "selection": "All-nationalities, both sexes; prefectures only; original annual file linked by Table 3 database",
+    "release": "2020-04-28"
+  },
+  {
+    "id": "jpn2022_index",
+    "file": "jpn2022_index.html",
+    "url": "https://www.e-stat.go.jp/en/stat-search/files?layout=datalist&lid=000001401440&page=1",
+    "format": "html",
+    "year": 2022,
+    "selection": "Official download index / definitions"
+  },
+  {
+    "id": "jpn_migration_terms",
+    "file": "jpn_migration_terms.html",
+    "url": "https://www.stat.go.jp/english/data/idou/2.html",
+    "format": "html",
+    "year": 2022,
+    "selection": "Official download index / definitions"
+  },
+  {
+    "id": "jpn_migration_notes_ja",
+    "file": "jpn_migration_notes_ja.html",
+    "url": "https://www.stat.go.jp/data/idou/4.html",
+    "format": "html",
+    "year": 2022,
+    "selection": "Official download index / definitions"
+  },
+  {
+    "id": "jpn2019_pop_index",
+    "file": "jpn2019_pop_index.html",
+    "url": "https://www.stat.go.jp/data/jinsui/2019np/index.html",
+    "format": "html",
+    "year": 2019,
+    "selection": "Official download index / definitions"
+  },
+  {
+    "id": "jpn2022_pop_index",
+    "file": "jpn2022_pop_index.html",
+    "url": "https://www.stat.go.jp/data/jinsui/2022np/index.html",
+    "format": "html",
+    "year": 2022,
+    "selection": "Official download index / definitions"
+  },
+  {
+    "id": "jpn2022_migration_overview",
+    "file": "jpn2022_migration_overview.html",
+    "url": "https://www.stat.go.jp/data/idou/2022np/jissu/youyaku/index.htm",
+    "format": "html",
+    "year": 2022,
+    "selection": "Official download index / definitions"
+  },
+  {
+    "id": "acs2019_B07001_summary",
+    "file": "acsdt1y2019-b07001.dat",
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2019/prototype/1YRData/acsdt1y2019-b07001.dat",
+    "format": "dat",
+    "year": 2019,
+    "table": "B07001",
+    "selection": "All published geographies; exact state-only subset at parsing",
+    "release": "ACS 2019 1-year table-based prototype; 2021-01-06"
+  },
+  {
+    "id": "acs2019_B07401_summary",
+    "file": "acsdt1y2019-b07401.dat",
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2019/prototype/1YRData/acsdt1y2019-b07401.dat",
+    "format": "dat",
+    "year": 2019,
+    "table": "B07401",
+    "selection": "All published geographies; exact state-only subset at parsing",
+    "release": "ACS 2019 1-year table-based prototype; 2021-01-06"
+  },
+  {
+    "id": "acs2019_B01001_summary",
+    "file": "acsdt1y2019-b01001.dat",
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2019/prototype/1YRData/acsdt1y2019-b01001.dat",
+    "format": "dat",
+    "year": 2019,
+    "table": "B01001",
+    "selection": "All published geographies; exact state-only subset at parsing",
+    "release": "ACS 2019 1-year table-based prototype; 2021-01-06"
+  },
+  {
+    "id": "jpn2019_population_tables",
+    "file": "jpn2019_population_tables.html",
+    "url": "https://www.e-stat.go.jp/stat-search/files?layout=datalist&lid=000001245596&page=1",
+    "format": "html",
+    "year": 2019,
+    "selection": "Official definitions / table index"
+  },
+  {
+    "id": "acs2022_definitions",
+    "file": "acs2022_definitions.pdf",
+    "url": "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2022_ACSSubjectDefinitions.pdf",
+    "format": "pdf",
+    "year": 2022,
+    "selection": "Official definitions / table index"
+  },
+  {
+    "id": "acs2019_definitions",
+    "file": "acs2019_definitions.pdf",
+    "url": "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf",
+    "format": "pdf",
+    "year": 2019,
+    "selection": "Official definitions / table index"
+  },
+  {
+    "id": "jpn2019_population",
+    "file": "jpn2019_population.xls",
+    "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000031921679&fileKind=0",
+    "format": "xls",
+    "year": 2019,
+    "selection": "Official population denominator / rates / methods; scope checked at parsing"
+  },
+  {
+    "id": "jpn2022_population_tables",
+    "file": "jpn2022_population_tables.html",
+    "url": "https://www.e-stat.go.jp/stat-search/files?page=1&layout=datalist&lid=000001408184",
+    "format": "html",
+    "year": 2022,
+    "selection": "Official population denominator / rates / methods; scope checked at parsing"
+  },
+  {
+    "id": "jpn_rates_index",
+    "file": "jpn_rates_index.html",
+    "url": "https://www.e-stat.go.jp/stat-search/files?page=1&layout=datalist&toukei=00200523&tstat=000000070001&cycle=7&tclass1=000001148747",
+    "format": "html",
+    "year": 2022,
+    "selection": "Official population denominator / rates / methods; scope checked at parsing"
+  },
+  {
+    "id": "acs_moe_guidance",
+    "file": "acs_moe_guidance.pdf",
+    "url": "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020_ch08.pdf",
+    "format": "pdf",
+    "year": 2020,
+    "selection": "Official population denominator / rates / methods; scope checked at parsing"
+  },
+  {
+    "id": "jpn_terms_ja",
+    "file": "jpn_terms_ja.html",
+    "url": "https://www.stat.go.jp/data/idou/2.html",
+    "format": "html",
+    "year": 2022,
+    "selection": "Official population denominator / rates / methods; scope checked at parsing"
+  },
+  {
+    "id": "jpn2022_population",
+    "file": "jpn2022_population.xlsx",
+    "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040045496&fileKind=0",
+    "format": "xlsx",
+    "year": 2022,
+    "selection": "Official denominator / rates / methods; definition verified before analysis"
+  },
+  {
+    "id": "jpn2022_rates_tables",
+    "file": "jpn2022_rates_tables.html",
+    "url": "https://www.e-stat.go.jp/stat-search/files?page=1&layout=datalist&cycle=7&toukei=00200523&tstat=000000070001&tclass1=000001148747&tclass2val=0&year=20220&month=0&result_back=1",
+    "format": "html",
+    "year": 2022,
+    "selection": "Official denominator / rates / methods; definition verified before analysis"
+  },
+  {
+    "id": "acs_summary_handbook",
+    "file": "acs_summary_handbook.pdf",
+    "url": "https://www.census.gov/content/dam/Census/library/publications/2023/acs/acs_table_based_summary_file_handbook_ch02.pdf",
+    "format": "pdf",
+    "year": 2023,
+    "selection": "Official denominator / rates / methods; definition verified before analysis"
+  },
+  {
+    "id": "jpn2022_full_notes",
+    "file": "jpn2022_full_notes.pdf",
+    "url": "https://www.stat.go.jp/data/idou/2022np/jissu/pdf/all.pdf",
+    "format": "pdf",
+    "year": 2022,
+    "selection": "Official denominator / rates / methods; definition verified before analysis"
+  },
+  {
+    "id": "jpn2019_table_notes",
+    "file": "jpn2019_table_notes.xls",
+    "url": "https://www.e-stat.go.jp/en/stat-search/file-download?statInfId=000031931536&fileKind=0",
+    "format": "xls",
+    "year": 2019,
+    "selection": "Official population rates / annual table notes"
+  },
+  {
+    "id": "jpn2022_official_net_rate",
+    "file": "jpn2022_official_net_rate.xlsx",
+    "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040049143&fileKind=4",
+    "format": "xlsx",
+    "year": 2022,
+    "selection": "Official population rates / annual table notes"
+  },
+  {
+    "id": "jpn2019_rate_overview",
+    "file": "jpn2019_rate_overview.pdf",
+    "url": "https://www.stat.go.jp/data/idou/2019np/shousai/pdf/youyaku.pdf",
+    "format": "pdf",
+    "year": 2019,
+    "selection": "Official population rates / annual table notes"
+  },
+  {
+    "id": "acs_data_notes",
+    "file": "acs_data_notes.html",
+    "url": "https://www.census.gov/data/developers/data-sets/acs-1year/data-notes.html",
+    "format": "html",
+    "year": 2026,
+    "selection": "Official missing-value and MOE annotations; methodology, not analytical observation year"
+  },
+  {
+    "id": "jpn_migration_qa",
+    "file": "jpn_migration_qa.html",
+    "url": "https://www.stat.go.jp/data/idou/qa-1.htm",
+    "format": "html",
+    "year": 2026,
+    "selection": "Official birth-date/registration definitions; exact age-reference day not explicitly supplied"
+  }
+]

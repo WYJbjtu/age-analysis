@@ -1,0 +1,21 @@
+{
+  "planned_associations": 54,
+  "full_sample_same_age_associations": 12,
+  "primary_associations": 8,
+  "supporting_associations": 4,
+  "leave_one_out_runs": 588,
+  "countries_separate": true,
+  "ordinary_p_values": "not calculated",
+  "primary_weighting": "equal regions",
+  "canonical_population": "read-only Member1",
+  "tokyo_checkpoint_match": true,
+  "japan2022_positive20_24": [
+    "JP-11",
+    "JP-13",
+    "JP-14",
+    "JP-23",
+    "JP-27"
+  ],
+  "case_rule": "pre-specified Tokyo; US 2022 young-rate minimum and maximum point estimates",
+  "scope": "READY WITH LIMITATIONS; descriptive associations only; Japan exact age-reference day not independently verified"
+}

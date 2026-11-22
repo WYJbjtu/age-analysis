@@ -1,0 +1,106 @@
+[
+  {
+    "id": "A_national",
+    "svg": "figures/A_national.svg",
+    "png": "figures/A_national.png",
+    "width_mm": 295.0,
+    "height_mm": 135.0,
+    "inputs": [
+      "inputs/national.csv"
+    ],
+    "use": "Common-source national context",
+    "font_sizes_pt": [
+      18.0,
+      20.0
+    ],
+    "policy": "Poster rendering only; original observations and saved coefficients retained."
+  },
+  {
+    "id": "B_distribution",
+    "svg": "figures/B_distribution.svg",
+    "png": "figures/B_distribution.png",
+    "width_mm": 295.0,
+    "height_mm": 135.0,
+    "inputs": [
+      "inputs/population_2022.csv"
+    ],
+    "use": "Every region; labels identify within-country minimum and maximum only",
+    "font_sizes_pt": [
+      18.0,
+      20.0,
+      22.0
+    ],
+    "policy": "Poster rendering only; original observations and saved coefficients retained."
+  },
+  {
+    "id": "C_manufacturing_trend",
+    "svg": "figures/C_manufacturing_trend.svg",
+    "png": "figures/C_manufacturing_trend.png",
+    "width_mm": 295.0,
+    "height_mm": 137.0,
+    "inputs": [
+      "inputs/manufacturing_trend.csv"
+    ],
+    "use": "Saved country medians and IQRs, no new aggregation",
+    "font_sizes_pt": [
+      18.0,
+      20.0,
+      22.0
+    ],
+    "policy": "Poster rendering only; original observations and saved coefficients retained."
+  },
+  {
+    "id": "D_aggregation",
+    "svg": "figures/D_aggregation.svg",
+    "png": "figures/D_aggregation.png",
+    "width_mm": 476.00000000000006,
+    "height_mm": 224.0,
+    "inputs": [
+      "inputs/manufacturing_2022.csv",
+      "inputs/manufacturing_associations.csv"
+    ],
+    "use": "Pooled above two country panels; identical numeric ranges",
+    "font_sizes_pt": [
+      18.0,
+      20.0,
+      24.0
+    ],
+    "policy": "Poster rendering only; original observations and saved coefficients retained."
+  },
+  {
+    "id": "E_young_migration",
+    "svg": "figures/E_young_migration.svg",
+    "png": "figures/E_young_migration.png",
+    "width_mm": 519.0,
+    "height_mm": 153.0,
+    "inputs": [
+      "inputs/migration.csv",
+      "inputs/migration_associations.csv",
+      "inputs/uncertainty.csv"
+    ],
+    "use": "2022 young-adult associations, country-specific scales, unchanged uncertainty",
+    "font_sizes_pt": [
+      18.0,
+      20.0,
+      24.0
+    ],
+    "policy": "Poster rendering only; original observations and saved coefficients retained."
+  },
+  {
+    "id": "F_tokyo",
+    "svg": "figures/F_tokyo.svg",
+    "png": "figures/F_tokyo.png",
+    "width_mm": 252.0,
+    "height_mm": 260.0,
+    "inputs": [
+      "inputs/tokyo_native.csv",
+      "inputs/tokyo_decomposition.csv"
+    ],
+    "use": "Full native-age profile and unknown residual; counts, not rates",
+    "font_sizes_pt": [
+      18.0,
+      20.0
+    ],
+    "policy": "Poster rendering only; original observations and saved coefficients retained."
+  }
+]

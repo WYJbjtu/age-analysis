@@ -1,0 +1,12 @@
+{
+  "python": "3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]",
+  "locale_encoding": "cp936",
+  "utf8_mode": 0,
+  "packages": {
+    "numpy": "2.4.3",
+    "pandas": "2.3.3",
+    "matplotlib": "3.11.2",
+    "playwright": "1.58.0",
+    "fonttools": "4.67.0"
+  }
+}

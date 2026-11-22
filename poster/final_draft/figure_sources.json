@@ -1,0 +1,62 @@
+[
+  {
+    "id": "A",
+    "owner": "Member 1",
+    "path": "member1_demographics/figures/01_national_aging_trends_2000_2022.svg",
+    "asset": "national_aging.svg",
+    "use": "National aging, 2000-2022",
+    "sha256": "a3644c57b61b0733422f80e9d70500a4cf1502036ff39e3258b54ba53a2f21e7",
+    "copy": "assets/national_aging.svg",
+    "policy": "unchanged full SVG source; layout views in generated HTML only"
+  },
+  {
+    "id": "B",
+    "owner": "Member 1",
+    "path": "member1_demographics/figures/02_regional_aging_comparison_2022.svg",
+    "asset": "regional_aging.svg",
+    "use": "All 51 U.S. and 47 Japanese ranked regions",
+    "sha256": "ba5b2f02c3387e5834ae66234980411d60ace37951646a1a10ccf87d218cb185",
+    "copy": "assets/regional_aging.svg",
+    "policy": "unchanged full SVG source; layout views in generated HTML only"
+  },
+  {
+    "id": "C",
+    "owner": "Member 2",
+    "path": "member2_industry/figures/manufacturing_trend_2011_2022.svg",
+    "asset": "manufacturing_trend.svg",
+    "use": "Annual regional medians and interquartile ranges",
+    "sha256": "8762ce9855d12272dd5db367c2dccc17da5e5b736c656f8f58d0ac5fabf220d9",
+    "copy": "assets/manufacturing_trend.svg",
+    "policy": "unchanged full SVG source; layout views in generated HTML only"
+  },
+  {
+    "id": "D",
+    "owner": "Member 4",
+    "path": "analysis/member4/figures/01_pooled_within_2022.svg",
+    "asset": "pooled_within.svg",
+    "use": "Pooled, U.S. and Japan scatter panels, reflowed vertically",
+    "sha256": "b66327b42bda4fe2f239df93479bf11537b620ae270cd23cdaa2f1970f9775ff",
+    "copy": "assets/pooled_within.svg",
+    "policy": "unchanged full SVG source; layout views in generated HTML only"
+  },
+  {
+    "id": "E",
+    "owner": "Age-migration extension",
+    "path": "analysis/age_migration/figures/figure1_regional_2022.svg",
+    "asset": "migration_regional.svg",
+    "use": "All-region ages20-24 panels only; older-age companion retained in complete source asset",
+    "sha256": "46f7fb0b23c1d902959869b83713908092cadac274c29bcb8e0be506113496c7",
+    "copy": "assets/migration_regional.svg",
+    "policy": "unchanged full SVG source; layout views in generated HTML only"
+  },
+  {
+    "id": "F",
+    "owner": "Age-migration extension",
+    "path": "analysis/age_migration/figures/figure2_native_cases.svg",
+    "asset": "migration_cases.svg",
+    "use": "Tokyo native-age panel only; full three-case source asset retained",
+    "sha256": "aee75e6073be11238ccf52792fd60c8786956707b40812784db79b5e676f2f8e",
+    "copy": "assets/migration_cases.svg",
+    "policy": "unchanged full SVG source; layout views in generated HTML only"
+  }
+]

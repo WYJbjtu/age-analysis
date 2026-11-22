@@ -1,0 +1,4 @@
+[OK] demographics: 1176 rows; USA=612, JPN=564
+[OK] industry: 1176 rows; USA=612, JPN=564
+[OK] labor_migration: 1176 rows; USA=612, JPN=564
+Contracts validated. This does NOT verify official source accuracy or full country/year coverage.

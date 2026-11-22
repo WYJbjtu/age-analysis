@@ -1,0 +1,52 @@
+{
+  "status": "READY FOR TEAM REVIEW",
+  "paper": {
+    "width_mm": 841,
+    "height_mm": 1189,
+    "name": "A0 portrait"
+  },
+  "authors": [
+    {
+      "name": "WANG YIJIE",
+      "student_id": "60074637"
+    },
+    {
+      "name": "LI YE",
+      "student_id": "60999683"
+    },
+    {
+      "name": "HE YING",
+      "student_id": "60189188"
+    },
+    {
+      "name": "WANGYUCHENG",
+      "student_id": "60786917"
+    }
+  ],
+  "course": "Data Visualization",
+  "affiliation": "City University of Hong Kong",
+  "title": [
+    "AGING ACROSS",
+    "ECONOMIES"
+  ],
+  "subtitle": [
+    "Demographic Change, Regional Structure, and Age-Selective Migration",
+    "in Japan and the United States"
+  ],
+  "takeaway": "Shared population aging does not imply a single regional economic or demographic pattern.",
+  "version": 3,
+  "font_targets_pt": {
+    "title_first": 106,
+    "title_second": 116,
+    "subtitle": 29,
+    "authors": 32,
+    "student_ids": 21,
+    "course_affiliation": 23,
+    "section_headings": 34,
+    "body": 24,
+    "captions": 20,
+    "plot_labels": 20,
+    "column_headings": 32
+  },
+  "layout": "Three independent vertical columns; Key Findings is final in Column 3."
+}

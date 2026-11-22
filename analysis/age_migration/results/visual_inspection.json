@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "images": [
+    {
+      "path": "figures/appendix_profiles_jpn.png",
+      "sha256": "49bbb2ac48353b9330dcfe7e0cae6669ce0092e0bfb1aa7609bc5415ffa2082d",
+      "pixel_dimensions": [
+        3750,
+        4500
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "inspection": "Opened actual rendered PNG using view_image; all panels/axes/legends/labels/source notes inspected",
+      "findings": "No clipping; all planned regions represented; zero reference visible; separate country scales disclosed; readable at supplied export size",
+      "scope": "PNG visually reviewed; corresponding SVG generated from same figure and checked separately as XML"
+    },
+    {
+      "path": "figures/appendix_profiles_usa.png",
+      "sha256": "417fe4d17f2296ee7350a6ab83d32c699553e0729ac7fb0eae4fedb88604cabc",
+      "pixel_dimensions": [
+        3750,
+        4500
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "inspection": "Opened actual rendered PNG using view_image; all panels/axes/legends/labels/source notes inspected",
+      "findings": "No clipping; all planned regions represented; zero reference visible; separate country scales disclosed; readable at supplied export size",
+      "scope": "PNG visually reviewed; corresponding SVG generated from same figure and checked separately as XML"
+    },
+    {
+      "path": "figures/figure1_regional_2019.png",
+      "sha256": "5e40811bb6dbb9db5a97417154b965978d9816b13283c54927a27c229aac08e3",
+      "pixel_dimensions": [
+        4050,
+        3000
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "inspection": "Opened actual rendered PNG using view_image; all panels/axes/legends/labels/source notes inspected",
+      "findings": "No clipping; all planned regions represented; zero reference visible; separate country scales disclosed; readable at supplied export size",
+      "scope": "PNG visually reviewed; corresponding SVG generated from same figure and checked separately as XML"
+    },
+    {
+      "path": "figures/figure1_regional_2022.png",
+      "sha256": "762a6c007552b6f67b7a91cdab911d3028a6923b6ca9d9341af9c7fe5b46829e",
+      "pixel_dimensions": [
+        4050,
+        3000
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "inspection": "Opened actual rendered PNG using view_image; all panels/axes/legends/labels/source notes inspected",
+      "findings": "No clipping; all planned regions represented; zero reference visible; separate country scales disclosed; readable at supplied export size",
+      "scope": "PNG visually reviewed; corresponding SVG generated from same figure and checked separately as XML"
+    },
+    {
+      "path": "figures/figure2_native_cases.png",
+      "sha256": "bbd7e3d4aa2fbcd11f162cdf6cde19d34b9b618ee68925e056135496407bd058",
+      "pixel_dimensions": [
+        4800,
+        3150
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "inspection": "Opened actual rendered PNG using view_image; all panels/axes/legends/labels/source notes inspected",
+      "findings": "Final revised PNG opened after total MOEs were added; total annotation moved below axis labels and re-opened: no overlap/clipping; both 2022 U.S. total intervals explicitly include zero.",
+      "scope": "PNG visually reviewed; corresponding SVG generated from same figure and checked separately as XML"
+    }
+  ],
+  "scientific_checks": [
+    "All 47 prefectures including Akita and all 51 U.S. regions shown in regional figures and appendix",
+    "Tokyo full 19 native age groups plus explicit unknown; U.S. full 15 age groups",
+    "Negative flows and negative interval bounds retained; uncertain U.S. estimates visible",
+    "Two primary figure groups plus one appendix; no signed pie chart or pooled trend"
+  ],
+  "limitation": "Team must preserve sufficient physical placement size during poster/deck assembly; no final PPTX/poster file existed to inspect",
+  "svg_xml_validation": "All 5 SVG exports parsed successfully; same data/figure objects as inspected PNGs."
+}

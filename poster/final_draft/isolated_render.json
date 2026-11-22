@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "scope": "Render-only reproduction of the self-contained HTML/CSS/assets bundle, with the declared Playwright and browser dependencies. Scientific regeneration was not run.",
+  "isolated_directory": "data/cache/poster-draft-qa/isolated-d150e4b685db4b69bb30602451cd0967",
+  "command": [
+    "E:\\5002_project\\aging-across-economies\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8=0",
+    "E:\\5002_project\\aging-across-economies\\data\\cache\\poster-draft-qa\\isolated-d150e4b685db4b69bb30602451cd0967\\render_poster.py"
+  ],
+  "returncode": 0,
+  "copied_files": [
+    {
+      "path": "poster.html",
+      "sha256": "ad403f197020d0dc0931960366f46334b48e7beffa9ef51e3a25ab059aba1518"
+    },
+    {
+      "path": "poster.css",
+      "sha256": "b28746f5f90f7891c24dab60cee42b58b207aa947dfafd717e3ab7f312414621"
+    },
+    {
+      "path": "render_poster.py",
+      "sha256": "6b3b6c6a2c745c0910f05c63235e645357fffb7d35f27f0a340ed26a53db8ad6"
+    },
+    {
+      "path": "assets/fonts/DejaVuSans-Bold.ttf",
+      "sha256": "b184b89e3c1075f22f6b71575b6fc20d4972b3cfd3b23322ca6fd596dcaef167"
+    },
+    {
+      "path": "assets/fonts/DejaVuSans.ttf",
+      "sha256": "3fdf69cabf06049ea70a00b5919340e2ce1e6d02b0cc3c4b44fb6801bd1e0d22"
+    },
+    {
+      "path": "assets/fonts/DejaVuSerif-Bold.ttf",
+      "sha256": "c3753f2ed6bc673f15846dc45addbeb3b9c872f32fb18fd53a21f1bef1ed7676"
+    },
+    {
+      "path": "assets/fonts/DejaVuSerif-Italic.ttf",
+      "sha256": "3e7994fbc54fa10ce3352a42d548fadd7d9cadb69cb1109bc9d960f6dac57f04"
+    },
+    {
+      "path": "assets/fonts/DejaVuSerif.ttf",
+      "sha256": "107244956e9962b9e96faccdc551825e0ae0898ae13737133e1b921a2fd35ffa"
+    },
+    {
+      "path": "assets/fonts/LICENSE_DEJAVU",
+      "sha256": "d75938dec098f06f0ac3c00853065d94f020be1c3c62ef1dc2975ba15b4d9b0e"
+    },
+    {
+      "path": "assets/manufacturing_trend.svg",
+      "sha256": "8762ce9855d12272dd5db367c2dccc17da5e5b736c656f8f58d0ac5fabf220d9"
+    },
+    {
+      "path": "assets/migration_cases.svg",
+      "sha256": "aee75e6073be11238ccf52792fd60c8786956707b40812784db79b5e676f2f8e"
+    },
+    {
+      "path": "assets/migration_regional.svg",
+      "sha256": "46f7fb0b23c1d902959869b83713908092cadac274c29bcb8e0be506113496c7"
+    },
+    {
+      "path": "assets/national_aging.svg",
+      "sha256": "a3644c57b61b0733422f80e9d70500a4cf1502036ff39e3258b54ba53a2f21e7"
+    },
+    {
+      "path": "assets/pooled_within.svg",
+      "sha256": "b66327b42bda4fe2f239df93479bf11537b620ae270cd23cdaa2f1970f9775ff"
+    },
+    {
+      "path": "assets/regional_aging.svg",
+      "sha256": "ba5b2f02c3387e5834ae66234980411d60ace37951646a1a10ccf87d218cb185"
+    }
+  ],
+  "matching_layout_fields": [
+    "poster",
+    "footer",
+    "columns",
+    "claims",
+    "chart_boxes",
+    "author_names",
+    "loaded_fonts",
+    "key_findings",
+    "svg_views"
+  ],
+  "network_requests": 0,
+  "pdf_sha256": "86f9838fc9d3a38c6d438db0521046ab6622b572f18e8a4481cc2c601a07fd07",
+  "screen_controls": {
+    "viewport_width": 1440,
+    "fit_width": 1408,
+    "actual_size_width": 3178.578125,
+    "toggle_roundtrip": "PASS"
+  }
+}

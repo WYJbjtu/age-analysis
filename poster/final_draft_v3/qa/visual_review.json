@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "reviewed_utc": "2026-11-10T12:30:51.278195+00:00",
+  "pdf": "poster.pdf",
+  "pdf_sha256": "fc9b9599f3f135c8657fec9b7fe0e649b56d5a8bf21ea62761468ddaeeab0237",
+  "overview": "poster.preview.png",
+  "overview_sha256": "896fff6f101311b12e021f9cefa0fdb56203c20a5c96c36e5d7c7e9990906caa",
+  "method": "Opened final exported PDF rasterized by Poppler, at full-page and eight cropped close-up views. Crops come from the final 4245 x 6000 PNG, not an HTML screenshot.",
+  "views": [
+    {
+      "path": "poster.preview.png",
+      "sha256": "896fff6f101311b12e021f9cefa0fdb56203c20a5c96c36e5d7c7e9990906caa",
+      "finding": "Final PDF full page: three independent columns, balanced header, column-specific content and findings, compact footer."
+    },
+    {
+      "path": "qa/header_final.png",
+      "sha256": "e67b47211e489ae15ec2ddacb2be2f530260a4e27670d2eb7f2ee27fb93c9a1e",
+      "finding": "Title, unchanged subtitle, four equal author names and matching IDs, affiliation; no former time-window or methods blocks."
+    },
+    {
+      "path": "qa/column1_top_final.png",
+      "sha256": "9b00f2925565264775fef61618072f47a8b6685861f97818ece007d1ea253b1e",
+      "finding": "Readable background/data paragraphs and national chart; first-year Japan label clears the line."
+    },
+    {
+      "path": "qa/column1_bottom_final.png",
+      "sha256": "7e453d7e480b309b552bcde016c14a1491d12317a0de4dc5c5ea82630666dc49",
+      "finding": "All-region distribution, common axis, medians/extrema and interpretation fit within column."
+    },
+    {
+      "path": "qa/column2_top_final.png",
+      "sha256": "efdb917fb3f0c8245b0e96dfdeda5fe7c82d0fa91efaf82bd603cb27cd7246be",
+      "finding": "Manufacturing median/IQR and separately labeled private-services/tertiary panels; CY/FY, zoom and scope notes readable."
+    },
+    {
+      "path": "qa/column2_bottom_final.png",
+      "sha256": "f3c170fc2b4e5a1871149383367b8f6507d02156eaee9bbcced3bed7b04a0847",
+      "finding": "Three equal-width association panels, axes/sample sizes, 2019 note and covariance qualifier; no cropped labels."
+    },
+    {
+      "path": "qa/column3_top_final.png",
+      "sha256": "ee85f4d1b879b2740c64503de8e7ad3f87d873a2d9ca348eaa48366136dc0f2b",
+      "finding": "Separate Japan/USA youth panels, all uncertainty ranges within bounds, hollow/filled note, constructed-rate qualifier and sensitivity note."
+    },
+    {
+      "path": "qa/column3_bottom_final.png",
+      "sha256": "484185a4ac315a0f9266fa7ba7b2e406de534963326c53e9f0f85af9acd7059f",
+      "finding": "Native Tokyo bins including unknown, two-year legend and totals, accounting interpretation; Key Findings last and only in column 3."
+    },
+    {
+      "path": "qa/footer_final.png",
+      "sha256": "5b65305efbba3d29067770a5570678521e3786681209f1bf82149506dac1b61c",
+      "finding": "Timing and descriptive interpretation note fits inside page border."
+    }
+  ],
+  "geometry_record": "qa/validation.json",
+  "data_record": "figure_checks.json",
+  "observed_issues": [],
+  "limitations": [
+    "Screen visual inspection, not a physical A0 print proof.",
+    "Printer bleed and final team adoption remain to be confirmed."
+  ],
+  "qa_crop_delivery": "Crop PNGs are regenerable local inspection aids excluded by .gitignore; the final PDF, overview and this record are intended deliverables."
+}

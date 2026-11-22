@@ -1,0 +1,67 @@
+[
+  {
+    "source_path": "member1_demographics/plot_population.py",
+    "sha256": "bbad10607f3001df759051c54d017b1335a571e95cef5e5eedf4e24b3577ad1a",
+    "role": "Read-only scientific provenance, not a runtime dependency"
+  },
+  {
+    "source_path": "member1_demographics/figures/01_national_aging_trends_2000_2022.svg",
+    "sha256": "a3644c57b61b0733422f80e9d70500a4cf1502036ff39e3258b54ba53a2f21e7",
+    "role": "Read-only scientific provenance, not a runtime dependency"
+  },
+  {
+    "source_path": "member1_demographics/figures/02_regional_aging_comparison_2022.svg",
+    "sha256": "ba5b2f02c3387e5834ae66234980411d60ace37951646a1a10ccf87d218cb185",
+    "role": "Read-only scientific provenance, not a runtime dependency"
+  },
+  {
+    "source_path": "member2_industry/plot_industry.py",
+    "sha256": "0dc522ca3b5788372ccd035e81c8b8f6ada2de8b4378261919e6ca34e65da63a",
+    "role": "Read-only scientific provenance, not a runtime dependency"
+  },
+  {
+    "source_path": "member2_industry/comparability.json",
+    "sha256": "40e4b4cebb7d23cb0f9ad9dc1a66347f2299902bbd3cbcd83e1c7e0cb734cc19",
+    "role": "Read-only scientific provenance, not a runtime dependency"
+  },
+  {
+    "source_path": "member2_industry/figures/manufacturing_trend_2011_2022.svg",
+    "sha256": "8762ce9855d12272dd5db367c2dccc17da5e5b736c656f8f58d0ac5fabf220d9",
+    "role": "Read-only scientific provenance, not a runtime dependency"
+  },
+  {
+    "source_path": "member2_industry/figures/usa_services_trend_2011_2022.svg",
+    "sha256": "b9c073d79135cad00406a0274bc658ebf0b197f82156b87c2ea6ab61c3e9fe71",
+    "role": "Read-only scientific provenance, not a runtime dependency"
+  },
+  {
+    "source_path": "member2_industry/figures/jpn_services_trend_2011_2022.svg",
+    "sha256": "8563c9eab09cbbb59130af1ae66f29936988f428027545739a83a55ec7cd5077",
+    "role": "Read-only scientific provenance, not a runtime dependency"
+  },
+  {
+    "source_path": "analysis/member4/figures/01_pooled_within_2022.svg",
+    "sha256": "b66327b42bda4fe2f239df93479bf11537b620ae270cd23cdaa2f1970f9775ff",
+    "role": "Read-only scientific provenance, not a runtime dependency"
+  },
+  {
+    "source_path": "analysis/age_migration/plot.py",
+    "sha256": "1f5eb548557b0b0065c608f5a90741c2e8edb66935c348b9b72945934ab108cb",
+    "role": "Read-only scientific provenance, not a runtime dependency"
+  },
+  {
+    "source_path": "analysis/age_migration/figures/figure1_regional_2022.svg",
+    "sha256": "46f7fb0b23c1d902959869b83713908092cadac274c29bcb8e0be506113496c7",
+    "role": "Read-only scientific provenance, not a runtime dependency"
+  },
+  {
+    "source_path": "analysis/age_migration/figures/figure2_native_cases.svg",
+    "sha256": "aee75e6073be11238ccf52792fd60c8786956707b40812784db79b5e676f2f8e",
+    "role": "Read-only scientific provenance, not a runtime dependency"
+  },
+  {
+    "source_path": "analysis/member4/plot_figures.py",
+    "sha256": "8bce5e0b93e2f14c7095bfce4d33bacae076807ec8682631882b94bbe21b0349",
+    "role": "Read-only scientific provenance, not a runtime dependency"
+  }
+]

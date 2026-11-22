@@ -1,0 +1,23 @@
+{
+  "status": "READY FOR TEAM REVIEW",
+  "paper": {"width_mm": 841, "height_mm": 1189, "name": "A0 portrait"},
+  "authors": [
+    {"name": "WANG YIJIE", "student_id": "60074637"},
+    {"name": "LI YE", "student_id": "60999683"},
+    {"name": "HE YING", "student_id": "60189188"},
+    {"name": "WANGYUCHENG", "student_id": "60786917"}
+  ],
+  "course": "Data Visualization",
+  "affiliation": "City University of Hong Kong",
+  "title": ["AGING ACROSS", "ECONOMIES"],
+  "subtitle": ["Demographic Change, Regional Structure, and Age-Selective Migration", "in Japan and the United States"],
+  "takeaway": "Shared population aging does not imply a single regional economic or demographic pattern.",
+  "source_figures": [
+    {"id":"A","owner":"Member 1","path":"member1_demographics/figures/01_national_aging_trends_2000_2022.svg","asset":"national_aging.svg","use":"National aging, 2000-2022"},
+    {"id":"B","owner":"Member 1","path":"member1_demographics/figures/02_regional_aging_comparison_2022.svg","asset":"regional_aging.svg","use":"All 51 U.S. and 47 Japanese ranked regions"},
+    {"id":"C","owner":"Member 2","path":"member2_industry/figures/manufacturing_trend_2011_2022.svg","asset":"manufacturing_trend.svg","use":"Annual regional medians and interquartile ranges"},
+    {"id":"D","owner":"Member 4","path":"analysis/member4/figures/01_pooled_within_2022.svg","asset":"pooled_within.svg","use":"Pooled, U.S. and Japan scatter panels, reflowed vertically"},
+    {"id":"E","owner":"Age-migration extension","path":"analysis/age_migration/figures/figure1_regional_2022.svg","asset":"migration_regional.svg","use":"All-region ages20-24 panels only; older-age companion retained in complete source asset"},
+    {"id":"F","owner":"Age-migration extension","path":"analysis/age_migration/figures/figure2_native_cases.svg","asset":"migration_cases.svg","use":"Tokyo native-age panel only; full three-case source asset retained"}
+  ]
+}

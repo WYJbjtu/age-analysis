@@ -1,0 +1,3 @@
+# The reviewed migration extension hashes SVG exports as exact bytes.
+# Preserve their original line endings during add and checkout.
+age_migration/figures/*.svg -text

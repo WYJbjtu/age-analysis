@@ -1,0 +1,172 @@
+[
+  {
+    "name": "A_national",
+    "asset": "assets/national_aging.svg",
+    "viewBox": [
+      -4,
+      49,
+      658,
+      317
+    ],
+    "selected_axes": null,
+    "shared_y_axis_duplicated": false,
+    "small_text_size_adjustments": 0,
+    "manufacturing_second_legend_shift": 0,
+    "shared_definitions_preserved": 5,
+    "unresolved_svg_references": 0,
+    "geometry_policy": "Original data coordinates, paths, markers, lines and numeric axes retained; text/legend reflow only; no analytical regeneration"
+  },
+  {
+    "name": "B_USA",
+    "asset": "assets/regional_aging.svg",
+    "viewBox": [
+      -25,
+      48,
+      550,
+      782
+    ],
+    "selected_axes": 1,
+    "shared_y_axis_duplicated": false,
+    "small_text_size_adjustments": 116,
+    "manufacturing_second_legend_shift": 0,
+    "shared_definitions_preserved": 6,
+    "unresolved_svg_references": 0,
+    "geometry_policy": "Original data coordinates, paths, markers, lines and numeric axes retained; text/legend reflow only; no analytical regeneration"
+  },
+  {
+    "name": "B_Japan",
+    "asset": "assets/regional_aging.svg",
+    "viewBox": [
+      522,
+      48,
+      550,
+      782
+    ],
+    "selected_axes": 2,
+    "shared_y_axis_duplicated": false,
+    "small_text_size_adjustments": 108,
+    "manufacturing_second_legend_shift": 0,
+    "shared_definitions_preserved": 6,
+    "unresolved_svg_references": 0,
+    "geometry_policy": "Original data coordinates, paths, markers, lines and numeric axes retained; text/legend reflow only; no analytical regeneration"
+  },
+  {
+    "name": "C_manufacturing",
+    "asset": "assets/manufacturing_trend.svg",
+    "viewBox": [
+      12,
+      92,
+      864,
+      295
+    ],
+    "selected_axes": null,
+    "shared_y_axis_duplicated": false,
+    "small_text_size_adjustments": 36,
+    "manufacturing_second_legend_shift": 100,
+    "shared_definitions_preserved": 5,
+    "unresolved_svg_references": 0,
+    "geometry_policy": "Original data coordinates, paths, markers, lines and numeric axes retained; text/legend reflow only; no analytical regeneration"
+  },
+  {
+    "name": "D_pooled",
+    "asset": "assets/pooled_within.svg",
+    "viewBox": [
+      21,
+      64,
+      351,
+      307
+    ],
+    "selected_axes": 1,
+    "shared_y_axis_duplicated": false,
+    "small_text_size_adjustments": 0,
+    "manufacturing_second_legend_shift": 0,
+    "shared_definitions_preserved": 9,
+    "unresolved_svg_references": 0,
+    "geometry_policy": "Original data coordinates, paths, markers, lines and numeric axes retained; text/legend reflow only; no analytical regeneration"
+  },
+  {
+    "name": "D_USA",
+    "asset": "assets/pooled_within.svg",
+    "viewBox": [
+      349.83416,
+      64,
+      351,
+      307
+    ],
+    "selected_axes": 2,
+    "shared_y_axis_duplicated": true,
+    "small_text_size_adjustments": 0,
+    "manufacturing_second_legend_shift": 0,
+    "shared_definitions_preserved": 9,
+    "unresolved_svg_references": 0,
+    "geometry_policy": "Original data coordinates, paths, markers, lines and numeric axes retained; text/legend reflow only; no analytical regeneration"
+  },
+  {
+    "name": "D_Japan",
+    "asset": "assets/pooled_within.svg",
+    "viewBox": [
+      678.668319,
+      64,
+      351,
+      307
+    ],
+    "selected_axes": 3,
+    "shared_y_axis_duplicated": true,
+    "small_text_size_adjustments": 0,
+    "manufacturing_second_legend_shift": 0,
+    "shared_definitions_preserved": 9,
+    "unresolved_svg_references": 0,
+    "geometry_policy": "Original data coordinates, paths, markers, lines and numeric axes retained; text/legend reflow only; no analytical regeneration"
+  },
+  {
+    "name": "E_Japan",
+    "asset": "assets/migration_regional.svg",
+    "viewBox": [
+      7,
+      72,
+      480,
+      288
+    ],
+    "selected_axes": 1,
+    "shared_y_axis_duplicated": false,
+    "small_text_size_adjustments": 0,
+    "manufacturing_second_legend_shift": 0,
+    "shared_definitions_preserved": 9,
+    "unresolved_svg_references": 0,
+    "geometry_policy": "Original data coordinates, paths, markers, lines and numeric axes retained; text/legend reflow only; no analytical regeneration"
+  },
+  {
+    "name": "E_USA",
+    "asset": "assets/migration_regional.svg",
+    "viewBox": [
+      493,
+      72,
+      479,
+      288
+    ],
+    "selected_axes": 2,
+    "shared_y_axis_duplicated": false,
+    "small_text_size_adjustments": 0,
+    "manufacturing_second_legend_shift": 0,
+    "shared_definitions_preserved": 9,
+    "unresolved_svg_references": 0,
+    "geometry_policy": "Original data coordinates, paths, markers, lines and numeric axes retained; text/legend reflow only; no analytical regeneration"
+  },
+  {
+    "name": "F_Tokyo",
+    "asset": "assets/migration_cases.svg",
+    "viewBox": [
+      0,
+      81,
+      390,
+      593
+    ],
+    "selected_axes": 1,
+    "shared_y_axis_duplicated": false,
+    "small_text_size_adjustments": 0,
+    "manufacturing_second_legend_shift": 0,
+    "shared_definitions_preserved": 6,
+    "unresolved_svg_references": 0,
+    "geometry_policy": "Original data coordinates, paths, markers, lines and numeric axes retained; text/legend reflow only; no analytical regeneration"
+  }
+]

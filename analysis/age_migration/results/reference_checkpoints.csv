@@ -1,0 +1,5 @@
+check,year,actual,reference,difference
+age15_19_net,2022,13795,13795,0
+age20_24_net,2022,57153,57153,0
+all_other_ages_net,2022,-32925,-32925,0
+total_net,2022,38023,38023,0

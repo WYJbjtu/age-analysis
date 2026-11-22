@@ -1,0 +1,43 @@
+{
+  "status": "PASS - screen visual review",
+  "pdf_sha256": "fc28cee71f80ef53f8236fe5468f561fe731c2a778c6d62acb6d5bda53498975",
+  "preview_sha256": "f9cc7b19fca5fd82385ee10d8141bf8c6673f6376f4ce1f9045acabb52099b5f",
+  "reviewed_views": [
+    "Full-page PDF-derived preview",
+    "Header, all four equal author blocks and design strip",
+    "Population figures A and B, all captions",
+    "Economic figures C and D, covariance qualification and two-year table",
+    "Migration figures E and F, uncertainty, older-age table, Tokyo caption",
+    "Bottom findings, limitations and sources"
+  ],
+  "method": "Poppler actual-PDF render, 3000-pixel preview plus 120-dpi readable crops; opened and visually inspected.",
+  "full_page_render_command": "pdftoppm -png -singlefile -r 120 poster.pdf qa/poster-120dpi",
+  "temporary_detail_crops": "qa/*.png are ignored inspection intermediates, not required deliverables.",
+  "findings": {
+    "author_order_spelling_and_ids": "Exact supplied values; equally prominent 32 pt names, 21 pt IDs",
+    "chart_geometry": "No stretching; printed dimensions match figure manifests",
+    "text_and_figures": "No observed clipping, overlap or missing labels/caveats",
+    "country_encoding": "USA blue #2788ae; Japan purple #8551a6",
+    "acs_intervals": "All 51 U.S. intervals visible including extremes; 35 hollow points include zero",
+    "older_results": "Both years and Tokyo sensitivity visible; no inferential or stability claim",
+    "tokyo": "All native ages plus Unknown visible; signed counts and two-year totals retained",
+    "footer": "Readable sources and limitations; separated heading, no overlapping text"
+  },
+  "affiliation_actual_pdf_type": [
+    {
+      "text": "Data Visualization",
+      "effective_size_pt": 22.994999041874998
+    },
+    {
+      "text": "City University of Hong Kong",
+      "effective_size_pt": 22.994999041874998
+    }
+  ],
+  "type_measurement": "Effective font size from PDF text and graphics transform matrices. Rotated glyph bounding-box height is not used as font size.",
+  "physical_print_proof_performed": false,
+  "remaining_team_checks": [
+    "Confirm course submission/bleed requirements",
+    "Make A0 100% paper proof",
+    "Choose v2 for final submission after team review"
+  ]
+}

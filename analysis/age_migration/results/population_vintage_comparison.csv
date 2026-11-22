@@ -1,0 +1,197 @@
+country,region_id,year,population_total,age65_share_pct,canonical_population_total,aging_reference_date,aging_source_version,total_difference
+JPN,JP-01,2019,5250000,31.69804145,5259000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-9000
+JPN,JP-01,2022,5140000,32.8,5140000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-02,2019,1246000,33.12051077,1253000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-7000
+JPN,JP-02,2022,1204000,34.8,1204000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-03,2019,1227000,33.03425775,1226000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,1000
+JPN,JP-03,2022,1181000,34.6,1181000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-04,2019,2306000,27.72491349,2312000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-6000
+JPN,JP-04,2022,2280000,28.9,2280000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-05,2019,966000,36.83127572,972000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-6000
+JPN,JP-05,2022,930000,38.6,930000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-06,2019,1078000,33.24074074,1080000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-2000
+JPN,JP-06,2022,1041000,34.8,1041000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-07,2019,1846000,31.10151188,1852000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-6000
+JPN,JP-07,2022,1790000,32.7,1790000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-08,2019,2860000,29.1767975,2879000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-19000
+JPN,JP-08,2022,2840000,30.4,2840000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-09,2019,1934000,28.51260937,1943000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-9000
+JPN,JP-09,2022,1909000,29.9,1909000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-10,2019,1942000,29.70754233,1949000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-7000
+JPN,JP-10,2022,1913000,30.8,1913000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-11,2019,7350000,26.6684827,7342000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,8000
+JPN,JP-11,2022,7337000,27.4,7337000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-12,2019,6259000,27.37545758,6283000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-24000
+JPN,JP-12,2022,6266000,28,6266000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-13,2019,13921000,22.71721282,14007000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-86000
+JPN,JP-13,2022,14038000,22.8,14038000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-14,2019,9198000,25.31439722,9224000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-26000
+JPN,JP-14,2022,9232000,25.8,9232000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-15,2019,2223000,32.23920863,2224000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-1000
+JPN,JP-15,2022,2153000,33.5,2153000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-16,2019,1044000,32.11888782,1043000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,1000
+JPN,JP-16,2022,1017000,33,1017000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-17,2019,1138000,29.41176471,1139000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-1000
+JPN,JP-17,2022,1118000,30.3,1118000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-18,2019,768000,30.35019455,771000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-3000
+JPN,JP-18,2022,753000,31.2,753000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-19,2019,811000,30.42944785,815000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-4000
+JPN,JP-19,2022,802000,31.5,802000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-20,2019,2049000,31.58660844,2061000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-12000
+JPN,JP-20,2022,2020000,32.5,2020000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-21,2019,1987000,30.02008032,1992000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-5000
+JPN,JP-21,2022,1946000,31,1946000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-22,2019,3644000,29.70161511,3653000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-9000
+JPN,JP-22,2022,3582000,30.7,3582000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-23,2019,7552000,25.02315734,7557000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-5000
+JPN,JP-23,2022,7495000,25.6,7495000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-24,2019,1781000,29.55692653,1783000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-2000
+JPN,JP-24,2022,1742000,30.5,1742000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-25,2019,1414000,25.9180791,1416000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-2000
+JPN,JP-25,2022,1409000,26.8,1409000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-26,2019,2583000,29.05092593,2592000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-9000
+JPN,JP-26,2022,2550000,29.6,2550000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-27,2019,8809000,27.50508935,8842000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-33000
+JPN,JP-27,2022,8782000,27.7,8782000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-28,2019,5466000,28.95408163,5488000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-22000
+JPN,JP-28,2022,5402000,29.8,5402000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-29,2019,1330000,31.28282071,1333000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-3000
+JPN,JP-29,2022,1306000,32.4,1306000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-30,2019,925000,32.97529538,931000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-6000
+JPN,JP-30,2022,903000,34,903000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-31,2019,556000,31.77737882,557000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-1000
+JPN,JP-31,2022,544000,33.1,544000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-32,2019,674000,33.97341211,677000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-3000
+JPN,JP-32,2022,658000,34.7,658000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-33,2019,1890000,30.10015814,1897000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-7000
+JPN,JP-33,2022,1862000,30.8,1862000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-34,2019,2804000,29.0792748,2813000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-9000
+JPN,JP-34,2022,2760000,29.9,2760000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-35,2019,1358000,34.19307296,1357000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,1000
+JPN,JP-35,2022,1313000,35.2,1313000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-36,2019,728000,33.51648352,728000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,0
+JPN,JP-36,2022,704000,35,704000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-37,2019,956000,31.41962422,958000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-2000
+JPN,JP-37,2022,934000,32.4,934000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-38,2019,1339000,32.76374443,1346000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-7000
+JPN,JP-38,2022,1306000,33.9,1306000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-39,2019,698000,35.05007153,699000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-1000
+JPN,JP-39,2022,676000,36.1,676000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-40,2019,5104000,27.61978964,5134000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-30000
+JPN,JP-40,2022,5116000,28.3,5116000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-41,2019,815000,30.11015912,817000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-2000
+JPN,JP-41,2022,801000,31.4,801000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-42,2019,1327000,32.40391861,1327000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,0
+JPN,JP-42,2022,1283000,33.9,1283000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-43,2019,1748000,30.93196112,1749000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-1000
+JPN,JP-43,2022,1718000,32.1,1718000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-44,2019,1135000,32.8042328,1134000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,1000
+JPN,JP-44,2022,1107000,33.9,1107000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-45,2019,1073000,32.12627669,1077000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-4000
+JPN,JP-45,2022,1052000,33.4,1052000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-46,2019,1602000,31.89762797,1602000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,0
+JPN,JP-46,2022,1563000,33.5,1563000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+JPN,JP-47,2019,1453000,22.09302326,1462000,2019-10-01,Japan long-term table10 released2022-07-20; census/intercensal series,-9000
+JPN,JP-47,2022,1468000,23.5,1468000,2022-10-01,Japan annual population estimates 2022; released2023-04,0
+USA,US-AK,2019,731545,12.4799108,733603,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-2058
+USA,US-AK,2022,733583,13.85132971,733583,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-AL,2019,4903185,17.34975698,4907965,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-4780
+USA,US-AL,2022,5074296,18.02679623,5074296,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-AR,2019,3017804,17.34467401,3020985,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-3181
+USA,US-AR,2022,3045637,17.80763761,3045637,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-AZ,2019,7278717,18.0446562,7291843,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-13126
+USA,US-AZ,2022,7359197,18.78446792,7359197,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-CA,2019,39512223,14.75596518,39437610,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,74613
+USA,US-CA,2022,39029342,15.77210039,39029342,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-CO,2019,5758736,14.64838154,5758486,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,250
+USA,US-CO,2022,5839926,15.65153394,5839926,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-CT,2019,3565287,17.68651455,3566022,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-735
+USA,US-CT,2022,3626205,18.29234696,3626205,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-DC,2019,705749,12.44357595,708253,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-2504
+USA,US-DC,2022,671803,12.98892681,671803,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-DE,2019,973764,19.39809638,976668,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-2904
+USA,US-DE,2022,1018396,20.80173135,1018396,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-FL,2019,21477737,20.91049828,21492056,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-14319
+USA,US-FL,2022,22244823,21.5519629,22244823,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-GA,2019,10617423,14.29424295,10628020,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-10597
+USA,US-GA,2022,10912876,15.07418393,10912876,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-HI,2019,1415872,19.00333071,1415615,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,257
+USA,US-HI,2022,1440196,20.43923188,1440196,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-IA,2019,3155070,17.47729773,3159596,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-4526
+USA,US-IA,2022,3200517,18.31047921,3200517,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-ID,2019,1787065,16.26379216,1789060,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-1995
+USA,US-ID,2022,1939033,17.04210295,1939033,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-IL,2019,12671821,16.12267513,12667017,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,4804
+USA,US-IL,2022,12582032,17.19354235,12582032,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-IN,2019,6732219,16.10327425,6731010,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,1209
+USA,US-IN,2022,6833037,16.91309443,6833037,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-KS,2019,2913314,16.30537297,2912635,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,679
+USA,US-KS,2022,2937150,17.16007014,2937150,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-KY,2019,4467673,16.77735058,4472345,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-4672
+USA,US-KY,2022,4512310,17.5743023,4512310,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-LA,2019,4648794,15.93075563,4658285,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-9491
+USA,US-LA,2022,4590241,16.99390076,4590241,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-MA,2019,6892503,16.93667608,6894883,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-2380
+USA,US-MA,2022,6981974,18.0541778,6981974,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-MD,2019,6045680,15.85893138,6054954,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-9274
+USA,US-MD,2022,6164660,16.93863084,6164660,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-ME,2019,1344212,21.19240286,1345770,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-1558
+USA,US-ME,2022,1385340,22.53771637,1385340,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-MI,2019,9986857,17.65876014,9984795,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,2062
+USA,US-MI,2022,10034118,18.7394242,10034113,2022-07-01,Census Vintage2022; blended2020 base,5
+USA,US-MN,2019,5639632,16.29970499,5640053,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-421
+USA,US-MN,2022,5717184,17.44796039,5717184,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-MO,2019,6137428,17.28993278,6140475,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-3047
+USA,US-MO,2022,6177957,18.03759722,6177957,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-MS,2019,2976149,16.33515511,2978227,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-2078
+USA,US-MS,2022,2940057,17.26293062,2940057,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-MT,2019,1068778,19.23704098,1070123,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-1345
+USA,US-MT,2022,1122867,20.04921331,1122867,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-NC,2019,10488084,16.68602919,10501384,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-13300
+USA,US-NC,2022,10698973,17.40240862,10698973,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-ND,2019,762062,15.71614877,763724,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-1662
+USA,US-ND,2022,779261,16.67323272,779261,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-NE,2019,1934408,16.10574721,1932571,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,1837
+USA,US-NE,2022,1967923,16.92423941,1967923,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-NH,2019,1359711,18.63000934,1360783,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-1072
+USA,US-NH,2022,1395231,20.17630056,1395231,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-NJ,2019,8882190,16.60263373,8891258,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-9068
+USA,US-NJ,2022,9261699,17.40249818,9261699,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-NM,2019,2096829,17.99318357,2099634,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-2805
+USA,US-NM,2022,2113344,19.08837369,2113344,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-NV,2019,3080156,16.10219586,3090771,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-10615
+USA,US-NV,2022,3177772,16.898758,3177772,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-NY,2019,19453561,16.96086308,19463131,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-9570
+USA,US-NY,2022,19677151,18.11022338,19677151,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-OH,2019,11689100,17.47531977,11696507,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-7407
+USA,US-OH,2022,11756058,18.39220256,11756058,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-OK,2019,3956971,16.06288926,3960676,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-3705
+USA,US-OK,2022,4019800,16.44099209,4019800,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-OR,2019,4217737,18.13028864,4216116,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,1621
+USA,US-OR,2022,4240137,19.2370671,4240137,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-PA,2019,12801989,18.70609334,12798883,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,3106
+USA,US-PA,2022,12972008,19.59547049,12972008,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-RI,2019,1059361,17.68705619,1058158,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,1203
+USA,US-RI,2022,1093734,18.8720475,1093734,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-SC,2019,5148714,18.19364515,5157702,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-8988
+USA,US-SC,2022,5282634,19.08156045,5282634,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-SD,2019,884659,17.11074063,887127,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-2468
+USA,US-SD,2022,909824,18.00535049,909824,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-TN,2019,6829174,16.74709476,6830325,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-1151
+USA,US-TN,2022,7051339,17.31570415,7051339,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-TX,2019,28995881,12.85589914,28986794,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,9087
+USA,US-TX,2022,30029572,13.41029103,30029572,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-UT,2019,3205958,11.39295551,3203383,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,2575
+USA,US-UT,2022,3380800,11.98532892,3380800,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-VA,2019,8535519,15.89033408,8556642,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-21123
+USA,US-VA,2022,8683619,16.87070794,8683619,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-VT,2019,623989,19.97048295,624046,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-57
+USA,US-VT,2022,647064,21.55134577,647064,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-WA,2019,7614893,15.83682951,7614024,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,869
+USA,US-WA,2022,7785786,16.80703785,7785786,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-WI,2019,5822434,17.42539077,5824581,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-2147
+USA,US-WI,2022,5892539,18.70363522,5892539,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-WV,2019,1792147,20.47744537,1795263,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-3116
+USA,US-WV,2022,1775156,21.186814,1775156,2022-07-01,Census Vintage2022; blended2020 base,0
+USA,US-WY,2019,578759,17.22362424,580116,2019-07-01,Census Vintage2020 evaluation estimates; 2010 census base,-1357
+USA,US-WY,2022,581381,18.58660672,581381,2022-07-01,Census Vintage2022; blended2020 base,0

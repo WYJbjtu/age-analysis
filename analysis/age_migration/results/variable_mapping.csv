@@ -1,0 +1,349 @@
+country,year,source_id,role,variable,moe_variable,estimate_annotation_variable,moe_annotation_variable,source_label,age_group,age_lower,age_upper
+USA,2019,acs2019_B07001_summary,in,B07001_065E,B07001_065M,B07001_065EA,B07001_065MA,Estimate!!Total:!!Moved from different state:,total_1plus,,
+USA,2019,acs2019_B07001_summary,in,B07001_066E,B07001_066M,B07001_066EA,B07001_066MA,Estimate!!Total:!!Moved from different state:!!1 to 4 years,1-4,1,4
+USA,2019,acs2019_B07001_summary,in,B07001_067E,B07001_067M,B07001_067EA,B07001_067MA,Estimate!!Total:!!Moved from different state:!!5 to 17 years,5-17,5,17
+USA,2019,acs2019_B07001_summary,in,B07001_068E,B07001_068M,B07001_068EA,B07001_068MA,Estimate!!Total:!!Moved from different state:!!18 and 19 years,18-19,18,19
+USA,2019,acs2019_B07001_summary,in,B07001_069E,B07001_069M,B07001_069EA,B07001_069MA,Estimate!!Total:!!Moved from different state:!!20 to 24 years,20-24,20,24
+USA,2019,acs2019_B07001_summary,in,B07001_070E,B07001_070M,B07001_070EA,B07001_070MA,Estimate!!Total:!!Moved from different state:!!25 to 29 years,25-29,25,29
+USA,2019,acs2019_B07001_summary,in,B07001_071E,B07001_071M,B07001_071EA,B07001_071MA,Estimate!!Total:!!Moved from different state:!!30 to 34 years,30-34,30,34
+USA,2019,acs2019_B07001_summary,in,B07001_072E,B07001_072M,B07001_072EA,B07001_072MA,Estimate!!Total:!!Moved from different state:!!35 to 39 years,35-39,35,39
+USA,2019,acs2019_B07001_summary,in,B07001_073E,B07001_073M,B07001_073EA,B07001_073MA,Estimate!!Total:!!Moved from different state:!!40 to 44 years,40-44,40,44
+USA,2019,acs2019_B07001_summary,in,B07001_074E,B07001_074M,B07001_074EA,B07001_074MA,Estimate!!Total:!!Moved from different state:!!45 to 49 years,45-49,45,49
+USA,2019,acs2019_B07001_summary,in,B07001_075E,B07001_075M,B07001_075EA,B07001_075MA,Estimate!!Total:!!Moved from different state:!!50 to 54 years,50-54,50,54
+USA,2019,acs2019_B07001_summary,in,B07001_076E,B07001_076M,B07001_076EA,B07001_076MA,Estimate!!Total:!!Moved from different state:!!55 to 59 years,55-59,55,59
+USA,2019,acs2019_B07001_summary,in,B07001_077E,B07001_077M,B07001_077EA,B07001_077MA,Estimate!!Total:!!Moved from different state:!!60 to 64 years,60-64,60,64
+USA,2019,acs2019_B07001_summary,in,B07001_078E,B07001_078M,B07001_078EA,B07001_078MA,Estimate!!Total:!!Moved from different state:!!65 to 69 years,65-69,65,69
+USA,2019,acs2019_B07001_summary,in,B07001_079E,B07001_079M,B07001_079EA,B07001_079MA,Estimate!!Total:!!Moved from different state:!!70 to 74 years,70-74,70,74
+USA,2019,acs2019_B07001_summary,in,B07001_080E,B07001_080M,B07001_080EA,B07001_080MA,Estimate!!Total:!!Moved from different state:!!75 years and over,75+,75,
+USA,2019,acs2019_B07401_summary,out,B07401_065E,B07401_065M,B07401_065EA,B07401_065MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:,total_1plus,,
+USA,2019,acs2019_B07401_summary,out,B07401_066E,B07401_066M,B07401_066EA,B07401_066MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!1 to 4 years,1-4,1,4
+USA,2019,acs2019_B07401_summary,out,B07401_067E,B07401_067M,B07401_067EA,B07401_067MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!5 to 17 years,5-17,5,17
+USA,2019,acs2019_B07401_summary,out,B07401_068E,B07401_068M,B07401_068EA,B07401_068MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!18 and 19 years,18-19,18,19
+USA,2019,acs2019_B07401_summary,out,B07401_069E,B07401_069M,B07401_069EA,B07401_069MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!20 to 24 years,20-24,20,24
+USA,2019,acs2019_B07401_summary,out,B07401_070E,B07401_070M,B07401_070EA,B07401_070MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!25 to 29 years,25-29,25,29
+USA,2019,acs2019_B07401_summary,out,B07401_071E,B07401_071M,B07401_071EA,B07401_071MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!30 to 34 years,30-34,30,34
+USA,2019,acs2019_B07401_summary,out,B07401_072E,B07401_072M,B07401_072EA,B07401_072MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!35 to 39 years,35-39,35,39
+USA,2019,acs2019_B07401_summary,out,B07401_073E,B07401_073M,B07401_073EA,B07401_073MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!40 to 44 years,40-44,40,44
+USA,2019,acs2019_B07401_summary,out,B07401_074E,B07401_074M,B07401_074EA,B07401_074MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!45 to 49 years,45-49,45,49
+USA,2019,acs2019_B07401_summary,out,B07401_075E,B07401_075M,B07401_075EA,B07401_075MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!50 to 54 years,50-54,50,54
+USA,2019,acs2019_B07401_summary,out,B07401_076E,B07401_076M,B07401_076EA,B07401_076MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!55 to 59 years,55-59,55,59
+USA,2019,acs2019_B07401_summary,out,B07401_077E,B07401_077M,B07401_077EA,B07401_077MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!60 to 64 years,60-64,60,64
+USA,2019,acs2019_B07401_summary,out,B07401_078E,B07401_078M,B07401_078EA,B07401_078MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!65 to 69 years,65-69,65,69
+USA,2019,acs2019_B07401_summary,out,B07401_079E,B07401_079M,B07401_079EA,B07401_079MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!70 to 74 years,70-74,70,74
+USA,2019,acs2019_B07401_summary,out,B07401_080E,B07401_080M,B07401_080EA,B07401_080MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!75 years and over,75+,75,
+USA,2019,acs2019_B07001_summary,age_population,B07001_001E,B07001_001M,B07001_001EA,B07001_001MA,Estimate!!Total:,total_1plus,,
+USA,2019,acs2019_B07001_summary,age_population,B07001_002E,B07001_002M,B07001_002EA,B07001_002MA,Estimate!!Total:!!1 to 4 years,1-4,1,4
+USA,2019,acs2019_B07001_summary,age_population,B07001_003E,B07001_003M,B07001_003EA,B07001_003MA,Estimate!!Total:!!5 to 17 years,5-17,5,17
+USA,2019,acs2019_B07001_summary,age_population,B07001_004E,B07001_004M,B07001_004EA,B07001_004MA,Estimate!!Total:!!18 and 19 years,18-19,18,19
+USA,2019,acs2019_B07001_summary,age_population,B07001_005E,B07001_005M,B07001_005EA,B07001_005MA,Estimate!!Total:!!20 to 24 years,20-24,20,24
+USA,2019,acs2019_B07001_summary,age_population,B07001_006E,B07001_006M,B07001_006EA,B07001_006MA,Estimate!!Total:!!25 to 29 years,25-29,25,29
+USA,2019,acs2019_B07001_summary,age_population,B07001_007E,B07001_007M,B07001_007EA,B07001_007MA,Estimate!!Total:!!30 to 34 years,30-34,30,34
+USA,2019,acs2019_B07001_summary,age_population,B07001_008E,B07001_008M,B07001_008EA,B07001_008MA,Estimate!!Total:!!35 to 39 years,35-39,35,39
+USA,2019,acs2019_B07001_summary,age_population,B07001_009E,B07001_009M,B07001_009EA,B07001_009MA,Estimate!!Total:!!40 to 44 years,40-44,40,44
+USA,2019,acs2019_B07001_summary,age_population,B07001_010E,B07001_010M,B07001_010EA,B07001_010MA,Estimate!!Total:!!45 to 49 years,45-49,45,49
+USA,2019,acs2019_B07001_summary,age_population,B07001_011E,B07001_011M,B07001_011EA,B07001_011MA,Estimate!!Total:!!50 to 54 years,50-54,50,54
+USA,2019,acs2019_B07001_summary,age_population,B07001_012E,B07001_012M,B07001_012EA,B07001_012MA,Estimate!!Total:!!55 to 59 years,55-59,55,59
+USA,2019,acs2019_B07001_summary,age_population,B07001_013E,B07001_013M,B07001_013EA,B07001_013MA,Estimate!!Total:!!60 to 64 years,60-64,60,64
+USA,2019,acs2019_B07001_summary,age_population,B07001_014E,B07001_014M,B07001_014EA,B07001_014MA,Estimate!!Total:!!65 to 69 years,65-69,65,69
+USA,2019,acs2019_B07001_summary,age_population,B07001_015E,B07001_015M,B07001_015EA,B07001_015MA,Estimate!!Total:!!70 to 74 years,70-74,70,74
+USA,2019,acs2019_B07001_summary,age_population,B07001_016E,B07001_016M,B07001_016EA,B07001_016MA,Estimate!!Total:!!75 years and over,75+,75,
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_003E,B01001_003M,,,Estimate!!Total:!!Male:!!Under 5 years,under 5 years,0,4
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_004E,B01001_004M,,,Estimate!!Total:!!Male:!!5 to 9 years,5 to 9 years,5,9
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_005E,B01001_005M,,,Estimate!!Total:!!Male:!!10 to 14 years,10 to 14 years,10,14
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_006E,B01001_006M,,,Estimate!!Total:!!Male:!!15 to 17 years,15 to 17 years,15,17
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_007E,B01001_007M,,,Estimate!!Total:!!Male:!!18 and 19 years,18 and 19 years,18,19
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_008E,B01001_008M,,,Estimate!!Total:!!Male:!!20 years,20 years,20,20
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_009E,B01001_009M,,,Estimate!!Total:!!Male:!!21 years,21 years,21,21
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_010E,B01001_010M,,,Estimate!!Total:!!Male:!!22 to 24 years,22 to 24 years,22,24
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_011E,B01001_011M,,,Estimate!!Total:!!Male:!!25 to 29 years,25 to 29 years,25,29
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_012E,B01001_012M,,,Estimate!!Total:!!Male:!!30 to 34 years,30 to 34 years,30,34
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_013E,B01001_013M,,,Estimate!!Total:!!Male:!!35 to 39 years,35 to 39 years,35,39
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_014E,B01001_014M,,,Estimate!!Total:!!Male:!!40 to 44 years,40 to 44 years,40,44
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_015E,B01001_015M,,,Estimate!!Total:!!Male:!!45 to 49 years,45 to 49 years,45,49
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_016E,B01001_016M,,,Estimate!!Total:!!Male:!!50 to 54 years,50 to 54 years,50,54
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_017E,B01001_017M,,,Estimate!!Total:!!Male:!!55 to 59 years,55 to 59 years,55,59
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_018E,B01001_018M,,,Estimate!!Total:!!Male:!!60 and 61 years,60 and 61 years,60,61
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_019E,B01001_019M,,,Estimate!!Total:!!Male:!!62 to 64 years,62 to 64 years,62,64
+USA,2019,acs2019_B01001_summary,age65_sensitivity_numerator,B01001_020E,B01001_020M,,,Estimate!!Total:!!Male:!!65 and 66 years,65 and 66 years,65,66
+USA,2019,acs2019_B01001_summary,age65_sensitivity_numerator,B01001_021E,B01001_021M,,,Estimate!!Total:!!Male:!!67 to 69 years,67 to 69 years,67,69
+USA,2019,acs2019_B01001_summary,age65_sensitivity_numerator,B01001_022E,B01001_022M,,,Estimate!!Total:!!Male:!!70 to 74 years,70 to 74 years,70,74
+USA,2019,acs2019_B01001_summary,age65_sensitivity_numerator,B01001_023E,B01001_023M,,,Estimate!!Total:!!Male:!!75 to 79 years,75 to 79 years,75,79
+USA,2019,acs2019_B01001_summary,age65_sensitivity_numerator,B01001_024E,B01001_024M,,,Estimate!!Total:!!Male:!!80 to 84 years,80 to 84 years,80,84
+USA,2019,acs2019_B01001_summary,age65_sensitivity_numerator,B01001_025E,B01001_025M,,,Estimate!!Total:!!Male:!!85 years and over,85 years and over,85,
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_027E,B01001_027M,,,Estimate!!Total:!!Female:!!Under 5 years,under 5 years,0,4
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_028E,B01001_028M,,,Estimate!!Total:!!Female:!!5 to 9 years,5 to 9 years,5,9
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_029E,B01001_029M,,,Estimate!!Total:!!Female:!!10 to 14 years,10 to 14 years,10,14
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_030E,B01001_030M,,,Estimate!!Total:!!Female:!!15 to 17 years,15 to 17 years,15,17
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_031E,B01001_031M,,,Estimate!!Total:!!Female:!!18 and 19 years,18 and 19 years,18,19
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_032E,B01001_032M,,,Estimate!!Total:!!Female:!!20 years,20 years,20,20
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_033E,B01001_033M,,,Estimate!!Total:!!Female:!!21 years,21 years,21,21
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_034E,B01001_034M,,,Estimate!!Total:!!Female:!!22 to 24 years,22 to 24 years,22,24
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_035E,B01001_035M,,,Estimate!!Total:!!Female:!!25 to 29 years,25 to 29 years,25,29
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_036E,B01001_036M,,,Estimate!!Total:!!Female:!!30 to 34 years,30 to 34 years,30,34
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_037E,B01001_037M,,,Estimate!!Total:!!Female:!!35 to 39 years,35 to 39 years,35,39
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_038E,B01001_038M,,,Estimate!!Total:!!Female:!!40 to 44 years,40 to 44 years,40,44
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_039E,B01001_039M,,,Estimate!!Total:!!Female:!!45 to 49 years,45 to 49 years,45,49
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_040E,B01001_040M,,,Estimate!!Total:!!Female:!!50 to 54 years,50 to 54 years,50,54
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_041E,B01001_041M,,,Estimate!!Total:!!Female:!!55 to 59 years,55 to 59 years,55,59
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_042E,B01001_042M,,,Estimate!!Total:!!Female:!!60 and 61 years,60 and 61 years,60,61
+USA,2019,acs2019_B01001_summary,population_total_reconciliation,B01001_043E,B01001_043M,,,Estimate!!Total:!!Female:!!62 to 64 years,62 to 64 years,62,64
+USA,2019,acs2019_B01001_summary,age65_sensitivity_numerator,B01001_044E,B01001_044M,,,Estimate!!Total:!!Female:!!65 and 66 years,65 and 66 years,65,66
+USA,2019,acs2019_B01001_summary,age65_sensitivity_numerator,B01001_045E,B01001_045M,,,Estimate!!Total:!!Female:!!67 to 69 years,67 to 69 years,67,69
+USA,2019,acs2019_B01001_summary,age65_sensitivity_numerator,B01001_046E,B01001_046M,,,Estimate!!Total:!!Female:!!70 to 74 years,70 to 74 years,70,74
+USA,2019,acs2019_B01001_summary,age65_sensitivity_numerator,B01001_047E,B01001_047M,,,Estimate!!Total:!!Female:!!75 to 79 years,75 to 79 years,75,79
+USA,2019,acs2019_B01001_summary,age65_sensitivity_numerator,B01001_048E,B01001_048M,,,Estimate!!Total:!!Female:!!80 to 84 years,80 to 84 years,80,84
+USA,2019,acs2019_B01001_summary,age65_sensitivity_numerator,B01001_049E,B01001_049M,,,Estimate!!Total:!!Female:!!85 years and over,85 years and over,85,
+USA,2019,acs2019_B01001_summary,all_age_population,B01001_001E,B01001_001M,,,Estimate!!Total:,total_all_ages,,
+USA,2022,acs2022_B07001_summary,in,B07001_065E,B07001_065M,B07001_065EA,B07001_065MA,Estimate!!Total:!!Moved from different state:,total_1plus,,
+USA,2022,acs2022_B07001_summary,in,B07001_066E,B07001_066M,B07001_066EA,B07001_066MA,Estimate!!Total:!!Moved from different state:!!1 to 4 years,1-4,1,4
+USA,2022,acs2022_B07001_summary,in,B07001_067E,B07001_067M,B07001_067EA,B07001_067MA,Estimate!!Total:!!Moved from different state:!!5 to 17 years,5-17,5,17
+USA,2022,acs2022_B07001_summary,in,B07001_068E,B07001_068M,B07001_068EA,B07001_068MA,Estimate!!Total:!!Moved from different state:!!18 and 19 years,18-19,18,19
+USA,2022,acs2022_B07001_summary,in,B07001_069E,B07001_069M,B07001_069EA,B07001_069MA,Estimate!!Total:!!Moved from different state:!!20 to 24 years,20-24,20,24
+USA,2022,acs2022_B07001_summary,in,B07001_070E,B07001_070M,B07001_070EA,B07001_070MA,Estimate!!Total:!!Moved from different state:!!25 to 29 years,25-29,25,29
+USA,2022,acs2022_B07001_summary,in,B07001_071E,B07001_071M,B07001_071EA,B07001_071MA,Estimate!!Total:!!Moved from different state:!!30 to 34 years,30-34,30,34
+USA,2022,acs2022_B07001_summary,in,B07001_072E,B07001_072M,B07001_072EA,B07001_072MA,Estimate!!Total:!!Moved from different state:!!35 to 39 years,35-39,35,39
+USA,2022,acs2022_B07001_summary,in,B07001_073E,B07001_073M,B07001_073EA,B07001_073MA,Estimate!!Total:!!Moved from different state:!!40 to 44 years,40-44,40,44
+USA,2022,acs2022_B07001_summary,in,B07001_074E,B07001_074M,B07001_074EA,B07001_074MA,Estimate!!Total:!!Moved from different state:!!45 to 49 years,45-49,45,49
+USA,2022,acs2022_B07001_summary,in,B07001_075E,B07001_075M,B07001_075EA,B07001_075MA,Estimate!!Total:!!Moved from different state:!!50 to 54 years,50-54,50,54
+USA,2022,acs2022_B07001_summary,in,B07001_076E,B07001_076M,B07001_076EA,B07001_076MA,Estimate!!Total:!!Moved from different state:!!55 to 59 years,55-59,55,59
+USA,2022,acs2022_B07001_summary,in,B07001_077E,B07001_077M,B07001_077EA,B07001_077MA,Estimate!!Total:!!Moved from different state:!!60 to 64 years,60-64,60,64
+USA,2022,acs2022_B07001_summary,in,B07001_078E,B07001_078M,B07001_078EA,B07001_078MA,Estimate!!Total:!!Moved from different state:!!65 to 69 years,65-69,65,69
+USA,2022,acs2022_B07001_summary,in,B07001_079E,B07001_079M,B07001_079EA,B07001_079MA,Estimate!!Total:!!Moved from different state:!!70 to 74 years,70-74,70,74
+USA,2022,acs2022_B07001_summary,in,B07001_080E,B07001_080M,B07001_080EA,B07001_080MA,Estimate!!Total:!!Moved from different state:!!75 years and over,75+,75,
+USA,2022,acs2022_B07401_summary,out,B07401_065E,B07401_065M,B07401_065EA,B07401_065MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:,total_1plus,,
+USA,2022,acs2022_B07401_summary,out,B07401_066E,B07401_066M,B07401_066EA,B07401_066MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!1 to 4 years,1-4,1,4
+USA,2022,acs2022_B07401_summary,out,B07401_067E,B07401_067M,B07401_067EA,B07401_067MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!5 to 17 years,5-17,5,17
+USA,2022,acs2022_B07401_summary,out,B07401_068E,B07401_068M,B07401_068EA,B07401_068MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!18 and 19 years,18-19,18,19
+USA,2022,acs2022_B07401_summary,out,B07401_069E,B07401_069M,B07401_069EA,B07401_069MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!20 to 24 years,20-24,20,24
+USA,2022,acs2022_B07401_summary,out,B07401_070E,B07401_070M,B07401_070EA,B07401_070MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!25 to 29 years,25-29,25,29
+USA,2022,acs2022_B07401_summary,out,B07401_071E,B07401_071M,B07401_071EA,B07401_071MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!30 to 34 years,30-34,30,34
+USA,2022,acs2022_B07401_summary,out,B07401_072E,B07401_072M,B07401_072EA,B07401_072MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!35 to 39 years,35-39,35,39
+USA,2022,acs2022_B07401_summary,out,B07401_073E,B07401_073M,B07401_073EA,B07401_073MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!40 to 44 years,40-44,40,44
+USA,2022,acs2022_B07401_summary,out,B07401_074E,B07401_074M,B07401_074EA,B07401_074MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!45 to 49 years,45-49,45,49
+USA,2022,acs2022_B07401_summary,out,B07401_075E,B07401_075M,B07401_075EA,B07401_075MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!50 to 54 years,50-54,50,54
+USA,2022,acs2022_B07401_summary,out,B07401_076E,B07401_076M,B07401_076EA,B07401_076MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!55 to 59 years,55-59,55,59
+USA,2022,acs2022_B07401_summary,out,B07401_077E,B07401_077M,B07401_077EA,B07401_077MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!60 to 64 years,60-64,60,64
+USA,2022,acs2022_B07401_summary,out,B07401_078E,B07401_078M,B07401_078EA,B07401_078MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!65 to 69 years,65-69,65,69
+USA,2022,acs2022_B07401_summary,out,B07401_079E,B07401_079M,B07401_079EA,B07401_079MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!70 to 74 years,70-74,70,74
+USA,2022,acs2022_B07401_summary,out,B07401_080E,B07401_080M,B07401_080EA,B07401_080MA,Estimate!!Total living in area 1 year ago:!!Moved to different state:!!75 years and over,75+,75,
+USA,2022,acs2022_B07001_summary,age_population,B07001_001E,B07001_001M,B07001_001EA,B07001_001MA,Estimate!!Total:,total_1plus,,
+USA,2022,acs2022_B07001_summary,age_population,B07001_002E,B07001_002M,B07001_002EA,B07001_002MA,Estimate!!Total:!!1 to 4 years,1-4,1,4
+USA,2022,acs2022_B07001_summary,age_population,B07001_003E,B07001_003M,B07001_003EA,B07001_003MA,Estimate!!Total:!!5 to 17 years,5-17,5,17
+USA,2022,acs2022_B07001_summary,age_population,B07001_004E,B07001_004M,B07001_004EA,B07001_004MA,Estimate!!Total:!!18 and 19 years,18-19,18,19
+USA,2022,acs2022_B07001_summary,age_population,B07001_005E,B07001_005M,B07001_005EA,B07001_005MA,Estimate!!Total:!!20 to 24 years,20-24,20,24
+USA,2022,acs2022_B07001_summary,age_population,B07001_006E,B07001_006M,B07001_006EA,B07001_006MA,Estimate!!Total:!!25 to 29 years,25-29,25,29
+USA,2022,acs2022_B07001_summary,age_population,B07001_007E,B07001_007M,B07001_007EA,B07001_007MA,Estimate!!Total:!!30 to 34 years,30-34,30,34
+USA,2022,acs2022_B07001_summary,age_population,B07001_008E,B07001_008M,B07001_008EA,B07001_008MA,Estimate!!Total:!!35 to 39 years,35-39,35,39
+USA,2022,acs2022_B07001_summary,age_population,B07001_009E,B07001_009M,B07001_009EA,B07001_009MA,Estimate!!Total:!!40 to 44 years,40-44,40,44
+USA,2022,acs2022_B07001_summary,age_population,B07001_010E,B07001_010M,B07001_010EA,B07001_010MA,Estimate!!Total:!!45 to 49 years,45-49,45,49
+USA,2022,acs2022_B07001_summary,age_population,B07001_011E,B07001_011M,B07001_011EA,B07001_011MA,Estimate!!Total:!!50 to 54 years,50-54,50,54
+USA,2022,acs2022_B07001_summary,age_population,B07001_012E,B07001_012M,B07001_012EA,B07001_012MA,Estimate!!Total:!!55 to 59 years,55-59,55,59
+USA,2022,acs2022_B07001_summary,age_population,B07001_013E,B07001_013M,B07001_013EA,B07001_013MA,Estimate!!Total:!!60 to 64 years,60-64,60,64
+USA,2022,acs2022_B07001_summary,age_population,B07001_014E,B07001_014M,B07001_014EA,B07001_014MA,Estimate!!Total:!!65 to 69 years,65-69,65,69
+USA,2022,acs2022_B07001_summary,age_population,B07001_015E,B07001_015M,B07001_015EA,B07001_015MA,Estimate!!Total:!!70 to 74 years,70-74,70,74
+USA,2022,acs2022_B07001_summary,age_population,B07001_016E,B07001_016M,B07001_016EA,B07001_016MA,Estimate!!Total:!!75 years and over,75+,75,
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_003E,B01001_003M,,,Estimate!!Total:!!Male:!!Under 5 years,under 5 years,0,4
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_004E,B01001_004M,,,Estimate!!Total:!!Male:!!5 to 9 years,5 to 9 years,5,9
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_005E,B01001_005M,,,Estimate!!Total:!!Male:!!10 to 14 years,10 to 14 years,10,14
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_006E,B01001_006M,,,Estimate!!Total:!!Male:!!15 to 17 years,15 to 17 years,15,17
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_007E,B01001_007M,,,Estimate!!Total:!!Male:!!18 and 19 years,18 and 19 years,18,19
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_008E,B01001_008M,,,Estimate!!Total:!!Male:!!20 years,20 years,20,20
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_009E,B01001_009M,,,Estimate!!Total:!!Male:!!21 years,21 years,21,21
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_010E,B01001_010M,,,Estimate!!Total:!!Male:!!22 to 24 years,22 to 24 years,22,24
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_011E,B01001_011M,,,Estimate!!Total:!!Male:!!25 to 29 years,25 to 29 years,25,29
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_012E,B01001_012M,,,Estimate!!Total:!!Male:!!30 to 34 years,30 to 34 years,30,34
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_013E,B01001_013M,,,Estimate!!Total:!!Male:!!35 to 39 years,35 to 39 years,35,39
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_014E,B01001_014M,,,Estimate!!Total:!!Male:!!40 to 44 years,40 to 44 years,40,44
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_015E,B01001_015M,,,Estimate!!Total:!!Male:!!45 to 49 years,45 to 49 years,45,49
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_016E,B01001_016M,,,Estimate!!Total:!!Male:!!50 to 54 years,50 to 54 years,50,54
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_017E,B01001_017M,,,Estimate!!Total:!!Male:!!55 to 59 years,55 to 59 years,55,59
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_018E,B01001_018M,,,Estimate!!Total:!!Male:!!60 and 61 years,60 and 61 years,60,61
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_019E,B01001_019M,,,Estimate!!Total:!!Male:!!62 to 64 years,62 to 64 years,62,64
+USA,2022,acs2022_B01001_summary,age65_sensitivity_numerator,B01001_020E,B01001_020M,,,Estimate!!Total:!!Male:!!65 and 66 years,65 and 66 years,65,66
+USA,2022,acs2022_B01001_summary,age65_sensitivity_numerator,B01001_021E,B01001_021M,,,Estimate!!Total:!!Male:!!67 to 69 years,67 to 69 years,67,69
+USA,2022,acs2022_B01001_summary,age65_sensitivity_numerator,B01001_022E,B01001_022M,,,Estimate!!Total:!!Male:!!70 to 74 years,70 to 74 years,70,74
+USA,2022,acs2022_B01001_summary,age65_sensitivity_numerator,B01001_023E,B01001_023M,,,Estimate!!Total:!!Male:!!75 to 79 years,75 to 79 years,75,79
+USA,2022,acs2022_B01001_summary,age65_sensitivity_numerator,B01001_024E,B01001_024M,,,Estimate!!Total:!!Male:!!80 to 84 years,80 to 84 years,80,84
+USA,2022,acs2022_B01001_summary,age65_sensitivity_numerator,B01001_025E,B01001_025M,,,Estimate!!Total:!!Male:!!85 years and over,85 years and over,85,
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_027E,B01001_027M,,,Estimate!!Total:!!Female:!!Under 5 years,under 5 years,0,4
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_028E,B01001_028M,,,Estimate!!Total:!!Female:!!5 to 9 years,5 to 9 years,5,9
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_029E,B01001_029M,,,Estimate!!Total:!!Female:!!10 to 14 years,10 to 14 years,10,14
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_030E,B01001_030M,,,Estimate!!Total:!!Female:!!15 to 17 years,15 to 17 years,15,17
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_031E,B01001_031M,,,Estimate!!Total:!!Female:!!18 and 19 years,18 and 19 years,18,19
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_032E,B01001_032M,,,Estimate!!Total:!!Female:!!20 years,20 years,20,20
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_033E,B01001_033M,,,Estimate!!Total:!!Female:!!21 years,21 years,21,21
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_034E,B01001_034M,,,Estimate!!Total:!!Female:!!22 to 24 years,22 to 24 years,22,24
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_035E,B01001_035M,,,Estimate!!Total:!!Female:!!25 to 29 years,25 to 29 years,25,29
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_036E,B01001_036M,,,Estimate!!Total:!!Female:!!30 to 34 years,30 to 34 years,30,34
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_037E,B01001_037M,,,Estimate!!Total:!!Female:!!35 to 39 years,35 to 39 years,35,39
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_038E,B01001_038M,,,Estimate!!Total:!!Female:!!40 to 44 years,40 to 44 years,40,44
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_039E,B01001_039M,,,Estimate!!Total:!!Female:!!45 to 49 years,45 to 49 years,45,49
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_040E,B01001_040M,,,Estimate!!Total:!!Female:!!50 to 54 years,50 to 54 years,50,54
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_041E,B01001_041M,,,Estimate!!Total:!!Female:!!55 to 59 years,55 to 59 years,55,59
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_042E,B01001_042M,,,Estimate!!Total:!!Female:!!60 and 61 years,60 and 61 years,60,61
+USA,2022,acs2022_B01001_summary,population_total_reconciliation,B01001_043E,B01001_043M,,,Estimate!!Total:!!Female:!!62 to 64 years,62 to 64 years,62,64
+USA,2022,acs2022_B01001_summary,age65_sensitivity_numerator,B01001_044E,B01001_044M,,,Estimate!!Total:!!Female:!!65 and 66 years,65 and 66 years,65,66
+USA,2022,acs2022_B01001_summary,age65_sensitivity_numerator,B01001_045E,B01001_045M,,,Estimate!!Total:!!Female:!!67 to 69 years,67 to 69 years,67,69
+USA,2022,acs2022_B01001_summary,age65_sensitivity_numerator,B01001_046E,B01001_046M,,,Estimate!!Total:!!Female:!!70 to 74 years,70 to 74 years,70,74
+USA,2022,acs2022_B01001_summary,age65_sensitivity_numerator,B01001_047E,B01001_047M,,,Estimate!!Total:!!Female:!!75 to 79 years,75 to 79 years,75,79
+USA,2022,acs2022_B01001_summary,age65_sensitivity_numerator,B01001_048E,B01001_048M,,,Estimate!!Total:!!Female:!!80 to 84 years,80 to 84 years,80,84
+USA,2022,acs2022_B01001_summary,age65_sensitivity_numerator,B01001_049E,B01001_049M,,,Estimate!!Total:!!Female:!!85 years and over,85 years and over,85,
+USA,2022,acs2022_B01001_summary,all_age_population,B01001_001E,B01001_001M,,,Estimate!!Total:,total_all_ages,,
+JPN,2019,jpn2019_in,in,sheet:移動者 総数;column0:11,,,,総  数  1),total_all_ages,,
+JPN,2019,jpn2019_in,in,sheet:移動者 総数;column0:12,,,,0～4歳,0-4,0,4
+JPN,2019,jpn2019_in,in,sheet:移動者 総数;column0:13,,,,5～9,5-9,5,9
+JPN,2019,jpn2019_in,in,sheet:移動者 総数;column0:14,,,,10～14,10-14,10,14
+JPN,2019,jpn2019_in,in,sheet:移動者 総数;column0:15,,,,15～19,15-19,15,19
+JPN,2019,jpn2019_in,in,sheet:移動者 総数;column0:16,,,,20～24,20-24,20,24
+JPN,2019,jpn2019_in,in,sheet:移動者 総数;column0:17,,,,25～29,25-29,25,29
+JPN,2019,jpn2019_in,in,sheet:移動者 総数;column0:18,,,,30～34,30-34,30,34
+JPN,2019,jpn2019_in,in,sheet:移動者 総数;column0:19,,,,35～39,35-39,35,39
+JPN,2019,jpn2019_in,in,sheet:移動者 総数;column0:20,,,,40～44,40-44,40,44
+JPN,2019,jpn2019_in,in,sheet:移動者 総数;column0:21,,,,45～49,45-49,45,49
+JPN,2019,jpn2019_in,in,sheet:移動者 総数;column0:22,,,,50～54,50-54,50,54
+JPN,2019,jpn2019_in,in,sheet:移動者 総数;column0:23,,,,55～59,55-59,55,59
+JPN,2019,jpn2019_in,in,sheet:移動者 総数;column0:24,,,,60～64,60-64,60,64
+JPN,2019,jpn2019_in,in,sheet:移動者 総数;column0:25,,,,65～69,65-69,65,69
+JPN,2019,jpn2019_in,in,sheet:移動者 総数;column0:26,,,,70～74,70-74,70,74
+JPN,2019,jpn2019_in,in,sheet:移動者 総数;column0:27,,,,75～79,75-79,75,79
+JPN,2019,jpn2019_in,in,sheet:移動者 総数;column0:28,,,,80～84,80-84,80,84
+JPN,2019,jpn2019_in,in,sheet:移動者 総数;column0:29,,,,85～89,85-89,85,89
+JPN,2019,jpn2019_in,in,sheet:移動者 総数;column0:30,,,,90歳以上,90+,90,
+JPN,2019,jpn2019_out,out,sheet:移動者 総数;column0:11,,,,総  数  1),total_all_ages,,
+JPN,2019,jpn2019_out,out,sheet:移動者 総数;column0:12,,,,0～4歳,0-4,0,4
+JPN,2019,jpn2019_out,out,sheet:移動者 総数;column0:13,,,,5～9,5-9,5,9
+JPN,2019,jpn2019_out,out,sheet:移動者 総数;column0:14,,,,10～14,10-14,10,14
+JPN,2019,jpn2019_out,out,sheet:移動者 総数;column0:15,,,,15～19,15-19,15,19
+JPN,2019,jpn2019_out,out,sheet:移動者 総数;column0:16,,,,20～24,20-24,20,24
+JPN,2019,jpn2019_out,out,sheet:移動者 総数;column0:17,,,,25～29,25-29,25,29
+JPN,2019,jpn2019_out,out,sheet:移動者 総数;column0:18,,,,30～34,30-34,30,34
+JPN,2019,jpn2019_out,out,sheet:移動者 総数;column0:19,,,,35～39,35-39,35,39
+JPN,2019,jpn2019_out,out,sheet:移動者 総数;column0:20,,,,40～44,40-44,40,44
+JPN,2019,jpn2019_out,out,sheet:移動者 総数;column0:21,,,,45～49,45-49,45,49
+JPN,2019,jpn2019_out,out,sheet:移動者 総数;column0:22,,,,50～54,50-54,50,54
+JPN,2019,jpn2019_out,out,sheet:移動者 総数;column0:23,,,,55～59,55-59,55,59
+JPN,2019,jpn2019_out,out,sheet:移動者 総数;column0:24,,,,60～64,60-64,60,64
+JPN,2019,jpn2019_out,out,sheet:移動者 総数;column0:25,,,,65～69,65-69,65,69
+JPN,2019,jpn2019_out,out,sheet:移動者 総数;column0:26,,,,70～74,70-74,70,74
+JPN,2019,jpn2019_out,out,sheet:移動者 総数;column0:27,,,,75～79,75-79,75,79
+JPN,2019,jpn2019_out,out,sheet:移動者 総数;column0:28,,,,80～84,80-84,80,84
+JPN,2019,jpn2019_out,out,sheet:移動者 総数;column0:29,,,,85～89,85-89,85,89
+JPN,2019,jpn2019_out,out,sheet:移動者 総数;column0:30,,,,90歳以上,90+,90,
+JPN,2019,jpn2019_net,net,sheet:移動者 総数;column0:11,,,,総  数  1),total_all_ages,,
+JPN,2019,jpn2019_net,net,sheet:移動者 総数;column0:12,,,,0～4歳,0-4,0,4
+JPN,2019,jpn2019_net,net,sheet:移動者 総数;column0:13,,,,5～9,5-9,5,9
+JPN,2019,jpn2019_net,net,sheet:移動者 総数;column0:14,,,,10～14,10-14,10,14
+JPN,2019,jpn2019_net,net,sheet:移動者 総数;column0:15,,,,15～19,15-19,15,19
+JPN,2019,jpn2019_net,net,sheet:移動者 総数;column0:16,,,,20～24,20-24,20,24
+JPN,2019,jpn2019_net,net,sheet:移動者 総数;column0:17,,,,25～29,25-29,25,29
+JPN,2019,jpn2019_net,net,sheet:移動者 総数;column0:18,,,,30～34,30-34,30,34
+JPN,2019,jpn2019_net,net,sheet:移動者 総数;column0:19,,,,35～39,35-39,35,39
+JPN,2019,jpn2019_net,net,sheet:移動者 総数;column0:20,,,,40～44,40-44,40,44
+JPN,2019,jpn2019_net,net,sheet:移動者 総数;column0:21,,,,45～49,45-49,45,49
+JPN,2019,jpn2019_net,net,sheet:移動者 総数;column0:22,,,,50～54,50-54,50,54
+JPN,2019,jpn2019_net,net,sheet:移動者 総数;column0:23,,,,55～59,55-59,55,59
+JPN,2019,jpn2019_net,net,sheet:移動者 総数;column0:24,,,,60～64,60-64,60,64
+JPN,2019,jpn2019_net,net,sheet:移動者 総数;column0:25,,,,65～69,65-69,65,69
+JPN,2019,jpn2019_net,net,sheet:移動者 総数;column0:26,,,,70～74,70-74,70,74
+JPN,2019,jpn2019_net,net,sheet:移動者 総数;column0:27,,,,75～79,75-79,75,79
+JPN,2019,jpn2019_net,net,sheet:移動者 総数;column0:28,,,,80～84,80-84,80,84
+JPN,2019,jpn2019_net,net,sheet:移動者 総数;column0:29,,,,85～89,85-89,85,89
+JPN,2019,jpn2019_net,net,sheet:移動者 総数;column0:30,,,,90歳以上,90+,90,
+JPN,2019,jpn2019_population,age_population,column0:12;total population;both sexes,,,,総    数,total_all_ages,,
+JPN,2019,jpn2019_population,age_population,column0:13;total population;both sexes,,,,0～4歳,0-4,0,4
+JPN,2019,jpn2019_population,age_population,column0:14;total population;both sexes,,,,5～9,5-9,5,9
+JPN,2019,jpn2019_population,age_population,column0:15;total population;both sexes,,,,10～14,10-14,10,14
+JPN,2019,jpn2019_population,age_population,column0:16;total population;both sexes,,,,15～19,15-19,15,19
+JPN,2019,jpn2019_population,age_population,column0:17;total population;both sexes,,,,20～24,20-24,20,24
+JPN,2019,jpn2019_population,age_population,column0:18;total population;both sexes,,,,25～29,25-29,25,29
+JPN,2019,jpn2019_population,age_population,column0:19;total population;both sexes,,,,30～34,30-34,30,34
+JPN,2019,jpn2019_population,age_population,column0:20;total population;both sexes,,,,35～39,35-39,35,39
+JPN,2019,jpn2019_population,age_population,column0:21;total population;both sexes,,,,40～44,40-44,40,44
+JPN,2019,jpn2019_population,age_population,column0:22;total population;both sexes,,,,45～49,45-49,45,49
+JPN,2019,jpn2019_population,age_population,column0:23;total population;both sexes,,,,50～54,50-54,50,54
+JPN,2019,jpn2019_population,age_population,column0:24;total population;both sexes,,,,55～59,55-59,55,59
+JPN,2019,jpn2019_population,age_population,column0:25;total population;both sexes,,,,60～64,60-64,60,64
+JPN,2019,jpn2019_population,age_population,column0:26;total population;both sexes,,,,65～69,65-69,65,69
+JPN,2019,jpn2019_population,age_population,column0:27;total population;both sexes,,,,70～74,70-74,70,74
+JPN,2019,jpn2019_population,age_population,column0:28;total population;both sexes,,,,75～79,75-79,75,79
+JPN,2019,jpn2019_population,age_population,column0:29;total population;both sexes,,,,80～84,80-84,80,84
+JPN,2019,jpn2019_population,age_population,column0:30;total population;both sexes,,,,85歳以上,85+,85,
+JPN,2022,jpn2022_in,in,sheet:移動者;column0:12,,,,総 数 1),total_all_ages,,
+JPN,2022,jpn2022_in,in,sheet:移動者;column0:13,,,,0～4歳,0-4,0,4
+JPN,2022,jpn2022_in,in,sheet:移動者;column0:14,,,,5～9,5-9,5,9
+JPN,2022,jpn2022_in,in,sheet:移動者;column0:15,,,,10～14,10-14,10,14
+JPN,2022,jpn2022_in,in,sheet:移動者;column0:16,,,,15～19,15-19,15,19
+JPN,2022,jpn2022_in,in,sheet:移動者;column0:17,,,,20～24,20-24,20,24
+JPN,2022,jpn2022_in,in,sheet:移動者;column0:18,,,,25～29,25-29,25,29
+JPN,2022,jpn2022_in,in,sheet:移動者;column0:19,,,,30～34,30-34,30,34
+JPN,2022,jpn2022_in,in,sheet:移動者;column0:20,,,,35～39,35-39,35,39
+JPN,2022,jpn2022_in,in,sheet:移動者;column0:21,,,,40～44,40-44,40,44
+JPN,2022,jpn2022_in,in,sheet:移動者;column0:22,,,,45～49,45-49,45,49
+JPN,2022,jpn2022_in,in,sheet:移動者;column0:23,,,,50～54,50-54,50,54
+JPN,2022,jpn2022_in,in,sheet:移動者;column0:24,,,,55～59,55-59,55,59
+JPN,2022,jpn2022_in,in,sheet:移動者;column0:25,,,,60～64,60-64,60,64
+JPN,2022,jpn2022_in,in,sheet:移動者;column0:26,,,,65～69,65-69,65,69
+JPN,2022,jpn2022_in,in,sheet:移動者;column0:27,,,,70～74,70-74,70,74
+JPN,2022,jpn2022_in,in,sheet:移動者;column0:28,,,,75～79,75-79,75,79
+JPN,2022,jpn2022_in,in,sheet:移動者;column0:29,,,,80～84,80-84,80,84
+JPN,2022,jpn2022_in,in,sheet:移動者;column0:30,,,,85～89,85-89,85,89
+JPN,2022,jpn2022_in,in,sheet:移動者;column0:31,,,,90歳以上,90+,90,
+JPN,2022,jpn2022_out,out,sheet:移動者;column0:12,,,,総 数 1),total_all_ages,,
+JPN,2022,jpn2022_out,out,sheet:移動者;column0:13,,,,0～4歳,0-4,0,4
+JPN,2022,jpn2022_out,out,sheet:移動者;column0:14,,,,5～9,5-9,5,9
+JPN,2022,jpn2022_out,out,sheet:移動者;column0:15,,,,10～14,10-14,10,14
+JPN,2022,jpn2022_out,out,sheet:移動者;column0:16,,,,15～19,15-19,15,19
+JPN,2022,jpn2022_out,out,sheet:移動者;column0:17,,,,20～24,20-24,20,24
+JPN,2022,jpn2022_out,out,sheet:移動者;column0:18,,,,25～29,25-29,25,29
+JPN,2022,jpn2022_out,out,sheet:移動者;column0:19,,,,30～34,30-34,30,34
+JPN,2022,jpn2022_out,out,sheet:移動者;column0:20,,,,35～39,35-39,35,39
+JPN,2022,jpn2022_out,out,sheet:移動者;column0:21,,,,40～44,40-44,40,44
+JPN,2022,jpn2022_out,out,sheet:移動者;column0:22,,,,45～49,45-49,45,49
+JPN,2022,jpn2022_out,out,sheet:移動者;column0:23,,,,50～54,50-54,50,54
+JPN,2022,jpn2022_out,out,sheet:移動者;column0:24,,,,55～59,55-59,55,59
+JPN,2022,jpn2022_out,out,sheet:移動者;column0:25,,,,60～64,60-64,60,64
+JPN,2022,jpn2022_out,out,sheet:移動者;column0:26,,,,65～69,65-69,65,69
+JPN,2022,jpn2022_out,out,sheet:移動者;column0:27,,,,70～74,70-74,70,74
+JPN,2022,jpn2022_out,out,sheet:移動者;column0:28,,,,75～79,75-79,75,79
+JPN,2022,jpn2022_out,out,sheet:移動者;column0:29,,,,80～84,80-84,80,84
+JPN,2022,jpn2022_out,out,sheet:移動者;column0:30,,,,85～89,85-89,85,89
+JPN,2022,jpn2022_out,out,sheet:移動者;column0:31,,,,90歳以上,90+,90,
+JPN,2022,jpn2022_net,net,sheet:移動者;column0:12,,,,総 数 1),total_all_ages,,
+JPN,2022,jpn2022_net,net,sheet:移動者;column0:13,,,,0～4歳,0-4,0,4
+JPN,2022,jpn2022_net,net,sheet:移動者;column0:14,,,,5～9,5-9,5,9
+JPN,2022,jpn2022_net,net,sheet:移動者;column0:15,,,,10～14,10-14,10,14
+JPN,2022,jpn2022_net,net,sheet:移動者;column0:16,,,,15～19,15-19,15,19
+JPN,2022,jpn2022_net,net,sheet:移動者;column0:17,,,,20～24,20-24,20,24
+JPN,2022,jpn2022_net,net,sheet:移動者;column0:18,,,,25～29,25-29,25,29
+JPN,2022,jpn2022_net,net,sheet:移動者;column0:19,,,,30～34,30-34,30,34
+JPN,2022,jpn2022_net,net,sheet:移動者;column0:20,,,,35～39,35-39,35,39
+JPN,2022,jpn2022_net,net,sheet:移動者;column0:21,,,,40～44,40-44,40,44
+JPN,2022,jpn2022_net,net,sheet:移動者;column0:22,,,,45～49,45-49,45,49
+JPN,2022,jpn2022_net,net,sheet:移動者;column0:23,,,,50～54,50-54,50,54
+JPN,2022,jpn2022_net,net,sheet:移動者;column0:24,,,,55～59,55-59,55,59
+JPN,2022,jpn2022_net,net,sheet:移動者;column0:25,,,,60～64,60-64,60,64
+JPN,2022,jpn2022_net,net,sheet:移動者;column0:26,,,,65～69,65-69,65,69
+JPN,2022,jpn2022_net,net,sheet:移動者;column0:27,,,,70～74,70-74,70,74
+JPN,2022,jpn2022_net,net,sheet:移動者;column0:28,,,,75～79,75-79,75,79
+JPN,2022,jpn2022_net,net,sheet:移動者;column0:29,,,,80～84,80-84,80,84
+JPN,2022,jpn2022_net,net,sheet:移動者;column0:30,,,,85～89,85-89,85,89
+JPN,2022,jpn2022_net,net,sheet:移動者;column0:31,,,,90歳以上,90+,90,
+JPN,2022,jpn2022_population,age_population,column0:15;total population;both sexes,,,,総数,total_all_ages,,
+JPN,2022,jpn2022_population,age_population,column0:16;total population;both sexes,,,,0～4歳,0-4,0,4
+JPN,2022,jpn2022_population,age_population,column0:17;total population;both sexes,,,,5～9歳,5-9,5,9
+JPN,2022,jpn2022_population,age_population,column0:18;total population;both sexes,,,,10～14歳,10-14,10,14
+JPN,2022,jpn2022_population,age_population,column0:19;total population;both sexes,,,,15～19歳,15-19,15,19
+JPN,2022,jpn2022_population,age_population,column0:20;total population;both sexes,,,,20～24歳,20-24,20,24
+JPN,2022,jpn2022_population,age_population,column0:21;total population;both sexes,,,,25～29歳,25-29,25,29
+JPN,2022,jpn2022_population,age_population,column0:22;total population;both sexes,,,,30～34歳,30-34,30,34
+JPN,2022,jpn2022_population,age_population,column0:23;total population;both sexes,,,,35～39歳,35-39,35,39
+JPN,2022,jpn2022_population,age_population,column0:24;total population;both sexes,,,,40～44歳,40-44,40,44
+JPN,2022,jpn2022_population,age_population,column0:25;total population;both sexes,,,,45～49歳,45-49,45,49
+JPN,2022,jpn2022_population,age_population,column0:26;total population;both sexes,,,,50～54歳,50-54,50,54
+JPN,2022,jpn2022_population,age_population,column0:27;total population;both sexes,,,,55～59歳,55-59,55,59
+JPN,2022,jpn2022_population,age_population,column0:28;total population;both sexes,,,,60～64歳,60-64,60,64
+JPN,2022,jpn2022_population,age_population,column0:29;total population;both sexes,,,,65～69歳,65-69,65,69
+JPN,2022,jpn2022_population,age_population,column0:30;total population;both sexes,,,,70～74歳,70-74,70,74
+JPN,2022,jpn2022_population,age_population,column0:31;total population;both sexes,,,,75～79歳,75-79,75,79
+JPN,2022,jpn2022_population,age_population,column0:32;total population;both sexes,,,,80～84歳,80-84,80,84
+JPN,2022,jpn2022_population,age_population,column0:33;total population;both sexes,,,,85歳以上,85+,85,

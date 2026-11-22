@@ -1,0 +1,177 @@
+[
+  {
+    "id": "japan_young_r",
+    "path": "analysis/age_migration/results/associations.csv",
+    "selection": {
+      "country": "JPN",
+      "year": 2022,
+      "age_group": "20-24",
+      "variant": "primary"
+    },
+    "field": "pearson",
+    "source_value": -0.820294558534078,
+    "scale": 1,
+    "display": "-0.820",
+    "source_sha256": "140573a87d56a6d67cfa9ec05e62da2badcc09b2107f0518fc0c1c091cf513b5"
+  },
+  {
+    "id": "japan_without_tokyo",
+    "path": "analysis/age_migration/results/associations.csv",
+    "selection": {
+      "country": "JPN",
+      "year": 2022,
+      "age_group": "20-24",
+      "variant": "without_Tokyo"
+    },
+    "field": "pearson",
+    "source_value": -0.795747417132571,
+    "scale": 1,
+    "display": "-0.796",
+    "source_sha256": "140573a87d56a6d67cfa9ec05e62da2badcc09b2107f0518fc0c1c091cf513b5"
+  },
+  {
+    "id": "japan_young_2019",
+    "path": "analysis/age_migration/results/associations.csv",
+    "selection": {
+      "country": "JPN",
+      "year": 2019,
+      "age_group": "20-24",
+      "variant": "primary"
+    },
+    "field": "pearson",
+    "source_value": -0.812245183561983,
+    "scale": 1,
+    "display": "-0.812",
+    "source_sha256": "140573a87d56a6d67cfa9ec05e62da2badcc09b2107f0518fc0c1c091cf513b5"
+  },
+  {
+    "id": "usa_young_r",
+    "path": "analysis/age_migration/results/associations.csv",
+    "selection": {
+      "country": "USA",
+      "year": 2022,
+      "age_group": "20-24",
+      "variant": "primary"
+    },
+    "field": "pearson",
+    "source_value": -0.362190260956796,
+    "scale": 1,
+    "display": "-0.362",
+    "source_sha256": "140573a87d56a6d67cfa9ec05e62da2badcc09b2107f0518fc0c1c091cf513b5"
+  },
+  {
+    "id": "usa_young_2019",
+    "path": "analysis/age_migration/results/associations.csv",
+    "selection": {
+      "country": "USA",
+      "year": 2019,
+      "age_group": "20-24",
+      "variant": "primary"
+    },
+    "field": "pearson",
+    "source_value": -0.336606857601331,
+    "scale": 1,
+    "display": "-0.337",
+    "source_sha256": "140573a87d56a6d67cfa9ec05e62da2badcc09b2107f0518fc0c1c091cf513b5"
+  },
+  {
+    "id": "usa_without_dc",
+    "path": "analysis/age_migration/results/associations.csv",
+    "selection": {
+      "country": "USA",
+      "year": 2022,
+      "age_group": "20-24",
+      "variant": "without_DC"
+    },
+    "field": "pearson",
+    "source_value": -0.212466676462404,
+    "scale": 1,
+    "display": "-0.212",
+    "source_sha256": "140573a87d56a6d67cfa9ec05e62da2badcc09b2107f0518fc0c1c091cf513b5"
+  },
+  {
+    "id": "between_covariance",
+    "path": "analysis/member4/results/covariance_summary.csv",
+    "selection": {
+      "year": 2022
+    },
+    "field": "between_fraction",
+    "source_value": 0.9909691739,
+    "scale": 100,
+    "display": "99.1",
+    "source_sha256": "c22e96eab5f272116a8d17b3cb2e8241ad5faa501602c37fa2a80499f01a42dd"
+  },
+  {
+    "id": "us_uncertain",
+    "path": "analysis/age_migration/results/us_uncertainty_summary.csv",
+    "selection": {
+      "year": 2022,
+      "age_group": "20-24"
+    },
+    "field": "intervals_including_zero",
+    "source_value": 35.0,
+    "scale": 1,
+    "display": "35",
+    "source_sha256": "f095742ee3985d492bb8adb2b9291a35466618728c9d85bb89457675045419d1"
+  },
+  {
+    "id": "tokyo_total",
+    "path": "analysis/age_migration/results/tokyo_decomposition.csv",
+    "selection": {
+      "year": 2022
+    },
+    "field": "total_net",
+    "source_value": 38023.0,
+    "scale": 1,
+    "display": "+38,023",
+    "source_sha256": "0bbf3f43b71f9b9e396f84432538b6f50865f15e42252c672112ca71152eab64"
+  },
+  {
+    "id": "tokyo_teen",
+    "path": "analysis/age_migration/results/tokyo_decomposition.csv",
+    "selection": {
+      "year": 2022
+    },
+    "field": "age15_19_net",
+    "source_value": 13795.0,
+    "scale": 1,
+    "display": "+13,795",
+    "source_sha256": "0bbf3f43b71f9b9e396f84432538b6f50865f15e42252c672112ca71152eab64"
+  },
+  {
+    "id": "tokyo_young",
+    "path": "analysis/age_migration/results/tokyo_decomposition.csv",
+    "selection": {
+      "year": 2022
+    },
+    "field": "age20_24_net",
+    "source_value": 57153.0,
+    "scale": 1,
+    "display": "+57,153",
+    "source_sha256": "0bbf3f43b71f9b9e396f84432538b6f50865f15e42252c672112ca71152eab64"
+  },
+  {
+    "id": "tokyo_other",
+    "path": "analysis/age_migration/results/tokyo_decomposition.csv",
+    "selection": {
+      "year": 2022
+    },
+    "field": "all_other_ages_net",
+    "source_value": -32925.0,
+    "scale": 1,
+    "display": "-32,925",
+    "source_sha256": "0bbf3f43b71f9b9e396f84432538b6f50865f15e42252c672112ca71152eab64"
+  },
+  {
+    "id": "tokyo_older",
+    "path": "analysis/age_migration/results/tokyo_decomposition.csv",
+    "selection": {
+      "year": 2022
+    },
+    "field": "age65plus_net",
+    "source_value": -9284.0,
+    "scale": 1,
+    "display": "-9,284",
+    "source_sha256": "0bbf3f43b71f9b9e396f84432538b6f50865f15e42252c672112ca71152eab64"
+  }
+]

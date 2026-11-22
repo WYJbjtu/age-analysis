@@ -1,0 +1,929 @@
+[
+  {
+    "figure": "A_national",
+    "text_outside_canvas": [],
+    "countries": [
+      {
+        "country": "USA",
+        "observations": 23,
+        "endpoints": [
+          {
+            "year": 2000,
+            "age65_share_pct": 12.18581699
+          },
+          {
+            "year": 2022,
+            "age65_share_pct": 16.91962039
+          }
+        ]
+      },
+      {
+        "country": "JPN",
+        "observations": 23,
+        "endpoints": [
+          {
+            "year": 2000,
+            "age65_share_pct": 17.44183117
+          },
+          {
+            "year": 2022,
+            "age65_share_pct": 29.40264731
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "figure": "B_distribution",
+    "text_outside_canvas": [],
+    "countries": {
+      "USA": {
+        "points": 51,
+        "region_ids": [
+          "US-UT",
+          "US-DC",
+          "US-TX",
+          "US-AK",
+          "US-GA",
+          "US-CO",
+          "US-CA",
+          "US-OK",
+          "US-ND",
+          "US-WA",
+          "US-VA",
+          "US-NV",
+          "US-IN",
+          "US-NE",
+          "US-MD",
+          "US-LA",
+          "US-ID",
+          "US-KS",
+          "US-IL",
+          "US-MS",
+          "US-TN",
+          "US-NC",
+          "US-NJ",
+          "US-MN",
+          "US-KY",
+          "US-AR",
+          "US-SD",
+          "US-AL",
+          "US-MO",
+          "US-MA",
+          "US-NY",
+          "US-CT",
+          "US-IA",
+          "US-OH",
+          "US-WY",
+          "US-WI",
+          "US-MI",
+          "US-AZ",
+          "US-RI",
+          "US-SC",
+          "US-NM",
+          "US-OR",
+          "US-PA",
+          "US-MT",
+          "US-NH",
+          "US-HI",
+          "US-DE",
+          "US-WV",
+          "US-VT",
+          "US-FL",
+          "US-ME"
+        ],
+        "median": 17.80763761,
+        "q1": 16.91866692,
+        "q3": 18.828257710000003,
+        "labels": [
+          "Utah",
+          "Maine"
+        ]
+      },
+      "JPN": {
+        "points": 47,
+        "region_ids": [
+          "JP-13",
+          "JP-47",
+          "JP-23",
+          "JP-14",
+          "JP-25",
+          "JP-11",
+          "JP-27",
+          "JP-12",
+          "JP-40",
+          "JP-04",
+          "JP-26",
+          "JP-28",
+          "JP-09",
+          "JP-34",
+          "JP-17",
+          "JP-08",
+          "JP-24",
+          "JP-22",
+          "JP-10",
+          "JP-33",
+          "JP-21",
+          "JP-18",
+          "JP-41",
+          "JP-19",
+          "JP-43",
+          "JP-29",
+          "JP-37",
+          "JP-20",
+          "JP-07",
+          "JP-01",
+          "JP-16",
+          "JP-31",
+          "JP-45",
+          "JP-15",
+          "JP-46",
+          "JP-38",
+          "JP-42",
+          "JP-44",
+          "JP-30",
+          "JP-03",
+          "JP-32",
+          "JP-02",
+          "JP-06",
+          "JP-36",
+          "JP-35",
+          "JP-39",
+          "JP-05"
+        ],
+        "median": 31.5,
+        "q1": 29.85,
+        "q3": 33.7,
+        "labels": [
+          "Tokyo",
+          "Akita"
+        ]
+      }
+    },
+    "display_separation_only": true,
+    "omitted_regions": 0
+  },
+  {
+    "figure": "C_manufacturing",
+    "text_outside_canvas": [],
+    "countries": [
+      {
+        "country": "USA",
+        "rows": [
+          {
+            "country": "USA",
+            "year": 2011,
+            "regions": 51,
+            "manufacturing_q1_pct": 7.791414423,
+            "manufacturing_median_pct": 11.1723282044,
+            "manufacturing_q3_pct": 15.2486022847,
+            "services_q1_pct": 59.8153791271,
+            "services_median_pct": 65.8238768755,
+            "services_q3_pct": 70.430287652
+          },
+          {
+            "country": "USA",
+            "year": 2012,
+            "regions": 51,
+            "manufacturing_q1_pct": 7.6239219798,
+            "manufacturing_median_pct": 11.2669476498,
+            "manufacturing_q3_pct": 15.1909082441,
+            "services_q1_pct": 60.3843261544,
+            "services_median_pct": 65.9942237959,
+            "services_q3_pct": 70.9415312926
+          },
+          {
+            "country": "USA",
+            "year": 2013,
+            "regions": 51,
+            "manufacturing_q1_pct": 7.4736946245,
+            "manufacturing_median_pct": 11.032690177,
+            "manufacturing_q3_pct": 14.6562103961,
+            "services_q1_pct": 60.7560921437,
+            "services_median_pct": 66.0830932666,
+            "services_q3_pct": 71.5891784574
+          },
+          {
+            "country": "USA",
+            "year": 2014,
+            "regions": 51,
+            "manufacturing_q1_pct": 7.3765920287,
+            "manufacturing_median_pct": 10.9428632372,
+            "manufacturing_q3_pct": 14.6985472944,
+            "services_q1_pct": 61.5513177935,
+            "services_median_pct": 66.6561555362,
+            "services_q3_pct": 71.3470211082
+          },
+          {
+            "country": "USA",
+            "year": 2015,
+            "regions": 51,
+            "manufacturing_q1_pct": 7.4314405675,
+            "manufacturing_median_pct": 10.5373574453,
+            "manufacturing_q3_pct": 14.7957137037,
+            "services_q1_pct": 62.9791856876,
+            "services_median_pct": 67.425002721,
+            "services_q3_pct": 72.3213691875
+          },
+          {
+            "country": "USA",
+            "year": 2016,
+            "regions": 51,
+            "manufacturing_q1_pct": 7.3603886848,
+            "manufacturing_median_pct": 10.2337811848,
+            "manufacturing_q3_pct": 14.4626181315,
+            "services_q1_pct": 63.693508804,
+            "services_median_pct": 68.3078782588,
+            "services_q3_pct": 72.4996943421
+          },
+          {
+            "country": "USA",
+            "year": 2017,
+            "regions": 51,
+            "manufacturing_q1_pct": 7.2203903953,
+            "manufacturing_median_pct": 10.1649868999,
+            "manufacturing_q3_pct": 14.3363783916,
+            "services_q1_pct": 63.9111301071,
+            "services_median_pct": 68.3070742693,
+            "services_q3_pct": 72.5055368747
+          },
+          {
+            "country": "USA",
+            "year": 2018,
+            "regions": 51,
+            "manufacturing_q1_pct": 7.708124725,
+            "manufacturing_median_pct": 10.6479339515,
+            "manufacturing_q3_pct": 14.6886703395,
+            "services_q1_pct": 63.6310574851,
+            "services_median_pct": 68.2133242837,
+            "services_q3_pct": 72.7347578218
+          },
+          {
+            "country": "USA",
+            "year": 2019,
+            "regions": 51,
+            "manufacturing_q1_pct": 7.2945344033,
+            "manufacturing_median_pct": 10.5015475384,
+            "manufacturing_q3_pct": 14.2824924227,
+            "services_q1_pct": 64.6181207967,
+            "services_median_pct": 69.0035681083,
+            "services_q3_pct": 72.6332712779
+          },
+          {
+            "country": "USA",
+            "year": 2020,
+            "regions": 51,
+            "manufacturing_q1_pct": 7.6463091266,
+            "manufacturing_median_pct": 9.9953214393,
+            "manufacturing_q3_pct": 13.5300813244,
+            "services_q1_pct": 65.0023090576,
+            "services_median_pct": 68.7665013532,
+            "services_q3_pct": 72.6927817035
+          },
+          {
+            "country": "USA",
+            "year": 2021,
+            "regions": 51,
+            "manufacturing_q1_pct": 7.4408684777,
+            "manufacturing_median_pct": 9.9321721463,
+            "manufacturing_q3_pct": 13.2343622179,
+            "services_q1_pct": 65.2150530974,
+            "services_median_pct": 68.6119902734,
+            "services_q3_pct": 73.3686903499
+          },
+          {
+            "country": "USA",
+            "year": 2022,
+            "regions": 51,
+            "manufacturing_q1_pct": 7.3511242726,
+            "manufacturing_median_pct": 9.6525598472,
+            "manufacturing_q3_pct": 12.7910718218,
+            "services_q1_pct": 64.970692424,
+            "services_median_pct": 68.9885062938,
+            "services_q3_pct": 73.8869424865
+          }
+        ]
+      },
+      {
+        "country": "JPN",
+        "rows": [
+          {
+            "country": "JPN",
+            "year": 2011,
+            "regions": 47,
+            "manufacturing_q1_pct": 15.8641113678,
+            "manufacturing_median_pct": 21.3213446499,
+            "manufacturing_q3_pct": 28.1609720526,
+            "services_q1_pct": 65.6025775604,
+            "services_median_pct": 69.9022229395,
+            "services_q3_pct": 75.0115594598
+          },
+          {
+            "country": "JPN",
+            "year": 2012,
+            "regions": 47,
+            "manufacturing_q1_pct": 15.1609962089,
+            "manufacturing_median_pct": 20.5977180547,
+            "manufacturing_q3_pct": 27.0366121975,
+            "services_q1_pct": 65.587475901,
+            "services_median_pct": 71.0527785225,
+            "services_q3_pct": 76.146749645
+          },
+          {
+            "country": "JPN",
+            "year": 2013,
+            "regions": 47,
+            "manufacturing_q1_pct": 14.7215152147,
+            "manufacturing_median_pct": 21.4252608812,
+            "manufacturing_q3_pct": 27.1152177961,
+            "services_q1_pct": 64.9358933355,
+            "services_median_pct": 69.7703521315,
+            "services_q3_pct": 75.3449552417
+          },
+          {
+            "country": "JPN",
+            "year": 2014,
+            "regions": 47,
+            "manufacturing_q1_pct": 15.0677031274,
+            "manufacturing_median_pct": 21.6148221877,
+            "manufacturing_q3_pct": 27.0737383471,
+            "services_q1_pct": 64.3430062539,
+            "services_median_pct": 70.2518714392,
+            "services_q3_pct": 75.5020348839
+          },
+          {
+            "country": "JPN",
+            "year": 2015,
+            "regions": 47,
+            "manufacturing_q1_pct": 16.094147843,
+            "manufacturing_median_pct": 22.2970337934,
+            "manufacturing_q3_pct": 28.2508706981,
+            "services_q1_pct": 65.0282720043,
+            "services_median_pct": 69.1910452544,
+            "services_q3_pct": 74.6374822831
+          },
+          {
+            "country": "JPN",
+            "year": 2016,
+            "regions": 47,
+            "manufacturing_q1_pct": 16.2242587025,
+            "manufacturing_median_pct": 22.3802145817,
+            "manufacturing_q3_pct": 28.1770176401,
+            "services_q1_pct": 64.7195352928,
+            "services_median_pct": 69.1503488977,
+            "services_q3_pct": 73.9745291671
+          },
+          {
+            "country": "JPN",
+            "year": 2017,
+            "regions": 47,
+            "manufacturing_q1_pct": 16.7159641283,
+            "manufacturing_median_pct": 23.1004983125,
+            "manufacturing_q3_pct": 28.0297921061,
+            "services_q1_pct": 64.857302175,
+            "services_median_pct": 68.3509280244,
+            "services_q3_pct": 73.8142773168
+          },
+          {
+            "country": "JPN",
+            "year": 2018,
+            "regions": 47,
+            "manufacturing_q1_pct": 16.9151454702,
+            "manufacturing_median_pct": 23.8424804767,
+            "manufacturing_q3_pct": 28.9221695619,
+            "services_q1_pct": 63.6872333048,
+            "services_median_pct": 68.1938953657,
+            "services_q3_pct": 73.9893371016
+          },
+          {
+            "country": "JPN",
+            "year": 2019,
+            "regions": 47,
+            "manufacturing_q1_pct": 16.4001509465,
+            "manufacturing_median_pct": 23.7321127746,
+            "manufacturing_q3_pct": 27.9631376797,
+            "services_q1_pct": 64.1223905828,
+            "services_median_pct": 68.9101681418,
+            "services_q3_pct": 74.4143596023
+          },
+          {
+            "country": "JPN",
+            "year": 2020,
+            "regions": 47,
+            "manufacturing_q1_pct": 16.7374059667,
+            "manufacturing_median_pct": 22.8097307248,
+            "manufacturing_q3_pct": 28.78294222,
+            "services_q1_pct": 62.8362005203,
+            "services_median_pct": 68.1113989787,
+            "services_q3_pct": 73.2382427702
+          },
+          {
+            "country": "JPN",
+            "year": 2021,
+            "regions": 47,
+            "manufacturing_q1_pct": 17.5840320727,
+            "manufacturing_median_pct": 24.4184041088,
+            "manufacturing_q3_pct": 30.5957428943,
+            "services_q1_pct": 61.2630433825,
+            "services_median_pct": 66.5740176816,
+            "services_q3_pct": 72.8583571628
+          },
+          {
+            "country": "JPN",
+            "year": 2022,
+            "regions": 47,
+            "manufacturing_q1_pct": 17.6222040693,
+            "manufacturing_median_pct": 25.196029909,
+            "manufacturing_q3_pct": 29.3983845431,
+            "services_q1_pct": 61.4905611648,
+            "services_median_pct": 67.2806527058,
+            "services_q3_pct": 73.5698966798
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "figure": "D_services",
+    "text_outside_canvas": [],
+    "panels": [
+      {
+        "country": "USA",
+        "label": "United States \u00b7 Private services",
+        "rows": [
+          {
+            "country": "USA",
+            "year": 2011,
+            "regions": 51,
+            "services_q1_pct": 59.8153791271,
+            "services_median_pct": 65.8238768755,
+            "services_q3_pct": 70.430287652
+          },
+          {
+            "country": "USA",
+            "year": 2012,
+            "regions": 51,
+            "services_q1_pct": 60.3843261544,
+            "services_median_pct": 65.9942237959,
+            "services_q3_pct": 70.9415312926
+          },
+          {
+            "country": "USA",
+            "year": 2013,
+            "regions": 51,
+            "services_q1_pct": 60.7560921437,
+            "services_median_pct": 66.0830932666,
+            "services_q3_pct": 71.5891784574
+          },
+          {
+            "country": "USA",
+            "year": 2014,
+            "regions": 51,
+            "services_q1_pct": 61.5513177935,
+            "services_median_pct": 66.6561555362,
+            "services_q3_pct": 71.3470211082
+          },
+          {
+            "country": "USA",
+            "year": 2015,
+            "regions": 51,
+            "services_q1_pct": 62.9791856876,
+            "services_median_pct": 67.425002721,
+            "services_q3_pct": 72.3213691875
+          },
+          {
+            "country": "USA",
+            "year": 2016,
+            "regions": 51,
+            "services_q1_pct": 63.693508804,
+            "services_median_pct": 68.3078782588,
+            "services_q3_pct": 72.4996943421
+          },
+          {
+            "country": "USA",
+            "year": 2017,
+            "regions": 51,
+            "services_q1_pct": 63.9111301071,
+            "services_median_pct": 68.3070742693,
+            "services_q3_pct": 72.5055368747
+          },
+          {
+            "country": "USA",
+            "year": 2018,
+            "regions": 51,
+            "services_q1_pct": 63.6310574851,
+            "services_median_pct": 68.2133242837,
+            "services_q3_pct": 72.7347578218
+          },
+          {
+            "country": "USA",
+            "year": 2019,
+            "regions": 51,
+            "services_q1_pct": 64.6181207967,
+            "services_median_pct": 69.0035681083,
+            "services_q3_pct": 72.6332712779
+          },
+          {
+            "country": "USA",
+            "year": 2020,
+            "regions": 51,
+            "services_q1_pct": 65.0023090576,
+            "services_median_pct": 68.7665013532,
+            "services_q3_pct": 72.6927817035
+          },
+          {
+            "country": "USA",
+            "year": 2021,
+            "regions": 51,
+            "services_q1_pct": 65.2150530974,
+            "services_median_pct": 68.6119902734,
+            "services_q3_pct": 73.3686903499
+          },
+          {
+            "country": "USA",
+            "year": 2022,
+            "regions": 51,
+            "services_q1_pct": 64.970692424,
+            "services_median_pct": 68.9885062938,
+            "services_q3_pct": 73.8869424865
+          }
+        ]
+      },
+      {
+        "country": "JPN",
+        "label": "Japan \u00b7 Tertiary industries",
+        "rows": [
+          {
+            "country": "JPN",
+            "year": 2011,
+            "regions": 47,
+            "services_q1_pct": 65.6025775604,
+            "services_median_pct": 69.9022229395,
+            "services_q3_pct": 75.0115594598
+          },
+          {
+            "country": "JPN",
+            "year": 2012,
+            "regions": 47,
+            "services_q1_pct": 65.587475901,
+            "services_median_pct": 71.0527785225,
+            "services_q3_pct": 76.146749645
+          },
+          {
+            "country": "JPN",
+            "year": 2013,
+            "regions": 47,
+            "services_q1_pct": 64.9358933355,
+            "services_median_pct": 69.7703521315,
+            "services_q3_pct": 75.3449552417
+          },
+          {
+            "country": "JPN",
+            "year": 2014,
+            "regions": 47,
+            "services_q1_pct": 64.3430062539,
+            "services_median_pct": 70.2518714392,
+            "services_q3_pct": 75.5020348839
+          },
+          {
+            "country": "JPN",
+            "year": 2015,
+            "regions": 47,
+            "services_q1_pct": 65.0282720043,
+            "services_median_pct": 69.1910452544,
+            "services_q3_pct": 74.6374822831
+          },
+          {
+            "country": "JPN",
+            "year": 2016,
+            "regions": 47,
+            "services_q1_pct": 64.7195352928,
+            "services_median_pct": 69.1503488977,
+            "services_q3_pct": 73.9745291671
+          },
+          {
+            "country": "JPN",
+            "year": 2017,
+            "regions": 47,
+            "services_q1_pct": 64.857302175,
+            "services_median_pct": 68.3509280244,
+            "services_q3_pct": 73.8142773168
+          },
+          {
+            "country": "JPN",
+            "year": 2018,
+            "regions": 47,
+            "services_q1_pct": 63.6872333048,
+            "services_median_pct": 68.1938953657,
+            "services_q3_pct": 73.9893371016
+          },
+          {
+            "country": "JPN",
+            "year": 2019,
+            "regions": 47,
+            "services_q1_pct": 64.1223905828,
+            "services_median_pct": 68.9101681418,
+            "services_q3_pct": 74.4143596023
+          },
+          {
+            "country": "JPN",
+            "year": 2020,
+            "regions": 47,
+            "services_q1_pct": 62.8362005203,
+            "services_median_pct": 68.1113989787,
+            "services_q3_pct": 73.2382427702
+          },
+          {
+            "country": "JPN",
+            "year": 2021,
+            "regions": 47,
+            "services_q1_pct": 61.2630433825,
+            "services_median_pct": 66.5740176816,
+            "services_q3_pct": 72.8583571628
+          },
+          {
+            "country": "JPN",
+            "year": 2022,
+            "regions": 47,
+            "services_q1_pct": 61.4905611648,
+            "services_median_pct": 67.2806527058,
+            "services_q3_pct": 73.5698966798
+          }
+        ]
+      }
+    ],
+    "pooled_service_calculations": 0
+  },
+  {
+    "figure": "E_aggregation",
+    "text_outside_canvas": [],
+    "panels": [
+      {
+        "group": "Pooled",
+        "points": 98,
+        "pearson": 0.6444354106,
+        "spearman": 0.6102668569,
+        "slope_from_saved_result": 0.8687825417,
+        "intercept_from_saved_result": -4.3571791421,
+        "line_supports": [
+          {
+            "country": "JPN",
+            "min": 22.8,
+            "max": 38.6
+          },
+          {
+            "country": "USA",
+            "min": 11.98532892,
+            "max": 22.53771637
+          }
+        ],
+        "x_limits": [
+          10,
+          40
+        ],
+        "y_limits": [
+          0,
+          45
+        ]
+      },
+      {
+        "group": "USA",
+        "points": 51,
+        "pearson": 0.0032242157,
+        "spearman": -0.0120361991,
+        "slope_from_saved_result": 0.0074318619,
+        "intercept_from_saved_result": 10.1410093732,
+        "line_supports": [
+          {
+            "country": "USA",
+            "min": 11.98532892,
+            "max": 22.53771637
+          }
+        ],
+        "x_limits": [
+          10,
+          40
+        ],
+        "y_limits": [
+          0,
+          45
+        ]
+      },
+      {
+        "group": "JPN",
+        "points": 47,
+        "pearson": 0.0286467876,
+        "spearman": -0.084723711,
+        "slope_from_saved_result": 0.0797620029,
+        "intercept_from_saved_result": 21.2882250056,
+        "line_supports": [
+          {
+            "country": "JPN",
+            "min": 22.8,
+            "max": 38.6
+          }
+        ],
+        "x_limits": [
+          10,
+          40
+        ],
+        "y_limits": [
+          0,
+          45
+        ]
+      }
+    ],
+    "new_model_fits": 0
+  },
+  {
+    "figure": "F_young_migration",
+    "text_outside_canvas": [],
+    "panels": [
+      {
+        "country": "JPN",
+        "points": 47,
+        "region_ids": [
+          "JP-01",
+          "JP-02",
+          "JP-03",
+          "JP-04",
+          "JP-05",
+          "JP-06",
+          "JP-07",
+          "JP-08",
+          "JP-09",
+          "JP-10",
+          "JP-11",
+          "JP-12",
+          "JP-13",
+          "JP-14",
+          "JP-15",
+          "JP-16",
+          "JP-17",
+          "JP-18",
+          "JP-19",
+          "JP-20",
+          "JP-21",
+          "JP-22",
+          "JP-23",
+          "JP-24",
+          "JP-25",
+          "JP-26",
+          "JP-27",
+          "JP-28",
+          "JP-29",
+          "JP-30",
+          "JP-31",
+          "JP-32",
+          "JP-33",
+          "JP-34",
+          "JP-35",
+          "JP-36",
+          "JP-37",
+          "JP-38",
+          "JP-39",
+          "JP-40",
+          "JP-41",
+          "JP-42",
+          "JP-43",
+          "JP-44",
+          "JP-45",
+          "JP-46",
+          "JP-47"
+        ],
+        "pearson": -0.820294558534078,
+        "spearman": -0.820460947888796,
+        "label_ids": [
+          "JP-02",
+          "JP-13"
+        ],
+        "x_limits": [
+          21.0,
+          41.0
+        ],
+        "y_limits": [
+          -80.0,
+          100.0
+        ]
+      },
+      {
+        "country": "USA",
+        "points": 51,
+        "region_ids": [
+          "US-AK",
+          "US-AL",
+          "US-AR",
+          "US-AZ",
+          "US-CA",
+          "US-CO",
+          "US-CT",
+          "US-DC",
+          "US-DE",
+          "US-FL",
+          "US-GA",
+          "US-HI",
+          "US-IA",
+          "US-ID",
+          "US-IL",
+          "US-IN",
+          "US-KS",
+          "US-KY",
+          "US-LA",
+          "US-MA",
+          "US-MD",
+          "US-ME",
+          "US-MI",
+          "US-MN",
+          "US-MO",
+          "US-MS",
+          "US-MT",
+          "US-NC",
+          "US-ND",
+          "US-NE",
+          "US-NH",
+          "US-NJ",
+          "US-NM",
+          "US-NV",
+          "US-NY",
+          "US-OH",
+          "US-OK",
+          "US-OR",
+          "US-PA",
+          "US-RI",
+          "US-SC",
+          "US-SD",
+          "US-TN",
+          "US-TX",
+          "US-UT",
+          "US-VA",
+          "US-VT",
+          "US-WA",
+          "US-WI",
+          "US-WV",
+          "US-WY"
+        ],
+        "pearson": -0.362190260956796,
+        "spearman": -0.254389140271493,
+        "label_ids": [
+          "US-DC",
+          "US-NH"
+        ],
+        "x_limits": [
+          11.0,
+          24.0
+        ],
+        "y_limits": [
+          -120.0,
+          220.0
+        ],
+        "hollow_points": 35,
+        "error_bars": 51,
+        "interval_min": -94.84711540964099,
+        "interval_max": 182.63491732022572
+      }
+    ],
+    "pooled_fit": false
+  },
+  {
+    "figure": "G_tokyo",
+    "text_outside_canvas": [],
+    "years": [
+      {
+        "year": 2019,
+        "bars": 20,
+        "sum_native_and_unknown": 82982.0,
+        "published_total": 82982.0,
+        "unknown": -1.0
+      },
+      {
+        "year": 2022,
+        "bars": 20,
+        "sum_native_and_unknown": 38023.0,
+        "published_total": 38023.0,
+        "unknown": 2.0
+      }
+    ],
+    "nonoverlapping_bins": [
+      "0-4",
+      "5-9",
+      "10-14",
+      "15-19",
+      "20-24",
+      "25-29",
+      "30-34",
+      "35-39",
+      "40-44",
+      "45-49",
+      "50-54",
+      "55-59",
+      "60-64",
+      "65-69",
+      "70-74",
+      "75-79",
+      "80-84",
+      "85-89",
+      "90+",
+      "unknown"
+    ]
+  }
+]

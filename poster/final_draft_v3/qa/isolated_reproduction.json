@@ -1,0 +1,337 @@
+{
+  "status": "PASS",
+  "scope": "Isolated copy of explicitly listed v3 runtime files, including all required uncommitted snapshots. Not a Git clean-checkout test.",
+  "directory": "poster/final_draft_v3/qa/isolated-e8cd2f5695",
+  "copied_files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "b59afd21b546c493e4f300885166470a7afddbbf5101cfe8103f03242bf8568b"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "46d6222d911c0a1d95f430e95e75235da1acecc77a921ffd52d6fc2c59cc440a"
+    },
+    {
+      "path": "appendix/full_native_cases.svg",
+      "sha256": "aee75e6073be11238ccf52792fd60c8786956707b40812784db79b5e676f2f8e"
+    },
+    {
+      "path": "appendix/full_regional_ranking.svg",
+      "sha256": "ba5b2f02c3387e5834ae66234980411d60ace37951646a1a10ccf87d218cb185"
+    },
+    {
+      "path": "appendix_manifest.json",
+      "sha256": "5c20a37a89f1ecd5592eea857015fa9c23f59ffb1d2f8ee87d83e6e6ad6716e5"
+    },
+    {
+      "path": "assets/fonts/DejaVuSans-Bold.ttf",
+      "sha256": "0d519cd7d20af7522385295d63e5cf82ca1326878e023000ad881badc5475dd8"
+    },
+    {
+      "path": "assets/fonts/DejaVuSans.ttf",
+      "sha256": "09c5b3ec2f8ee68f9a8da17a83191260e3c5b9e8bad51e6911d87630ab8b135f"
+    },
+    {
+      "path": "assets/fonts/DejaVuSerif-Bold.ttf",
+      "sha256": "ea80ece04e7932466fbf68e536bda912fafdf9c765216f2adee6235cee9c2d0a"
+    },
+    {
+      "path": "assets/fonts/DejaVuSerif.ttf",
+      "sha256": "9eb75cd651571b066e12d6ea05fb771d44c52cab62fe70e98f6ec4e307dacb5b"
+    },
+    {
+      "path": "assets/fonts/LICENSE_DEJAVU",
+      "sha256": "d75938dec098f06f0ac3c00853065d94f020be1c3c62ef1dc2975ba15b4d9b0e"
+    },
+    {
+      "path": "build_poster.py",
+      "sha256": "2155da09310443fe142b2b08fe1ed2b9e04f219a620f2da6de90b81bf79bf73d"
+    },
+    {
+      "path": "content.json",
+      "sha256": "6f97726a86da8595cd7aded485008fd51c54cf9a03a7dbc3351b49e1263abbd5"
+    },
+    {
+      "path": "font_manifest.json",
+      "sha256": "84b94591183dd662897bba0e5c1cf3920fed914d79a14217e924c0154ef6a856"
+    },
+    {
+      "path": "initial_state.json",
+      "sha256": "c36f486f24e66b3e318867ee2ce18ae131099a5c33e4f05c6ec894327cca552c"
+    },
+    {
+      "path": "input_manifest.json",
+      "sha256": "122b473b1c3e445df46ae8190235815b8a3ef728fb1d98b3484e8c1077019bba"
+    },
+    {
+      "path": "inputs/covariance.csv",
+      "sha256": "c22e96eab5f272116a8d17b3cb2e8241ad5faa501602c37fa2a80499f01a42dd"
+    },
+    {
+      "path": "inputs/industry_comparability.json",
+      "sha256": "40e4b4cebb7d23cb0f9ad9dc1a66347f2299902bbd3cbcd83e1c7e0cb734cc19"
+    },
+    {
+      "path": "inputs/industry_trends.csv",
+      "sha256": "5b7ed3c33b3c1eecc0e2601c8fbb340b9d0fe727ce4cce684e84b70481bac66e"
+    },
+    {
+      "path": "inputs/manufacturing_2022.csv",
+      "sha256": "ad282b3dcb4e3c4cf3ba49aa1e7a41967bf2ea5411a1f05143f275886f84afe2"
+    },
+    {
+      "path": "inputs/manufacturing_associations.csv",
+      "sha256": "028bd63e58d47350846aaf462eb675d725b0cbd51842fb6d5d7308cce2aa91fa"
+    },
+    {
+      "path": "inputs/migration.csv",
+      "sha256": "6c50f46a807965447fdb34757a6ad5a9db7243c3ee3041efa617a2c9ccc84f92"
+    },
+    {
+      "path": "inputs/migration_associations.csv",
+      "sha256": "140573a87d56a6d67cfa9ec05e62da2badcc09b2107f0518fc0c1c091cf513b5"
+    },
+    {
+      "path": "inputs/migration_influence.csv",
+      "sha256": "9eb2c929c3290c3e752a62b9440a00fd07324a6a6f238ec8d93859d43f5997b2"
+    },
+    {
+      "path": "inputs/national.csv",
+      "sha256": "4b77f44e217cd34a988852a0676b7a8306f5b2b36fb443fa001bd2e728793040"
+    },
+    {
+      "path": "inputs/population_2022.csv",
+      "sha256": "41d33bdabee4723c60e5563e8d66c61777fab960607fb43c0fa00d7c0a35b0b6"
+    },
+    {
+      "path": "inputs/tokyo_decomposition.csv",
+      "sha256": "0bbf3f43b71f9b9e396f84432538b6f50865f15e42252c672112ca71152eab64"
+    },
+    {
+      "path": "inputs/tokyo_native.csv",
+      "sha256": "66a409ef84957f7bbc9b79572614fb99f8987cdd7eba776dd48ffc969f2c3910"
+    },
+    {
+      "path": "inputs/uncertainty.csv",
+      "sha256": "f095742ee3985d492bb8adb2b9291a35466618728c9d85bb89457675045419d1"
+    },
+    {
+      "path": "plot_figures.py",
+      "sha256": "700900b981bff0554fccb0934de2e902e422ba90912dff11edbaae7c4235609d"
+    },
+    {
+      "path": "poster.css",
+      "sha256": "418bba6f4d5cbfe2558c9ddcff058cfbf29dc3c666e71c97565f210bbe059167"
+    },
+    {
+      "path": "provenance_manifest.json",
+      "sha256": "0e33c58d295e239bcf298902e86bb434e4abbf464b6e2c39575da2e3b36ae725"
+    },
+    {
+      "path": "render_poster.py",
+      "sha256": "5243cd9dafa437a766138c0f3e562dd6eb4d9d8453c8a24759a807a2997337ad"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "cef1e847022915d71d7824c9a75b6be4f523af00d3861a8fc37fd5015ce27bf2"
+    },
+    {
+      "path": "validate_poster.py",
+      "sha256": "d8f8f11f56a68714920c919f768a1683cb4d1a0be67e77bae46ea3d79fb6a8fc"
+    }
+  ],
+  "commands": [
+    {
+      "command": [
+        "E:\\5002_project\\aging-across-economies\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8=0",
+        "-X",
+        "warn_default_encoding",
+        "E:\\5002_project\\aging-across-economies\\poster\\final_draft_v3\\qa\\isolated-e8cd2f5695\\plot_figures.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Rendered seven column-width SVG/300-dpi PNG groups; no new model fits.\n",
+      "stderr": "D:\\Python\\Python312\\Lib\\site-packages\\matplotlib\\font_manager.py:1191: EncodingWarning: 'encoding' argument not specified\n  with open(filename) as fh:\n"
+    },
+    {
+      "command": [
+        "E:\\5002_project\\aging-across-economies\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8=0",
+        "-X",
+        "warn_default_encoding",
+        "E:\\5002_project\\aging-across-economies\\poster\\final_draft_v3\\qa\\isolated-e8cd2f5695\\build_poster.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Built three-column HTML, seven figure groups, 13 mapped poster claims and evidence appendix.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "E:\\5002_project\\aging-across-economies\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8=0",
+        "-X",
+        "warn_default_encoding",
+        "E:\\5002_project\\aging-across-economies\\poster\\final_draft_v3\\qa\\isolated-e8cd2f5695\\render_poster.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Starting local Chromium export.\nBrowser driver ready.\nLocal browser ready.\nPage and local fonts loaded.\n{\n  \"columns\": [\n    {\n      \"number\": \"1\",\n      \"width\": 956.21875,\n      \"height\": 3703.953125,\n      \"scrollHeight\": 3704,\n      \"clientHeight\": 3704,\n      \"heading\": \"BACKGROUND & DATA\",\n      \"figures\": [\n        \"A_national\",\n        \"B_distribution\"\n      ],\n      \"lastChild\": \"text population-interpretation\"\n    },\n    {\n      \"number\": \"2\",\n      \"width\": 956.21875,\n      \"height\": 3703.953125,\n      \"scrollHeight\": 3704,\n      \"clientHeight\": 3704,\n      \"heading\": \"INDUSTRIAL STRUCTURE\",\n      \"figures\": [\n        \"C_manufacturing\",\n        \"D_services\",\n        \"E_aggregation\"\n      ],\n      \"lastChild\": \"covariance-note\"\n    },\n    {\n      \"number\": \"3\",\n      \"width\": 956.21875,\n      \"height\": 3703.953125,\n      \"scrollHeight\": 3704,\n      \"clientHeight\": 3704,\n      \"heading\": \"AGE-SELECTIVE MIGRATION\",\n      \"figures\": [\n        \"F_young_migration\",\n        \"G_tokyo\"\n      ],\n      \"lastChild\": \"key-findings\"\n    }\n  ],\n  \"overlaps\": [],\n  \"text_overflows\": [],\n  \"header_removed_blocks\": 0,\n  \"forbidden_visible_phrases\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\15811\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-X",
+        "utf8=0",
+        "-X",
+        "warn_default_encoding",
+        "E:\\5002_project\\aging-across-economies\\poster\\final_draft_v3\\qa\\isolated-e8cd2f5695\\validate_poster.py",
+        "--standalone"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"protected_files_unchanged\": null,\n  \"numerical_claims_verified\": 13,\n  \"page\": {\n    \"pages\": 1,\n    \"width_mm\": 840.9939647222221,\n    \"height_mm\": 1188.8892627777777\n  },\n  \"effective_pdf_type_pt\": {\n    \"title_first\": 105.99749708343744,\n    \"title_second\": 115.99499816687486,\n    \"authors\": {\n      \"WANG YIJIE\": 31.994998666874995,\n      \"LI YE\": 31.994998666874995,\n      \"HE YING\": 31.994998666874995,\n      \"WANGYUCHENG\": 31.994998666874995\n    },\n    \"student_ids\": {\n      \"60074637\": 20.999999125,\n      \"60999683\": 20.999999125,\n      \"60189188\": 20.999999125,\n      \"60786917\": 20.999999125\n    },\n    \"subtitle\": 28.994998791874995,\n    \"affiliation\": 22.994999041874998,\n    \"column_heading\": 31.994998666874995,\n    \"key_findings_heading\": 29.99999875,\n    \"explanatory_body\": 23.999999,\n    \"caption\": 19.994999166875,\n    \"plot_axis_label\": 19.994999166875,\n    \"plot_source_note\": 17.9924992503125\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "pdftoppm",
+        "-png",
+        "-singlefile",
+        "-scale-to",
+        "3000",
+        "E:\\5002_project\\aging-across-economies\\poster\\final_draft_v3\\qa\\isolated-e8cd2f5695\\poster.pdf",
+        "E:\\5002_project\\aging-across-economies\\poster\\final_draft_v3\\qa\\isolated-e8cd2f5695\\poster.preview"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "pdftoppm",
+        "-png",
+        "-singlefile",
+        "-scale-to",
+        "6000",
+        "E:\\5002_project\\aging-across-economies\\poster\\final_draft_v3\\poster.pdf",
+        "E:\\5002_project\\aging-across-economies\\poster\\final_draft_v3\\poster.preview"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "purpose": "Final high-resolution 6000-pixel overview"
+    },
+    {
+      "command": [
+        "pdftoppm",
+        "-png",
+        "-singlefile",
+        "-scale-to",
+        "6000",
+        "E:\\5002_project\\aging-across-economies\\poster\\final_draft_v3\\qa\\isolated-e8cd2f5695\\poster.pdf",
+        "E:\\5002_project\\aging-across-economies\\poster\\final_draft_v3\\qa\\isolated-e8cd2f5695\\poster.preview"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "purpose": "Final high-resolution 6000-pixel overview"
+    }
+  ],
+  "compared_outputs": [
+    {
+      "path": "appendix/evidence_tables.html",
+      "byte_identical": true
+    },
+    {
+      "path": "content_manifest.json",
+      "byte_identical": true
+    },
+    {
+      "path": "figure_checks.json",
+      "byte_identical": true
+    },
+    {
+      "path": "figure_manifest.json",
+      "byte_identical": true
+    },
+    {
+      "path": "figures/A_national.png",
+      "byte_identical": true
+    },
+    {
+      "path": "figures/A_national.svg",
+      "byte_identical": true
+    },
+    {
+      "path": "figures/B_distribution.png",
+      "byte_identical": true
+    },
+    {
+      "path": "figures/B_distribution.svg",
+      "byte_identical": true
+    },
+    {
+      "path": "figures/C_manufacturing.png",
+      "byte_identical": true
+    },
+    {
+      "path": "figures/C_manufacturing.svg",
+      "byte_identical": true
+    },
+    {
+      "path": "figures/D_services.png",
+      "byte_identical": true
+    },
+    {
+      "path": "figures/D_services.svg",
+      "byte_identical": true
+    },
+    {
+      "path": "figures/E_aggregation.png",
+      "byte_identical": true
+    },
+    {
+      "path": "figures/E_aggregation.svg",
+      "byte_identical": true
+    },
+    {
+      "path": "figures/F_young_migration.png",
+      "byte_identical": true
+    },
+    {
+      "path": "figures/F_young_migration.svg",
+      "byte_identical": true
+    },
+    {
+      "path": "figures/G_tokyo.png",
+      "byte_identical": true
+    },
+    {
+      "path": "figures/G_tokyo.svg",
+      "byte_identical": true
+    },
+    {
+      "path": "poster.html",
+      "byte_identical": true
+    },
+    {
+      "path": "poster.preview.png",
+      "byte_identical": true
+    }
+  ],
+  "identical_pdf_text": true,
+  "pdf_binary_difference_allowed": "Chromium creation/modification timestamps; text, physical layout, type and rendered preview checked.",
+  "input_files_unchanged": true,
+  "http_requests": 0,
+  "tooling": "Declared Python packages plus local Chromium and Poppler. Browser export ran with approved local process permissions outside the execution sandbox. No original repository data or private data caches were accessed by the copied build.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "locale_encoding": "cp936",
+  "utf8_mode": 0,
+  "final_preview_pixels": [
+    4245,
+    6000
+  ],
+  "final_preview_sha256": "896fff6f101311b12e021f9cefa0fdb56203c20a5c96c36e5d7c7e9990906caa"
+}

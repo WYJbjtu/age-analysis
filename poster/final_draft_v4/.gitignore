@@ -1,0 +1,5 @@
+qa/*.png
+qa/isolated-*/
+qa/pytest-*/
+qa/mpl-*/
+__pycache__/

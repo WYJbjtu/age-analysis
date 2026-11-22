@@ -1,0 +1,102 @@
+{
+  "status": "PASS - assembled poster checks",
+  "draft_status": "READY FOR TEAM REVIEW",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "locale_encoding": "cp936",
+  "utf8_mode": 0,
+  "branch": "codex/member4-audit-integration",
+  "head": "a311a18748d676196b523668dab7ed6e17472635",
+  "git_status": [
+    "?? analysis/age_migration/",
+    "?? poster/final_draft/"
+  ],
+  "protected_original_files_unchanged": 427,
+  "source_figures_copied_byte_for_byte": 6,
+  "rendered_claims_matched_saved_results": 13,
+  "panels": [
+    {
+      "view": "A_national",
+      "source_graphic_groups_compared": 32,
+      "unchanged_geometry": true,
+      "scatter_markers": 4,
+      "unresolved_references": 0
+    },
+    {
+      "view": "B_USA",
+      "source_graphic_groups_compared": 76,
+      "unchanged_geometry": true,
+      "scatter_markers": 51,
+      "unresolved_references": 0
+    },
+    {
+      "view": "B_Japan",
+      "source_graphic_groups_compared": 72,
+      "unchanged_geometry": true,
+      "scatter_markers": 47,
+      "unresolved_references": 0
+    },
+    {
+      "view": "C_manufacturing",
+      "source_graphic_groups_compared": 36,
+      "unchanged_geometry": true,
+      "scatter_markers": 0,
+      "unresolved_references": 0
+    },
+    {
+      "view": "D_pooled",
+      "source_graphic_groups_compared": 35,
+      "unchanged_geometry": true,
+      "scatter_markers": 98,
+      "unresolved_references": 0
+    },
+    {
+      "view": "D_USA",
+      "source_graphic_groups_compared": 33,
+      "unchanged_geometry": true,
+      "scatter_markers": 51,
+      "unresolved_references": 0
+    },
+    {
+      "view": "D_Japan",
+      "source_graphic_groups_compared": 33,
+      "unchanged_geometry": true,
+      "scatter_markers": 47,
+      "unresolved_references": 0
+    },
+    {
+      "view": "E_Japan",
+      "source_graphic_groups_compared": 39,
+      "unchanged_geometry": true,
+      "scatter_markers": 47,
+      "unresolved_references": 0
+    },
+    {
+      "view": "E_USA",
+      "source_graphic_groups_compared": 37,
+      "unchanged_geometry": true,
+      "scatter_markers": 51,
+      "unresolved_references": 0
+    },
+    {
+      "view": "F_Tokyo",
+      "source_graphic_groups_compared": 76,
+      "unchanged_geometry": true,
+      "scatter_markers": 0,
+      "unresolved_references": 0
+    }
+  ],
+  "pdf": {
+    "pages": 1,
+    "width_mm": 840.9939647222221,
+    "height_mm": 1188.8892627777777,
+    "file_links": 0,
+    "sha256": "b09cd06a88161802e419c7443e051b71e5081029c933f9a3cf16b450e78eaec3"
+  },
+  "preview_sha256": "06f9edb08a391e1548fd5d050471fd11cb23b502d17b84728ddfbb09c7c6ae0b",
+  "fonts_loaded": true,
+  "asset_links_resolve": true,
+  "layout_overflows": 0,
+  "layout_sibling_overlaps": 0,
+  "no_page_network_requests": true,
+  "scope": "Poster assembly only; no statistical recomputation or shared-lock update."
+}

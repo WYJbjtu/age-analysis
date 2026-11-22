@@ -1,0 +1,863 @@
+{
+  "native_rows": 3606,
+  "harmonized_rows": 1176,
+  "region_years": 196,
+  "source_checks": 1935,
+  "source_checks_failed": 0,
+  "unknown_age": [
+    {
+      "country": "JPN",
+      "region_id": "JP-01",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-01",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 1.0,
+      "out_migration": 0.0,
+      "net_migration": 1.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-02",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 1.0,
+      "out_migration": 0.0,
+      "net_migration": 1.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-02",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-03",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-03",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-04",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-04",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-05",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-05",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-06",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-06",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-07",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-07",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-08",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-08",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-09",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-09",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 1.0,
+      "net_migration": -1.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-10",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-10",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-11",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-11",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 1.0,
+      "net_migration": -1.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-12",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 1.0,
+      "net_migration": -1.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-12",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 2.0,
+      "net_migration": -2.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-13",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 1.0,
+      "net_migration": -1.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-13",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 2.0,
+      "out_migration": 0.0,
+      "net_migration": 2.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-14",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 1.0,
+      "out_migration": 0.0,
+      "net_migration": 1.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-14",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 1.0,
+      "out_migration": 0.0,
+      "net_migration": 1.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-15",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-15",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-16",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-16",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 1.0,
+      "out_migration": 0.0,
+      "net_migration": 1.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-17",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 1.0,
+      "net_migration": -1.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-17",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 1.0,
+      "out_migration": 1.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-18",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-18",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-19",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-19",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-20",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-20",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-21",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-21",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-22",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-22",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-23",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 3.0,
+      "out_migration": 0.0,
+      "net_migration": 3.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-23",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-24",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-24",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-25",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-25",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-26",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 1.0,
+      "net_migration": -1.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-26",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 1.0,
+      "out_migration": 0.0,
+      "net_migration": 1.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-27",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 1.0,
+      "out_migration": 0.0,
+      "net_migration": 1.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-27",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 1.0,
+      "net_migration": -1.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-28",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-28",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 1.0,
+      "net_migration": -1.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-29",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-29",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-30",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-30",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-31",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-31",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-32",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 1.0,
+      "net_migration": -1.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-32",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-33",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-33",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-34",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 1.0,
+      "out_migration": 0.0,
+      "net_migration": 1.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-34",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-35",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-35",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-36",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 1.0,
+      "net_migration": -1.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-36",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-37",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-37",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-38",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-38",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 1.0,
+      "net_migration": -1.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-39",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-39",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 1.0,
+      "out_migration": 0.0,
+      "net_migration": 1.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-40",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 1.0,
+      "net_migration": -1.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-40",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-41",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-41",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-42",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-42",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-43",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-43",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-44",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-44",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-45",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-45",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-46",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-46",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-47",
+      "year": 2019,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    },
+    {
+      "country": "JPN",
+      "region_id": "JP-47",
+      "year": 2022,
+      "age_group": "unknown",
+      "in_migration": 0.0,
+      "out_migration": 0.0,
+      "net_migration": 0.0
+    }
+  ],
+  "source_bytes_verified": 43,
+  "primary_missing": 0,
+  "acs_api": "data endpoint returned Missing Key; official public Summary File used; metadata JSON retrieved",
+  "us_moe": "approximate 90% RSS difference and ratio, includes denominator MOE; covariances not supplied",
+  "japan2019_population_vintage": "2019 annual release (2015 census base); canonical stock retains later intercensal vintage",
+  "japan2022_rate_verification": "All 893 published cells compatible with nearest-1000 population and 0.01 percentage-point rate rounding; not exact reproduction of unpublished precision",
+  "japan2019_official_age_rate": "NOT EVALUATED: retrieved annual index/summary do not provide a verified prefectural age-rate table; rates constructed from official counts and Table10 population",
+  "japan_age_day_convention": "NOT EVALUATED: sources identify birth-date-derived registered age but do not explicitly state exact age-reference day"
+}

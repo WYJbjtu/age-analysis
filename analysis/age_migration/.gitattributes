@@ -1,0 +1,2 @@
+# Preserve downloaded official bytes, including non-UTF-8 HTML and CRLF.
+sources/raw/** -text

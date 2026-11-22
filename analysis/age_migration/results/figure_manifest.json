@@ -1,0 +1,102 @@
+[
+  {
+    "path": "figures/figure1_regional_2019.svg",
+    "group": "Figure 1",
+    "intended_use": "Comparison-year companion: regional young/older associations",
+    "status": "READY WITH LIMITATIONS",
+    "inputs": "data/population_structure_join.csv;data/native_migration.csv;results/associations.csv;results/case_selection.csv",
+    "generator": "plot.py",
+    "source_version": "sources/manifest.json",
+    "owner": "age_migration extension"
+  },
+  {
+    "path": "figures/figure1_regional_2019.png",
+    "group": "Figure 1",
+    "intended_use": "Comparison-year companion: regional young/older associations",
+    "status": "READY WITH LIMITATIONS",
+    "inputs": "data/population_structure_join.csv;data/native_migration.csv;results/associations.csv;results/case_selection.csv",
+    "generator": "plot.py",
+    "source_version": "sources/manifest.json",
+    "owner": "age_migration extension"
+  },
+  {
+    "path": "figures/figure1_regional_2022.svg",
+    "group": "Figure 1",
+    "intended_use": "Primary poster: regional young/older associations",
+    "status": "READY WITH LIMITATIONS",
+    "inputs": "data/population_structure_join.csv;data/native_migration.csv;results/associations.csv;results/case_selection.csv",
+    "generator": "plot.py",
+    "source_version": "sources/manifest.json",
+    "owner": "age_migration extension"
+  },
+  {
+    "path": "figures/figure1_regional_2022.png",
+    "group": "Figure 1",
+    "intended_use": "Primary poster: regional young/older associations",
+    "status": "READY WITH LIMITATIONS",
+    "inputs": "data/population_structure_join.csv;data/native_migration.csv;results/associations.csv;results/case_selection.csv",
+    "generator": "plot.py",
+    "source_version": "sources/manifest.json",
+    "owner": "age_migration extension"
+  },
+  {
+    "path": "figures/figure2_native_cases.svg",
+    "group": "Figure 2",
+    "intended_use": "Presentation: Tokyo detail and rule-selected U.S. contrasts",
+    "status": "READY WITH LIMITATIONS",
+    "inputs": "data/population_structure_join.csv;data/native_migration.csv;results/associations.csv;results/case_selection.csv",
+    "generator": "plot.py",
+    "source_version": "sources/manifest.json",
+    "owner": "age_migration extension"
+  },
+  {
+    "path": "figures/figure2_native_cases.png",
+    "group": "Figure 2",
+    "intended_use": "Presentation: Tokyo detail and rule-selected U.S. contrasts",
+    "status": "READY WITH LIMITATIONS",
+    "inputs": "data/population_structure_join.csv;data/native_migration.csv;results/associations.csv;results/case_selection.csv",
+    "generator": "plot.py",
+    "source_version": "sources/manifest.json",
+    "owner": "age_migration extension"
+  },
+  {
+    "path": "figures/appendix_profiles_jpn.svg",
+    "group": "Appendix",
+    "intended_use": "All-region, non-overlapping age profile audit/display",
+    "status": "READY WITH LIMITATIONS",
+    "inputs": "data/population_structure_join.csv;data/native_migration.csv;results/associations.csv;results/case_selection.csv",
+    "generator": "plot.py",
+    "source_version": "sources/manifest.json",
+    "owner": "age_migration extension"
+  },
+  {
+    "path": "figures/appendix_profiles_jpn.png",
+    "group": "Appendix",
+    "intended_use": "All-region, non-overlapping age profile audit/display",
+    "status": "READY WITH LIMITATIONS",
+    "inputs": "data/population_structure_join.csv;data/native_migration.csv;results/associations.csv;results/case_selection.csv",
+    "generator": "plot.py",
+    "source_version": "sources/manifest.json",
+    "owner": "age_migration extension"
+  },
+  {
+    "path": "figures/appendix_profiles_usa.svg",
+    "group": "Appendix",
+    "intended_use": "All-region, non-overlapping age profile audit/display",
+    "status": "READY WITH LIMITATIONS",
+    "inputs": "data/population_structure_join.csv;data/native_migration.csv;results/associations.csv;results/case_selection.csv",
+    "generator": "plot.py",
+    "source_version": "sources/manifest.json",
+    "owner": "age_migration extension"
+  },
+  {
+    "path": "figures/appendix_profiles_usa.png",
+    "group": "Appendix",
+    "intended_use": "All-region, non-overlapping age profile audit/display",
+    "status": "READY WITH LIMITATIONS",
+    "inputs": "data/population_structure_join.csv;data/native_migration.csv;results/associations.csv;results/case_selection.csv",
+    "generator": "plot.py",
+    "source_version": "sources/manifest.json",
+    "owner": "age_migration extension"
+  }
+]

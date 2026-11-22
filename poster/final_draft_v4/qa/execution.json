@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "date": "2026-11-11",
+  "render_python": "3.12.4",
+  "pdf_validation_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "locale_encoding": "cp936",
+  "utf8_mode": 0,
+  "browser_version": "157.0.8103.50",
+  "commands": [
+    {
+      "command": ".\\.venv\\Scripts\\python.exe -X utf8=0 -X warn_default_encoding poster/final_draft_v4/plot_figures.py",
+      "result": "Seven SVG/300-dpi PNG figure groups; existing numerical figure checks exactly match V3.",
+      "exit_code": 0
+    },
+    {
+      "command": ".\\.venv\\Scripts\\python.exe -X utf8=0 -X warn_default_encoding poster/final_draft_v4/build_poster.py",
+      "result": "Built local HTML, 13 mapped numerical claims and unchanged evidence appendix.",
+      "exit_code": 0
+    },
+    {
+      "command": ".\\.venv\\Scripts\\python.exe -u -X utf8=0 -X warn_default_encoding poster/final_draft_v4/render_poster.py",
+      "result": "One-page A0 export, 0 page network requests, no layout overflow/overlap.",
+      "exit_code": 0
+    },
+    {
+      "command": "pdftoppm -png -singlefile -scale-to 6000 poster/final_draft_v4/poster.pdf poster/final_draft_v4/poster.preview",
+      "result": "4245 x 6000 PNG rendered from final PDF.",
+      "exit_code": 0
+    },
+    {
+      "command": "<bundled PDF Python> -X utf8=0 -X warn_default_encoding poster/final_draft_v4/validate_poster.py",
+      "result": "PASS; see validation.json.",
+      "exit_code": 0
+    },
+    {
+      "command": ".\\.venv\\Scripts\\python.exe -X utf8=0 scripts/verify_remediation.py regression --no-write",
+      "result": "38 high-precision main regression comparisons passed; max difference 0",
+      "exit_code": 0
+    },
+    {
+      "command": ".\\.venv\\Scripts\\python.exe -X utf8=0 scripts/remediation_state.py",
+      "result": "v6 lock passed: 282 current protected, 229 historical evidence, 163 historical v1, 46 immutable repository files, 3 archived locks.",
+      "exit_code": 0
+    }
+  ],
+  "pdf_python_executable": "C:\\Users\\15811\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "baseline_environment": {
+    "PYTHONPATH": "src",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "warning": "Matplotlib font_manager.py:1191 emitted a third-party EncodingWarning; project text I/O has explicit encodings.",
+  "iterations": [
+    "First layout overflowed Column 3 by about 27 mm; re-rendered Tokyo at the same width and text sizes with less vertical age spacing. Final layout has no overflow.",
+    "Initial PDF-order assertion incorrectly assumed paint order equals spatial order for the footer. Actual PDF coordinates are now checked; no expected scientific values changed."
+  ],
+  "unchanged_svg_files": [
+    "E_aggregation.svg",
+    "F_young_migration.svg"
+  ],
+  "new_isolated_rebuild_performed": false,
+  "full_pytest_performed": false,
+  "final_git_status": "?? analysis/age_migration/\n?? poster/final_draft/\n?? poster/final_draft_v2/\n?? poster/final_draft_v3/\n?? poster/final_draft_v4/",
+  "branch": "codex/member4-audit-integration",
+  "head": "a311a18748d676196b523668dab7ed6e17472635",
+  "intended_file_count": 62,
+  "tracked_diff_empty": true
+}
